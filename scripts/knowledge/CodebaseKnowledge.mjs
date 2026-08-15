@@ -147,7 +147,7 @@ function collectSourcePaths(repoRoot, parsedConfig) {
     }
   }
 
-  for (const directory of ["config", "scripts"]) {
+  for (const directory of ["app", "config", "scripts"]) {
     for (const absolutePath of walkFiles(path.join(repoRoot, directory))) {
       if (sourceExtensions.has(path.extname(absolutePath))) {
         sourcePaths.add(absolutePath);

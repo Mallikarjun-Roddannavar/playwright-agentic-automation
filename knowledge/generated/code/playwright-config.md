@@ -15,16 +15,16 @@ sources:
     title: playwright.config.ts
     author: process:codebase-knowledge/1.0.0
 source_path: playwright.config.ts
-source_sha256: 8228f4f46c41116ddfa26c8729165d88cac6735aa8ccf0c2d50533bcdd71380b
+source_sha256: 7450cbd1c78a18c970c4462b7f7b327ca33520da0dfaf31914fedbf410cd0f98
 code_graph_id: file:playwright.config.ts
 analysis_scope: static-ast
-fact_sha256: b31b1d5b91e10965cad898cfffd59bd5afced1eb3bb985fbb26dad771e51b9f6
+fact_sha256: bdbff2aa9fcff7564a325fdbcc0fa65247f72c2227ad20d06de98508564736d1
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-15T11:46:34.642Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-15T11:46:34.642Z"
 ---
 
 # Purpose
@@ -54,4 +54,4 @@ Framework tooling extracted from playwright.config.ts by deterministic static an
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `8228f4f46c41116ddfa26c8729165d88cac6735aa8ccf0c2d50533bcdd71380b`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `7450cbd1c78a18c970c4462b7f7b327ca33520da0dfaf31914fedbf410cd0f98`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

@@ -16,5 +16,6 @@
       "@config/*": ["config/*"]
     }
   },
-  "include": ["**/*.ts"]
+  "include": ["api/**/*.ts", "ui/**/*.ts", "utils/**/*.ts", "scripts/**/*.ts", "playwright.config.ts"],
+  "exclude": ["app"]
 }

@@ -4,10 +4,10 @@
   "title": "playwright-pom-agent-skills static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "cd25a8d9a239d74eca3eef8734dd4aee02782503226c9fd1e6257da987a1d64f",
+  "sourceDigest": "09a541c99086ce1ff39bb1b6611a9b472bdb2d115dbc1b5bb98ae74c0e0a7185",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-07-31T11:43:13.295Z",
+    "at": "2026-08-15T11:47:52.662Z",
     "parser": "TypeScript 5.9.3"
   },
   "sources": [
@@ -47,6 +47,131 @@
       "category": "api-spec"
     },
     {
+      "path": "app/backend/database.json",
+      "sha256": "703e37271b7a9fde34d98d7aeb13b16a47f4b286b8429e8f72936a00389f96b0",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/package-lock.json",
+      "sha256": "301fd089af3bdfddc4aab425929b334d9442d142470afbfb6f6d64db06963ed1",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/package.json",
+      "sha256": "e66b4348aef8e61af5142b989fcf25909d9039bee9cbc6f30075d81ac13b8f2e",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/postcss.config.js",
+      "sha256": "9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/api.ts",
+      "sha256": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/App.tsx",
+      "sha256": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/components/AppLayout.tsx",
+      "sha256": "d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/components/ConfirmDialog.tsx",
+      "sha256": "76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/components/Modal.tsx",
+      "sha256": "06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/components/Sidebar.tsx",
+      "sha256": "034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/components/ThemeToggle.tsx",
+      "sha256": "0063c7a65b7e4d3370c816bde5d56502e1f2c7091dd01a9f117d6030dd357cdc",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/context/AuthContext.tsx",
+      "sha256": "43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "sha256": "54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/main.tsx",
+      "sha256": "948c6c4e5dce049d0fd55f479d48510da97f0af12d1c4819b6cc3e5376b11976",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "sha256": "9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "sha256": "820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/pages/HomePage.tsx",
+      "sha256": "d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/pages/LoginPage.tsx",
+      "sha256": "9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "sha256": "4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/pages/PreferencesPage.tsx",
+      "sha256": "5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/src/types.ts",
+      "sha256": "62eff509fae0ced9704c7383f061632a3917d90342583bddfdb7ba03b93dca1a",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/tailwind.config.js",
+      "sha256": "a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/tsconfig.json",
+      "sha256": "23545a3ba4e3b1888bf30f3d7d90133ca559e3867d1e174a9aa191313afd2b2e",
+      "category": "source"
+    },
+    {
+      "path": "app/frontend/vite.config.ts",
+      "sha256": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6",
+      "category": "source"
+    },
+    {
+      "path": "app/scripts/check-test-ids.js",
+      "sha256": "096f85735f3bd88eb066076d3adce242764b7473d5c88b5eadda63e34628f848",
+      "category": "source"
+    },
+    {
       "path": "config/test-config.json",
       "sha256": "163715254fb5696e79af964e16867e764b5afafd317dbbdc97ea2aac80afa429",
       "category": "configuration"
@@ -63,7 +188,7 @@
     },
     {
       "path": "playwright.config.ts",
-      "sha256": "8228f4f46c41116ddfa26c8729165d88cac6735aa8ccf0c2d50533bcdd71380b",
+      "sha256": "7450cbd1c78a18c970c4462b7f7b327ca33520da0dfaf31914fedbf410cd0f98",
       "category": "tooling"
     },
     {
@@ -78,7 +203,7 @@
     },
     {
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "sha256": "bd24292d2b8ea503a496ca9825d53cf9ce4fe5a505c2288bfde97015e9a8b600",
+      "sha256": "8e29641c778685d0974bea0aecb0006e3e88f8be1f988c08f346d799722cc878",
       "category": "tooling"
     },
     {
@@ -93,7 +218,7 @@
     },
     {
       "path": "tsconfig.json",
-      "sha256": "2533b40dabf9f7eeda3da8cd8ac285f26996c350262d11cc3491c1dea53009b0",
+      "sha256": "ef18f7b3d95f79b7b3855793304a2b4cc800abb1ffb5e63e24d4103936ec2fc9",
       "category": "configuration"
     },
     {
@@ -258,6 +383,306 @@
       "sourceHash": "cdc605d447716f2c47f8bd695165aa82f22b568141c103b12ef19430fdee41f1"
     },
     {
+      "id": "file:app/backend/database.json",
+      "kind": "file",
+      "label": "app/backend/database.json",
+      "path": "app/backend/database.json",
+      "category": "source",
+      "tags": [
+        "json",
+        "source"
+      ],
+      "sourceHash": "703e37271b7a9fde34d98d7aeb13b16a47f4b286b8429e8f72936a00389f96b0"
+    },
+    {
+      "id": "file:app/frontend/package-lock.json",
+      "kind": "file",
+      "label": "app/frontend/package-lock.json",
+      "path": "app/frontend/package-lock.json",
+      "category": "source",
+      "tags": [
+        "json",
+        "source"
+      ],
+      "sourceHash": "301fd089af3bdfddc4aab425929b334d9442d142470afbfb6f6d64db06963ed1"
+    },
+    {
+      "id": "file:app/frontend/package.json",
+      "kind": "file",
+      "label": "app/frontend/package.json",
+      "path": "app/frontend/package.json",
+      "category": "source",
+      "tags": [
+        "json",
+        "source"
+      ],
+      "sourceHash": "e66b4348aef8e61af5142b989fcf25909d9039bee9cbc6f30075d81ac13b8f2e"
+    },
+    {
+      "id": "file:app/frontend/postcss.config.js",
+      "kind": "file",
+      "label": "app/frontend/postcss.config.js",
+      "path": "app/frontend/postcss.config.js",
+      "category": "source",
+      "tags": [
+        "js",
+        "source"
+      ],
+      "sourceHash": "9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3"
+    },
+    {
+      "id": "file:app/frontend/src/api.ts",
+      "kind": "file",
+      "label": "app/frontend/src/api.ts",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "tags": [
+        "source",
+        "ts"
+      ],
+      "sourceHash": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d"
+    },
+    {
+      "id": "file:app/frontend/src/App.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/App.tsx",
+      "path": "app/frontend/src/App.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314"
+    },
+    {
+      "id": "file:app/frontend/src/components/AppLayout.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/components/AppLayout.tsx",
+      "path": "app/frontend/src/components/AppLayout.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed"
+    },
+    {
+      "id": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/components/ConfirmDialog.tsx",
+      "path": "app/frontend/src/components/ConfirmDialog.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2"
+    },
+    {
+      "id": "file:app/frontend/src/components/Modal.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/components/Modal.tsx",
+      "path": "app/frontend/src/components/Modal.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3"
+    },
+    {
+      "id": "file:app/frontend/src/components/Sidebar.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/components/Sidebar.tsx",
+      "path": "app/frontend/src/components/Sidebar.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f"
+    },
+    {
+      "id": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/components/ThemeToggle.tsx",
+      "path": "app/frontend/src/components/ThemeToggle.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "0063c7a65b7e4d3370c816bde5d56502e1f2c7091dd01a9f117d6030dd357cdc"
+    },
+    {
+      "id": "file:app/frontend/src/context/AuthContext.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/context/AuthContext.tsx",
+      "path": "app/frontend/src/context/AuthContext.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98"
+    },
+    {
+      "id": "file:app/frontend/src/context/ThemeContext.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/context/ThemeContext.tsx",
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c"
+    },
+    {
+      "id": "file:app/frontend/src/main.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/main.tsx",
+      "path": "app/frontend/src/main.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "948c6c4e5dce049d0fd55f479d48510da97f0af12d1c4819b6cc3e5376b11976"
+    },
+    {
+      "id": "file:app/frontend/src/pages/FilesPage.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/pages/FilesPage.tsx",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7"
+    },
+    {
+      "id": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/pages/FoldersPage.tsx",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf"
+    },
+    {
+      "id": "file:app/frontend/src/pages/HomePage.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/pages/HomePage.tsx",
+      "path": "app/frontend/src/pages/HomePage.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc"
+    },
+    {
+      "id": "file:app/frontend/src/pages/LoginPage.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/pages/LoginPage.tsx",
+      "path": "app/frontend/src/pages/LoginPage.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2"
+    },
+    {
+      "id": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a"
+    },
+    {
+      "id": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "kind": "file",
+      "label": "app/frontend/src/pages/PreferencesPage.tsx",
+      "path": "app/frontend/src/pages/PreferencesPage.tsx",
+      "category": "source",
+      "tags": [
+        "source",
+        "tsx"
+      ],
+      "sourceHash": "5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7"
+    },
+    {
+      "id": "file:app/frontend/src/types.ts",
+      "kind": "file",
+      "label": "app/frontend/src/types.ts",
+      "path": "app/frontend/src/types.ts",
+      "category": "source",
+      "tags": [
+        "source",
+        "ts"
+      ],
+      "sourceHash": "62eff509fae0ced9704c7383f061632a3917d90342583bddfdb7ba03b93dca1a"
+    },
+    {
+      "id": "file:app/frontend/tailwind.config.js",
+      "kind": "file",
+      "label": "app/frontend/tailwind.config.js",
+      "path": "app/frontend/tailwind.config.js",
+      "category": "source",
+      "tags": [
+        "js",
+        "source"
+      ],
+      "sourceHash": "a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f"
+    },
+    {
+      "id": "file:app/frontend/tsconfig.json",
+      "kind": "file",
+      "label": "app/frontend/tsconfig.json",
+      "path": "app/frontend/tsconfig.json",
+      "category": "source",
+      "tags": [
+        "json",
+        "source"
+      ],
+      "sourceHash": "23545a3ba4e3b1888bf30f3d7d90133ca559e3867d1e174a9aa191313afd2b2e"
+    },
+    {
+      "id": "file:app/frontend/vite.config.ts",
+      "kind": "file",
+      "label": "app/frontend/vite.config.ts",
+      "path": "app/frontend/vite.config.ts",
+      "category": "source",
+      "tags": [
+        "source",
+        "ts"
+      ],
+      "sourceHash": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6"
+    },
+    {
+      "id": "file:app/scripts/check-test-ids.js",
+      "kind": "file",
+      "label": "app/scripts/check-test-ids.js",
+      "path": "app/scripts/check-test-ids.js",
+      "category": "source",
+      "tags": [
+        "js",
+        "source"
+      ],
+      "sourceHash": "096f85735f3bd88eb066076d3adce242764b7473d5c88b5eadda63e34628f848"
+    },
+    {
       "id": "file:config/test-config.json",
       "kind": "file",
       "label": "config/test-config.json",
@@ -303,7 +728,7 @@
         "tooling",
         "ts"
       ],
-      "sourceHash": "8228f4f46c41116ddfa26c8729165d88cac6735aa8ccf0c2d50533bcdd71380b"
+      "sourceHash": "7450cbd1c78a18c970c4462b7f7b327ca33520da0dfaf31914fedbf410cd0f98"
     },
     {
       "id": "file:scripts/buildKnowledge.mjs",
@@ -339,7 +764,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "bd24292d2b8ea503a496ca9825d53cf9ce4fe5a505c2288bfde97015e9a8b600"
+      "sourceHash": "8e29641c778685d0974bea0aecb0006e3e88f8be1f988c08f346d799722cc878"
     },
     {
       "id": "file:scripts/queryKnowledge.mjs",
@@ -375,7 +800,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "2533b40dabf9f7eeda3da8cd8ac285f26996c350262d11cc3491c1dea53009b0"
+      "sourceHash": "ef18f7b3d95f79b7b3855793304a2b4cc800abb1ffb5e63e24d4103936ec2fc9"
     },
     {
       "id": "file:ui/pages/BasePage.ts",
@@ -678,6 +1103,14 @@
       ]
     },
     {
+      "id": "package:.",
+      "kind": "package",
+      "label": ".",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
       "id": "package:@eslint/js",
       "kind": "package",
       "label": "@eslint/js",
@@ -700,6 +1133,14 @@
       "kind": "package",
       "label": "@types/node",
       "version": "^25.3.3",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
+      "id": "package:@vitejs/plugin-react",
+      "kind": "package",
+      "label": "@vitejs/plugin-react",
       "tags": [
         "npm-package"
       ]
@@ -772,6 +1213,38 @@
       ]
     },
     {
+      "id": "package:react",
+      "kind": "package",
+      "label": "react",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
+      "id": "package:react-dom",
+      "kind": "package",
+      "label": "react-dom",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
+      "id": "package:react-router-dom",
+      "kind": "package",
+      "label": "react-router-dom",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
+      "id": "package:react-toastify",
+      "kind": "package",
+      "label": "react-toastify",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
       "id": "package:typescript",
       "kind": "package",
       "label": "typescript",
@@ -785,6 +1258,14 @@
       "kind": "package",
       "label": "typescript-eslint",
       "version": "^8.42.0",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
+      "id": "package:vite",
+      "kind": "package",
+      "label": "vite",
       "tags": [
         "npm-package"
       ]
@@ -1081,6 +1562,1014 @@
       "tags": [
         "api-service",
         "method"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#api",
+      "kind": "variable",
+      "label": "api",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 108,
+      "endLine": 178,
+      "exported": false,
+      "tags": [
+        "source",
+        "variable"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#AUTH_SESSION_EXPIRED_EVENT",
+      "kind": "variable",
+      "label": "AUTH_SESSION_EXPIRED_EVENT",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 25,
+      "endLine": 25,
+      "exported": false,
+      "tags": [
+        "source",
+        "variable"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#decodeJwtPayload",
+      "kind": "function",
+      "label": "decodeJwtPayload",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 49,
+      "endLine": 58,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#JwtClaims",
+      "kind": "type",
+      "label": "JwtClaims",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 17,
+      "endLine": 23,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#parseErrorDetail",
+      "kind": "function",
+      "label": "parseErrorDetail",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 28,
+      "endLine": 47,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#request",
+      "kind": "function",
+      "label": "request",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 77,
+      "endLine": 106,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#Stats",
+      "kind": "type",
+      "label": "Stats",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 7,
+      "endLine": 10,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#TokenResponse",
+      "kind": "type",
+      "label": "TokenResponse",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 12,
+      "endLine": 15,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#userFromAccessToken",
+      "kind": "function",
+      "label": "userFromAccessToken",
+      "path": "app/frontend/src/api.ts",
+      "category": "source",
+      "startLine": 60,
+      "endLine": 75,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/App.tsx#App",
+      "kind": "function",
+      "label": "App",
+      "path": "app/frontend/src/App.tsx",
+      "category": "source",
+      "startLine": 16,
+      "endLine": 66,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/App.tsx#PrivateRoute",
+      "kind": "function",
+      "label": "PrivateRoute",
+      "path": "app/frontend/src/App.tsx",
+      "category": "source",
+      "startLine": 11,
+      "endLine": 14,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/AppLayout.tsx#AppLayout",
+      "kind": "function",
+      "label": "AppLayout",
+      "path": "app/frontend/src/components/AppLayout.tsx",
+      "category": "source",
+      "startLine": 8,
+      "endLine": 126,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/ConfirmDialog.tsx#ConfirmDialog",
+      "kind": "function",
+      "label": "ConfirmDialog",
+      "path": "app/frontend/src/components/ConfirmDialog.tsx",
+      "category": "source",
+      "startLine": 10,
+      "endLine": 71,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/ConfirmDialog.tsx#ConfirmDialogProps",
+      "kind": "type",
+      "label": "ConfirmDialogProps",
+      "path": "app/frontend/src/components/ConfirmDialog.tsx",
+      "category": "source",
+      "startLine": 3,
+      "endLine": 8,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/Modal.tsx#Modal",
+      "kind": "function",
+      "label": "Modal",
+      "path": "app/frontend/src/components/Modal.tsx",
+      "category": "source",
+      "startLine": 11,
+      "endLine": 67,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/Modal.tsx#ModalProps",
+      "kind": "type",
+      "label": "ModalProps",
+      "path": "app/frontend/src/components/Modal.tsx",
+      "category": "source",
+      "startLine": 4,
+      "endLine": 9,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/Sidebar.tsx#Sidebar",
+      "kind": "function",
+      "label": "Sidebar",
+      "path": "app/frontend/src/components/Sidebar.tsx",
+      "category": "source",
+      "startLine": 45,
+      "endLine": 112,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/Sidebar.tsx#SidebarProps",
+      "kind": "type",
+      "label": "SidebarProps",
+      "path": "app/frontend/src/components/Sidebar.tsx",
+      "category": "source",
+      "startLine": 3,
+      "endLine": 6,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/components/ThemeToggle.tsx#ThemeToggle",
+      "kind": "function",
+      "label": "ThemeToggle",
+      "path": "app/frontend/src/components/ThemeToggle.tsx",
+      "category": "source",
+      "startLine": 3,
+      "endLine": 16,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/AuthContext.tsx#AuthContextValue",
+      "kind": "type",
+      "label": "AuthContextValue",
+      "path": "app/frontend/src/context/AuthContext.tsx",
+      "category": "source",
+      "startLine": 7,
+      "endLine": 14,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/AuthContext.tsx#AuthProvider",
+      "kind": "function",
+      "label": "AuthProvider",
+      "path": "app/frontend/src/context/AuthContext.tsx",
+      "category": "source",
+      "startLine": 39,
+      "endLine": 71,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/AuthContext.tsx#getStoredUser",
+      "kind": "function",
+      "label": "getStoredUser",
+      "path": "app/frontend/src/context/AuthContext.tsx",
+      "category": "source",
+      "startLine": 20,
+      "endLine": 33,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/AuthContext.tsx#hasRole",
+      "kind": "function",
+      "label": "hasRole",
+      "path": "app/frontend/src/context/AuthContext.tsx",
+      "category": "source",
+      "startLine": 35,
+      "endLine": 37,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/AuthContext.tsx#useAuth",
+      "kind": "function",
+      "label": "useAuth",
+      "path": "app/frontend/src/context/AuthContext.tsx",
+      "category": "source",
+      "startLine": 73,
+      "endLine": 79,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/ThemeContext.tsx#getInitialTheme",
+      "kind": "function",
+      "label": "getInitialTheme",
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "category": "source",
+      "startLine": 16,
+      "endLine": 22,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeContextValue",
+      "kind": "type",
+      "label": "ThemeContextValue",
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "category": "source",
+      "startLine": 6,
+      "endLine": 10,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeMode",
+      "kind": "type",
+      "label": "ThemeMode",
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "category": "source",
+      "startLine": 4,
+      "endLine": 4,
+      "exported": true,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeProvider",
+      "kind": "function",
+      "label": "ThemeProvider",
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "category": "source",
+      "startLine": 24,
+      "endLine": 43,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/context/ThemeContext.tsx#useTheme",
+      "kind": "function",
+      "label": "useTheme",
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "category": "source",
+      "startLine": 45,
+      "endLine": 51,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#deleteFile",
+      "kind": "function",
+      "label": "deleteFile",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 87,
+      "endLine": 97,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#deleteSelectedFiles",
+      "kind": "function",
+      "label": "deleteSelectedFiles",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 99,
+      "endLine": 110,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#downloadFile",
+      "kind": "function",
+      "label": "downloadFile",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 198,
+      "endLine": 202,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#downloadMultipleFiles",
+      "kind": "function",
+      "label": "downloadMultipleFiles",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 204,
+      "endLine": 208,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#ensureCardActionsVisible",
+      "kind": "function",
+      "label": "ensureCardActionsVisible",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 112,
+      "endLine": 136,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#FilesPage",
+      "kind": "function",
+      "label": "FilesPage",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 12,
+      "endLine": 608,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#handleFileCardPointerEnter",
+      "kind": "function",
+      "label": "handleFileCardPointerEnter",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 166,
+      "endLine": 170,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#handleFileCardPointerLeave",
+      "kind": "function",
+      "label": "handleFileCardPointerLeave",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 185,
+      "endLine": 190,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#handleFileCardPointerMove",
+      "kind": "function",
+      "label": "handleFileCardPointerMove",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 172,
+      "endLine": 183,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#handleViewModeSelect",
+      "kind": "function",
+      "label": "handleViewModeSelect",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 161,
+      "endLine": 164,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#previewFile",
+      "kind": "function",
+      "label": "previewFile",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 192,
+      "endLine": 196,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#refresh",
+      "kind": "function",
+      "label": "refresh",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 33,
+      "endLine": 48,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#renameFile",
+      "kind": "function",
+      "label": "renameFile",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 74,
+      "endLine": 85,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#toggleAllFiles",
+      "kind": "function",
+      "label": "toggleAllFiles",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 153,
+      "endLine": 159,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#toggleFileSelection",
+      "kind": "function",
+      "label": "toggleFileSelection",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 138,
+      "endLine": 151,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#upload",
+      "kind": "function",
+      "label": "upload",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "source",
+      "startLine": 61,
+      "endLine": 72,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#createFolder",
+      "kind": "function",
+      "label": "createFolder",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 59,
+      "endLine": 77,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#deleteFolder",
+      "kind": "function",
+      "label": "deleteFolder",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 98,
+      "endLine": 114,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#deleteSelectedFolders",
+      "kind": "function",
+      "label": "deleteSelectedFolders",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 116,
+      "endLine": 133,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#ensureCardActionsVisible",
+      "kind": "function",
+      "label": "ensureCardActionsVisible",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 135,
+      "endLine": 159,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#FoldersPage",
+      "kind": "function",
+      "label": "FoldersPage",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 12,
+      "endLine": 597,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleFolderCardPointerEnter",
+      "kind": "function",
+      "label": "handleFolderCardPointerEnter",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 189,
+      "endLine": 193,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleFolderCardPointerLeave",
+      "kind": "function",
+      "label": "handleFolderCardPointerLeave",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 208,
+      "endLine": 213,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleFolderCardPointerMove",
+      "kind": "function",
+      "label": "handleFolderCardPointerMove",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 195,
+      "endLine": 206,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleViewModeSelect",
+      "kind": "function",
+      "label": "handleViewModeSelect",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 184,
+      "endLine": 187,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#refresh",
+      "kind": "function",
+      "label": "refresh",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 32,
+      "endLine": 46,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#renameFolder",
+      "kind": "function",
+      "label": "renameFolder",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 79,
+      "endLine": 96,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#toggleAllFolders",
+      "kind": "function",
+      "label": "toggleAllFolders",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 176,
+      "endLine": 182,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#toggleFolderSelection",
+      "kind": "function",
+      "label": "toggleFolderSelection",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "source",
+      "startLine": 161,
+      "endLine": 174,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/HomePage.tsx#HomePage",
+      "kind": "function",
+      "label": "HomePage",
+      "path": "app/frontend/src/pages/HomePage.tsx",
+      "category": "source",
+      "startLine": 10,
+      "endLine": 270,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/HomePage.tsx#Stats",
+      "kind": "type",
+      "label": "Stats",
+      "path": "app/frontend/src/pages/HomePage.tsx",
+      "category": "source",
+      "startLine": 8,
+      "endLine": 8,
+      "exported": false,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/LoginPage.tsx#LoginPage",
+      "kind": "function",
+      "label": "LoginPage",
+      "path": "app/frontend/src/pages/LoginPage.tsx",
+      "category": "source",
+      "startLine": 8,
+      "endLine": 136,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/LoginPage.tsx#onOAuthLogin",
+      "kind": "function",
+      "label": "onOAuthLogin",
+      "path": "app/frontend/src/pages/LoginPage.tsx",
+      "category": "source",
+      "startLine": 35,
+      "endLine": 47,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/LoginPage.tsx#onSubmit",
+      "kind": "function",
+      "label": "onSubmit",
+      "path": "app/frontend/src/pages/LoginPage.tsx",
+      "category": "source",
+      "startLine": 17,
+      "endLine": 33,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/OAuthCallbackPage.tsx#OAuthCallbackPage",
+      "kind": "function",
+      "label": "OAuthCallbackPage",
+      "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "category": "source",
+      "startLine": 8,
+      "endLine": 52,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/PreferencesPage.tsx#onProfileIconChange",
+      "kind": "function",
+      "label": "onProfileIconChange",
+      "path": "app/frontend/src/pages/PreferencesPage.tsx",
+      "category": "source",
+      "startLine": 20,
+      "endLine": 32,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/PreferencesPage.tsx#PreferencesPage",
+      "kind": "function",
+      "label": "PreferencesPage",
+      "path": "app/frontend/src/pages/PreferencesPage.tsx",
+      "category": "source",
+      "startLine": 8,
+      "endLine": 111,
+      "exported": true,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/PreferencesPage.tsx#removeProfileIcon",
+      "kind": "function",
+      "label": "removeProfileIcon",
+      "path": "app/frontend/src/pages/PreferencesPage.tsx",
+      "category": "source",
+      "startLine": 34,
+      "endLine": 38,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/types.ts#FileItem",
+      "kind": "type",
+      "label": "FileItem",
+      "path": "app/frontend/src/types.ts",
+      "category": "source",
+      "startLine": 17,
+      "endLine": 24,
+      "exported": true,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/types.ts#Folder",
+      "kind": "type",
+      "label": "Folder",
+      "path": "app/frontend/src/types.ts",
+      "category": "source",
+      "startLine": 9,
+      "endLine": 15,
+      "exported": true,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/types.ts#Role",
+      "kind": "type",
+      "label": "Role",
+      "path": "app/frontend/src/types.ts",
+      "category": "source",
+      "startLine": 1,
+      "endLine": 1,
+      "exported": true,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/types.ts#User",
+      "kind": "type",
+      "label": "User",
+      "path": "app/frontend/src/types.ts",
+      "category": "source",
+      "startLine": 3,
+      "endLine": 7,
+      "exported": true,
+      "tags": [
+        "source",
+        "type"
+      ]
+    },
+    {
+      "id": "symbol:app/scripts/check-test-ids.js#findInteractiveOpeningTags",
+      "kind": "function",
+      "label": "findInteractiveOpeningTags",
+      "path": "app/scripts/check-test-ids.js",
+      "category": "source",
+      "startLine": 23,
+      "endLine": 62,
+      "exported": false,
+      "tags": [
+        "function",
+        "source"
       ]
     },
     {
@@ -3061,6 +4550,20 @@
       ]
     },
     {
+      "id": "edge:03171c6d987292e2",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "file:app/frontend/src/components/AppLayout.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 6,
+          "detail": "../components/AppLayout"
+        }
+      ]
+    },
+    {
       "id": "edge:03f37bf19ae2a914",
       "relation": "INSTANTIATES",
       "from": "symbol:ui/pages/FoldersPage.ts#FoldersPage.openFolder",
@@ -3110,6 +4613,20 @@
         {
           "path": "package.json",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:058f94128776f503",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 3,
+          "detail": "react-router-dom"
         }
       ]
     },
@@ -3167,6 +4684,33 @@
       ]
     },
     {
+      "id": "edge:0a74abea5e20654b",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "to": "file:app/frontend/src/context/ThemeContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ThemeToggle.tsx",
+          "line": 1,
+          "detail": "../context/ThemeContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:0a8f085a3bd59862",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "symbol:app/frontend/src/App.tsx#App",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 16
+        }
+      ]
+    },
+    {
       "id": "edge:0ad7409d34334569",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -3176,6 +4720,20 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 67
+        }
+      ]
+    },
+    {
+      "id": "edge:0b9c88b0bd728ef8",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 5,
+          "detail": "../api"
         }
       ]
     },
@@ -3207,6 +4765,33 @@
       ]
     },
     {
+      "id": "edge:0d0fbd7a294376e1",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/vite.config.ts",
+      "to": "package:@vitejs/plugin-react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/vite.config.ts",
+          "line": 2,
+          "detail": "@vitejs/plugin-react"
+        }
+      ]
+    },
+    {
+      "id": "edge:0d18b157c791a2e0",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "symbol:app/frontend/src/pages/LoginPage.tsx#LoginPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:0d19e606673c51cb",
       "relation": "EXTENDS",
       "from": "symbol:api/services/AuthService.ts#AuthService",
@@ -3233,6 +4818,33 @@
       ]
     },
     {
+      "id": "edge:0e1e4e4d6b161080",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "symbol:app/frontend/src/context/AuthContext.tsx#AuthProvider",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 39
+        }
+      ]
+    },
+    {
+      "id": "edge:0e38dc28ce66cdba",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 1,
+          "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
       "id": "edge:0ee76d5e8341b09a",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage",
@@ -3246,6 +4858,19 @@
       ]
     },
     {
+      "id": "edge:0f0032c70c68cba2",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/components/AppLayout.tsx",
+      "to": "symbol:app/frontend/src/components/AppLayout.tsx#AppLayout",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:0f2082ca9ea4a788",
       "relation": "EXPORTS",
       "from": "file:api/services/FilesService.ts",
@@ -3255,6 +4880,25 @@
         {
           "path": "api/services/FilesService.ts",
           "line": 5
+        }
+      ]
+    },
+    {
+      "id": "edge:0f495ca002ef2c94",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/components/Modal.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Modal.tsx",
+          "line": 1,
+          "detail": "react"
+        },
+        {
+          "path": "app/frontend/src/components/Modal.tsx",
+          "line": 2,
+          "detail": "react"
         }
       ]
     },
@@ -3319,6 +4963,19 @@
         {
           "path": "api/specs/rbac.spec.ts",
           "line": 14
+        }
+      ]
+    },
+    {
+      "id": "edge:10fe86587acb7913",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "to": "symbol:app/frontend/src/components/ConfirmDialog.tsx#ConfirmDialogProps",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ConfirmDialog.tsx",
+          "line": 3
         }
       ]
     },
@@ -3391,6 +5048,19 @@
       ]
     },
     {
+      "id": "edge:12313e7720239b8a",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#User",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 3
+        }
+      ]
+    },
+    {
       "id": "edge:1276724375e6fc48",
       "relation": "USES_SERVICE",
       "from": "file:ui/specs/viewer-rbac.spec.ts",
@@ -3426,6 +5096,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1260
+        }
+      ]
+    },
+    {
+      "id": "edge:1386574dfa0b8d2f",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "to": "symbol:app/frontend/src/components/ConfirmDialog.tsx#ConfirmDialog",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ConfirmDialog.tsx",
+          "line": 10
         }
       ]
     },
@@ -3496,6 +5179,19 @@
       ]
     },
     {
+      "id": "edge:1585034f8b80797c",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#deleteFolder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 98
+        }
+      ]
+    },
+    {
       "id": "edge:166bb980396104ea",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -3505,6 +5201,32 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 93
+        }
+      ]
+    },
+    {
+      "id": "edge:16c102fe078847db",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/components/AppLayout.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:1721f76669d007c6",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/vite.config.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/vite.config.ts",
+          "line": 1
         }
       ]
     },
@@ -3549,6 +5271,20 @@
       ]
     },
     {
+      "id": "edge:191bbf9fa1d6f681",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 5,
+          "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
       "id": "edge:194246d5c32b2f04",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:ui/pages/BasePage.ts#BasePage",
@@ -3559,6 +5295,32 @@
           "path": "ui/pages/BasePage.ts",
           "line": 13,
           "detail": "folderFiles"
+        }
+      ]
+    },
+    {
+      "id": "edge:1992e385fefd56f5",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "symbol:app/frontend/src/pages/LoginPage.tsx#onOAuthLogin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "id": "edge:19d7d427235f68a0",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleFolderCardPointerLeave",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 208
         }
       ]
     },
@@ -3681,6 +5443,47 @@
       ]
     },
     {
+      "id": "edge:207220fc8c44955b",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#FoldersPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "id": "edge:209518c13a0532ac",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 1,
+          "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:20b730ba3f55f7b3",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "file:app/frontend/src/components/Modal.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 8,
+          "detail": "../components/Modal"
+        }
+      ]
+    },
+    {
       "id": "edge:20bcf89e0839bc92",
       "relation": "CONTAINS",
       "from": "file:api/services/FoldersService.ts",
@@ -3777,6 +5580,19 @@
       ]
     },
     {
+      "id": "edge:244387dd4594c4b8",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "to": "symbol:app/frontend/src/components/ThemeToggle.tsx#ThemeToggle",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ThemeToggle.tsx",
+          "line": 3
+        }
+      ]
+    },
+    {
       "id": "edge:24c5c3b94ea16491",
       "relation": "DECLARES_FIXTURE",
       "from": "file:utils/fixtures/TestFixtures.ts",
@@ -3786,6 +5602,33 @@
         {
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 124
+        }
+      ]
+    },
+    {
+      "id": "edge:24efcd838586f1d1",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/components/AppLayout.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 3,
+          "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
+      "id": "edge:2574e9264441de9d",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ThemeToggle.tsx",
+          "line": 1
         }
       ]
     },
@@ -3816,6 +5659,38 @@
       ]
     },
     {
+      "id": "edge:25be28d3091920a6",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/components/AppLayout.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 1,
+          "detail": "react"
+        },
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 2,
+          "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:2651dc272228f8c0",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ConfirmDialog.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:26c929780a42c104",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:scripts/checkNamingConventions.mjs",
@@ -3826,6 +5701,20 @@
           "path": "scripts/checkNamingConventions.mjs",
           "line": 2,
           "detail": "node:path"
+        }
+      ]
+    },
+    {
+      "id": "edge:26ff3b65b483ced9",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 3,
+          "detail": "../api"
         }
       ]
     },
@@ -3910,6 +5799,19 @@
       ]
     },
     {
+      "id": "edge:2a07081d8678b524",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/package.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/package.json",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:2a39fc03fd43dc1c",
       "relation": "USES_FIXTURE",
       "from": "file:api/specs/rbac.spec.ts",
@@ -3919,6 +5821,20 @@
         {
           "path": "api/specs/rbac.spec.ts",
           "line": 9
+        }
+      ]
+    },
+    {
+      "id": "edge:2a54c8f15995abfb",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 1,
+          "detail": "react"
         }
       ]
     },
@@ -4016,6 +5932,19 @@
       ]
     },
     {
+      "id": "edge:2be037762a040ff7",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeProvider",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 24
+        }
+      ]
+    },
+    {
       "id": "edge:2c0cf61d04498215",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -4095,6 +6024,19 @@
       ]
     },
     {
+      "id": "edge:2dd214abc28b3c03",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "to": "symbol:app/frontend/src/pages/OAuthCallbackPage.tsx#OAuthCallbackPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:2e15edd4b5bdad56",
       "relation": "CONTAINS",
       "from": "symbol:utils/common/Logger.ts#Logger",
@@ -4104,6 +6046,32 @@
         {
           "path": "utils/common/Logger.ts",
           "line": 26
+        }
+      ]
+    },
+    {
+      "id": "edge:2e77c65e88886caa",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/tailwind.config.js",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/tailwind.config.js",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:2f636226bb606308",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "symbol:app/frontend/src/context/AuthContext.tsx#AuthProvider",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 39
         }
       ]
     },
@@ -4135,6 +6103,20 @@
       ]
     },
     {
+      "id": "edge:313641860ac39ca5",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "package:react-toastify",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 3,
+          "detail": "react-toastify"
+        }
+      ]
+    },
+    {
       "id": "edge:31aff3e258603390",
       "relation": "CONTAINS",
       "from": "file:utils/common/Logger.ts",
@@ -4143,6 +6125,19 @@
       "evidence": [
         {
           "path": "utils/common/Logger.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:3272245d8649d7ba",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/postcss.config.js",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/postcss.config.js",
           "line": 1
         }
       ]
@@ -4161,6 +6156,38 @@
       ]
     },
     {
+      "id": "edge:3364a1da94df1603",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 1,
+          "detail": "react"
+        },
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 2,
+          "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:348605711f3c6c4d",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#toggleFolderSelection",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 161
+        }
+      ]
+    },
+    {
       "id": "edge:3494db595c679c03",
       "relation": "IMPORTS",
       "from": "file:ui/specs/viewer-rbac.spec.ts",
@@ -4175,6 +6202,20 @@
       ]
     },
     {
+      "id": "edge:350324e821025acc",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 7,
+          "detail": "../components/ConfirmDialog"
+        }
+      ]
+    },
+    {
       "id": "edge:351adb80c4a67a1e",
       "relation": "CONTAINS",
       "from": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph",
@@ -4184,6 +6225,20 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 390
+        }
+      ]
+    },
+    {
+      "id": "edge:36ba4255f309d4a1",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 9,
+          "detail": "../context/AuthContext"
         }
       ]
     },
@@ -4210,6 +6265,19 @@
         {
           "path": "utils/common/Logger.ts",
           "line": 13
+        }
+      ]
+    },
+    {
+      "id": "edge:36e6bf636d572cf6",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/App.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 1
         }
       ]
     },
@@ -4269,6 +6337,19 @@
       ]
     },
     {
+      "id": "edge:38983f849d697934",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#refresh",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 33
+        }
+      ]
+    },
+    {
       "id": "edge:38dd94faebff9279",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -4295,6 +6376,19 @@
       ]
     },
     {
+      "id": "edge:3956740cbaaadb5a",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/pages/FilesPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:3a0fc10447706fdf",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/BasePage.ts#BasePage",
@@ -4304,6 +6398,20 @@
         {
           "path": "ui/pages/BasePage.ts",
           "line": 24
+        }
+      ]
+    },
+    {
+      "id": "edge:3a1c0b9695db41a9",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "file:app/frontend/src/components/AppLayout.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 6,
+          "detail": "../components/AppLayout"
         }
       ]
     },
@@ -4361,6 +6469,33 @@
       ]
     },
     {
+      "id": "edge:3da503ab1f209142",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "package:react-toastify",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 3,
+          "detail": "react-toastify"
+        }
+      ]
+    },
+    {
+      "id": "edge:3ee151399a76116e",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "symbol:app/frontend/src/App.tsx#PrivateRoute",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 11
+        }
+      ]
+    },
+    {
       "id": "edge:4095a5872fca7f50",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -4387,6 +6522,20 @@
       ]
     },
     {
+      "id": "edge:4144870e85f9245b",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 3,
+          "detail": "./context/AuthContext"
+        }
+      ]
+    },
+    {
       "id": "edge:415a3880dd85d476",
       "relation": "USES_UI_ROUTE",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage.goto",
@@ -4400,6 +6549,19 @@
       ]
     },
     {
+      "id": "edge:418baccb5c81077f",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#handleFileCardPointerEnter",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 166
+        }
+      ]
+    },
+    {
       "id": "edge:4194db1959ce1ee2",
       "relation": "EXTENDS",
       "from": "symbol:ui/pages/HomePage.ts#HomePage",
@@ -4409,6 +6571,47 @@
         {
           "path": "ui/pages/HomePage.ts",
           "line": 6
+        }
+      ]
+    },
+    {
+      "id": "edge:419d4bb34ead0072",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 1,
+          "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:41a493f547737e0f",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ConfirmDialog.tsx",
+          "line": 1,
+          "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:41cff780fc913b64",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/pages/HomePage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 1
         }
       ]
     },
@@ -4523,6 +6726,33 @@
       ]
     },
     {
+      "id": "edge:477f5509c10c38a5",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 7,
+          "detail": "../components/ConfirmDialog"
+        }
+      ]
+    },
+    {
+      "id": "edge:483495ab08ffc024",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#useTheme",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 45
+        }
+      ]
+    },
+    {
       "id": "edge:484521cef9975006",
       "relation": "INSTANTIATES",
       "from": "symbol:ui/pages/HomePage.ts#HomePage.openFolders",
@@ -4532,6 +6762,72 @@
         {
           "path": "ui/pages/HomePage.ts",
           "line": 21
+        }
+      ]
+    },
+    {
+      "id": "edge:48894e0d3bf7bc56",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/components/Sidebar.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Sidebar.tsx",
+          "line": 1,
+          "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
+      "id": "edge:4896fab50bfd9d7e",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "to": "symbol:app/frontend/src/components/ThemeToggle.tsx#ThemeToggle",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ThemeToggle.tsx",
+          "line": 3
+        }
+      ]
+    },
+    {
+      "id": "edge:48fe055148b9aa1f",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#TokenResponse",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "id": "edge:4965b4c389f15f2f",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/PreferencesPage.tsx#removeProfileIcon",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 34
+        }
+      ]
+    },
+    {
+      "id": "edge:49d8dbf45495931e",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#downloadFile",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 198
         }
       ]
     },
@@ -4585,6 +6881,32 @@
           "path": "scripts/queryKnowledge.mjs",
           "line": 3,
           "detail": "./knowledge/CodebaseKnowledge.mjs"
+        }
+      ]
+    },
+    {
+      "id": "edge:4c95b0cd79cc7ec3",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#createFolder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 59
+        }
+      ]
+    },
+    {
+      "id": "edge:4ca9cc54e49714a9",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleViewModeSelect",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 184
         }
       ]
     },
@@ -4655,6 +6977,46 @@
       ]
     },
     {
+      "id": "edge:4f58b9d37b37cf44",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 2,
+          "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
+      "id": "edge:4f8242818def8614",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:4fc8a0206c202bf4",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/pages/LoginPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:509a182e267acb2d",
       "relation": "CONTAINS",
       "from": "file:ui/setup/auth.setup.ts",
@@ -4664,6 +7026,33 @@
         {
           "path": "ui/setup/auth.setup.ts",
           "line": 36
+        }
+      ]
+    },
+    {
+      "id": "edge:50a74f297cc04f79",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 6,
+          "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:51448e8d3ab0664e",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#refresh",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 32
         }
       ]
     },
@@ -4681,6 +7070,19 @@
       ]
     },
     {
+      "id": "edge:524f216ac8d1dfdb",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "symbol:app/frontend/src/context/AuthContext.tsx#useAuth",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 73
+        }
+      ]
+    },
+    {
       "id": "edge:52f74760b7375f76",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/HomePage.ts#HomePage",
@@ -4690,6 +7092,19 @@
         {
           "path": "ui/pages/HomePage.ts",
           "line": 11
+        }
+      ]
+    },
+    {
+      "id": "edge:537537631e832ce4",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "symbol:app/frontend/src/context/AuthContext.tsx#getStoredUser",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 20
         }
       ]
     },
@@ -4734,6 +7149,19 @@
       ]
     },
     {
+      "id": "edge:5476ed442bd98c4a",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/components/Modal.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Modal.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:5494d18acb4a38ec",
       "relation": "USES_PAGE",
       "from": "file:ui/specs/login.spec.ts",
@@ -4751,6 +7179,40 @@
         {
           "path": "ui/specs/login.spec.ts",
           "line": 48
+        }
+      ]
+    },
+    {
+      "id": "edge:549f7e90c49b52da",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "package:.",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 10,
+          "detail": "./index.css"
+        },
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 11,
+          "detail": "./styles/global.css"
+        },
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 12,
+          "detail": "./styles/layout.css"
+        },
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 13,
+          "detail": "./styles/components.css"
+        },
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 14,
+          "detail": "./styles/feedback.css"
         }
       ]
     },
@@ -4822,6 +7284,20 @@
       ]
     },
     {
+      "id": "edge:573d108e64410033",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 2,
+          "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
       "id": "edge:5882550def1422b6",
       "relation": "IMPORTS",
       "from": "file:ui/pages/FoldersPage.ts",
@@ -4873,6 +7349,20 @@
           "path": "playwright.config.ts",
           "line": 2,
           "detail": "node:path"
+        }
+      ]
+    },
+    {
+      "id": "edge:59bd1e931d4bdac3",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 1,
+          "detail": "react"
         }
       ]
     },
@@ -4947,6 +7437,19 @@
       ]
     },
     {
+      "id": "edge:5c942f17a5f5a88d",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/context/ThemeContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:5d1f40a997f0c88c",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:api/services/FilesService.ts",
@@ -4957,6 +7460,19 @@
           "path": "api/services/FilesService.ts",
           "line": 1,
           "detail": "@playwright/test"
+        }
+      ]
+    },
+    {
+      "id": "edge:5e5c3f24c25574c4",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#handleViewModeSelect",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 161
         }
       ]
     },
@@ -5001,6 +7517,19 @@
       ]
     },
     {
+      "id": "edge:5fd8ca54b5963443",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#Role",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:60d9900ce37bb51e",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/FoldersPage.ts#FoldersPage",
@@ -5010,6 +7539,20 @@
         {
           "path": "ui/pages/FoldersPage.ts",
           "line": 41
+        }
+      ]
+    },
+    {
+      "id": "edge:6189639ca48d9f58",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "file:app/frontend/src/components/AppLayout.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 4,
+          "detail": "../components/AppLayout"
         }
       ]
     },
@@ -5054,6 +7597,19 @@
       ]
     },
     {
+      "id": "edge:626a8a481fd9f16c",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/scripts/check-test-ids.js",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/scripts/check-test-ids.js",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:62cc644319dc2ac8",
       "relation": "CONTAINS",
       "from": "file:ui/setup/auth.setup.ts",
@@ -5089,6 +7645,19 @@
         {
           "path": "ui/pages/LoginPage.ts",
           "line": 30
+        }
+      ]
+    },
+    {
+      "id": "edge:63d7405b3b88395d",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "symbol:app/frontend/src/pages/HomePage.tsx#HomePage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 10
         }
       ]
     },
@@ -5226,6 +7795,20 @@
       ]
     },
     {
+      "id": "edge:67cd7079708e224d",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "file:app/frontend/src/context/ThemeContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 8,
+          "detail": "./context/ThemeContext"
+        }
+      ]
+    },
+    {
       "id": "edge:6815705016542c99",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage",
@@ -5279,6 +7862,33 @@
       ]
     },
     {
+      "id": "edge:694c0d598dd18a8a",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#getInitialTheme",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 16
+        }
+      ]
+    },
+    {
+      "id": "edge:69c9b2238caf5800",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 5,
+          "detail": "./pages/FoldersPage"
+        }
+      ]
+    },
+    {
       "id": "edge:6a1aff5278d9329e",
       "relation": "CONTAINS",
       "from": "repository:playwright-pom-agent-skills",
@@ -5318,6 +7928,32 @@
       ]
     },
     {
+      "id": "edge:6ae302eafd7002bc",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#deleteSelectedFolders",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 116
+        }
+      ]
+    },
+    {
+      "id": "edge:6b4ab31f77d61890",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/PreferencesPage.tsx#PreferencesPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:6ba8bfac70260e10",
       "relation": "CONTAINS",
       "from": "file:ui/pages/BasePage.ts",
@@ -5327,6 +7963,34 @@
         {
           "path": "ui/pages/BasePage.ts",
           "line": 6
+        }
+      ]
+    },
+    {
+      "id": "edge:6bd1e2bc17a4d89f",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 9,
+          "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:6ce2e7a0f87ed143",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "package:react-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 2,
+          "detail": "react-dom/client"
         }
       ]
     },
@@ -5374,6 +8038,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 59
+        }
+      ]
+    },
+    {
+      "id": "edge:6f29975e828f3727",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#Folder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 9
         }
       ]
     },
@@ -5446,6 +8123,19 @@
       ]
     },
     {
+      "id": "edge:728cddcf3d5e6be5",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeContextValue",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 6
+        }
+      ]
+    },
+    {
       "id": "edge:72d51752e0501a76",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/HomePage.ts#HomePage",
@@ -5455,6 +8145,33 @@
         {
           "path": "ui/pages/HomePage.ts",
           "line": 26
+        }
+      ]
+    },
+    {
+      "id": "edge:733927ec0f2e925d",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 2,
+          "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
+      "id": "edge:738d564347d486cc",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#User",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 3
         }
       ]
     },
@@ -5697,6 +8414,33 @@
       ]
     },
     {
+      "id": "edge:7a9907e4853541dd",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/components/Sidebar.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Sidebar.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:7adc509d5022bb85",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 1,
+          "detail": "react"
+        }
+      ]
+    },
+    {
       "id": "edge:7b60ff32dadc6740",
       "relation": "CONTAINS",
       "from": "repository:playwright-pom-agent-skills",
@@ -5817,6 +8561,19 @@
       ]
     },
     {
+      "id": "edge:8042330f9ebaaa79",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#parseErrorDetail",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 28
+        }
+      ]
+    },
+    {
       "id": "edge:8111e1d6b950ea58",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:api/services/FoldersService.ts",
@@ -5857,6 +8614,19 @@
       ]
     },
     {
+      "id": "edge:83f3b4638ab0b1d6",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/main.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:842dfaf7e86a540f",
       "relation": "CONTAINS",
       "from": "file:utils/common/CustomReporter.ts",
@@ -5880,6 +8650,19 @@
           "path": "playwright.config.ts",
           "line": 3,
           "detail": "@api/services/BaseApiService"
+        }
+      ]
+    },
+    {
+      "id": "edge:85a871231c8092c8",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/backend/database.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.json",
+          "line": 1
         }
       ]
     },
@@ -5910,6 +8693,33 @@
       ]
     },
     {
+      "id": "edge:863ed6ad292bacbf",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 1,
+          "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:866cdbea1cad8767",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/Sidebar.tsx",
+      "to": "symbol:app/frontend/src/components/Sidebar.tsx#Sidebar",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Sidebar.tsx",
+          "line": 45
+        }
+      ]
+    },
+    {
       "id": "edge:868687e1787eb74a",
       "relation": "CONTAINS",
       "from": "repository:playwright-pom-agent-skills",
@@ -5919,6 +8729,20 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:86915335482b0abc",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 7,
+          "detail": "./context/AuthContext"
         }
       ]
     },
@@ -5963,6 +8787,33 @@
       ]
     },
     {
+      "id": "edge:882cf8fa01512232",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#downloadMultipleFiles",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 204
+        }
+      ]
+    },
+    {
+      "id": "edge:8856833b0b6c4b8d",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 9,
+          "detail": "./pages/PreferencesPage"
+        }
+      ]
+    },
+    {
       "id": "edge:89cb1b1bed30ef13",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -5991,6 +8842,19 @@
       ]
     },
     {
+      "id": "edge:8c0899c5e1937e14",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/types.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:8c26b7f530273016",
       "relation": "USES_FIXTURE",
       "from": "file:ui/specs/viewer-rbac.spec.ts",
@@ -6000,6 +8864,32 @@
         {
           "path": "ui/specs/viewer-rbac.spec.ts",
           "line": 9
+        }
+      ]
+    },
+    {
+      "id": "edge:8cbf9aa980392fcc",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#FileItem",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "id": "edge:8ceed3dbd325b507",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 1
         }
       ]
     },
@@ -6057,6 +8947,33 @@
       ]
     },
     {
+      "id": "edge:8dda92651cee6684",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 4,
+          "detail": "../api"
+        }
+      ]
+    },
+    {
+      "id": "edge:8e487f899171d7f3",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#toggleAllFiles",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 153
+        }
+      ]
+    },
+    {
       "id": "edge:8ef9459907cf4f0d",
       "relation": "CONTAINS",
       "from": "symbol:utils/common/CustomReporter.ts#CustomReporter",
@@ -6066,6 +8983,19 @@
         {
           "path": "utils/common/CustomReporter.ts",
           "line": 108
+        }
+      ]
+    },
+    {
+      "id": "edge:8f6f00e43634f01a",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "symbol:app/frontend/src/context/AuthContext.tsx#useAuth",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 73
         }
       ]
     },
@@ -6110,6 +9040,45 @@
       ]
     },
     {
+      "id": "edge:910ae332fe47e6d1",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "symbol:app/frontend/src/pages/LoginPage.tsx#onSubmit",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "id": "edge:911da12560dabab7",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:91fc03eb933e618f",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeProvider",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 24
+        }
+      ]
+    },
+    {
       "id": "edge:92370c82ddda6ad2",
       "relation": "USES_SERVICE",
       "from": "symbol:ui/specs/files.spec.ts#expectRoleCanUploadFile",
@@ -6123,6 +9092,20 @@
         {
           "path": "ui/specs/files.spec.ts",
           "line": 33
+        }
+      ]
+    },
+    {
+      "id": "edge:924ee2150f358d9e",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "package:react-toastify",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 3,
+          "detail": "react-toastify"
         }
       ]
     },
@@ -6175,6 +9158,32 @@
         {
           "path": "ui/specs/files.spec.ts",
           "line": 45
+        }
+      ]
+    },
+    {
+      "id": "edge:9409c5bcd035b45d",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#toggleFileSelection",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "id": "edge:944364e341f792e9",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#renameFile",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 74
         }
       ]
     },
@@ -6258,6 +9267,20 @@
       ]
     },
     {
+      "id": "edge:978ea9a285bf9d16",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "file:app/frontend/src/context/ThemeContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 6,
+          "detail": "../context/ThemeContext"
+        }
+      ]
+    },
+    {
       "id": "edge:97c5256ec3b75a0b",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:ui/pages/BasePage.ts#BasePage",
@@ -6294,6 +9317,19 @@
         {
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 101
+        }
+      ]
+    },
+    {
+      "id": "edge:988400b274213eaa",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleFolderCardPointerMove",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 195
         }
       ]
     },
@@ -6338,6 +9374,19 @@
       ]
     },
     {
+      "id": "edge:9b045df6e6a57ccc",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#previewFile",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 192
+        }
+      ]
+    },
+    {
       "id": "edge:9b26c339890d86e9",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:utils/common/CustomReporter.ts",
@@ -6348,6 +9397,32 @@
           "path": "utils/common/CustomReporter.ts",
           "line": 4,
           "detail": "@playwright/test/reporter"
+        }
+      ]
+    },
+    {
+      "id": "edge:9b4d188e072ea786",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/PreferencesPage.tsx#onProfileIconChange",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 20
+        }
+      ]
+    },
+    {
+      "id": "edge:9b5434d87a87c47b",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#upload",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 61
         }
       ]
     },
@@ -6457,6 +9532,19 @@
       ]
     },
     {
+      "id": "edge:a2d54918c4bc7083",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/components/Sidebar.tsx",
+      "to": "symbol:app/frontend/src/components/Sidebar.tsx#Sidebar",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Sidebar.tsx",
+          "line": 45
+        }
+      ]
+    },
+    {
       "id": "edge:a302eb13d8d71fa6",
       "relation": "USES_PAGE",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage.login",
@@ -6466,6 +9554,19 @@
         {
           "path": "ui/pages/LoginPage.ts",
           "line": 30
+        }
+      ]
+    },
+    {
+      "id": "edge:a35f1b26241d4ddc",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "to": "symbol:app/frontend/src/pages/OAuthCallbackPage.tsx#OAuthCallbackPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 8
         }
       ]
     },
@@ -6550,6 +9651,19 @@
       ]
     },
     {
+      "id": "edge:a6d6a01aea10c084",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/AppLayout.tsx",
+      "to": "symbol:app/frontend/src/components/AppLayout.tsx#AppLayout",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:a6d6cbe42e8dd9e5",
       "relation": "EXPORTS",
       "from": "file:ui/pages/BasePage.ts",
@@ -6603,6 +9717,19 @@
       ]
     },
     {
+      "id": "edge:a8c80d4a8dc3ef53",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "symbol:app/frontend/src/pages/HomePage.tsx#Stats",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:a8ce779b5e72b64b",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:api/services/BaseApiService.ts#BaseApiService",
@@ -6617,6 +9744,19 @@
       ]
     },
     {
+      "id": "edge:aa076039193c235d",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#Role",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:aa26fcdff87b2a8e",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:api/specs/files.spec.ts",
@@ -6627,6 +9767,20 @@
           "path": "api/specs/files.spec.ts",
           "line": 1,
           "detail": "node:crypto"
+        }
+      ]
+    },
+    {
+      "id": "edge:aa637957776e5df0",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 4,
+          "detail": "../components/ThemeToggle"
         }
       ]
     },
@@ -6698,6 +9852,19 @@
       ]
     },
     {
+      "id": "edge:abd2d810ca1bbd64",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#deleteSelectedFiles",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 99
+        }
+      ]
+    },
+    {
       "id": "edge:ac112a9d9a8eaa2e",
       "relation": "IMPORTS",
       "from": "file:api/services/AuthService.ts",
@@ -6722,6 +9889,19 @@
           "path": "ui/pages/FolderFilesPage.ts",
           "line": 1,
           "detail": "@playwright/test"
+        }
+      ]
+    },
+    {
+      "id": "edge:ac91752d74be9d0b",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/components/Modal.tsx",
+      "to": "symbol:app/frontend/src/components/Modal.tsx#Modal",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Modal.tsx",
+          "line": 11
         }
       ]
     },
@@ -6773,6 +9953,19 @@
       ]
     },
     {
+      "id": "edge:ae4bf7272ed186d7",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#useTheme",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 45
+        }
+      ]
+    },
+    {
       "id": "edge:ae66c1ee00106585",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -6812,6 +10005,20 @@
         {
           "path": "api/specs/files.spec.ts",
           "line": 26
+        }
+      ]
+    },
+    {
+      "id": "edge:b05015507130d6e0",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 1,
+          "detail": "react"
         }
       ]
     },
@@ -6916,6 +10123,19 @@
       ]
     },
     {
+      "id": "edge:b32fd3f24fe7a983",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/Sidebar.tsx",
+      "to": "symbol:app/frontend/src/components/Sidebar.tsx#SidebarProps",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Sidebar.tsx",
+          "line": 3
+        }
+      ]
+    },
+    {
       "id": "edge:b4b0c7b8e29569dd",
       "relation": "IMPORTS",
       "from": "file:api/specs/rbac.spec.ts",
@@ -6956,6 +10176,19 @@
       ]
     },
     {
+      "id": "edge:b51c7cc477bc6c6e",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#toggleAllFolders",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 176
+        }
+      ]
+    },
+    {
       "id": "edge:b522f36d431e6f6d",
       "relation": "USES_FIXTURE",
       "from": "file:api/specs/rbac.spec.ts",
@@ -6983,6 +10216,19 @@
       ]
     },
     {
+      "id": "edge:b531b70d1ba23850",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/Modal.tsx",
+      "to": "symbol:app/frontend/src/components/Modal.tsx#ModalProps",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Modal.tsx",
+          "line": 4
+        }
+      ]
+    },
+    {
       "id": "edge:b5f8dd9c9401cfc9",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/BasePage.ts#BasePage",
@@ -6992,6 +10238,19 @@
         {
           "path": "ui/pages/BasePage.ts",
           "line": 19
+        }
+      ]
+    },
+    {
+      "id": "edge:b61925a9484fe7a5",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#deleteFile",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 87
         }
       ]
     },
@@ -7035,6 +10294,20 @@
       ]
     },
     {
+      "id": "edge:b7ba20fef65b29ee",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "to": "package:react-toastify",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 3,
+          "detail": "react-toastify"
+        }
+      ]
+    },
+    {
       "id": "edge:b8c5750fdc2bcb7b",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -7044,6 +10317,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 229
+        }
+      ]
+    },
+    {
+      "id": "edge:ba55d7af2d8e6b83",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/tsconfig.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/tsconfig.json",
+          "line": 1
         }
       ]
     },
@@ -7114,6 +10400,19 @@
       ]
     },
     {
+      "id": "edge:bc6423d3c0937e8d",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#FileItem",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 17
+        }
+      ]
+    },
+    {
       "id": "edge:bc720f86397741ec",
       "relation": "CONTAINS",
       "from": "repository:playwright-pom-agent-skills",
@@ -7179,6 +10478,20 @@
       ]
     },
     {
+      "id": "edge:beb8cb4cac05b2e6",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "file:app/frontend/src/types.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 1,
+          "detail": "./types"
+        }
+      ]
+    },
+    {
       "id": "edge:bf89e9425b285ecb",
       "relation": "CONTAINS",
       "from": "file:utils/fixtures/TestFixtures.ts",
@@ -7188,6 +10501,19 @@
         {
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 39
+        }
+      ]
+    },
+    {
+      "id": "edge:c0bdd163b6702fd2",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "to": "symbol:app/frontend/src/components/ConfirmDialog.tsx#ConfirmDialog",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ConfirmDialog.tsx",
+          "line": 10
         }
       ]
     },
@@ -7248,6 +10574,34 @@
       ]
     },
     {
+      "id": "edge:c22e2d4e39a05a21",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/components/AppLayout.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 5,
+          "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:c2abf06237b8eab5",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 5,
+          "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
       "id": "edge:c3976939b7a3b5ea",
       "relation": "NAVIGATES_TO",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage",
@@ -7301,6 +10655,19 @@
       ]
     },
     {
+      "id": "edge:c42022541c10aafd",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeMode",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 4
+        }
+      ]
+    },
+    {
       "id": "edge:c465c6d3ff63dbd6",
       "relation": "EXTENDS",
       "from": "symbol:api/services/FoldersService.ts#FoldersService",
@@ -7323,6 +10690,51 @@
         {
           "path": "api/specs/rbac.spec.ts",
           "line": 8
+        }
+      ]
+    },
+    {
+      "id": "edge:c59ebd4d6c187f3b",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#ensureCardActionsVisible",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 112
+        }
+      ]
+    },
+    {
+      "id": "edge:c659cf02be67f370",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#decodeJwtPayload",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "id": "edge:c664805f680b2422",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "package:react-toastify",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 4,
+          "detail": "react-toastify"
+        },
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 9,
+          "detail": "react-toastify/dist/ReactToastify.css"
         }
       ]
     },
@@ -7353,6 +10765,61 @@
       ]
     },
     {
+      "id": "edge:c7338efb88b7211c",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 5,
+          "detail": "../api"
+        }
+      ]
+    },
+    {
+      "id": "edge:c76c420f00a0fbee",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "file:app/frontend/src/pages/HomePage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 6,
+          "detail": "./pages/HomePage"
+        }
+      ]
+    },
+    {
+      "id": "edge:c84eb807b7b5eb11",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "file:app/frontend/src/components/AppLayout.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 3,
+          "detail": "../components/AppLayout"
+        }
+      ]
+    },
+    {
+      "id": "edge:c8e0f49b0d8d1ba2",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#userFromAccessToken",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 60
+        }
+      ]
+    },
+    {
       "id": "edge:c9b8d82d90152c17",
       "relation": "IMPORTS",
       "from": "file:api/services/FilesService.ts",
@@ -7376,6 +10843,19 @@
         {
           "path": "scripts/validateKnowledge.mjs",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:c9f4f255768d3f68",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeMode",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 4
         }
       ]
     },
@@ -7419,6 +10899,19 @@
       ]
     },
     {
+      "id": "edge:ca99859e75db31b0",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#request",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 77
+        }
+      ]
+    },
+    {
       "id": "edge:cac7c0a3518aa98a",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -7458,6 +10951,32 @@
       ]
     },
     {
+      "id": "edge:cc645a24ea65dbbb",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#api",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 108
+        }
+      ]
+    },
+    {
+      "id": "edge:ccb6d3497fe8947d",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:cd05296ab542c447",
       "relation": "EXPORTS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -7467,6 +10986,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1736
+        }
+      ]
+    },
+    {
+      "id": "edge:cde35d18de1aff27",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#AUTH_SESSION_EXPIRED_EVENT",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 25
         }
       ]
     },
@@ -7523,6 +11055,20 @@
       ]
     },
     {
+      "id": "edge:d131b547dc447146",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "package:.",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 6,
+          "detail": "./HomePage.css"
+        }
+      ]
+    },
+    {
       "id": "edge:d13c82d01bc8c4bd",
       "relation": "CONTAINS",
       "from": "file:utils/common/Waits.ts",
@@ -7558,6 +11104,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 286
+        }
+      ]
+    },
+    {
+      "id": "edge:d1d7bb0383692f40",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/LoginPage.tsx",
+      "to": "symbol:app/frontend/src/pages/LoginPage.tsx#LoginPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 8
         }
       ]
     },
@@ -7641,6 +11200,20 @@
       ]
     },
     {
+      "id": "edge:d30ccccff0f6a7c5",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/main.tsx",
+      "to": "file:app/frontend/src/App.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 6,
+          "detail": "./App"
+        }
+      ]
+    },
+    {
       "id": "edge:d36ef2582239aa16",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/FoldersPage.ts#FoldersPage",
@@ -7650,6 +11223,20 @@
         {
           "path": "ui/pages/FoldersPage.ts",
           "line": 27
+        }
+      ]
+    },
+    {
+      "id": "edge:d39453e7d7fbc6e0",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 5,
+          "detail": "../api"
         }
       ]
     },
@@ -7667,6 +11254,20 @@
       ]
     },
     {
+      "id": "edge:d44e13fa8f9ba90b",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "file:app/frontend/src/components/Modal.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 8,
+          "detail": "../components/Modal"
+        }
+      ]
+    },
+    {
       "id": "edge:d490fbd3e73b5883",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -7680,6 +11281,19 @@
       ]
     },
     {
+      "id": "edge:d57156e167e46cef",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/pages/HomePage.tsx",
+      "to": "symbol:app/frontend/src/pages/HomePage.tsx#HomePage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 10
+        }
+      ]
+    },
+    {
       "id": "edge:d5b6111ef60fd439",
       "relation": "CONTAINS",
       "from": "repository:playwright-pom-agent-skills",
@@ -7689,6 +11303,25 @@
         {
           "path": "api/specs/health.spec.ts",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:d5c31cb82847122c",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/context/ThemeContext.tsx",
+      "to": "package:react",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 1,
+          "detail": "react"
+        },
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 2,
+          "detail": "react"
         }
       ]
     },
@@ -7720,6 +11353,19 @@
       ]
     },
     {
+      "id": "edge:d6cdcf55e717788b",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "symbol:app/frontend/src/App.tsx#App",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 16
+        }
+      ]
+    },
+    {
       "id": "edge:d6d7decf4517fcee",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -7742,6 +11388,19 @@
         {
           "path": "ui/pages/FoldersPage.ts",
           "line": 10
+        }
+      ]
+    },
+    {
+      "id": "edge:d7687827cd44feb9",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#FilesPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 12
         }
       ]
     },
@@ -7776,6 +11435,20 @@
       ]
     },
     {
+      "id": "edge:d83cfc1b4fe78580",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "file:app/frontend/src/types.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 5,
+          "detail": "../types"
+        }
+      ]
+    },
+    {
       "id": "edge:d8da0a26101088a5",
       "relation": "CONTAINS",
       "from": "file:scripts/queryKnowledge.mjs",
@@ -7785,6 +11458,20 @@
         {
           "path": "scripts/queryKnowledge.mjs",
           "line": 35
+        }
+      ]
+    },
+    {
+      "id": "edge:d8f5a2853cf87d2a",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 6,
+          "detail": "../context/AuthContext"
         }
       ]
     },
@@ -7816,6 +11503,20 @@
       ]
     },
     {
+      "id": "edge:da5e0b8f8d1c0881",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 5,
+          "detail": "../api"
+        }
+      ]
+    },
+    {
       "id": "edge:dbf3a13075811550",
       "relation": "INSTANTIATES",
       "from": "symbol:ui/specs/files.spec.ts#expectRoleCanUploadFile",
@@ -7825,6 +11526,46 @@
         {
           "path": "ui/specs/files.spec.ts",
           "line": 45
+        }
+      ]
+    },
+    {
+      "id": "edge:dbf95adadb8f0b78",
+      "relation": "CONTAINS",
+      "from": "file:app/scripts/check-test-ids.js",
+      "to": "symbol:app/scripts/check-test-ids.js#findInteractiveOpeningTags",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/scripts/check-test-ids.js",
+          "line": 23
+        }
+      ]
+    },
+    {
+      "id": "edge:dcbe9d480b36be04",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "symbol:app/frontend/src/context/AuthContext.tsx#hasRole",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "id": "edge:dd3cd520bef6669d",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "file:app/frontend/src/types.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 10,
+          "detail": "../types"
         }
       ]
     },
@@ -7882,6 +11623,33 @@
       ]
     },
     {
+      "id": "edge:e10c3f0754a7e7c5",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#renameFolder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 79
+        }
+      ]
+    },
+    {
+      "id": "edge:e2470d9edc6f0b09",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/vite.config.ts",
+      "to": "package:vite",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/vite.config.ts",
+          "line": 1,
+          "detail": "vite"
+        }
+      ]
+    },
+    {
       "id": "edge:e27342b1bf2ef710",
       "relation": "IMPORTS",
       "from": "file:ui/pages/HomePage.ts",
@@ -7935,6 +11703,46 @@
       ]
     },
     {
+      "id": "edge:e3674e2ea7548f0b",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#userFromAccessToken",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 60
+        }
+      ]
+    },
+    {
+      "id": "edge:e3ec54dcdb30b95d",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "package:react-router-dom",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 2,
+          "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
+      "id": "edge:e4204df52dd3e7fa",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/package-lock.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/package-lock.json",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:e50b902b58e634ae",
       "relation": "CONTAINS",
       "from": "symbol:utils/common/Logger.ts#Logger",
@@ -7961,6 +11769,20 @@
       ]
     },
     {
+      "id": "edge:e7d54c93aba23f7f",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "file:app/frontend/src/pages/FilesPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 4,
+          "detail": "./pages/FilesPage"
+        }
+      ]
+    },
+    {
       "id": "edge:e81653ab3b8c9d3c",
       "relation": "CONTAINS",
       "from": "symbol:utils/common/Logger.ts#Logger",
@@ -7970,6 +11792,19 @@
         {
           "path": "utils/common/Logger.ts",
           "line": 38
+        }
+      ]
+    },
+    {
+      "id": "edge:e86b38fe72df1918",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/types.ts",
+      "to": "symbol:app/frontend/src/types.ts#Folder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 9
         }
       ]
     },
@@ -8028,6 +11863,20 @@
       ]
     },
     {
+      "id": "edge:ead300285d662d1f",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "file:app/frontend/src/pages/LoginPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 7,
+          "detail": "./pages/LoginPage"
+        }
+      ]
+    },
+    {
       "id": "edge:ebb3aab8b6a327f2",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/FoldersPage.ts#FoldersPage",
@@ -8051,6 +11900,19 @@
           "path": "ui/specs/viewer-rbac.spec.ts",
           "line": 4,
           "detail": "@utils/fixtures/TestFixtures"
+        }
+      ]
+    },
+    {
+      "id": "edge:ec6f521fa391c11a",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#handleFileCardPointerLeave",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 185
         }
       ]
     },
@@ -8082,6 +11944,19 @@
       ]
     },
     {
+      "id": "edge:ed59b1bf463dabbc",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#Stats",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 7
+        }
+      ]
+    },
+    {
       "id": "edge:ee377aa8383a80be",
       "relation": "USES_FIXTURE",
       "from": "file:ui/specs/viewer-rbac.spec.ts",
@@ -8091,6 +11966,20 @@
         {
           "path": "ui/specs/viewer-rbac.spec.ts",
           "line": 8
+        }
+      ]
+    },
+    {
+      "id": "edge:ef48ed0ee84a6b85",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/components/AppLayout.tsx",
+      "to": "file:app/frontend/src/components/Sidebar.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 6,
+          "detail": "./Sidebar"
         }
       ]
     },
@@ -8135,6 +12024,32 @@
       ]
     },
     {
+      "id": "edge:f0c6b4828f58ffc4",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#handleFileCardPointerMove",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 172
+        }
+      ]
+    },
+    {
+      "id": "edge:f153eb6f29eaf2e8",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FilesPage.tsx#FilesPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 12
+        }
+      ]
+    },
+    {
       "id": "edge:f177423611d92dcf",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:api/services/BaseApiService.ts#BaseApiService",
@@ -8145,6 +12060,19 @@
           "path": "api/services/BaseApiService.ts",
           "line": 10,
           "detail": "folder"
+        }
+      ]
+    },
+    {
+      "id": "edge:f188a0ac5f53cc30",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/components/Modal.tsx",
+      "to": "symbol:app/frontend/src/components/Modal.tsx#Modal",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Modal.tsx",
+          "line": 11
         }
       ]
     },
@@ -8175,6 +12103,19 @@
       ]
     },
     {
+      "id": "edge:f2414449f00584e6",
+      "relation": "EXPORTS",
+      "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "to": "symbol:app/frontend/src/pages/PreferencesPage.tsx#PreferencesPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:f2a778ef0973ebdb",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -8197,6 +12138,19 @@
         {
           "path": "package.json",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:f2e214127863e1f4",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/api.ts",
+      "to": "symbol:app/frontend/src/api.ts#JwtClaims",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 17
         }
       ]
     },
@@ -8237,6 +12191,19 @@
         {
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 37
+        }
+      ]
+    },
+    {
+      "id": "edge:f5a118405822166c",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#handleFolderCardPointerEnter",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 189
         }
       ]
     },
@@ -8337,6 +12304,19 @@
       ]
     },
     {
+      "id": "edge:fa4256809f67789d",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#ensureCardActionsVisible",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 135
+        }
+      ]
+    },
+    {
       "id": "edge:fa4a8fde79d5b5fe",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -8347,6 +12327,20 @@
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 7,
           "detail": "typescript"
+        }
+      ]
+    },
+    {
+      "id": "edge:fb01c991f7244ef7",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/pages/FilesPage.tsx",
+      "to": "file:app/frontend/src/types.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "line": 10,
+          "detail": "../types"
         }
       ]
     },
@@ -8393,6 +12387,19 @@
       ]
     },
     {
+      "id": "edge:fdfd64c2db1f06f2",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/context/AuthContext.tsx",
+      "to": "symbol:app/frontend/src/context/AuthContext.tsx#AuthContextValue",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/AuthContext.tsx",
+          "line": 7
+        }
+      ]
+    },
+    {
       "id": "edge:fec3ac88b9f4e6f7",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage",
@@ -8429,6 +12436,46 @@
           "path": "ui/specs/login.spec.ts",
           "line": 2,
           "detail": "@config/test-config.json"
+        }
+      ]
+    },
+    {
+      "id": "edge:ff6dae50dc163476",
+      "relation": "CONTAINS",
+      "from": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "to": "symbol:app/frontend/src/pages/FoldersPage.tsx#FoldersPage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "id": "edge:ffc0d0b2c849b1d9",
+      "relation": "IMPORTS",
+      "from": "file:app/frontend/src/App.tsx",
+      "to": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 8,
+          "detail": "./pages/OAuthCallbackPage"
+        }
+      ]
+    },
+    {
+      "id": "edge:ffeb982e0018cad4",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 1
         }
       ]
     }

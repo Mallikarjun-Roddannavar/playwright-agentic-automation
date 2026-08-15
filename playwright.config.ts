@@ -15,7 +15,7 @@ if (startLocalServers && (!uiUrl.port || !apiUrl.port)) {
   throw new Error("Local UI and API base URLs must include explicit ports.");
 }
 
-const appRoot = resolve(__dirname, process.env.PLAYWRIGHT_APP_ROOT ?? "../playwright-practice-app");
+const appRoot = resolve(__dirname, process.env.PLAYWRIGHT_APP_ROOT ?? "app");
 const pythonExecutable =
   process.platform === "win32" ? ".venv\\Scripts\\python.exe" : ".venv/bin/python";
 const reuseExistingServer = !process.env.CI;
