@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import json
 import os
 import mimetypes
 import re
@@ -45,9 +44,10 @@ from models import (
     OAuthLoginResponse,
     TokenResponse,
 )
+from database import initialize_database, load_database, save_database
 
 BASE_DIR = Path(__file__).resolve().parent
-DB_PATH = BASE_DIR / "database.json"
+DB_PATH = BASE_DIR / "database.sqlite3"
 UPLOADS_DIR = BASE_DIR / "uploads"
 UPLOADS_DIR.mkdir(parents=True, exist_ok=True)
 MAX_UPLOAD_SIZE_BYTES = max(1, int(os.getenv("MAX_UPLOAD_SIZE_BYTES", str(10 * 1024 * 1024))))
@@ -59,47 +59,15 @@ def _now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
 
 
-def _seed_data() -> dict:
-    return {"folders": []}
-
-
-def normalize_db(data: dict) -> tuple[dict, bool]:
-    changed = False
-    folders = data.get("folders")
-    if not isinstance(folders, list):
-        data["folders"] = []
-        folders = data["folders"]
-        changed = True
-
-    for folder in folders:
-        if "files" not in folder or not isinstance(folder["files"], list):
-            folder["files"] = []
-            changed = True
-
-    return data, changed
-
-
 def load_db() -> dict:
-    if not DB_PATH.exists():
-        save_db(_seed_data())
-    with DB_PATH.open("r", encoding="utf-8-sig") as file:
-        data = json.load(file)
-    data, changed = normalize_db(data)
-    if changed:
-        save_db(data)
-    return data
+    return load_database(DB_PATH)
 
 
 def save_db(data: dict) -> None:
-    temp_path = DB_PATH.with_name(f".{DB_PATH.name}.{uuid.uuid4().hex}.tmp")
-    try:
-        with temp_path.open("w", encoding="utf-8", newline="\n") as file:
-            json.dump(data, file, indent=2)
-            file.flush()
-            os.fsync(file.fileno())
-        os.replace(temp_path, DB_PATH)
-    finally:
-        temp_path.unlink(missing_ok=True)
+    save_database(DB_PATH, data)
+
+
+initialize_database(DB_PATH)
 
 
 def require_editor_or_admin(user: AppUser) -> None:

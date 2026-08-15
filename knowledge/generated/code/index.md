@@ -26,8 +26,8 @@ Read the smallest relevant concept after querying the saved graph.
 
 - [auth.py](app/backend/auth.md)
   - `app/backend/auth.py` — Python backend.
-- [database](app/backend/database.md)
-  - `app/backend/database.json` — Python backend.
+- [database.py](app/backend/database.md)
+  - `app/backend/database.py` — Python backend.
 - [main.py](app/backend/main.md)
   - `app/backend/main.py` — Python backend.
 - [models.py](app/backend/models.md)

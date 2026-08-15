@@ -13,7 +13,7 @@ Project-wide instructions for coding agents working in `playwright-practice-app`
 - Backend: FastAPI + OAuth2 Password Flow JWT + optional external OAuth callback support.
 - Frontend: React + TypeScript + Vite + Tailwind.
 - Storage:
-  - App data: `backend/database.json`
+  - App data: `backend/database.sqlite3`
   - Uploaded files: `backend/uploads/`
 
 ## Plan-Validate-Execute Workflow

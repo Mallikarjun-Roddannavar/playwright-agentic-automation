@@ -10,7 +10,7 @@ Backend-specific instructions for `playwright-practice-app/backend`.
 - Entry point: `main.py`
 - Auth module: `auth.py`
 - Schemas: `models.py`
-- Data store: `database.json`
+- Data store: `database.sqlite3` via `database.py`
 - File store: `uploads/`
 
 ## Procedural Workflow: Adding a New Endpoint
@@ -53,9 +53,8 @@ async def create_example(
 - `admin`: full access including delete
 
 ## Storage and consistency rules
-- Keep `database.json` compatible with existing format.
-- Use BOM-safe JSON reads (`utf-8-sig`) and stable writes.
-- File metadata in JSON must match real files in `uploads/`.
+- Keep the SQLite schema and API response shape stable.
+- File metadata in SQLite must match real files in `uploads/`.
 - On folder deletion, remove associated uploaded files from disk.
 
 ## Gotchas & API behavior requirements
@@ -63,7 +62,7 @@ async def create_example(
 - Maintain predictable errors (`detail` field) for frontend toasts/tests.
 - Preserve endpoint URLs unless user explicitly asks to change them.
 - If adding endpoints, follow existing naming style and dependency injection pattern.
-- The `database.json` might be read/written concurrently. Do not overwrite changes made by other operations; read before writing.
+- SQLite transactions and the application store lock protect concurrent updates.
 
 ## Validation Loop for Backend Changes
 1. Make your code changes.

@@ -15,16 +15,16 @@ sources:
     title: app/backend/main.py
     author: process:codebase-knowledge/1.0.0
 source_path: app/backend/main.py
-source_sha256: e9f5641d7bba31d76973be7103d36e75293c447b74522121797351796d1bee0a
+source_sha256: 693486e115a3c3cc22bd3bc500d66b2dcba46790d767c70b36c898a1644fe912
 code_graph_id: file:app/backend/main.py
 analysis_scope: static-ast
-fact_sha256: 96213ea46588714792195d496a4058dcf238cb60607f375ae1c738f543280e79
+fact_sha256: 87cd657fad29817d18494ede1c8f1a6a56c458110dadbe5e937af55ccf035f50
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:45.193Z"
+  at: "2026-08-15T12:24:04.139Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:45.193Z"
+    at: "2026-08-15T12:24:04.139Z"
 ---
 
 # Purpose
@@ -34,37 +34,35 @@ Python backend extracted from app/backend/main.py by deterministic static analys
 # Symbols
 
 - `function` **_now_iso** (lines 58-59)
-- `function` **_safe_upload_name** (lines 150-156)
-- `function` **_sanitize_download_name** (lines 142-147)
-- `function` **_seed_data** (lines 62-63)
-- `function` **allow_private_network_access** (lines 184-190)
-- `function` **create_folder** (lines 299-314)
-- `function` **delete_file** (lines 505-516)
-- `function` **delete_folder** (lines 335-346)
-- `function` **download_file** (lines 378-395)
-- `function` **download_files_zip** (lines 399-445)
-- `function` **ensure_unique_folder_name** (lines 133-139)
-- `function` **find_file** (lines 122-126)
-- `function` **find_folder** (lines 115-119)
-- `function` **get_allowed_origins** (lines 168-170)
-- `function` **health** (lines 194-195)
-- `function` **issue_token** (lines 199-204)
-- `function` **list_files** (lines 350-355)
-- `function` **list_folders** (lines 292-295)
-- `function` **load_db** (lines 82-90)
-- `function` **login** (lines 208-212)
-- `function` **normalize_db** (lines 66-79)
-- `function` **normalize_folder_name** (lines 129-130)
-- `function` **oauth_callback** (lines 233-277)
-- `function` **oauth_login** (lines 216-229)
-- `function` **preview_file** (lines 359-374)
-- `function` **rename_file** (lines 488-501)
-- `function` **rename_folder** (lines 318-331)
-- `function` **require_admin** (lines 110-112)
-- `function` **require_editor_or_admin** (lines 105-107)
-- `function` **save_db** (lines 93-102)
-- `function` **stats** (lines 281-288)
-- `function` **upload_file** (lines 449-484)
+- `function` **_safe_upload_name** (lines 118-124)
+- `function` **_sanitize_download_name** (lines 110-115)
+- `function` **allow_private_network_access** (lines 152-158)
+- `function` **create_folder** (lines 267-282)
+- `function` **delete_file** (lines 473-484)
+- `function` **delete_folder** (lines 303-314)
+- `function` **download_file** (lines 346-363)
+- `function` **download_files_zip** (lines 367-413)
+- `function` **ensure_unique_folder_name** (lines 101-107)
+- `function` **find_file** (lines 90-94)
+- `function` **find_folder** (lines 83-87)
+- `function` **get_allowed_origins** (lines 136-138)
+- `function` **health** (lines 162-163)
+- `function` **issue_token** (lines 167-172)
+- `function` **list_files** (lines 318-323)
+- `function` **list_folders** (lines 260-263)
+- `function` **load_db** (lines 62-63)
+- `function` **login** (lines 176-180)
+- `function` **normalize_folder_name** (lines 97-98)
+- `function` **oauth_callback** (lines 201-245)
+- `function` **oauth_login** (lines 184-197)
+- `function` **preview_file** (lines 327-342)
+- `function` **rename_file** (lines 456-469)
+- `function` **rename_folder** (lines 286-299)
+- `function` **require_admin** (lines 78-80)
+- `function` **require_editor_or_admin** (lines 73-75)
+- `function` **save_db** (lines 66-67)
+- `function` **stats** (lines 249-256)
+- `function` **upload_file** (lines 417-452)
 
 # Imports
 
@@ -86,7 +84,6 @@ Python backend extracted from app/backend/main.py by deterministic static analys
 - **rename_folder** uses persistence [save_db](./main.md).
 - **rename_folder** enforces rbac [require_editor_or_admin](./main.md).
 - **rename_folder** declares route [PUT /folders/{folder_id}](./main.md).
-- **load_db** uses persistence [save_db](./main.md).
 - **download_files_zip** uses persistence [load_db](./main.md).
 - **oauth_login** declares route [GET /auth/oauth/login](./main.md).
 - **preview_file** declares route [GET /folders/{folder_id}/files/{file_id}/preview](./main.md).
@@ -131,4 +128,4 @@ Python backend extracted from app/backend/main.py by deterministic static analys
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `e9f5641d7bba31d76973be7103d36e75293c447b74522121797351796d1bee0a`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `693486e115a3c3cc22bd3bc500d66b2dcba46790d767c70b36c898a1644fe912`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

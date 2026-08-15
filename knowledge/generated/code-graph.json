@@ -4,10 +4,10 @@
   "title": "playwright-pom-agent-skills static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "e94d31853eb6944479a076b2c42dfe78b9f54379c79ec2c3100d7186d18ad858",
+  "sourceDigest": "6f0adce6e92b1f397645fddd6a5fb0162695d6305aa3829544664eb2ec84aee6",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-15T12:03:30.324Z",
+    "at": "2026-08-15T12:24:04.139Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -52,13 +52,13 @@
       "category": "backend"
     },
     {
-      "path": "app/backend/database.json",
-      "sha256": "703e37271b7a9fde34d98d7aeb13b16a47f4b286b8429e8f72936a00389f96b0",
+      "path": "app/backend/database.py",
+      "sha256": "264bd0e5a443bd54d7ad115bc08854f71dfa4ff186fa0365f8fef143d5215a5c",
       "category": "backend"
     },
     {
       "path": "app/backend/main.py",
-      "sha256": "e9f5641d7bba31d76973be7103d36e75293c447b74522121797351796d1bee0a",
+      "sha256": "693486e115a3c3cc22bd3bc500d66b2dcba46790d767c70b36c898a1644fe912",
       "category": "backend"
     },
     {
@@ -415,16 +415,16 @@
       "sourceHash": "23958d497a360ff63b4645ebed50c4de062d1b4e3b758fe96325b1fd6396f8a0"
     },
     {
-      "id": "file:app/backend/database.json",
+      "id": "file:app/backend/database.py",
       "kind": "file",
-      "label": "app/backend/database.json",
-      "path": "app/backend/database.json",
+      "label": "app/backend/database.py",
+      "path": "app/backend/database.py",
       "category": "backend",
       "tags": [
         "backend",
-        "json"
+        "py"
       ],
-      "sourceHash": "703e37271b7a9fde34d98d7aeb13b16a47f4b286b8429e8f72936a00389f96b0"
+      "sourceHash": "264bd0e5a443bd54d7ad115bc08854f71dfa4ff186fa0365f8fef143d5215a5c"
     },
     {
       "id": "file:app/backend/main.py",
@@ -436,7 +436,7 @@
         "backend",
         "py"
       ],
-      "sourceHash": "e9f5641d7bba31d76973be7103d36e75293c447b74522121797351796d1bee0a"
+      "sourceHash": "693486e115a3c3cc22bd3bc500d66b2dcba46790d767c70b36c898a1644fe912"
     },
     {
       "id": "file:app/backend/models.py",
@@ -1427,7 +1427,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "create_folder:POST",
-      "startLine": 298,
+      "startLine": 266,
       "tags": [
         "backend",
         "python",
@@ -1441,7 +1441,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "delete_file:DELETE",
-      "startLine": 504,
+      "startLine": 472,
       "tags": [
         "backend",
         "python",
@@ -1455,7 +1455,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "delete_folder:DELETE",
-      "startLine": 334,
+      "startLine": 302,
       "tags": [
         "backend",
         "python",
@@ -1469,7 +1469,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "download_file:GET",
-      "startLine": 377,
+      "startLine": 345,
       "tags": [
         "backend",
         "python",
@@ -1483,7 +1483,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "download_files_zip:GET",
-      "startLine": 398,
+      "startLine": 366,
       "tags": [
         "backend",
         "python",
@@ -1497,7 +1497,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "health:GET",
-      "startLine": 193,
+      "startLine": 161,
       "tags": [
         "backend",
         "python",
@@ -1511,7 +1511,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "issue_token:POST",
-      "startLine": 198,
+      "startLine": 166,
       "tags": [
         "backend",
         "python",
@@ -1525,7 +1525,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "list_files:GET",
-      "startLine": 349,
+      "startLine": 317,
       "tags": [
         "backend",
         "python",
@@ -1539,7 +1539,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "list_folders:GET",
-      "startLine": 291,
+      "startLine": 259,
       "tags": [
         "backend",
         "python",
@@ -1553,7 +1553,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "login:POST",
-      "startLine": 207,
+      "startLine": 175,
       "tags": [
         "backend",
         "python",
@@ -1567,7 +1567,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "oauth_callback:GET",
-      "startLine": 232,
+      "startLine": 200,
       "tags": [
         "backend",
         "python",
@@ -1581,7 +1581,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "oauth_login:GET",
-      "startLine": 215,
+      "startLine": 183,
       "tags": [
         "backend",
         "python",
@@ -1595,7 +1595,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "preview_file:GET",
-      "startLine": 358,
+      "startLine": 326,
       "tags": [
         "backend",
         "python",
@@ -1609,7 +1609,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "rename_file:PUT",
-      "startLine": 487,
+      "startLine": 455,
       "tags": [
         "backend",
         "python",
@@ -1623,7 +1623,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "rename_folder:PUT",
-      "startLine": 317,
+      "startLine": 285,
       "tags": [
         "backend",
         "python",
@@ -1637,7 +1637,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "stats:GET",
-      "startLine": 280,
+      "startLine": 248,
       "tags": [
         "backend",
         "python",
@@ -1651,7 +1651,7 @@
       "path": "app/backend/main.py",
       "category": "backend",
       "routeName": "upload_file:POST",
-      "startLine": 448,
+      "startLine": 416,
       "tags": [
         "backend",
         "python",
@@ -2019,6 +2019,76 @@
       ]
     },
     {
+      "id": "symbol:app/backend/database.py#_connect",
+      "kind": "function",
+      "label": "_connect",
+      "path": "app/backend/database.py",
+      "category": "backend",
+      "startLine": 29,
+      "endLine": 33,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/database.py#_replace_data",
+      "kind": "function",
+      "label": "_replace_data",
+      "path": "app/backend/database.py",
+      "category": "backend",
+      "startLine": 84,
+      "endLine": 106,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/database.py#initialize_database",
+      "kind": "function",
+      "label": "initialize_database",
+      "path": "app/backend/database.py",
+      "category": "backend",
+      "startLine": 36,
+      "endLine": 39,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/database.py#load_database",
+      "kind": "function",
+      "label": "load_database",
+      "path": "app/backend/database.py",
+      "category": "backend",
+      "startLine": 42,
+      "endLine": 76,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/database.py#save_database",
+      "kind": "function",
+      "label": "save_database",
+      "path": "app/backend/database.py",
+      "category": "backend",
+      "startLine": 79,
+      "endLine": 81,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
       "id": "symbol:app/backend/main.py#_now_iso",
       "kind": "function",
       "label": "_now_iso",
@@ -2038,8 +2108,8 @@
       "label": "_safe_upload_name",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 150,
-      "endLine": 156,
+      "startLine": 118,
+      "endLine": 124,
       "tags": [
         "backend",
         "function",
@@ -2052,22 +2122,8 @@
       "label": "_sanitize_download_name",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 142,
-      "endLine": 147,
-      "tags": [
-        "backend",
-        "function",
-        "python"
-      ]
-    },
-    {
-      "id": "symbol:app/backend/main.py#_seed_data",
-      "kind": "function",
-      "label": "_seed_data",
-      "path": "app/backend/main.py",
-      "category": "backend",
-      "startLine": 62,
-      "endLine": 63,
+      "startLine": 110,
+      "endLine": 115,
       "tags": [
         "backend",
         "function",
@@ -2080,8 +2136,8 @@
       "label": "allow_private_network_access",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 184,
-      "endLine": 190,
+      "startLine": 152,
+      "endLine": 158,
       "tags": [
         "backend",
         "function",
@@ -2094,8 +2150,8 @@
       "label": "create_folder",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 299,
-      "endLine": 314,
+      "startLine": 267,
+      "endLine": 282,
       "tags": [
         "backend",
         "function",
@@ -2108,8 +2164,8 @@
       "label": "delete_file",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 505,
-      "endLine": 516,
+      "startLine": 473,
+      "endLine": 484,
       "tags": [
         "backend",
         "function",
@@ -2122,8 +2178,8 @@
       "label": "delete_folder",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 335,
-      "endLine": 346,
+      "startLine": 303,
+      "endLine": 314,
       "tags": [
         "backend",
         "function",
@@ -2136,8 +2192,8 @@
       "label": "download_file",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 378,
-      "endLine": 395,
+      "startLine": 346,
+      "endLine": 363,
       "tags": [
         "backend",
         "function",
@@ -2150,8 +2206,8 @@
       "label": "download_files_zip",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 399,
-      "endLine": 445,
+      "startLine": 367,
+      "endLine": 413,
       "tags": [
         "backend",
         "function",
@@ -2164,8 +2220,8 @@
       "label": "ensure_unique_folder_name",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 133,
-      "endLine": 139,
+      "startLine": 101,
+      "endLine": 107,
       "tags": [
         "backend",
         "function",
@@ -2178,8 +2234,8 @@
       "label": "find_file",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 122,
-      "endLine": 126,
+      "startLine": 90,
+      "endLine": 94,
       "tags": [
         "backend",
         "function",
@@ -2192,8 +2248,8 @@
       "label": "find_folder",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 115,
-      "endLine": 119,
+      "startLine": 83,
+      "endLine": 87,
       "tags": [
         "backend",
         "function",
@@ -2206,8 +2262,8 @@
       "label": "get_allowed_origins",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 168,
-      "endLine": 170,
+      "startLine": 136,
+      "endLine": 138,
       "tags": [
         "backend",
         "function",
@@ -2220,8 +2276,8 @@
       "label": "health",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 194,
-      "endLine": 195,
+      "startLine": 162,
+      "endLine": 163,
       "tags": [
         "backend",
         "function",
@@ -2234,8 +2290,8 @@
       "label": "issue_token",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 199,
-      "endLine": 204,
+      "startLine": 167,
+      "endLine": 172,
       "tags": [
         "backend",
         "function",
@@ -2248,8 +2304,8 @@
       "label": "list_files",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 350,
-      "endLine": 355,
+      "startLine": 318,
+      "endLine": 323,
       "tags": [
         "backend",
         "function",
@@ -2262,8 +2318,8 @@
       "label": "list_folders",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 292,
-      "endLine": 295,
+      "startLine": 260,
+      "endLine": 263,
       "tags": [
         "backend",
         "function",
@@ -2276,8 +2332,8 @@
       "label": "load_db",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 82,
-      "endLine": 90,
+      "startLine": 62,
+      "endLine": 63,
       "tags": [
         "backend",
         "function",
@@ -2290,22 +2346,8 @@
       "label": "login",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 208,
-      "endLine": 212,
-      "tags": [
-        "backend",
-        "function",
-        "python"
-      ]
-    },
-    {
-      "id": "symbol:app/backend/main.py#normalize_db",
-      "kind": "function",
-      "label": "normalize_db",
-      "path": "app/backend/main.py",
-      "category": "backend",
-      "startLine": 66,
-      "endLine": 79,
+      "startLine": 176,
+      "endLine": 180,
       "tags": [
         "backend",
         "function",
@@ -2318,8 +2360,8 @@
       "label": "normalize_folder_name",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 129,
-      "endLine": 130,
+      "startLine": 97,
+      "endLine": 98,
       "tags": [
         "backend",
         "function",
@@ -2332,8 +2374,8 @@
       "label": "oauth_callback",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 233,
-      "endLine": 277,
+      "startLine": 201,
+      "endLine": 245,
       "tags": [
         "backend",
         "function",
@@ -2346,8 +2388,8 @@
       "label": "oauth_login",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 216,
-      "endLine": 229,
+      "startLine": 184,
+      "endLine": 197,
       "tags": [
         "backend",
         "function",
@@ -2360,8 +2402,8 @@
       "label": "preview_file",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 359,
-      "endLine": 374,
+      "startLine": 327,
+      "endLine": 342,
       "tags": [
         "backend",
         "function",
@@ -2374,8 +2416,8 @@
       "label": "rename_file",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 488,
-      "endLine": 501,
+      "startLine": 456,
+      "endLine": 469,
       "tags": [
         "backend",
         "function",
@@ -2388,8 +2430,8 @@
       "label": "rename_folder",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 318,
-      "endLine": 331,
+      "startLine": 286,
+      "endLine": 299,
       "tags": [
         "backend",
         "function",
@@ -2402,8 +2444,8 @@
       "label": "require_admin",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 110,
-      "endLine": 112,
+      "startLine": 78,
+      "endLine": 80,
       "tags": [
         "backend",
         "function",
@@ -2416,8 +2458,8 @@
       "label": "require_editor_or_admin",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 105,
-      "endLine": 107,
+      "startLine": 73,
+      "endLine": 75,
       "tags": [
         "backend",
         "function",
@@ -2430,8 +2472,8 @@
       "label": "save_db",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 93,
-      "endLine": 102,
+      "startLine": 66,
+      "endLine": 67,
       "tags": [
         "backend",
         "function",
@@ -2444,8 +2486,8 @@
       "label": "stats",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 281,
-      "endLine": 288,
+      "startLine": 249,
+      "endLine": 256,
       "tags": [
         "backend",
         "function",
@@ -2458,8 +2500,8 @@
       "label": "upload_file",
       "path": "app/backend/main.py",
       "category": "backend",
-      "startLine": 449,
-      "endLine": 484,
+      "startLine": 417,
+      "endLine": 452,
       "tags": [
         "backend",
         "function",
@@ -5501,7 +5543,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 475
+          "line": 443
         }
       ]
     },
@@ -5568,7 +5610,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 105
+          "line": 73
         }
       ]
     },
@@ -5768,7 +5810,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 115
+          "line": 83
         }
       ]
     },
@@ -5781,7 +5823,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 452
+          "line": 420
         }
       ]
     },
@@ -5983,7 +6025,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 377
+          "line": 345
         }
       ]
     },
@@ -6314,7 +6356,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 321
+          "line": 289
         }
       ]
     },
@@ -6366,7 +6408,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 496
+          "line": 464
         }
       ]
     },
@@ -6471,7 +6513,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 281
+          "line": 249
         }
       ]
     },
@@ -6594,7 +6636,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 310
+          "line": 278
         }
       ]
     },
@@ -6620,7 +6662,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 500
+          "line": 468
         }
       ]
     },
@@ -6660,7 +6702,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 335
+          "line": 303
         }
       ]
     },
@@ -6758,7 +6800,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 129
+          "line": 97
         }
       ]
     },
@@ -6865,7 +6907,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 142
+          "line": 110
         }
       ]
     },
@@ -7096,6 +7138,19 @@
       ]
     },
     {
+      "id": "edge:2ca3bbe28b790a1c",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/backend/database.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.py",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:2d4362c95d432f9e",
       "relation": "INSTANTIATES",
       "from": "symbol:utils/common/Logger.ts#logger",
@@ -7143,7 +7198,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 291
+          "line": 259
         }
       ]
     },
@@ -7169,7 +7224,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 199
+          "line": 167
         }
       ]
     },
@@ -7248,7 +7303,20 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 480
+          "line": 448
+        }
+      ]
+    },
+    {
+      "id": "edge:307b33c55353cdd2",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/database.py",
+      "to": "symbol:app/backend/database.py#save_database",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.py",
+          "line": 79
         }
       ]
     },
@@ -7387,7 +7455,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 207
+          "line": 175
         }
       ]
     },
@@ -7480,7 +7548,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 330
+          "line": 298
         }
       ]
     },
@@ -7586,7 +7654,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 359
+          "line": 327
         }
       ]
     },
@@ -7599,7 +7667,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 449
+          "line": 417
         }
       ]
     },
@@ -7692,7 +7760,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 82
+          "line": 62
         }
       ]
     },
@@ -7705,7 +7773,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 323
+          "line": 291
         }
       ]
     },
@@ -7918,7 +7986,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 216
+          "line": 184
         }
       ]
     },
@@ -8173,7 +8241,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 399
+          "line": 367
         }
       ]
     },
@@ -8200,19 +8268,6 @@
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 184
-        }
-      ]
-    },
-    {
-      "id": "edge:4cb4cae2831a8c11",
-      "relation": "CONTAINS",
-      "from": "file:app/backend/main.py",
-      "to": "symbol:app/backend/main.py#normalize_db",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/main.py",
-          "line": 66
         }
       ]
     },
@@ -8304,7 +8359,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 317
+          "line": 285
         }
       ]
     },
@@ -8423,7 +8478,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 133
+          "line": 101
         }
       ]
     },
@@ -8602,23 +8657,6 @@
       ]
     },
     {
-      "id": "edge:552ea07be40d8876",
-      "relation": "USES_PERSISTENCE",
-      "from": "symbol:app/backend/main.py#load_db",
-      "to": "symbol:app/backend/main.py#save_db",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/main.py",
-          "line": 84
-        },
-        {
-          "path": "app/backend/main.py",
-          "line": 89
-        }
-      ]
-    },
-    {
       "id": "edge:558475486a792ba8",
       "relation": "CONTAINS",
       "from": "file:scripts/queryKnowledge.mjs",
@@ -8640,7 +8678,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 406
+          "line": 374
         }
       ]
     },
@@ -8694,7 +8732,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 215
+          "line": 183
         }
       ]
     },
@@ -8735,7 +8773,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 358
+          "line": 326
         }
       ]
     },
@@ -8815,7 +8853,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 110
+          "line": 78
         }
       ]
     },
@@ -8912,7 +8950,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 281
+          "line": 249
         }
       ]
     },
@@ -9071,7 +9109,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 353
+          "line": 321
         }
       ]
     },
@@ -9136,7 +9174,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 295
+          "line": 263
         }
       ]
     },
@@ -9163,7 +9201,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 233
+          "line": 201
         }
       ]
     },
@@ -9349,7 +9387,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 508
+          "line": 476
         }
       ]
     },
@@ -9481,7 +9519,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 454
+          "line": 422
         }
       ]
     },
@@ -9508,7 +9546,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 505
+          "line": 473
         }
       ]
     },
@@ -9542,7 +9580,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 326
+          "line": 294
         }
       ]
     },
@@ -9621,7 +9659,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 232
+          "line": 200
         }
       ]
     },
@@ -9648,7 +9686,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 335
+          "line": 303
         }
       ]
     },
@@ -9728,7 +9766,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 378
+          "line": 346
         }
       ]
     },
@@ -9741,7 +9779,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 506
+          "line": 474
         }
       ]
     },
@@ -9806,7 +9844,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 345
+          "line": 313
         }
       ]
     },
@@ -10023,6 +10061,19 @@
       ]
     },
     {
+      "id": "edge:7a37953a8a5642a5",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/database.py",
+      "to": "symbol:app/backend/database.py#load_database",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.py",
+          "line": 42
+        }
+      ]
+    },
+    {
       "id": "edge:7a9907e4853541dd",
       "relation": "CONTAINS",
       "from": "repository:playwright-pom-agent-skills",
@@ -10085,7 +10136,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 494
+          "line": 462
         }
       ]
     },
@@ -10257,7 +10308,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 398
+          "line": 366
         }
       ]
     },
@@ -10298,19 +10349,6 @@
           "path": "playwright.config.ts",
           "line": 3,
           "detail": "@api/services/BaseApiService"
-        }
-      ]
-    },
-    {
-      "id": "edge:85a871231c8092c8",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/backend/database.json",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/database.json",
-          "line": 1
         }
       ]
     },
@@ -10430,7 +10468,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 488
+          "line": 456
         }
       ]
     },
@@ -10443,7 +10481,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 280
+          "line": 248
         }
       ]
     },
@@ -10510,7 +10548,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 168
+          "line": 136
         }
       ]
     },
@@ -10550,7 +10588,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 504
+          "line": 472
         }
       ]
     },
@@ -10721,7 +10759,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 93
+          "line": 66
         }
       ]
     },
@@ -10747,7 +10785,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 150
+          "line": 118
         }
       ]
     },
@@ -10760,7 +10798,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 292
+          "line": 260
         }
       ]
     },
@@ -10800,7 +10838,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 338
+          "line": 306
         }
       ]
     },
@@ -10839,7 +10877,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 313
+          "line": 281
         }
       ]
     },
@@ -10852,7 +10890,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 492
+          "line": 460
         }
       ]
     },
@@ -11053,7 +11091,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 299
+          "line": 267
         }
       ]
     },
@@ -11107,7 +11145,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 334
+          "line": 302
         }
       ]
     },
@@ -11244,6 +11282,19 @@
       ]
     },
     {
+      "id": "edge:9badc59173a39925",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/database.py",
+      "to": "symbol:app/backend/database.py#initialize_database",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.py",
+          "line": 36
+        }
+      ]
+    },
+    {
       "id": "edge:9c0e704935bde2ad",
       "relation": "CONTAINS",
       "from": "file:api/services/AuthService.ts",
@@ -11291,7 +11342,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 448
+          "line": 416
         }
       ]
     },
@@ -11567,7 +11618,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 366
+          "line": 334
         }
       ]
     },
@@ -12026,7 +12077,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 184
+          "line": 152
         }
       ]
     },
@@ -12039,7 +12090,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 350
+          "line": 318
         }
       ]
     },
@@ -12264,7 +12315,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 193
+          "line": 161
         }
       ]
     },
@@ -12448,7 +12499,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 38,
+          "line": 37,
           "detail": "app/backend/models.py"
         }
       ]
@@ -12558,7 +12609,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 208
+          "line": 176
         }
       ]
     },
@@ -12612,6 +12663,19 @@
         {
           "path": "utils/common/Waits.ts",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:c406b9397b2a506b",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/database.py",
+      "to": "symbol:app/backend/database.py#_connect",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.py",
+          "line": 29
         }
       ]
     },
@@ -12934,7 +12998,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 336
+          "line": 304
         }
       ]
     },
@@ -13038,7 +13102,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 350
+          "line": 318
         }
       ]
     },
@@ -13223,7 +13287,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 298
+          "line": 266
         }
       ]
     },
@@ -13592,7 +13656,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 318
+          "line": 286
         }
       ]
     },
@@ -13637,6 +13701,19 @@
       ]
     },
     {
+      "id": "edge:e0442976a76a383b",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/database.py",
+      "to": "symbol:app/backend/database.py#_replace_data",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.py",
+          "line": 84
+        }
+      ]
+    },
+    {
       "id": "edge:e0de448852abeff9",
       "relation": "USES_FIXTURE",
       "from": "file:ui/specs/viewer-rbac.spec.ts",
@@ -13659,19 +13736,6 @@
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 79
-        }
-      ]
-    },
-    {
-      "id": "edge:e143161fba12e275",
-      "relation": "CONTAINS",
-      "from": "file:app/backend/main.py",
-      "to": "symbol:app/backend/main.py#_seed_data",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/main.py",
-          "line": 62
         }
       ]
     },
@@ -13712,7 +13776,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 505
+          "line": 473
         }
       ]
     },
@@ -13738,7 +13802,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 198
+          "line": 166
         }
       ]
     },
@@ -13857,7 +13921,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 349
+          "line": 317
         }
       ]
     },
@@ -13870,7 +13934,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 515
+          "line": 483
         }
       ]
     },
@@ -13883,7 +13947,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 284
+          "line": 252
         }
       ]
     },
@@ -13896,7 +13960,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 292
+          "line": 260
         }
       ]
     },
@@ -14056,7 +14120,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 300
+          "line": 268
         }
       ]
     },
@@ -14149,7 +14213,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 299
+          "line": 267
         }
       ]
     },
@@ -14229,7 +14293,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 487
+          "line": 455
         }
       ]
     },
@@ -14439,7 +14503,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 21,
+          "line": 20,
           "detail": "app/backend/auth.py"
         }
       ]
@@ -14578,7 +14642,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 122
+          "line": 90
         }
       ]
     },
@@ -14632,7 +14696,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 385
+          "line": 353
         }
       ]
     },
@@ -14698,7 +14762,7 @@
       "evidence": [
         {
           "path": "app/backend/main.py",
-          "line": 194
+          "line": 162
         }
       ]
     },
