@@ -10,3 +10,6 @@ node_modules/
 
 /.auth/
 /.eslintcache
+
+**/__pycache__/
+**/*.tsbuildinfo
