@@ -1,4 +1,5 @@
 import { defineConfig, devices } from "@playwright/test";
+import { resolve } from "node:path";
 import { BaseApiService } from "@api/services/BaseApiService";
 import config from "@config/test-config.json";
 import { BasePage } from "@pages/BasePage";
@@ -6,6 +7,18 @@ import { timeouts } from "@utils/common/Waits";
 
 const uiBaseUrl = config.BASE_URLS.UI;
 const apiBaseUrl = config.BASE_URLS.API;
+const uiUrl = new URL(uiBaseUrl);
+const apiUrl = new URL(apiBaseUrl);
+const startLocalServers = process.env.PLAYWRIGHT_SKIP_WEBSERVER !== "1";
+
+if (startLocalServers && (!uiUrl.port || !apiUrl.port)) {
+  throw new Error("Local UI and API base URLs must include explicit ports.");
+}
+
+const appRoot = resolve(__dirname, process.env.PLAYWRIGHT_APP_ROOT ?? "../playwright-practice-app");
+const pythonExecutable =
+  process.platform === "win32" ? ".venv\\Scripts\\python.exe" : ".venv/bin/python";
+const reuseExistingServer = !process.env.CI;
 
 export default defineConfig({
   testDir: ".",
@@ -57,20 +70,28 @@ export default defineConfig({
       },
     },
   ],
-  webServer: [
-    {
-      command: ".venv\\Scripts\\python -m uvicorn main:app --host 127.0.0.1 --port 8000",
-      cwd: "../backend",
-      url: `${apiBaseUrl}${BaseApiService.routes.health}`,
-      reuseExistingServer: true,
-      timeout: timeouts.apiServerStartup,
-    },
-    {
-      command: "npm run dev -- --host 127.0.0.1 --strictPort --port 5173",
-      cwd: "../frontend",
-      url: `${uiBaseUrl}${BasePage.routes.login}`,
-      reuseExistingServer: true,
-      timeout: timeouts.uiServerStartup,
-    },
-  ],
+  webServer: startLocalServers
+    ? [
+        {
+          command: `${pythonExecutable} -m uvicorn main:app --host ${apiUrl.hostname} --port ${apiUrl.port}`,
+          cwd: resolve(appRoot, "backend"),
+          env: {
+            CORS_ALLOWED_ORIGINS: uiBaseUrl,
+          },
+          url: `${apiBaseUrl}${BaseApiService.routes.health}`,
+          reuseExistingServer,
+          timeout: timeouts.apiServerStartup,
+        },
+        {
+          command: `node ./node_modules/vite/bin/vite.js --host ${uiUrl.hostname} --strictPort --port ${uiUrl.port}`,
+          cwd: resolve(appRoot, "frontend"),
+          env: {
+            VITE_API_BASE_URL: apiBaseUrl,
+          },
+          url: `${uiBaseUrl}${BasePage.routes.login}`,
+          reuseExistingServer,
+          timeout: timeouts.uiServerStartup,
+        },
+      ]
+    : undefined,
 });

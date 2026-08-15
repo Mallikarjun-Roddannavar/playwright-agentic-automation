@@ -16,6 +16,12 @@ export class LoginPage extends BasePage {
     return this;
   }
 
+  async gotoProtectedHome(): Promise<this> {
+    await this.gotoRoute(LoginPage.routes.home);
+    await this.waitForPageLoad();
+    return this;
+  }
+
   async login(username: string, password: string): Promise<HomePage> {
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);

@@ -27,4 +27,26 @@ test.describe("Login", () => {
     await loginPage.loginExpectingFailure("bad-user", "bad-password");
     await expect(loginPage.errorMessage).toBeVisible();
   });
+
+  test("expired stored session redirects to login", async ({ page }) => {
+    await page.addInitScript(() => {
+      const encoded = (value: object) =>
+        btoa(JSON.stringify(value)).replace(/=/g, "").replace(/\+/g, "-").replace(/\//g, "_");
+      const token = `${encoded({ alg: "none", typ: "JWT" })}.${encoded({
+        sub: "admin",
+        role: "admin",
+        exp: 1,
+        iat: 1,
+        auth_source: "password",
+      })}.expired`;
+      localStorage.setItem(
+        "playwright_practice_auth_user",
+        JSON.stringify({ username: "admin", role: "admin", accessToken: token })
+      );
+    });
+
+    const loginPage = new LoginPage(page);
+    await loginPage.gotoProtectedHome();
+    await expect(loginPage.loginForm).toBeVisible();
+  });
 });

@@ -7,7 +7,10 @@ function escapeRegExp(value: string): string {
 }
 
 export class FolderFilesPage extends BasePage {
+  readonly title: Locator = this.page.getByTestId("files-title");
   readonly uploadActionButton: Locator = this.page.getByTestId("files-upload-action-btn");
+  readonly downloadAllButton: Locator = this.page.getByTestId("files-download-all-btn");
+  readonly bulkDeleteButton: Locator = this.page.getByTestId("files-bulk-delete-btn");
   readonly uploadFileInput: Locator = this.page.getByTestId("upload-file-input");
   readonly uploadFileButton: Locator = this.page.getByTestId("upload-file-btn");
   readonly uploadSuccessToast: Locator = this.page
@@ -17,11 +20,11 @@ export class FolderFilesPage extends BasePage {
 
   async waitForPageLoad(): Promise<void> {
     this.logger.info("Waiting for page ready state", {
-      name: "files-upload-action-btn",
+      name: "files-title",
       timeout: FolderFilesPage.waits.MEDIUM,
     });
-    await this.uploadActionButton.waitFor({ timeout: FolderFilesPage.waits.MEDIUM });
-    this.logger.info("Page ready", { name: "files-upload-action-btn" });
+    await this.title.waitFor({ timeout: FolderFilesPage.waits.MEDIUM });
+    this.logger.info("Page ready", { name: "files-title" });
   }
 
   uploadedFileName(name: string): Locator {

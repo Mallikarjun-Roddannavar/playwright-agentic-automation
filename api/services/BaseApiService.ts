@@ -8,6 +8,7 @@ export class BaseApiService {
     token: "/token",
     folders: "/folders",
     folder: (folderId: string) => `/folders/${folderId}`,
+    folderFiles: (folderId: string) => `/folders/${folderId}/files`,
   } as const;
 
   protected readonly logger: Logger;

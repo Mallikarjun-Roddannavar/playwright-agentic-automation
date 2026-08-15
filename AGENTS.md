@@ -10,9 +10,10 @@ Maintain this Playwright + TypeScript framework for UI and API automation practi
 
 Use these local skills when their scope matches the task:
 
-- `playwright-pom-agent-skills-ui-pom` for `ui/pages`, `ui/specs`, and UI navigation/page-object changes
-- `playwright-pom-agent-skills-api-workflow` for `api/services`, `api/specs`, `utils/fixtures/TestFixtures.ts`, and auth/API session work
-- `playwright-pom-agent-skills-quality-tooling` for `playwright.config.ts`, linting, formatting, typechecking, logging, waits, reporting, and README quality-tooling updates
+- `pw-ui-pom` for `ui/pages`, `ui/specs`, and UI navigation/page-object changes
+- `pw-api-pom` for `api/services`, `api/specs`, `utils/fixtures/TestFixtures.ts`, and auth/API session work
+- `pw-framework-tooling` for `playwright.config.ts`, linting, formatting, typechecking, logging, waits, reporting, and README quality-tooling updates
+- `codebase-second-brain` for persistent codebase discovery, OKF knowledge updates, AST graph queries, and Obsidian-ready knowledge navigation
 
 ## Framework Conventions
 
@@ -99,6 +100,7 @@ Use these local skills when their scope matches the task:
 After meaningful changes, prefer validating with the smallest relevant command set:
 
 - naming: `node ./scripts/checkNamingConventions.mjs`
+- knowledge (when indexed code, configuration, scripts, or `knowledge/` changes): `node ./scripts/buildKnowledge.mjs --check && node ./scripts/validateKnowledge.mjs`
 - lint: `./node_modules/.bin/eslint.cmd .`
 - typecheck: `./node_modules/.bin/tsc.cmd --noEmit`
 - format check: `./node_modules/.bin/prettier.cmd . --check`

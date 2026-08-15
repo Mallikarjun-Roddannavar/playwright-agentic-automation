@@ -11,6 +11,7 @@ export class FoldersPage extends BasePage {
   readonly title: Locator = this.page.getByTestId("folders-title");
   readonly refreshButton: Locator = this.page.getByTestId("folders-refresh-btn");
   readonly newFolderButton: Locator = this.page.getByTestId("new-folder-btn");
+  readonly bulkDeleteButton: Locator = this.page.getByTestId("folders-bulk-delete-btn");
   readonly createFolderInput: Locator = this.page.getByTestId("create-folder-input");
   readonly createFolderSubmit: Locator = this.page.getByTestId("create-folder-submit");
 
