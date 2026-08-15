@@ -4,7 +4,7 @@ Playwright + TypeScript automation framework for UI and API testing with page ob
 
 ## What This Repo Contains
 
-This repository is the automation framework only.
+This repository is a full-stack Playwright learning lab: it contains the practice application, the automation framework, and the agent skills used to understand and maintain both.
 
 It provides:
 
@@ -14,27 +14,31 @@ It provides:
 - linting, formatting, typechecking, reporting, and naming checks
 - local `AGENTS.md` and `.agents/skills/` guidance for framework-aligned changes
 
-## Recommended Repository Layout
+## Repository Layout
 
-Keep the application and automation framework in separate repositories, checked out as siblings:
+The practice application and automation framework live in this single learning repository:
 
 ```text
-workspace/
-  playwright-practice-app/
+playwright-pom-agent-skills/
+  .agents/skills/
+  app/
     backend/
     frontend/
-  playwright-pom-agent-skills/
+    manual_test_cases/
+  api/
+  ui/
+  utils/
+  knowledge/
+  playwright.config.ts
 ```
-
-This keeps application deployment independent from test tooling while allowing Playwright to own the local test lifecycle. A Git submodule is not required; in CI, check out both repositories and pin the application revision in the workflow.
 
 ## Prerequisites
 
-Install each repository's dependencies once:
+Install the application and automation dependencies once:
 
 ```bash
 # Application backend
-cd ../playwright-practice-app/backend
+cd app/backend
 python -m venv .venv
 # Windows PowerShell: .venv\Scripts\Activate.ps1
 # macOS/Linux: source .venv/bin/activate
@@ -45,7 +49,7 @@ cd ../frontend
 npm install
 
 # Automation framework
-cd ../../playwright-pom-agent-skills
+cd ../..
 npm install
 npm run install:browsers
 ```
@@ -110,21 +114,21 @@ If the VS Code Playwright extension does not start the configured web servers au
 Terminal 1 (backend):
 
 ```powershell
-cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-practice-app\backend
+cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-pom-agent-skills\app\backend
 .\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8001
 ```
 
 Terminal 2 (frontend):
 
 ```powershell
-cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-practice-app\frontend
+cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-pom-agent-skills\app\frontend
 $env:VITE_API_BASE_URL = "http://127.0.0.1:8001"
 npm run dev -- --host 127.0.0.1 --port 5174
 ```
 
 Keep both terminals running, then run the tests from the Playwright VS Code extension.
 
-The default sibling application checkout is `../playwright-practice-app`. If your repositories are elsewhere, set an absolute or relative application root before running tests:
+The default application root is `app`. If you use a different application checkout, set an absolute or relative application root before running tests:
 
 ```powershell
 # Windows PowerShell

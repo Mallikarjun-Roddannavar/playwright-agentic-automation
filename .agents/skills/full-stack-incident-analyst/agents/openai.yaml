@@ -1,0 +1,4 @@
+interface:
+  display_name: "Full-Stack Incident Analyst"
+  short_description: "Analyze and fix full-stack incidents safely"
+  default_prompt: "Use $full-stack-incident-analyst to investigate this incident from local evidence and recommend or implement a verified fix."

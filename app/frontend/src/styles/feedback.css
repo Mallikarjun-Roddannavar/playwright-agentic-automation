@@ -1,0 +1,270 @@
+/* Shared feedback surfaces */
+.app-overlay {
+  background:
+    radial-gradient(circle at top, color-mix(in srgb, var(--app-accent) 14%, transparent 86%), transparent 42%),
+    linear-gradient(180deg, color-mix(in srgb, var(--app-overlay) 84%, transparent 16%), color-mix(in srgb, var(--app-overlay) 97%, transparent 3%));
+  backdrop-filter: blur(16px) saturate(125%);
+  -webkit-backdrop-filter: blur(16px) saturate(125%);
+}
+
+.app-dialog-panel {
+  position: relative;
+  overflow: hidden;
+  width: min(100%, 32rem);
+  border-radius: 1.5rem;
+  padding: 1.25rem;
+  border: 1px solid color-mix(in srgb, var(--app-border-strong) 82%, rgba(255, 255, 255, 0.08) 18%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-panel) 94%, rgba(255, 255, 255, 0.04) 6%) 0%, color-mix(in srgb, var(--app-panel-strong) 98%, rgba(5, 10, 16, 0.2) 2%) 100%);
+  box-shadow:
+    var(--app-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 0 0 1px color-mix(in srgb, var(--app-accent) 10%, transparent 90%);
+}
+
+.app-dialog-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent) 12%, transparent 88%), transparent 34%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 40%);
+}
+
+.app-dialog-panel > * {
+  position: relative;
+  z-index: 1;
+}
+
+.app-alert {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  border: 1px solid color-mix(in srgb, var(--app-border) 70%, transparent 30%);
+  padding: 0.9rem 1rem;
+  font-size: 0.95rem;
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-panel) 90%, transparent 10%), color-mix(in srgb, var(--app-panel-strong) 95%, transparent 5%));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 14px 32px rgba(0, 0, 0, 0.14);
+}
+
+.app-alert::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--app-accent), color-mix(in srgb, var(--app-accent-strong) 60%, transparent 40%));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--app-accent) 40%, transparent 60%);
+}
+
+.app-alert-danger {
+  border-color: color-mix(in srgb, var(--app-danger) 30%, transparent 70%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-danger-soft) 72%, transparent 28%), color-mix(in srgb, var(--app-panel-strong) 92%, transparent 8%));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 16px 34px color-mix(in srgb, var(--app-danger) 14%, transparent 86%);
+}
+
+.app-alert-danger::before {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--app-danger) 94%, white 6%), color-mix(in srgb, var(--app-danger-hover) 75%, transparent 25%));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--app-danger) 35%, transparent 65%);
+}
+
+.dark .app-alert-danger {
+  color: #ffd6c4;
+}
+
+.Toastify__toast-container {
+  width: min(92vw, 25rem);
+}
+
+.Toastify__toast {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  border-color: color-mix(in srgb, var(--app-border-strong) 82%, rgba(255, 255, 255, 0.08) 18%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-panel) 95%, rgba(255, 255, 255, 0.03) 5%) 0%, color-mix(in srgb, var(--app-panel-strong) 98%, rgba(5, 10, 16, 0.2) 2%) 100%);
+  box-shadow:
+    var(--app-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 0 0 1px color-mix(in srgb, var(--app-accent) 8%, transparent 92%);
+}
+
+.Toastify__toast::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent) 14%, transparent 86%), transparent 32%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 42%);
+}
+
+.Toastify__toast::after {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  bottom: 0.75rem;
+  left: 0.38rem;
+  width: 4px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--app-accent), color-mix(in srgb, var(--app-accent-strong) 72%, transparent 28%));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--app-accent) 18%, transparent 82%),
+    0 0 18px color-mix(in srgb, var(--app-accent) 36%, transparent 64%);
+}
+
+.Toastify__toast .Toastify__toast-body,
+.Toastify__toast .Toastify__close-button {
+  position: relative;
+  z-index: 1;
+}
+
+.Toastify__toast .Toastify__toast-body {
+  gap: 0.75rem;
+  padding: 0.15rem 0 0.15rem 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.45;
+  color: var(--app-text);
+}
+
+.Toastify__toast .Toastify__close-button {
+  color: color-mix(in srgb, var(--app-text) 76%, transparent 24%);
+  opacity: 1;
+}
+
+.Toastify__toast .Toastify__close-button:hover {
+  color: var(--app-text);
+}
+
+.Toastify__progress-bar {
+  height: 3px;
+  background: linear-gradient(90deg, var(--app-accent), var(--app-accent-strong));
+  box-shadow: 0 0 18px color-mix(in srgb, var(--app-accent) 32%, transparent 68%);
+}
+
+.Toastify__toast--success {
+  border-color: color-mix(in srgb, var(--app-accent) 26%, transparent 74%);
+  box-shadow:
+    var(--app-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 0 0 1px color-mix(in srgb, var(--app-accent) 18%, transparent 82%),
+    0 0 30px color-mix(in srgb, var(--app-accent) 18%, transparent 82%);
+}
+
+.Toastify__toast--success::before {
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent) 22%, transparent 78%), transparent 30%),
+    linear-gradient(135deg, color-mix(in srgb, var(--app-accent-soft) 56%, transparent 44%), transparent 44%);
+}
+
+.Toastify__toast--success::after {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--app-accent) 94%, white 6%), color-mix(in srgb, var(--app-accent-strong) 78%, transparent 22%));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--app-accent) 24%, transparent 76%),
+    0 0 22px color-mix(in srgb, var(--app-accent) 42%, transparent 58%);
+}
+
+.Toastify__toast--error {
+  border-color: color-mix(in srgb, var(--app-danger) 30%, transparent 70%);
+  background:
+    linear-gradient(180deg, color-mix(in srgb, var(--app-danger-soft) 58%, transparent 42%), color-mix(in srgb, var(--app-panel-strong) 94%, transparent 6%));
+  box-shadow:
+    var(--app-shadow),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    0 0 0 1px color-mix(in srgb, var(--app-danger) 12%, transparent 88%),
+    0 0 30px color-mix(in srgb, var(--app-danger) 14%, transparent 86%);
+}
+
+.Toastify__toast--error::before {
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--app-danger) 18%, transparent 82%), transparent 30%),
+    linear-gradient(135deg, color-mix(in srgb, var(--app-danger-soft) 72%, transparent 28%), transparent 42%);
+}
+
+.Toastify__toast--error::after {
+  background: linear-gradient(180deg, color-mix(in srgb, var(--app-danger) 94%, white 6%), color-mix(in srgb, var(--app-danger-hover) 76%, transparent 24%));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--app-danger) 22%, transparent 78%),
+    0 0 22px color-mix(in srgb, var(--app-danger) 38%, transparent 62%);
+}
+
+.Toastify__toast--warning::after {
+  background: linear-gradient(180deg, #fbbf24, #f59e0b);
+  box-shadow:
+    0 0 0 1px rgba(251, 191, 36, 0.22),
+    0 0 18px rgba(251, 191, 36, 0.34);
+}
+
+.Toastify__toast .Toastify__toast-icon {
+  position: relative;
+  z-index: 1;
+  width: 2.25rem;
+  min-width: 2.25rem;
+  height: 2.25rem;
+  margin-inline-end: 0.15rem;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 18px rgba(15, 118, 110, 0.12);
+}
+
+.Toastify__toast .Toastify__toast-icon svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.12));
+}
+
+.Toastify__toast--success .Toastify__toast-icon {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.18), transparent 56%),
+    linear-gradient(180deg, color-mix(in srgb, var(--app-accent) 18%, white 82%), color-mix(in srgb, var(--app-accent-soft) 86%, transparent 14%));
+  color: var(--app-accent-strong);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 0 0 1px color-mix(in srgb, var(--app-accent) 18%, transparent 82%),
+    0 0 20px color-mix(in srgb, var(--app-accent) 22%, transparent 78%);
+}
+
+.Toastify__toast--success .Toastify__toast-body {
+  gap: 0.82rem;
+  letter-spacing: -0.01em;
+}
+
+.Toastify__toast--success .Toastify__toast-body::first-line {
+  font-weight: 700;
+}
+
+.Toastify__toast--error .Toastify__toast-icon {
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.12), transparent 56%),
+    linear-gradient(180deg, color-mix(in srgb, var(--app-danger) 16%, white 84%), color-mix(in srgb, var(--app-danger-soft) 88%, transparent 12%));
+  color: var(--app-danger-hover);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 0 1px color-mix(in srgb, var(--app-danger) 18%, transparent 82%),
+    0 0 20px color-mix(in srgb, var(--app-danger) 24%, transparent 76%);
+}
+
+.Toastify__toast--error .Toastify__toast-body {
+  gap: 0.86rem;
+  letter-spacing: -0.01em;
+}
+
+.Toastify__toast--error .Toastify__toast-body::first-line {
+  font-weight: 700;
+}
+
+.Toastify__toast--error .Toastify__close-button {
+  color: color-mix(in srgb, var(--app-danger-hover) 72%, var(--app-text) 28%);
+}

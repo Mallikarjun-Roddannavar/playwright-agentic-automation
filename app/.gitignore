@@ -1,0 +1,11 @@
+playwright-pom-agent-skills/
+**/node_modules/
+**/.venv/
+**/__pycache__/
+**/dist/
+**/build/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.idea/
+**/.vscode/
+**/database.json
