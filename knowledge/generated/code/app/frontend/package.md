@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: package
-description: Source module extracted from app/frontend/package.json by deterministic static analysis.
+description: Application frontend extracted from app/frontend/package.json by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/package.json
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - json
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/package.json
 source_sha256: e66b4348aef8e61af5142b989fcf25909d9039bee9cbc6f30075d81ac13b8f2e
 code_graph_id: file:app/frontend/package.json
 analysis_scope: static-ast
-fact_sha256: 46624ef37c26ffa783f386d98cb084edc932629d1af67e47f5e9edfec7fa3d7b
+fact_sha256: 1ed8ec69797bbe1e8796bb9931150c94952d4898d445a69d301185b2723bdd9c
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/package.json by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/package.json by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

@@ -4,11 +4,11 @@
   "title": "playwright-pom-agent-skills static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "09a541c99086ce1ff39bb1b6611a9b472bdb2d115dbc1b5bb98ae74c0e0a7185",
+  "sourceDigest": "e94d31853eb6944479a076b2c42dfe78b9f54379c79ec2c3100d7186d18ad858",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-15T11:47:52.662Z",
-    "parser": "TypeScript 5.9.3"
+    "at": "2026-08-15T12:03:30.324Z",
+    "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
     {
@@ -47,124 +47,139 @@
       "category": "api-spec"
     },
     {
+      "path": "app/backend/auth.py",
+      "sha256": "23958d497a360ff63b4645ebed50c4de062d1b4e3b758fe96325b1fd6396f8a0",
+      "category": "backend"
+    },
+    {
       "path": "app/backend/database.json",
       "sha256": "703e37271b7a9fde34d98d7aeb13b16a47f4b286b8429e8f72936a00389f96b0",
-      "category": "source"
+      "category": "backend"
+    },
+    {
+      "path": "app/backend/main.py",
+      "sha256": "e9f5641d7bba31d76973be7103d36e75293c447b74522121797351796d1bee0a",
+      "category": "backend"
+    },
+    {
+      "path": "app/backend/models.py",
+      "sha256": "7d7d0f071050a6765a3c8a1aa3646bbdf5d0baffdc2a48cb4fc8ba84b009f0b3",
+      "category": "backend"
     },
     {
       "path": "app/frontend/package-lock.json",
       "sha256": "301fd089af3bdfddc4aab425929b334d9442d142470afbfb6f6d64db06963ed1",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/package.json",
       "sha256": "e66b4348aef8e61af5142b989fcf25909d9039bee9cbc6f30075d81ac13b8f2e",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/postcss.config.js",
       "sha256": "9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/api.ts",
       "sha256": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/App.tsx",
       "sha256": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/AppLayout.tsx",
       "sha256": "d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/ConfirmDialog.tsx",
       "sha256": "76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/Modal.tsx",
       "sha256": "06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/Sidebar.tsx",
       "sha256": "034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/ThemeToggle.tsx",
       "sha256": "0063c7a65b7e4d3370c816bde5d56502e1f2c7091dd01a9f117d6030dd357cdc",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/context/AuthContext.tsx",
       "sha256": "43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/context/ThemeContext.tsx",
       "sha256": "54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/main.tsx",
       "sha256": "948c6c4e5dce049d0fd55f479d48510da97f0af12d1c4819b6cc3e5376b11976",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "sha256": "9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/FoldersPage.tsx",
       "sha256": "820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/HomePage.tsx",
       "sha256": "d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/LoginPage.tsx",
       "sha256": "9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
       "sha256": "4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
       "sha256": "5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/src/types.ts",
       "sha256": "62eff509fae0ced9704c7383f061632a3917d90342583bddfdb7ba03b93dca1a",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/tailwind.config.js",
       "sha256": "a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/tsconfig.json",
       "sha256": "23545a3ba4e3b1888bf30f3d7d90133ca559e3867d1e174a9aa191313afd2b2e",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/frontend/vite.config.ts",
       "sha256": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6",
-      "category": "source"
+      "category": "frontend"
     },
     {
       "path": "app/scripts/check-test-ids.js",
@@ -178,7 +193,7 @@
     },
     {
       "path": "eslint.config.mjs",
-      "sha256": "25775cfc28e9a80e7025d103dc594743dade69cb1ceb88894ace12fa40f375f4",
+      "sha256": "c82c0a3e7648473d0accbbc87034cdaa3ed874355af475086f2308132bd1166a",
       "category": "tooling"
     },
     {
@@ -203,7 +218,12 @@
     },
     {
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "sha256": "8e29641c778685d0974bea0aecb0006e3e88f8be1f988c08f346d799722cc878",
+      "sha256": "823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/knowledge/python_ast_adapter.py",
+      "sha256": "6ec36c4406995b1483b0f6d7145a13a08b77ccce6202cf58ca3ac23891212607",
       "category": "tooling"
     },
     {
@@ -383,26 +403,62 @@
       "sourceHash": "cdc605d447716f2c47f8bd695165aa82f22b568141c103b12ef19430fdee41f1"
     },
     {
+      "id": "file:app/backend/auth.py",
+      "kind": "file",
+      "label": "app/backend/auth.py",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "tags": [
+        "backend",
+        "py"
+      ],
+      "sourceHash": "23958d497a360ff63b4645ebed50c4de062d1b4e3b758fe96325b1fd6396f8a0"
+    },
+    {
       "id": "file:app/backend/database.json",
       "kind": "file",
       "label": "app/backend/database.json",
       "path": "app/backend/database.json",
-      "category": "source",
+      "category": "backend",
       "tags": [
-        "json",
-        "source"
+        "backend",
+        "json"
       ],
       "sourceHash": "703e37271b7a9fde34d98d7aeb13b16a47f4b286b8429e8f72936a00389f96b0"
+    },
+    {
+      "id": "file:app/backend/main.py",
+      "kind": "file",
+      "label": "app/backend/main.py",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "tags": [
+        "backend",
+        "py"
+      ],
+      "sourceHash": "e9f5641d7bba31d76973be7103d36e75293c447b74522121797351796d1bee0a"
+    },
+    {
+      "id": "file:app/backend/models.py",
+      "kind": "file",
+      "label": "app/backend/models.py",
+      "path": "app/backend/models.py",
+      "category": "backend",
+      "tags": [
+        "backend",
+        "py"
+      ],
+      "sourceHash": "7d7d0f071050a6765a3c8a1aa3646bbdf5d0baffdc2a48cb4fc8ba84b009f0b3"
     },
     {
       "id": "file:app/frontend/package-lock.json",
       "kind": "file",
       "label": "app/frontend/package-lock.json",
       "path": "app/frontend/package-lock.json",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "json",
-        "source"
+        "frontend",
+        "json"
       ],
       "sourceHash": "301fd089af3bdfddc4aab425929b334d9442d142470afbfb6f6d64db06963ed1"
     },
@@ -411,10 +467,10 @@
       "kind": "file",
       "label": "app/frontend/package.json",
       "path": "app/frontend/package.json",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "json",
-        "source"
+        "frontend",
+        "json"
       ],
       "sourceHash": "e66b4348aef8e61af5142b989fcf25909d9039bee9cbc6f30075d81ac13b8f2e"
     },
@@ -423,10 +479,10 @@
       "kind": "file",
       "label": "app/frontend/postcss.config.js",
       "path": "app/frontend/postcss.config.js",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "js",
-        "source"
+        "frontend",
+        "js"
       ],
       "sourceHash": "9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3"
     },
@@ -435,9 +491,9 @@
       "kind": "file",
       "label": "app/frontend/src/api.ts",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "ts"
       ],
       "sourceHash": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d"
@@ -447,9 +503,9 @@
       "kind": "file",
       "label": "app/frontend/src/App.tsx",
       "path": "app/frontend/src/App.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314"
@@ -459,9 +515,9 @@
       "kind": "file",
       "label": "app/frontend/src/components/AppLayout.tsx",
       "path": "app/frontend/src/components/AppLayout.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed"
@@ -471,9 +527,9 @@
       "kind": "file",
       "label": "app/frontend/src/components/ConfirmDialog.tsx",
       "path": "app/frontend/src/components/ConfirmDialog.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2"
@@ -483,9 +539,9 @@
       "kind": "file",
       "label": "app/frontend/src/components/Modal.tsx",
       "path": "app/frontend/src/components/Modal.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3"
@@ -495,9 +551,9 @@
       "kind": "file",
       "label": "app/frontend/src/components/Sidebar.tsx",
       "path": "app/frontend/src/components/Sidebar.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f"
@@ -507,9 +563,9 @@
       "kind": "file",
       "label": "app/frontend/src/components/ThemeToggle.tsx",
       "path": "app/frontend/src/components/ThemeToggle.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "0063c7a65b7e4d3370c816bde5d56502e1f2c7091dd01a9f117d6030dd357cdc"
@@ -519,9 +575,9 @@
       "kind": "file",
       "label": "app/frontend/src/context/AuthContext.tsx",
       "path": "app/frontend/src/context/AuthContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98"
@@ -531,9 +587,9 @@
       "kind": "file",
       "label": "app/frontend/src/context/ThemeContext.tsx",
       "path": "app/frontend/src/context/ThemeContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c"
@@ -543,9 +599,9 @@
       "kind": "file",
       "label": "app/frontend/src/main.tsx",
       "path": "app/frontend/src/main.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "948c6c4e5dce049d0fd55f479d48510da97f0af12d1c4819b6cc3e5376b11976"
@@ -555,9 +611,9 @@
       "kind": "file",
       "label": "app/frontend/src/pages/FilesPage.tsx",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7"
@@ -567,9 +623,9 @@
       "kind": "file",
       "label": "app/frontend/src/pages/FoldersPage.tsx",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf"
@@ -579,9 +635,9 @@
       "kind": "file",
       "label": "app/frontend/src/pages/HomePage.tsx",
       "path": "app/frontend/src/pages/HomePage.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc"
@@ -591,9 +647,9 @@
       "kind": "file",
       "label": "app/frontend/src/pages/LoginPage.tsx",
       "path": "app/frontend/src/pages/LoginPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2"
@@ -603,9 +659,9 @@
       "kind": "file",
       "label": "app/frontend/src/pages/OAuthCallbackPage.tsx",
       "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a"
@@ -615,9 +671,9 @@
       "kind": "file",
       "label": "app/frontend/src/pages/PreferencesPage.tsx",
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "tsx"
       ],
       "sourceHash": "5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7"
@@ -627,9 +683,9 @@
       "kind": "file",
       "label": "app/frontend/src/types.ts",
       "path": "app/frontend/src/types.ts",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "ts"
       ],
       "sourceHash": "62eff509fae0ced9704c7383f061632a3917d90342583bddfdb7ba03b93dca1a"
@@ -639,10 +695,10 @@
       "kind": "file",
       "label": "app/frontend/tailwind.config.js",
       "path": "app/frontend/tailwind.config.js",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "js",
-        "source"
+        "frontend",
+        "js"
       ],
       "sourceHash": "a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f"
     },
@@ -651,10 +707,10 @@
       "kind": "file",
       "label": "app/frontend/tsconfig.json",
       "path": "app/frontend/tsconfig.json",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "json",
-        "source"
+        "frontend",
+        "json"
       ],
       "sourceHash": "23545a3ba4e3b1888bf30f3d7d90133ca559e3867d1e174a9aa191313afd2b2e"
     },
@@ -663,9 +719,9 @@
       "kind": "file",
       "label": "app/frontend/vite.config.ts",
       "path": "app/frontend/vite.config.ts",
-      "category": "source",
+      "category": "frontend",
       "tags": [
-        "source",
+        "frontend",
         "ts"
       ],
       "sourceHash": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6"
@@ -704,7 +760,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "25775cfc28e9a80e7025d103dc594743dade69cb1ceb88894ace12fa40f375f4"
+      "sourceHash": "c82c0a3e7648473d0accbbc87034cdaa3ed874355af475086f2308132bd1166a"
     },
     {
       "id": "file:package.json",
@@ -764,7 +820,19 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "8e29641c778685d0974bea0aecb0006e3e88f8be1f988c08f346d799722cc878"
+      "sourceHash": "823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f"
+    },
+    {
+      "id": "file:scripts/knowledge/python_ast_adapter.py",
+      "kind": "file",
+      "label": "scripts/knowledge/python_ast_adapter.py",
+      "path": "scripts/knowledge/python_ast_adapter.py",
+      "category": "tooling",
+      "tags": [
+        "py",
+        "tooling"
+      ],
+      "sourceHash": "6ec36c4406995b1483b0f6d7145a13a08b77ccce6202cf58ca3ac23891212607"
     },
     {
       "id": "file:scripts/queryKnowledge.mjs",
@@ -1164,6 +1232,14 @@
       ]
     },
     {
+      "id": "package:node:child_process",
+      "kind": "node-builtin",
+      "label": "node:child_process",
+      "tags": [
+        "node-builtin"
+      ]
+    },
+    {
       "id": "package:node:crypto",
       "kind": "node-builtin",
       "label": "node:crypto",
@@ -1341,6 +1417,244 @@
       "startLine": 8,
       "tags": [
         "api-service",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#create_folder:POST",
+      "kind": "route",
+      "label": "POST /folders",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "create_folder:POST",
+      "startLine": 298,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#delete_file:DELETE",
+      "kind": "route",
+      "label": "DELETE /folders/{folder_id}/files/{file_id}",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "delete_file:DELETE",
+      "startLine": 504,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#delete_folder:DELETE",
+      "kind": "route",
+      "label": "DELETE /folders/{folder_id}",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "delete_folder:DELETE",
+      "startLine": 334,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#download_file:GET",
+      "kind": "route",
+      "label": "GET /folders/{folder_id}/files/{file_id}/download",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "download_file:GET",
+      "startLine": 377,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#download_files_zip:GET",
+      "kind": "route",
+      "label": "GET /folders/{folder_id}/files/download",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "download_files_zip:GET",
+      "startLine": 398,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#health:GET",
+      "kind": "route",
+      "label": "GET /health",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "health:GET",
+      "startLine": 193,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#issue_token:POST",
+      "kind": "route",
+      "label": "POST /token",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "issue_token:POST",
+      "startLine": 198,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#list_files:GET",
+      "kind": "route",
+      "label": "GET /folders/{folder_id}/files",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "list_files:GET",
+      "startLine": 349,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#list_folders:GET",
+      "kind": "route",
+      "label": "GET /folders",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "list_folders:GET",
+      "startLine": 291,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#login:POST",
+      "kind": "route",
+      "label": "POST /auth/login",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "login:POST",
+      "startLine": 207,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#oauth_callback:GET",
+      "kind": "route",
+      "label": "GET /auth/oauth/callback",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "oauth_callback:GET",
+      "startLine": 232,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#oauth_login:GET",
+      "kind": "route",
+      "label": "GET /auth/oauth/login",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "oauth_login:GET",
+      "startLine": 215,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#preview_file:GET",
+      "kind": "route",
+      "label": "GET /folders/{folder_id}/files/{file_id}/preview",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "preview_file:GET",
+      "startLine": 358,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#rename_file:PUT",
+      "kind": "route",
+      "label": "PUT /folders/{folder_id}/files/{file_id}",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "rename_file:PUT",
+      "startLine": 487,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#rename_folder:PUT",
+      "kind": "route",
+      "label": "PUT /folders/{folder_id}",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "rename_folder:PUT",
+      "startLine": 317,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#stats:GET",
+      "kind": "route",
+      "label": "GET /stats",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "stats:GET",
+      "startLine": 280,
+      "tags": [
+        "backend",
+        "python",
+        "route"
+      ]
+    },
+    {
+      "id": "route:app/backend/main.py#upload_file:POST",
+      "kind": "route",
+      "label": "POST /folders/{folder_id}/files",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "routeName": "upload_file:POST",
+      "startLine": 448,
+      "tags": [
+        "backend",
+        "python",
         "route"
       ]
     },
@@ -1565,16 +1879,604 @@
       ]
     },
     {
+      "id": "symbol:app/backend/auth.py#_now_utc",
+      "kind": "function",
+      "label": "_now_utc",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 57,
+      "endLine": 58,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#authenticate_user",
+      "kind": "function",
+      "label": "authenticate_user",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 65,
+      "endLine": 69,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#create_access_token",
+      "kind": "function",
+      "label": "create_access_token",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 72,
+      "endLine": 81,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#decode_access_token",
+      "kind": "function",
+      "label": "decode_access_token",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 84,
+      "endLine": 100,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#get_current_user",
+      "kind": "function",
+      "label": "get_current_user",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 103,
+      "endLine": 104,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#pop_and_validate_oauth_state",
+      "kind": "function",
+      "label": "pop_and_validate_oauth_state",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 137,
+      "endLine": 142,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#register_oauth_state",
+      "kind": "function",
+      "label": "register_oauth_state",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 122,
+      "endLine": 134,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#require_oauth_config",
+      "kind": "function",
+      "label": "require_oauth_config",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 107,
+      "endLine": 119,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#resolve_oauth_user_role",
+      "kind": "function",
+      "label": "resolve_oauth_user_role",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 145,
+      "endLine": 153,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/auth.py#verify_password",
+      "kind": "function",
+      "label": "verify_password",
+      "path": "app/backend/auth.py",
+      "category": "backend",
+      "startLine": 61,
+      "endLine": 62,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#_now_iso",
+      "kind": "function",
+      "label": "_now_iso",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 58,
+      "endLine": 59,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#_safe_upload_name",
+      "kind": "function",
+      "label": "_safe_upload_name",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 150,
+      "endLine": 156,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#_sanitize_download_name",
+      "kind": "function",
+      "label": "_sanitize_download_name",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 142,
+      "endLine": 147,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#_seed_data",
+      "kind": "function",
+      "label": "_seed_data",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 62,
+      "endLine": 63,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#allow_private_network_access",
+      "kind": "function",
+      "label": "allow_private_network_access",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 184,
+      "endLine": 190,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#create_folder",
+      "kind": "function",
+      "label": "create_folder",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 299,
+      "endLine": 314,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#delete_file",
+      "kind": "function",
+      "label": "delete_file",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 505,
+      "endLine": 516,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#delete_folder",
+      "kind": "function",
+      "label": "delete_folder",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 335,
+      "endLine": 346,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#download_file",
+      "kind": "function",
+      "label": "download_file",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 378,
+      "endLine": 395,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#download_files_zip",
+      "kind": "function",
+      "label": "download_files_zip",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 399,
+      "endLine": 445,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#ensure_unique_folder_name",
+      "kind": "function",
+      "label": "ensure_unique_folder_name",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 133,
+      "endLine": 139,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#find_file",
+      "kind": "function",
+      "label": "find_file",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 122,
+      "endLine": 126,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#find_folder",
+      "kind": "function",
+      "label": "find_folder",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 115,
+      "endLine": 119,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#get_allowed_origins",
+      "kind": "function",
+      "label": "get_allowed_origins",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 168,
+      "endLine": 170,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#health",
+      "kind": "function",
+      "label": "health",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 194,
+      "endLine": 195,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#issue_token",
+      "kind": "function",
+      "label": "issue_token",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 199,
+      "endLine": 204,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#list_files",
+      "kind": "function",
+      "label": "list_files",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 350,
+      "endLine": 355,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#list_folders",
+      "kind": "function",
+      "label": "list_folders",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 292,
+      "endLine": 295,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#load_db",
+      "kind": "function",
+      "label": "load_db",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 82,
+      "endLine": 90,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#login",
+      "kind": "function",
+      "label": "login",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 208,
+      "endLine": 212,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#normalize_db",
+      "kind": "function",
+      "label": "normalize_db",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 66,
+      "endLine": 79,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#normalize_folder_name",
+      "kind": "function",
+      "label": "normalize_folder_name",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 129,
+      "endLine": 130,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#oauth_callback",
+      "kind": "function",
+      "label": "oauth_callback",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 233,
+      "endLine": 277,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#oauth_login",
+      "kind": "function",
+      "label": "oauth_login",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 216,
+      "endLine": 229,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#preview_file",
+      "kind": "function",
+      "label": "preview_file",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 359,
+      "endLine": 374,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#rename_file",
+      "kind": "function",
+      "label": "rename_file",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 488,
+      "endLine": 501,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#rename_folder",
+      "kind": "function",
+      "label": "rename_folder",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 318,
+      "endLine": 331,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#require_admin",
+      "kind": "function",
+      "label": "require_admin",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 110,
+      "endLine": 112,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#require_editor_or_admin",
+      "kind": "function",
+      "label": "require_editor_or_admin",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 105,
+      "endLine": 107,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#save_db",
+      "kind": "function",
+      "label": "save_db",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 93,
+      "endLine": 102,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#stats",
+      "kind": "function",
+      "label": "stats",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 281,
+      "endLine": 288,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
+      "id": "symbol:app/backend/main.py#upload_file",
+      "kind": "function",
+      "label": "upload_file",
+      "path": "app/backend/main.py",
+      "category": "backend",
+      "startLine": 449,
+      "endLine": 484,
+      "tags": [
+        "backend",
+        "function",
+        "python"
+      ]
+    },
+    {
       "id": "symbol:app/frontend/src/api.ts#api",
       "kind": "variable",
       "label": "api",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 108,
       "endLine": 178,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "variable"
       ]
     },
@@ -1583,12 +2485,12 @@
       "kind": "variable",
       "label": "AUTH_SESSION_EXPIRED_EVENT",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 25,
       "endLine": 25,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "variable"
       ]
     },
@@ -1597,13 +2499,13 @@
       "kind": "function",
       "label": "decodeJwtPayload",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 49,
       "endLine": 58,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1611,12 +2513,12 @@
       "kind": "type",
       "label": "JwtClaims",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 17,
       "endLine": 23,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1625,13 +2527,13 @@
       "kind": "function",
       "label": "parseErrorDetail",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 28,
       "endLine": 47,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1639,13 +2541,13 @@
       "kind": "function",
       "label": "request",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 77,
       "endLine": 106,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1653,12 +2555,12 @@
       "kind": "type",
       "label": "Stats",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 7,
       "endLine": 10,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1667,12 +2569,12 @@
       "kind": "type",
       "label": "TokenResponse",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 12,
       "endLine": 15,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1681,13 +2583,13 @@
       "kind": "function",
       "label": "userFromAccessToken",
       "path": "app/frontend/src/api.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 60,
       "endLine": 75,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1695,13 +2597,13 @@
       "kind": "function",
       "label": "App",
       "path": "app/frontend/src/App.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 16,
       "endLine": 66,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1709,13 +2611,13 @@
       "kind": "function",
       "label": "PrivateRoute",
       "path": "app/frontend/src/App.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 11,
       "endLine": 14,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1723,13 +2625,13 @@
       "kind": "function",
       "label": "AppLayout",
       "path": "app/frontend/src/components/AppLayout.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 8,
       "endLine": 126,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1737,13 +2639,13 @@
       "kind": "function",
       "label": "ConfirmDialog",
       "path": "app/frontend/src/components/ConfirmDialog.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 10,
       "endLine": 71,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1751,12 +2653,12 @@
       "kind": "type",
       "label": "ConfirmDialogProps",
       "path": "app/frontend/src/components/ConfirmDialog.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 3,
       "endLine": 8,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1765,13 +2667,13 @@
       "kind": "function",
       "label": "Modal",
       "path": "app/frontend/src/components/Modal.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 11,
       "endLine": 67,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1779,12 +2681,12 @@
       "kind": "type",
       "label": "ModalProps",
       "path": "app/frontend/src/components/Modal.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 4,
       "endLine": 9,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1793,13 +2695,13 @@
       "kind": "function",
       "label": "Sidebar",
       "path": "app/frontend/src/components/Sidebar.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 45,
       "endLine": 112,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1807,12 +2709,12 @@
       "kind": "type",
       "label": "SidebarProps",
       "path": "app/frontend/src/components/Sidebar.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 3,
       "endLine": 6,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1821,13 +2723,13 @@
       "kind": "function",
       "label": "ThemeToggle",
       "path": "app/frontend/src/components/ThemeToggle.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 3,
       "endLine": 16,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1835,12 +2737,12 @@
       "kind": "type",
       "label": "AuthContextValue",
       "path": "app/frontend/src/context/AuthContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 7,
       "endLine": 14,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1849,13 +2751,13 @@
       "kind": "function",
       "label": "AuthProvider",
       "path": "app/frontend/src/context/AuthContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 39,
       "endLine": 71,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1863,13 +2765,13 @@
       "kind": "function",
       "label": "getStoredUser",
       "path": "app/frontend/src/context/AuthContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 20,
       "endLine": 33,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1877,13 +2779,13 @@
       "kind": "function",
       "label": "hasRole",
       "path": "app/frontend/src/context/AuthContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 35,
       "endLine": 37,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1891,13 +2793,13 @@
       "kind": "function",
       "label": "useAuth",
       "path": "app/frontend/src/context/AuthContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 73,
       "endLine": 79,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1905,13 +2807,13 @@
       "kind": "function",
       "label": "getInitialTheme",
       "path": "app/frontend/src/context/ThemeContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 16,
       "endLine": 22,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1919,12 +2821,12 @@
       "kind": "type",
       "label": "ThemeContextValue",
       "path": "app/frontend/src/context/ThemeContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 6,
       "endLine": 10,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1933,12 +2835,12 @@
       "kind": "type",
       "label": "ThemeMode",
       "path": "app/frontend/src/context/ThemeContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 4,
       "endLine": 4,
       "exported": true,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -1947,13 +2849,13 @@
       "kind": "function",
       "label": "ThemeProvider",
       "path": "app/frontend/src/context/ThemeContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 24,
       "endLine": 43,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1961,13 +2863,13 @@
       "kind": "function",
       "label": "useTheme",
       "path": "app/frontend/src/context/ThemeContext.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 45,
       "endLine": 51,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1975,13 +2877,13 @@
       "kind": "function",
       "label": "deleteFile",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 87,
       "endLine": 97,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -1989,13 +2891,13 @@
       "kind": "function",
       "label": "deleteSelectedFiles",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 99,
       "endLine": 110,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2003,13 +2905,13 @@
       "kind": "function",
       "label": "downloadFile",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 198,
       "endLine": 202,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2017,13 +2919,13 @@
       "kind": "function",
       "label": "downloadMultipleFiles",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 204,
       "endLine": 208,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2031,13 +2933,13 @@
       "kind": "function",
       "label": "ensureCardActionsVisible",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 112,
       "endLine": 136,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2045,13 +2947,13 @@
       "kind": "function",
       "label": "FilesPage",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 12,
       "endLine": 608,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2059,13 +2961,13 @@
       "kind": "function",
       "label": "handleFileCardPointerEnter",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 166,
       "endLine": 170,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2073,13 +2975,13 @@
       "kind": "function",
       "label": "handleFileCardPointerLeave",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 185,
       "endLine": 190,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2087,13 +2989,13 @@
       "kind": "function",
       "label": "handleFileCardPointerMove",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 172,
       "endLine": 183,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2101,13 +3003,13 @@
       "kind": "function",
       "label": "handleViewModeSelect",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 161,
       "endLine": 164,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2115,13 +3017,13 @@
       "kind": "function",
       "label": "previewFile",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 192,
       "endLine": 196,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2129,13 +3031,13 @@
       "kind": "function",
       "label": "refresh",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 33,
       "endLine": 48,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2143,13 +3045,13 @@
       "kind": "function",
       "label": "renameFile",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 74,
       "endLine": 85,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2157,13 +3059,13 @@
       "kind": "function",
       "label": "toggleAllFiles",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 153,
       "endLine": 159,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2171,13 +3073,13 @@
       "kind": "function",
       "label": "toggleFileSelection",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 138,
       "endLine": 151,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2185,13 +3087,13 @@
       "kind": "function",
       "label": "upload",
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 61,
       "endLine": 72,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2199,13 +3101,13 @@
       "kind": "function",
       "label": "createFolder",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 59,
       "endLine": 77,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2213,13 +3115,13 @@
       "kind": "function",
       "label": "deleteFolder",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 98,
       "endLine": 114,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2227,13 +3129,13 @@
       "kind": "function",
       "label": "deleteSelectedFolders",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 116,
       "endLine": 133,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2241,13 +3143,13 @@
       "kind": "function",
       "label": "ensureCardActionsVisible",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 135,
       "endLine": 159,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2255,13 +3157,13 @@
       "kind": "function",
       "label": "FoldersPage",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 12,
       "endLine": 597,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2269,13 +3171,13 @@
       "kind": "function",
       "label": "handleFolderCardPointerEnter",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 189,
       "endLine": 193,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2283,13 +3185,13 @@
       "kind": "function",
       "label": "handleFolderCardPointerLeave",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 208,
       "endLine": 213,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2297,13 +3199,13 @@
       "kind": "function",
       "label": "handleFolderCardPointerMove",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 195,
       "endLine": 206,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2311,13 +3213,13 @@
       "kind": "function",
       "label": "handleViewModeSelect",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 184,
       "endLine": 187,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2325,13 +3227,13 @@
       "kind": "function",
       "label": "refresh",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 32,
       "endLine": 46,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2339,13 +3241,13 @@
       "kind": "function",
       "label": "renameFolder",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 79,
       "endLine": 96,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2353,13 +3255,13 @@
       "kind": "function",
       "label": "toggleAllFolders",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 176,
       "endLine": 182,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2367,13 +3269,13 @@
       "kind": "function",
       "label": "toggleFolderSelection",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 161,
       "endLine": 174,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2381,13 +3283,13 @@
       "kind": "function",
       "label": "HomePage",
       "path": "app/frontend/src/pages/HomePage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 10,
       "endLine": 270,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2395,12 +3297,12 @@
       "kind": "type",
       "label": "Stats",
       "path": "app/frontend/src/pages/HomePage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 8,
       "endLine": 8,
       "exported": false,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -2409,13 +3311,13 @@
       "kind": "function",
       "label": "LoginPage",
       "path": "app/frontend/src/pages/LoginPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 8,
       "endLine": 136,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2423,13 +3325,13 @@
       "kind": "function",
       "label": "onOAuthLogin",
       "path": "app/frontend/src/pages/LoginPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 35,
       "endLine": 47,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2437,13 +3339,13 @@
       "kind": "function",
       "label": "onSubmit",
       "path": "app/frontend/src/pages/LoginPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 17,
       "endLine": 33,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2451,13 +3353,13 @@
       "kind": "function",
       "label": "OAuthCallbackPage",
       "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 8,
       "endLine": 52,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2465,13 +3367,13 @@
       "kind": "function",
       "label": "onProfileIconChange",
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 20,
       "endLine": 32,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2479,13 +3381,13 @@
       "kind": "function",
       "label": "PreferencesPage",
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 8,
       "endLine": 111,
       "exported": true,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2493,13 +3395,13 @@
       "kind": "function",
       "label": "removeProfileIcon",
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
-      "category": "source",
+      "category": "frontend",
       "startLine": 34,
       "endLine": 38,
       "exported": false,
       "tags": [
-        "function",
-        "source"
+        "frontend",
+        "function"
       ]
     },
     {
@@ -2507,12 +3409,12 @@
       "kind": "type",
       "label": "FileItem",
       "path": "app/frontend/src/types.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 17,
       "endLine": 24,
       "exported": true,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -2521,12 +3423,12 @@
       "kind": "type",
       "label": "Folder",
       "path": "app/frontend/src/types.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 9,
       "endLine": 15,
       "exported": true,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -2535,12 +3437,12 @@
       "kind": "type",
       "label": "Role",
       "path": "app/frontend/src/types.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 1,
       "endLine": 1,
       "exported": true,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -2549,12 +3451,12 @@
       "kind": "type",
       "label": "User",
       "path": "app/frontend/src/types.ts",
-      "category": "source",
+      "category": "frontend",
       "startLine": 3,
       "endLine": 7,
       "exported": true,
       "tags": [
-        "source",
+        "frontend",
         "type"
       ]
     },
@@ -2648,8 +3550,22 @@
       "label": "absoluteKey",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 67,
-      "endLine": 70,
+      "startLine": 83,
+      "endLine": 86,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#addPythonAstGraph",
+      "kind": "function",
+      "label": "addPythonAstGraph",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 568,
+      "endLine": 659,
       "exported": false,
       "tags": [
         "function",
@@ -2662,8 +3578,8 @@
       "label": "applyKnowledgeBuild",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1736,
-      "endLine": 1746,
+      "startLine": 1853,
+      "endLine": 1863,
       "exported": true,
       "tags": [
         "function",
@@ -2676,8 +3592,8 @@
       "label": "artifactPaths",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 407,
-      "endLine": 415,
+      "startLine": 429,
+      "endLine": 437,
       "exported": false,
       "tags": [
         "function",
@@ -2690,8 +3606,8 @@
       "label": "buildArchitectureMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1260,
-      "endLine": 1311,
+      "startLine": 1377,
+      "endLine": 1428,
       "exported": false,
       "tags": [
         "function",
@@ -2704,8 +3620,8 @@
       "label": "buildCodeConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1144,
-      "endLine": 1258,
+      "startLine": 1261,
+      "endLine": 1375,
       "exported": false,
       "tags": [
         "function",
@@ -2718,8 +3634,8 @@
       "label": "buildGeneratedIndexes",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1408,
-      "endLine": 1465,
+      "startLine": 1525,
+      "endLine": 1582,
       "exported": false,
       "tags": [
         "function",
@@ -2732,8 +3648,8 @@
       "label": "buildProjectAnalysis",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 490,
-      "endLine": 544,
+      "startLine": 512,
+      "endLine": 566,
       "exported": false,
       "tags": [
         "function",
@@ -2746,8 +3662,8 @@
       "label": "buildRelationshipMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1313,
-      "endLine": 1337,
+      "startLine": 1430,
+      "endLine": 1454,
       "exported": false,
       "tags": [
         "function",
@@ -2760,8 +3676,8 @@
       "label": "buildServiceMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1339,
-      "endLine": 1369,
+      "startLine": 1456,
+      "endLine": 1486,
       "exported": false,
       "tags": [
         "function",
@@ -2774,8 +3690,8 @@
       "label": "buildStaticGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 546,
-      "endLine": 1083,
+      "startLine": 661,
+      "endLine": 1200,
       "exported": false,
       "tags": [
         "function",
@@ -2788,8 +3704,8 @@
       "label": "categoryForNode",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1115,
-      "endLine": 1123,
+      "startLine": 1232,
+      "endLine": 1240,
       "exported": false,
       "tags": [
         "function",
@@ -2802,8 +3718,8 @@
       "label": "classifyFile",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 166,
-      "endLine": 203,
+      "startLine": 182,
+      "endLine": 225,
       "exported": false,
       "tags": [
         "function",
@@ -2816,8 +3732,8 @@
       "label": "collectSourcePaths",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 139,
-      "endLine": 164,
+      "startLine": 155,
+      "endLine": 180,
       "exported": false,
       "tags": [
         "function",
@@ -2830,8 +3746,8 @@
       "label": "compareById",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 76,
-      "endLine": 78,
+      "startLine": 92,
+      "endLine": 94,
       "exported": false,
       "tags": [
         "function",
@@ -2844,8 +3760,8 @@
       "label": "compareText",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 72,
-      "endLine": 74,
+      "startLine": 88,
+      "endLine": 90,
       "exported": false,
       "tags": [
         "function",
@@ -2858,8 +3774,8 @@
       "label": "dateNow",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 459,
-      "endLine": 461,
+      "startLine": 481,
+      "endLine": 483,
       "exported": false,
       "tags": [
         "function",
@@ -2872,8 +3788,8 @@
       "label": "ensureDirectory",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 80,
-      "endLine": 82,
+      "startLine": 96,
+      "endLine": 98,
       "exported": false,
       "tags": [
         "function",
@@ -2886,8 +3802,8 @@
       "label": "escapeMermaidLabel",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 309,
-      "endLine": 316,
+      "startLine": 331,
+      "endLine": 338,
       "exported": false,
       "tags": [
         "function",
@@ -2900,8 +3816,8 @@
       "label": "formatTypeScriptDiagnostic",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 135,
-      "endLine": 137,
+      "startLine": 151,
+      "endLine": 153,
       "exported": false,
       "tags": [
         "function",
@@ -2914,8 +3830,8 @@
       "label": "generatedCodePath",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 295,
-      "endLine": 299,
+      "startLine": 317,
+      "endLine": 321,
       "exported": false,
       "tags": [
         "function",
@@ -2928,8 +3844,8 @@
       "label": "graphConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1371,
-      "endLine": 1406,
+      "startLine": 1488,
+      "endLine": 1523,
       "exported": false,
       "tags": [
         "function",
@@ -2942,8 +3858,8 @@
       "label": "graphNodeLabel",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1111,
-      "endLine": 1113,
+      "startLine": 1228,
+      "endLine": 1230,
       "exported": false,
       "tags": [
         "function",
@@ -2956,8 +3872,8 @@
       "label": "graphPayload",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1085,
-      "endLine": 1109,
+      "startLine": 1202,
+      "endLine": 1226,
       "exported": false,
       "tags": [
         "function",
@@ -2970,8 +3886,8 @@
       "label": "hashText",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 63,
-      "endLine": 65,
+      "startLine": 79,
+      "endLine": 81,
       "exported": true,
       "tags": [
         "function",
@@ -2984,8 +3900,8 @@
       "label": "hasPathPrefix",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 88,
-      "endLine": 91,
+      "startLine": 104,
+      "endLine": 107,
       "exported": false,
       "tags": [
         "function",
@@ -2998,8 +3914,8 @@
       "label": "isCodePath",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 221,
-      "endLine": 223,
+      "startLine": 243,
+      "endLine": 245,
       "exported": false,
       "tags": [
         "function",
@@ -3012,8 +3928,8 @@
       "label": "isDateLike",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1768,
-      "endLine": 1770,
+      "startLine": 1885,
+      "endLine": 1887,
       "exported": false,
       "tags": [
         "function",
@@ -3026,8 +3942,8 @@
       "label": "isExported",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 225,
-      "endLine": 227,
+      "startLine": 247,
+      "endLine": 249,
       "exported": false,
       "tags": [
         "function",
@@ -3040,8 +3956,8 @@
       "label": "KNOWLEDGE_PROCESS",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 10,
-      "endLine": 10,
+      "startLine": 11,
+      "endLine": 11,
       "exported": false,
       "tags": [
         "tooling",
@@ -3054,8 +3970,8 @@
       "label": "listMarkdown",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1137,
-      "endLine": 1142,
+      "startLine": 1254,
+      "endLine": 1259,
       "exported": false,
       "tags": [
         "function",
@@ -3068,8 +3984,8 @@
       "label": "loadCodeGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1943,
-      "endLine": 1951,
+      "startLine": 2060,
+      "endLine": 2068,
       "exported": true,
       "tags": [
         "function",
@@ -3082,8 +3998,8 @@
       "label": "loadTypeScriptConfig",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 114,
-      "endLine": 133,
+      "startLine": 130,
+      "endLine": 149,
       "exported": false,
       "tags": [
         "function",
@@ -3096,8 +4012,8 @@
       "label": "markdownFilesInKnowledge",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1748,
-      "endLine": 1766,
+      "startLine": 1865,
+      "endLine": 1883,
       "exported": false,
       "tags": [
         "function",
@@ -3110,8 +4026,8 @@
       "label": "markdownLink",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 301,
-      "endLine": 307,
+      "startLine": 323,
+      "endLine": 329,
       "exported": false,
       "tags": [
         "function",
@@ -3124,8 +4040,8 @@
       "label": "mermaidId",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 318,
-      "endLine": 320,
+      "startLine": 340,
+      "endLine": 342,
       "exported": false,
       "tags": [
         "function",
@@ -3138,8 +4054,8 @@
       "label": "nodeName",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 229,
-      "endLine": 237,
+      "startLine": 251,
+      "endLine": 259,
       "exported": false,
       "tags": [
         "function",
@@ -3152,8 +4068,8 @@
       "label": "OKF_VERSION",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 9,
-      "endLine": 9,
+      "startLine": 10,
+      "endLine": 10,
       "exported": false,
       "tags": [
         "tooling",
@@ -3166,8 +4082,8 @@
       "label": "ownedGeneratedMarkdownFiles",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1621,
-      "endLine": 1632,
+      "startLine": 1738,
+      "endLine": 1749,
       "exported": false,
       "tags": [
         "function",
@@ -3180,8 +4096,8 @@
       "label": "packageNameFromSpecifier",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 276,
-      "endLine": 284,
+      "startLine": 298,
+      "endLine": 306,
       "exported": false,
       "tags": [
         "function",
@@ -3194,8 +4110,8 @@
       "label": "parseFrontmatter",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 417,
-      "endLine": 432,
+      "startLine": 439,
+      "endLine": 454,
       "exported": false,
       "tags": [
         "function",
@@ -3208,8 +4124,8 @@
       "label": "planKnowledgeBuild",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1634,
-      "endLine": 1734,
+      "startLine": 1751,
+      "endLine": 1851,
       "exported": true,
       "tags": [
         "function",
@@ -3222,8 +4138,8 @@
       "label": "preservedGenerationAt",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 463,
-      "endLine": 473,
+      "startLine": 485,
+      "endLine": 495,
       "exported": false,
       "tags": [
         "function",
@@ -3236,8 +4152,8 @@
       "label": "preservedGraphGenerationAt",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 475,
-      "endLine": 488,
+      "startLine": 497,
+      "endLine": 510,
       "exported": false,
       "tags": [
         "function",
@@ -3250,8 +4166,8 @@
       "label": "readExistingAttributes",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 434,
-      "endLine": 443,
+      "startLine": 456,
+      "endLine": 465,
       "exported": false,
       "tags": [
         "function",
@@ -3264,8 +4180,8 @@
       "label": "readUtf8",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 84,
-      "endLine": 86,
+      "startLine": 100,
+      "endLine": 102,
       "exported": false,
       "tags": [
         "function",
@@ -3278,8 +4194,8 @@
       "label": "relationshipTargetLink",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1125,
-      "endLine": 1135,
+      "startLine": 1242,
+      "endLine": 1252,
       "exported": false,
       "tags": [
         "function",
@@ -3292,8 +4208,8 @@
       "label": "renderConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 455,
-      "endLine": 457,
+      "startLine": 477,
+      "endLine": 479,
       "exported": false,
       "tags": [
         "function",
@@ -3306,8 +4222,8 @@
       "label": "resolveMarkdownTarget",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1772,
-      "endLine": 1790,
+      "startLine": 1889,
+      "endLine": 1907,
       "exported": false,
       "tags": [
         "function",
@@ -3320,8 +4236,8 @@
       "label": "sanitizePathSegment",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 286,
-      "endLine": 293,
+      "startLine": 308,
+      "endLine": 315,
       "exported": false,
       "tags": [
         "function",
@@ -3334,8 +4250,8 @@
       "label": "scriptKindForPath",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 210,
-      "endLine": 219,
+      "startLine": 232,
+      "endLine": 241,
       "exported": false,
       "tags": [
         "function",
@@ -3348,8 +4264,8 @@
       "label": "serializeFrontmatter",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 445,
-      "endLine": 453,
+      "startLine": 467,
+      "endLine": 475,
       "exported": false,
       "tags": [
         "function",
@@ -3362,8 +4278,8 @@
       "label": "sourceTitle",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 205,
-      "endLine": 208,
+      "startLine": 227,
+      "endLine": 230,
       "exported": false,
       "tags": [
         "function",
@@ -3376,8 +4292,8 @@
       "label": "StaticGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 322,
-      "endLine": 405,
+      "startLine": 344,
+      "endLine": 427,
       "exported": false,
       "tags": [
         "class",
@@ -3390,8 +4306,8 @@
       "label": "StaticGraph.addEdge",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 342,
-      "endLine": 380,
+      "startLine": 364,
+      "endLine": 402,
       "exported": false,
       "tags": [
         "method",
@@ -3404,8 +4320,8 @@
       "label": "StaticGraph.addNode",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 328,
-      "endLine": 340,
+      "startLine": 350,
+      "endLine": 362,
       "exported": false,
       "tags": [
         "method",
@@ -3418,8 +4334,8 @@
       "label": "StaticGraph.constructor",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 323,
-      "endLine": 326,
+      "startLine": 345,
+      "endLine": 348,
       "exported": false,
       "tags": [
         "method",
@@ -3432,8 +4348,8 @@
       "label": "StaticGraph.getEdges",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 390,
-      "endLine": 404,
+      "startLine": 412,
+      "endLine": 426,
       "exported": false,
       "tags": [
         "method",
@@ -3446,8 +4362,8 @@
       "label": "StaticGraph.getNode",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 382,
-      "endLine": 384,
+      "startLine": 404,
+      "endLine": 406,
       "exported": false,
       "tags": [
         "method",
@@ -3460,8 +4376,8 @@
       "label": "StaticGraph.getNodes",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 386,
-      "endLine": 388,
+      "startLine": 408,
+      "endLine": 410,
       "exported": false,
       "tags": [
         "method",
@@ -3474,8 +4390,8 @@
       "label": "staticScaffold",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1467,
-      "endLine": 1619,
+      "startLine": 1584,
+      "endLine": 1736,
       "exported": false,
       "tags": [
         "function",
@@ -3488,8 +4404,8 @@
       "label": "textFromRouteInitializer",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 239,
-      "endLine": 262,
+      "startLine": 261,
+      "endLine": 284,
       "exported": false,
       "tags": [
         "function",
@@ -3502,8 +4418,8 @@
       "label": "toPosix",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 59,
-      "endLine": 61,
+      "startLine": 75,
+      "endLine": 77,
       "exported": true,
       "tags": [
         "function",
@@ -3516,8 +4432,8 @@
       "label": "unwrapExpression",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 264,
-      "endLine": 274,
+      "startLine": 286,
+      "endLine": 296,
       "exported": false,
       "tags": [
         "function",
@@ -3530,8 +4446,8 @@
       "label": "validateKnowledgeBundle",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1792,
-      "endLine": 1941,
+      "startLine": 1909,
+      "endLine": 2058,
       "exported": true,
       "tags": [
         "function",
@@ -3544,8 +4460,8 @@
       "label": "walkFiles",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 93,
-      "endLine": 112,
+      "startLine": 109,
+      "endLine": 128,
       "exported": false,
       "tags": [
         "function",
@@ -4545,7 +5461,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 459
+          "line": 481
         }
       ]
     },
@@ -4573,6 +5489,19 @@
         {
           "path": "ui/pages/FoldersPage.ts",
           "line": 51
+        }
+      ]
+    },
+    {
+      "id": "edge:042250209f53f53b",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#upload_file",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 475
         }
       ]
     },
@@ -4627,6 +5556,19 @@
           "path": "app/frontend/src/main.tsx",
           "line": 3,
           "detail": "react-router-dom"
+        }
+      ]
+    },
+    {
+      "id": "edge:06f6113d23869449",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#require_editor_or_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 105
         }
       ]
     },
@@ -4719,7 +5661,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 67
+          "line": 83
         }
       ]
     },
@@ -4765,6 +5707,19 @@
       ]
     },
     {
+      "id": "edge:0c3a1640e7a3c664",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#register_oauth_state",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 122
+        }
+      ]
+    },
+    {
       "id": "edge:0d0fbd7a294376e1",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:app/frontend/vite.config.ts",
@@ -4805,6 +5760,32 @@
       ]
     },
     {
+      "id": "edge:0d5e2b4be9033ee5",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#find_folder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "id": "edge:0d7146eec500abf0",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#upload_file",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 452
+        }
+      ]
+    },
+    {
       "id": "edge:0de54c0b7c19f522",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -4813,7 +5794,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1111
+          "line": 1228
         }
       ]
     },
@@ -4994,6 +5975,19 @@
       ]
     },
     {
+      "id": "edge:113de66fa8313f92",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#download_file",
+      "to": "route:app/backend/main.py#download_file:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 377
+        }
+      ]
+    },
+    {
       "id": "edge:115fa6b7f8f2e98b",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -5002,7 +5996,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 239
+          "line": 261
         }
       ]
     },
@@ -5095,7 +6089,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1260
+          "line": 1377
         }
       ]
     },
@@ -5200,7 +6194,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 93
+          "line": 109
         }
       ]
     },
@@ -5253,7 +6247,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 342
+          "line": 364
         }
       ]
     },
@@ -5312,6 +6306,19 @@
       ]
     },
     {
+      "id": "edge:19ce95bf0d4703eb",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#rename_folder",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 321
+        }
+      ]
+    },
+    {
       "id": "edge:19d7d427235f68a0",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/pages/FoldersPage.tsx",
@@ -5351,6 +6358,19 @@
       ]
     },
     {
+      "id": "edge:1ac82f9ebd089a56",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#rename_file",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 496
+        }
+      ]
+    },
+    {
       "id": "edge:1c1a869780ee948e",
       "relation": "EXPORTS",
       "from": "file:utils/common/CustomReporter.ts",
@@ -5385,7 +6405,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 295
+          "line": 317
         }
       ]
     },
@@ -5398,7 +6418,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1748
+          "line": 1865
         }
       ]
     },
@@ -5439,6 +6459,19 @@
           "path": "ui/specs/files.spec.ts",
           "line": 1,
           "detail": "node:path"
+        }
+      ]
+    },
+    {
+      "id": "edge:1ef9645a2ee71570",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#stats",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 281
         }
       ]
     },
@@ -5505,7 +6538,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 205
+          "line": 227
         }
       ]
     },
@@ -5553,6 +6586,19 @@
       ]
     },
     {
+      "id": "edge:226cc39ea780582a",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#create_folder",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 310
+        }
+      ]
+    },
+    {
       "id": "edge:22db75b2958fabf3",
       "relation": "CONTAINS",
       "from": "symbol:api/services/FoldersService.ts#FoldersService",
@@ -5562,6 +6608,19 @@
         {
           "path": "api/services/FoldersService.ts",
           "line": 40
+        }
+      ]
+    },
+    {
+      "id": "edge:2359b74b511eb409",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#rename_file",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 500
         }
       ]
     },
@@ -5589,6 +6648,19 @@
         {
           "path": "app/frontend/src/components/ThemeToggle.tsx",
           "line": 3
+        }
+      ]
+    },
+    {
+      "id": "edge:24913bce9ee30ef9",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#delete_folder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 335
         }
       ]
     },
@@ -5654,7 +6726,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1634
+          "line": 1751
         }
       ]
     },
@@ -5674,6 +6746,19 @@
           "path": "app/frontend/src/components/AppLayout.tsx",
           "line": 2,
           "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:2630309f02668e61",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#normalize_folder_name",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 129
         }
       ]
     },
@@ -5767,7 +6852,20 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1371
+          "line": 1488
+        }
+      ]
+    },
+    {
+      "id": "edge:2952d3aa1a731fc8",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#_sanitize_download_name",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 142
         }
       ]
     },
@@ -5861,7 +6959,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 114
+          "line": 130
         }
       ]
     },
@@ -5874,7 +6972,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 84
+          "line": 100
         }
       ]
     },
@@ -5887,7 +6985,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 221
+          "line": 243
         }
       ]
     },
@@ -5913,7 +7011,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1943
+          "line": 2060
         }
       ]
     },
@@ -5953,7 +7051,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 210
+          "line": 232
         }
       ]
     },
@@ -5966,7 +7064,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 407
+          "line": 429
         }
       ]
     },
@@ -6037,6 +7135,19 @@
       ]
     },
     {
+      "id": "edge:2de8e65711c90dc4",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#list_folders",
+      "to": "route:app/backend/main.py#list_folders:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 291
+        }
+      ]
+    },
+    {
       "id": "edge:2e15edd4b5bdad56",
       "relation": "CONTAINS",
       "from": "symbol:utils/common/Logger.ts#Logger",
@@ -6046,6 +7157,19 @@
         {
           "path": "utils/common/Logger.ts",
           "line": 26
+        }
+      ]
+    },
+    {
+      "id": "edge:2e437b4d01e834bb",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#issue_token",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 199
         }
       ]
     },
@@ -6076,6 +7200,19 @@
       ]
     },
     {
+      "id": "edge:2fa99373b932c36a",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#_now_iso",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 58
+        }
+      ]
+    },
+    {
       "id": "edge:2fcadecbd9104e30",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:utils/fixtures/TestFixtures.ts",
@@ -6099,6 +7236,19 @@
         {
           "path": "api/specs/files.spec.ts",
           "line": 9
+        }
+      ]
+    },
+    {
+      "id": "edge:2fefbd77671a2a88",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#upload_file",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 480
         }
       ]
     },
@@ -6151,7 +7301,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 323
+          "line": 345
         }
       ]
     },
@@ -6224,7 +7374,20 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 390
+          "line": 412
+        }
+      ]
+    },
+    {
+      "id": "edge:368726282d037590",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#login",
+      "to": "route:app/backend/main.py#login:POST",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 207
         }
       ]
     },
@@ -6251,7 +7414,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1408
+          "line": 1525
         }
       ]
     },
@@ -6296,6 +7459,32 @@
       ]
     },
     {
+      "id": "edge:370dbbf98e1a029f",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
+      "to": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#addPythonAstGraph",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+          "line": 568
+        }
+      ]
+    },
+    {
+      "id": "edge:373c5be52684ae6b",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#rename_folder",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 330
+        }
+      ]
+    },
+    {
       "id": "edge:37ea517466c49e3b",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:ui/pages/BasePage.ts#BasePage",
@@ -6318,7 +7507,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1467
+          "line": 1584
         }
       ]
     },
@@ -6358,7 +7547,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 225
+          "line": 247
         }
       ]
     },
@@ -6385,6 +7574,32 @@
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:39946280dbd0845b",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#preview_file",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 359
+        }
+      ]
+    },
+    {
+      "id": "edge:3a069081cf638ecd",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#upload_file",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 449
         }
       ]
     },
@@ -6456,6 +7671,45 @@
       ]
     },
     {
+      "id": "edge:3c53ad164b2447d6",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#create_access_token",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 72
+        }
+      ]
+    },
+    {
+      "id": "edge:3cf636033b8ff78a",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 82
+        }
+      ]
+    },
+    {
+      "id": "edge:3d121d60c3442701",
+      "relation": "ENFORCES_RBAC",
+      "from": "symbol:app/backend/main.py#rename_folder",
+      "to": "symbol:app/backend/main.py#require_editor_or_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 323
+        }
+      ]
+    },
+    {
       "id": "edge:3d7cbe120f2ff19b",
       "relation": "USES_FIXTURE",
       "from": "file:api/specs/files.spec.ts",
@@ -6504,7 +7758,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 546
+          "line": 661
         }
       ]
     },
@@ -6517,7 +7771,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 475
+          "line": 497
         }
       ]
     },
@@ -6656,6 +7910,19 @@
       ]
     },
     {
+      "id": "edge:43efccda68855221",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#oauth_login",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 216
+        }
+      ]
+    },
+    {
       "id": "edge:4429b128b2e1ade0",
       "relation": "DECLARES_PACKAGE",
       "from": "file:package.json",
@@ -6677,7 +7944,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1943
+          "line": 2060
         }
       ]
     },
@@ -6705,6 +7972,19 @@
           "path": "scripts/buildKnowledge.mjs",
           "line": 1,
           "detail": "node:path"
+        }
+      ]
+    },
+    {
+      "id": "edge:46847937cbacc7c9",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:scripts/knowledge/python_ast_adapter.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/python_ast_adapter.py",
+          "line": 1
         }
       ]
     },
@@ -6840,7 +8120,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1621
+          "line": 1738
         }
       ]
     },
@@ -6885,6 +8165,19 @@
       ]
     },
     {
+      "id": "edge:4c5f93728d3c517f",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#download_files_zip",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 399
+        }
+      ]
+    },
+    {
       "id": "edge:4c95b0cd79cc7ec3",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/pages/FoldersPage.tsx",
@@ -6907,6 +8200,19 @@
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 184
+        }
+      ]
+    },
+    {
+      "id": "edge:4cb4cae2831a8c11",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#normalize_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 66
         }
       ]
     },
@@ -6951,6 +8257,19 @@
       ]
     },
     {
+      "id": "edge:4e3819479d92740a",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#pop_and_validate_oauth_state",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 137
+        }
+      ]
+    },
+    {
       "id": "edge:4e3b7c42a363e843",
       "relation": "CONTAINS",
       "from": "file:api/services/FoldersService.ts",
@@ -6972,7 +8291,20 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 463
+          "line": 485
+        }
+      ]
+    },
+    {
+      "id": "edge:4f4eb2bd4a8edd13",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#rename_folder",
+      "to": "route:app/backend/main.py#rename_folder:PUT",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 317
         }
       ]
     },
@@ -7083,6 +8415,19 @@
       ]
     },
     {
+      "id": "edge:528763afbcd2b0bb",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#ensure_unique_folder_name",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 133
+        }
+      ]
+    },
+    {
       "id": "edge:52f74760b7375f76",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/HomePage.ts#HomePage",
@@ -7144,7 +8489,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1125
+          "line": 1242
         }
       ]
     },
@@ -7217,6 +8562,19 @@
       ]
     },
     {
+      "id": "edge:54aea3c378766695",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 103
+        }
+      ]
+    },
+    {
       "id": "edge:54f32d22a83e2451",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:api/specs/health.spec.ts",
@@ -7244,6 +8602,23 @@
       ]
     },
     {
+      "id": "edge:552ea07be40d8876",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#load_db",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 84
+        },
+        {
+          "path": "app/backend/main.py",
+          "line": 89
+        }
+      ]
+    },
+    {
       "id": "edge:558475486a792ba8",
       "relation": "CONTAINS",
       "from": "file:scripts/queryKnowledge.mjs",
@@ -7253,6 +8628,19 @@
         {
           "path": "scripts/queryKnowledge.mjs",
           "line": 30
+        }
+      ]
+    },
+    {
+      "id": "edge:5719616c828af6ba",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#download_files_zip",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 406
         }
       ]
     },
@@ -7298,6 +8686,19 @@
       ]
     },
     {
+      "id": "edge:580a2fbe8c01c0f6",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#oauth_login",
+      "to": "route:app/backend/main.py#oauth_login:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 215
+        }
+      ]
+    },
+    {
       "id": "edge:5882550def1422b6",
       "relation": "IMPORTS",
       "from": "file:ui/pages/FoldersPage.ts",
@@ -7322,6 +8723,19 @@
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 12,
           "detail": "@utils/common/CommonUtils"
+        }
+      ]
+    },
+    {
+      "id": "edge:592a6c0b35652670",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#preview_file",
+      "to": "route:app/backend/main.py#preview_file:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 358
         }
       ]
     },
@@ -7389,6 +8803,19 @@
         {
           "path": "api/specs/rbac.spec.ts",
           "line": 6
+        }
+      ]
+    },
+    {
+      "id": "edge:5a77d6778c373989",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#require_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 110
         }
       ]
     },
@@ -7473,6 +8900,19 @@
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
           "line": 161
+        }
+      ]
+    },
+    {
+      "id": "edge:5e9954630a44e1b5",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#stats",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 281
         }
       ]
     },
@@ -7565,7 +9005,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1634
+          "line": 1751
         }
       ]
     },
@@ -7623,6 +9063,19 @@
       ]
     },
     {
+      "id": "edge:62ee6d827b166552",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#list_files",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 353
+        }
+      ]
+    },
+    {
       "id": "edge:638ec513060e446f",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/FoldersPage.ts#FoldersPage",
@@ -7675,6 +9128,19 @@
       ]
     },
     {
+      "id": "edge:65be9ac20a6bbca6",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#list_folders",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 295
+        }
+      ]
+    },
+    {
       "id": "edge:65d2b63c4dccff4d",
       "relation": "IMPORTS",
       "from": "file:api/services/BaseApiService.ts",
@@ -7689,6 +9155,19 @@
       ]
     },
     {
+      "id": "edge:6622217f86767bd1",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#oauth_callback",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 233
+        }
+      ]
+    },
+    {
       "id": "edge:662760e570aef694",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -7697,7 +9176,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 276
+          "line": 298
         }
       ]
     },
@@ -7736,7 +9215,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 490
+          "line": 512
         }
       ]
     },
@@ -7749,7 +9228,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 322
+          "line": 344
         }
       ]
     },
@@ -7857,7 +9336,20 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 63
+          "line": 79
+        }
+      ]
+    },
+    {
+      "id": "edge:693ddd69cffafb03",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#delete_file",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 508
         }
       ]
     },
@@ -7910,7 +9402,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1144
+          "line": 1261
         }
       ]
     },
@@ -7923,7 +9415,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 328
+          "line": 350
         }
       ]
     },
@@ -7981,6 +9473,19 @@
       ]
     },
     {
+      "id": "edge:6c9811e0253eaa57",
+      "relation": "ENFORCES_RBAC",
+      "from": "symbol:app/backend/main.py#upload_file",
+      "to": "symbol:app/backend/main.py#require_editor_or_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 454
+        }
+      ]
+    },
+    {
       "id": "edge:6ce2e7a0f87ed143",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:app/frontend/src/main.tsx",
@@ -7991,6 +9496,19 @@
           "path": "app/frontend/src/main.tsx",
           "line": 2,
           "detail": "react-dom/client"
+        }
+      ]
+    },
+    {
+      "id": "edge:6ceca4b8ccd98379",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#delete_file",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 505
         }
       ]
     },
@@ -8016,6 +9534,19 @@
       ]
     },
     {
+      "id": "edge:6dc9da91d79f5a63",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#rename_folder",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 326
+        }
+      ]
+    },
+    {
       "id": "edge:6e61e6751fb8abe0",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -8024,7 +9555,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1137
+          "line": 1254
         }
       ]
     },
@@ -8037,7 +9568,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 59
+          "line": 75
         }
       ]
     },
@@ -8082,6 +9613,19 @@
       ]
     },
     {
+      "id": "edge:70c78bd4700ebd25",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#oauth_callback",
+      "to": "route:app/backend/main.py#oauth_callback:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 232
+        }
+      ]
+    },
+    {
       "id": "edge:7184483ec6c6f17a",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:scripts/checkNamingConventions.mjs",
@@ -8092,6 +9636,19 @@
           "path": "scripts/checkNamingConventions.mjs",
           "line": 3,
           "detail": "node:process"
+        }
+      ]
+    },
+    {
+      "id": "edge:71be719e3ebf9239",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#delete_folder",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 335
         }
       ]
     },
@@ -8163,6 +9720,32 @@
       ]
     },
     {
+      "id": "edge:735b0f4bc712ba63",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#download_file",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 378
+        }
+      ]
+    },
+    {
+      "id": "edge:737a3d3adaceb82f",
+      "relation": "ENFORCES_RBAC",
+      "from": "symbol:app/backend/main.py#delete_file",
+      "to": "symbol:app/backend/main.py#require_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 506
+        }
+      ]
+    },
+    {
       "id": "edge:738d564347d486cc",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/types.ts",
@@ -8215,6 +9798,19 @@
       ]
     },
     {
+      "id": "edge:74fac28cae754aec",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#delete_folder",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 345
+        }
+      ]
+    },
+    {
       "id": "edge:7521a77a62cb4672",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:ui/specs/login.spec.ts",
@@ -8242,6 +9838,19 @@
       ]
     },
     {
+      "id": "edge:764f4a4e769c0946",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#require_oauth_config",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 107
+        }
+      ]
+    },
+    {
       "id": "edge:766328828a4447a6",
       "relation": "CONTAINS",
       "from": "repository:playwright-pom-agent-skills",
@@ -8263,7 +9872,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1792
+          "line": 1909
         }
       ]
     },
@@ -8276,7 +9885,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 59
+          "line": 75
         }
       ]
     },
@@ -8289,7 +9898,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 72
+          "line": 88
         }
       ]
     },
@@ -8329,7 +9938,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1792
+          "line": 1909
         }
       ]
     },
@@ -8342,7 +9951,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 135
+          "line": 151
         }
       ]
     },
@@ -8464,6 +10073,32 @@
           "path": "api/specs/health.spec.ts",
           "line": 3,
           "detail": "@api/services/BaseApiService"
+        }
+      ]
+    },
+    {
+      "id": "edge:7c8a68c87c821c02",
+      "relation": "ENFORCES_RBAC",
+      "from": "symbol:app/backend/main.py#rename_file",
+      "to": "symbol:app/backend/main.py#require_editor_or_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 494
+        }
+      ]
+    },
+    {
+      "id": "edge:7cb8a591a0d4e861",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#_now_utc",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 57
         }
       ]
     },
@@ -8610,6 +10245,19 @@
         {
           "path": "ui/setup/auth.setup.ts",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:830af3a3fb216a2c",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#download_files_zip",
+      "to": "route:app/backend/main.py#download_files_zip:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 398
         }
       ]
     },
@@ -8774,6 +10422,32 @@
       ]
     },
     {
+      "id": "edge:87dc3de6cb301393",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#rename_file",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 488
+        }
+      ]
+    },
+    {
+      "id": "edge:8806f04a4c1d9db1",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#stats",
+      "to": "route:app/backend/main.py#stats:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 280
+        }
+      ]
+    },
+    {
       "id": "edge:881e65063a7ae141",
       "relation": "RETURNS_PAGE",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage.login",
@@ -8822,8 +10496,21 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 6,
+          "line": 7,
           "detail": "js-yaml"
+        }
+      ]
+    },
+    {
+      "id": "edge:8a0cc6b0c784b79b",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#get_allowed_origins",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 168
         }
       ]
     },
@@ -8838,6 +10525,32 @@
           "path": "ui/pages/BasePage.ts",
           "line": 4,
           "detail": "@utils/common/Waits"
+        }
+      ]
+    },
+    {
+      "id": "edge:8b131994179faf14",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/backend/models.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/models.py",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:8bc7d54339a30c0b",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#delete_file",
+      "to": "route:app/backend/main.py#delete_file:DELETE",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 504
         }
       ]
     },
@@ -8929,7 +10642,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 455
+          "line": 477
         }
       ]
     },
@@ -9000,6 +10713,19 @@
       ]
     },
     {
+      "id": "edge:8f8c8795cd8bc2d3",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 93
+        }
+      ]
+    },
+    {
       "id": "edge:8f9ed361207b9b6e",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -9008,7 +10734,33 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 301
+          "line": 323
+        }
+      ]
+    },
+    {
+      "id": "edge:8feb993ece2c5c74",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#_safe_upload_name",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 150
+        }
+      ]
+    },
+    {
+      "id": "edge:90118d0b656ce53f",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#list_folders",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 292
         }
       ]
     },
@@ -9040,6 +10792,19 @@
       ]
     },
     {
+      "id": "edge:90df2c1493a25637",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#delete_folder",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 338
+        }
+      ]
+    },
+    {
       "id": "edge:910ae332fe47e6d1",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/pages/LoginPage.tsx",
@@ -9062,6 +10827,32 @@
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:9151ee9d8d57f7c3",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#create_folder",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "id": "edge:9159079b6c29d57e",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#rename_file",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 492
         }
       ]
     },
@@ -9254,6 +11045,19 @@
       ]
     },
     {
+      "id": "edge:9703c7f94c46d9c6",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#create_folder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 299
+        }
+      ]
+    },
+    {
       "id": "edge:973a91778e7428d8",
       "relation": "DECLARES_PACKAGE",
       "from": "file:package.json",
@@ -9291,6 +11095,19 @@
           "path": "ui/pages/BasePage.ts",
           "line": 12,
           "detail": "folders"
+        }
+      ]
+    },
+    {
+      "id": "edge:981f11c1e4793e04",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#delete_folder",
+      "to": "route:app/backend/main.py#delete_folder:DELETE",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 334
         }
       ]
     },
@@ -9453,6 +11270,32 @@
       ]
     },
     {
+      "id": "edge:9daddb0dc32024d6",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#decode_access_token",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "id": "edge:9f29373ffb2526de",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#upload_file",
+      "to": "route:app/backend/main.py#upload_file:POST",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 448
+        }
+      ]
+    },
+    {
       "id": "edge:a0da914dbd7e6757",
       "relation": "EXPORTS",
       "from": "file:utils/common/Logger.ts",
@@ -9515,6 +11358,19 @@
         {
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 31
+        }
+      ]
+    },
+    {
+      "id": "edge:a227b635ac62864f",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/backend/auth.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 1
         }
       ]
     },
@@ -9624,6 +11480,19 @@
       ]
     },
     {
+      "id": "edge:a58cfd724bd86384",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#authenticate_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 65
+        }
+      ]
+    },
+    {
       "id": "edge:a5912495ae6eb4e0",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -9632,7 +11501,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1339
+          "line": 1456
         }
       ]
     },
@@ -9686,6 +11555,19 @@
         {
           "path": "package.json",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:a857dd31b06f7cdf",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#preview_file",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 366
         }
       ]
     },
@@ -9974,7 +11856,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1313
+          "line": 1430
         }
       ]
     },
@@ -10136,6 +12018,32 @@
       ]
     },
     {
+      "id": "edge:b3d767eb2530a6b4",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#allow_private_network_access",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 184
+        }
+      ]
+    },
+    {
+      "id": "edge:b43813bea834aa0c",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#list_files",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 350
+        }
+      ]
+    },
+    {
       "id": "edge:b4b0c7b8e29569dd",
       "relation": "IMPORTS",
       "from": "file:api/specs/rbac.spec.ts",
@@ -10171,7 +12079,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 10
+          "line": 11
         }
       ]
     },
@@ -10263,7 +12171,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 382
+          "line": 404
         }
       ]
     },
@@ -10316,7 +12224,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 229
+          "line": 251
         }
       ]
     },
@@ -10330,6 +12238,33 @@
         {
           "path": "app/frontend/tsconfig.json",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:ba8ead063fe233aa",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
+      "to": "package:node:child_process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+          "line": 5,
+          "detail": "node:child_process"
+        }
+      ]
+    },
+    {
+      "id": "edge:ba9691d7437e577f",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#health",
+      "to": "route:app/backend/main.py#health:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 193
         }
       ]
     },
@@ -10460,7 +12395,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 445
+          "line": 467
         }
       ]
     },
@@ -10501,6 +12436,33 @@
         {
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 39
+        }
+      ]
+    },
+    {
+      "id": "edge:c00db85d5a7bde0d",
+      "relation": "IMPORTS",
+      "from": "file:app/backend/main.py",
+      "to": "file:app/backend/models.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 38,
+          "detail": "app/backend/models.py"
+        }
+      ]
+    },
+    {
+      "id": "edge:c048b47577fb828b",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#verify_password",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 61
         }
       ]
     },
@@ -10556,7 +12518,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1085
+          "line": 1202
         }
       ]
     },
@@ -10584,6 +12546,19 @@
           "path": "app/frontend/src/components/AppLayout.tsx",
           "line": 5,
           "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:c27ffd5310c4ff7d",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#login",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 208
         }
       ]
     },
@@ -10760,7 +12735,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 417
+          "line": 439
         }
       ]
     },
@@ -10868,7 +12843,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 264
+          "line": 286
         }
       ]
     },
@@ -10881,7 +12856,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1772
+          "line": 1889
         }
       ]
     },
@@ -10920,7 +12895,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 318
+          "line": 340
         }
       ]
     },
@@ -10947,6 +12922,19 @@
         {
           "path": "ui/specs/multi-role.spec.ts",
           "line": 10
+        }
+      ]
+    },
+    {
+      "id": "edge:caf224bdc7c65bdf",
+      "relation": "ENFORCES_RBAC",
+      "from": "symbol:app/backend/main.py#delete_folder",
+      "to": "symbol:app/backend/main.py#require_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 336
         }
       ]
     },
@@ -10985,7 +12973,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1736
+          "line": 1853
         }
       ]
     },
@@ -11024,7 +13012,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 309
+          "line": 331
         }
       ]
     },
@@ -11038,6 +13026,19 @@
         {
           "path": "ui/pages/FolderFilesPage.ts",
           "line": 9
+        }
+      ]
+    },
+    {
+      "id": "edge:d053498977d18789",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#list_files",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 350
         }
       ]
     },
@@ -11090,7 +13091,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 76
+          "line": 92
         }
       ]
     },
@@ -11103,7 +13104,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 286
+          "line": 308
         }
       ]
     },
@@ -11142,7 +13143,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 63
+          "line": 79
         }
       ]
     },
@@ -11168,7 +13169,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1115
+          "line": 1232
         }
       ]
     },
@@ -11210,6 +13211,19 @@
           "path": "app/frontend/src/main.tsx",
           "line": 6,
           "detail": "./App"
+        }
+      ]
+    },
+    {
+      "id": "edge:d32ed62e7e134d83",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#create_folder",
+      "to": "route:app/backend/main.py#create_folder:POST",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 298
         }
       ]
     },
@@ -11276,7 +13290,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 139
+          "line": 155
         }
       ]
     },
@@ -11374,7 +13388,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 80
+          "line": 96
         }
       ]
     },
@@ -11413,7 +13427,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 9
+          "line": 10
         }
       ]
     },
@@ -11570,6 +13584,19 @@
       ]
     },
     {
+      "id": "edge:dd830c1000792c8d",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#rename_folder",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 318
+        }
+      ]
+    },
+    {
       "id": "edge:ddab78f63a93d651",
       "relation": "CONTAINS",
       "from": "file:scripts/queryKnowledge.mjs",
@@ -11636,6 +13663,19 @@
       ]
     },
     {
+      "id": "edge:e143161fba12e275",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#_seed_data",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 62
+        }
+      ]
+    },
+    {
       "id": "edge:e2470d9edc6f0b09",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:app/frontend/vite.config.ts",
@@ -11664,6 +13704,19 @@
       ]
     },
     {
+      "id": "edge:e292f08e30c66c0e",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#delete_file",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 505
+        }
+      ]
+    },
+    {
       "id": "edge:e2955e7afdb3ada6",
       "relation": "USES_FIXTURE",
       "from": "fixture:utils/fixtures/TestFixtures.ts#adminPage",
@@ -11677,6 +13730,19 @@
       ]
     },
     {
+      "id": "edge:e33124c850ec84c0",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#issue_token",
+      "to": "route:app/backend/main.py#issue_token:POST",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 198
+        }
+      ]
+    },
+    {
       "id": "edge:e343ee2299628f55",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -11685,7 +13751,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1736
+          "line": 1853
         }
       ]
     },
@@ -11712,6 +13778,19 @@
         {
           "path": "app/frontend/src/api.ts",
           "line": 60
+        }
+      ]
+    },
+    {
+      "id": "edge:e3972209b31cbbc4",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-pom-agent-skills",
+      "to": "file:app/backend/main.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 1
         }
       ]
     },
@@ -11743,6 +13822,20 @@
       ]
     },
     {
+      "id": "edge:e4a6f9633c7d9dfd",
+      "relation": "IMPORTS",
+      "from": "file:app/backend/auth.py",
+      "to": "file:app/backend/models.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 14,
+          "detail": "app/backend/models.py"
+        }
+      ]
+    },
+    {
       "id": "edge:e50b902b58e634ae",
       "relation": "CONTAINS",
       "from": "symbol:utils/common/Logger.ts#Logger",
@@ -11752,6 +13845,58 @@
         {
           "path": "utils/common/Logger.ts",
           "line": 18
+        }
+      ]
+    },
+    {
+      "id": "edge:e5168887861786a5",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#list_files",
+      "to": "route:app/backend/main.py#list_files:GET",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 349
+        }
+      ]
+    },
+    {
+      "id": "edge:e566f91376b3024f",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#delete_file",
+      "to": "symbol:app/backend/main.py#save_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 515
+        }
+      ]
+    },
+    {
+      "id": "edge:e59bac5f92a34e97",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#stats",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 284
+        }
+      ]
+    },
+    {
+      "id": "edge:e5a4abf3df50e4b7",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#list_folders",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 292
         }
       ]
     },
@@ -11836,6 +13981,19 @@
       ]
     },
     {
+      "id": "edge:e912ae4a751fcb16",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/auth.py",
+      "to": "symbol:app/backend/auth.py#resolve_oauth_user_role",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 145
+        }
+      ]
+    },
+    {
       "id": "edge:ea5221f264a89351",
       "relation": "IMPORTS",
       "from": "file:ui/specs/viewer-rbac.spec.ts",
@@ -11886,6 +14044,19 @@
         {
           "path": "ui/pages/FoldersPage.ts",
           "line": 18
+        }
+      ]
+    },
+    {
+      "id": "edge:ebcb19b5ae0e1f9e",
+      "relation": "ENFORCES_RBAC",
+      "from": "symbol:app/backend/main.py#create_folder",
+      "to": "symbol:app/backend/main.py#require_editor_or_admin",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 300
         }
       ]
     },
@@ -11970,6 +14141,19 @@
       ]
     },
     {
+      "id": "edge:ee432de92c8dc5b4",
+      "relation": "USES_AUTH_DEPENDENCY",
+      "from": "symbol:app/backend/main.py#create_folder",
+      "to": "symbol:app/backend/auth.py#get_current_user",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 299
+        }
+      ]
+    },
+    {
       "id": "edge:ef48ed0ee84a6b85",
       "relation": "IMPORTS",
       "from": "file:app/frontend/src/components/AppLayout.tsx",
@@ -12006,7 +14190,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 166
+          "line": 182
         }
       ]
     },
@@ -12019,7 +14203,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 88
+          "line": 104
         }
       ]
     },
@@ -12033,6 +14217,19 @@
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
           "line": 172
+        }
+      ]
+    },
+    {
+      "id": "edge:f0ebc6a22cb4bfbf",
+      "relation": "DECLARES_ROUTE",
+      "from": "symbol:app/backend/main.py#rename_file",
+      "to": "route:app/backend/main.py#rename_file:PUT",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 487
         }
       ]
     },
@@ -12085,7 +14282,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 386
+          "line": 408
         }
       ]
     },
@@ -12098,7 +14295,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1768
+          "line": 1885
         }
       ]
     },
@@ -12124,7 +14321,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 434
+          "line": 456
         }
       ]
     },
@@ -12234,6 +14431,20 @@
       ]
     },
     {
+      "id": "edge:f6e3f9780c93d8fb",
+      "relation": "IMPORTS",
+      "from": "file:app/backend/main.py",
+      "to": "file:app/backend/auth.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 21,
+          "detail": "app/backend/auth.py"
+        }
+      ]
+    },
+    {
       "id": "edge:f78746fcd125117c",
       "relation": "CONTAINS",
       "from": "file:utils/common/CommonUtils.ts",
@@ -12325,7 +14536,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 7,
+          "line": 8,
           "detail": "typescript"
         }
       ]
@@ -12355,6 +14566,19 @@
           "path": "ui/pages/LoginPage.ts",
           "line": 3,
           "detail": "@pages/BasePage"
+        }
+      ]
+    },
+    {
+      "id": "edge:fc2e4d7dab41f6a2",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#find_file",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 122
         }
       ]
     },
@@ -12396,6 +14620,19 @@
         {
           "path": "app/frontend/src/context/AuthContext.tsx",
           "line": 7
+        }
+      ]
+    },
+    {
+      "id": "edge:fe5f06a7e5a93c42",
+      "relation": "USES_PERSISTENCE",
+      "from": "symbol:app/backend/main.py#download_file",
+      "to": "symbol:app/backend/main.py#load_db",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 385
         }
       ]
     },
@@ -12449,6 +14686,19 @@
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 12
+        }
+      ]
+    },
+    {
+      "id": "edge:ffa8977468da51ec",
+      "relation": "CONTAINS",
+      "from": "file:app/backend/main.py",
+      "to": "symbol:app/backend/main.py#health",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 194
         }
       ]
     },

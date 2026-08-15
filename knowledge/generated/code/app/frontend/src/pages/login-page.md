@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: LoginPage
-description: Source module extracted from app/frontend/src/pages/LoginPage.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/pages/LoginPage.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/LoginPage.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/pages/LoginPage.tsx
 source_sha256: 9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2
 code_graph_id: file:app/frontend/src/pages/LoginPage.tsx
 analysis_scope: static-ast
-fact_sha256: 7d32e8c474817b08200439d119972e6876777487536eaa5a0427055b3eb85e15
+fact_sha256: 860efced487de31421d28d05f8da89154cbcaf0854937b97824a5fa980b7b0c4
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/pages/LoginPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/pages/LoginPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

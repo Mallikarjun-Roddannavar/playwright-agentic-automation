@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: FilesPage
-description: Source module extracted from app/frontend/src/pages/FilesPage.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/pages/FilesPage.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/FilesPage.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/pages/FilesPage.tsx
 source_sha256: 9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7
 code_graph_id: file:app/frontend/src/pages/FilesPage.tsx
 analysis_scope: static-ast
-fact_sha256: a54d9e724ec3a7e6bb20272d96ede6a3757acfc4f0e9755b5741c1ec348395e2
+fact_sha256: b44f9a35b0db6d7cd07afa043e867e2b4901d29fef3dbc53d1e755992e328273
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/pages/FilesPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/pages/FilesPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

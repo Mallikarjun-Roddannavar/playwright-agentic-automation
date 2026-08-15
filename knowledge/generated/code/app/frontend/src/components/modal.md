@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: Modal
-description: Source module extracted from app/frontend/src/components/Modal.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/components/Modal.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/components/Modal.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/components/Modal.tsx
 source_sha256: 06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3
 code_graph_id: file:app/frontend/src/components/Modal.tsx
 analysis_scope: static-ast
-fact_sha256: d0924564f66af0377bbed66e66814f934fa45cb9ae29f4d1ef9a41bfa021e26c
+fact_sha256: fbba44a54dfff635c39c2eb73ed6f325dbb1da31c2bd953f9a4f1e31f6f21280
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/components/Modal.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/components/Modal.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

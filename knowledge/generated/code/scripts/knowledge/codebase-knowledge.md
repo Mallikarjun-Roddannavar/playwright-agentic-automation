@@ -15,16 +15,16 @@ sources:
     title: scripts/knowledge/CodebaseKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/knowledge/CodebaseKnowledge.mjs
-source_sha256: 8e29641c778685d0974bea0aecb0006e3e88f8be1f988c08f346d799722cc878
+source_sha256: 823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f
 code_graph_id: file:scripts/knowledge/CodebaseKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: 6268564849453879654a8d509c848caba645e00cbbd695703e5fe6fb670d2e88
+fact_sha256: 628d028aa3688a3a96126dbae195bb1926800051c9c7ae11198ece580b421f07
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:02:16.958Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:02:16.958Z"
 ---
 
 # Purpose
@@ -33,71 +33,72 @@ Framework tooling extracted from scripts/knowledge/CodebaseKnowledge.mjs by dete
 
 # Symbols
 
-- `function` **absoluteKey** (lines 67-70)
-- `function` **applyKnowledgeBuild** exported (lines 1736-1746)
-- `function` **artifactPaths** (lines 407-415)
-- `function` **buildArchitectureMermaid** (lines 1260-1311)
-- `function` **buildCodeConcept** (lines 1144-1258)
-- `function` **buildGeneratedIndexes** (lines 1408-1465)
-- `function` **buildProjectAnalysis** (lines 490-544)
-- `function` **buildRelationshipMermaid** (lines 1313-1337)
-- `function` **buildServiceMermaid** (lines 1339-1369)
-- `function` **buildStaticGraph** (lines 546-1083)
-- `function` **categoryForNode** (lines 1115-1123)
-- `function` **classifyFile** (lines 166-203)
-- `function` **collectSourcePaths** (lines 139-164)
-- `function` **compareById** (lines 76-78)
-- `function` **compareText** (lines 72-74)
-- `function` **dateNow** (lines 459-461)
-- `function` **ensureDirectory** (lines 80-82)
-- `function` **escapeMermaidLabel** (lines 309-316)
-- `function` **formatTypeScriptDiagnostic** (lines 135-137)
-- `function` **generatedCodePath** (lines 295-299)
-- `function` **graphConcept** (lines 1371-1406)
-- `function` **graphNodeLabel** (lines 1111-1113)
-- `function` **graphPayload** (lines 1085-1109)
-- `function` **hashText** exported (lines 63-65)
-- `function` **hasPathPrefix** (lines 88-91)
-- `function` **isCodePath** (lines 221-223)
-- `function` **isDateLike** (lines 1768-1770)
-- `function` **isExported** (lines 225-227)
-- `variable` **KNOWLEDGE_PROCESS** (lines 10-10)
-- `function` **listMarkdown** (lines 1137-1142)
-- `function` **loadCodeGraph** exported (lines 1943-1951)
-- `function` **loadTypeScriptConfig** (lines 114-133)
-- `function` **markdownFilesInKnowledge** (lines 1748-1766)
-- `function` **markdownLink** (lines 301-307)
-- `function` **mermaidId** (lines 318-320)
-- `function` **nodeName** (lines 229-237)
-- `variable` **OKF_VERSION** (lines 9-9)
-- `function` **ownedGeneratedMarkdownFiles** (lines 1621-1632)
-- `function` **packageNameFromSpecifier** (lines 276-284)
-- `function` **parseFrontmatter** (lines 417-432)
-- `function` **planKnowledgeBuild** exported (lines 1634-1734)
-- `function` **preservedGenerationAt** (lines 463-473)
-- `function` **preservedGraphGenerationAt** (lines 475-488)
-- `function` **readExistingAttributes** (lines 434-443)
-- `function` **readUtf8** (lines 84-86)
-- `function` **relationshipTargetLink** (lines 1125-1135)
-- `function` **renderConcept** (lines 455-457)
-- `function` **resolveMarkdownTarget** (lines 1772-1790)
-- `function` **sanitizePathSegment** (lines 286-293)
-- `function` **scriptKindForPath** (lines 210-219)
-- `function` **serializeFrontmatter** (lines 445-453)
-- `function` **sourceTitle** (lines 205-208)
-- `class` **StaticGraph** (lines 322-405)
-- `method` **StaticGraph.addEdge** (lines 342-380)
-- `method` **StaticGraph.addNode** (lines 328-340)
-- `method` **StaticGraph.constructor** (lines 323-326)
-- `method` **StaticGraph.getEdges** (lines 390-404)
-- `method` **StaticGraph.getNode** (lines 382-384)
-- `method` **StaticGraph.getNodes** (lines 386-388)
-- `function` **staticScaffold** (lines 1467-1619)
-- `function` **textFromRouteInitializer** (lines 239-262)
-- `function` **toPosix** exported (lines 59-61)
-- `function` **unwrapExpression** (lines 264-274)
-- `function` **validateKnowledgeBundle** exported (lines 1792-1941)
-- `function` **walkFiles** (lines 93-112)
+- `function` **absoluteKey** (lines 83-86)
+- `function` **addPythonAstGraph** (lines 568-659)
+- `function` **applyKnowledgeBuild** exported (lines 1853-1863)
+- `function` **artifactPaths** (lines 429-437)
+- `function` **buildArchitectureMermaid** (lines 1377-1428)
+- `function` **buildCodeConcept** (lines 1261-1375)
+- `function` **buildGeneratedIndexes** (lines 1525-1582)
+- `function` **buildProjectAnalysis** (lines 512-566)
+- `function` **buildRelationshipMermaid** (lines 1430-1454)
+- `function` **buildServiceMermaid** (lines 1456-1486)
+- `function` **buildStaticGraph** (lines 661-1200)
+- `function` **categoryForNode** (lines 1232-1240)
+- `function` **classifyFile** (lines 182-225)
+- `function` **collectSourcePaths** (lines 155-180)
+- `function` **compareById** (lines 92-94)
+- `function` **compareText** (lines 88-90)
+- `function` **dateNow** (lines 481-483)
+- `function` **ensureDirectory** (lines 96-98)
+- `function` **escapeMermaidLabel** (lines 331-338)
+- `function` **formatTypeScriptDiagnostic** (lines 151-153)
+- `function` **generatedCodePath** (lines 317-321)
+- `function` **graphConcept** (lines 1488-1523)
+- `function` **graphNodeLabel** (lines 1228-1230)
+- `function` **graphPayload** (lines 1202-1226)
+- `function` **hashText** exported (lines 79-81)
+- `function` **hasPathPrefix** (lines 104-107)
+- `function` **isCodePath** (lines 243-245)
+- `function` **isDateLike** (lines 1885-1887)
+- `function` **isExported** (lines 247-249)
+- `variable` **KNOWLEDGE_PROCESS** (lines 11-11)
+- `function` **listMarkdown** (lines 1254-1259)
+- `function` **loadCodeGraph** exported (lines 2060-2068)
+- `function` **loadTypeScriptConfig** (lines 130-149)
+- `function` **markdownFilesInKnowledge** (lines 1865-1883)
+- `function` **markdownLink** (lines 323-329)
+- `function` **mermaidId** (lines 340-342)
+- `function` **nodeName** (lines 251-259)
+- `variable` **OKF_VERSION** (lines 10-10)
+- `function` **ownedGeneratedMarkdownFiles** (lines 1738-1749)
+- `function` **packageNameFromSpecifier** (lines 298-306)
+- `function` **parseFrontmatter** (lines 439-454)
+- `function` **planKnowledgeBuild** exported (lines 1751-1851)
+- `function` **preservedGenerationAt** (lines 485-495)
+- `function` **preservedGraphGenerationAt** (lines 497-510)
+- `function` **readExistingAttributes** (lines 456-465)
+- `function` **readUtf8** (lines 100-102)
+- `function` **relationshipTargetLink** (lines 1242-1252)
+- `function` **renderConcept** (lines 477-479)
+- `function` **resolveMarkdownTarget** (lines 1889-1907)
+- `function` **sanitizePathSegment** (lines 308-315)
+- `function` **scriptKindForPath** (lines 232-241)
+- `function` **serializeFrontmatter** (lines 467-475)
+- `function` **sourceTitle** (lines 227-230)
+- `class` **StaticGraph** (lines 344-427)
+- `method` **StaticGraph.addEdge** (lines 364-402)
+- `method` **StaticGraph.addNode** (lines 350-362)
+- `method` **StaticGraph.constructor** (lines 345-348)
+- `method` **StaticGraph.getEdges** (lines 412-426)
+- `method` **StaticGraph.getNode** (lines 404-406)
+- `method` **StaticGraph.getNodes** (lines 408-410)
+- `function` **staticScaffold** (lines 1584-1736)
+- `function` **textFromRouteInitializer** (lines 261-284)
+- `function` **toPosix** exported (lines 75-77)
+- `function` **unwrapExpression** (lines 286-296)
+- `function` **validateKnowledgeBundle** exported (lines 1909-2058)
+- `function` **walkFiles** (lines 109-128)
 
 # Imports
 
@@ -105,6 +106,7 @@ Framework tooling extracted from scripts/knowledge/CodebaseKnowledge.mjs by dete
 - `js-yaml` via `js-yaml`
 - `node:path` via `node:path`
 - `node:crypto` via `node:crypto`
+- `node:child_process` via `node:child_process`
 - `node:process` via `node:process`
 - `typescript` via `typescript`
 
@@ -120,4 +122,4 @@ Framework tooling extracted from scripts/knowledge/CodebaseKnowledge.mjs by dete
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `8e29641c778685d0974bea0aecb0006e3e88f8be1f988c08f346d799722cc878`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

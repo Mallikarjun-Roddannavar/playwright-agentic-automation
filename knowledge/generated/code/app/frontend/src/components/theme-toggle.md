@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: ThemeToggle
-description: Source module extracted from app/frontend/src/components/ThemeToggle.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/components/ThemeToggle.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/components/ThemeToggle.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/components/ThemeToggle.tsx
 source_sha256: 0063c7a65b7e4d3370c816bde5d56502e1f2c7091dd01a9f117d6030dd357cdc
 code_graph_id: file:app/frontend/src/components/ThemeToggle.tsx
 analysis_scope: static-ast
-fact_sha256: 42580e06025b5ac2f8dab0d6498b3afb5ac78f4533d7c71600029dcb4829dbed
+fact_sha256: 652795cae174851cbd5abd062b05cc49ee74b21dac44de14155ecc16f85ebe4e
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/components/ThemeToggle.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/components/ThemeToggle.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

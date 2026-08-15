@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: AuthContext
-description: Source module extracted from app/frontend/src/context/AuthContext.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/context/AuthContext.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/context/AuthContext.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/context/AuthContext.tsx
 source_sha256: 43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98
 code_graph_id: file:app/frontend/src/context/AuthContext.tsx
 analysis_scope: static-ast
-fact_sha256: ac0300d37a4797a50d195016e52c3ac406c72b0a2a286fe7a95751624a2010d9
+fact_sha256: ef6ac0ad8ed48c2b1c4918f47689c315ff4f8eaae41381345139dd334cbccd55
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/context/AuthContext.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/context/AuthContext.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

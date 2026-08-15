@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: HomePage
-description: Source module extracted from app/frontend/src/pages/HomePage.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/pages/HomePage.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/HomePage.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/pages/HomePage.tsx
 source_sha256: d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc
 code_graph_id: file:app/frontend/src/pages/HomePage.tsx
 analysis_scope: static-ast
-fact_sha256: 08ec81d417eb583bebdac1269196a46259e7791b89f4a777e53e3e80b058e2ed
+fact_sha256: 3c1612ef1079f337fd3dd54dceab2c535fd32a817603a45bb7be20afb2343836
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/pages/HomePage.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/pages/HomePage.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: vite.config
-description: Source module extracted from app/frontend/vite.config.ts by deterministic static analysis.
+description: Application frontend extracted from app/frontend/vite.config.ts by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/vite.config.ts
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - ts
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/vite.config.ts
 source_sha256: bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6
 code_graph_id: file:app/frontend/vite.config.ts
 analysis_scope: static-ast
-fact_sha256: eb82a41e9446920e63eaef3cc587b297161aeb3b180e37349e77a9dc0c021289
+fact_sha256: fe6291379e7d5b4dadc994fea38b4665751b110de746d4da622bc23ba544794c
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:46:34.642Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:46:34.642Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/vite.config.ts by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/vite.config.ts by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

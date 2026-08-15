@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: App
-description: Source module extracted from app/frontend/src/App.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/App.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/App.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/App.tsx
 source_sha256: 2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314
 code_graph_id: file:app/frontend/src/App.tsx
 analysis_scope: static-ast
-fact_sha256: 457e280149fd52da164081627b1d33c8689810479c128eb150bbc8a8ce495c6f
+fact_sha256: 3224c83836e479cd9fa12f3393a6b330e074ebb5cb43460f838774e9ba6f1b88
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/App.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/App.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

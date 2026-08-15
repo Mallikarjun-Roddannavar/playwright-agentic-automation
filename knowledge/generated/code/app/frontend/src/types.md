@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: types
-description: Source module extracted from app/frontend/src/types.ts by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/types.ts by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/types.ts
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - ts
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/types.ts
 source_sha256: 62eff509fae0ced9704c7383f061632a3917d90342583bddfdb7ba03b93dca1a
 code_graph_id: file:app/frontend/src/types.ts
 analysis_scope: static-ast
-fact_sha256: c5ed79844aaf37289986458a8b6b383f475a9169d7edd2df0b921168e2a3a47c
+fact_sha256: 92c9ff7d4d316f3126cb4a0e4c9c22c34b39467c0bddcd2bbd5119199cb7a556
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/types.ts by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/types.ts by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

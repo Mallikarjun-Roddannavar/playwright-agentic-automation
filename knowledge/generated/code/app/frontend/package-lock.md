@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: package-lock
-description: Source module extracted from app/frontend/package-lock.json by deterministic static analysis.
+description: Application frontend extracted from app/frontend/package-lock.json by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/package-lock.json
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - json
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/package-lock.json
 source_sha256: 301fd089af3bdfddc4aab425929b334d9442d142470afbfb6f6d64db06963ed1
 code_graph_id: file:app/frontend/package-lock.json
 analysis_scope: static-ast
-fact_sha256: 6b0ab2bba08d2a6cf1db4bfdc077f3d28699edd64e717d7a1925252e9235c339
+fact_sha256: 6a2fa45671633b3a409c21a67826ad2003489b7cceaeb1fd61b58710a3b52d1a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/package-lock.json by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/package-lock.json by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

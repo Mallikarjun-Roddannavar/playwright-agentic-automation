@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: postcss.config
-description: Source module extracted from app/frontend/postcss.config.js by deterministic static analysis.
+description: Application frontend extracted from app/frontend/postcss.config.js by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/postcss.config.js
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - js
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/postcss.config.js
 source_sha256: 9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3
 code_graph_id: file:app/frontend/postcss.config.js
 analysis_scope: static-ast
-fact_sha256: 41410667909eb3b97b58b740228591e869d0f9349a59e27321dd1d713657272f
+fact_sha256: 0ceee7273071c1b78a8e94f7cab97b8b79fd1e8e9060073b0de4f833a5441b20
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/postcss.config.js by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/postcss.config.js by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

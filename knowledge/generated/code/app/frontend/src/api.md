@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: api
-description: Source module extracted from app/frontend/src/api.ts by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/api.ts by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/api.ts
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - ts
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/api.ts
 source_sha256: 77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d
 code_graph_id: file:app/frontend/src/api.ts
 analysis_scope: static-ast
-fact_sha256: 162393bc4b4062fd31f34be3bdcc484da2cd82a18cffded5a2d0b4d0e5833db6
+fact_sha256: 75bb2d52e70f275bb2391d03e65f8ab255f54a58986c3c7a91d9e4dc24845b06
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/api.ts by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/api.ts by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

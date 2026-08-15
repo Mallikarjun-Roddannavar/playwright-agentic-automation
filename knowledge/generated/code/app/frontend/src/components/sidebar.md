@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: Sidebar
-description: Source module extracted from app/frontend/src/components/Sidebar.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/components/Sidebar.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/components/Sidebar.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/components/Sidebar.tsx
 source_sha256: 034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f
 code_graph_id: file:app/frontend/src/components/Sidebar.tsx
 analysis_scope: static-ast
-fact_sha256: e15639a924d803dc434cf358a311f5e9f7763b30696ee41c79e447c92433b496
+fact_sha256: 3b8763fcced29a4c15a0e634a65538f1f88282f98d6646bd4042f5dbb734aabc
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/components/Sidebar.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/components/Sidebar.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

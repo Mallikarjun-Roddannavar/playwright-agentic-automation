@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: ConfirmDialog
-description: Source module extracted from app/frontend/src/components/ConfirmDialog.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/components/ConfirmDialog.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/components/ConfirmDialog.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/components/ConfirmDialog.tsx
 source_sha256: 76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2
 code_graph_id: file:app/frontend/src/components/ConfirmDialog.tsx
 analysis_scope: static-ast
-fact_sha256: b0db4654cc608288970210eedd7d0468ea4358e3b06ad0d409640ac5a872f918
+fact_sha256: 6e38dec870630a33beec2c34103f83ce0f580c2998af55d41e433fc3ebdcf534
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/components/ConfirmDialog.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/components/ConfirmDialog.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

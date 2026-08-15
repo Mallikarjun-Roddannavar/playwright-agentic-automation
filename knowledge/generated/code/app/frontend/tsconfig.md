@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: tsconfig
-description: Source module extracted from app/frontend/tsconfig.json by deterministic static analysis.
+description: Application frontend extracted from app/frontend/tsconfig.json by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/tsconfig.json
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - json
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/tsconfig.json
 source_sha256: 23545a3ba4e3b1888bf30f3d7d90133ca559e3867d1e174a9aa191313afd2b2e
 code_graph_id: file:app/frontend/tsconfig.json
 analysis_scope: static-ast
-fact_sha256: 34aef74fbb384fd2f4f714eda98ef0bd27791dc764b29329790419ce50651a9c
+fact_sha256: a20f9cb990a7548c7786ebfe8f936b09d363fc122864e9f1b79f5d361f212e37
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/tsconfig.json by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/tsconfig.json by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

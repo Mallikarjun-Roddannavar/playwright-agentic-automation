@@ -22,6 +22,17 @@ Read the smallest relevant concept after querying the saved graph.
 - [rbac.spec](api/specs/rbac-spec.md)
   - `api/specs/rbac.spec.ts` — API specification.
 
+## backend
+
+- [auth.py](app/backend/auth.md)
+  - `app/backend/auth.py` — Python backend.
+- [database](app/backend/database.md)
+  - `app/backend/database.json` — Python backend.
+- [main.py](app/backend/main.md)
+  - `app/backend/main.py` — Python backend.
+- [models.py](app/backend/models.md)
+  - `app/backend/models.py` — Python backend.
+
 ## Configuration
 
 - [test-config](config/test-config.md)
@@ -36,6 +47,55 @@ Read the smallest relevant concept after querying the saved graph.
 - [TestFixtures](utils/fixtures/test-fixtures.md)
   - `utils/fixtures/TestFixtures.ts` — Shared fixture.
 
+## frontend
+
+- [package-lock](app/frontend/package-lock.md)
+  - `app/frontend/package-lock.json` — Application frontend.
+- [package](app/frontend/package.md)
+  - `app/frontend/package.json` — Application frontend.
+- [postcss.config](app/frontend/postcss-config.md)
+  - `app/frontend/postcss.config.js` — Application frontend.
+- [api](app/frontend/src/api.md)
+  - `app/frontend/src/api.ts` — Application frontend.
+- [App](app/frontend/src/app.md)
+  - `app/frontend/src/App.tsx` — Application frontend.
+- [AppLayout](app/frontend/src/components/app-layout.md)
+  - `app/frontend/src/components/AppLayout.tsx` — Application frontend.
+- [ConfirmDialog](app/frontend/src/components/confirm-dialog.md)
+  - `app/frontend/src/components/ConfirmDialog.tsx` — Application frontend.
+- [Modal](app/frontend/src/components/modal.md)
+  - `app/frontend/src/components/Modal.tsx` — Application frontend.
+- [Sidebar](app/frontend/src/components/sidebar.md)
+  - `app/frontend/src/components/Sidebar.tsx` — Application frontend.
+- [ThemeToggle](app/frontend/src/components/theme-toggle.md)
+  - `app/frontend/src/components/ThemeToggle.tsx` — Application frontend.
+- [AuthContext](app/frontend/src/context/auth-context.md)
+  - `app/frontend/src/context/AuthContext.tsx` — Application frontend.
+- [ThemeContext](app/frontend/src/context/theme-context.md)
+  - `app/frontend/src/context/ThemeContext.tsx` — Application frontend.
+- [main](app/frontend/src/main.md)
+  - `app/frontend/src/main.tsx` — Application frontend.
+- [FilesPage](app/frontend/src/pages/files-page.md)
+  - `app/frontend/src/pages/FilesPage.tsx` — Application frontend.
+- [FoldersPage](app/frontend/src/pages/folders-page.md)
+  - `app/frontend/src/pages/FoldersPage.tsx` — Application frontend.
+- [HomePage](app/frontend/src/pages/home-page.md)
+  - `app/frontend/src/pages/HomePage.tsx` — Application frontend.
+- [LoginPage](app/frontend/src/pages/login-page.md)
+  - `app/frontend/src/pages/LoginPage.tsx` — Application frontend.
+- [OAuthCallbackPage](app/frontend/src/pages/oauth-callback-page.md)
+  - `app/frontend/src/pages/OAuthCallbackPage.tsx` — Application frontend.
+- [PreferencesPage](app/frontend/src/pages/preferences-page.md)
+  - `app/frontend/src/pages/PreferencesPage.tsx` — Application frontend.
+- [types](app/frontend/src/types.md)
+  - `app/frontend/src/types.ts` — Application frontend.
+- [tailwind.config](app/frontend/tailwind-config.md)
+  - `app/frontend/tailwind.config.js` — Application frontend.
+- [tsconfig](app/frontend/tsconfig.md)
+  - `app/frontend/tsconfig.json` — Application frontend.
+- [vite.config](app/frontend/vite-config.md)
+  - `app/frontend/vite.config.ts` — Application frontend.
+
 ## Setup
 
 - [auth.setup](ui/setup/auth-setup.md)
@@ -43,54 +103,6 @@ Read the smallest relevant concept after querying the saved graph.
 
 ## Source modules
 
-- [database](app/backend/database.md)
-  - `app/backend/database.json` — Source module.
-- [package-lock](app/frontend/package-lock.md)
-  - `app/frontend/package-lock.json` — Source module.
-- [package](app/frontend/package.md)
-  - `app/frontend/package.json` — Source module.
-- [postcss.config](app/frontend/postcss-config.md)
-  - `app/frontend/postcss.config.js` — Source module.
-- [api](app/frontend/src/api.md)
-  - `app/frontend/src/api.ts` — Source module.
-- [App](app/frontend/src/app.md)
-  - `app/frontend/src/App.tsx` — Source module.
-- [AppLayout](app/frontend/src/components/app-layout.md)
-  - `app/frontend/src/components/AppLayout.tsx` — Source module.
-- [ConfirmDialog](app/frontend/src/components/confirm-dialog.md)
-  - `app/frontend/src/components/ConfirmDialog.tsx` — Source module.
-- [Modal](app/frontend/src/components/modal.md)
-  - `app/frontend/src/components/Modal.tsx` — Source module.
-- [Sidebar](app/frontend/src/components/sidebar.md)
-  - `app/frontend/src/components/Sidebar.tsx` — Source module.
-- [ThemeToggle](app/frontend/src/components/theme-toggle.md)
-  - `app/frontend/src/components/ThemeToggle.tsx` — Source module.
-- [AuthContext](app/frontend/src/context/auth-context.md)
-  - `app/frontend/src/context/AuthContext.tsx` — Source module.
-- [ThemeContext](app/frontend/src/context/theme-context.md)
-  - `app/frontend/src/context/ThemeContext.tsx` — Source module.
-- [main](app/frontend/src/main.md)
-  - `app/frontend/src/main.tsx` — Source module.
-- [FilesPage](app/frontend/src/pages/files-page.md)
-  - `app/frontend/src/pages/FilesPage.tsx` — Source module.
-- [FoldersPage](app/frontend/src/pages/folders-page.md)
-  - `app/frontend/src/pages/FoldersPage.tsx` — Source module.
-- [HomePage](app/frontend/src/pages/home-page.md)
-  - `app/frontend/src/pages/HomePage.tsx` — Source module.
-- [LoginPage](app/frontend/src/pages/login-page.md)
-  - `app/frontend/src/pages/LoginPage.tsx` — Source module.
-- [OAuthCallbackPage](app/frontend/src/pages/oauth-callback-page.md)
-  - `app/frontend/src/pages/OAuthCallbackPage.tsx` — Source module.
-- [PreferencesPage](app/frontend/src/pages/preferences-page.md)
-  - `app/frontend/src/pages/PreferencesPage.tsx` — Source module.
-- [types](app/frontend/src/types.md)
-  - `app/frontend/src/types.ts` — Source module.
-- [tailwind.config](app/frontend/tailwind-config.md)
-  - `app/frontend/tailwind.config.js` — Source module.
-- [tsconfig](app/frontend/tsconfig.md)
-  - `app/frontend/tsconfig.json` — Source module.
-- [vite.config](app/frontend/vite-config.md)
-  - `app/frontend/vite.config.ts` — Source module.
 - [check-test-ids](app/scripts/check-test-ids.md)
   - `app/scripts/check-test-ids.js` — Source module.
 
@@ -106,6 +118,8 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/checkNamingConventions.mjs` — Framework tooling.
 - [CodebaseKnowledge](scripts/knowledge/codebase-knowledge.md)
   - `scripts/knowledge/CodebaseKnowledge.mjs` — Framework tooling.
+- [python_ast_adapter.py](scripts/knowledge/python-ast-adapter.md)
+  - `scripts/knowledge/python_ast_adapter.py` — Framework tooling.
 - [queryKnowledge](scripts/query-knowledge.md)
   - `scripts/queryKnowledge.mjs` — Framework tooling.
 - [validateKnowledge](scripts/validate-knowledge.md)

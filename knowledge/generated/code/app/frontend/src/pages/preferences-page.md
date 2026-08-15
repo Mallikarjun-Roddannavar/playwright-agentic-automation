@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: PreferencesPage
-description: Source module extracted from app/frontend/src/pages/PreferencesPage.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/pages/PreferencesPage.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/PreferencesPage.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/pages/PreferencesPage.tsx
 source_sha256: 5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7
 code_graph_id: file:app/frontend/src/pages/PreferencesPage.tsx
 analysis_scope: static-ast
-fact_sha256: fe8ba763abcbf6bb64ecfa8cfc0fd00d8cec50c63f22909d9039054933d9e97b
+fact_sha256: 1bc0d7081eb4df0151ee21239c91710b3c6ef3774abf467eba086a4741dd024a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/pages/PreferencesPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/pages/PreferencesPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

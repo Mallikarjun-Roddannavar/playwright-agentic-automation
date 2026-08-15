@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: database
-description: Source module extracted from app/backend/database.json by deterministic static analysis.
+description: Python backend extracted from app/backend/database.json by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/backend/database.json
 tags:
   - generated
   - static-ast
-  - source
+  - backend
   - json
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/backend/database.json
 source_sha256: 703e37271b7a9fde34d98d7aeb13b16a47f4b286b8429e8f72936a00389f96b0
 code_graph_id: file:app/backend/database.json
 analysis_scope: static-ast
-fact_sha256: a62566c79f075fd1fae0d9b7e80e4a5ab404e35f4950799fe51b4dbe0b34ce8e
+fact_sha256: 0da67b7b239c5ea7fa684e5c7f521b12a5e8293b3dbfc1e3192536267a68dd91
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/backend/database.json by deterministic static analysis. The underlying source code remains authoritative.
+Python backend extracted from app/backend/database.json by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

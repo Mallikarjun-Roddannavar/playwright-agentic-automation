@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: tailwind.config
-description: Source module extracted from app/frontend/tailwind.config.js by deterministic static analysis.
+description: Application frontend extracted from app/frontend/tailwind.config.js by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/tailwind.config.js
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - js
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/tailwind.config.js
 source_sha256: a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f
 code_graph_id: file:app/frontend/tailwind.config.js
 analysis_scope: static-ast
-fact_sha256: c8c939958d877fe0cf9b1c540b379a626a6fa1b4c9ce0280e0494a3b916286c8
+fact_sha256: 24167c1a04a95122d089dbe9454abcf6390017fb26c57b98965f88e6fab7793a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/tailwind.config.js by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/tailwind.config.js by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

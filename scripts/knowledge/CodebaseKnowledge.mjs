@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import process from "node:process";
+import { execFileSync } from "node:child_process";
 
 import yaml from "js-yaml";
 import ts from "typescript";
@@ -10,12 +11,19 @@ export const OKF_VERSION = "0.2";
 export const KNOWLEDGE_PROCESS = "process:codebase-knowledge/1.0.0";
 
 const codeExtensions = new Set([".ts", ".tsx", ".mts", ".cts", ".js", ".mjs", ".cjs"]);
+const pythonExtensions = new Set([".py"]);
 const typeScriptExtensions = new Set([".ts", ".tsx", ".mts", ".cts"]);
-const sourceExtensions = new Set([...codeExtensions, ".json"]);
+const sourceExtensions = new Set([...codeExtensions, ...pythonExtensions, ".json"]);
 const ignoredDirectories = new Set([
   ".auth",
   "_git",
   ".git",
+  ".venv",
+  "venv",
+  ".mypy_cache",
+  "__pycache__",
+  "dist",
+  "build",
   "node_modules",
   "playwright-report",
   "test-results",
@@ -39,6 +47,10 @@ const relationLabels = {
   USES_PAGE: "uses page object",
   USES_SERVICE: "uses API service",
   USES_UI_ROUTE: "uses UI route",
+  CALLS: "calls",
+  ENFORCES_RBAC: "enforces RBAC",
+  USES_AUTH_DEPENDENCY: "uses auth dependency",
+  USES_PERSISTENCE: "uses persistence",
 };
 
 const interestingRelationships = new Set([
@@ -54,6 +66,10 @@ const interestingRelationships = new Set([
   "USES_PAGE",
   "USES_SERVICE",
   "USES_UI_ROUTE",
+  "CALLS",
+  "ENFORCES_RBAC",
+  "USES_AUTH_DEPENDENCY",
+  "USES_PERSISTENCE",
 ]);
 
 export function toPosix(value) {
@@ -164,6 +180,12 @@ function collectSourcePaths(repoRoot, parsedConfig) {
 }
 
 function classifyFile(relativePath) {
+  if (relativePath.startsWith("app/backend/")) {
+    return { category: "backend", label: "Python backend", conceptType: "Code Module" };
+  }
+  if (relativePath.startsWith("app/frontend/")) {
+    return { category: "frontend", label: "Application frontend", conceptType: "Code Module" };
+  }
   if (relativePath.startsWith("ui/pages/")) {
     return { category: "ui-page", label: "UI page object", conceptType: "Code Module" };
   }
@@ -541,6 +563,99 @@ function buildProjectAnalysis(repoRoot) {
     sourceFiles,
     sourceByAbsolutePath,
   };
+}
+
+function addPythonAstGraph(repoRoot, analysis, graph) {
+  const pythonSources = analysis.sourceFiles.filter((source) => pythonExtensions.has(source.extension));
+  if (pythonSources.length === 0) {
+    return;
+  }
+
+  const adapterPath = path.join(repoRoot, "scripts", "knowledge", "python_ast_adapter.py");
+  const output = execFileSync("python", [adapterPath, repoRoot], { encoding: "utf8" });
+  const facts = JSON.parse(output);
+  const sourceByPath = new Map(pythonSources.map((source) => [source.relativePath, source]));
+
+  const addFunction = (fact) => {
+    const source = sourceByPath.get(fact.path);
+    if (!source) {
+      return undefined;
+    }
+    const id = `symbol:${fact.path}#${fact.name}`;
+    graph.addNode({
+      id,
+      kind: "function",
+      label: fact.name,
+      path: fact.path,
+      category: source.category,
+      startLine: fact.line,
+      endLine: fact.endLine,
+      tags: ["function", "python", source.category],
+    });
+    graph.addEdge({
+      relation: "CONTAINS",
+      from: source.id,
+      to: id,
+      evidence: { path: fact.path, line: fact.line },
+    });
+    return id;
+  };
+
+  for (const fact of facts.functions) {
+    const functionId = addFunction(fact);
+    if (!functionId) {
+      continue;
+    }
+    for (const endpoint of fact.endpoints) {
+      const routeId = `route:${fact.path}#${fact.name}:${endpoint.method}`;
+      graph.addNode({
+        id: routeId,
+        kind: "route",
+        label: `${endpoint.method} ${endpoint.path}`,
+        path: fact.path,
+        category: "backend",
+        routeName: `${fact.name}:${endpoint.method}`,
+        startLine: endpoint.line,
+        tags: ["route", "python", "backend"],
+      });
+      graph.addEdge({
+        relation: "DECLARES_ROUTE",
+        from: functionId,
+        to: routeId,
+        evidence: { path: fact.path, line: endpoint.line },
+      });
+    }
+    for (const dependency of fact.authDependencies) {
+      graph.addEdge({
+        relation: "USES_AUTH_DEPENDENCY",
+        from: functionId,
+        to: `symbol:${dependency.path}#${dependency.name}`,
+        evidence: { path: fact.path, line: dependency.line },
+      });
+    }
+    for (const call of fact.calls) {
+      const target = `symbol:${call.path}#${call.name}`;
+      graph.addEdge({
+        relation: call.kind === "rbac" ? "ENFORCES_RBAC" : call.kind === "persistence" ? "USES_PERSISTENCE" : "CALLS",
+        from: functionId,
+        to: target,
+        evidence: { path: fact.path, line: call.line },
+      });
+    }
+  }
+
+  for (const edge of facts.imports) {
+    const from = sourceByPath.get(edge.path);
+    const target = sourceByPath.get(edge.target);
+    if (from && target) {
+      graph.addEdge({
+        relation: "IMPORTS",
+        from: from.id,
+        to: target.id,
+        evidence: { path: edge.path, line: edge.line, detail: edge.target },
+      });
+    }
+  }
 }
 
 function buildStaticGraph(repoRoot) {
@@ -1073,6 +1188,8 @@ function buildStaticGraph(repoRoot) {
     visit(source.sourceFile);
   }
 
+  addPythonAstGraph(repoRoot, analysis, graph);
+
   const sources = analysis.sourceFiles.map((source) => ({
     path: source.relativePath,
     sha256: source.hash,
@@ -1094,7 +1211,7 @@ function graphPayload(result, generationAt) {
     generation: {
       by: KNOWLEDGE_PROCESS,
       at: generationAt,
-      parser: `TypeScript ${ts.version}`,
+      parser: `TypeScript ${ts.version} + Python ast`,
     },
     sources: result.analysis.sourceFiles
       .map((source) => ({

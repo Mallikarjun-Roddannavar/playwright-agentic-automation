@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: AppLayout
-description: Source module extracted from app/frontend/src/components/AppLayout.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/components/AppLayout.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/components/AppLayout.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/components/AppLayout.tsx
 source_sha256: d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed
 code_graph_id: file:app/frontend/src/components/AppLayout.tsx
 analysis_scope: static-ast
-fact_sha256: f5e27273e9a7042c57cddba695979edfdd6b912db9855852584b94fe52228df3
+fact_sha256: 3c371385030ea8ee027f189ce38b7fb9dc5f169280068a093799f8ddacc980e2
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/components/AppLayout.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/components/AppLayout.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 

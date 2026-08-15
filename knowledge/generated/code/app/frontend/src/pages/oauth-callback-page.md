@@ -1,12 +1,12 @@
 ---
 type: Code Module
 title: OAuthCallbackPage
-description: Source module extracted from app/frontend/src/pages/OAuthCallbackPage.tsx by deterministic static analysis.
+description: Application frontend extracted from app/frontend/src/pages/OAuthCallbackPage.tsx by deterministic static analysis.
 resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/OAuthCallbackPage.tsx
 tags:
   - generated
   - static-ast
-  - source
+  - frontend
   - tsx
 status: stable
 sources:
@@ -18,18 +18,18 @@ source_path: app/frontend/src/pages/OAuthCallbackPage.tsx
 source_sha256: 4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a
 code_graph_id: file:app/frontend/src/pages/OAuthCallbackPage.tsx
 analysis_scope: static-ast
-fact_sha256: fdebbb022cc6d9297f4594553b5cec45a6f00eeebe0f4337d9b96dfd9f5aca0a
+fact_sha256: b60927aaa1780bc8e10306949580ec83ddb6da8b568047fff7ee27a9bd45c7f5
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-15T12:01:02.517Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-15T12:01:02.517Z"
 ---
 
 # Purpose
 
-Source module extracted from app/frontend/src/pages/OAuthCallbackPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
+Application frontend extracted from app/frontend/src/pages/OAuthCallbackPage.tsx by deterministic static analysis. The underlying source code remains authoritative.
 
 # Symbols
 
