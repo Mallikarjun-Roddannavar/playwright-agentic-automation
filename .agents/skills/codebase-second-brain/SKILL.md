@@ -1,6 +1,6 @@
 ---
 name: codebase-second-brain
-description: Retrieve, verify, and refresh the persistent Open Knowledge Format v0.2 codebase memory for playwright-pom-agent-skills. Use when an agent needs architecture discovery, source ownership, page/API/fixture relationships, static AST graph queries, knowledge freshness checks, Mermaid/Obsidian navigation, or durable knowledge updates after repository changes.
+description: Retrieve, verify, and refresh the persistent Open Knowledge Format v0.2 codebase memory for playwright-agentic-automation. Use when an agent needs architecture discovery, source ownership, page/API/fixture relationships, static AST graph queries, knowledge freshness checks, Mermaid/Obsidian navigation, or durable knowledge updates after repository changes.
 ---
 
 # Codebase Second Brain

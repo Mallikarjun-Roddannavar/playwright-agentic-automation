@@ -1,6 +1,6 @@
 ---
 name: pw-framework-tooling
-description: Maintain framework-wide quality tooling, runtime configuration, waits, logging, reporting, and Playwright config for the `playwright-pom-agent-skills` Playwright framework. Use when tasks touch playwright.config.ts, package.json scripts, eslint/prettier/typecheck setup, waits, logger, custom reporter, or README sections about framework behavior.
+description: Maintain framework-wide quality tooling, runtime configuration, waits, logging, reporting, and Playwright config for the `playwright-agentic-automation` Playwright framework. Use when tasks touch playwright.config.ts, package.json scripts, eslint/prettier/typecheck setup, waits, logger, custom reporter, or README sections about framework behavior.
 ---
 
 # PW Framework Tooling

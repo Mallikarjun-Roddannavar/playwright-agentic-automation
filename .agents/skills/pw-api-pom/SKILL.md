@@ -1,6 +1,6 @@
 ---
 name: pw-api-pom
-description: Maintain API services, API specs, shared fixtures, and auth/API session setup for the `playwright-pom-agent-skills` Playwright framework. Use when tasks touch api/services, api/specs, TestFixtures, auth token flows, role sessions, or route constants in the API automation layer.
+description: Maintain API services, API specs, shared fixtures, and auth/API session setup for the `playwright-agentic-automation` Playwright framework. Use when tasks touch api/services, api/specs, TestFixtures, auth token flows, role sessions, or route constants in the API automation layer.
 ---
 
 # PW API POM

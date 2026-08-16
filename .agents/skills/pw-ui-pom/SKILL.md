@@ -1,6 +1,6 @@
 ---
 name: pw-ui-pom
-description: Maintain UI page objects, UI specs, and UI navigation flows for the `playwright-pom-agent-skills` Playwright framework. Use when tasks touch ui/pages, ui/specs, ui/setup, selector placement, navigation return types, or Page Object Model decisions for this repo.
+description: Maintain UI page objects, UI specs, and UI navigation flows for the `playwright-agentic-automation` Playwright framework. Use when tasks touch ui/pages, ui/specs, ui/setup, selector placement, navigation return types, or Page Object Model decisions for this repo.
 ---
 
 # PW UI POM
