@@ -1595,7 +1595,7 @@ function staticScaffold(repoRoot) {
         sources: [
           {
             id: "repository",
-            resource: "repo://playwright-pom-agent-skills/AGENTS.md",
+            resource: "repo://playwright-agentic-automation/AGENTS.md",
             title: "Repository instructions",
           },
         ],
@@ -1610,7 +1610,7 @@ function staticScaffold(repoRoot) {
 okf_version: "${OKF_VERSION}"
 ---
 
-# Playwright POM Agent Skills knowledge
+# Playwright Agentic Automation knowledge
 
 This is a portable, offline-first Open Knowledge Format (OKF) v${OKF_VERSION} bundle. Start here, then retrieve only the smallest relevant concept. The committed source code remains authoritative.
 
