@@ -57,4 +57,4 @@ export class Logger {
   }
 }
 
-export const logger = new Logger("playwright-pom-agent-skills");
+export const logger = new Logger("playwright-agentic-automation");

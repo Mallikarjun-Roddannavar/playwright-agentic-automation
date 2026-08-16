@@ -1,6 +1,6 @@
-# Playwright POM Agent Skills (Playwright + TypeScript)
+# Playwright Agentic Automation (Playwright + TypeScript)
 
-Playwright + TypeScript automation framework for UI and API testing with page objects, shared fixtures, reusable services, and AI-assistant guidance through AGENTS.md and local skills
+Playwright + TypeScript framework for agentic test automation across UI and API layers, with Page Object Model, shared fixtures, reusable services, codebase knowledge, and local agent skills.
 
 ## What This Repo Contains
 
@@ -19,7 +19,7 @@ It provides:
 The practice application and automation framework live in this single learning repository:
 
 ```text
-playwright-pom-agent-skills/
+playwright-agentic-automation/
   .agents/skills/
   app/
     backend/
@@ -57,7 +57,7 @@ npm run install:browsers
 ## Structure
 
 ```text
-playwright-pom-agent-skills/
+playwright-agentic-automation/
   .agents/
     skills/
   api/
@@ -83,7 +83,7 @@ playwright-pom-agent-skills/
 ## Setup
 
 ```bash
-cd playwright-pom-agent-skills
+cd playwright-agentic-automation
 npm install
 npm run install:browsers
 ```
@@ -114,14 +114,14 @@ If the VS Code Playwright extension does not start the configured web servers au
 Terminal 1 (backend):
 
 ```powershell
-cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-pom-agent-skills\app\backend
+cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-agentic-automation\app\backend
 .\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8001
 ```
 
 Terminal 2 (frontend):
 
 ```powershell
-cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-pom-agent-skills\app\frontend
+cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-agentic-automation\app\frontend
 $env:VITE_API_BASE_URL = "http://127.0.0.1:8001"
 npm run dev -- --host 127.0.0.1 --port 5174
 ```
@@ -237,10 +237,10 @@ For detailed framework rules, naming conventions, ownership boundaries, config g
 This repository natively supports [Hermes Agent](https://hermes-agent.nousresearch.com/) since it utilizes the vendor-neutral `agentskills.io` standard. No code changes are required to integrate Hermes.
 
 1. **Install Hermes:** `curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash`
-2. **Navigate:** Open your terminal to the root of this repository (`cd playwright-pom-agent-skills`).
+2. **Navigate:** Open your terminal to the root of this repository (`cd playwright-agentic-automation`).
 3. **Start:** Run `hermes`. The agent will automatically detect and load `AGENTS.md` into its context.
 4. **Register Skills (Optional):** To give the agent access to the specialized local `.agents/skills/` folder, register it as an external skills directory:
    ```bash
-   hermes config set skills.external_dirs "['/path/to/playwright-pom-agent-skills/.agents/skills']"
+   hermes config set skills.external_dirs "['/path/to/playwright-agentic-automation/.agents/skills']"
    ```
    Hermes will then dynamically load the `pw-api-pom`, `pw-framework-tooling`, `pw-ui-pom`, and `codebase-second-brain` context files when your task matches their description.

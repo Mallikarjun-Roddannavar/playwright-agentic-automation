@@ -16,10 +16,10 @@ The cases in this folder were derived from the actual implementation and repo gu
 - project guidance: `playwright-practice-app/AGENTS.md`
 - backend guidance: `playwright-practice-app/backend/AGENTS.md`
 - frontend guidance: `playwright-practice-app/frontend/AGENTS.md`
-- framework guidance: `playwright-practice-app/playwright-pom-agent-skills/AGENTS.md`
+- framework guidance: `playwright-agentic-automation/AGENTS.md`
 - local Codex skills:
-  - `playwright-pom-agent-skills-ui-pom`
-  - `playwright-pom-agent-skills-api-workflow`
+  - `playwright-agentic-automation-ui-pom`
+  - `playwright-agentic-automation-api-workflow`
 - app behavior:
   - `backend/main.py`
   - `backend/models.py`

@@ -1,4 +1,4 @@
-playwright-pom-agent-skills/
+playwright-agentic-automation/
 **/node_modules/
 **/.venv/
 **/__pycache__/

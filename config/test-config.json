@@ -1,5 +1,5 @@
 {
-  "SUITE_NAME": "playwright-pom-agent-skills",
+  "SUITE_NAME": "playwright-agentic-automation",
   "BASE_URLS": {
     "UI": "http://127.0.0.1:5174",
     "API": "http://127.0.0.1:8001"

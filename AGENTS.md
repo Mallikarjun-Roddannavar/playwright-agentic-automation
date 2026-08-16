@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This file applies to the entire `playwright-pom-agent-skills` framework.
+This file applies to the entire `playwright-agentic-automation` framework.
 
 ## Purpose
 
