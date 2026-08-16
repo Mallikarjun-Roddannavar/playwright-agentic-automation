@@ -2,7 +2,7 @@
 type: Test Specification
 title: files.spec
 description: API specification extracted from api/specs/files.spec.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/api/specs/files.spec.ts
+resource: repo://playwright-agentic-automation/api/specs/files.spec.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/api/specs/files.spec.ts
+    resource: repo://playwright-agentic-automation/api/specs/files.spec.ts
     title: api/specs/files.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: api/specs/files.spec.ts
 source_sha256: 8c9535dc43d0886fecbb0c0f8f329222beec11f2b807e0dc325ecf8efc4e2b70
 code_graph_id: file:api/specs/files.spec.ts
 analysis_scope: static-ast
-fact_sha256: 0ca5af855c91d2e698c9cad56a89cc49d149a11503fa606a7ce8bf46648dfc41
+fact_sha256: 9a4cb1f17c9ee758c1b31a155ddf447b333a4ab2dac27df68c0014f5db764d9c
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

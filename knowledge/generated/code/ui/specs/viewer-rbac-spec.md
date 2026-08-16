@@ -2,7 +2,7 @@
 type: Test Specification
 title: viewer-rbac.spec
 description: UI specification extracted from ui/specs/viewer-rbac.spec.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/specs/viewer-rbac.spec.ts
+resource: repo://playwright-agentic-automation/ui/specs/viewer-rbac.spec.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/specs/viewer-rbac.spec.ts
+    resource: repo://playwright-agentic-automation/ui/specs/viewer-rbac.spec.ts
     title: ui/specs/viewer-rbac.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/specs/viewer-rbac.spec.ts
 source_sha256: 79cff691d9d4a85bf7239a6b9861c09e627153bb61880e6886796a8d2f93347d
 code_graph_id: file:ui/specs/viewer-rbac.spec.ts
 analysis_scope: static-ast
-fact_sha256: 0a1e579cf2762d2d295eaacebfda7ddd9f44f942a0d62a837b18e67efaa0a57e
+fact_sha256: aa9dc9aac70ecf1160c1b42117cfcfc5d3246ce94889cb40bfcc8a8bc5276b2a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

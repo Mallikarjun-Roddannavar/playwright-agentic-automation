@@ -2,7 +2,7 @@
 type: Code Module
 title: LoginPage
 description: UI page object extracted from ui/pages/LoginPage.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/pages/LoginPage.ts
+resource: repo://playwright-agentic-automation/ui/pages/LoginPage.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/pages/LoginPage.ts
+    resource: repo://playwright-agentic-automation/ui/pages/LoginPage.ts
     title: ui/pages/LoginPage.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/pages/LoginPage.ts
 source_sha256: 1dbb11a1e664e2b285bc4d27f85fb59b8f52ec347abe6f142ab41dd440a1e752
 code_graph_id: file:ui/pages/LoginPage.ts
 analysis_scope: static-ast
-fact_sha256: 540ad4bd03c0bf995725cdf470d6a3003f4e2f1be06e9f6aa7141f24ccd305c2
+fact_sha256: 574defbc1c8a07ce33252c765ac6cb5e61fbac5ccb946f9c6a260cafed084dff
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

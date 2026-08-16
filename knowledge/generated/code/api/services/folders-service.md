@@ -2,7 +2,7 @@
 type: Code Module
 title: FoldersService
 description: API service extracted from api/services/FoldersService.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/api/services/FoldersService.ts
+resource: repo://playwright-agentic-automation/api/services/FoldersService.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/api/services/FoldersService.ts
+    resource: repo://playwright-agentic-automation/api/services/FoldersService.ts
     title: api/services/FoldersService.ts
     author: process:codebase-knowledge/1.0.0
 source_path: api/services/FoldersService.ts
 source_sha256: 14bf178d9f8665b5cf62a276f3e68b92de8a02fd54a316d29a44f1126f0fbc02
 code_graph_id: file:api/services/FoldersService.ts
 analysis_scope: static-ast
-fact_sha256: e39746a4a2ff7b8fb3f0807c3e44ca3a27e2043c3e5befd4946f4cc10c1ead72
+fact_sha256: 1adf11b105c0e134a2a759d40623933c1bd89e5f183e535d44ed03e9c058528e
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

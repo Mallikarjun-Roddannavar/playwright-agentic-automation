@@ -2,7 +2,7 @@
 type: Code Module
 title: check-test-ids
 description: Source module extracted from app/scripts/check-test-ids.js by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/scripts/check-test-ids.js
+resource: repo://playwright-agentic-automation/app/scripts/check-test-ids.js
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/scripts/check-test-ids.js
+    resource: repo://playwright-agentic-automation/app/scripts/check-test-ids.js
     title: app/scripts/check-test-ids.js
     author: process:codebase-knowledge/1.0.0
 source_path: app/scripts/check-test-ids.js
 source_sha256: 096f85735f3bd88eb066076d3adce242764b7473d5c88b5eadda63e34628f848
 code_graph_id: file:app/scripts/check-test-ids.js
 analysis_scope: static-ast
-fact_sha256: d957867d658ad8b22d7d67d889a9a6305877df15dc3759cd585242eea52dee6e
+fact_sha256: fa59de827464b68758bdb2d9fa0ca7fe6fb3f537394b0208964e1ce5de9fea0a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

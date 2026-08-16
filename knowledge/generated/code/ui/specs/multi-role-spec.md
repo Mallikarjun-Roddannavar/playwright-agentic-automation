@@ -2,7 +2,7 @@
 type: Test Specification
 title: multi-role.spec
 description: UI specification extracted from ui/specs/multi-role.spec.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/specs/multi-role.spec.ts
+resource: repo://playwright-agentic-automation/ui/specs/multi-role.spec.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/specs/multi-role.spec.ts
+    resource: repo://playwright-agentic-automation/ui/specs/multi-role.spec.ts
     title: ui/specs/multi-role.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/specs/multi-role.spec.ts
 source_sha256: 3450191ff39037a1d9fff57fb184bf542aa6f5a1486b95705bd913e15dd22e31
 code_graph_id: file:ui/specs/multi-role.spec.ts
 analysis_scope: static-ast
-fact_sha256: cbe2e02504d9f0db983dd2237b6eb2f2492dbcbbbb1201f61129f36026791241
+fact_sha256: fbf01f02801f7d22b09e4e2e3a706d5f3d340150a2216fab234e3757a86ec313
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

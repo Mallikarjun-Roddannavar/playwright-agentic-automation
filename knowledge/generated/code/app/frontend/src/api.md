@@ -2,7 +2,7 @@
 type: Code Module
 title: api
 description: Application frontend extracted from app/frontend/src/api.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/api.ts
+resource: repo://playwright-agentic-automation/app/frontend/src/api.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/api.ts
+    resource: repo://playwright-agentic-automation/app/frontend/src/api.ts
     title: app/frontend/src/api.ts
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/api.ts
 source_sha256: 77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d
 code_graph_id: file:app/frontend/src/api.ts
 analysis_scope: static-ast
-fact_sha256: 75bb2d52e70f275bb2391d03e65f8ab255f54a58986c3c7a91d9e4dc24845b06
+fact_sha256: b1ef8893bb2215f08051671adc4d02a1848b90c40c4f6c779df200831b3c2883
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

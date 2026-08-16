@@ -2,7 +2,7 @@
 type: Test Specification
 title: files.spec
 description: UI specification extracted from ui/specs/files.spec.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/specs/files.spec.ts
+resource: repo://playwright-agentic-automation/ui/specs/files.spec.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/specs/files.spec.ts
+    resource: repo://playwright-agentic-automation/ui/specs/files.spec.ts
     title: ui/specs/files.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/specs/files.spec.ts
 source_sha256: 01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786
 code_graph_id: file:ui/specs/files.spec.ts
 analysis_scope: static-ast
-fact_sha256: c9e62eb2f31122f5318d549a391156a961fafe4bfaf84a14e6e76c35365a0234
+fact_sha256: 7b9abaf7688bb8a60671358eb6d67b320efcf36ab4bfd426400b473d56a8ec54
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

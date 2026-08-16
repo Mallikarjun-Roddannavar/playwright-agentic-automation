@@ -2,7 +2,7 @@
 type: Code Module
 title: AuthService
 description: API service extracted from api/services/AuthService.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/api/services/AuthService.ts
+resource: repo://playwright-agentic-automation/api/services/AuthService.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/api/services/AuthService.ts
+    resource: repo://playwright-agentic-automation/api/services/AuthService.ts
     title: api/services/AuthService.ts
     author: process:codebase-knowledge/1.0.0
 source_path: api/services/AuthService.ts
 source_sha256: 33d1641c6e48e65bd1008fd9802efe6508e4a1838ab1ec3d24b7672f8f7b2171
 code_graph_id: file:api/services/AuthService.ts
 analysis_scope: static-ast
-fact_sha256: 7f93ec73cce19c7ebd6f7a7850924a39f312c4279b23e572a53524f7b82df1b8
+fact_sha256: 7c630b92b88a0796e8fc04be659b28a64d32267cc70a6b0b94aefd676172917c
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

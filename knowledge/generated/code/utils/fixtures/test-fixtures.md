@@ -2,7 +2,7 @@
 type: Code Module
 title: TestFixtures
 description: Shared fixture extracted from utils/fixtures/TestFixtures.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/utils/fixtures/TestFixtures.ts
+resource: repo://playwright-agentic-automation/utils/fixtures/TestFixtures.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/utils/fixtures/TestFixtures.ts
+    resource: repo://playwright-agentic-automation/utils/fixtures/TestFixtures.ts
     title: utils/fixtures/TestFixtures.ts
     author: process:codebase-knowledge/1.0.0
 source_path: utils/fixtures/TestFixtures.ts
 source_sha256: bdbc158860b165c0b89851845be47d89998aed86d58f303660f2ab383381300b
 code_graph_id: file:utils/fixtures/TestFixtures.ts
 analysis_scope: static-ast
-fact_sha256: d4a3f125b6dfab7e971efd80305d246ae679517f047adeed82158871afcfd6fc
+fact_sha256: 5c9c4d15f43d27c4bce2af8e6f24d3bd539d0a5d432f4751d279e782e36d99ec
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

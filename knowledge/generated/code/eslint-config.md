@@ -2,7 +2,7 @@
 type: Code Module
 title: eslint.config
 description: Framework tooling extracted from eslint.config.mjs by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/eslint.config.mjs
+resource: repo://playwright-agentic-automation/eslint.config.mjs
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/eslint.config.mjs
+    resource: repo://playwright-agentic-automation/eslint.config.mjs
     title: eslint.config.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: eslint.config.mjs
 source_sha256: c82c0a3e7648473d0accbbc87034cdaa3ed874355af475086f2308132bd1166a
 code_graph_id: file:eslint.config.mjs
 analysis_scope: static-ast
-fact_sha256: 65a9dd7a74674a991a9c2207ba7e16fc0b572f1a9b22b292e94b3ccbea0a33c6
+fact_sha256: 6741a0f15e8c10bedf54a78fd66ca643bc2ebb55812949c38ee6a5a0b8d193cb
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:03:30.324Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:03:30.324Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

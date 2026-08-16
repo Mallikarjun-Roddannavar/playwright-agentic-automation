@@ -2,7 +2,7 @@
 type: Code Module
 title: ThemeContext
 description: Application frontend extracted from app/frontend/src/context/ThemeContext.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/context/ThemeContext.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/context/ThemeContext.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/context/ThemeContext.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/context/ThemeContext.tsx
     title: app/frontend/src/context/ThemeContext.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/context/ThemeContext.tsx
 source_sha256: 54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c
 code_graph_id: file:app/frontend/src/context/ThemeContext.tsx
 analysis_scope: static-ast
-fact_sha256: 748489d898a56d32c3dc9c6b0051e456b6ced9093fe81d506f15f7bb473a11ad
+fact_sha256: 97a7198e26d33dbc21de3c7c3752267a23eeb9c7e0ed1ace34f5dd11cc874a5f
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

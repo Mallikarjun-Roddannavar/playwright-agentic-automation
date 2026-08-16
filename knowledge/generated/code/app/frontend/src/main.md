@@ -2,7 +2,7 @@
 type: Code Module
 title: main
 description: Application frontend extracted from app/frontend/src/main.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/main.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/main.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/main.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/main.tsx
     title: app/frontend/src/main.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/main.tsx
 source_sha256: 948c6c4e5dce049d0fd55f479d48510da97f0af12d1c4819b6cc3e5376b11976
 code_graph_id: file:app/frontend/src/main.tsx
 analysis_scope: static-ast
-fact_sha256: 48d3b800e05668fadc4b665b7bf1c8a4d94a84ba49f078926cf455bdb31e1100
+fact_sha256: c6cf03ed8aa6b50ba22d077d0ade798cb5fb0a1bf8cd277bb8bd4e69433ebe30
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

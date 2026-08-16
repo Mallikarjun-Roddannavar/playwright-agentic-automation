@@ -2,7 +2,7 @@
 type: Configuration
 title: tsconfig
 description: Configuration extracted from tsconfig.json by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/tsconfig.json
+resource: repo://playwright-agentic-automation/tsconfig.json
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/tsconfig.json
+    resource: repo://playwright-agentic-automation/tsconfig.json
     title: tsconfig.json
     author: process:codebase-knowledge/1.0.0
 source_path: tsconfig.json
 source_sha256: ef18f7b3d95f79b7b3855793304a2b4cc800abb1ffb5e63e24d4103936ec2fc9
 code_graph_id: file:tsconfig.json
 analysis_scope: static-ast
-fact_sha256: cda95674193b2ca7d86b6b511ae35d8314040d0ca5147b555fa1c9b993f6761d
+fact_sha256: d2bd1674c5f383911ee95169f487802a3c6c6187ba712432f125173a23ff68c6
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:47:52.662Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:47:52.662Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

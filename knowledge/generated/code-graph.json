@@ -1,13 +1,13 @@
 {
   "format": "static-code-graph",
   "formatVersion": "1.0",
-  "title": "playwright-pom-agent-skills static code graph",
+  "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "6f0adce6e92b1f397645fddd6a5fb0162695d6305aa3829544664eb2ec84aee6",
+  "sourceDigest": "cf4581aec9c716cdf59bd9646f243d9f931b91806c8ee29328e37c1ef3c17240",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-15T12:24:04.139Z",
+    "at": "2026-08-16T08:39:27.990Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -188,7 +188,7 @@
     },
     {
       "path": "config/test-config.json",
-      "sha256": "163715254fb5696e79af964e16867e764b5afafd317dbbdc97ea2aac80afa429",
+      "sha256": "f3a4eb530a16eec2ef30dba7ea35d1542195445563657a1df763cae1d15850ff",
       "category": "configuration"
     },
     {
@@ -198,7 +198,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "c582cb6cc48edfb954c27429f59d78cad93d11d7a89356904b15de5dfdb9246d",
+      "sha256": "1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8",
       "category": "configuration"
     },
     {
@@ -218,7 +218,7 @@
     },
     {
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "sha256": "823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f",
+      "sha256": "52a5e81acd7d5b81b4ba0337db13b8dcf0533eb4bc64a49359618b16fc61d40c",
       "category": "tooling"
     },
     {
@@ -303,7 +303,7 @@
     },
     {
       "path": "utils/common/Logger.ts",
-      "sha256": "d8019fc932cdb8d00f33816a68c12f053964ac8a5d088d79fb0298e926b873b7",
+      "sha256": "2260e3c15b200659cfdc1015496a7ca8e05f30d5cfa4b901ac47c92ca7855f12",
       "category": "utility"
     },
     {
@@ -748,7 +748,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "163715254fb5696e79af964e16867e764b5afafd317dbbdc97ea2aac80afa429"
+      "sourceHash": "f3a4eb530a16eec2ef30dba7ea35d1542195445563657a1df763cae1d15850ff"
     },
     {
       "id": "file:eslint.config.mjs",
@@ -772,7 +772,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "c582cb6cc48edfb954c27429f59d78cad93d11d7a89356904b15de5dfdb9246d"
+      "sourceHash": "1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8"
     },
     {
       "id": "file:playwright.config.ts",
@@ -820,7 +820,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f"
+      "sourceHash": "52a5e81acd7d5b81b4ba0337db13b8dcf0533eb4bc64a49359618b16fc61d40c"
     },
     {
       "id": "file:scripts/knowledge/python_ast_adapter.py",
@@ -1024,7 +1024,7 @@
         "ts",
         "utility"
       ],
-      "sourceHash": "d8019fc932cdb8d00f33816a68c12f053964ac8a5d088d79fb0298e926b873b7"
+      "sourceHash": "2260e3c15b200659cfdc1015496a7ca8e05f30d5cfa4b901ac47c92ca7855f12"
     },
     {
       "id": "file:utils/common/Waits.ts",
@@ -1347,9 +1347,9 @@
       ]
     },
     {
-      "id": "repository:playwright-pom-agent-skills",
+      "id": "repository:playwright-agentic-automation",
       "kind": "repository",
-      "label": "playwright-pom-agent-skills",
+      "label": "playwright-agentic-automation",
       "tags": [
         "repository",
         "static-analysis"
@@ -5575,19 +5575,6 @@
       ]
     },
     {
-      "id": "edge:0575cfc464c27bef",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:package.json",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "package.json",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:058f94128776f503",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:app/frontend/src/main.tsx",
@@ -5615,6 +5602,19 @@
       ]
     },
     {
+      "id": "edge:08b47f620ce16098",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:api/services/AuthService.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "api/services/AuthService.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:08bb90e8ac10e350",
       "relation": "CONTAINS",
       "from": "file:ui/pages/FolderFilesPage.ts",
@@ -5624,19 +5624,6 @@
         {
           "path": "ui/pages/FolderFilesPage.ts",
           "line": 9
-        }
-      ]
-    },
-    {
-      "id": "edge:09fed1fd84de4fe3",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/pages/LoginPage.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/pages/LoginPage.ts",
-          "line": 1
         }
       ]
     },
@@ -5651,6 +5638,19 @@
           "path": "ui/setup/auth.setup.ts",
           "line": 8,
           "detail": "@utils/common/Logger"
+        }
+      ]
+    },
+    {
+      "id": "edge:0a550f0e9aa41a7d",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/pages/BasePage.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/pages/BasePage.ts",
+          "line": 1
         }
       ]
     },
@@ -5828,6 +5828,19 @@
       ]
     },
     {
+      "id": "edge:0d82b83a394b347a",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:utils/common/Waits.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "utils/common/Waits.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:0de54c0b7c19f522",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -5965,6 +5978,19 @@
         {
           "path": "ui/setup/auth.setup.ts",
           "line": 41
+        }
+      ]
+    },
+    {
+      "id": "edge:108cdc0a331533c8",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:api/specs/files.spec.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "api/specs/files.spec.ts",
+          "line": 1
         }
       ]
     },
@@ -6188,6 +6214,19 @@
       ]
     },
     {
+      "id": "edge:14896458529e4698",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:utils/fixtures/TestFixtures.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "utils/fixtures/TestFixtures.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:14cc2814134a72ee",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:ui/setup/auth.setup.ts",
@@ -6241,27 +6280,14 @@
       ]
     },
     {
-      "id": "edge:16c102fe078847db",
+      "id": "edge:1678e6833f463718",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/components/AppLayout.tsx",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/scripts/check-test-ids.js",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "app/frontend/src/components/AppLayout.tsx",
-          "line": 1
-        }
-      ]
-    },
-    {
-      "id": "edge:1721f76669d007c6",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/vite.config.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/vite.config.ts",
+          "path": "app/scripts/check-test-ids.js",
           "line": 1
         }
       ]
@@ -6585,19 +6611,6 @@
       ]
     },
     {
-      "id": "edge:218dd55b5a10a3a0",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:scripts/queryKnowledge.mjs",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/queryKnowledge.mjs",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:2191342725278646",
       "relation": "USES_API_ROUTE",
       "from": "file:api/specs/health.spec.ts",
@@ -6667,6 +6680,19 @@
       ]
     },
     {
+      "id": "edge:23ec1e3d3a61b6c3",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/specs/viewer-rbac.spec.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/specs/viewer-rbac.spec.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:242f9107a56dca56",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:utils/common/CustomReporter.ts",
@@ -6690,6 +6716,19 @@
         {
           "path": "app/frontend/src/components/ThemeToggle.tsx",
           "line": 3
+        }
+      ]
+    },
+    {
+      "id": "edge:244f330abe5f461d",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/package-lock.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/package-lock.json",
+          "line": 1
         }
       ]
     },
@@ -6734,14 +6773,14 @@
       ]
     },
     {
-      "id": "edge:2574e9264441de9d",
+      "id": "edge:2597f6e73403e9d9",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/pages/PreferencesPage.tsx",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "app/frontend/src/components/ThemeToggle.tsx",
+          "path": "app/frontend/src/pages/PreferencesPage.tsx",
           "line": 1
         }
       ]
@@ -6801,19 +6840,6 @@
         {
           "path": "app/backend/main.py",
           "line": 97
-        }
-      ]
-    },
-    {
-      "id": "edge:2651dc272228f8c0",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/components/ConfirmDialog.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/components/ConfirmDialog.tsx",
-          "line": 1
         }
       ]
     },
@@ -6939,14 +6965,14 @@
       ]
     },
     {
-      "id": "edge:2a07081d8678b524",
+      "id": "edge:2a25aa0d48ab68fd",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/package.json",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/pages/FoldersPage.ts",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "app/frontend/package.json",
+          "path": "ui/pages/FoldersPage.ts",
           "line": 1
         }
       ]
@@ -7045,6 +7071,19 @@
       ]
     },
     {
+      "id": "edge:2b7c0c4c3b02ea78",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/pages/FolderFilesPage.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/pages/FolderFilesPage.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:2b8b030794378b14",
       "relation": "EXPORTS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -7138,19 +7177,6 @@
       ]
     },
     {
-      "id": "edge:2ca3bbe28b790a1c",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/backend/database.py",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/database.py",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:2d4362c95d432f9e",
       "relation": "INSTANTIATES",
       "from": "symbol:utils/common/Logger.ts#logger",
@@ -7160,19 +7186,6 @@
         {
           "path": "utils/common/Logger.ts",
           "line": 60
-        }
-      ]
-    },
-    {
-      "id": "edge:2dc442efc6bf38b2",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:utils/common/Logger.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "utils/common/Logger.ts",
-          "line": 1
         }
       ]
     },
@@ -7225,19 +7238,6 @@
         {
           "path": "app/backend/main.py",
           "line": 167
-        }
-      ]
-    },
-    {
-      "id": "edge:2e77c65e88886caa",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/tailwind.config.js",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/tailwind.config.js",
-          "line": 1
         }
       ]
     },
@@ -7343,19 +7343,6 @@
       "evidence": [
         {
           "path": "utils/common/Logger.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
-      "id": "edge:3272245d8649d7ba",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/postcss.config.js",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/postcss.config.js",
           "line": 1
         }
       ]
@@ -7500,19 +7487,6 @@
       ]
     },
     {
-      "id": "edge:36e6bf636d572cf6",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/App.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/App.tsx",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:37034ac2eba37690",
       "relation": "IMPORTS",
       "from": "file:ui/specs/multi-role.spec.ts",
@@ -7633,14 +7607,14 @@
       ]
     },
     {
-      "id": "edge:3956740cbaaadb5a",
+      "id": "edge:3984a5f8eb4c99d5",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/pages/FilesPage.tsx",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:playwright.config.ts",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "app/frontend/src/pages/FilesPage.tsx",
+          "path": "playwright.config.ts",
           "line": 1
         }
       ]
@@ -7708,6 +7682,19 @@
         {
           "path": "api/services/BaseApiService.ts",
           "line": 5
+        }
+      ]
+    },
+    {
+      "id": "edge:3b0393db1705049f",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:api/specs/health.spec.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "api/specs/health.spec.ts",
+          "line": 1
         }
       ]
     },
@@ -7805,6 +7792,19 @@
       ]
     },
     {
+      "id": "edge:3e35ce1d37d2c8b3",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:api/specs/rbac.spec.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "api/specs/rbac.spec.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:3ee151399a76116e",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/App.tsx",
@@ -7827,6 +7827,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 661
+        }
+      ]
+    },
+    {
+      "id": "edge:40cf0e462e426942",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/App.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/App.tsx",
+          "line": 1
         }
       ]
     },
@@ -7925,19 +7938,6 @@
       ]
     },
     {
-      "id": "edge:41cff780fc913b64",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/pages/HomePage.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/pages/HomePage.tsx",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:423a0cdda9144e6d",
       "relation": "IMPORTS",
       "from": "file:utils/fixtures/TestFixtures.ts",
@@ -7974,6 +7974,19 @@
         {
           "path": "scripts/checkNamingConventions.mjs",
           "line": 76
+        }
+      ]
+    },
+    {
+      "id": "edge:439b44eeab60b93e",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:eslint.config.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "eslint.config.mjs",
+          "line": 1
         }
       ]
     },
@@ -8017,14 +8030,14 @@
       ]
     },
     {
-      "id": "edge:455d4fcf2c0a0423",
+      "id": "edge:4555ba3d89d8b19d",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:tsconfig.json",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/components/Modal.tsx",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "tsconfig.json",
+          "path": "app/frontend/src/components/Modal.tsx",
           "line": 1
         }
       ]
@@ -8040,19 +8053,6 @@
           "path": "scripts/buildKnowledge.mjs",
           "line": 1,
           "detail": "node:path"
-        }
-      ]
-    },
-    {
-      "id": "edge:46847937cbacc7c9",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:scripts/knowledge/python_ast_adapter.py",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/knowledge/python_ast_adapter.py",
-          "line": 1
         }
       ]
     },
@@ -8378,27 +8378,27 @@
       ]
     },
     {
-      "id": "edge:4f8242818def8614",
+      "id": "edge:4f5b506dd9610dc5",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/pages/PreferencesPage.tsx",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:package.json",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "app/frontend/src/pages/PreferencesPage.tsx",
+          "path": "package.json",
           "line": 1
         }
       ]
     },
     {
-      "id": "edge:4fc8a0206c202bf4",
+      "id": "edge:4f653264bc4f9cc3",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/pages/LoginPage.tsx",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/pages/FilesPage.tsx",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "path": "app/frontend/src/pages/FilesPage.tsx",
           "line": 1
         }
       ]
@@ -8496,6 +8496,19 @@
       ]
     },
     {
+      "id": "edge:5343f04a42ac2cf2",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/components/AppLayout.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/AppLayout.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:537537631e832ce4",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/context/AuthContext.tsx",
@@ -8545,19 +8558,6 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1242
-        }
-      ]
-    },
-    {
-      "id": "edge:5476ed442bd98c4a",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/components/Modal.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/components/Modal.tsx",
-          "line": 1
         }
       ]
     },
@@ -8670,6 +8670,19 @@
       ]
     },
     {
+      "id": "edge:568cb51c22764559",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:utils/common/Logger.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "utils/common/Logger.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:5719616c828af6ba",
       "relation": "USES_PERSISTENCE",
       "from": "symbol:app/backend/main.py#download_files_zip",
@@ -8747,6 +8760,19 @@
           "path": "ui/pages/FoldersPage.ts",
           "line": 3,
           "detail": "@pages/BasePage"
+        }
+      ]
+    },
+    {
+      "id": "edge:589f3a237a85e62a",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/backend/models.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/models.py",
+          "line": 1
         }
       ]
     },
@@ -8872,6 +8898,19 @@
       ]
     },
     {
+      "id": "edge:5ac436dd5343b682",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:config/test-config.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "config/test-config.json",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:5b6fa6835ab99eb7",
       "relation": "CONTAINS",
       "from": "file:ui/specs/files.spec.ts",
@@ -8898,19 +8937,6 @@
         {
           "path": "ui/specs/multi-role.spec.ts",
           "line": 14
-        }
-      ]
-    },
-    {
-      "id": "edge:5c942f17a5f5a88d",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/context/ThemeContext.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/context/ThemeContext.tsx",
-          "line": 1
         }
       ]
     },
@@ -8955,19 +8981,6 @@
       ]
     },
     {
-      "id": "edge:5f43c26709709350",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:api/specs/files.spec.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "api/specs/files.spec.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:5fbbb1be761aa5b7",
       "relation": "CONTAINS",
       "from": "file:utils/fixtures/TestFixtures.ts",
@@ -8995,6 +9008,19 @@
       ]
     },
     {
+      "id": "edge:5fc35370f4805353",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/python_ast_adapter.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/python_ast_adapter.py",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:5fd8ca54b5963443",
       "relation": "EXPORTS",
       "from": "file:app/frontend/src/types.ts",
@@ -9003,6 +9029,19 @@
       "evidence": [
         {
           "path": "app/frontend/src/types.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:6050bea48580eb4e",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:api/services/FilesService.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "api/services/FilesService.ts",
           "line": 1
         }
       ]
@@ -9075,19 +9114,6 @@
       ]
     },
     {
-      "id": "edge:626a8a481fd9f16c",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/scripts/check-test-ids.js",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/scripts/check-test-ids.js",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:62cc644319dc2ac8",
       "relation": "CONTAINS",
       "from": "file:ui/setup/auth.setup.ts",
@@ -9097,6 +9123,19 @@
         {
           "path": "ui/setup/auth.setup.ts",
           "line": 10
+        }
+      ]
+    },
+    {
+      "id": "edge:62d6b965c3303cc2",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/CodebaseKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+          "line": 1
         }
       ]
     },
@@ -9419,19 +9458,6 @@
       ]
     },
     {
-      "id": "edge:6a1aff5278d9329e",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/pages/FolderFilesPage.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/pages/FolderFilesPage.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:6a1be413bd201099",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -9624,6 +9650,32 @@
       ]
     },
     {
+      "id": "edge:6f33e62e5427a093",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/package.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/package.json",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:6f66251f7ccb8f1c",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:utils/common/CustomReporter.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "utils/common/CustomReporter.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:6fdde485e196c47d",
       "relation": "IMPORTS",
       "from": "file:ui/setup/auth.setup.ts",
@@ -9634,6 +9686,19 @@
           "path": "ui/setup/auth.setup.ts",
           "line": 7,
           "detail": "@utils/common/CommonUtils"
+        }
+      ]
+    },
+    {
+      "id": "edge:7072565d0b467f52",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/checkNamingConventions.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/checkNamingConventions.mjs",
+          "line": 1
         }
       ]
     },
@@ -9660,6 +9725,19 @@
         {
           "path": "app/backend/main.py",
           "line": 200
+        }
+      ]
+    },
+    {
+      "id": "edge:711ca010bce4296c",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
+          "line": 1
         }
       ]
     },
@@ -9691,14 +9769,14 @@
       ]
     },
     {
-      "id": "edge:71e7b21285d802df",
+      "id": "edge:724eabb591b46384",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/specs/viewer-rbac.spec.ts",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/context/AuthContext.tsx",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "ui/specs/viewer-rbac.spec.ts",
+          "path": "app/frontend/src/context/AuthContext.tsx",
           "line": 1
         }
       ]
@@ -9863,19 +9941,6 @@
       ]
     },
     {
-      "id": "edge:754f0847940cb741",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/specs/files.spec.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/specs/files.spec.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:764f4a4e769c0946",
       "relation": "CONTAINS",
       "from": "file:app/backend/auth.py",
@@ -9885,19 +9950,6 @@
         {
           "path": "app/backend/auth.py",
           "line": 107
-        }
-      ]
-    },
-    {
-      "id": "edge:766328828a4447a6",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:utils/common/CommonUtils.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "utils/common/CommonUtils.ts",
-          "line": 1
         }
       ]
     },
@@ -10074,19 +10126,6 @@
       ]
     },
     {
-      "id": "edge:7a9907e4853541dd",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/components/Sidebar.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/components/Sidebar.tsx",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:7adc509d5022bb85",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:app/frontend/src/pages/FoldersPage.tsx",
@@ -10097,19 +10136,6 @@
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 1,
           "detail": "react"
-        }
-      ]
-    },
-    {
-      "id": "edge:7b60ff32dadc6740",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:scripts/checkNamingConventions.mjs",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/checkNamingConventions.mjs",
-          "line": 1
         }
       ]
     },
@@ -10154,19 +10180,6 @@
       ]
     },
     {
-      "id": "edge:7cc431f206815c91",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:playwright.config.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "playwright.config.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:7ce3090eb95505c9",
       "relation": "USES_SERVICE",
       "from": "symbol:utils/fixtures/TestFixtures.ts#createApiRoleContext",
@@ -10203,6 +10216,19 @@
           "path": "utils/common/Waits.ts",
           "line": 1,
           "detail": "@config/test-config.json"
+        }
+      ]
+    },
+    {
+      "id": "edge:7e0ee9508671c492",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/pages/LoginPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/LoginPage.tsx",
+          "line": 1
         }
       ]
     },
@@ -10260,6 +10286,19 @@
       ]
     },
     {
+      "id": "edge:8089959ca6317908",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/main.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/main.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:8111e1d6b950ea58",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:api/services/FoldersService.ts",
@@ -10287,19 +10326,6 @@
       ]
     },
     {
-      "id": "edge:8244c72fafae5656",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/setup/auth.setup.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/setup/auth.setup.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:830af3a3fb216a2c",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:app/backend/main.py#download_files_zip",
@@ -10309,19 +10335,6 @@
         {
           "path": "app/backend/main.py",
           "line": 366
-        }
-      ]
-    },
-    {
-      "id": "edge:83f3b4638ab0b1d6",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/main.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/main.tsx",
-          "line": 1
         }
       ]
     },
@@ -10402,19 +10415,6 @@
         {
           "path": "app/frontend/src/components/Sidebar.tsx",
           "line": 45
-        }
-      ]
-    },
-    {
-      "id": "edge:868687e1787eb74a",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:scripts/knowledge/CodebaseKnowledge.mjs",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1
         }
       ]
     },
@@ -10567,19 +10567,6 @@
       ]
     },
     {
-      "id": "edge:8b131994179faf14",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/backend/models.py",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/models.py",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:8bc7d54339a30c0b",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:app/backend/main.py#delete_file",
@@ -10589,19 +10576,6 @@
         {
           "path": "app/backend/main.py",
           "line": 472
-        }
-      ]
-    },
-    {
-      "id": "edge:8c0899c5e1937e14",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/types.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/types.ts",
-          "line": 1
         }
       ]
     },
@@ -10628,19 +10602,6 @@
         {
           "path": "app/frontend/src/types.ts",
           "line": 17
-        }
-      ]
-    },
-    {
-      "id": "edge:8ceed3dbd325b507",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/api.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/api.ts",
-          "line": 1
         }
       ]
     },
@@ -10777,6 +10738,19 @@
       ]
     },
     {
+      "id": "edge:8fe394cdee2b52b8",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/backend/database.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/database.py",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:8feb993ece2c5c74",
       "relation": "CONTAINS",
       "from": "file:app/backend/main.py",
@@ -10852,19 +10826,6 @@
         {
           "path": "app/frontend/src/pages/LoginPage.tsx",
           "line": 17
-        }
-      ]
-    },
-    {
-      "id": "edge:911da12560dabab7",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/pages/FoldersPage.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/pages/FoldersPage.tsx",
-          "line": 1
         }
       ]
     },
@@ -10965,19 +10926,6 @@
       ]
     },
     {
-      "id": "edge:934c50bbcf437b3e",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:api/services/BaseApiService.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "api/services/BaseApiService.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:93c74c74563f4d50",
       "relation": "USES_PAGE",
       "from": "symbol:ui/specs/files.spec.ts#expectRoleCanUploadFile",
@@ -11070,19 +11018,6 @@
       ]
     },
     {
-      "id": "edge:96d68d41e5702061",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/pages/HomePage.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/pages/HomePage.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:9703c7f94c46d9c6",
       "relation": "CONTAINS",
       "from": "file:app/backend/main.py",
@@ -11150,19 +11085,6 @@
       ]
     },
     {
-      "id": "edge:9834defce8d67105",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/pages/FoldersPage.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/pages/FoldersPage.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:987858cf686ec0dd",
       "relation": "DECLARES_FIXTURE",
       "from": "file:utils/fixtures/TestFixtures.ts",
@@ -11189,14 +11111,14 @@
       ]
     },
     {
-      "id": "edge:99d45209aa3405fd",
+      "id": "edge:995160535b386195",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/specs/login.spec.ts",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:utils/common/CommonUtils.ts",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "ui/specs/login.spec.ts",
+          "path": "utils/common/CommonUtils.ts",
           "line": 1
         }
       ]
@@ -11347,6 +11269,19 @@
       ]
     },
     {
+      "id": "edge:9fd0dc61b2e69c32",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:api/services/BaseApiService.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "api/services/BaseApiService.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:a0da914dbd7e6757",
       "relation": "EXPORTS",
       "from": "file:utils/common/Logger.ts",
@@ -11413,19 +11348,6 @@
       ]
     },
     {
-      "id": "edge:a227b635ac62864f",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/backend/auth.py",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/auth.py",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:a2a267be557ba01a",
       "relation": "EXPORTS",
       "from": "file:ui/pages/HomePage.ts",
@@ -11435,6 +11357,19 @@
         {
           "path": "ui/pages/HomePage.ts",
           "line": 6
+        }
+      ]
+    },
+    {
+      "id": "edge:a2b02fdde0ea425e",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/types.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/types.ts",
+          "line": 1
         }
       ]
     },
@@ -11474,19 +11409,6 @@
         {
           "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
           "line": 8
-        }
-      ]
-    },
-    {
-      "id": "edge:a3aca115386fc445",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:api/services/FilesService.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "api/services/FilesService.ts",
-          "line": 1
         }
       ]
     },
@@ -11553,6 +11475,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1456
+        }
+      ]
+    },
+    {
+      "id": "edge:a6b41e5a63f7756a",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/postcss.config.js",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/postcss.config.js",
+          "line": 1
         }
       ]
     },
@@ -11732,19 +11667,6 @@
       ]
     },
     {
-      "id": "edge:aadda1032268a05f",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/specs/multi-role.spec.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/specs/multi-role.spec.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:ab60eaaa781000be",
       "relation": "DECLARES_PACKAGE",
       "from": "file:package.json",
@@ -11839,19 +11761,6 @@
       ]
     },
     {
-      "id": "edge:ad362da30b62a8d2",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:scripts/buildKnowledge.mjs",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/buildKnowledge.mjs",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:ad9336d8c8368be1",
       "relation": "USES_UI_ROUTE",
       "from": "symbol:ui/pages/HomePage.ts#HomePage.goto",
@@ -11912,19 +11821,6 @@
       ]
     },
     {
-      "id": "edge:aed3bb43b36e4428",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:config/test-config.json",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "config/test-config.json",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:afe3c5083d6236df",
       "relation": "USES_SERVICE",
       "from": "file:api/specs/files.spec.ts",
@@ -11938,6 +11834,19 @@
         {
           "path": "api/specs/files.spec.ts",
           "line": 26
+        }
+      ]
+    },
+    {
+      "id": "edge:b034342a0b29a426",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/backend/auth.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/auth.py",
+          "line": 1
         }
       ]
     },
@@ -12188,6 +12097,19 @@
       ]
     },
     {
+      "id": "edge:b5e5500b28020b5a",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/pages/LoginPage.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/pages/LoginPage.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:b5f8dd9c9401cfc9",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/BasePage.ts#BasePage",
@@ -12267,6 +12189,19 @@
       ]
     },
     {
+      "id": "edge:b7cb2fa0b54fa9fd",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/specs/files.spec.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/specs/files.spec.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:b8c5750fdc2bcb7b",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -12276,19 +12211,6 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 251
-        }
-      ]
-    },
-    {
-      "id": "edge:ba55d7af2d8e6b83",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/tsconfig.json",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/tsconfig.json",
-          "line": 1
         }
       ]
     },
@@ -12399,19 +12321,6 @@
       ]
     },
     {
-      "id": "edge:bc720f86397741ec",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:api/services/AuthService.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "api/services/AuthService.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:bc906c1d8278b776",
       "relation": "CONTAINS",
       "from": "file:scripts/checkNamingConventions.mjs",
@@ -12421,19 +12330,6 @@
         {
           "path": "scripts/checkNamingConventions.mjs",
           "line": 119
-        }
-      ]
-    },
-    {
-      "id": "edge:be6dcbbe538ae2ae",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:ui/pages/BasePage.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "ui/pages/BasePage.ts",
-          "line": 1
         }
       ]
     },
@@ -12628,6 +12524,19 @@
       ]
     },
     {
+      "id": "edge:c2e7d134a0e279d7",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/pages/HomePage.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/pages/HomePage.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:c3976939b7a3b5ea",
       "relation": "NAVIGATES_TO",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage",
@@ -12637,32 +12546,6 @@
         {
           "path": "ui/pages/LoginPage.ts",
           "line": 30
-        }
-      ]
-    },
-    {
-      "id": "edge:c3bec095fcc51f8f",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:api/services/FoldersService.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "api/services/FoldersService.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
-      "id": "edge:c4066d54a4e79cfb",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:utils/common/Waits.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "utils/common/Waits.ts",
-          "line": 1
         }
       ]
     },
@@ -12778,14 +12661,14 @@
       ]
     },
     {
-      "id": "edge:c673fb39996d7f09",
+      "id": "edge:c6af773972116530",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:eslint.config.mjs",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/setup/auth.setup.ts",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "eslint.config.mjs",
+          "path": "ui/setup/auth.setup.ts",
           "line": 1
         }
       ]
@@ -12846,6 +12729,19 @@
       ]
     },
     {
+      "id": "edge:c8d21dc1f4f7d7df",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/queryKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/queryKnowledge.mjs",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:c8e0f49b0d8d1ba2",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/api.ts",
@@ -12873,14 +12769,14 @@
       ]
     },
     {
-      "id": "edge:c9de00b43beeb086",
+      "id": "edge:c9d17acedfc5d2d2",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:scripts/validateKnowledge.mjs",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/tailwind.config.js",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "scripts/validateKnowledge.mjs",
+          "path": "app/frontend/tailwind.config.js",
           "line": 1
         }
       ]
@@ -12964,19 +12860,6 @@
       ]
     },
     {
-      "id": "edge:cadd65113a8cfb0a",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:utils/fixtures/TestFixtures.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "utils/fixtures/TestFixtures.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:cadfb62d8bec6421",
       "relation": "USES_FIXTURE",
       "from": "file:ui/specs/multi-role.spec.ts",
@@ -13016,19 +12899,6 @@
       ]
     },
     {
-      "id": "edge:ccb6d3497fe8947d",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/context/AuthContext.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/context/AuthContext.tsx",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:cd05296ab542c447",
       "relation": "EXPORTS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -13063,6 +12933,19 @@
       "evidence": [
         {
           "path": "package.json",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:cea62ec62f7d8ed0",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/buildKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/buildKnowledge.mjs",
           "line": 1
         }
       ]
@@ -13212,6 +13095,19 @@
       ]
     },
     {
+      "id": "edge:d2365b7eb024dff6",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/api.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/api.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:d2991a4caf1e3b06",
       "relation": "CONTAINS",
       "from": "file:utils/common/CommonUtils.ts",
@@ -13234,6 +13130,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1232
+        }
+      ]
+    },
+    {
+      "id": "edge:d2eb252d011ca913",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:tsconfig.json",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "tsconfig.json",
+          "line": 1
         }
       ]
     },
@@ -13372,14 +13281,14 @@
       ]
     },
     {
-      "id": "edge:d5b6111ef60fd439",
+      "id": "edge:d57d4ca1d67f9fea",
       "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:api/specs/health.spec.ts",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/tsconfig.json",
       "confidence": "exact",
       "evidence": [
         {
-          "path": "api/specs/health.spec.ts",
+          "path": "app/frontend/tsconfig.json",
           "line": 1
         }
       ]
@@ -13400,6 +13309,19 @@
           "path": "app/frontend/src/context/ThemeContext.tsx",
           "line": 2,
           "detail": "react"
+        }
+      ]
+    },
+    {
+      "id": "edge:d5ddea338d6a2060",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/vite.config.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/vite.config.ts",
+          "line": 1
         }
       ]
     },
@@ -13527,6 +13449,19 @@
       ]
     },
     {
+      "id": "edge:d87f6893769129cc",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/pages/HomePage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/HomePage.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:d8da0a26101088a5",
       "relation": "CONTAINS",
       "from": "file:scripts/queryKnowledge.mjs",
@@ -13550,6 +13485,19 @@
           "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
           "line": 6,
           "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:d95eac4360e48304",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/specs/login.spec.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/specs/login.spec.ts",
+          "line": 1
         }
       ]
     },
@@ -13617,6 +13565,19 @@
         {
           "path": "app/scripts/check-test-ids.js",
           "line": 23
+        }
+      ]
+    },
+    {
+      "id": "edge:dc8d836fbf7d9da9",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/components/ConfirmDialog.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ConfirmDialog.tsx",
+          "line": 1
         }
       ]
     },
@@ -13846,19 +13807,6 @@
       ]
     },
     {
-      "id": "edge:e3972209b31cbbc4",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/backend/main.py",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/backend/main.py",
-          "line": 1
-        }
-      ]
-    },
-    {
       "id": "edge:e3ec54dcdb30b95d",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:app/frontend/src/pages/FoldersPage.tsx",
@@ -13869,19 +13817,6 @@
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 2,
           "detail": "react-router-dom"
-        }
-      ]
-    },
-    {
-      "id": "edge:e4204df52dd3e7fa",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/package-lock.json",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/package-lock.json",
-          "line": 1
         }
       ]
     },
@@ -13965,6 +13900,19 @@
       ]
     },
     {
+      "id": "edge:e7a5f2628dc71e7e",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/validateKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/validateKnowledge.mjs",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:e7b84ed60355aaf7",
       "relation": "DECLARES_FIXTURE",
       "from": "file:utils/fixtures/TestFixtures.ts",
@@ -14014,6 +13962,19 @@
         {
           "path": "app/frontend/src/types.ts",
           "line": 9
+        }
+      ]
+    },
+    {
+      "id": "edge:e8cf88cb9d579a0e",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/context/ThemeContext.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/context/ThemeContext.tsx",
+          "line": 1
         }
       ]
     },
@@ -14139,6 +14100,19 @@
       ]
     },
     {
+      "id": "edge:ec2d3b1a1944ca37",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:ui/specs/multi-role.spec.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "ui/specs/multi-role.spec.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:ec6f521fa391c11a",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/pages/FilesPage.tsx",
@@ -14192,6 +14166,19 @@
       ]
     },
     {
+      "id": "edge:ee16a38cc36bdfa6",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/backend/main.py",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/backend/main.py",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:ee377aa8383a80be",
       "relation": "USES_FIXTURE",
       "from": "file:ui/specs/viewer-rbac.spec.ts",
@@ -14232,6 +14219,19 @@
       ]
     },
     {
+      "id": "edge:efa4afb65524cdfc",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/components/ThemeToggle.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/ThemeToggle.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:efc6848a906cef79",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:ui/pages/HomePage.ts",
@@ -14242,6 +14242,19 @@
           "path": "ui/pages/HomePage.ts",
           "line": 1,
           "detail": "@playwright/test"
+        }
+      ]
+    },
+    {
+      "id": "edge:f036d36951393ac4",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/pages/FoldersPage.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/pages/FoldersPage.tsx",
+          "line": 1
         }
       ]
     },
@@ -14364,6 +14377,19 @@
       ]
     },
     {
+      "id": "edge:f236166551233441",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:app/frontend/src/components/Sidebar.tsx",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "app/frontend/src/components/Sidebar.tsx",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:f2414449f00584e6",
       "relation": "EXPORTS",
       "from": "file:app/frontend/src/pages/PreferencesPage.tsx",
@@ -14465,32 +14491,6 @@
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 189
-        }
-      ]
-    },
-    {
-      "id": "edge:f5c4890a308f6f44",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:utils/common/CustomReporter.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "utils/common/CustomReporter.ts",
-          "line": 1
-        }
-      ]
-    },
-    {
-      "id": "edge:f69f538f3a45a0dd",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:api/specs/rbac.spec.ts",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "api/specs/rbac.spec.ts",
-          "line": 1
         }
       ]
     },
@@ -14616,6 +14616,19 @@
           "path": "app/frontend/src/pages/FilesPage.tsx",
           "line": 10,
           "detail": "../types"
+        }
+      ]
+    },
+    {
+      "id": "edge:fb44fbf02d12eec5",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:api/services/FoldersService.ts",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "api/services/FoldersService.ts",
+          "line": 1
         }
       ]
     },
@@ -14777,19 +14790,6 @@
           "path": "app/frontend/src/App.tsx",
           "line": 8,
           "detail": "./pages/OAuthCallbackPage"
-        }
-      ]
-    },
-    {
-      "id": "edge:ffeb982e0018cad4",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-pom-agent-skills",
-      "to": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
-          "line": 1
         }
       ]
     }

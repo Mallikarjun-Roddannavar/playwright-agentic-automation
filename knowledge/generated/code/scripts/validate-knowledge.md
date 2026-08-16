@@ -2,7 +2,7 @@
 type: Code Module
 title: validateKnowledge
 description: Framework tooling extracted from scripts/validateKnowledge.mjs by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/scripts/validateKnowledge.mjs
+resource: repo://playwright-agentic-automation/scripts/validateKnowledge.mjs
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/scripts/validateKnowledge.mjs
+    resource: repo://playwright-agentic-automation/scripts/validateKnowledge.mjs
     title: scripts/validateKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/validateKnowledge.mjs
 source_sha256: 6f5753e3ccea012bb0747175d3104c597bdc3b51b9f7508f85af57168e079d6e
 code_graph_id: file:scripts/validateKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: fc06309afb54f59a845178a08819ad2095da6a4f1e4e41c0dc37ef48947046d5
+fact_sha256: 5c92eaf3c174314a2f36720c1a81f9bc3adf6ac2469c453ccc136ab2bf3f602f
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

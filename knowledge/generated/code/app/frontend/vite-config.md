@@ -2,7 +2,7 @@
 type: Code Module
 title: vite.config
 description: Application frontend extracted from app/frontend/vite.config.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/vite.config.ts
+resource: repo://playwright-agentic-automation/app/frontend/vite.config.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/vite.config.ts
+    resource: repo://playwright-agentic-automation/app/frontend/vite.config.ts
     title: app/frontend/vite.config.ts
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/vite.config.ts
 source_sha256: bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6
 code_graph_id: file:app/frontend/vite.config.ts
 analysis_scope: static-ast
-fact_sha256: fe6291379e7d5b4dadc994fea38b4665751b110de746d4da622bc23ba544794c
+fact_sha256: 533adc7e61ff271eec244c6827ada520e8427905b8f5979beb1355bdd9358d3d
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

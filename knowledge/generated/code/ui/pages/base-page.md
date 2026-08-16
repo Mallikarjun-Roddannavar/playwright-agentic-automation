@@ -2,7 +2,7 @@
 type: Code Module
 title: BasePage
 description: UI page object extracted from ui/pages/BasePage.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/pages/BasePage.ts
+resource: repo://playwright-agentic-automation/ui/pages/BasePage.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/pages/BasePage.ts
+    resource: repo://playwright-agentic-automation/ui/pages/BasePage.ts
     title: ui/pages/BasePage.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/pages/BasePage.ts
 source_sha256: f3c0076f184b2488b24ceb03073213937d2a06f2f0ec56d21fe465ef3547dc6f
 code_graph_id: file:ui/pages/BasePage.ts
 analysis_scope: static-ast
-fact_sha256: 832e392d49f5ab9ac82f692023ac474040b456723ecba36a2ae4d0bd9d0c53f6
+fact_sha256: 76fe51b8f7323aabee7b3d46c6d8db4cffcddb1fcf3284487a3029ffbf59ca35
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

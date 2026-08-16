@@ -2,7 +2,7 @@
 type: Code Module
 title: AuthContext
 description: Application frontend extracted from app/frontend/src/context/AuthContext.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/context/AuthContext.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/context/AuthContext.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/context/AuthContext.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/context/AuthContext.tsx
     title: app/frontend/src/context/AuthContext.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/context/AuthContext.tsx
 source_sha256: 43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98
 code_graph_id: file:app/frontend/src/context/AuthContext.tsx
 analysis_scope: static-ast
-fact_sha256: ef6ac0ad8ed48c2b1c4918f47689c315ff4f8eaae41381345139dd334cbccd55
+fact_sha256: 797b7e98ede38d40f8087314b93302ff4bbdf14fb066487bd0c67d8fa0a20e13
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

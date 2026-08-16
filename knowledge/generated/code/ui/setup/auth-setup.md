@@ -2,7 +2,7 @@
 type: Code Module
 title: auth.setup
 description: Test setup extracted from ui/setup/auth.setup.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/setup/auth.setup.ts
+resource: repo://playwright-agentic-automation/ui/setup/auth.setup.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/setup/auth.setup.ts
+    resource: repo://playwright-agentic-automation/ui/setup/auth.setup.ts
     title: ui/setup/auth.setup.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/setup/auth.setup.ts
 source_sha256: 6a745c96200b1b8c0f7b0b414c384c9e8275e17876121fde7244f7d67276a97f
 code_graph_id: file:ui/setup/auth.setup.ts
 analysis_scope: static-ast
-fact_sha256: c0e8f316bd9cf278233b2fa9d8704a14966f1576a385591db11b72d6c83e701f
+fact_sha256: fc05895dabfafa43f450fd6c562a31a9df759229eae4f9da2eff8db7311d5750
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

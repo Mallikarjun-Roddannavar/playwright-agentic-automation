@@ -2,7 +2,7 @@
 type: Configuration
 title: package
 description: Configuration extracted from package.json by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/package.json
+resource: repo://playwright-agentic-automation/package.json
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/package.json
+    resource: repo://playwright-agentic-automation/package.json
     title: package.json
     author: process:codebase-knowledge/1.0.0
 source_path: package.json
-source_sha256: c582cb6cc48edfb954c27429f59d78cad93d11d7a89356904b15de5dfdb9246d
+source_sha256: 1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8
 code_graph_id: file:package.json
 analysis_scope: static-ast
-fact_sha256: 3d63821d0f6f5cfbc2e581a4ae3da933e86e70ff917d58fce5dcf62029bbdd64
+fact_sha256: fe2a576820c79a89eeb5b60f71ba586842aefc08ad4c9f87ff85ac38f3e98ef3
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose
@@ -49,4 +49,4 @@ Configuration extracted from package.json by deterministic static analysis. The 
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `c582cb6cc48edfb954c27429f59d78cad93d11d7a89356904b15de5dfdb9246d`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

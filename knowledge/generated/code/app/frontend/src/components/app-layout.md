@@ -2,7 +2,7 @@
 type: Code Module
 title: AppLayout
 description: Application frontend extracted from app/frontend/src/components/AppLayout.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/components/AppLayout.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/components/AppLayout.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/components/AppLayout.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/components/AppLayout.tsx
     title: app/frontend/src/components/AppLayout.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/AppLayout.tsx
 source_sha256: d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed
 code_graph_id: file:app/frontend/src/components/AppLayout.tsx
 analysis_scope: static-ast
-fact_sha256: 3c371385030ea8ee027f189ce38b7fb9dc5f169280068a093799f8ddacc980e2
+fact_sha256: e8bc99883aed58c5b3251677205057e8cf032e011fc90b535253b7deb812ac51
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

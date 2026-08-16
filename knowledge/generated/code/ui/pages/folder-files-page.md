@@ -2,7 +2,7 @@
 type: Code Module
 title: FolderFilesPage
 description: UI page object extracted from ui/pages/FolderFilesPage.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/pages/FolderFilesPage.ts
+resource: repo://playwright-agentic-automation/ui/pages/FolderFilesPage.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/pages/FolderFilesPage.ts
+    resource: repo://playwright-agentic-automation/ui/pages/FolderFilesPage.ts
     title: ui/pages/FolderFilesPage.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/pages/FolderFilesPage.ts
 source_sha256: 7b176ca356aa93d95e7f28506beaa3524e5d81f192167cb65066c2f04c18483c
 code_graph_id: file:ui/pages/FolderFilesPage.ts
 analysis_scope: static-ast
-fact_sha256: 17743c4972035e7bf268f176735a2b7934503e59f558fa5564f8e225845b2b6b
+fact_sha256: c111e929ab7a44c6ea0d3ef83b16ea6bdf49f9630ce995f6ceb1afbd41352e15
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

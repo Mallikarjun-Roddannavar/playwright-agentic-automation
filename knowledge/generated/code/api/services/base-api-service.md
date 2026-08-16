@@ -2,7 +2,7 @@
 type: Code Module
 title: BaseApiService
 description: API service extracted from api/services/BaseApiService.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/api/services/BaseApiService.ts
+resource: repo://playwright-agentic-automation/api/services/BaseApiService.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/api/services/BaseApiService.ts
+    resource: repo://playwright-agentic-automation/api/services/BaseApiService.ts
     title: api/services/BaseApiService.ts
     author: process:codebase-knowledge/1.0.0
 source_path: api/services/BaseApiService.ts
 source_sha256: ad2d46865a0f57befa5a70bf2c57539d6eee80cb17d0bdd9b41bd567bf12c4e7
 code_graph_id: file:api/services/BaseApiService.ts
 analysis_scope: static-ast
-fact_sha256: e0e4933037d1c5f041b1f781df038e2b0320619aa6232451829ef11a3fc07c70
+fact_sha256: e9da66daaca34c6b815448d763dbb8f26c3fb3123ef4ef7d176dc70eb2db17e5
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

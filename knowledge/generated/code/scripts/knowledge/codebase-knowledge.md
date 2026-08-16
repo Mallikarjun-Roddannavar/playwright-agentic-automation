@@ -2,7 +2,7 @@
 type: Code Module
 title: CodebaseKnowledge
 description: Framework tooling extracted from scripts/knowledge/CodebaseKnowledge.mjs by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/scripts/knowledge/CodebaseKnowledge.mjs
+resource: repo://playwright-agentic-automation/scripts/knowledge/CodebaseKnowledge.mjs
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/scripts/knowledge/CodebaseKnowledge.mjs
+    resource: repo://playwright-agentic-automation/scripts/knowledge/CodebaseKnowledge.mjs
     title: scripts/knowledge/CodebaseKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/knowledge/CodebaseKnowledge.mjs
-source_sha256: 823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f
+source_sha256: 52a5e81acd7d5b81b4ba0337db13b8dcf0533eb4bc64a49359618b16fc61d40c
 code_graph_id: file:scripts/knowledge/CodebaseKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: 628d028aa3688a3a96126dbae195bb1926800051c9c7ae11198ece580b421f07
+fact_sha256: efc1371e6b38a40700217c91bb4a0f5ba7b6bb0ddde80ab709e6a0c8cebbac5a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:02:16.958Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:02:16.958Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose
@@ -122,4 +122,4 @@ Framework tooling extracted from scripts/knowledge/CodebaseKnowledge.mjs by dete
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `823c9eec9d983d755c8f4d013516ac738b22baafaa61c505c85cd7c99bd0771f`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `52a5e81acd7d5b81b4ba0337db13b8dcf0533eb4bc64a49359618b16fc61d40c`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

@@ -2,7 +2,7 @@
 type: Code Module
 title: package
 description: Application frontend extracted from app/frontend/package.json by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/package.json
+resource: repo://playwright-agentic-automation/app/frontend/package.json
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/package.json
+    resource: repo://playwright-agentic-automation/app/frontend/package.json
     title: app/frontend/package.json
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/package.json
 source_sha256: e66b4348aef8e61af5142b989fcf25909d9039bee9cbc6f30075d81ac13b8f2e
 code_graph_id: file:app/frontend/package.json
 analysis_scope: static-ast
-fact_sha256: 1ed8ec69797bbe1e8796bb9931150c94952d4898d445a69d301185b2723bdd9c
+fact_sha256: 5a43dd90102be0d579301966cbab059983f2185ef4b9dfcecc39c1142daa4126
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

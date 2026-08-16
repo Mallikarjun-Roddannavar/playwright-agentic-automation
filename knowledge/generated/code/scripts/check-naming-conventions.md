@@ -2,7 +2,7 @@
 type: Code Module
 title: checkNamingConventions
 description: Framework tooling extracted from scripts/checkNamingConventions.mjs by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/scripts/checkNamingConventions.mjs
+resource: repo://playwright-agentic-automation/scripts/checkNamingConventions.mjs
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/scripts/checkNamingConventions.mjs
+    resource: repo://playwright-agentic-automation/scripts/checkNamingConventions.mjs
     title: scripts/checkNamingConventions.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/checkNamingConventions.mjs
 source_sha256: 9d3773f8256af9d33e6d34d72561526b3c3855734269b9927504966acad36409
 code_graph_id: file:scripts/checkNamingConventions.mjs
 analysis_scope: static-ast
-fact_sha256: e56805ae40f0d3b6e9564c49d135e7a1bda52cc79b46a52973e47dbf13a92211
+fact_sha256: 619177311b4df8cc65abc0925088d883d1311580dc20b1375982ccc7013cffb3
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

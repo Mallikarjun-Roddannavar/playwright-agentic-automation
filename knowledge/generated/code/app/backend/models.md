@@ -2,7 +2,7 @@
 type: Code Module
 title: models.py
 description: Python backend extracted from app/backend/models.py by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/backend/models.py
+resource: repo://playwright-agentic-automation/app/backend/models.py
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/backend/models.py
+    resource: repo://playwright-agentic-automation/app/backend/models.py
     title: app/backend/models.py
     author: process:codebase-knowledge/1.0.0
 source_path: app/backend/models.py
 source_sha256: 7d7d0f071050a6765a3c8a1aa3646bbdf5d0baffdc2a48cb4fc8ba84b009f0b3
 code_graph_id: file:app/backend/models.py
 analysis_scope: static-ast
-fact_sha256: 017afbedec6a15b9b951171893990592f5f101afd014abe8f41510c7a0461c24
+fact_sha256: 30233517b679904f7aa93ea749ef06d4c991fdea21913ab10d7269ae213745de
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

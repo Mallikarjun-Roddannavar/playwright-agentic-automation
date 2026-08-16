@@ -2,7 +2,7 @@
 type: Code Module
 title: main.py
 description: Python backend extracted from app/backend/main.py by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/backend/main.py
+resource: repo://playwright-agentic-automation/app/backend/main.py
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/backend/main.py
+    resource: repo://playwright-agentic-automation/app/backend/main.py
     title: app/backend/main.py
     author: process:codebase-knowledge/1.0.0
 source_path: app/backend/main.py
 source_sha256: 693486e115a3c3cc22bd3bc500d66b2dcba46790d767c70b36c898a1644fe912
 code_graph_id: file:app/backend/main.py
 analysis_scope: static-ast
-fact_sha256: 87cd657fad29817d18494ede1c8f1a6a56c458110dadbe5e937af55ccf035f50
+fact_sha256: 9a643bd82d3c14cf331106f6d06f49837d339ff11dd6a5a00c991cb4842b219c
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:24:04.139Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:24:04.139Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

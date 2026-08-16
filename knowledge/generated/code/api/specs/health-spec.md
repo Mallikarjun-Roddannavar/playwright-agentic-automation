@@ -2,7 +2,7 @@
 type: Test Specification
 title: health.spec
 description: API specification extracted from api/specs/health.spec.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/api/specs/health.spec.ts
+resource: repo://playwright-agentic-automation/api/specs/health.spec.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/api/specs/health.spec.ts
+    resource: repo://playwright-agentic-automation/api/specs/health.spec.ts
     title: api/specs/health.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: api/specs/health.spec.ts
 source_sha256: 0ea2bfe2da534b5279ffdccc0977096f4fb93d1392876c929284e7805e7fb2d4
 code_graph_id: file:api/specs/health.spec.ts
 analysis_scope: static-ast
-fact_sha256: ff1e95c6ebad8ad8e5ab21e2f0e469b93f54bb210ebfbc1481673142ab547932
+fact_sha256: c56a22a08adfb51539f7e473e0960410d69ad83a5ac4ef8a61c3bd707c0adf92
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

@@ -2,7 +2,7 @@
 type: Test Specification
 title: login.spec
 description: UI specification extracted from ui/specs/login.spec.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/specs/login.spec.ts
+resource: repo://playwright-agentic-automation/ui/specs/login.spec.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/specs/login.spec.ts
+    resource: repo://playwright-agentic-automation/ui/specs/login.spec.ts
     title: ui/specs/login.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/specs/login.spec.ts
 source_sha256: 757e24c0dad0be5b410a3716177c7c05904812c151ce55f3457677e2082b2748
 code_graph_id: file:ui/specs/login.spec.ts
 analysis_scope: static-ast
-fact_sha256: 88a69f6e98d4ae90e31c7d5137d428122d02fbadba728f7001d0f0bec1c2ba36
+fact_sha256: 7ced2112106be0ed4dfc3bd0bbda03a2868d93ca8c62882165f27362fcbc4ba8
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

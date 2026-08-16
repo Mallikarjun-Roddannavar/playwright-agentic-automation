@@ -2,7 +2,7 @@
 type: Code Module
 title: HomePage
 description: UI page object extracted from ui/pages/HomePage.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/ui/pages/HomePage.ts
+resource: repo://playwright-agentic-automation/ui/pages/HomePage.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/ui/pages/HomePage.ts
+    resource: repo://playwright-agentic-automation/ui/pages/HomePage.ts
     title: ui/pages/HomePage.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/pages/HomePage.ts
 source_sha256: 36832f588d9ae6c6f69248dd78a841df2f99c116cfbec123b3c69d073deb6244
 code_graph_id: file:ui/pages/HomePage.ts
 analysis_scope: static-ast
-fact_sha256: cee881d30c04112d3a20c3b3bd16b7df9eeab0e99a6039cb56f0b95b331c66d3
+fact_sha256: d51a50f4d6a39c5812f6a7363a4ce8915d9acda57d1a70a15451a60202a953be
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

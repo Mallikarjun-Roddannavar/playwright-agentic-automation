@@ -2,7 +2,7 @@
 type: Code Module
 title: auth.py
 description: Python backend extracted from app/backend/auth.py by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/backend/auth.py
+resource: repo://playwright-agentic-automation/app/backend/auth.py
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/backend/auth.py
+    resource: repo://playwright-agentic-automation/app/backend/auth.py
     title: app/backend/auth.py
     author: process:codebase-knowledge/1.0.0
 source_path: app/backend/auth.py
 source_sha256: 23958d497a360ff63b4645ebed50c4de062d1b4e3b758fe96325b1fd6396f8a0
 code_graph_id: file:app/backend/auth.py
 analysis_scope: static-ast
-fact_sha256: 161ff54d0c31d1d0a3071bbe880e50e5648eac852522c9f660ee9168cb1cf942
+fact_sha256: 516c09fa5fbfc5c493ab464e5edc9a5e29ee03837610f1cac451b9daab5c22dd
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

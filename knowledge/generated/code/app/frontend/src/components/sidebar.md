@@ -2,7 +2,7 @@
 type: Code Module
 title: Sidebar
 description: Application frontend extracted from app/frontend/src/components/Sidebar.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/components/Sidebar.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/components/Sidebar.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/components/Sidebar.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/components/Sidebar.tsx
     title: app/frontend/src/components/Sidebar.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/Sidebar.tsx
 source_sha256: 034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f
 code_graph_id: file:app/frontend/src/components/Sidebar.tsx
 analysis_scope: static-ast
-fact_sha256: 3b8763fcced29a4c15a0e634a65538f1f88282f98d6646bd4042f5dbb734aabc
+fact_sha256: 105cd152059830688978b8472bfe55387194752f42956b5d9bb5f29dc1d7e941
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

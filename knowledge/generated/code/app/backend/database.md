@@ -2,7 +2,7 @@
 type: Code Module
 title: database.py
 description: Python backend extracted from app/backend/database.py by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/backend/database.py
+resource: repo://playwright-agentic-automation/app/backend/database.py
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/backend/database.py
+    resource: repo://playwright-agentic-automation/app/backend/database.py
     title: app/backend/database.py
     author: process:codebase-knowledge/1.0.0
 source_path: app/backend/database.py
 source_sha256: 264bd0e5a443bd54d7ad115bc08854f71dfa4ff186fa0365f8fef143d5215a5c
 code_graph_id: file:app/backend/database.py
 analysis_scope: static-ast
-fact_sha256: 3b3cd9b2c855c2dc9faa6582a8d3e2ece7ca6121e500c7596e8da5e3bac40cbb
+fact_sha256: 6ed24063a4e4e3a03a5adab43a2f569b11c8e3e9de737acb1fa25ec5bb101c26
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:24:04.139Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:24:04.139Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

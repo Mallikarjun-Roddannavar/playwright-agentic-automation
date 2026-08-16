@@ -2,7 +2,7 @@
 type: Code Module
 title: playwright.config
 description: Framework tooling extracted from playwright.config.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/playwright.config.ts
+resource: repo://playwright-agentic-automation/playwright.config.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/playwright.config.ts
+    resource: repo://playwright-agentic-automation/playwright.config.ts
     title: playwright.config.ts
     author: process:codebase-knowledge/1.0.0
 source_path: playwright.config.ts
 source_sha256: 7450cbd1c78a18c970c4462b7f7b327ca33520da0dfaf31914fedbf410cd0f98
 code_graph_id: file:playwright.config.ts
 analysis_scope: static-ast
-fact_sha256: bdbff2aa9fcff7564a325fdbcc0fa65247f72c2227ad20d06de98508564736d1
+fact_sha256: 4fcd326587643f4da810573cca1993efebd951aa5244f486a49b9236291f8d8b
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T11:46:34.642Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T11:46:34.642Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

@@ -2,7 +2,7 @@
 type: Code Module
 title: postcss.config
 description: Application frontend extracted from app/frontend/postcss.config.js by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/postcss.config.js
+resource: repo://playwright-agentic-automation/app/frontend/postcss.config.js
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/postcss.config.js
+    resource: repo://playwright-agentic-automation/app/frontend/postcss.config.js
     title: app/frontend/postcss.config.js
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/postcss.config.js
 source_sha256: 9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3
 code_graph_id: file:app/frontend/postcss.config.js
 analysis_scope: static-ast
-fact_sha256: 0ceee7273071c1b78a8e94f7cab97b8b79fd1e8e9060073b0de4f833a5441b20
+fact_sha256: 196717f29859cecbbbb191e614534768c235cbf5d177b9930d07fb1209c63b86
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

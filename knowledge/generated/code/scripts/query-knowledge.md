@@ -2,7 +2,7 @@
 type: Code Module
 title: queryKnowledge
 description: Framework tooling extracted from scripts/queryKnowledge.mjs by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/scripts/queryKnowledge.mjs
+resource: repo://playwright-agentic-automation/scripts/queryKnowledge.mjs
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/scripts/queryKnowledge.mjs
+    resource: repo://playwright-agentic-automation/scripts/queryKnowledge.mjs
     title: scripts/queryKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/queryKnowledge.mjs
 source_sha256: b06f92390b4286c148ca34a5711e382cb900d551d756a579a8b98a64b27b2af6
 code_graph_id: file:scripts/queryKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: 147ca3a58a056ddfeecaeee8c684eba99f6c9a5357d36a2e24a6e243f41d2f47
+fact_sha256: 82e7f94015f0e46c04cc9f3bc783da8a99289614c341ab77bfe12a60b72a4fa0
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

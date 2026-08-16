@@ -2,7 +2,7 @@
 type: Code Module
 title: CustomReporter
 description: Shared utility extracted from utils/common/CustomReporter.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/utils/common/CustomReporter.ts
+resource: repo://playwright-agentic-automation/utils/common/CustomReporter.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/utils/common/CustomReporter.ts
+    resource: repo://playwright-agentic-automation/utils/common/CustomReporter.ts
     title: utils/common/CustomReporter.ts
     author: process:codebase-knowledge/1.0.0
 source_path: utils/common/CustomReporter.ts
 source_sha256: 6a44b33ac6ac4413e5fb235f6313cf122efc950fb743fb027deea8af5dd56e3b
 code_graph_id: file:utils/common/CustomReporter.ts
 analysis_scope: static-ast
-fact_sha256: 57dcca0f7f5212889b981116a17efcbfa7ebeec6633e41b9f579ef70e859a8e6
+fact_sha256: b319b07b683f0115046a831ca14b030150c676f966d781ca0c5a1598037701ee
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

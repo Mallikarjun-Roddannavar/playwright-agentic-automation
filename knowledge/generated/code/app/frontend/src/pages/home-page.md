@@ -2,7 +2,7 @@
 type: Code Module
 title: HomePage
 description: Application frontend extracted from app/frontend/src/pages/HomePage.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/HomePage.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/pages/HomePage.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/HomePage.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/pages/HomePage.tsx
     title: app/frontend/src/pages/HomePage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/HomePage.tsx
 source_sha256: d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc
 code_graph_id: file:app/frontend/src/pages/HomePage.tsx
 analysis_scope: static-ast
-fact_sha256: 3c1612ef1079f337fd3dd54dceab2c535fd32a817603a45bb7be20afb2343836
+fact_sha256: af60db30a167c2d38391a408ff7305e5efeb2ecb6d079ebc4b54331013edaa4e
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

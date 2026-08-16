@@ -2,7 +2,7 @@
 type: Code Module
 title: Modal
 description: Application frontend extracted from app/frontend/src/components/Modal.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/components/Modal.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/components/Modal.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/components/Modal.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/components/Modal.tsx
     title: app/frontend/src/components/Modal.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/Modal.tsx
 source_sha256: 06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3
 code_graph_id: file:app/frontend/src/components/Modal.tsx
 analysis_scope: static-ast
-fact_sha256: fbba44a54dfff635c39c2eb73ed6f325dbb1da31c2bd953f9a4f1e31f6f21280
+fact_sha256: 1ed85ed03370a6d7f86ff9e80919b4444c9f6ae27fbf359b21fa1b1cbfdad58a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

@@ -2,7 +2,7 @@
 type: Code Module
 title: OAuthCallbackPage
 description: Application frontend extracted from app/frontend/src/pages/OAuthCallbackPage.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/OAuthCallbackPage.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/pages/OAuthCallbackPage.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/OAuthCallbackPage.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/pages/OAuthCallbackPage.tsx
     title: app/frontend/src/pages/OAuthCallbackPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/OAuthCallbackPage.tsx
 source_sha256: 4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a
 code_graph_id: file:app/frontend/src/pages/OAuthCallbackPage.tsx
 analysis_scope: static-ast
-fact_sha256: b60927aaa1780bc8e10306949580ec83ddb6da8b568047fff7ee27a9bd45c7f5
+fact_sha256: 79d51702579d1d06788566211ef4cc7e4081d1b06b86875468494b0edf10ebf0
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

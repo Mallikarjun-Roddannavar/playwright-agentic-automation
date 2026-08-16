@@ -2,7 +2,7 @@
 type: Code Module
 title: types
 description: Application frontend extracted from app/frontend/src/types.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/types.ts
+resource: repo://playwright-agentic-automation/app/frontend/src/types.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/types.ts
+    resource: repo://playwright-agentic-automation/app/frontend/src/types.ts
     title: app/frontend/src/types.ts
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/types.ts
 source_sha256: 62eff509fae0ced9704c7383f061632a3917d90342583bddfdb7ba03b93dca1a
 code_graph_id: file:app/frontend/src/types.ts
 analysis_scope: static-ast
-fact_sha256: 92c9ff7d4d316f3126cb4a0e4c9c22c34b39467c0bddcd2bbd5119199cb7a556
+fact_sha256: 403017a6a046a0e8922fdad72c0a938fd470544dcc3ec5364edce8c8b6eeae53
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

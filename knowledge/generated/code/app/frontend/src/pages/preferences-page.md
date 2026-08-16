@@ -2,7 +2,7 @@
 type: Code Module
 title: PreferencesPage
 description: Application frontend extracted from app/frontend/src/pages/PreferencesPage.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/PreferencesPage.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/pages/PreferencesPage.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/PreferencesPage.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/pages/PreferencesPage.tsx
     title: app/frontend/src/pages/PreferencesPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/PreferencesPage.tsx
 source_sha256: 5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7
 code_graph_id: file:app/frontend/src/pages/PreferencesPage.tsx
 analysis_scope: static-ast
-fact_sha256: 1bc0d7081eb4df0151ee21239c91710b3c6ef3774abf467eba086a4741dd024a
+fact_sha256: cdaf03a02414a7ad6e486c5b0c6152bae79f27eb715db094da71e0da60f74692
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

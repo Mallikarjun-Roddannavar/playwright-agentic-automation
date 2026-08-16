@@ -2,7 +2,7 @@
 type: Code Module
 title: ThemeToggle
 description: Application frontend extracted from app/frontend/src/components/ThemeToggle.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/components/ThemeToggle.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/components/ThemeToggle.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/components/ThemeToggle.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/components/ThemeToggle.tsx
     title: app/frontend/src/components/ThemeToggle.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/ThemeToggle.tsx
 source_sha256: 0063c7a65b7e4d3370c816bde5d56502e1f2c7091dd01a9f117d6030dd357cdc
 code_graph_id: file:app/frontend/src/components/ThemeToggle.tsx
 analysis_scope: static-ast
-fact_sha256: 652795cae174851cbd5abd062b05cc49ee74b21dac44de14155ecc16f85ebe4e
+fact_sha256: 87b871c26f4b25448a83cc84811a1616a70bb947cfd55079a03258873e4ad37d
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

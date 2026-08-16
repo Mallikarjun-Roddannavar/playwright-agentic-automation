@@ -2,7 +2,7 @@
 type: Code Module
 title: FoldersPage
 description: Application frontend extracted from app/frontend/src/pages/FoldersPage.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/FoldersPage.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/pages/FoldersPage.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/FoldersPage.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/pages/FoldersPage.tsx
     title: app/frontend/src/pages/FoldersPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/FoldersPage.tsx
 source_sha256: 820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf
 code_graph_id: file:app/frontend/src/pages/FoldersPage.tsx
 analysis_scope: static-ast
-fact_sha256: f2dc29da053948b5a3fbef22976b2ad326fd3ebadad0deacf5af7d7c0137d9eb
+fact_sha256: 9cc6539d7e271e8565eedc9630c7ff9956aa7be9c6e09f4594428854e85c668c
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

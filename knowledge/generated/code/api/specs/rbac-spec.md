@@ -2,7 +2,7 @@
 type: Test Specification
 title: rbac.spec
 description: API specification extracted from api/specs/rbac.spec.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/api/specs/rbac.spec.ts
+resource: repo://playwright-agentic-automation/api/specs/rbac.spec.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/api/specs/rbac.spec.ts
+    resource: repo://playwright-agentic-automation/api/specs/rbac.spec.ts
     title: api/specs/rbac.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: api/specs/rbac.spec.ts
 source_sha256: cdc605d447716f2c47f8bd695165aa82f22b568141c103b12ef19430fdee41f1
 code_graph_id: file:api/specs/rbac.spec.ts
 analysis_scope: static-ast
-fact_sha256: e38eb4f462ea7adec82c559881e3b94430d03630eb75070869e6c863f169be56
+fact_sha256: 6d7998d0e9fc3d54d2ecf0707072e3e1a93c3a792acea60ad856da70f8ef2d89
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose

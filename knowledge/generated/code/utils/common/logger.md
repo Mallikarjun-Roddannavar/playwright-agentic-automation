@@ -2,7 +2,7 @@
 type: Code Module
 title: Logger
 description: Shared utility extracted from utils/common/Logger.ts by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/utils/common/Logger.ts
+resource: repo://playwright-agentic-automation/utils/common/Logger.ts
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/utils/common/Logger.ts
+    resource: repo://playwright-agentic-automation/utils/common/Logger.ts
     title: utils/common/Logger.ts
     author: process:codebase-knowledge/1.0.0
 source_path: utils/common/Logger.ts
-source_sha256: d8019fc932cdb8d00f33816a68c12f053964ac8a5d088d79fb0298e926b873b7
+source_sha256: 2260e3c15b200659cfdc1015496a7ca8e05f30d5cfa4b901ac47c92ca7855f12
 code_graph_id: file:utils/common/Logger.ts
 analysis_scope: static-ast
-fact_sha256: 2a6176f25504eeac755e51ba4e346ecc678bffb1cc7dd8e766b9f128bc09e1f5
+fact_sha256: e4e8d85c03be3070cc25ed848ae77a15753d0adc1adef0b66b07b82328439731
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-07-31T11:37:54.189Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-07-31T11:37:54.189Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose
@@ -66,4 +66,4 @@ Shared utility extracted from utils/common/Logger.ts by deterministic static ana
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `d8019fc932cdb8d00f33816a68c12f053964ac8a5d088d79fb0298e926b873b7`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `2260e3c15b200659cfdc1015496a7ca8e05f30d5cfa4b901ac47c92ca7855f12`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

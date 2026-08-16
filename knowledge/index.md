@@ -2,7 +2,7 @@
 okf_version: "0.2"
 ---
 
-# Playwright POM Agent Skills knowledge
+# Playwright Agentic Automation knowledge
 
 This is a portable, offline-first Open Knowledge Format (OKF) v0.2 bundle. Start here, then retrieve only the smallest relevant concept. The committed source code remains authoritative.
 

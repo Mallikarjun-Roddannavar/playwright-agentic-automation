@@ -2,7 +2,7 @@
 type: Code Module
 title: FilesPage
 description: Application frontend extracted from app/frontend/src/pages/FilesPage.tsx by deterministic static analysis.
-resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/FilesPage.tsx
+resource: repo://playwright-agentic-automation/app/frontend/src/pages/FilesPage.tsx
 tags:
   - generated
   - static-ast
@@ -11,20 +11,20 @@ tags:
 status: stable
 sources:
   - id: source
-    resource: repo://playwright-pom-agent-skills/app/frontend/src/pages/FilesPage.tsx
+    resource: repo://playwright-agentic-automation/app/frontend/src/pages/FilesPage.tsx
     title: app/frontend/src/pages/FilesPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/FilesPage.tsx
 source_sha256: 9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7
 code_graph_id: file:app/frontend/src/pages/FilesPage.tsx
 analysis_scope: static-ast
-fact_sha256: b44f9a35b0db6d7cd07afa043e867e2b4901d29fef3dbc53d1e755992e328273
+fact_sha256: 96cb1fbe5e275bd094a356614828d7c58641d841547212697153a0d096c0468d
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-15T12:01:02.517Z"
+  at: "2026-08-16T08:39:27.990Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-15T12:01:02.517Z"
+    at: "2026-08-16T08:39:27.990Z"
 ---
 
 # Purpose
