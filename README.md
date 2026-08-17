@@ -114,14 +114,14 @@ If the VS Code Playwright extension does not start the configured web servers au
 Terminal 1 (backend):
 
 ```powershell
-cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-agentic-automation\app\backend
+cd C:\AUTO_WS\GH_PERS\playwright-agentic-automation\app\backend
 .\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8001
 ```
 
 Terminal 2 (frontend):
 
 ```powershell
-cd C:\OCE\AUTO_WS\GH_PERS\namste-pw-2026\playwright-agentic-automation\app\frontend
+cd C:\AUTO_WS\GH_PERS\playwright-agentic-automation\app\frontend
 $env:VITE_API_BASE_URL = "http://127.0.0.1:8001"
 npm run dev -- --host 127.0.0.1 --port 5174
 ```
