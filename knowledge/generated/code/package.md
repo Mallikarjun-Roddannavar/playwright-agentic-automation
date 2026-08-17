@@ -15,16 +15,16 @@ sources:
     title: package.json
     author: process:codebase-knowledge/1.0.0
 source_path: package.json
-source_sha256: 1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8
+source_sha256: 7319817343519f8e23ef5d43f3c2b6e25ab2316dca7fca6180b905626d2486bb
 code_graph_id: file:package.json
 analysis_scope: static-ast
-fact_sha256: fe2a576820c79a89eeb5b60f71ba586842aefc08ad4c9f87ff85ac38f3e98ef3
+fact_sha256: 6e11255874b9776490c4d46e1739bea8de029d9868539c688bfe98d7857aaf77
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-17T11:18:56.838Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-17T11:18:56.838Z"
 ---
 
 # Purpose
@@ -49,4 +49,4 @@ Configuration extracted from package.json by deterministic static analysis. The 
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `7319817343519f8e23ef5d43f3c2b6e25ab2316dca7fca6180b905626d2486bb`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

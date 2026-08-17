@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "cf4581aec9c716cdf59bd9646f243d9f931b91806c8ee29328e37c1ef3c17240",
+  "sourceDigest": "bcd0ca4b392a057ae1551bead151ed1f8e97150f7193bd939198af1676435229",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-16T08:39:27.990Z",
+    "at": "2026-08-17T11:18:56.838Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -198,7 +198,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8",
+      "sha256": "7319817343519f8e23ef5d43f3c2b6e25ab2316dca7fca6180b905626d2486bb",
       "category": "configuration"
     },
     {
@@ -228,12 +228,17 @@
     },
     {
       "path": "scripts/queryKnowledge.mjs",
-      "sha256": "b06f92390b4286c148ca34a5711e382cb900d551d756a579a8b98a64b27b2af6",
+      "sha256": "892e9b2209b6b17f73b2e78c12b0283a9f327b05da5064f619a66d8599a50803",
       "category": "tooling"
     },
     {
       "path": "scripts/validateKnowledge.mjs",
       "sha256": "6f5753e3ccea012bb0747175d3104c597bdc3b51b9f7508f85af57168e079d6e",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/verifyLoginKnowledge.mjs",
+      "sha256": "d1274290e0d7aca0c33f9eea0ba6c3fec1282ec6ded2f89aa9cc0a866f7786a1",
       "category": "tooling"
     },
     {
@@ -772,7 +777,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "1977c5d1d8a112eb452688fb46ba53978a180fd9b9ee06542b9963a955eed4e8"
+      "sourceHash": "7319817343519f8e23ef5d43f3c2b6e25ab2316dca7fca6180b905626d2486bb"
     },
     {
       "id": "file:playwright.config.ts",
@@ -844,7 +849,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "b06f92390b4286c148ca34a5711e382cb900d551d756a579a8b98a64b27b2af6"
+      "sourceHash": "892e9b2209b6b17f73b2e78c12b0283a9f327b05da5064f619a66d8599a50803"
     },
     {
       "id": "file:scripts/validateKnowledge.mjs",
@@ -857,6 +862,18 @@
         "tooling"
       ],
       "sourceHash": "6f5753e3ccea012bb0747175d3104c597bdc3b51b9f7508f85af57168e079d6e"
+    },
+    {
+      "id": "file:scripts/verifyLoginKnowledge.mjs",
+      "kind": "file",
+      "label": "scripts/verifyLoginKnowledge.mjs",
+      "path": "scripts/verifyLoginKnowledge.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "d1274290e0d7aca0c33f9eea0ba6c3fec1282ec6ded2f89aa9cc0a866f7786a1"
     },
     {
       "id": "file:tsconfig.json",
@@ -4516,8 +4533,8 @@
       "label": "edgeSearchText",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 35,
-      "endLine": 39,
+      "startLine": 58,
+      "endLine": 62,
       "exported": false,
       "tags": [
         "function",
@@ -4530,8 +4547,8 @@
       "label": "matchesTerms",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 30,
-      "endLine": 33,
+      "startLine": 53,
+      "endLine": 56,
       "exported": false,
       "tags": [
         "function",
@@ -4544,8 +4561,36 @@
       "label": "parseArguments",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 11,
-      "endLine": 28,
+      "startLine": 14,
+      "endLine": 33,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/queryKnowledge.mjs#queryLoginKnowledge",
+      "kind": "function",
+      "label": "queryLoginKnowledge",
+      "path": "scripts/queryKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 41,
+      "endLine": 51,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/queryKnowledge.mjs#readConcept",
+      "kind": "function",
+      "label": "readConcept",
+      "path": "scripts/queryKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 35,
+      "endLine": 39,
       "exported": false,
       "tags": [
         "function",
@@ -4558,8 +4603,8 @@
       "label": "usage",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 5,
-      "endLine": 9,
+      "startLine": 8,
+      "endLine": 12,
       "exported": false,
       "tags": [
         "function",
@@ -7255,6 +7300,19 @@
       ]
     },
     {
+      "id": "edge:2f6d55ec3a056b4b",
+      "relation": "CONTAINS",
+      "from": "file:scripts/queryKnowledge.mjs",
+      "to": "symbol:scripts/queryKnowledge.mjs#queryLoginKnowledge",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/queryKnowledge.mjs",
+          "line": 41
+        }
+      ]
+    },
+    {
       "id": "edge:2fa99373b932c36a",
       "relation": "CONTAINS",
       "from": "file:app/backend/main.py",
@@ -7317,6 +7375,20 @@
         {
           "path": "app/backend/database.py",
           "line": 79
+        }
+      ]
+    },
+    {
+      "id": "edge:3108859622113386",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/verifyLoginKnowledge.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/verifyLoginKnowledge.mjs",
+          "line": 2,
+          "detail": "node:path"
         }
       ]
     },
@@ -7443,6 +7515,20 @@
         {
           "path": "app/backend/main.py",
           "line": 175
+        }
+      ]
+    },
+    {
+      "id": "edge:3699611d1ea8779b",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/queryKnowledge.mjs",
+      "to": "package:js-yaml",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/queryKnowledge.mjs",
+          "line": 4,
+          "detail": "js-yaml"
         }
       ]
     },
@@ -8227,7 +8313,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 3,
+          "line": 6,
           "detail": "./knowledge/CodebaseKnowledge.mjs"
         }
       ]
@@ -8665,7 +8751,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 30
+          "line": 53
         }
       ]
     },
@@ -8804,6 +8890,20 @@
       ]
     },
     {
+      "id": "edge:595a2177b34dd70e",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/queryKnowledge.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/queryKnowledge.mjs",
+          "line": 3,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:5977ec80b91a1ef3",
       "relation": "EXTENDS",
       "from": "symbol:ui/pages/LoginPage.ts#LoginPage",
@@ -8854,6 +8954,20 @@
         {
           "path": "ui/specs/viewer-rbac.spec.ts",
           "line": 21
+        }
+      ]
+    },
+    {
+      "id": "edge:59d14aae5818e1a2",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/queryKnowledge.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/queryKnowledge.mjs",
+          "line": 2,
+          "detail": "node:fs"
         }
       ]
     },
@@ -9149,6 +9263,19 @@
         {
           "path": "app/backend/main.py",
           "line": 321
+        }
+      ]
+    },
+    {
+      "id": "edge:62f44d0d8a5e685f",
+      "relation": "CONTAINS",
+      "from": "file:scripts/queryKnowledge.mjs",
+      "to": "symbol:scripts/queryKnowledge.mjs#readConcept",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/queryKnowledge.mjs",
+          "line": 35
         }
       ]
     },
@@ -10926,6 +11053,20 @@
       ]
     },
     {
+      "id": "edge:930d9e479fd96272",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/verifyLoginKnowledge.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/verifyLoginKnowledge.mjs",
+          "line": 1,
+          "detail": "node:fs"
+        }
+      ]
+    },
+    {
       "id": "edge:93c74c74563f4d50",
       "relation": "USES_PAGE",
       "from": "symbol:ui/specs/files.spec.ts#expectRoleCanUploadFile",
@@ -11434,7 +11575,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 5
+          "line": 8
         }
       ]
     },
@@ -11528,6 +11669,19 @@
         {
           "path": "ui/pages/BasePage.ts",
           "line": 6
+        }
+      ]
+    },
+    {
+      "id": "edge:a835db027422c2ab",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/verifyLoginKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/verifyLoginKnowledge.mjs",
+          "line": 1
         }
       ]
     },
@@ -13470,7 +13624,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 35
+          "line": 58
         }
       ]
     },
@@ -13630,7 +13784,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 11
+          "line": 14
         }
       ]
     },

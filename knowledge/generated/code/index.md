@@ -124,6 +124,8 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/queryKnowledge.mjs` — Framework tooling.
 - [validateKnowledge](scripts/validate-knowledge.md)
   - `scripts/validateKnowledge.mjs` — Framework tooling.
+- [verifyLoginKnowledge](scripts/verify-login-knowledge.md)
+  - `scripts/verifyLoginKnowledge.mjs` — Framework tooling.
 
 ## UI page objects
 
