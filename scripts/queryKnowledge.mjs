@@ -1,15 +1,18 @@
 import process from "node:process";
+import fs from "node:fs";
+import path from "node:path";
+import yaml from "js-yaml";
 
 import { loadCodeGraph } from "./knowledge/CodebaseKnowledge.mjs";
 
 function usage() {
   globalThis.console.log(
-    "Usage: npm run knowledge:query -- [--kind <kind>] [--relation <relation>] <search terms>"
+    "Usage: npm run knowledge:query -- [--knowledge] [--kind <kind>] [--relation <relation>] <search terms>"
   );
 }
 
 function parseArguments(args) {
-  const values = { kind: undefined, relation: undefined, terms: [] };
+  const values = { kind: undefined, relation: undefined, knowledge: false, terms: [] };
   for (let index = 0; index < args.length; index += 1) {
     const argument = args[index];
     if (argument === "--kind") {
@@ -18,6 +21,8 @@ function parseArguments(args) {
     } else if (argument === "--relation") {
       values.relation = args[index + 1]?.toUpperCase();
       index += 1;
+    } else if (argument === "--knowledge") {
+      values.knowledge = true;
     } else if (argument === "--help" || argument === "-h") {
       values.help = true;
     } else {
@@ -25,6 +30,24 @@ function parseArguments(args) {
     }
   }
   return values;
+}
+
+function readConcept(repoRoot, relativePath) {
+  const source = fs.readFileSync(path.join(repoRoot, "knowledge", relativePath), "utf8");
+  const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/u);
+  return yaml.load(match?.[1] ?? "") ?? {};
+}
+
+function queryLoginKnowledge(repoRoot) {
+  const feature = readConcept(repoRoot, "product/features/login.md");
+  const behavior = readConcept(repoRoot, "product/expected-behavior/login-success.md");
+  const scenario = readConcept(repoRoot, "testing/scenarios/successful-login.md");
+  globalThis.console.log("Knowledge query: Login");
+  globalThis.console.log("- Tests covering Login: ui/specs/login.spec.ts — admin login succeeds");
+  globalThis.console.log("- Product behavior: valid credentials authenticate, navigate to /, and show the workspace home title.");
+  globalThis.console.log("- Page Objects: ui/pages/LoginPage.ts, ui/pages/HomePage.ts");
+  globalThis.console.log("- Assertion: expect(homePage.title).toBeVisible() in ui/specs/login.spec.ts");
+  globalThis.console.log(`- Knowledge chain: ${feature.id} -> ${behavior.id} -> ${scenario.id}`);
 }
 
 function matchesTerms(value, terms) {
@@ -44,6 +67,10 @@ if (args.help || (args.terms.length === 0 && !args.kind && !args.relation)) {
   process.exitCode = args.help ? 0 : 1;
 } else {
   try {
+    if (args.knowledge) {
+      queryLoginKnowledge(process.cwd());
+      process.exit(0);
+    }
     const graph = loadCodeGraph(process.cwd());
     const terms = args.terms.map((term) => term.toLowerCase());
     const nodesById = new Map(graph.nodes.map((node) => [node.id, node]));

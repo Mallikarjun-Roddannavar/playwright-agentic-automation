@@ -18,10 +18,11 @@
     "typecheck": "tsc --noEmit",
     "check:naming": "node ./scripts/checkNamingConventions.mjs",
     "knowledge:build": "node ./scripts/buildKnowledge.mjs",
-    "knowledge:validate": "node ./scripts/validateKnowledge.mjs",
-    "knowledge:check": "node ./scripts/buildKnowledge.mjs --check && node ./scripts/validateKnowledge.mjs",
+    "knowledge:validate": "node ./scripts/validateKnowledge.mjs && node ./scripts/verifyLoginKnowledge.mjs",
+    "knowledge:check": "node ./scripts/buildKnowledge.mjs --check && node ./scripts/validateKnowledge.mjs && node ./scripts/verifyLoginKnowledge.mjs",
     "knowledge:query": "node ./scripts/queryKnowledge.mjs",
-    "quality:check": "node ./scripts/checkNamingConventions.mjs && node ./scripts/buildKnowledge.mjs --check && node ./scripts/validateKnowledge.mjs && eslint . && tsc --noEmit && prettier . --check"
+    "knowledge:verify": "node ./scripts/verifyLoginKnowledge.mjs",
+    "quality:check": "node ./scripts/checkNamingConventions.mjs && node ./scripts/buildKnowledge.mjs --check && npm run knowledge:validate && eslint . && tsc --noEmit && prettier . --check"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",
