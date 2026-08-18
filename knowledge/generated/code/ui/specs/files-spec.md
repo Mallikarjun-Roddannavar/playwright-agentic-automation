@@ -15,16 +15,16 @@ sources:
     title: ui/specs/files.spec.ts
     author: process:codebase-knowledge/1.0.0
 source_path: ui/specs/files.spec.ts
-source_sha256: 01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786
+source_sha256: 84a10ffd05955ca55460b791054c98850747c085ccd3f4bb1889e29c33707f31
 code_graph_id: file:ui/specs/files.spec.ts
 analysis_scope: static-ast
-fact_sha256: 2d5c221b5cf62ce6f75e74d718d11571256d25fb1d982695f5c78beda18d370d
+fact_sha256: e0d88a2c875f0501bf4529c82806bb5518d85aff3cc8dfcaf5ae2d1bea9fe932
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:07:43.531Z"
+  at: "2026-08-18T10:16:28.092Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:07:43.531Z"
+    at: "2026-08-18T10:16:28.092Z"
 ---
 
 # Purpose
@@ -65,4 +65,4 @@ UI specification extracted from ui/specs/files.spec.ts by deterministic static a
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `84a10ffd05955ca55460b791054c98850747c085ccd3f4bb1889e29c33707f31`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

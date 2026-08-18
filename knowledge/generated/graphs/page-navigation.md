@@ -11,16 +11,16 @@ tags:
 status: stable
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:09:48.149Z"
+  at: "2026-08-18T10:16:28.092Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:09:48.149Z"
+    at: "2026-08-18T10:16:28.092Z"
 sources:
   - id: code-graph
     resource: /generated/code-graph.json
     title: Static AST code graph
     author: process:codebase-knowledge/1.0.0
-source_digest: 746f735bd15d9d6bd1ce2e04093b44e9b4591edcb6a78f27feffc438e8cb1aed
+source_digest: 06b56a79840fc7d8ccf2e78808a50a075bf373635a333a9d070b55810f7447a8
 analysis_scope: static-ast
 ---
 

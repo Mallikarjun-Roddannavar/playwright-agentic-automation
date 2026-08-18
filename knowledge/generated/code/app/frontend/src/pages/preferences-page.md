@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/pages/PreferencesPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/PreferencesPage.tsx
-source_sha256: 5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7
+source_sha256: 28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2
 code_graph_id: file:app/frontend/src/pages/PreferencesPage.tsx
 analysis_scope: static-ast
-fact_sha256: 13e3e089c4f8ffd1b8d7ffcc49d7e18849ab990a53129e7159bd51ff232f918c
+fact_sha256: c09ead2382e55560039852ae7d0a57b5f09feffbf6e01f8d2ae7ae53c05f09de
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:07:43.531Z"
+  at: "2026-08-18T10:16:28.092Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:07:43.531Z"
+    at: "2026-08-18T10:16:28.092Z"
 ---
 
 # Purpose
@@ -55,4 +55,4 @@ Application frontend extracted from app/frontend/src/pages/PreferencesPage.tsx b
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

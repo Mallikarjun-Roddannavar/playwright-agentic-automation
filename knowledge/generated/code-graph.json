@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "746f735bd15d9d6bd1ce2e04093b44e9b4591edcb6a78f27feffc438e8cb1aed",
+  "sourceDigest": "06b56a79840fc7d8ccf2e78808a50a075bf373635a333a9d070b55810f7447a8",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-18T10:09:48.149Z",
+    "at": "2026-08-18T10:16:28.092Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -78,12 +78,12 @@
     },
     {
       "path": "app/frontend/postcss.config.js",
-      "sha256": "9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3",
+      "sha256": "fed2fb14a7336a4083acfdbab9179568ca47716069c181e2d0760ad497ffb113",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/App.tsx",
-      "sha256": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314",
+      "sha256": "1f58c3e56086cd44608b70ac5609d0c63b89c70560cc87f3090a74d87018167f",
       "category": "frontend"
     },
     {
@@ -93,22 +93,22 @@
     },
     {
       "path": "app/frontend/src/components/AppLayout.tsx",
-      "sha256": "d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed",
+      "sha256": "933aaecc55f66b6af8fc1674375aea4b0af5d4d9858906daa211c42682732734",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/ConfirmDialog.tsx",
-      "sha256": "76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2",
+      "sha256": "8b7b25db644e6c10057e1c5e51a18b20cd59e5ac2483c5af2de301178a247d3d",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/Modal.tsx",
-      "sha256": "06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3",
+      "sha256": "a5fe02ce5656d8f305467b014fc7c8beeb09682befbfbeac3fabf97c641b121e",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/Sidebar.tsx",
-      "sha256": "034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f",
+      "sha256": "853fe59f6dda367534982e5a77a48f6ed0ffda19f5eeeb9efb8035c714f3d294",
       "category": "frontend"
     },
     {
@@ -148,7 +148,7 @@
     },
     {
       "path": "app/frontend/src/pages/LoginPage.tsx",
-      "sha256": "9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2",
+      "sha256": "f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023",
       "category": "frontend"
     },
     {
@@ -158,7 +158,7 @@
     },
     {
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
-      "sha256": "5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7",
+      "sha256": "28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2",
       "category": "frontend"
     },
     {
@@ -168,12 +168,12 @@
     },
     {
       "path": "app/frontend/tailwind.config.js",
-      "sha256": "a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f",
+      "sha256": "460f247f9f95127c5469df1245d298e83234abe2933df0fafb2699fa20255686",
       "category": "frontend"
     },
     {
       "path": "app/frontend/tsconfig.json",
-      "sha256": "23545a3ba4e3b1888bf30f3d7d90133ca559e3867d1e174a9aa191313afd2b2e",
+      "sha256": "cc708eed6ba80a2df8a837e3536b326bf95ebc7e18cd1b6b55721f93ef8474a2",
       "category": "frontend"
     },
     {
@@ -183,17 +183,17 @@
     },
     {
       "path": "app/scripts/check-test-ids.js",
-      "sha256": "096f85735f3bd88eb066076d3adce242764b7473d5c88b5eadda63e34628f848",
+      "sha256": "93f1fda6988ebfe051cdb6ed2c7580ecf33c3edae525a71a2a2a68ffe8f141a6",
       "category": "source"
     },
     {
       "path": "config/test-config.json",
-      "sha256": "f3a4eb530a16eec2ef30dba7ea35d1542195445563657a1df763cae1d15850ff",
+      "sha256": "25e6510aca7df397faac39eb380d08236f90db0ba03f96973cbbb9dfdb4d92bf",
       "category": "configuration"
     },
     {
       "path": "eslint.config.mjs",
-      "sha256": "c82c0a3e7648473d0accbbc87034cdaa3ed874355af475086f2308132bd1166a",
+      "sha256": "455d807c5a8762ef4e2426b938b925045f050dd44f42b17a21694c6b72f12a3f",
       "category": "tooling"
     },
     {
@@ -218,7 +218,7 @@
     },
     {
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "sha256": "bfb19f82b27819636d6c2dc7f5702ac81727470aa451d9f8202873d640415475",
+      "sha256": "b8c31831fb7011976187a3f6f88d18c61c0f9dd0d2e90b2c9cca2df87204a550",
       "category": "tooling"
     },
     {
@@ -278,7 +278,7 @@
     },
     {
       "path": "ui/specs/files.spec.ts",
-      "sha256": "01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786",
+      "sha256": "84a10ffd05955ca55460b791054c98850747c085ccd3f4bb1889e29c33707f31",
       "category": "ui-spec"
     },
     {
@@ -288,7 +288,7 @@
     },
     {
       "path": "ui/specs/multi-role.spec.ts",
-      "sha256": "3450191ff39037a1d9fff57fb184bf542aa6f5a1486b95705bd913e15dd22e31",
+      "sha256": "c4b94c071d58cd375f5044a507ddb5c34bf600c9d853872b8aa7935a8a9f9e67",
       "category": "ui-spec"
     },
     {
@@ -489,7 +489,7 @@
         "frontend",
         "js"
       ],
-      "sourceHash": "9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3"
+      "sourceHash": "fed2fb14a7336a4083acfdbab9179568ca47716069c181e2d0760ad497ffb113"
     },
     {
       "id": "file:app/frontend/src/App.tsx",
@@ -501,7 +501,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314"
+      "sourceHash": "1f58c3e56086cd44608b70ac5609d0c63b89c70560cc87f3090a74d87018167f"
     },
     {
       "id": "file:app/frontend/src/api.ts",
@@ -525,7 +525,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed"
+      "sourceHash": "933aaecc55f66b6af8fc1674375aea4b0af5d4d9858906daa211c42682732734"
     },
     {
       "id": "file:app/frontend/src/components/ConfirmDialog.tsx",
@@ -537,7 +537,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2"
+      "sourceHash": "8b7b25db644e6c10057e1c5e51a18b20cd59e5ac2483c5af2de301178a247d3d"
     },
     {
       "id": "file:app/frontend/src/components/Modal.tsx",
@@ -549,7 +549,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "06fcf6956a17a255cf8417a01081a559ed3c42f922fab2c4fc07619aa1840fe3"
+      "sourceHash": "a5fe02ce5656d8f305467b014fc7c8beeb09682befbfbeac3fabf97c641b121e"
     },
     {
       "id": "file:app/frontend/src/components/Sidebar.tsx",
@@ -561,7 +561,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "034e816af3373eac52b59fd7b1ce10e2ce25f3a30231df81f8e4d08116ec9f6f"
+      "sourceHash": "853fe59f6dda367534982e5a77a48f6ed0ffda19f5eeeb9efb8035c714f3d294"
     },
     {
       "id": "file:app/frontend/src/components/ThemeToggle.tsx",
@@ -657,7 +657,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2"
+      "sourceHash": "f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023"
     },
     {
       "id": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
@@ -681,7 +681,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7"
+      "sourceHash": "28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2"
     },
     {
       "id": "file:app/frontend/src/types.ts",
@@ -705,7 +705,7 @@
         "frontend",
         "js"
       ],
-      "sourceHash": "a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f"
+      "sourceHash": "460f247f9f95127c5469df1245d298e83234abe2933df0fafb2699fa20255686"
     },
     {
       "id": "file:app/frontend/tsconfig.json",
@@ -717,7 +717,7 @@
         "frontend",
         "json"
       ],
-      "sourceHash": "23545a3ba4e3b1888bf30f3d7d90133ca559e3867d1e174a9aa191313afd2b2e"
+      "sourceHash": "cc708eed6ba80a2df8a837e3536b326bf95ebc7e18cd1b6b55721f93ef8474a2"
     },
     {
       "id": "file:app/frontend/vite.config.ts",
@@ -741,7 +741,7 @@
         "js",
         "source"
       ],
-      "sourceHash": "096f85735f3bd88eb066076d3adce242764b7473d5c88b5eadda63e34628f848"
+      "sourceHash": "93f1fda6988ebfe051cdb6ed2c7580ecf33c3edae525a71a2a2a68ffe8f141a6"
     },
     {
       "id": "file:config/test-config.json",
@@ -753,7 +753,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "f3a4eb530a16eec2ef30dba7ea35d1542195445563657a1df763cae1d15850ff"
+      "sourceHash": "25e6510aca7df397faac39eb380d08236f90db0ba03f96973cbbb9dfdb4d92bf"
     },
     {
       "id": "file:eslint.config.mjs",
@@ -765,7 +765,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "c82c0a3e7648473d0accbbc87034cdaa3ed874355af475086f2308132bd1166a"
+      "sourceHash": "455d807c5a8762ef4e2426b938b925045f050dd44f42b17a21694c6b72f12a3f"
     },
     {
       "id": "file:package.json",
@@ -825,7 +825,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "bfb19f82b27819636d6c2dc7f5702ac81727470aa451d9f8202873d640415475"
+      "sourceHash": "b8c31831fb7011976187a3f6f88d18c61c0f9dd0d2e90b2c9cca2df87204a550"
     },
     {
       "id": "file:scripts/knowledge/python_ast_adapter.py",
@@ -969,7 +969,7 @@
         "ts",
         "ui-spec"
       ],
-      "sourceHash": "01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786"
+      "sourceHash": "84a10ffd05955ca55460b791054c98850747c085ccd3f4bb1889e29c33707f31"
     },
     {
       "id": "file:ui/specs/login.spec.ts",
@@ -993,7 +993,7 @@
         "ts",
         "ui-spec"
       ],
-      "sourceHash": "3450191ff39037a1d9fff57fb184bf542aa6f5a1486b95705bd913e15dd22e31"
+      "sourceHash": "c4b94c071d58cd375f5044a507ddb5c34bf600c9d853872b8aa7935a8a9f9e67"
     },
     {
       "id": "file:ui/specs/viewer-rbac.spec.ts",

@@ -15,16 +15,16 @@ sources:
     title: app/frontend/tailwind.config.js
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/tailwind.config.js
-source_sha256: a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f
+source_sha256: 460f247f9f95127c5469df1245d298e83234abe2933df0fafb2699fa20255686
 code_graph_id: file:app/frontend/tailwind.config.js
 analysis_scope: static-ast
-fact_sha256: 74553d9d2ad5ba02b1b8123ff13a472509fc86da8ec9db52a2bc0429555853ed
+fact_sha256: 531beff023ef8257a5008858ba60d1a85bfd22df97b2b606b092f1433685d2fb
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:16:28.092Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:16:28.092Z"
 ---
 
 # Purpose
@@ -49,4 +49,4 @@ Application frontend extracted from app/frontend/tailwind.config.js by determini
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `a7da97dd34a350d33dc5afb8f5e17d3c0198fb980040073251122d5b9e5ecc1f`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `460f247f9f95127c5469df1245d298e83234abe2933df0fafb2699fa20255686`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

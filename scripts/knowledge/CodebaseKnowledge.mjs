@@ -102,7 +102,7 @@ function ensureDirectory(directoryPath) {
 }
 
 function readUtf8(filePath) {
-  return fs.readFileSync(filePath, "utf8");
+  return fs.readFileSync(filePath, "utf8").replace(/\r\n?/gu, "\n");
 }
 
 function hasPathPrefix(candidatePath, rootPath) {

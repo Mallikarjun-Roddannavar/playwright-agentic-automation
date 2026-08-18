@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/pages/LoginPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/LoginPage.tsx
-source_sha256: 9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2
+source_sha256: f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023
 code_graph_id: file:app/frontend/src/pages/LoginPage.tsx
 analysis_scope: static-ast
-fact_sha256: 9d973518a8e19a7bb6351b697a5b2d61c63c3e06f0da1fbab4b60e418728ffab
+fact_sha256: 285a781ba937f930200a76ebbc06b944f9a355b190c971b0c1fe04359f648641
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:16:28.092Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:16:28.092Z"
 ---
 
 # Purpose
@@ -55,4 +55,4 @@ Application frontend extracted from app/frontend/src/pages/LoginPage.tsx by dete
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `9228088de9b8e9739a1c192a1e24e0ac18106ab6b5d5d5d79fb5798b2ebcdbe2`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

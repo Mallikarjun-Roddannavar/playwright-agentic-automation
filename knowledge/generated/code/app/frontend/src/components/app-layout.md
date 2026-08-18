@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/components/AppLayout.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/AppLayout.tsx
-source_sha256: d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed
+source_sha256: 933aaecc55f66b6af8fc1674375aea4b0af5d4d9858906daa211c42682732734
 code_graph_id: file:app/frontend/src/components/AppLayout.tsx
 analysis_scope: static-ast
-fact_sha256: e8bc99883aed58c5b3251677205057e8cf032e011fc90b535253b7deb812ac51
+fact_sha256: ae5a62b2e899a798944bf4f36ad310b203be9eed2b84420e234b8976c5877d78
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:16:28.092Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:16:28.092Z"
 ---
 
 # Purpose
@@ -55,4 +55,4 @@ Application frontend extracted from app/frontend/src/components/AppLayout.tsx by
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `d18932526f957d776c55030ce87718e6cddeadfb516d81cba5d9ab41f504e8ed`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `933aaecc55f66b6af8fc1674375aea4b0af5d4d9858906daa211c42682732734`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

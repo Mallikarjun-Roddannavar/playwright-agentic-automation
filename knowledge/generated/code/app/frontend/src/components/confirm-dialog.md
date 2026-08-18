@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/components/ConfirmDialog.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/ConfirmDialog.tsx
-source_sha256: 76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2
+source_sha256: 8b7b25db644e6c10057e1c5e51a18b20cd59e5ac2483c5af2de301178a247d3d
 code_graph_id: file:app/frontend/src/components/ConfirmDialog.tsx
 analysis_scope: static-ast
-fact_sha256: b6c2e48e618fc8e4005f34c9a1a4c1cda760f24550fcceece6596bc2bf9838b7
+fact_sha256: 80df594080295cf8b4a0a833b02de40b18bfc318cf6a21a1030028c2eba54193
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:16:28.092Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:16:28.092Z"
 ---
 
 # Purpose
@@ -51,4 +51,4 @@ Application frontend extracted from app/frontend/src/components/ConfirmDialog.ts
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `76e956d77a67e0f4cd0cb4037005fd1e1d8de79895d697d019f529eb041e8cf2`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `8b7b25db644e6c10057e1c5e51a18b20cd59e5ac2483c5af2de301178a247d3d`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
