@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "85c24826f9f5718faaeb13ae75988c909b409d0112595edf47c70ff4f56ae817",
+  "sourceDigest": "746f735bd15d9d6bd1ce2e04093b44e9b4591edcb6a78f27feffc438e8cb1aed",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-18T09:26:46.462Z",
+    "at": "2026-08-18T10:09:48.149Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -82,13 +82,13 @@
       "category": "frontend"
     },
     {
-      "path": "app/frontend/src/api.ts",
-      "sha256": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d",
+      "path": "app/frontend/src/App.tsx",
+      "sha256": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314",
       "category": "frontend"
     },
     {
-      "path": "app/frontend/src/App.tsx",
-      "sha256": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314",
+      "path": "app/frontend/src/api.ts",
+      "sha256": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d",
       "category": "frontend"
     },
     {
@@ -218,7 +218,7 @@
     },
     {
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "sha256": "52a5e81acd7d5b81b4ba0337db13b8dcf0533eb4bc64a49359618b16fc61d40c",
+      "sha256": "bfb19f82b27819636d6c2dc7f5702ac81727470aa451d9f8202873d640415475",
       "category": "tooling"
     },
     {
@@ -492,18 +492,6 @@
       "sourceHash": "9a7acf0e93134398dc0f68efcd85e6bf98ec399be8c2be0a5223d2fb91e868b3"
     },
     {
-      "id": "file:app/frontend/src/api.ts",
-      "kind": "file",
-      "label": "app/frontend/src/api.ts",
-      "path": "app/frontend/src/api.ts",
-      "category": "frontend",
-      "tags": [
-        "frontend",
-        "ts"
-      ],
-      "sourceHash": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d"
-    },
-    {
       "id": "file:app/frontend/src/App.tsx",
       "kind": "file",
       "label": "app/frontend/src/App.tsx",
@@ -514,6 +502,18 @@
         "tsx"
       ],
       "sourceHash": "2b03322dce7e7a02ae54ebfceb85d51b4ad771d5d36ee3263e90514f1e086314"
+    },
+    {
+      "id": "file:app/frontend/src/api.ts",
+      "kind": "file",
+      "label": "app/frontend/src/api.ts",
+      "path": "app/frontend/src/api.ts",
+      "category": "frontend",
+      "tags": [
+        "frontend",
+        "ts"
+      ],
+      "sourceHash": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d"
     },
     {
       "id": "file:app/frontend/src/components/AppLayout.tsx",
@@ -825,7 +825,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "52a5e81acd7d5b81b4ba0337db13b8dcf0533eb4bc64a49359618b16fc61d40c"
+      "sourceHash": "bfb19f82b27819636d6c2dc7f5702ac81727470aa451d9f8202873d640415475"
     },
     {
       "id": "file:scripts/knowledge/python_ast_adapter.py",
@@ -2526,17 +2526,31 @@
       ]
     },
     {
-      "id": "symbol:app/frontend/src/api.ts#api",
-      "kind": "variable",
-      "label": "api",
-      "path": "app/frontend/src/api.ts",
+      "id": "symbol:app/frontend/src/App.tsx#App",
+      "kind": "function",
+      "label": "App",
+      "path": "app/frontend/src/App.tsx",
       "category": "frontend",
-      "startLine": 108,
-      "endLine": 178,
+      "startLine": 16,
+      "endLine": 66,
+      "exported": true,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/App.tsx#PrivateRoute",
+      "kind": "function",
+      "label": "PrivateRoute",
+      "path": "app/frontend/src/App.tsx",
+      "category": "frontend",
+      "startLine": 11,
+      "endLine": 14,
       "exported": false,
       "tags": [
         "frontend",
-        "variable"
+        "function"
       ]
     },
     {
@@ -2554,20 +2568,6 @@
       ]
     },
     {
-      "id": "symbol:app/frontend/src/api.ts#decodeJwtPayload",
-      "kind": "function",
-      "label": "decodeJwtPayload",
-      "path": "app/frontend/src/api.ts",
-      "category": "frontend",
-      "startLine": 49,
-      "endLine": 58,
-      "exported": false,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
       "id": "symbol:app/frontend/src/api.ts#JwtClaims",
       "kind": "type",
       "label": "JwtClaims",
@@ -2579,34 +2579,6 @@
       "tags": [
         "frontend",
         "type"
-      ]
-    },
-    {
-      "id": "symbol:app/frontend/src/api.ts#parseErrorDetail",
-      "kind": "function",
-      "label": "parseErrorDetail",
-      "path": "app/frontend/src/api.ts",
-      "category": "frontend",
-      "startLine": 28,
-      "endLine": 47,
-      "exported": false,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
-      "id": "symbol:app/frontend/src/api.ts#request",
-      "kind": "function",
-      "label": "request",
-      "path": "app/frontend/src/api.ts",
-      "category": "frontend",
-      "startLine": 77,
-      "endLine": 106,
-      "exported": false,
-      "tags": [
-        "frontend",
-        "function"
       ]
     },
     {
@@ -2638,6 +2610,62 @@
       ]
     },
     {
+      "id": "symbol:app/frontend/src/api.ts#api",
+      "kind": "variable",
+      "label": "api",
+      "path": "app/frontend/src/api.ts",
+      "category": "frontend",
+      "startLine": 108,
+      "endLine": 178,
+      "exported": false,
+      "tags": [
+        "frontend",
+        "variable"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#decodeJwtPayload",
+      "kind": "function",
+      "label": "decodeJwtPayload",
+      "path": "app/frontend/src/api.ts",
+      "category": "frontend",
+      "startLine": 49,
+      "endLine": 58,
+      "exported": false,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#parseErrorDetail",
+      "kind": "function",
+      "label": "parseErrorDetail",
+      "path": "app/frontend/src/api.ts",
+      "category": "frontend",
+      "startLine": 28,
+      "endLine": 47,
+      "exported": false,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/api.ts#request",
+      "kind": "function",
+      "label": "request",
+      "path": "app/frontend/src/api.ts",
+      "category": "frontend",
+      "startLine": 77,
+      "endLine": 106,
+      "exported": false,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
       "id": "symbol:app/frontend/src/api.ts#userFromAccessToken",
       "kind": "function",
       "label": "userFromAccessToken",
@@ -2646,34 +2674,6 @@
       "startLine": 60,
       "endLine": 75,
       "exported": true,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
-      "id": "symbol:app/frontend/src/App.tsx#App",
-      "kind": "function",
-      "label": "App",
-      "path": "app/frontend/src/App.tsx",
-      "category": "frontend",
-      "startLine": 16,
-      "endLine": 66,
-      "exported": true,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
-      "id": "symbol:app/frontend/src/App.tsx#PrivateRoute",
-      "kind": "function",
-      "label": "PrivateRoute",
-      "path": "app/frontend/src/App.tsx",
-      "category": "frontend",
-      "startLine": 11,
-      "endLine": 14,
-      "exported": false,
       "tags": [
         "frontend",
         "function"
@@ -2862,20 +2862,6 @@
       ]
     },
     {
-      "id": "symbol:app/frontend/src/context/ThemeContext.tsx#getInitialTheme",
-      "kind": "function",
-      "label": "getInitialTheme",
-      "path": "app/frontend/src/context/ThemeContext.tsx",
-      "category": "frontend",
-      "startLine": 16,
-      "endLine": 22,
-      "exported": false,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
       "id": "symbol:app/frontend/src/context/ThemeContext.tsx#ThemeContextValue",
       "kind": "type",
       "label": "ThemeContextValue",
@@ -2918,6 +2904,20 @@
       ]
     },
     {
+      "id": "symbol:app/frontend/src/context/ThemeContext.tsx#getInitialTheme",
+      "kind": "function",
+      "label": "getInitialTheme",
+      "path": "app/frontend/src/context/ThemeContext.tsx",
+      "category": "frontend",
+      "startLine": 16,
+      "endLine": 22,
+      "exported": false,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
       "id": "symbol:app/frontend/src/context/ThemeContext.tsx#useTheme",
       "kind": "function",
       "label": "useTheme",
@@ -2925,6 +2925,20 @@
       "category": "frontend",
       "startLine": 45,
       "endLine": 51,
+      "exported": true,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#FilesPage",
+      "kind": "function",
+      "label": "FilesPage",
+      "path": "app/frontend/src/pages/FilesPage.tsx",
+      "category": "frontend",
+      "startLine": 12,
+      "endLine": 608,
       "exported": true,
       "tags": [
         "frontend",
@@ -2996,20 +3010,6 @@
       "startLine": 112,
       "endLine": 136,
       "exported": false,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
-      "id": "symbol:app/frontend/src/pages/FilesPage.tsx#FilesPage",
-      "kind": "function",
-      "label": "FilesPage",
-      "path": "app/frontend/src/pages/FilesPage.tsx",
-      "category": "frontend",
-      "startLine": 12,
-      "endLine": 608,
-      "exported": true,
       "tags": [
         "frontend",
         "function"
@@ -3156,6 +3156,20 @@
       ]
     },
     {
+      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#FoldersPage",
+      "kind": "function",
+      "label": "FoldersPage",
+      "path": "app/frontend/src/pages/FoldersPage.tsx",
+      "category": "frontend",
+      "startLine": 12,
+      "endLine": 597,
+      "exported": true,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
       "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#createFolder",
       "kind": "function",
       "label": "createFolder",
@@ -3206,20 +3220,6 @@
       "startLine": 135,
       "endLine": 159,
       "exported": false,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
-      "id": "symbol:app/frontend/src/pages/FoldersPage.tsx#FoldersPage",
-      "kind": "function",
-      "label": "FoldersPage",
-      "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "category": "frontend",
-      "startLine": 12,
-      "endLine": 597,
-      "exported": true,
       "tags": [
         "frontend",
         "function"
@@ -3422,20 +3422,6 @@
       ]
     },
     {
-      "id": "symbol:app/frontend/src/pages/PreferencesPage.tsx#onProfileIconChange",
-      "kind": "function",
-      "label": "onProfileIconChange",
-      "path": "app/frontend/src/pages/PreferencesPage.tsx",
-      "category": "frontend",
-      "startLine": 20,
-      "endLine": 32,
-      "exported": false,
-      "tags": [
-        "frontend",
-        "function"
-      ]
-    },
-    {
       "id": "symbol:app/frontend/src/pages/PreferencesPage.tsx#PreferencesPage",
       "kind": "function",
       "label": "PreferencesPage",
@@ -3444,6 +3430,20 @@
       "startLine": 8,
       "endLine": 111,
       "exported": true,
+      "tags": [
+        "frontend",
+        "function"
+      ]
+    },
+    {
+      "id": "symbol:app/frontend/src/pages/PreferencesPage.tsx#onProfileIconChange",
+      "kind": "function",
+      "label": "onProfileIconChange",
+      "path": "app/frontend/src/pages/PreferencesPage.tsx",
+      "category": "frontend",
+      "startLine": 20,
+      "endLine": 32,
+      "exported": false,
       "tags": [
         "frontend",
         "function"
@@ -3604,6 +3604,132 @@
       ]
     },
     {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#KNOWLEDGE_PROCESS",
+      "kind": "variable",
+      "label": "KNOWLEDGE_PROCESS",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 11,
+      "endLine": 11,
+      "exported": false,
+      "tags": [
+        "tooling",
+        "variable"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#OKF_VERSION",
+      "kind": "variable",
+      "label": "OKF_VERSION",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 10,
+      "endLine": 10,
+      "exported": false,
+      "tags": [
+        "tooling",
+        "variable"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph",
+      "kind": "class",
+      "label": "StaticGraph",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 348,
+      "endLine": 431,
+      "exported": false,
+      "tags": [
+        "class",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.addEdge",
+      "kind": "method",
+      "label": "StaticGraph.addEdge",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 368,
+      "endLine": 406,
+      "exported": false,
+      "tags": [
+        "method",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.addNode",
+      "kind": "method",
+      "label": "StaticGraph.addNode",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 354,
+      "endLine": 366,
+      "exported": false,
+      "tags": [
+        "method",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.constructor",
+      "kind": "method",
+      "label": "StaticGraph.constructor",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 349,
+      "endLine": 352,
+      "exported": false,
+      "tags": [
+        "method",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.getEdges",
+      "kind": "method",
+      "label": "StaticGraph.getEdges",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 416,
+      "endLine": 430,
+      "exported": false,
+      "tags": [
+        "method",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.getNode",
+      "kind": "method",
+      "label": "StaticGraph.getNode",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 408,
+      "endLine": 410,
+      "exported": false,
+      "tags": [
+        "method",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.getNodes",
+      "kind": "method",
+      "label": "StaticGraph.getNodes",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 412,
+      "endLine": 414,
+      "exported": false,
+      "tags": [
+        "method",
+        "tooling"
+      ]
+    },
+    {
       "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#absoluteKey",
       "kind": "function",
       "label": "absoluteKey",
@@ -3623,8 +3749,8 @@
       "label": "addPythonAstGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 568,
-      "endLine": 659,
+      "startLine": 572,
+      "endLine": 663,
       "exported": false,
       "tags": [
         "function",
@@ -3637,8 +3763,8 @@
       "label": "applyKnowledgeBuild",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1853,
-      "endLine": 1863,
+      "startLine": 1857,
+      "endLine": 1867,
       "exported": true,
       "tags": [
         "function",
@@ -3651,8 +3777,8 @@
       "label": "artifactPaths",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 429,
-      "endLine": 437,
+      "startLine": 433,
+      "endLine": 441,
       "exported": false,
       "tags": [
         "function",
@@ -3665,8 +3791,8 @@
       "label": "buildArchitectureMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1377,
-      "endLine": 1428,
+      "startLine": 1381,
+      "endLine": 1432,
       "exported": false,
       "tags": [
         "function",
@@ -3679,8 +3805,8 @@
       "label": "buildCodeConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1261,
-      "endLine": 1375,
+      "startLine": 1265,
+      "endLine": 1379,
       "exported": false,
       "tags": [
         "function",
@@ -3693,8 +3819,8 @@
       "label": "buildGeneratedIndexes",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1525,
-      "endLine": 1582,
+      "startLine": 1529,
+      "endLine": 1586,
       "exported": false,
       "tags": [
         "function",
@@ -3707,8 +3833,8 @@
       "label": "buildProjectAnalysis",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 512,
-      "endLine": 566,
+      "startLine": 516,
+      "endLine": 570,
       "exported": false,
       "tags": [
         "function",
@@ -3721,8 +3847,8 @@
       "label": "buildRelationshipMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1430,
-      "endLine": 1454,
+      "startLine": 1434,
+      "endLine": 1458,
       "exported": false,
       "tags": [
         "function",
@@ -3735,8 +3861,8 @@
       "label": "buildServiceMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1456,
-      "endLine": 1486,
+      "startLine": 1460,
+      "endLine": 1490,
       "exported": false,
       "tags": [
         "function",
@@ -3749,8 +3875,8 @@
       "label": "buildStaticGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 661,
-      "endLine": 1200,
+      "startLine": 665,
+      "endLine": 1204,
       "exported": false,
       "tags": [
         "function",
@@ -3763,8 +3889,8 @@
       "label": "categoryForNode",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1232,
-      "endLine": 1240,
+      "startLine": 1236,
+      "endLine": 1244,
       "exported": false,
       "tags": [
         "function",
@@ -3777,8 +3903,8 @@
       "label": "classifyFile",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 182,
-      "endLine": 225,
+      "startLine": 186,
+      "endLine": 229,
       "exported": false,
       "tags": [
         "function",
@@ -3791,8 +3917,8 @@
       "label": "collectSourcePaths",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 155,
-      "endLine": 180,
+      "startLine": 159,
+      "endLine": 184,
       "exported": false,
       "tags": [
         "function",
@@ -3805,8 +3931,8 @@
       "label": "compareById",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 92,
-      "endLine": 94,
+      "startLine": 96,
+      "endLine": 98,
       "exported": false,
       "tags": [
         "function",
@@ -3820,7 +3946,7 @@
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
       "startLine": 88,
-      "endLine": 90,
+      "endLine": 94,
       "exported": false,
       "tags": [
         "function",
@@ -3833,8 +3959,8 @@
       "label": "dateNow",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 481,
-      "endLine": 483,
+      "startLine": 485,
+      "endLine": 487,
       "exported": false,
       "tags": [
         "function",
@@ -3847,8 +3973,8 @@
       "label": "ensureDirectory",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 96,
-      "endLine": 98,
+      "startLine": 100,
+      "endLine": 102,
       "exported": false,
       "tags": [
         "function",
@@ -3861,8 +3987,8 @@
       "label": "escapeMermaidLabel",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 331,
-      "endLine": 338,
+      "startLine": 335,
+      "endLine": 342,
       "exported": false,
       "tags": [
         "function",
@@ -3875,8 +4001,8 @@
       "label": "formatTypeScriptDiagnostic",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 151,
-      "endLine": 153,
+      "startLine": 155,
+      "endLine": 157,
       "exported": false,
       "tags": [
         "function",
@@ -3889,8 +4015,8 @@
       "label": "generatedCodePath",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 317,
-      "endLine": 321,
+      "startLine": 321,
+      "endLine": 325,
       "exported": false,
       "tags": [
         "function",
@@ -3903,8 +4029,8 @@
       "label": "graphConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1488,
-      "endLine": 1523,
+      "startLine": 1492,
+      "endLine": 1527,
       "exported": false,
       "tags": [
         "function",
@@ -3917,8 +4043,8 @@
       "label": "graphNodeLabel",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1228,
-      "endLine": 1230,
+      "startLine": 1232,
+      "endLine": 1234,
       "exported": false,
       "tags": [
         "function",
@@ -3931,8 +4057,22 @@
       "label": "graphPayload",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1202,
-      "endLine": 1226,
+      "startLine": 1206,
+      "endLine": 1230,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#hasPathPrefix",
+      "kind": "function",
+      "label": "hasPathPrefix",
+      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 108,
+      "endLine": 111,
       "exported": false,
       "tags": [
         "function",
@@ -3954,27 +4094,13 @@
       ]
     },
     {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#hasPathPrefix",
-      "kind": "function",
-      "label": "hasPathPrefix",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 104,
-      "endLine": 107,
-      "exported": false,
-      "tags": [
-        "function",
-        "tooling"
-      ]
-    },
-    {
       "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#isCodePath",
       "kind": "function",
       "label": "isCodePath",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 243,
-      "endLine": 245,
+      "startLine": 247,
+      "endLine": 249,
       "exported": false,
       "tags": [
         "function",
@@ -3987,8 +4113,8 @@
       "label": "isDateLike",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1885,
-      "endLine": 1887,
+      "startLine": 1889,
+      "endLine": 1891,
       "exported": false,
       "tags": [
         "function",
@@ -4001,26 +4127,12 @@
       "label": "isExported",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 247,
-      "endLine": 249,
+      "startLine": 251,
+      "endLine": 253,
       "exported": false,
       "tags": [
         "function",
         "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#KNOWLEDGE_PROCESS",
-      "kind": "variable",
-      "label": "KNOWLEDGE_PROCESS",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 11,
-      "endLine": 11,
-      "exported": false,
-      "tags": [
-        "tooling",
-        "variable"
       ]
     },
     {
@@ -4029,8 +4141,8 @@
       "label": "listMarkdown",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1254,
-      "endLine": 1259,
+      "startLine": 1258,
+      "endLine": 1263,
       "exported": false,
       "tags": [
         "function",
@@ -4043,8 +4155,8 @@
       "label": "loadCodeGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 2060,
-      "endLine": 2068,
+      "startLine": 2064,
+      "endLine": 2072,
       "exported": true,
       "tags": [
         "function",
@@ -4057,8 +4169,8 @@
       "label": "loadTypeScriptConfig",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 130,
-      "endLine": 149,
+      "startLine": 134,
+      "endLine": 153,
       "exported": false,
       "tags": [
         "function",
@@ -4071,8 +4183,8 @@
       "label": "markdownFilesInKnowledge",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1865,
-      "endLine": 1883,
+      "startLine": 1869,
+      "endLine": 1887,
       "exported": false,
       "tags": [
         "function",
@@ -4085,8 +4197,8 @@
       "label": "markdownLink",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 323,
-      "endLine": 329,
+      "startLine": 327,
+      "endLine": 333,
       "exported": false,
       "tags": [
         "function",
@@ -4099,8 +4211,8 @@
       "label": "mermaidId",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 340,
-      "endLine": 342,
+      "startLine": 344,
+      "endLine": 346,
       "exported": false,
       "tags": [
         "function",
@@ -4113,26 +4225,12 @@
       "label": "nodeName",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 251,
-      "endLine": 259,
+      "startLine": 255,
+      "endLine": 263,
       "exported": false,
       "tags": [
         "function",
         "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#OKF_VERSION",
-      "kind": "variable",
-      "label": "OKF_VERSION",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 10,
-      "endLine": 10,
-      "exported": false,
-      "tags": [
-        "tooling",
-        "variable"
       ]
     },
     {
@@ -4141,8 +4239,8 @@
       "label": "ownedGeneratedMarkdownFiles",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1738,
-      "endLine": 1749,
+      "startLine": 1742,
+      "endLine": 1753,
       "exported": false,
       "tags": [
         "function",
@@ -4155,8 +4253,8 @@
       "label": "packageNameFromSpecifier",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 298,
-      "endLine": 306,
+      "startLine": 302,
+      "endLine": 310,
       "exported": false,
       "tags": [
         "function",
@@ -4169,8 +4267,8 @@
       "label": "parseFrontmatter",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 439,
-      "endLine": 454,
+      "startLine": 443,
+      "endLine": 458,
       "exported": false,
       "tags": [
         "function",
@@ -4183,8 +4281,8 @@
       "label": "planKnowledgeBuild",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1751,
-      "endLine": 1851,
+      "startLine": 1755,
+      "endLine": 1855,
       "exported": true,
       "tags": [
         "function",
@@ -4197,8 +4295,8 @@
       "label": "preservedGenerationAt",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 485,
-      "endLine": 495,
+      "startLine": 489,
+      "endLine": 499,
       "exported": false,
       "tags": [
         "function",
@@ -4211,8 +4309,8 @@
       "label": "preservedGraphGenerationAt",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 497,
-      "endLine": 510,
+      "startLine": 501,
+      "endLine": 514,
       "exported": false,
       "tags": [
         "function",
@@ -4225,8 +4323,8 @@
       "label": "readExistingAttributes",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 456,
-      "endLine": 465,
+      "startLine": 460,
+      "endLine": 469,
       "exported": false,
       "tags": [
         "function",
@@ -4239,8 +4337,8 @@
       "label": "readUtf8",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 100,
-      "endLine": 102,
+      "startLine": 104,
+      "endLine": 106,
       "exported": false,
       "tags": [
         "function",
@@ -4253,8 +4351,8 @@
       "label": "relationshipTargetLink",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1242,
-      "endLine": 1252,
+      "startLine": 1246,
+      "endLine": 1256,
       "exported": false,
       "tags": [
         "function",
@@ -4267,8 +4365,8 @@
       "label": "renderConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 477,
-      "endLine": 479,
+      "startLine": 481,
+      "endLine": 483,
       "exported": false,
       "tags": [
         "function",
@@ -4281,8 +4379,8 @@
       "label": "resolveMarkdownTarget",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1889,
-      "endLine": 1907,
+      "startLine": 1893,
+      "endLine": 1911,
       "exported": false,
       "tags": [
         "function",
@@ -4295,8 +4393,8 @@
       "label": "sanitizePathSegment",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 308,
-      "endLine": 315,
+      "startLine": 312,
+      "endLine": 319,
       "exported": false,
       "tags": [
         "function",
@@ -4309,8 +4407,8 @@
       "label": "scriptKindForPath",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 232,
-      "endLine": 241,
+      "startLine": 236,
+      "endLine": 245,
       "exported": false,
       "tags": [
         "function",
@@ -4323,8 +4421,8 @@
       "label": "serializeFrontmatter",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 467,
-      "endLine": 475,
+      "startLine": 471,
+      "endLine": 479,
       "exported": false,
       "tags": [
         "function",
@@ -4337,109 +4435,11 @@
       "label": "sourceTitle",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 227,
-      "endLine": 230,
+      "startLine": 231,
+      "endLine": 234,
       "exported": false,
       "tags": [
         "function",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph",
-      "kind": "class",
-      "label": "StaticGraph",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 344,
-      "endLine": 427,
-      "exported": false,
-      "tags": [
-        "class",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.addEdge",
-      "kind": "method",
-      "label": "StaticGraph.addEdge",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 364,
-      "endLine": 402,
-      "exported": false,
-      "tags": [
-        "method",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.addNode",
-      "kind": "method",
-      "label": "StaticGraph.addNode",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 350,
-      "endLine": 362,
-      "exported": false,
-      "tags": [
-        "method",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.constructor",
-      "kind": "method",
-      "label": "StaticGraph.constructor",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 345,
-      "endLine": 348,
-      "exported": false,
-      "tags": [
-        "method",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.getEdges",
-      "kind": "method",
-      "label": "StaticGraph.getEdges",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 412,
-      "endLine": 426,
-      "exported": false,
-      "tags": [
-        "method",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.getNode",
-      "kind": "method",
-      "label": "StaticGraph.getNode",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 404,
-      "endLine": 406,
-      "exported": false,
-      "tags": [
-        "method",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#StaticGraph.getNodes",
-      "kind": "method",
-      "label": "StaticGraph.getNodes",
-      "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 408,
-      "endLine": 410,
-      "exported": false,
-      "tags": [
-        "method",
         "tooling"
       ]
     },
@@ -4449,8 +4449,8 @@
       "label": "staticScaffold",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1584,
-      "endLine": 1736,
+      "startLine": 1588,
+      "endLine": 1740,
       "exported": false,
       "tags": [
         "function",
@@ -4463,8 +4463,8 @@
       "label": "textFromRouteInitializer",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 261,
-      "endLine": 284,
+      "startLine": 265,
+      "endLine": 288,
       "exported": false,
       "tags": [
         "function",
@@ -4491,8 +4491,8 @@
       "label": "unwrapExpression",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 286,
-      "endLine": 296,
+      "startLine": 290,
+      "endLine": 300,
       "exported": false,
       "tags": [
         "function",
@@ -4505,8 +4505,8 @@
       "label": "validateKnowledgeBundle",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1909,
-      "endLine": 2058,
+      "startLine": 1913,
+      "endLine": 2062,
       "exported": true,
       "tags": [
         "function",
@@ -4519,8 +4519,8 @@
       "label": "walkFiles",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 109,
-      "endLine": 128,
+      "startLine": 113,
+      "endLine": 132,
       "exported": false,
       "tags": [
         "function",
@@ -4668,20 +4668,6 @@
       ]
     },
     {
-      "id": "symbol:ui/pages/FolderFilesPage.ts#escapeRegExp",
-      "kind": "function",
-      "label": "escapeRegExp",
-      "path": "ui/pages/FolderFilesPage.ts",
-      "category": "ui-page",
-      "startLine": 5,
-      "endLine": 7,
-      "exported": false,
-      "tags": [
-        "function",
-        "ui-page"
-      ]
-    },
-    {
       "id": "symbol:ui/pages/FolderFilesPage.ts#FolderFilesPage",
       "kind": "class",
       "label": "FolderFilesPage",
@@ -4696,20 +4682,6 @@
       ]
     },
     {
-      "id": "symbol:ui/pages/FolderFilesPage.ts#FolderFilesPage.uploadedFileName",
-      "kind": "method",
-      "label": "FolderFilesPage.uploadedFileName",
-      "path": "ui/pages/FolderFilesPage.ts",
-      "category": "ui-page",
-      "startLine": 30,
-      "endLine": 34,
-      "exported": false,
-      "tags": [
-        "method",
-        "ui-page"
-      ]
-    },
-    {
       "id": "symbol:ui/pages/FolderFilesPage.ts#FolderFilesPage.uploadFile",
       "kind": "method",
       "label": "FolderFilesPage.uploadFile",
@@ -4717,6 +4689,20 @@
       "category": "ui-page",
       "startLine": 36,
       "endLine": 41,
+      "exported": false,
+      "tags": [
+        "method",
+        "ui-page"
+      ]
+    },
+    {
+      "id": "symbol:ui/pages/FolderFilesPage.ts#FolderFilesPage.uploadedFileName",
+      "kind": "method",
+      "label": "FolderFilesPage.uploadedFileName",
+      "path": "ui/pages/FolderFilesPage.ts",
+      "category": "ui-page",
+      "startLine": 30,
+      "endLine": 34,
       "exported": false,
       "tags": [
         "method",
@@ -4738,13 +4724,13 @@
       ]
     },
     {
-      "id": "symbol:ui/pages/FoldersPage.ts#escapeRegExp",
+      "id": "symbol:ui/pages/FolderFilesPage.ts#escapeRegExp",
       "kind": "function",
       "label": "escapeRegExp",
-      "path": "ui/pages/FoldersPage.ts",
+      "path": "ui/pages/FolderFilesPage.ts",
       "category": "ui-page",
-      "startLine": 6,
-      "endLine": 8,
+      "startLine": 5,
+      "endLine": 7,
       "exported": false,
       "tags": [
         "function",
@@ -4846,6 +4832,20 @@
       "exported": false,
       "tags": [
         "method",
+        "ui-page"
+      ]
+    },
+    {
+      "id": "symbol:ui/pages/FoldersPage.ts#escapeRegExp",
+      "kind": "function",
+      "label": "escapeRegExp",
+      "path": "ui/pages/FoldersPage.ts",
+      "category": "ui-page",
+      "startLine": 6,
+      "endLine": 8,
+      "exported": false,
+      "tags": [
+        "function",
         "ui-page"
       ]
     },
@@ -4990,20 +4990,6 @@
       ]
     },
     {
-      "id": "symbol:ui/setup/auth.setup.ts#createRoleStorageState",
-      "kind": "function",
-      "label": "createRoleStorageState",
-      "path": "ui/setup/auth.setup.ts",
-      "category": "setup",
-      "startLine": 36,
-      "endLine": 82,
-      "exported": false,
-      "tags": [
-        "function",
-        "setup"
-      ]
-    },
-    {
       "id": "symbol:ui/setup/auth.setup.ts#RoleName",
       "kind": "type",
       "label": "RoleName",
@@ -5032,6 +5018,20 @@
       ]
     },
     {
+      "id": "symbol:ui/setup/auth.setup.ts#createRoleStorageState",
+      "kind": "function",
+      "label": "createRoleStorageState",
+      "path": "ui/setup/auth.setup.ts",
+      "category": "setup",
+      "startLine": 36,
+      "endLine": 82,
+      "exported": false,
+      "tags": [
+        "function",
+        "setup"
+      ]
+    },
+    {
       "id": "symbol:ui/specs/files.spec.ts#CreatedFolderResponse",
       "kind": "type",
       "label": "CreatedFolderResponse",
@@ -5039,6 +5039,20 @@
       "category": "ui-spec",
       "startLine": 9,
       "endLine": 11,
+      "exported": false,
+      "tags": [
+        "type",
+        "ui-spec"
+      ]
+    },
+    {
+      "id": "symbol:ui/specs/files.spec.ts#UploadScenario",
+      "kind": "type",
+      "label": "UploadScenario",
+      "path": "ui/specs/files.spec.ts",
+      "category": "ui-spec",
+      "startLine": 13,
+      "endLine": 19,
       "exported": false,
       "tags": [
         "type",
@@ -5056,20 +5070,6 @@
       "exported": false,
       "tags": [
         "function",
-        "ui-spec"
-      ]
-    },
-    {
-      "id": "symbol:ui/specs/files.spec.ts#UploadScenario",
-      "kind": "type",
-      "label": "UploadScenario",
-      "path": "ui/specs/files.spec.ts",
-      "category": "ui-spec",
-      "startLine": 13,
-      "endLine": 19,
-      "exported": false,
-      "tags": [
-        "type",
         "ui-spec"
       ]
     },
@@ -5214,17 +5214,31 @@
       ]
     },
     {
-      "id": "symbol:utils/common/Logger.ts#logger",
-      "kind": "variable",
-      "label": "logger",
+      "id": "symbol:utils/common/Logger.ts#LogLevel",
+      "kind": "type",
+      "label": "LogLevel",
       "path": "utils/common/Logger.ts",
       "category": "utility",
-      "startLine": 60,
-      "endLine": 60,
+      "startLine": 1,
+      "endLine": 1,
+      "exported": true,
+      "tags": [
+        "type",
+        "utility"
+      ]
+    },
+    {
+      "id": "symbol:utils/common/Logger.ts#LogMetadata",
+      "kind": "type",
+      "label": "LogMetadata",
+      "path": "utils/common/Logger.ts",
+      "category": "utility",
+      "startLine": 3,
+      "endLine": 3,
       "exported": false,
       "tags": [
-        "utility",
-        "variable"
+        "type",
+        "utility"
       ]
     },
     {
@@ -5340,31 +5354,17 @@
       ]
     },
     {
-      "id": "symbol:utils/common/Logger.ts#LogLevel",
-      "kind": "type",
-      "label": "LogLevel",
+      "id": "symbol:utils/common/Logger.ts#logger",
+      "kind": "variable",
+      "label": "logger",
       "path": "utils/common/Logger.ts",
       "category": "utility",
-      "startLine": 1,
-      "endLine": 1,
-      "exported": true,
-      "tags": [
-        "type",
-        "utility"
-      ]
-    },
-    {
-      "id": "symbol:utils/common/Logger.ts#LogMetadata",
-      "kind": "type",
-      "label": "LogMetadata",
-      "path": "utils/common/Logger.ts",
-      "category": "utility",
-      "startLine": 3,
-      "endLine": 3,
+      "startLine": 60,
+      "endLine": 60,
       "exported": false,
       "tags": [
-        "type",
-        "utility"
+        "utility",
+        "variable"
       ]
     },
     {
@@ -5424,34 +5424,6 @@
       ]
     },
     {
-      "id": "symbol:utils/fixtures/TestFixtures.ts#createApiRoleContext",
-      "kind": "function",
-      "label": "createApiRoleContext",
-      "path": "utils/fixtures/TestFixtures.ts",
-      "category": "fixture",
-      "startLine": 67,
-      "endLine": 98,
-      "exported": false,
-      "tags": [
-        "fixture",
-        "function"
-      ]
-    },
-    {
-      "id": "symbol:utils/fixtures/TestFixtures.ts#createBrowserRoleContext",
-      "kind": "function",
-      "label": "createBrowserRoleContext",
-      "path": "utils/fixtures/TestFixtures.ts",
-      "category": "fixture",
-      "startLine": 58,
-      "endLine": 65,
-      "exported": false,
-      "tags": [
-        "fixture",
-        "function"
-      ]
-    },
-    {
       "id": "symbol:utils/fixtures/TestFixtures.ts#RoleName",
       "kind": "type",
       "label": "RoleName",
@@ -5463,20 +5435,6 @@
       "tags": [
         "fixture",
         "type"
-      ]
-    },
-    {
-      "id": "symbol:utils/fixtures/TestFixtures.ts#test",
-      "kind": "variable",
-      "label": "test",
-      "path": "utils/fixtures/TestFixtures.ts",
-      "category": "fixture",
-      "startLine": 100,
-      "endLine": 196,
-      "exported": false,
-      "tags": [
-        "fixture",
-        "variable"
       ]
     },
     {
@@ -5505,6 +5463,48 @@
       "tags": [
         "fixture",
         "type"
+      ]
+    },
+    {
+      "id": "symbol:utils/fixtures/TestFixtures.ts#createApiRoleContext",
+      "kind": "function",
+      "label": "createApiRoleContext",
+      "path": "utils/fixtures/TestFixtures.ts",
+      "category": "fixture",
+      "startLine": 67,
+      "endLine": 98,
+      "exported": false,
+      "tags": [
+        "fixture",
+        "function"
+      ]
+    },
+    {
+      "id": "symbol:utils/fixtures/TestFixtures.ts#createBrowserRoleContext",
+      "kind": "function",
+      "label": "createBrowserRoleContext",
+      "path": "utils/fixtures/TestFixtures.ts",
+      "category": "fixture",
+      "startLine": 58,
+      "endLine": 65,
+      "exported": false,
+      "tags": [
+        "fixture",
+        "function"
+      ]
+    },
+    {
+      "id": "symbol:utils/fixtures/TestFixtures.ts#test",
+      "kind": "variable",
+      "label": "test",
+      "path": "utils/fixtures/TestFixtures.ts",
+      "category": "fixture",
+      "startLine": 100,
+      "endLine": 196,
+      "exported": false,
+      "tags": [
+        "fixture",
+        "variable"
       ]
     }
   ],
@@ -5548,7 +5548,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 481
+          "line": 485
         }
       ]
     },
@@ -5894,7 +5894,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1228
+          "line": 1232
         }
       ]
     },
@@ -6109,7 +6109,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 261
+          "line": 265
         }
       ]
     },
@@ -6202,7 +6202,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1377
+          "line": 1381
         }
       ]
     },
@@ -6320,7 +6320,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 109
+          "line": 113
         }
       ]
     },
@@ -6360,7 +6360,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 364
+          "line": 368
         }
       ]
     },
@@ -6518,7 +6518,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 317
+          "line": 321
         }
       ]
     },
@@ -6531,7 +6531,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1865
+          "line": 1869
         }
       ]
     },
@@ -6651,7 +6651,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 227
+          "line": 231
         }
       ]
     },
@@ -6852,7 +6852,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1751
+          "line": 1755
         }
       ]
     },
@@ -6965,7 +6965,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1488
+          "line": 1492
         }
       ]
     },
@@ -7072,7 +7072,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 130
+          "line": 134
         }
       ]
     },
@@ -7085,7 +7085,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 100
+          "line": 104
         }
       ]
     },
@@ -7098,7 +7098,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 243
+          "line": 247
         }
       ]
     },
@@ -7137,7 +7137,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 2060
+          "line": 2064
         }
       ]
     },
@@ -7177,7 +7177,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 232
+          "line": 236
         }
       ]
     },
@@ -7190,7 +7190,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 429
+          "line": 433
         }
       ]
     },
@@ -7428,7 +7428,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 345
+          "line": 349
         }
       ]
     },
@@ -7501,7 +7501,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 412
+          "line": 416
         }
       ]
     },
@@ -7555,7 +7555,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1525
+          "line": 1529
         }
       ]
     },
@@ -7595,7 +7595,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 568
+          "line": 572
         }
       ]
     },
@@ -7635,7 +7635,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1584
+          "line": 1588
         }
       ]
     },
@@ -7675,7 +7675,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 247
+          "line": 251
         }
       ]
     },
@@ -7912,7 +7912,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 661
+          "line": 665
         }
       ]
     },
@@ -7938,7 +7938,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 497
+          "line": 501
         }
       ]
     },
@@ -8111,7 +8111,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 2060
+          "line": 2064
         }
       ]
     },
@@ -8274,7 +8274,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1738
+          "line": 1742
         }
       ]
     },
@@ -8432,7 +8432,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 485
+          "line": 489
         }
       ]
     },
@@ -8643,7 +8643,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1242
+          "line": 1246
         }
       ]
     },
@@ -9196,7 +9196,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1751
+          "line": 1755
         }
       ]
     },
@@ -9380,7 +9380,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 298
+          "line": 302
         }
       ]
     },
@@ -9419,7 +9419,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 512
+          "line": 516
         }
       ]
     },
@@ -9432,7 +9432,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 344
+          "line": 348
         }
       ]
     },
@@ -9593,7 +9593,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1261
+          "line": 1265
         }
       ]
     },
@@ -9606,7 +9606,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 350
+          "line": 354
         }
       ]
     },
@@ -9746,7 +9746,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1254
+          "line": 1258
         }
       ]
     },
@@ -10089,7 +10089,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1909
+          "line": 1913
         }
       ]
     },
@@ -10155,7 +10155,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1909
+          "line": 1913
         }
       ]
     },
@@ -10168,7 +10168,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 151
+          "line": 155
         }
       ]
     },
@@ -10768,7 +10768,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 477
+          "line": 481
         }
       ]
     },
@@ -10860,7 +10860,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 323
+          "line": 327
         }
       ]
     },
@@ -11629,7 +11629,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1456
+          "line": 1460
         }
       ]
     },
@@ -11984,7 +11984,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1430
+          "line": 1434
         }
       ]
     },
@@ -12312,7 +12312,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 404
+          "line": 408
         }
       ]
     },
@@ -12378,7 +12378,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 251
+          "line": 255
         }
       ]
     },
@@ -12510,7 +12510,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 467
+          "line": 471
         }
       ]
     },
@@ -12633,7 +12633,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1202
+          "line": 1206
         }
       ]
     },
@@ -12850,7 +12850,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 439
+          "line": 443
         }
       ]
     },
@@ -12971,7 +12971,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 286
+          "line": 290
         }
       ]
     },
@@ -12984,7 +12984,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1889
+          "line": 1893
         }
       ]
     },
@@ -13023,7 +13023,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 340
+          "line": 344
         }
       ]
     },
@@ -13075,7 +13075,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1853
+          "line": 1857
         }
       ]
     },
@@ -13127,7 +13127,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 331
+          "line": 335
         }
       ]
     },
@@ -13206,7 +13206,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 92
+          "line": 96
         }
       ]
     },
@@ -13219,7 +13219,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 308
+          "line": 312
         }
       ]
     },
@@ -13297,7 +13297,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1232
+          "line": 1236
         }
       ]
     },
@@ -13431,7 +13431,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 155
+          "line": 159
         }
       ]
     },
@@ -13542,7 +13542,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 96
+          "line": 100
         }
       ]
     },
@@ -13944,7 +13944,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1853
+          "line": 1857
         }
       ]
     },
@@ -14435,7 +14435,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 182
+          "line": 186
         }
       ]
     },
@@ -14448,7 +14448,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 104
+          "line": 108
         }
       ]
     },
@@ -14527,7 +14527,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 408
+          "line": 412
         }
       ]
     },
@@ -14540,7 +14540,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1885
+          "line": 1889
         }
       ]
     },
@@ -14579,7 +14579,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 456
+          "line": 460
         }
       ]
     },

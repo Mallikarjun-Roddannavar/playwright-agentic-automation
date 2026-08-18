@@ -18,13 +18,13 @@ source_path: app/frontend/src/api.ts
 source_sha256: 77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d
 code_graph_id: file:app/frontend/src/api.ts
 analysis_scope: static-ast
-fact_sha256: b1ef8893bb2215f08051671adc4d02a1848b90c40c4f6c779df200831b3c2883
+fact_sha256: b8c3e066f8f479b0624e5be95b3a6ea6eba1ed70a08238ef59726d419957c97b
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -33,14 +33,14 @@ Application frontend extracted from app/frontend/src/api.ts by deterministic sta
 
 # Symbols
 
-- `variable` **api** (lines 108-178)
 - `variable` **AUTH_SESSION_EXPIRED_EVENT** (lines 25-25)
-- `function` **decodeJwtPayload** (lines 49-58)
 - `type` **JwtClaims** (lines 17-23)
-- `function` **parseErrorDetail** (lines 28-47)
-- `function` **request** (lines 77-106)
 - `type` **Stats** (lines 7-10)
 - `type` **TokenResponse** (lines 12-15)
+- `variable` **api** (lines 108-178)
+- `function` **decodeJwtPayload** (lines 49-58)
+- `function` **parseErrorDetail** (lines 28-47)
+- `function` **request** (lines 77-106)
 - `function` **userFromAccessToken** exported (lines 60-75)
 
 # Imports

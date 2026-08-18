@@ -18,13 +18,13 @@ source_path: ui/specs/files.spec.ts
 source_sha256: 01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786
 code_graph_id: file:ui/specs/files.spec.ts
 analysis_scope: static-ast
-fact_sha256: 7b9abaf7688bb8a60671358eb6d67b320efcf36ab4bfd426400b473d56a8ec54
+fact_sha256: 2d5c221b5cf62ce6f75e74d718d11571256d25fb1d982695f5c78beda18d370d
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -34,8 +34,8 @@ UI specification extracted from ui/specs/files.spec.ts by deterministic static a
 # Symbols
 
 - `type` **CreatedFolderResponse** (lines 9-11)
-- `function` **expectRoleCanUploadFile** (lines 24-55)
 - `type` **UploadScenario** (lines 13-19)
+- `function` **expectRoleCanUploadFile** (lines 24-55)
 
 # Imports
 

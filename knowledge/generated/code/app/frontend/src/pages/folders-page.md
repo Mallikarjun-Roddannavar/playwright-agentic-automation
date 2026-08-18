@@ -18,13 +18,13 @@ source_path: app/frontend/src/pages/FoldersPage.tsx
 source_sha256: 820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf
 code_graph_id: file:app/frontend/src/pages/FoldersPage.tsx
 analysis_scope: static-ast
-fact_sha256: 9cc6539d7e271e8565eedc9630c7ff9956aa7be9c6e09f4594428854e85c668c
+fact_sha256: ec724e44cb61d2498000e64e5f8c06317052dd8e99ac3cbc62affcba7ee7d703
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -33,11 +33,11 @@ Application frontend extracted from app/frontend/src/pages/FoldersPage.tsx by de
 
 # Symbols
 
+- `function` **FoldersPage** exported (lines 12-597)
 - `function` **createFolder** (lines 59-77)
 - `function` **deleteFolder** (lines 98-114)
 - `function` **deleteSelectedFolders** (lines 116-133)
 - `function` **ensureCardActionsVisible** (lines 135-159)
-- `function` **FoldersPage** exported (lines 12-597)
 - `function` **handleFolderCardPointerEnter** (lines 189-193)
 - `function` **handleFolderCardPointerLeave** (lines 208-213)
 - `function` **handleFolderCardPointerMove** (lines 195-206)

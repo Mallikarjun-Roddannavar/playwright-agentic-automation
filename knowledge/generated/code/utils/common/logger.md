@@ -18,13 +18,13 @@ source_path: utils/common/Logger.ts
 source_sha256: 2260e3c15b200659cfdc1015496a7ca8e05f30d5cfa4b901ac47c92ca7855f12
 code_graph_id: file:utils/common/Logger.ts
 analysis_scope: static-ast
-fact_sha256: e4e8d85c03be3070cc25ed848ae77a15753d0adc1adef0b66b07b82328439731
+fact_sha256: 59b6c1f614aa78cd0ddfce8aa6a626754449668e700ab3fa881a2be7495a8d9a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -33,7 +33,8 @@ Shared utility extracted from utils/common/Logger.ts by deterministic static ana
 
 # Symbols
 
-- `variable` **logger** (lines 60-60)
+- `type` **LogLevel** exported (lines 1-1)
+- `type` **LogMetadata** (lines 3-3)
 - `class` **Logger** exported (lines 12-58)
 - `method` **Logger.constructor** (lines 13-16)
 - `method` **Logger.debug** (lines 22-24)
@@ -42,8 +43,7 @@ Shared utility extracted from utils/common/Logger.ts by deterministic static ana
 - `method` **Logger.warn** (lines 30-32)
 - `method` **Logger.withScope** (lines 18-20)
 - `method` **Logger.write** (lines 38-57)
-- `type` **LogLevel** exported (lines 1-1)
-- `type` **LogMetadata** (lines 3-3)
+- `variable` **logger** (lines 60-60)
 
 # Imports
 

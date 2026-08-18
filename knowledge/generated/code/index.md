@@ -55,10 +55,10 @@ Read the smallest relevant concept after querying the saved graph.
   - `app/frontend/package.json` — Application frontend.
 - [postcss.config](app/frontend/postcss-config.md)
   - `app/frontend/postcss.config.js` — Application frontend.
-- [api](app/frontend/src/api.md)
-  - `app/frontend/src/api.ts` — Application frontend.
 - [App](app/frontend/src/app.md)
   - `app/frontend/src/App.tsx` — Application frontend.
+- [api](app/frontend/src/api.md)
+  - `app/frontend/src/api.ts` — Application frontend.
 - [AppLayout](app/frontend/src/components/app-layout.md)
   - `app/frontend/src/components/AppLayout.tsx` — Application frontend.
 - [ConfirmDialog](app/frontend/src/components/confirm-dialog.md)

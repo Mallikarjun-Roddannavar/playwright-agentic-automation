@@ -18,13 +18,13 @@ source_path: app/frontend/src/pages/PreferencesPage.tsx
 source_sha256: 5a1b702f2068f9f6804fac4f003396c3005a51bbf23ef18d2376f40f94c002a7
 code_graph_id: file:app/frontend/src/pages/PreferencesPage.tsx
 analysis_scope: static-ast
-fact_sha256: cdaf03a02414a7ad6e486c5b0c6152bae79f27eb715db094da71e0da60f74692
+fact_sha256: 13e3e089c4f8ffd1b8d7ffcc49d7e18849ab990a53129e7159bd51ff232f918c
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -33,8 +33,8 @@ Application frontend extracted from app/frontend/src/pages/PreferencesPage.tsx b
 
 # Symbols
 
-- `function` **onProfileIconChange** (lines 20-32)
 - `function` **PreferencesPage** exported (lines 8-111)
+- `function` **onProfileIconChange** (lines 20-32)
 - `function` **removeProfileIcon** (lines 34-38)
 
 # Imports

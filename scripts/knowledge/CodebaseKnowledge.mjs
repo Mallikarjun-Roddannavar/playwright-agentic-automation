@@ -86,7 +86,11 @@ function absoluteKey(value) {
 }
 
 function compareText(left, right) {
-  return left.localeCompare(right, "en");
+  // Use code-unit ordering so generated artifacts are identical on every CI OS.
+  if (left < right) {
+    return -1;
+  }
+  return left > right ? 1 : 0;
 }
 
 function compareById(left, right) {

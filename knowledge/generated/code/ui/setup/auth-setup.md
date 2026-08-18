@@ -18,13 +18,13 @@ source_path: ui/setup/auth.setup.ts
 source_sha256: 6a745c96200b1b8c0f7b0b414c384c9e8275e17876121fde7244f7d67276a97f
 code_graph_id: file:ui/setup/auth.setup.ts
 analysis_scope: static-ast
-fact_sha256: fc05895dabfafa43f450fd6c562a31a9df759229eae4f9da2eff8db7311d5750
+fact_sha256: 5142516a9a72f278ef45ef884938a21534902ecc318cc6dc8a0ca309f8edb10b
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -33,9 +33,9 @@ Test setup extracted from ui/setup/auth.setup.ts by deterministic static analysi
 
 # Symbols
 
-- `function` **createRoleStorageState** (lines 36-82)
 - `type` **RoleName** (lines 10-10)
 - `type` **TokenResponse** (lines 14-16)
+- `function` **createRoleStorageState** (lines 36-82)
 
 # Imports
 

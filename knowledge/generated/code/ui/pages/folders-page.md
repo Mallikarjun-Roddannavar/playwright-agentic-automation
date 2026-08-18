@@ -18,13 +18,13 @@ source_path: ui/pages/FoldersPage.ts
 source_sha256: 5ea19087364eb28a006cd231c2296399ac23d6ad5ff517b4d48e130dd847ffe5
 code_graph_id: file:ui/pages/FoldersPage.ts
 analysis_scope: static-ast
-fact_sha256: d373552004cb36ca72e13b226ac457ef31f09cc6cfb14f3586d3284c8308e27b
+fact_sha256: b911a1c6da8f591cce4e45d59824a696ad2c78f2c2e9baf6faefd141148d864e
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -33,7 +33,6 @@ UI page object extracted from ui/pages/FoldersPage.ts by deterministic static an
 
 # Symbols
 
-- `function` **escapeRegExp** (lines 6-8)
 - `class` **FoldersPage** exported (lines 10-55)
 - `method` **FoldersPage.createFolder** (lines 41-45)
 - `method` **FoldersPage.folderName** (lines 27-31)
@@ -41,6 +40,7 @@ UI page object extracted from ui/pages/FoldersPage.ts by deterministic static an
 - `method` **FoldersPage.folderSelectCheckbox** (lines 33-35)
 - `method` **FoldersPage.openFolder** (lines 47-54)
 - `method` **FoldersPage.waitForPageLoad** (lines 18-25)
+- `function` **escapeRegExp** (lines 6-8)
 
 # Imports
 

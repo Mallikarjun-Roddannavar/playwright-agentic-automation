@@ -18,13 +18,13 @@ source_path: app/frontend/src/context/ThemeContext.tsx
 source_sha256: 54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c
 code_graph_id: file:app/frontend/src/context/ThemeContext.tsx
 analysis_scope: static-ast
-fact_sha256: 97a7198e26d33dbc21de3c7c3752267a23eeb9c7e0ed1ace34f5dd11cc874a5f
+fact_sha256: 7111bdbb8463a63a26f49b7f42fc8b2a78d3050aab5587653038ae382db42fb5
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-08-18T10:07:43.531Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-08-18T10:07:43.531Z"
 ---
 
 # Purpose
@@ -33,10 +33,10 @@ Application frontend extracted from app/frontend/src/context/ThemeContext.tsx by
 
 # Symbols
 
-- `function` **getInitialTheme** (lines 16-22)
 - `type` **ThemeContextValue** (lines 6-10)
 - `type` **ThemeMode** exported (lines 4-4)
 - `function` **ThemeProvider** exported (lines 24-43)
+- `function` **getInitialTheme** (lines 16-22)
 - `function` **useTheme** exported (lines 45-51)
 
 # Imports
