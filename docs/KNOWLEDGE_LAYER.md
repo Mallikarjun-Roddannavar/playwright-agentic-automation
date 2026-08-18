@@ -1,0 +1,56 @@
+# Knowledge Layer
+
+The `knowledge/` directory is an offline-first, Git-versioned knowledge bundle for this Playwright repository. It helps a coding agent navigate the framework without rediscovering every relationship from source on each task.
+
+## What it contains
+
+```text
+knowledge/
+├── product/                  Product expectations grounded in application evidence
+├── testing/                  Playwright scenarios and verification evidence
+├── architecture/             Human-maintained architecture notes
+├── decisions/                Durable design decisions
+├── runbooks/                 Retrieval and refresh guidance
+└── generated/                Deterministic static code facts and graphs
+```
+
+The current end-to-end example is Login:
+
+```text
+Product feature: Login
+        ↓
+Expected behavior: valid login reaches the workspace home
+        ↓
+Testing scenario: admin login succeeds
+        ↓
+ui/specs/login.spec.ts
+        ↓
+LoginPage → HomePage → visible home title assertion
+```
+
+## How it is built
+
+The knowledge builder analyzes repository source and produces source-hash-backed Markdown concepts, a machine-readable static graph, and Mermaid diagrams. The graph describes static imports, declarations, Page Object construction, routes, fixtures, and related relationships. It is not a runtime call graph or test-coverage report.
+
+Human-authored product and testing notes remain outside `generated/`. They include source references and explicit trust/freshness fields. Generated facts can be refreshed deterministically; verified product/testing claims are checked against independent repository evidence.
+
+## Commands
+
+```bash
+npm run knowledge:build
+npm run knowledge:check
+npm run knowledge:query -- LoginPage
+npm run knowledge:query -- --knowledge Login
+npm run knowledge:validate
+npm run knowledge:verify
+```
+
+If npm hits the known Windows `EPERM` realpath issue in an AI shell, use the direct Node commands documented in `knowledge/runbooks/refresh-codebase-knowledge.md`.
+
+## Trust model
+
+- `GROUNDED`: a claim has identifiable repository evidence, but may not have independent test verification.
+- `VERIFIED`: the relevant source, Page Objects, test, and assertion evidence agree at validation time.
+- `STALE or CONFLICTED`: the evidence needed by a stored claim no longer matches the repository. The verifier reports this state and does not rewrite the knowledge automatically.
+
+Open this directory in Obsidian if a human graph view is useful. Git and Markdown remain the durable source of truth.

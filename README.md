@@ -1,6 +1,51 @@
-# Playwright Agentic Automation (Playwright + TypeScript)
+# Playwright Agentic Automation
 
-Playwright + TypeScript framework for agentic test automation across UI and API layers, with Page Object Model, shared fixtures, reusable services, codebase knowledge, and local agent skills.
+> An agent-ready Playwright + TypeScript framework for building, understanding, debugging, and maintaining UI/API tests with AI coding agents.
+
+[![Quality and Playwright tests](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml)
+[![Playwright](https://img.shields.io/badge/Playwright-UI%20%2B%20API-45ba4b)](https://playwright.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6)](https://www.typescriptlang.org/)
+
+Playwright Agentic Automation is a hands-on reference project that combines a runnable practice application, a maintainable Playwright framework, repository-local agent skills, and an evidence-backed codebase knowledge layer.
+
+## Why this project?
+
+Most Playwright repositories show how tests run. This project also shows how an AI coding agent can navigate and maintain those tests using explicit repository guidance:
+
+- `AGENTS.md` defines ownership and framework rules.
+- `.agents/skills/` provides reusable workflows for UI, API, tooling, and incident work.
+- `knowledge/` stores deterministic code relationships plus grounded product/testing knowledge.
+- Playwright tests, Page Objects, API services, fixtures, and validation commands provide the executable evidence.
+
+The repository does not contain an autonomous AI service. An external coding agent such as Codex can use these instructions, skills, and knowledge artifacts while working in the repository.
+
+## Try it in three minutes
+
+```bash
+git clone https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation.git
+cd playwright-agentic-automation
+npm install
+npm run install:browsers
+npm run test:list
+npm test
+```
+
+The test command starts the local FastAPI backend and Vite frontend, runs the UI/API suite, and stops the services afterward. See the setup section below for the Python and frontend prerequisites.
+
+## Agent workflow
+
+```mermaid
+flowchart TD
+    A[Human request] --> B[AI coding agent]
+    B --> C[AGENTS.md and local skill]
+    C --> D[Knowledge query and source inspection]
+    D --> E[Existing Page Objects, services, fixtures]
+    E --> F[Playwright change or investigation]
+    F --> G[Test and quality validation]
+    G --> H[Evidence-backed result]
+```
+
+This describes a supported repository workflow. The external coding agent still performs the reasoning, editing, and command execution.
 
 ## What This Repo Contains
 
@@ -13,6 +58,16 @@ It provides:
 - shared multi-role fixtures for browser and API sessions
 - linting, formatting, typechecking, reporting, and naming checks
 - local `AGENTS.md` and `.agents/skills/` guidance for framework-aligned changes
+
+## At a glance
+
+| Area                | What is included                                                                                 |
+| ------------------- | ------------------------------------------------------------------------------------------------ |
+| UI testing          | TypeScript Page Objects and role-aware Playwright specs                                          |
+| API testing         | Assertion-free API services and API specs                                                        |
+| Test infrastructure | Shared browser/API fixtures, auth setup, cleanup, logging, and reporting                         |
+| Agent guidance      | `AGENTS.md` plus repository-local skills                                                         |
+| Codebase knowledge  | OKF Markdown, static graph, Mermaid views, freshness checks, and Login product/testing knowledge |
 
 ## Repository Layout
 
@@ -231,6 +286,18 @@ For detailed framework rules, naming conventions, ownership boundaries, config g
 
 - `AGENTS.md`
 - `.agents/skills/`
+
+For focused walkthroughs, see:
+
+- [Knowledge layer](docs/KNOWLEDGE_LAYER.md)
+- [Agentic Playwright workflow](docs/AGENTIC_WORKFLOW.md)
+- [Examples](examples/README.md)
+- [Agent skills index](.agents/skills/README.md)
+- [Roadmap](ROADMAP.md)
+- [Contributing](CONTRIBUTING.md)
+- [Getting started](docs/GETTING_STARTED.md)
+- [Final improvement audit](docs/FINAL_AUDIT.md)
+- [Repository audit](docs/REPOSITORY_AUDIT.md)
 
 ## Using Hermes Agent
 
