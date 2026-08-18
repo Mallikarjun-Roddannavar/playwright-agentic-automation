@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "bcd0ca4b392a057ae1551bead151ed1f8e97150f7193bd939198af1676435229",
+  "sourceDigest": "85c24826f9f5718faaeb13ae75988c909b409d0112595edf47c70ff4f56ae817",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-17T11:18:56.838Z",
+    "at": "2026-08-18T09:26:46.462Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -198,7 +198,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "7319817343519f8e23ef5d43f3c2b6e25ab2316dca7fca6180b905626d2486bb",
+      "sha256": "96f16d172b40d63b8332d00c748d1210553630bbefcc18d1c54d8241e8bcffd6",
       "category": "configuration"
     },
     {
@@ -238,7 +238,7 @@
     },
     {
       "path": "scripts/verifyLoginKnowledge.mjs",
-      "sha256": "d1274290e0d7aca0c33f9eea0ba6c3fec1282ec6ded2f89aa9cc0a866f7786a1",
+      "sha256": "8a8ca3d350804b020467fe7b405aa6348aa78977a88d766dda4ba29444c43df5",
       "category": "tooling"
     },
     {
@@ -777,7 +777,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "7319817343519f8e23ef5d43f3c2b6e25ab2316dca7fca6180b905626d2486bb"
+      "sourceHash": "96f16d172b40d63b8332d00c748d1210553630bbefcc18d1c54d8241e8bcffd6"
     },
     {
       "id": "file:playwright.config.ts",
@@ -873,7 +873,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "d1274290e0d7aca0c33f9eea0ba6c3fec1282ec6ded2f89aa9cc0a866f7786a1"
+      "sourceHash": "8a8ca3d350804b020467fe7b405aa6348aa78977a88d766dda4ba29444c43df5"
     },
     {
       "id": "file:tsconfig.json",
@@ -11222,6 +11222,20 @@
         {
           "path": "app/backend/main.py",
           "line": 302
+        }
+      ]
+    },
+    {
+      "id": "edge:986804c7c745e4b1",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/verifyLoginKnowledge.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/verifyLoginKnowledge.mjs",
+          "line": 3,
+          "detail": "node:process"
         }
       ]
     },

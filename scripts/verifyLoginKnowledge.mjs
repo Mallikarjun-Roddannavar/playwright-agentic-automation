@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import process from "node:process";
 
 const rootArgument = process.argv.find((argument) => argument.startsWith("--root="));
 const root = rootArgument ? path.resolve(rootArgument.slice("--root=".length)) : process.cwd();

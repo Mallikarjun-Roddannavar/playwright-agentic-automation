@@ -15,16 +15,16 @@ sources:
     title: scripts/verifyLoginKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/verifyLoginKnowledge.mjs
-source_sha256: d1274290e0d7aca0c33f9eea0ba6c3fec1282ec6ded2f89aa9cc0a866f7786a1
+source_sha256: 8a8ca3d350804b020467fe7b405aa6348aa78977a88d766dda4ba29444c43df5
 code_graph_id: file:scripts/verifyLoginKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: bcbec0d494dffc70cb551de96ad0cbbe811ba0e48d115ea64a22151c852e5507
+fact_sha256: 0ca29c869f040266ca7438115069efbdad3cc8fe9c8a3946521ceef982a26113
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-17T11:17:56.443Z"
+  at: "2026-08-18T09:26:46.462Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-17T11:17:56.443Z"
+    at: "2026-08-18T09:26:46.462Z"
 ---
 
 # Purpose
@@ -39,6 +39,7 @@ Framework tooling extracted from scripts/verifyLoginKnowledge.mjs by determinist
 
 - `node:path` via `node:path`
 - `node:fs` via `node:fs`
+- `node:process` via `node:process`
 
 # Static relationships
 
@@ -50,4 +51,4 @@ Framework tooling extracted from scripts/verifyLoginKnowledge.mjs by determinist
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `d1274290e0d7aca0c33f9eea0ba6c3fec1282ec6ded2f89aa9cc0a866f7786a1`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `8a8ca3d350804b020467fe7b405aa6348aa78977a88d766dda4ba29444c43df5`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
