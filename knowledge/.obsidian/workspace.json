@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "667745a86260def5",
+        "id": "b5cfce4d555c44b6",
         "type": "tabs",
         "children": [
           {
-            "id": "e23969bb2adc7c6c",
+            "id": "4347a952d867f8d9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "generated/graphs/service-relationships.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "service-relationships"
             }
           }
         ]
@@ -181,14 +185,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "e23969bb2adc7c6c",
+  "active": "4347a952d867f8d9",
   "lastOpenFiles": [
-    "generated/graphs/architecture.md",
+    "generated/graphs/page-navigation.md",
     "generated/graphs/index.md",
+    "generated/graphs/architecture.md",
+    "generated/code/index.md",
     "index.md",
     "runbooks/refresh-codebase-knowledge.md",
     "generated/graphs/service-relationships.md",
-    "generated/graphs/page-navigation.md",
     "generated/code/ui/pages/folders-page.md"
   ]
 }

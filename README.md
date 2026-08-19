@@ -1,20 +1,31 @@
 # Playwright Agentic Automation
 
-> An agent-ready Playwright + TypeScript framework for building, understanding, debugging, and maintaining UI/API tests with AI coding agents.
+> A Playwright + TypeScript agentic automation framework with a repository-local LLM Wiki/codebase second brain for AI-assisted test maintenance.
 
 [![Quality and Playwright tests](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-UI%20%2B%20API-45ba4b)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6)](https://www.typescriptlang.org/)
 
-Playwright Agentic Automation is a hands-on reference project that combines a runnable practice application, a maintainable Playwright framework, repository-local agent skills, and an evidence-backed codebase knowledge layer.
+Playwright Agentic Automation combines a runnable practice application, a maintainable Playwright framework, repository-local agent skills, and an evidence-backed LLM Wiki/codebase second brain. The knowledge layer helps external AI coding agents understand the framework, connect product behavior to tests, and maintain UI/API automation with repository evidence.
+
+## Core idea: a local LLM Wiki and codebase second brain
+
+This repository explores how a Playwright codebase can provide durable context to AI coding agents without depending on a hosted knowledge platform. Its main building blocks are:
+
+- **Local LLM Wiki / second brain** — linked Markdown notes in `knowledge/` for architecture, decisions, runbooks, product behavior, testing knowledge, and source relationships.
+- **Open Knowledge Format (OKF)** — a portable structure for sharing knowledge and provenance, inspired by [Google Cloud's Open Knowledge Format overview](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing).
+- **Repository instructions** — `AGENTS.md` defines how an agent should navigate and change this Playwright framework, following the [AGENTS.md convention](https://agents.md/).
+- **Agent Skills** — `.agents/skills/` provides reusable, task-specific instructions following the [Agent Skills standard](https://agentskills.io/home).
+
+The approach is also informed by [Andrej Karpathy's LLM Wiki concept](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): keep useful context organized, retrievable, and close to the work. Here, that idea is applied specifically to Playwright UI/API automation, Page Objects, fixtures, services, tests, and evidence-backed maintenance.
 
 ## Why this project?
 
-Most Playwright repositories show how tests run. This project also shows how an AI coding agent can navigate and maintain those tests using explicit repository guidance:
+Most Playwright repositories show how tests run. This project also shows how an AI coding agent can navigate and maintain those tests using a repository-local second brain and explicit guidance:
 
 - `AGENTS.md` defines ownership and framework rules.
 - `.agents/skills/` provides reusable workflows for UI, API, tooling, and incident work.
-- `knowledge/` stores deterministic code relationships plus grounded product/testing knowledge.
+- `knowledge/` acts as an LLM Wiki: it stores durable Markdown notes, deterministic code relationships, and grounded product/testing knowledge.
 - Playwright tests, Page Objects, API services, fixtures, and validation commands provide the executable evidence.
 
 The repository does not contain an autonomous AI service. An external coding agent such as Codex can use these instructions, skills, and knowledge artifacts while working in the repository.
@@ -30,7 +41,17 @@ npm run test:list
 npm test
 ```
 
-The test command starts the local FastAPI backend and Vite frontend, runs the UI/API suite, and stops the services afterward. See the setup section below for the Python and frontend prerequisites.
+The test command starts the local FastAPI backend and Vite frontend, runs the UI/API suite, and stops the services afterward. See [Getting Started](docs/GETTING_STARTED.md) for Python and frontend prerequisites.
+
+## LLM Wiki / Codebase Second Brain
+
+The `knowledge/` directory is a repository-local, offline-first second brain for this Playwright codebase. It is inspired by the LLM Wiki and second-brain approach: store useful context in durable, linked notes so an AI agent can retrieve the smallest relevant context instead of rediscovering the repository from scratch.
+
+- Markdown knowledge records architecture, decisions, runbooks, product behavior, and testing behavior.
+- The deterministic static graph captures code relationships such as imports, Page Object navigation, API services, routes, fixtures, and package usage.
+- Product and testing knowledge connects expected behavior to specs, Page Objects, tests, and assertions.
+- Agents can query the saved knowledge, verify important claims against source and test evidence, and detect stale or conflicted knowledge after changes.
+- The bundle follows OKF, remains usable in Markdown or Obsidian, and does not require a hosted search service, vector database, or LLM runtime.
 
 ## Agent workflow
 
@@ -47,201 +68,42 @@ flowchart TD
 
 This describes a supported repository workflow. The external coding agent still performs the reasoning, editing, and command execution.
 
-## What This Repo Contains
+## Repository focus
 
-This repository is a full-stack Playwright learning lab: it contains the practice application, the automation framework, and the agent skills used to understand and maintain both.
+The knowledge and agent layers sit on top of a real Playwright framework:
 
-It provides:
+- UI tests use TypeScript Page Objects and API tests use reusable services.
+- Shared fixtures provide authenticated admin, editor, and viewer sessions.
+- `AGENTS.md` and `.agents/skills/` define framework-aware agent workflows.
+- `knowledge/` records the relationships and evidence an agent needs to work safely.
 
-- UI automation using Page Object Model
-- API automation using service classes
-- shared multi-role fixtures for browser and API sessions
-- linting, formatting, typechecking, reporting, and naming checks
-- local `AGENTS.md` and `.agents/skills/` guidance for framework-aligned changes
+## Quickstart
 
-## At a glance
-
-| Area                | What is included                                                                                 |
-| ------------------- | ------------------------------------------------------------------------------------------------ |
-| UI testing          | TypeScript Page Objects and role-aware Playwright specs                                          |
-| API testing         | Assertion-free API services and API specs                                                        |
-| Test infrastructure | Shared browser/API fixtures, auth setup, cleanup, logging, and reporting                         |
-| Agent guidance      | `AGENTS.md` plus repository-local skills                                                         |
-| Codebase knowledge  | OKF Markdown, static graph, Mermaid views, freshness checks, and Login product/testing knowledge |
-
-## Repository Layout
-
-The practice application and automation framework live in this single learning repository:
-
-```text
-playwright-agentic-automation/
-  .agents/skills/
-  app/
-    backend/
-    frontend/
-    manual_test_cases/
-  api/
-  ui/
-  utils/
-  knowledge/
-  playwright.config.ts
-```
-
-## Prerequisites
-
-Install the application and automation dependencies once:
+Install dependencies and browsers:
 
 ```bash
-# Application backend
-cd app/backend
-python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
-# macOS/Linux: source .venv/bin/activate
-pip install -r requirements.txt
-
-# Application frontend
-cd ../frontend
 npm install
-
-# Automation framework
-cd ../..
-npm install
-npm run install:browsers
+cd app/backend && python -m venv .venv && pip install -r requirements.txt
+cd ../frontend && npm install
+cd ../.. && npm run install:browsers
 ```
 
-## Structure
-
-```text
-playwright-agentic-automation/
-  .agents/
-    skills/
-  api/
-    services/
-    specs/
-  config/
-    test-config.json
-  scripts/
-  ui/
-    pages/
-    setup/
-    specs/
-    test-data/
-  utils/
-    common/
-    fixtures/
-  playwright.config.ts
-  package.json
-  README.md
-  AGENTS.md
-```
-
-## Setup
-
-```bash
-cd playwright-agentic-automation
-npm install
-npm run install:browsers
-```
-
-## Run Locally
-
-`npm test` automatically starts the FastAPI backend and Vite frontend, waits until both are ready, runs the tests, and stops the processes afterward. If either service is already running locally, Playwright reuses it.
-
-```bash
-npm run test:list
-npm test
-npm run test:ui
-npm run test:api
-npm run test:debug
-npm run report
-npm run lint
-npm run lint:fix
-npm run typecheck
-npm run check:naming
-npm run format
-npm run format:check
-```
-
-### Manual Server Startup (Windows PowerShell)
-
-If the VS Code Playwright extension does not start the configured web servers automatically, start them manually in two terminals.
-
-Terminal 1 (backend):
-
-```powershell
-cd C:\AUTO_WS\GH_PERS\playwright-agentic-automation\app\backend
-.\.venv\Scripts\python.exe -m uvicorn main:app --host 127.0.0.1 --port 8001
-```
-
-Terminal 2 (frontend):
-
-```powershell
-cd C:\AUTO_WS\GH_PERS\playwright-agentic-automation\app\frontend
-$env:VITE_API_BASE_URL = "http://127.0.0.1:8001"
-npm run dev -- --host 127.0.0.1 --port 5174
-```
-
-Keep both terminals running, then run the tests from the Playwright VS Code extension.
-
-The default application root is `app`. If you use a different application checkout, set an absolute or relative application root before running tests:
-
-```powershell
-# Windows PowerShell
-$env:PLAYWRIGHT_APP_ROOT = "C:\src\playwright-practice-app"
-npm test
-```
-
-```bash
-# macOS/Linux
-PLAYWRIGHT_APP_ROOT=/src/playwright-practice-app npm test
-```
-
-To run against services that are already hosted elsewhere, update `BASE_URLS` in `config/test-config.json` and disable local process startup:
-
-```powershell
-$env:PLAYWRIGHT_SKIP_WEBSERVER = "1"
-npm test
-```
-
-```bash
-PLAYWRIGHT_SKIP_WEBSERVER=1 npm test
-```
-
-The local server ports and frontend-to-backend URL are derived from `config/test-config.json`; do not duplicate them in scripts.
-
-## Change Workflow
-
-When you change test code:
-
-```bash
-npm test
-```
-
-When you change URLs or credentials in `config/test-config.json`, re-run the most relevant validation commands.
-
-Typical validation after config changes:
+Run the application-backed Playwright suite:
 
 ```bash
 npm run test:list
 npm test
 ```
+
+The Playwright configuration starts the FastAPI backend and Vite frontend automatically. See [Getting Started](docs/GETTING_STARTED.md) for platform-specific setup and troubleshooting.
 
 ## Framework Highlights
 
-- Playwright project dependencies for reusable authenticated setup
-- role-based shared fixtures in `utils/fixtures/TestFixtures.ts`
-- route constants centralized in page and service base classes
-- TypeScript path aliases for framework-local imports
-- custom framework logger and custom reporter summary
-- cleanup registration through the shared `cleanup` fixture
-
-## Quality Tools
-
-- ESLint uses `eslint.config.mjs`
-- Prettier uses `.prettierrc.json` and `.prettierignore`
-- `npm run check:naming` enforces framework naming conventions
-- `utils/common/Logger.ts` provides the framework logger
-- `utils/common/CustomReporter.ts` writes `test-results/framework-summary.json`
+- Playwright UI and API projects with TypeScript Page Objects and reusable API services.
+- Role-based browser/API fixtures with authentication and cleanup.
+- Centralized route and configuration ownership for predictable agent changes.
+- Local skills and knowledge queries that help agents navigate and maintain the framework.
+- Linting, typechecking, naming checks, reporting, and freshness validation for evidence-backed changes.
 
 ## Persistent Codebase Knowledge
 
@@ -271,14 +133,6 @@ npm run quality:check
 If npm itself encounters the known Windows `EPERM`/realpath issue, run `node ./scripts/buildKnowledge.mjs --check` followed by `node ./scripts/validateKnowledge.mjs` directly.
 
 Open `knowledge/` directly as an [Obsidian](https://obsidian.md/) vault for native Markdown links, backlinks, Graph view, frontmatter properties, and Mermaid rendering. No Obsidian account, plugin, cloud service, Gemini key, vendor SDK, embedding model, or vector database is required. Keep human-authored material in `architecture/`, `decisions/`, and `runbooks/`; `generated/` is owned by the deterministic extractor.
-
-## Sample Specs
-
-- `ui/specs/login.spec.ts`
-- `ui/specs/multi-role.spec.ts`
-- `ui/specs/files.spec.ts`
-- `api/specs/health.spec.ts`
-- `api/specs/rbac.spec.ts`
 
 ## Guidance
 
