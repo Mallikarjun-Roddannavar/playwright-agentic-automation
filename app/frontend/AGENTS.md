@@ -99,11 +99,10 @@ export const ExampleComponent: React.FC = () => {
 1. Make your code changes.
 2. Run build check: `npm run build`.
 3. If the build fails, review TypeScript or Vite errors, fix them, and repeat step 2.
-4. Run reusable scripts to validate UI invariants: `node scripts/check-test-ids.js`. Fix any issues and repeat.
-5. Run dev server: `npm run dev`.
-6. Open the browser and manually test the UI changes (verify styling, interactions, and `data-testid` presence).
-7. Verify RBAC by logging in as different roles (`admin`, `editor`, `viewer`) and ensuring the UI reflects correct permissions.
-8. Only proceed when validation passes.
+4. Run dev server: `npm run dev`.
+5. Open the browser and manually test the UI changes (verify styling, interactions, and `data-testid` presence).
+6. Verify RBAC by logging in as different roles (`admin`, `editor`, `viewer`) and ensuring the UI reflects correct permissions.
+7. Only proceed when validation passes.
 
 ## Change hygiene
 - Prefer small, focused updates.
