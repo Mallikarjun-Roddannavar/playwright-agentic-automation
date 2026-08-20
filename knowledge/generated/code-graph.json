@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "06b56a79840fc7d8ccf2e78808a50a075bf373635a333a9d070b55810f7447a8",
+  "sourceDigest": "a52c4f78926e5dc0280bec1588aa834feefce1a81500e491034557a9af984836",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-18T10:16:28.092Z",
+    "at": "2026-08-20T11:59:24.871Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -180,11 +180,6 @@
       "path": "app/frontend/vite.config.ts",
       "sha256": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6",
       "category": "frontend"
-    },
-    {
-      "path": "app/scripts/check-test-ids.js",
-      "sha256": "93f1fda6988ebfe051cdb6ed2c7580ecf33c3edae525a71a2a2a68ffe8f141a6",
-      "category": "source"
     },
     {
       "path": "config/test-config.json",
@@ -730,18 +725,6 @@
         "ts"
       ],
       "sourceHash": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6"
-    },
-    {
-      "id": "file:app/scripts/check-test-ids.js",
-      "kind": "file",
-      "label": "app/scripts/check-test-ids.js",
-      "path": "app/scripts/check-test-ids.js",
-      "category": "source",
-      "tags": [
-        "js",
-        "source"
-      ],
-      "sourceHash": "93f1fda6988ebfe051cdb6ed2c7580ecf33c3edae525a71a2a2a68ffe8f141a6"
     },
     {
       "id": "file:config/test-config.json",
@@ -3517,20 +3500,6 @@
       "tags": [
         "frontend",
         "type"
-      ]
-    },
-    {
-      "id": "symbol:app/scripts/check-test-ids.js#findInteractiveOpeningTags",
-      "kind": "function",
-      "label": "findInteractiveOpeningTags",
-      "path": "app/scripts/check-test-ids.js",
-      "category": "source",
-      "startLine": 23,
-      "endLine": 62,
-      "exported": false,
-      "tags": [
-        "function",
-        "source"
       ]
     },
     {
@@ -6321,19 +6290,6 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 113
-        }
-      ]
-    },
-    {
-      "id": "edge:1678e6833f463718",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-agentic-automation",
-      "to": "file:app/scripts/check-test-ids.js",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/scripts/check-test-ids.js",
-          "line": 1
         }
       ]
     },
@@ -13720,19 +13676,6 @@
         {
           "path": "ui/specs/files.spec.ts",
           "line": 45
-        }
-      ]
-    },
-    {
-      "id": "edge:dbf95adadb8f0b78",
-      "relation": "CONTAINS",
-      "from": "file:app/scripts/check-test-ids.js",
-      "to": "symbol:app/scripts/check-test-ids.js#findInteractiveOpeningTags",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "app/scripts/check-test-ids.js",
-          "line": 23
         }
       ]
     },

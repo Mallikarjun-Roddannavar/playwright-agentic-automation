@@ -1,12 +1,14 @@
 # AGENTS.md (Frontend)
 
-Frontend-specific instructions for `playwright-practice-app/frontend`.
+Frontend-specific instructions for `app/frontend`.
 
 ## Scope
-- Applies only to files under `frontend/`.
+
+- Applies only to files under `app/frontend/`.
 - Overrides root guidance when there is a conflict.
 
 ## Current frontend architecture
+
 - Stack: React + TypeScript + Vite + Tailwind
 - Routing in `src/App.tsx`
 - Auth context in `src/context/AuthContext.tsx`
@@ -15,41 +17,15 @@ Frontend-specific instructions for `playwright-practice-app/frontend`.
 - Pages in `src/pages/`
 
 ## Procedural Workflow: Adding a New UI Feature
+
 1. Define any new API calls in `src/api.ts`, ensuring they use Bearer tokens for auth.
 2. Create or update components in `src/components/` or pages in `src/pages/`.
 3. Use shared Tailwind classes from `src/index.css`.
 4. Implement UI visibility based on the user's role from the `AuthContext` (e.g., hide delete buttons for editors).
 5. Ensure all new interactive elements (buttons, inputs, links) have a `data-testid` attribute.
 
-### Template: React Component
-When creating a new component or page, follow this structure:
-```tsx
-import React from 'react';
-import { useAuth } from '../context/AuthContext';
-
-export const ExampleComponent: React.FC = () => {
-    const { user } = useAuth();
-
-    // Hide actions the user is not authorized to perform
-    const canDelete = user?.role === 'admin';
-
-    return (
-        <div className="app-workspace">
-            <h1 className="text-xl font-bold dark:text-white">Example</h1>
-            <button data-testid="example-btn" className="btn-primary">
-                Action
-            </button>
-            {canDelete && (
-                <button data-testid="example-delete-btn" className="btn-danger">
-                    Delete
-                </button>
-            )}
-        </div>
-    );
-};
-```
-
 ## UX/testability requirements & Gotchas
+
 - Every interactive element must have a stable `data-testid`. **Do not remove existing test IDs.**
 - Keep deep links functional:
   - `/folders/:folderId`
@@ -58,8 +34,9 @@ export const ExampleComponent: React.FC = () => {
 - Toast notifications should be used for async success/error flows via `react-toastify`.
 
 ## Auth and RBAC requirements
+
 - Use Bearer token auth from `api.ts` for protected calls.
-- Role is derived from JWT payload and drives UI visibility/disable states.
+- Role is derived from the JWT payload and drives UI visibility.
 - UI permissions must match backend rules:
   - `viewer`: read-only
   - `editor`: create/edit/upload
@@ -70,6 +47,7 @@ export const ExampleComponent: React.FC = () => {
   - `admin` should see all CRUD actions
 
 ## UI behavior that must remain intact
+
 - Profile menu + preferences flow
 - Theme preference support (white/black)
 - Folder and file CRUD dialogs
@@ -80,6 +58,7 @@ export const ExampleComponent: React.FC = () => {
 - Toast notifications via `react-toastify`
 
 ## Styling conventions
+
 - Reuse semantic classes from `src/index.css` whenever possible:
   - `btn-primary`, `btn-secondary`, `btn-danger`, `icon-btn`
   - `app-header`, `app-drawer`, `dropdown-panel`
@@ -96,15 +75,18 @@ export const ExampleComponent: React.FC = () => {
 - Avoid ad hoc button variants, social-feed layouts, and heavy neumorphic treatment for primary actions.
 
 ## Validation Loop for Frontend Changes
-1. Make your code changes.
-2. Run build check: `npm run build`.
-3. If the build fails, review TypeScript or Vite errors, fix them, and repeat step 2.
-4. Run dev server: `npm run dev`.
-5. Open the browser and manually test the UI changes (verify styling, interactions, and `data-testid` presence).
-6. Verify RBAC by logging in as different roles (`admin`, `editor`, `viewer`) and ensuring the UI reflects correct permissions.
-7. Only proceed when validation passes.
+
+Run these commands from `app/frontend` after making changes:
+
+1. Build check: `npm run build`.
+2. If the build fails, review TypeScript or Vite errors, fix them, and repeat step 1.
+3. Run the dev server: `npm run dev`.
+4. Open the browser and manually test the changed UI, including interactions and `data-testid` presence.
+5. Verify RBAC with `admin`, `editor`, and `viewer` accounts when permissions are affected.
+6. Only proceed when validation passes.
 
 ## Change hygiene
+
 - Prefer small, focused updates.
 - Keep component responsibilities clear.
 - If API contracts change, update `api.ts` and affected pages together.

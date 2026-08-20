@@ -43,7 +43,7 @@ The demo accounts are intended for local learning:
 | `viewer` | Read-only browsing and file actions              |
 
 Credentials are defined in the repository configuration used by the
-automation framework. 
+automation framework.
 
 ## Backend
 

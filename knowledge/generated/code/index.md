@@ -101,11 +101,6 @@ Read the smallest relevant concept after querying the saved graph.
 - [auth.setup](ui/setup/auth-setup.md)
   - `ui/setup/auth.setup.ts` — Test setup.
 
-## Source modules
-
-- [check-test-ids](app/scripts/check-test-ids.md)
-  - `app/scripts/check-test-ids.js` — Source module.
-
 ## Tooling
 
 - [eslint.config](eslint-config.md)
