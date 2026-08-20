@@ -113,8 +113,20 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/checkNamingConventions.mjs` — Framework tooling.
 - [CodebaseKnowledge](scripts/knowledge/codebase-knowledge.md)
   - `scripts/knowledge/CodebaseKnowledge.mjs` — Framework tooling.
+- [WorkflowLog](scripts/knowledge/workflow-log.md)
+  - `scripts/knowledge/WorkflowLog.mjs` — Framework tooling.
+- [extractTestInventory](scripts/knowledge/extract-test-inventory.md)
+  - `scripts/knowledge/extractTestInventory.mjs` — Framework tooling.
+- [promoteKnowledge](scripts/knowledge/promote-knowledge.md)
+  - `scripts/knowledge/promoteKnowledge.mjs` — Framework tooling.
+- [proposeKnowledge](scripts/knowledge/propose-knowledge.md)
+  - `scripts/knowledge/proposeKnowledge.mjs` — Framework tooling.
 - [python_ast_adapter.py](scripts/knowledge/python-ast-adapter.md)
   - `scripts/knowledge/python_ast_adapter.py` — Framework tooling.
+- [traceKnowledge](scripts/knowledge/trace-knowledge.md)
+  - `scripts/knowledge/traceKnowledge.mjs` — Framework tooling.
+- [verifyKnowledge](scripts/knowledge/verify-knowledge.md)
+  - `scripts/knowledge/verifyKnowledge.mjs` — Framework tooling.
 - [queryKnowledge](scripts/query-knowledge.md)
   - `scripts/queryKnowledge.mjs` — Framework tooling.
 - [validateKnowledge](scripts/validate-knowledge.md)

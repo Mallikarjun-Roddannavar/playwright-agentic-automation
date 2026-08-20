@@ -22,6 +22,19 @@ npm run knowledge:query -- --relation USES_API_ROUTE
 npm run knowledge:query -- --relation USES_FIXTURE
 ```
 
+## Build Testing Knowledge
+
+The repository does not call an LLM directly. When asked to build testing knowledge, the agent is the semantic writer and repository scripts are the evidence gates:
+
+1. Run `npm run knowledge:inventory` to refresh the deterministic test inventory.
+2. Read `knowledge/test-inventory.json` and relevant generated graph concepts.
+3. Create or refresh Markdown proposals under `knowledge/drafts/` without overwriting approved notes.
+4. Run `npm run knowledge:verify-all` and report `GROUNDED`, `STALE`, or `REVIEW_REQUIRED` results.
+5. Resolve semantic naming and contradiction questions with the user; do not silently rewrite approved knowledge.
+6. Run `npm run knowledge:promote` only for evidence-supported proposals.
+
+The agent may propose meaning, but only deterministic repository checks may assign trusted verification. `knowledge/conflicts/` records unresolved evidence conflicts.
+
 ## Windows Shell Fallback
 
 If `npm run knowledge:check` hits the known Windows `EPERM`/realpath issue, run the underlying commands directly:

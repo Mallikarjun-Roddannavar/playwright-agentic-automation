@@ -45,6 +45,19 @@ npm run test:list
 
 The Login verifier reports `VERIFIED` only when independent source and test evidence still agrees. If the Login Page Object stops returning `HomePage` or the expected assertion disappears, it reports `STALE or CONFLICTED` and leaves the saved knowledge unchanged.
 
+## Batch testing-knowledge workflow
+
+For an existing repository with many tests, use:
+
+```bash
+npm run knowledge:inventory
+npm run knowledge:propose
+npm run knowledge:verify-all
+npm run knowledge:promote
+```
+
+The inventory is deterministic. The external agent creates Markdown proposals. Verification checks repository evidence and reports stale or conflicting proposals. Promotion does not silently resolve semantic conflicts and does not allow the agent to self-assign `VERIFIED`.
+
 ## Boundaries
 
 The repository supplies guidance, skills, knowledge, scripts, and executable tests. The external agent is responsible for selecting the workflow, making changes, running commands, and explaining the evidence. A passing static verifier does not prove every runtime behavior; run the relevant Playwright tests when runtime evidence is required.

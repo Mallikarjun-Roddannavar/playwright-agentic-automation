@@ -1,0 +1,738 @@
+{
+  "format": "testing-inventory",
+  "formatVersion": "1.0",
+  "generatedBy": "process:test-inventory/1.0.0",
+  "graphDigest": "c7905b25591ee0deec8fcb059dc8cef3fabf74e8c01141c44fe2db69189d0fe8",
+  "tests": [
+    {
+      "id": "api/specs/files.spec.ts::8c9535dc43d0",
+      "spec": "api/specs/files.spec.ts",
+      "kind": "api",
+      "describe": [],
+      "tests": [
+        "uploads use safe storage names and reject unauthorized or missing folders"
+      ],
+      "relationships": [
+        {
+          "relation": "IMPORTS_PACKAGE",
+          "target": "node:crypto",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 1,
+              "detail": "node:crypto"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "api/services/FilesService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 3,
+              "detail": "@api/services/FilesService"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 4,
+              "detail": "@api/services/FoldersService"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/common/CommonUtils.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 5,
+              "detail": "@utils/common/CommonUtils"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 6,
+              "detail": "@utils/fixtures/TestFixtures"
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "api/services/FilesService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 25
+            },
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 14
+            },
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 15
+            }
+          ]
+        },
+        {
+          "relation": "USES_FIXTURE",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 11
+            }
+          ]
+        },
+        {
+          "relation": "USES_SERVICE",
+          "target": "api/services/FilesService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 25
+            },
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 26
+            }
+          ]
+        },
+        {
+          "relation": "USES_SERVICE",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 14
+            },
+            {
+              "path": "api/specs/files.spec.ts",
+              "line": 15
+            }
+          ]
+        }
+      ],
+      "source_sha256": "8c9535dc43d0886fecbb0c0f8f329222beec11f2b807e0dc325ecf8efc4e2b70"
+    },
+    {
+      "id": "api/specs/health.spec.ts::0ea2bfe2da53",
+      "spec": "api/specs/health.spec.ts",
+      "kind": "api",
+      "describe": [],
+      "tests": [
+        "health endpoint is reachable"
+      ],
+      "relationships": [
+        {
+          "relation": "IMPORTS_PACKAGE",
+          "target": "@playwright/test",
+          "evidence": [
+            {
+              "path": "api/specs/health.spec.ts",
+              "line": 1,
+              "detail": "@playwright/test"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "api/services/BaseApiService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/health.spec.ts",
+              "line": 3,
+              "detail": "@api/services/BaseApiService"
+            }
+          ]
+        },
+        {
+          "relation": "USES_API_ROUTE",
+          "target": "api/services/BaseApiService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/health.spec.ts",
+              "line": 5
+            },
+            {
+              "path": "api/specs/health.spec.ts",
+              "line": 6
+            }
+          ]
+        }
+      ],
+      "source_sha256": "0ea2bfe2da534b5279ffdccc0977096f4fb93d1392876c929284e7805e7fb2d4"
+    },
+    {
+      "id": "api/specs/rbac.spec.ts::cdc605d44771",
+      "spec": "api/specs/rbac.spec.ts",
+      "kind": "api",
+      "describe": [],
+      "tests": [
+        "viewer cannot create folder, editor can create, admin can delete"
+      ],
+      "relationships": [
+        {
+          "relation": "IMPORTS",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 1,
+              "detail": "@api/services/FoldersService"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/common/CommonUtils.ts",
+          "evidence": [
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 2,
+              "detail": "@utils/common/CommonUtils"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 3,
+              "detail": "@utils/fixtures/TestFixtures"
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 12
+            },
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 13
+            },
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 14
+            }
+          ]
+        },
+        {
+          "relation": "USES_FIXTURE",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 8
+            }
+          ]
+        },
+        {
+          "relation": "USES_SERVICE",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 12
+            },
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 13
+            },
+            {
+              "path": "api/specs/rbac.spec.ts",
+              "line": 14
+            }
+          ]
+        }
+      ],
+      "source_sha256": "cdc605d447716f2c47f8bd695165aa82f22b568141c103b12ef19430fdee41f1"
+    },
+    {
+      "id": "ui/specs/files.spec.ts::01102de3a4b6",
+      "spec": "ui/specs/files.spec.ts",
+      "kind": "ui",
+      "describe": [
+        "Files"
+      ],
+      "tests": [
+        "admin can upload a file to a folder",
+        "editor can upload a file to a folder"
+      ],
+      "relationships": [
+        {
+          "relation": "CONTAINS",
+          "target": "ui/specs/files.spec.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 24
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS_PACKAGE",
+          "target": "@playwright/test",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 7,
+              "detail": "@playwright/test"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS_PACKAGE",
+          "target": "node:path",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 1,
+              "detail": "node:path"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 3,
+              "detail": "@api/services/FoldersService"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 4,
+              "detail": "@pages/HomePage"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/common/CommonUtils.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 5,
+              "detail": "@utils/common/CommonUtils"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 6,
+              "detail": "@utils/fixtures/TestFixtures"
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 32
+            },
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 33
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "relation": "USES_FIXTURE",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 61
+            },
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 73
+            }
+          ]
+        },
+        {
+          "relation": "USES_PAGE",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 45
+            }
+          ]
+        },
+        {
+          "relation": "USES_SERVICE",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 32
+            },
+            {
+              "path": "ui/specs/files.spec.ts",
+              "line": 33
+            }
+          ]
+        }
+      ],
+      "source_sha256": "01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786"
+    },
+    {
+      "id": "ui/specs/login.spec.ts::757e24c0dad0",
+      "spec": "ui/specs/login.spec.ts",
+      "kind": "ui",
+      "describe": [
+        "Login"
+      ],
+      "tests": [
+        "admin login succeeds",
+        "expired stored session redirects to login",
+        "invalid credentials show error"
+      ],
+      "relationships": [
+        {
+          "relation": "IMPORTS_PACKAGE",
+          "target": "@playwright/test",
+          "evidence": [
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 1,
+              "detail": "@playwright/test"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "config/test-config.json",
+          "evidence": [
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 2,
+              "detail": "@config/test-config.json"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "ui/pages/LoginPage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 4,
+              "detail": "@pages/LoginPage"
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "ui/pages/LoginPage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 15
+            },
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 25
+            },
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 48
+            }
+          ]
+        },
+        {
+          "relation": "USES_PAGE",
+          "target": "ui/pages/LoginPage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 15
+            },
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 25
+            },
+            {
+              "path": "ui/specs/login.spec.ts",
+              "line": 48
+            }
+          ]
+        }
+      ],
+      "source_sha256": "757e24c0dad0be5b410a3716177c7c05904812c151ce55f3457677e2082b2748"
+    },
+    {
+      "id": "ui/specs/multi-role.spec.ts::3450191ff390",
+      "spec": "ui/specs/multi-role.spec.ts",
+      "kind": "ui",
+      "describe": [],
+      "tests": [
+        "admin creates folder and viewer can see it after refresh"
+      ],
+      "relationships": [
+        {
+          "relation": "IMPORTS",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 1,
+              "detail": "@api/services/FoldersService"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 2,
+              "detail": "@pages/HomePage"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/common/CommonUtils.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 3,
+              "detail": "@utils/common/CommonUtils"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 4,
+              "detail": "@utils/fixtures/TestFixtures"
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 20
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 13
+            },
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 14
+            }
+          ]
+        },
+        {
+          "relation": "USES_FIXTURE",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 9
+            }
+          ]
+        },
+        {
+          "relation": "USES_PAGE",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 13
+            },
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 14
+            }
+          ]
+        },
+        {
+          "relation": "USES_SERVICE",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/multi-role.spec.ts",
+              "line": 20
+            }
+          ]
+        }
+      ],
+      "source_sha256": "3450191ff39037a1d9fff57fb184bf542aa6f5a1486b95705bd913e15dd22e31"
+    },
+    {
+      "id": "ui/specs/viewer-rbac.spec.ts::79cff691d9d4",
+      "spec": "ui/specs/viewer-rbac.spec.ts",
+      "kind": "ui",
+      "describe": [],
+      "tests": [
+        "viewer sees read-only folder and file controls"
+      ],
+      "relationships": [
+        {
+          "relation": "IMPORTS",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 1,
+              "detail": "@api/services/FoldersService"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 2,
+              "detail": "@pages/HomePage"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/common/CommonUtils.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 3,
+              "detail": "@utils/common/CommonUtils"
+            }
+          ]
+        },
+        {
+          "relation": "IMPORTS",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 4,
+              "detail": "@utils/fixtures/TestFixtures"
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 11
+            }
+          ]
+        },
+        {
+          "relation": "INSTANTIATES",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 21
+            }
+          ]
+        },
+        {
+          "relation": "USES_FIXTURE",
+          "target": "utils/fixtures/TestFixtures.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 8
+            }
+          ]
+        },
+        {
+          "relation": "USES_PAGE",
+          "target": "ui/pages/HomePage.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 21
+            }
+          ]
+        },
+        {
+          "relation": "USES_SERVICE",
+          "target": "api/services/FoldersService.ts",
+          "evidence": [
+            {
+              "path": "ui/specs/viewer-rbac.spec.ts",
+              "line": 11
+            }
+          ]
+        }
+      ],
+      "source_sha256": "79cff691d9d4a85bf7239a6b9861c09e627153bb61880e6886796a8d2f93347d"
+    }
+  ]
+}

@@ -18,13 +18,13 @@ source_path: scripts/knowledge/CodebaseKnowledge.mjs
 source_sha256: b8c31831fb7011976187a3f6f88d18c61c0f9dd0d2e90b2c9cca2df87204a550
 code_graph_id: file:scripts/knowledge/CodebaseKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: d3062df781bdc6421fe2b813f16f44abafedee68240fc031347658c0b7a059ed
+fact_sha256: 019b77291435fca2eed2b82139e30df2ae754c0b934b4cd9937a964013e323a0
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:16:28.092Z"
+  at: "2026-08-20T14:13:10.705Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:16:28.092Z"
+    at: "2026-08-20T14:13:10.705Z"
 ---
 
 # Purpose
@@ -117,6 +117,7 @@ Framework tooling extracted from scripts/knowledge/CodebaseKnowledge.mjs by dete
 # Dependents
 
 - [scripts/queryKnowledge.mjs](../query-knowledge.md) imports this module.
+- [scripts/knowledge/extractTestInventory.mjs](./extract-test-inventory.md) imports this module.
 - [scripts/validateKnowledge.mjs](../validate-knowledge.md) imports this module.
 - [scripts/buildKnowledge.mjs](../build-knowledge.md) imports this module.
 

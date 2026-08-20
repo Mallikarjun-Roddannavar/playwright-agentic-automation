@@ -7,12 +7,18 @@ import { loadCodeGraph } from "./knowledge/CodebaseKnowledge.mjs";
 
 function usage() {
   globalThis.console.log(
-    "Usage: npm run knowledge:query -- [--knowledge] [--kind <kind>] [--relation <relation>] <search terms>"
+    "Usage: npm run knowledge:query -- [--knowledge] [--kind <kind>] [--relation <relation>] [--status <status>] <search terms>"
   );
 }
 
 function parseArguments(args) {
-  const values = { kind: undefined, relation: undefined, knowledge: false, terms: [] };
+  const values = {
+    kind: undefined,
+    relation: undefined,
+    status: undefined,
+    knowledge: false,
+    terms: [],
+  };
   for (let index = 0; index < args.length; index += 1) {
     const argument = args[index];
     if (argument === "--kind") {
@@ -20,6 +26,9 @@ function parseArguments(args) {
       index += 1;
     } else if (argument === "--relation") {
       values.relation = args[index + 1]?.toUpperCase();
+      index += 1;
+    } else if (argument === "--status") {
+      values.status = args[index + 1]?.toLowerCase();
       index += 1;
     } else if (argument === "--knowledge") {
       values.knowledge = true;
@@ -44,9 +53,13 @@ function queryLoginKnowledge(repoRoot) {
   const scenario = readConcept(repoRoot, "testing/scenarios/successful-login.md");
   globalThis.console.log("Knowledge query: Login");
   globalThis.console.log("- Tests covering Login: ui/specs/login.spec.ts — admin login succeeds");
-  globalThis.console.log("- Product behavior: valid credentials authenticate, navigate to /, and show the workspace home title.");
+  globalThis.console.log(
+    "- Product behavior: valid credentials authenticate, navigate to /, and show the workspace home title."
+  );
   globalThis.console.log("- Page Objects: ui/pages/LoginPage.ts, ui/pages/HomePage.ts");
-  globalThis.console.log("- Assertion: expect(homePage.title).toBeVisible() in ui/specs/login.spec.ts");
+  globalThis.console.log(
+    "- Assertion: expect(homePage.title).toBeVisible() in ui/specs/login.spec.ts"
+  );
   globalThis.console.log(`- Knowledge chain: ${feature.id} -> ${behavior.id} -> ${scenario.id}`);
 }
 
@@ -62,7 +75,8 @@ function edgeSearchText(edge, nodesById) {
 }
 
 const args = parseArguments(process.argv.slice(2));
-if (args.help || (args.terms.length === 0 && !args.kind && !args.relation)) {
+const terms = args.terms.map((term) => term.toLowerCase());
+if (args.help || (args.terms.length === 0 && !args.kind && !args.relation && !args.status)) {
   usage();
   process.exitCode = args.help ? 0 : 1;
 } else {
@@ -71,8 +85,37 @@ if (args.help || (args.terms.length === 0 && !args.kind && !args.relation)) {
       queryLoginKnowledge(process.cwd());
       process.exit(0);
     }
+    if (args.status) {
+      const files = [];
+      const visit = (directory) => {
+        if (!fs.existsSync(directory)) return;
+        for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+          const candidate = path.join(directory, entry.name);
+          if (entry.isDirectory()) visit(candidate);
+          else if (entry.name.endsWith(".md")) files.push(candidate);
+        }
+      };
+      visit(path.join(process.cwd(), "knowledge"));
+      const matches = files.filter((filePath) => {
+        const source = fs.readFileSync(filePath, "utf8");
+        return (
+          new RegExp(
+            `^(?:status|trust_status|verification_status):\\s*${args.status}\\s*$`,
+            "imu"
+          ).test(source) && matchesTerms(source, terms)
+        );
+      });
+      globalThis.console.log(`Knowledge pages with status '${args.status}': ${matches.length}`);
+      matches
+        .sort()
+        .forEach((filePath) =>
+          globalThis.console.log(
+            `- ${path.relative(process.cwd(), filePath).replaceAll("\\", "/")}`
+          )
+        );
+      process.exit(0);
+    }
     const graph = loadCodeGraph(process.cwd());
-    const terms = args.terms.map((term) => term.toLowerCase());
     const nodesById = new Map(graph.nodes.map((node) => [node.id, node]));
     const selectedNodeIds = new Set(
       graph.nodes

@@ -30,6 +30,22 @@ If npm hits the known Windows `EPERM`/realpath issue, run `node ./scripts/buildK
 3. Review generated Markdown, Mermaid diagrams, and `generated/code-graph.json` in the diff.
 4. Run the smallest relevant framework checks, then commit the updated `knowledge/` artifacts with the source change.
 
+# Build testing knowledge at scale
+
+Use the deterministic inventory before asking an agent to create semantic proposals:
+
+```bash
+npm run knowledge:inventory
+npm run knowledge:propose
+npm run knowledge:verify-all
+npm run knowledge:query -- --status grounded
+npm run knowledge:promote
+```
+
+`knowledge/test-inventory.json` is extracted from the static graph and test source. `knowledge/drafts/` contains agent proposals; `knowledge/product/` and `knowledge/testing/` contain approved knowledge. Promotion never resolves semantic conflicts automatically.
+
+Each inventory, proposal, verification, and promotion command appends JSONL audit events to `knowledge/workflow-runs.jsonl`. Trace them with `npm run knowledge:trace -- <run-id-or-file>`.
+
 # Obsidian use
 
 Open the `knowledge` folder as a vault. Its normal Markdown links populate Obsidian's backlink and Graph views; Mermaid code fences render without a community plugin. Do not edit generated concepts manually—put human decisions and runbooks outside `generated/`.

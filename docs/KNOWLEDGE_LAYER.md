@@ -34,6 +34,8 @@ The knowledge builder analyzes repository source and produces source-hash-backed
 
 Human-authored product and testing notes remain outside `generated/`. They include source references and explicit trust/freshness fields. Generated facts can be refreshed deterministically; verified product/testing claims are checked against independent repository evidence.
 
+For batch testing discovery, `knowledge/test-inventory.json` records every UI/API spec and its extracted tests, Page Objects, services, fixtures, routes, relationships, and source hash. Codex can use that inventory to create proposals under `knowledge/drafts/`; repository checks decide whether evidence is still present.
+
 ## Commands
 
 ```bash
@@ -43,6 +45,10 @@ npm run knowledge:query -- LoginPage
 npm run knowledge:query -- --knowledge Login
 npm run knowledge:validate
 npm run knowledge:verify
+npm run knowledge:inventory
+npm run knowledge:propose
+npm run knowledge:verify-all
+npm run knowledge:promote
 ```
 
 If npm hits the known Windows `EPERM` realpath issue in an AI shell, use the direct Node commands documented in `knowledge/runbooks/refresh-codebase-knowledge.md`.
@@ -52,5 +58,9 @@ If npm hits the known Windows `EPERM` realpath issue in an AI shell, use the dir
 - `GROUNDED`: a claim has identifiable repository evidence, but may not have independent test verification.
 - `VERIFIED`: the relevant source, Page Objects, test, and assertion evidence agree at validation time.
 - `STALE or CONFLICTED`: the evidence needed by a stored claim no longer matches the repository. The verifier reports this state and does not rewrite the knowledge automatically.
+
+The repository does not call an LLM. Codex or another external agent writes proposals; deterministic scripts verify files, tests, relationships, and hashes. Semantic names and contradictions remain reviewable.
+
+Workflow stages append audit events to `knowledge/workflow-runs.jsonl`. Events include a run ID, stage, status, affected knowledge file, artifact, source digest, and missing evidence where applicable. Use `npm run knowledge:trace -- <term>` to investigate a run, file, stage, or status. Credentials and application payloads are not logged.
 
 Open this directory in Obsidian if a human graph view is useful. Git and Markdown remain the durable source of truth.
