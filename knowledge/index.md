@@ -18,6 +18,8 @@ This is a portable, offline-first Open Knowledge Format (OKF) v0.2 bundle. Start
 ## Testing knowledge
 
 - [Testing knowledge](testing/index.md) - Verified Playwright scenarios and their product relationships.
+- [Test inventory](test-inventory.json) - Deterministic inventory of UI/API specs and extracted relationships.
+- [Testing knowledge drafts](drafts/) - Agent-generated proposals awaiting semantic review or promotion.
 
 ## Decisions
 
@@ -26,6 +28,7 @@ This is a portable, offline-first Open Knowledge Format (OKF) v0.2 bundle. Start
 ## Runbooks
 
 - [Refresh codebase knowledge](runbooks/refresh-codebase-knowledge.md) - Query, validate, and refresh the saved knowledge safely.
+- [Knowledge layer workflow](../docs/KNOWLEDGE_LAYER.md) - Inventory, proposal, verification, promotion, and trace commands.
 
 ## Obsidian
 

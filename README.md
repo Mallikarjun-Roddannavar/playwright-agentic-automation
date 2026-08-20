@@ -53,6 +53,8 @@ The `knowledge/` directory is a repository-local, offline-first second brain for
 - Agents can query the saved knowledge, verify important claims against source and test evidence, and detect stale or conflicted knowledge after changes.
 - The bundle follows OKF, remains usable in Markdown or Obsidian, and does not require a hosted search service, vector database, or LLM runtime.
 
+The repository also includes a Codex-assisted testing second brain that inventories Playwright tests, creates evidence-backed knowledge proposals, detects stale or conflicting claims, and keeps an auditable workflow history.
+
 ## Agent workflow
 
 ```mermaid
@@ -125,6 +127,12 @@ npm run knowledge:check
 npm run knowledge:query -- LoginPage
 npm run knowledge:query -- --relation NAVIGATES_TO
 npm run knowledge:query -- --relation USES_API_ROUTE
+
+# Build and trace testing knowledge
+npm run knowledge:inventory
+npm run knowledge:propose
+npm run knowledge:verify-all
+npm run knowledge:trace -- verification
 
 # Run the complete static quality gate, including knowledge freshness
 npm run quality:check
