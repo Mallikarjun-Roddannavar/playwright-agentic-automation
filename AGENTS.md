@@ -15,6 +15,12 @@ Use these local skills when their scope matches the task:
 - `pw-framework-tooling` for `playwright.config.ts`, linting, formatting, typechecking, logging, waits, reporting, and README quality-tooling updates
 - `codebase-second-brain` for persistent codebase discovery, OKF knowledge updates, AST graph queries, and Obsidian-ready knowledge navigation
 
+When a request asks how a feature works, how behavior is tested, what covers a
+feature, or whether knowledge is stale or conflicting, use `codebase-second-brain`
+as the primary skill. Use `pw-ui-pom` and `pw-api-pom` as supporting skills for
+the specific UI or API files identified by the knowledge layer. Users should be
+able to ask these questions naturally without naming knowledge files or commands.
+
 ## Framework Conventions
 
 - Keep selectors in page objects. Do not add raw page selectors in specs.

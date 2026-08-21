@@ -2,7 +2,7 @@
   "format": "testing-inventory",
   "formatVersion": "1.0",
   "generatedBy": "process:test-inventory/1.0.0",
-  "graphDigest": "c7905b25591ee0deec8fcb059dc8cef3fabf74e8c01141c44fe2db69189d0fe8",
+  "graphDigest": "807b2b02206bd7f11036012faf73db58f6c59f9825740a20c45fc3d00d69a291",
   "tests": [
     {
       "id": "api/specs/files.spec.ts::8c9535dc43d0",

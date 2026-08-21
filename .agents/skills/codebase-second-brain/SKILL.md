@@ -7,6 +7,43 @@ description: Retrieve, verify, and refresh the persistent Open Knowledge Format 
 
 Use `knowledge/` as the first discovery layer. It is a portable, offline-first OKF v0.2 bundle; `generated/` contains deterministic AST facts and `architecture/`, `decisions/`, and `runbooks/` hold durable human-readable knowledge.
 
+## Route Knowledge Questions Automatically
+
+Use this skill as the primary skill for natural-language questions about:
+
+- how a feature works;
+- how product behavior maps to tests;
+- what tests, page objects, services, fixtures, or assertions cover a feature;
+- whether a documented behavior is stale, missing, or contradictory;
+- architecture, ownership, navigation, or API relationships.
+
+Users should not need to name knowledge files, commands, or this skill. Start with
+the knowledge bundle, then use `pw-ui-pom` or `pw-api-pom` only as supporting
+context when the retrieved relationships point to UI or API implementation.
+
+For a knowledge question, follow this order:
+
+1. Read `knowledge/index.md` and run the relevant freshness/validation check.
+2. Query the requested feature, symbol, route, or relationship.
+3. Open the returned knowledge notes and their direct evidence links.
+4. Inspect only the authoritative source lines needed to confirm an important
+   claim or resolve a conflict; do not broadly rediscover the repository first.
+5. Report the answer naturally, separating known knowledge, source verification,
+   runtime test results, and missing evidence.
+
+If source and knowledge disagree, explicitly report `STALE` or `CONFLICTED`.
+Treat source as authoritative, but do not silently rewrite the knowledge bundle.
+`VERIFIED` knowledge evidence does not imply that a Playwright test was executed;
+report runtime execution separately.
+
+When multiple endpoints, implementations, or authentication paths exist, trace
+the one actually used by the requested feature or test. Distinguish it from
+alternate supported endpoints. A route mentioned in a product note is not proof
+that the current UI or test uses that route; follow the concrete call site,
+service method, fixture, or graph relationship. If the note and call site differ,
+report the claim as `STALE` or `CONFLICTED` and explain which path is authoritative
+for the requested flow.
+
 ## Retrieve Before Rediscovering
 
 1. Read `knowledge/index.md`.
