@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "807b2b02206bd7f11036012faf73db58f6c59f9825740a20c45fc3d00d69a291",
+  "sourceDigest": "36c13329da7c1f0521a9d05c467217fbc32f9c073ab03e578542defa19858050",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-20T14:32:54.454Z",
+    "at": "2026-08-21T07:48:08.445Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -193,7 +193,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "a29c07f4cb8dd3b977f1c49d5fc2a2996131f36aff149d3752a36e11d2d33ec4",
+      "sha256": "d8994742e2e4ff671fad89346e504b68af7575040bf6c77b112b162caa72c705",
       "category": "configuration"
     },
     {
@@ -219,6 +219,11 @@
     {
       "path": "scripts/knowledge/WorkflowLog.mjs",
       "sha256": "80e6b05ee10d199c7dd35a0347b7cbc86a1eee18d708fab238eb32134898db15",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "sha256": "3e40fd7b1c93c92fe11b1ca9571c3b34c2daed2a461dd332b97027fd984659eb",
       "category": "tooling"
     },
     {
@@ -790,7 +795,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "a29c07f4cb8dd3b977f1c49d5fc2a2996131f36aff149d3752a36e11d2d33ec4"
+      "sourceHash": "d8994742e2e4ff671fad89346e504b68af7575040bf6c77b112b162caa72c705"
     },
     {
       "id": "file:playwright.config.ts",
@@ -851,6 +856,18 @@
         "tooling"
       ],
       "sourceHash": "80e6b05ee10d199c7dd35a0347b7cbc86a1eee18d708fab238eb32134898db15"
+    },
+    {
+      "id": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/evaluateAnswers.mjs",
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "3e40fd7b1c93c92fe11b1ca9571c3b34c2daed2a461dd332b97027fd984659eb"
     },
     {
       "id": "file:scripts/knowledge/extractTestInventory.mjs",
@@ -4613,6 +4630,90 @@
       ]
     },
     {
+      "id": "symbol:scripts/knowledge/evaluateAnswers.mjs#evaluateCase",
+      "kind": "function",
+      "label": "evaluateCase",
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "category": "tooling",
+      "startLine": 39,
+      "endLine": 67,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/evaluateAnswers.mjs#findForbiddenPhrases",
+      "kind": "function",
+      "label": "findForbiddenPhrases",
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "category": "tooling",
+      "startLine": 34,
+      "endLine": 37,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/evaluateAnswers.mjs#findMissingPhrases",
+      "kind": "function",
+      "label": "findMissingPhrases",
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "category": "tooling",
+      "startLine": 29,
+      "endLine": 32,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/evaluateAnswers.mjs#normalize",
+      "kind": "function",
+      "label": "normalize",
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "category": "tooling",
+      "startLine": 25,
+      "endLine": 27,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/evaluateAnswers.mjs#parseArgs",
+      "kind": "function",
+      "label": "parseArgs",
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "category": "tooling",
+      "startLine": 8,
+      "endLine": 19,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/evaluateAnswers.mjs#usage",
+      "kind": "function",
+      "label": "usage",
+      "path": "scripts/knowledge/evaluateAnswers.mjs",
+      "category": "tooling",
+      "startLine": 21,
+      "endLine": 23,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
       "id": "symbol:scripts/knowledge/extractTestInventory.mjs#inventoryFor",
       "kind": "function",
       "label": "inventoryFor",
@@ -7000,6 +7101,19 @@
       ]
     },
     {
+      "id": "edge:256c9702c285526b",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "symbol:scripts/knowledge/evaluateAnswers.mjs#evaluateCase",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 39
+        }
+      ]
+    },
+    {
       "id": "edge:2597f6e73403e9d9",
       "relation": "CONTAINS",
       "from": "repository:playwright-agentic-automation",
@@ -7162,6 +7276,20 @@
           "path": "api/specs/rbac.spec.ts",
           "line": 1,
           "detail": "@api/services/FoldersService"
+        }
+      ]
+    },
+    {
+      "id": "edge:27d1e5037a9eeb4c",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 1,
+          "detail": "node:fs"
         }
       ]
     },
@@ -8755,6 +8883,19 @@
       ]
     },
     {
+      "id": "edge:4f5b15b006d5588f",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "symbol:scripts/knowledge/evaluateAnswers.mjs#findForbiddenPhrases",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 34
+        }
+      ]
+    },
+    {
       "id": "edge:4f5b506dd9610dc5",
       "relation": "CONTAINS",
       "from": "repository:playwright-agentic-automation",
@@ -9503,6 +9644,20 @@
           "path": "scripts/knowledge/traceKnowledge.mjs",
           "line": 1,
           "detail": "node:fs"
+        }
+      ]
+    },
+    {
+      "id": "edge:6179b65e47f36afa",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 3,
+          "detail": "node:process"
         }
       ]
     },
@@ -11439,6 +11594,19 @@
       ]
     },
     {
+      "id": "edge:921adc862822dea6",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "symbol:scripts/knowledge/evaluateAnswers.mjs#parseArgs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 8
+        }
+      ]
+    },
+    {
       "id": "edge:92370c82ddda6ad2",
       "relation": "USES_SERVICE",
       "from": "symbol:ui/specs/files.spec.ts#expectRoleCanUploadFile",
@@ -11624,6 +11792,19 @@
         {
           "path": "package.json",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:976c5e8b04b52b6a",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "symbol:scripts/knowledge/evaluateAnswers.mjs#findMissingPhrases",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 29
         }
       ]
     },
@@ -12263,6 +12444,19 @@
       ]
     },
     {
+      "id": "edge:a90afb19baad1527",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "symbol:scripts/knowledge/evaluateAnswers.mjs#usage",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 21
+        }
+      ]
+    },
+    {
       "id": "edge:aa076039193c235d",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/types.ts",
@@ -12893,6 +13087,20 @@
       ]
     },
     {
+      "id": "edge:b9591b7e73eb2253",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:ba8ead063fe233aa",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -13210,6 +13418,19 @@
       "evidence": [
         {
           "path": "ui/pages/HomePage.ts",
+          "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:c2fee554134c9dff",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
           "line": 1
         }
       ]
@@ -14763,6 +14984,19 @@
         {
           "path": "ui/specs/multi-role.spec.ts",
           "line": 9
+        }
+      ]
+    },
+    {
+      "id": "edge:eac1ad0f730718ad",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/evaluateAnswers.mjs",
+      "to": "symbol:scripts/knowledge/evaluateAnswers.mjs#normalize",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/evaluateAnswers.mjs",
+          "line": 25
         }
       ]
     },

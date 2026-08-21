@@ -20,6 +20,7 @@ This is a portable, offline-first Open Knowledge Format (OKF) v0.2 bundle. Start
 - [Testing knowledge](testing/index.md) - Verified Playwright scenarios and their product relationships.
 - [Test inventory](test-inventory.json) - Deterministic inventory of UI/API specs and extracted relationships.
 - [Testing knowledge drafts](drafts/) - Agent-generated proposals awaiting semantic review or promotion.
+- [Knowledge answer evaluations](evaluations/README.md) - Deterministic checks for user-supplied Codex answers.
 
 ## Decisions
 

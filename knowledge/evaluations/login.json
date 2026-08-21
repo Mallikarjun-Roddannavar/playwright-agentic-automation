@@ -1,0 +1,45 @@
+{
+  "suite": "login-knowledge-answers",
+  "cases": [
+    {
+      "id": "successful-login-flow",
+      "question": "How does successful Login work, and how is it tested?",
+      "response": "Successful password Login uses POST /token. LoginPage.login fills the credentials, returns HomePage, and the test in ui/specs/login.spec.ts asserts homePage.title is visible. The response is source-verified, but the Playwright test was not executed during this review.",
+      "requiredPhrases": [
+        "POST /token",
+        "LoginPage.login",
+        "HomePage",
+        "ui/specs/login.spec.ts",
+        "homePage.title",
+        "not executed"
+      ],
+      "evidencePaths": [
+        "app/frontend/src/api.ts",
+        "app/frontend/src/pages/LoginPage.tsx",
+        "app/frontend/src/context/AuthContext.tsx",
+        "ui/pages/LoginPage.ts",
+        "ui/pages/HomePage.ts",
+        "ui/specs/login.spec.ts",
+        "config/test-config.json"
+      ],
+      "forbiddenPhrases": ["the UI uses POST /auth/login", "the Playwright test passed"]
+    },
+    {
+      "id": "login-endpoint-conflict",
+      "question": "Which authentication endpoint does the Login UI use?",
+      "response": "The Login UI uses POST /token. The backend also exposes POST /auth/login as a separate endpoint, but it is not the endpoint used by the current UI flow. Any knowledge note claiming that the UI uses /auth/login is stale or conflicted.",
+      "requiredPhrases": [
+        "POST /token",
+        "POST /auth/login",
+        "separate endpoint",
+        "stale or conflicted"
+      ],
+      "evidencePaths": [
+        "app/frontend/src/api.ts",
+        "app/backend/main.py",
+        "knowledge/product/expected-behavior/login-success.md"
+      ],
+      "forbiddenPhrases": ["the UI uses POST /auth/login"]
+    }
+  ]
+}

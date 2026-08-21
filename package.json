@@ -26,6 +26,7 @@
     "knowledge:verify-all": "node ./scripts/knowledge/verifyKnowledge.mjs",
     "knowledge:promote": "node ./scripts/knowledge/promoteKnowledge.mjs",
     "knowledge:trace": "node ./scripts/knowledge/traceKnowledge.mjs",
+    "knowledge:eval": "node ./scripts/knowledge/evaluateAnswers.mjs",
     "knowledge:verify": "node ./scripts/verifyLoginKnowledge.mjs && node ./scripts/knowledge/verifyKnowledge.mjs",
     "quality:check": "node ./scripts/checkNamingConventions.mjs && node ./scripts/buildKnowledge.mjs --check && npm run knowledge:validate && eslint . && tsc --noEmit && prettier . --check"
   },

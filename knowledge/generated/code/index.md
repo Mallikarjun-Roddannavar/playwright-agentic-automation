@@ -115,6 +115,8 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/knowledge/CodebaseKnowledge.mjs` — Framework tooling.
 - [WorkflowLog](scripts/knowledge/workflow-log.md)
   - `scripts/knowledge/WorkflowLog.mjs` — Framework tooling.
+- [evaluateAnswers](scripts/knowledge/evaluate-answers.md)
+  - `scripts/knowledge/evaluateAnswers.mjs` — Framework tooling.
 - [extractTestInventory](scripts/knowledge/extract-test-inventory.md)
   - `scripts/knowledge/extractTestInventory.mjs` — Framework tooling.
 - [promoteKnowledge](scripts/knowledge/promote-knowledge.md)

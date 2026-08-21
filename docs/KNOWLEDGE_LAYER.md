@@ -49,7 +49,15 @@ npm run knowledge:inventory
 npm run knowledge:propose
 npm run knowledge:verify-all
 npm run knowledge:promote
+npm run knowledge:eval
 ```
+
+## Evaluate Codex answers
+
+Knowledge answer evaluations accept a question and response in a reviewable JSON
+case under `knowledge/evaluations/`. They check required facts, forbidden claims,
+and the existence of cited evidence files. They do not call an LLM or execute
+Playwright; use the existing knowledge and test commands for those concerns.
 
 If npm hits the known Windows `EPERM` realpath issue in an AI shell, use the direct Node commands documented in `knowledge/runbooks/refresh-codebase-knowledge.md`.
 
