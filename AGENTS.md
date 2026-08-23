@@ -21,6 +21,12 @@ as the primary skill. Use `pw-ui-pom` and `pw-api-pom` as supporting skills for
 the specific UI or API files identified by the knowledge layer. Users should be
 able to ask these questions naturally without naming knowledge files or commands.
 
+For new requirements, follow the product knowledge workflow: keep raw input in
+`requirements/incoming/`, create an agent proposal in
+`knowledge/drafts/product/`, require human review of business meaning, and only
+then place approved content in `knowledge/01-product/requirements/`. Do not
+create or promote business meaning automatically.
+
 ## Framework Conventions
 
 - Keep selectors in page objects. Do not add raw page selectors in specs.

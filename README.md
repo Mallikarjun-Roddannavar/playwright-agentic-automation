@@ -28,7 +28,7 @@ Most Playwright repositories show how tests run. This project also shows how an 
 - `knowledge/` acts as an LLM Wiki: it stores durable Markdown notes, deterministic code relationships, and grounded product/testing knowledge.
 - Playwright tests, Page Objects, API services, fixtures, and validation commands provide the executable evidence.
 
-The repository does not contain an autonomous AI service. An external coding agent such as Codex can use these instructions, skills, and knowledge artifacts while working in the repository.
+The repository does not contain an autonomous AI service. External coding agents such as Codex, Claude, Cline, or other compatible tools can use these instructions, skills, and knowledge artifacts while working in the repository.
 
 ## Try it in three minutes
 
@@ -53,7 +53,7 @@ The `knowledge/` directory is a repository-local, offline-first second brain for
 - Agents can query the saved knowledge, verify important claims against source and test evidence, and detect stale or conflicted knowledge after changes.
 - The bundle follows OKF, remains usable in Markdown or Obsidian, and does not require a hosted search service, vector database, or LLM runtime.
 
-The repository also includes a Codex-assisted testing second brain that inventories Playwright tests, creates evidence-backed knowledge proposals, detects stale or conflicting claims, and keeps an auditable workflow history.
+The repository also includes an agent-assisted testing second brain that inventories Playwright tests, creates evidence-backed knowledge proposals, detects stale or conflicting claims, and keeps an auditable workflow history.
 
 ## Agent workflow
 

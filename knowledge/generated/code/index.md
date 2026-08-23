@@ -115,26 +115,42 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/knowledge/CodebaseKnowledge.mjs` — Framework tooling.
 - [WorkflowLog](scripts/knowledge/workflow-log.md)
   - `scripts/knowledge/WorkflowLog.mjs` — Framework tooling.
+- [cleanPromotedKnowledge](scripts/knowledge/clean-promoted-knowledge.md)
+  - `scripts/knowledge/cleanPromotedKnowledge.mjs` — Framework tooling.
 - [evaluateAnswers](scripts/knowledge/evaluate-answers.md)
   - `scripts/knowledge/evaluateAnswers.mjs` — Framework tooling.
 - [extractTestInventory](scripts/knowledge/extract-test-inventory.md)
   - `scripts/knowledge/extractTestInventory.mjs` — Framework tooling.
+- [impactReport](scripts/knowledge/impact-report.md)
+  - `scripts/knowledge/impactReport.mjs` — Framework tooling.
 - [promoteKnowledge](scripts/knowledge/promote-knowledge.md)
   - `scripts/knowledge/promoteKnowledge.mjs` — Framework tooling.
+- [promoteManualKnowledge](scripts/knowledge/promote-manual-knowledge.md)
+  - `scripts/knowledge/promoteManualKnowledge.mjs` — Framework tooling.
+- [promoteProductKnowledge](scripts/knowledge/promote-product-knowledge.md)
+  - `scripts/knowledge/promoteProductKnowledge.mjs` — Framework tooling.
 - [proposeKnowledge](scripts/knowledge/propose-knowledge.md)
   - `scripts/knowledge/proposeKnowledge.mjs` — Framework tooling.
+- [proposeProductKnowledge](scripts/knowledge/propose-product-knowledge.md)
+  - `scripts/knowledge/proposeProductKnowledge.mjs` — Framework tooling.
+- [proposeRequirementKnowledge](scripts/knowledge/propose-requirement-knowledge.md)
+  - `scripts/knowledge/proposeRequirementKnowledge.mjs` — Framework tooling.
 - [python_ast_adapter.py](scripts/knowledge/python-ast-adapter.md)
   - `scripts/knowledge/python_ast_adapter.py` — Framework tooling.
+- [syncRelationships](scripts/knowledge/sync-relationships.md)
+  - `scripts/knowledge/syncRelationships.mjs` — Framework tooling.
 - [traceKnowledge](scripts/knowledge/trace-knowledge.md)
   - `scripts/knowledge/traceKnowledge.mjs` — Framework tooling.
+- [validateProductDrafts](scripts/knowledge/validate-product-drafts.md)
+  - `scripts/knowledge/validateProductDrafts.mjs` — Framework tooling.
+- [validateRelationships](scripts/knowledge/validate-relationships.md)
+  - `scripts/knowledge/validateRelationships.mjs` — Framework tooling.
 - [verifyKnowledge](scripts/knowledge/verify-knowledge.md)
   - `scripts/knowledge/verifyKnowledge.mjs` — Framework tooling.
 - [queryKnowledge](scripts/query-knowledge.md)
   - `scripts/queryKnowledge.mjs` — Framework tooling.
 - [validateKnowledge](scripts/validate-knowledge.md)
   - `scripts/validateKnowledge.mjs` — Framework tooling.
-- [verifyLoginKnowledge](scripts/verify-login-knowledge.md)
-  - `scripts/verifyLoginKnowledge.mjs` — Framework tooling.
 
 ## UI page objects
 

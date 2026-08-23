@@ -11,7 +11,7 @@ if (!fs.existsSync(inventoryPath)) {
   process.exitCode = 1;
 } else {
   const inventory = JSON.parse(fs.readFileSync(inventoryPath, "utf8"));
-  const draftsRoot = path.join(root, "knowledge", "drafts");
+  const draftsRoot = path.join(root, "knowledge", "drafts", "automated");
   fs.mkdirSync(draftsRoot, { recursive: true });
   for (const item of inventory.tests) {
     const slug = item.spec.replace(/\.spec\.ts$/u, "").replaceAll(/[\\/]/gu, "-");

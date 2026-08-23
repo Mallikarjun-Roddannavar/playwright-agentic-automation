@@ -35,7 +35,7 @@ Document Python 3.14 virtual-environment setup and the common Windows launcher p
 Extend the minimal product/testing knowledge model using existing folder evidence.
 
 - Difficulty: intermediate
-- Relevant files: `knowledge/product/`, `knowledge/testing/`, `scripts/verifyLoginKnowledge.mjs`
+- Relevant files: `knowledge/01-product/`, `knowledge/02-manual/`, `knowledge/03-automated/`, `scripts/knowledge/syncRelationships.mjs`
 - Suggested labels: `knowledge`, `testing`
 
 ### Add an API-service relationship query
@@ -61,7 +61,7 @@ Use an existing service and fixture to cover a meaningful missing API case while
 Define a small durable format for a real, reproducible failure pattern and validate its referenced evidence.
 
 - Difficulty: advanced
-- Relevant files: `knowledge/testing/failures/`, `.agents/skills/full-stack-incident-analyst/`, `scripts/`
+- Relevant files: `knowledge/03-automated/failures/`, `.agents/skills/full-stack-incident-analyst/`, `scripts/`
 - Suggested labels: `agentic-testing`, `knowledge`
 
 ### Add a controlled test-maintenance example
@@ -69,7 +69,7 @@ Define a small durable format for a real, reproducible failure pattern and valid
 Demonstrate how a changed locator or expected destination is detected without silently rewriting verified knowledge.
 
 - Difficulty: advanced
-- Relevant files: `docs/`, `scripts/`, `knowledge/testing/`
+- Relevant files: `docs/`, `scripts/`, `knowledge/03-automated/`
 - Suggested labels: `agentic-testing`, `test-maintenance`
 
 ### Add CI diagnostics for Playwright artifacts

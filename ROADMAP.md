@@ -41,7 +41,7 @@ The repository currently provides these implemented second-brain and AI-agent ca
 - [x] Controlled stale/conflict detection that reports when a Login behavior change may invalidate stored knowledge without silently rewriting it.
 - [x] Obsidian-compatible Markdown links, frontmatter, backlinks, and Mermaid knowledge views for agent and human navigation.
 - [x] Deterministic inventory of all Playwright UI/API specs and their static test relationships.
-- [x] Codex-assisted Markdown testing-knowledge proposals with evidence and source hashes.
+- [x] Agent-assisted Markdown testing-knowledge proposals with evidence and source hashes.
 - [x] Verification and promotion gates that keep semantic candidates separate from approved knowledge.
 - [x] Auditable workflow tracing for inventory, proposal, verification, and promotion stages.
 

@@ -17,7 +17,8 @@ Run the smallest relevant checks:
 node ./scripts/checkNamingConventions.mjs
 node ./scripts/buildKnowledge.mjs --check
 node ./scripts/validateKnowledge.mjs
-node ./scripts/verifyLoginKnowledge.mjs
+node ./scripts/knowledge/syncRelationships.mjs
+node ./scripts/knowledge/validateRelationships.mjs
 npm run lint
 npm run typecheck
 npm run test:list

@@ -65,12 +65,164 @@ The repository does not call an LLM directly. When asked to build testing knowle
 
 1. Run `npm run knowledge:inventory` to refresh the deterministic test inventory.
 2. Read `knowledge/test-inventory.json` and relevant generated graph concepts.
-3. Create or refresh Markdown proposals under `knowledge/drafts/` without overwriting approved notes.
+3. Create or refresh Markdown proposals under the stage-specific draft directory
+   `knowledge/drafts/automated/` without overwriting approved notes. Automated
+   test knowledge must never be placed directly under `knowledge/drafts/`.
 4. Run `npm run knowledge:verify-all` and report `GROUNDED`, `STALE`, or `REVIEW_REQUIRED` results.
 5. Resolve semantic naming and contradiction questions with the user; do not silently rewrite approved knowledge.
 6. Run `npm run knowledge:promote` only for evidence-supported proposals.
 
 The agent may propose meaning, but only deterministic repository checks may assign trusted verification. `knowledge/conflicts/` records unresolved evidence conflicts.
+
+## Build Product Knowledge From Requirements
+
+Use this workflow when a new requirement is provided:
+
+```text
+requirements/incoming/
+        ↓
+knowledge/drafts/product/
+        ↓ human review
+knowledge/01-product/requirements/
+```
+
+1. Read the raw requirement from `requirements/incoming/` and preserve its source meaning.
+2. Run `npm run knowledge:product:propose -- --file=<incoming requirement>` to create a draft.
+3. Complete the draft with a feature overview, business requirement, acceptance criteria, expected behavior, business rules, and ambiguities.
+4. Keep the draft marked `status: draft` and `review_status: pending`.
+5. Ask the human to review business meaning, missing rules, acceptance criteria, and conflicts. Do not infer approval from valid Markdown, YAML, or source-file existence.
+6. Run `npm run knowledge:product:validate` to verify the draft and its raw requirement evidence.
+7. Only after explicit human approval run
+   `npm run knowledge:product:promote`. The command promotes the requirement,
+   archives the reviewed draft, removes duplicated product text from active
+   downstream notes, synchronizes relationships, and runs validation.
+
+After approved knowledge is promoted and validated, the promotion command moves
+the original reviewed draft to `knowledge/archive/product/`. Do not archive a
+draft before explicit approval and successful validation. Archived drafts
+preserve the proposal and review history but are not active knowledge sources.
+
+After promoting any approved product or automated knowledge, do not stop at the
+file move. The promotion workflow automatically refreshes and verifies the
+generated bundle. If promotion is performed manually or the automatic refresh
+needs to be repeated, run:
+
+```text
+npm run knowledge:build
+npm run knowledge:validate
+npm run knowledge:check
+```
+
+Report the promoted file, generated artifacts refreshed, validation result, and
+freshness result separately. A promoted Markdown file does not by itself prove
+that generated knowledge is current.
+
+After promoting a requirement's product, manual, or automated knowledge, update
+`knowledge/relationships.json` with the supported semantic links. Connect the
+requirement to its approved manual and automated knowledge and to any directly
+supported evidence; do not invent relationships from filename similarity alone.
+
+Before adding any relationship, verify that its `from` and `to` identifiers
+resolve to an existing requirement, knowledge note, test, source file, or other
+registered graph target. `EXPECTED_BEHAVIOR` is optional: add it only when a
+real expected-behavior note exists. Never create a target identifier merely
+because its name sounds appropriate. If a target is missing, report the gap
+instead of adding a dangling relationship.
+Then run:
+
+```text
+npm run knowledge:relationships:sync
+npm run knowledge:relationships
+npm run knowledge:validate
+npm run knowledge:check
+```
+
+Report missing targets, stale evidence, or conflicting relationships separately.
+A schema-valid relationship file is not sufficient; every active relationship
+must also resolve to an existing target with direct supporting evidence.
+
+Promotion workflows run relationship synchronization automatically. Use the
+same generic workflow for every requirement; do not create feature-specific
+verification scripts or rely on Login-only checks.
+
+Lifecycle state is determined by frontmatter and location, not by the identifier
+text. Active promoted notes must use stable IDs such as `manual-REQ-FEATURE-001`
+or `automated-REQ-FEATURE-001`; only files under `knowledge/drafts/` may use
+`draft-*` IDs. Do not report an active note as a draft merely because an old ID
+contains the word `draft`.
+
+Do not create manual-test knowledge, automated-test knowledge, or Playwright
+changes as part of product-draft creation unless the user explicitly starts the
+next workflow stage. Product requirements are the source of business meaning;
+application code and tests are supporting evidence, not replacements for human
+review.
+
+## Explicit Product-to-Manual-Test Flow
+
+Manual-test knowledge is a separate, user-initiated stage after product
+approval. Follow this flow explicitly:
+
+```text
+approved product requirement
+        ↓
+knowledge/drafts/manual/
+        ↓ human review and explicit approval
+knowledge/02-manual/
+```
+
+When the user asks to create manual-test knowledge for an approved requirement:
+
+1. Use the approved requirement as the source of business meaning and inspect
+   implementation evidence only to ground the proposed scenarios.
+2. Run `npm run knowledge:manual:propose -- --requirement=REQ-FEATURE-001`
+   to create one requirement-focused proposal under
+   `knowledge/drafts/manual/`. Repeat for each approved requirement; do not use
+   the old per-spec proposal generator for this workflow.
+3. Validate the proposals and automatically stop for human review; the user
+   does not need to request a stop. Draft creation does not imply approval or
+   promotion.
+4. Promote proposals into `knowledge/02-manual/` only after the user gives
+   explicit approval (for example, “Approve and promote the manual tests”).
+
+After successful promotion, move the original reviewed draft to
+`knowledge/archive/manual/`. Keep the approved note as the active source and
+retain the archived draft for audit history.
+
+Do not create or modify Playwright tests, automated-test knowledge, or approved
+manual-test knowledge during the draft stage. If the user has not explicitly
+started this manual-test stage, stop after product-requirement processing.
+
+## Explicit Automated-Test Knowledge Flow
+
+Automated-test knowledge is a separate, user-initiated stage after product
+requirements are approved. Store proposals at:
+
+```text
+knowledge/drafts/automated/
+        ↓ human review and explicit approval
+knowledge/03-automated/
+```
+
+When the user asks to create automated-test knowledge for a requirement:
+
+1. Use the approved product requirement for business meaning and the
+   deterministic test inventory plus source specs for implementation evidence.
+2. Run `npm run knowledge:automated:propose -- --requirement=REQ-FEATURE-001`
+   to create one requirement-focused proposal under
+   `knowledge/drafts/automated/`. Repeat for each approved requirement; do not
+   use the old per-spec proposal generator for this workflow.
+3. Link the proposal to the requirement and list covered scenarios, fixtures,
+   Page Objects/services, assertions, and explicit coverage gaps.
+4. Mark the proposal `status: draft`; use `verification_status: grounded` only
+   when all referenced evidence exists, and use `feature_status: review_required`
+   until semantic coverage is reviewed.
+5. Stop for human review. Promote into `knowledge/03-automated/` only after
+   explicit approval; do not treat deterministic verification as semantic
+   approval.
+
+After successful promotion and refresh, move the original reviewed draft to
+`knowledge/archive/automated/`. Never archive a draft merely because it is
+grounded; explicit approval and successful promotion are required.
 
 ## Windows Shell Fallback
 

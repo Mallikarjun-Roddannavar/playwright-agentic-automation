@@ -39,11 +39,11 @@ The agent verifies the important claims against:
 ```bash
 node ./scripts/buildKnowledge.mjs --check
 node ./scripts/validateKnowledge.mjs
-node ./scripts/verifyLoginKnowledge.mjs
+node ./scripts/knowledge/syncRelationships.mjs
 npm run test:list
 ```
 
-The Login verifier reports `VERIFIED` only when independent source and test evidence still agrees. If the Login Page Object stops returning `HomePage` or the expected assertion disappears, it reports `STALE or CONFLICTED` and leaves the saved knowledge unchanged.
+Relationship synchronization connects promoted requirement knowledge to existing manual and automated notes. Validation reports unresolved or stale relationships without rewriting approved knowledge.
 
 ## Batch testing-knowledge workflow
 

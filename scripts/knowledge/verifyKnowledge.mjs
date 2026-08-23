@@ -9,7 +9,7 @@ const graph = JSON.parse(
   fs.readFileSync(path.join(root, "knowledge", "generated", "code-graph.json"), "utf8")
 );
 const nodes = new Set(graph.nodes.map((node) => node.path).filter(Boolean));
-const draftsRoot = path.join(root, "knowledge", "drafts");
+const draftsRoot = path.join(root, "knowledge", "drafts", "automated");
 const conflictsRoot = path.join(root, "knowledge", "conflicts");
 const files = fs.existsSync(draftsRoot)
   ? fs.readdirSync(draftsRoot).filter((file) => file.endsWith(".md"))
@@ -17,7 +17,7 @@ const files = fs.existsSync(draftsRoot)
 const results = [];
 
 for (const filename of files) {
-  const relative = `knowledge/drafts/${filename}`;
+  const relative = `knowledge/drafts/automated/${filename}`;
   const draftPath = path.join(draftsRoot, filename);
   const content = fs.readFileSync(draftPath, "utf8");
   const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/u);

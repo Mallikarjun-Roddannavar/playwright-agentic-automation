@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "36c13329da7c1f0521a9d05c467217fbc32f9c073ab03e578542defa19858050",
+  "sourceDigest": "7ac8f1b16a65dc8bb16c3bc0ac3d420e7a3c0d64b826adb4e6c246731b66db1d",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-21T07:48:08.445Z",
+    "at": "2026-08-23T04:14:44.289Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -193,7 +193,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "d8994742e2e4ff671fad89346e504b68af7575040bf6c77b112b162caa72c705",
+      "sha256": "f54dc529cc06dc758875e6be555a94378f2086fe6917e93ee0ea32ad01458f61",
       "category": "configuration"
     },
     {
@@ -222,6 +222,11 @@
       "category": "tooling"
     },
     {
+      "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "sha256": "bc88df8adb2e733613ba14c181860a59d8d3fe93f5be2225dc6680283a1dfaf9",
+      "category": "tooling"
+    },
+    {
       "path": "scripts/knowledge/evaluateAnswers.mjs",
       "sha256": "3e40fd7b1c93c92fe11b1ca9571c3b34c2daed2a461dd332b97027fd984659eb",
       "category": "tooling"
@@ -232,13 +237,38 @@
       "category": "tooling"
     },
     {
+      "path": "scripts/knowledge/impactReport.mjs",
+      "sha256": "b13e13e08d60ec5894e83bd70501aa4645b0014d46121822ae81eec8123b6ddd",
+      "category": "tooling"
+    },
+    {
       "path": "scripts/knowledge/promoteKnowledge.mjs",
-      "sha256": "5b110a226d3ae368b3bc2899fd0a3c29d87a7af0860fa08f4b28a5a68db34841",
+      "sha256": "c7299a099d60bb028ebc8d3dcb994418ffcab105e96cfad2287d9de4b4283279",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/knowledge/promoteManualKnowledge.mjs",
+      "sha256": "9fd854c05d42a7dfbe7785d71dee45c99f56831eae3bcb9d24b7a1bc891b5986",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/knowledge/promoteProductKnowledge.mjs",
+      "sha256": "a01ce77ea7ba2cfc80d7f483ca5658accb7b41367cb905d9b3d948b3e178b985",
       "category": "tooling"
     },
     {
       "path": "scripts/knowledge/proposeKnowledge.mjs",
-      "sha256": "2845d6ebee4a2c79a0a808122fddb2106579d4aa698673c489ea68d104ea16c2",
+      "sha256": "d06d9ef0a9df7790bc06e1088fe8a6ee1a4484842993103411bc7d0aa39bc481",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/knowledge/proposeProductKnowledge.mjs",
+      "sha256": "dcb742d338e1cc67b360760988049ca10d49ab1f1121e97fdda278250fde8447",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "sha256": "af8cf8b33994b78b3bc7ce65dd09d4019e4b701f66bad26a35585b613df3d3fa",
       "category": "tooling"
     },
     {
@@ -247,28 +277,38 @@
       "category": "tooling"
     },
     {
+      "path": "scripts/knowledge/syncRelationships.mjs",
+      "sha256": "2ffa5eff29db33ecd8f8a5232ff40601f46ab8d0604b4cde5620855ee648be10",
+      "category": "tooling"
+    },
+    {
       "path": "scripts/knowledge/traceKnowledge.mjs",
       "sha256": "e9d4e85162c335d6d73146acddcde5f11f9cec772b34fab027ee2e96aa84b2a3",
       "category": "tooling"
     },
     {
+      "path": "scripts/knowledge/validateProductDrafts.mjs",
+      "sha256": "c91fae9154b1dd123ca28f96f1609917cc112f8d2148cf4d63bd78bd63ef86c9",
+      "category": "tooling"
+    },
+    {
+      "path": "scripts/knowledge/validateRelationships.mjs",
+      "sha256": "e5ef75482d91cfeb3d23ed190b0dabacbc15f172f8e86440f7a20432ec7a1dd0",
+      "category": "tooling"
+    },
+    {
       "path": "scripts/knowledge/verifyKnowledge.mjs",
-      "sha256": "553345b614260f45c04753d2cc0520e8f771930d11ed5ce2eaba895ab570a191",
+      "sha256": "653db3e97636e3792e19b1ab8e2d7285e9cb2955dba9f72a16ec5e2c3e3286d4",
       "category": "tooling"
     },
     {
       "path": "scripts/queryKnowledge.mjs",
-      "sha256": "8949af260998add6f4c5ac047f8da771321f315dd8d63f74ea1da6acdd53b734",
+      "sha256": "354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b",
       "category": "tooling"
     },
     {
       "path": "scripts/validateKnowledge.mjs",
       "sha256": "6f5753e3ccea012bb0747175d3104c597bdc3b51b9f7508f85af57168e079d6e",
-      "category": "tooling"
-    },
-    {
-      "path": "scripts/verifyLoginKnowledge.mjs",
-      "sha256": "8a8ca3d350804b020467fe7b405aa6348aa78977a88d766dda4ba29444c43df5",
       "category": "tooling"
     },
     {
@@ -795,7 +835,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "d8994742e2e4ff671fad89346e504b68af7575040bf6c77b112b162caa72c705"
+      "sourceHash": "f54dc529cc06dc758875e6be555a94378f2086fe6917e93ee0ea32ad01458f61"
     },
     {
       "id": "file:playwright.config.ts",
@@ -858,6 +898,18 @@
       "sourceHash": "80e6b05ee10d199c7dd35a0347b7cbc86a1eee18d708fab238eb32134898db15"
     },
     {
+      "id": "file:scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "bc88df8adb2e733613ba14c181860a59d8d3fe93f5be2225dc6680283a1dfaf9"
+    },
+    {
       "id": "file:scripts/knowledge/evaluateAnswers.mjs",
       "kind": "file",
       "label": "scripts/knowledge/evaluateAnswers.mjs",
@@ -882,6 +934,18 @@
       "sourceHash": "e614c6758dbae9fcdcf14ef2b0342215428623000d8d1765f32b3666a67eb182"
     },
     {
+      "id": "file:scripts/knowledge/impactReport.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/impactReport.mjs",
+      "path": "scripts/knowledge/impactReport.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "b13e13e08d60ec5894e83bd70501aa4645b0014d46121822ae81eec8123b6ddd"
+    },
+    {
       "id": "file:scripts/knowledge/promoteKnowledge.mjs",
       "kind": "file",
       "label": "scripts/knowledge/promoteKnowledge.mjs",
@@ -891,7 +955,31 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "5b110a226d3ae368b3bc2899fd0a3c29d87a7af0860fa08f4b28a5a68db34841"
+      "sourceHash": "c7299a099d60bb028ebc8d3dcb994418ffcab105e96cfad2287d9de4b4283279"
+    },
+    {
+      "id": "file:scripts/knowledge/promoteManualKnowledge.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/promoteManualKnowledge.mjs",
+      "path": "scripts/knowledge/promoteManualKnowledge.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "9fd854c05d42a7dfbe7785d71dee45c99f56831eae3bcb9d24b7a1bc891b5986"
+    },
+    {
+      "id": "file:scripts/knowledge/promoteProductKnowledge.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/promoteProductKnowledge.mjs",
+      "path": "scripts/knowledge/promoteProductKnowledge.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "a01ce77ea7ba2cfc80d7f483ca5658accb7b41367cb905d9b3d948b3e178b985"
     },
     {
       "id": "file:scripts/knowledge/proposeKnowledge.mjs",
@@ -903,7 +991,31 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "2845d6ebee4a2c79a0a808122fddb2106579d4aa698673c489ea68d104ea16c2"
+      "sourceHash": "d06d9ef0a9df7790bc06e1088fe8a6ee1a4484842993103411bc7d0aa39bc481"
+    },
+    {
+      "id": "file:scripts/knowledge/proposeProductKnowledge.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/proposeProductKnowledge.mjs",
+      "path": "scripts/knowledge/proposeProductKnowledge.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "dcb742d338e1cc67b360760988049ca10d49ab1f1121e97fdda278250fde8447"
+    },
+    {
+      "id": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "af8cf8b33994b78b3bc7ce65dd09d4019e4b701f66bad26a35585b613df3d3fa"
     },
     {
       "id": "file:scripts/knowledge/python_ast_adapter.py",
@@ -918,6 +1030,18 @@
       "sourceHash": "6ec36c4406995b1483b0f6d7145a13a08b77ccce6202cf58ca3ac23891212607"
     },
     {
+      "id": "file:scripts/knowledge/syncRelationships.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/syncRelationships.mjs",
+      "path": "scripts/knowledge/syncRelationships.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "2ffa5eff29db33ecd8f8a5232ff40601f46ab8d0604b4cde5620855ee648be10"
+    },
+    {
       "id": "file:scripts/knowledge/traceKnowledge.mjs",
       "kind": "file",
       "label": "scripts/knowledge/traceKnowledge.mjs",
@@ -930,6 +1054,30 @@
       "sourceHash": "e9d4e85162c335d6d73146acddcde5f11f9cec772b34fab027ee2e96aa84b2a3"
     },
     {
+      "id": "file:scripts/knowledge/validateProductDrafts.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/validateProductDrafts.mjs",
+      "path": "scripts/knowledge/validateProductDrafts.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "c91fae9154b1dd123ca28f96f1609917cc112f8d2148cf4d63bd78bd63ef86c9"
+    },
+    {
+      "id": "file:scripts/knowledge/validateRelationships.mjs",
+      "kind": "file",
+      "label": "scripts/knowledge/validateRelationships.mjs",
+      "path": "scripts/knowledge/validateRelationships.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "e5ef75482d91cfeb3d23ed190b0dabacbc15f172f8e86440f7a20432ec7a1dd0"
+    },
+    {
       "id": "file:scripts/knowledge/verifyKnowledge.mjs",
       "kind": "file",
       "label": "scripts/knowledge/verifyKnowledge.mjs",
@@ -939,7 +1087,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "553345b614260f45c04753d2cc0520e8f771930d11ed5ce2eaba895ab570a191"
+      "sourceHash": "653db3e97636e3792e19b1ab8e2d7285e9cb2955dba9f72a16ec5e2c3e3286d4"
     },
     {
       "id": "file:scripts/queryKnowledge.mjs",
@@ -951,7 +1099,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "8949af260998add6f4c5ac047f8da771321f315dd8d63f74ea1da6acdd53b734"
+      "sourceHash": "354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b"
     },
     {
       "id": "file:scripts/validateKnowledge.mjs",
@@ -964,18 +1112,6 @@
         "tooling"
       ],
       "sourceHash": "6f5753e3ccea012bb0747175d3104c597bdc3b51b9f7508f85af57168e079d6e"
-    },
-    {
-      "id": "file:scripts/verifyLoginKnowledge.mjs",
-      "kind": "file",
-      "label": "scripts/verifyLoginKnowledge.mjs",
-      "path": "scripts/verifyLoginKnowledge.mjs",
-      "category": "tooling",
-      "tags": [
-        "mjs",
-        "tooling"
-      ],
-      "sourceHash": "8a8ca3d350804b020467fe7b405aa6348aa78977a88d766dda4ba29444c43df5"
     },
     {
       "id": "file:tsconfig.json",
@@ -4630,6 +4766,20 @@
       ]
     },
     {
+      "id": "symbol:scripts/knowledge/cleanPromotedKnowledge.mjs#walk",
+      "kind": "function",
+      "label": "walk",
+      "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 27,
+      "endLine": 34,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
       "id": "symbol:scripts/knowledge/evaluateAnswers.mjs#evaluateCase",
       "kind": "function",
       "label": "evaluateCase",
@@ -4756,13 +4906,97 @@
       ]
     },
     {
+      "id": "symbol:scripts/knowledge/proposeRequirementKnowledge.mjs#automatedDocument",
+      "kind": "function",
+      "label": "automatedDocument",
+      "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 84,
+      "endLine": 121,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/proposeRequirementKnowledge.mjs#manualDocument",
+      "kind": "function",
+      "label": "manualDocument",
+      "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 45,
+      "endLine": 82,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/proposeRequirementKnowledge.mjs#walk",
+      "kind": "function",
+      "label": "walk",
+      "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "category": "tooling",
+      "startLine": 123,
+      "endLine": 130,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/syncRelationships.mjs#toRepoPath",
+      "kind": "function",
+      "label": "toRepoPath",
+      "path": "scripts/knowledge/syncRelationships.mjs",
+      "category": "tooling",
+      "startLine": 61,
+      "endLine": 61,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/syncRelationships.mjs#walk",
+      "kind": "function",
+      "label": "walk",
+      "path": "scripts/knowledge/syncRelationships.mjs",
+      "category": "tooling",
+      "startLine": 62,
+      "endLine": 69,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/knowledge/validateRelationships.mjs#walk",
+      "kind": "function",
+      "label": "walk",
+      "path": "scripts/knowledge/validateRelationships.mjs",
+      "category": "tooling",
+      "startLine": 17,
+      "endLine": 24,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
       "id": "symbol:scripts/queryKnowledge.mjs#edgeSearchText",
       "kind": "function",
       "label": "edgeSearchText",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 71,
-      "endLine": 75,
+      "startLine": 72,
+      "endLine": 76,
       "exported": false,
       "tags": [
         "function",
@@ -4775,8 +5009,8 @@
       "label": "matchesTerms",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 66,
-      "endLine": 69,
+      "startLine": 67,
+      "endLine": 70,
       "exported": false,
       "tags": [
         "function",
@@ -4789,8 +5023,8 @@
       "label": "parseArguments",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 14,
-      "endLine": 42,
+      "startLine": 12,
+      "endLine": 40,
       "exported": false,
       "tags": [
         "function",
@@ -4798,27 +5032,13 @@
       ]
     },
     {
-      "id": "symbol:scripts/queryKnowledge.mjs#queryLoginKnowledge",
+      "id": "symbol:scripts/queryKnowledge.mjs#queryKnowledgePages",
       "kind": "function",
-      "label": "queryLoginKnowledge",
+      "label": "queryKnowledgePages",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 50,
-      "endLine": 64,
-      "exported": false,
-      "tags": [
-        "function",
-        "tooling"
-      ]
-    },
-    {
-      "id": "symbol:scripts/queryKnowledge.mjs#readConcept",
-      "kind": "function",
-      "label": "readConcept",
-      "path": "scripts/queryKnowledge.mjs",
-      "category": "tooling",
-      "startLine": 44,
-      "endLine": 48,
+      "startLine": 42,
+      "endLine": 65,
       "exported": false,
       "tags": [
         "function",
@@ -4831,8 +5051,8 @@
       "label": "usage",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 8,
-      "endLine": 12,
+      "startLine": 6,
+      "endLine": 10,
       "exported": false,
       "tags": [
         "function",
@@ -5862,6 +6082,20 @@
       ]
     },
     {
+      "id": "edge:069419e49c2ea96a",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/validateProductDrafts.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateProductDrafts.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:06f6113d23869449",
       "relation": "CONTAINS",
       "from": "file:app/backend/main.py",
@@ -5871,6 +6105,19 @@
         {
           "path": "app/backend/main.py",
           "line": 73
+        }
+      ]
+    },
+    {
+      "id": "edge:06f85d415b2317d8",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/syncRelationships.mjs",
+      "to": "symbol:scripts/knowledge/syncRelationships.mjs#toRepoPath",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/syncRelationships.mjs",
+          "line": 61
         }
       ]
     },
@@ -6422,6 +6669,20 @@
       ]
     },
     {
+      "id": "edge:13537d09d7d6596d",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+          "line": 3,
+          "detail": "node:process"
+        }
+      ]
+    },
+    {
       "id": "edge:13639abd43180688",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -6470,6 +6731,20 @@
         {
           "path": "scripts/checkNamingConventions.mjs",
           "line": 129
+        }
+      ]
+    },
+    {
+      "id": "edge:143f9538308c6e30",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/impactReport.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/impactReport.mjs",
+          "line": 3,
+          "detail": "node:process"
         }
       ]
     },
@@ -6805,6 +7080,20 @@
       ]
     },
     {
+      "id": "edge:1da6c230de45ce06",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/validateProductDrafts.mjs",
+      "to": "package:js-yaml",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateProductDrafts.mjs",
+          "line": 4,
+          "detail": "js-yaml"
+        }
+      ]
+    },
+    {
       "id": "edge:1e6d8d39b0b903c8",
       "relation": "NAVIGATES_TO",
       "from": "symbol:ui/pages/HomePage.ts#HomePage",
@@ -7083,6 +7372,20 @@
         {
           "path": "utils/fixtures/TestFixtures.ts",
           "line": 124
+        }
+      ]
+    },
+    {
+      "id": "edge:24c7cede24aa7935",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/syncRelationships.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/syncRelationships.mjs",
+          "line": 3,
+          "detail": "node:process"
         }
       ]
     },
@@ -7637,6 +7940,20 @@
       ]
     },
     {
+      "id": "edge:2ecd20504c2396c7",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteProductKnowledge.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteProductKnowledge.mjs",
+          "line": 3,
+          "detail": "node:process"
+        }
+      ]
+    },
+    {
       "id": "edge:2f636226bb606308",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/context/AuthContext.tsx",
@@ -7646,19 +7963,6 @@
         {
           "path": "app/frontend/src/context/AuthContext.tsx",
           "line": 39
-        }
-      ]
-    },
-    {
-      "id": "edge:2f6d55ec3a056b4b",
-      "relation": "CONTAINS",
-      "from": "file:scripts/queryKnowledge.mjs",
-      "to": "symbol:scripts/queryKnowledge.mjs#queryLoginKnowledge",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/queryKnowledge.mjs",
-          "line": 50
         }
       ]
     },
@@ -7742,20 +8046,6 @@
       ]
     },
     {
-      "id": "edge:3108859622113386",
-      "relation": "IMPORTS_PACKAGE",
-      "from": "file:scripts/verifyLoginKnowledge.mjs",
-      "to": "package:node:path",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/verifyLoginKnowledge.mjs",
-          "line": 2,
-          "detail": "node:path"
-        }
-      ]
-    },
-    {
       "id": "edge:313641860ac39ca5",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:app/frontend/src/pages/FoldersPage.tsx",
@@ -7779,6 +8069,20 @@
         {
           "path": "utils/common/Logger.ts",
           "line": 1
+        }
+      ]
+    },
+    {
+      "id": "edge:31b726a671225701",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/syncRelationships.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/syncRelationships.mjs",
+          "line": 2,
+          "detail": "node:path"
         }
       ]
     },
@@ -7825,6 +8129,19 @@
           "path": "scripts/knowledge/verifyKnowledge.mjs",
           "line": 5,
           "detail": "./WorkflowLog.mjs"
+        }
+      ]
+    },
+    {
+      "id": "edge:3436f442da34f081",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/promoteProductKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteProductKnowledge.mjs",
+          "line": 1
         }
       ]
     },
@@ -7892,20 +8209,6 @@
         {
           "path": "app/backend/main.py",
           "line": 175
-        }
-      ]
-    },
-    {
-      "id": "edge:3699611d1ea8779b",
-      "relation": "IMPORTS_PACKAGE",
-      "from": "file:scripts/queryKnowledge.mjs",
-      "to": "package:js-yaml",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/queryKnowledge.mjs",
-          "line": 4,
-          "detail": "js-yaml"
         }
       ]
     },
@@ -8145,6 +8448,19 @@
         {
           "path": "api/services/BaseApiService.ts",
           "line": 5
+        }
+      ]
+    },
+    {
+      "id": "edge:3a874c4f15b5d89f",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/proposeProductKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeProductKnowledge.mjs",
+          "line": 1
         }
       ]
     },
@@ -8548,6 +8864,20 @@
       ]
     },
     {
+      "id": "edge:470e2deaab03a702",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:472d02fb8d2cd6d0",
       "relation": "INSTANTIATES",
       "from": "file:api/specs/files.spec.ts",
@@ -8710,6 +9040,20 @@
       ]
     },
     {
+      "id": "edge:4bd55e94ab0500e9",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/proposeProductKnowledge.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeProductKnowledge.mjs",
+          "line": 1,
+          "detail": "node:fs"
+        }
+      ]
+    },
+    {
       "id": "edge:4bfc17faa6b9e681",
       "relation": "IMPORTS",
       "from": "file:scripts/queryKnowledge.mjs",
@@ -8718,7 +9062,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 6,
+          "line": 4,
           "detail": "./knowledge/CodebaseKnowledge.mjs"
         }
       ]
@@ -8856,6 +9200,33 @@
       ]
     },
     {
+      "id": "edge:4ef8e4b69512e0a6",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteProductKnowledge.mjs",
+      "to": "package:node:child_process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteProductKnowledge.mjs",
+          "line": 4,
+          "detail": "node:child_process"
+        }
+      ]
+    },
+    {
+      "id": "edge:4f2f3974032c40a8",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/promoteManualKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteManualKnowledge.mjs",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:4f4eb2bd4a8edd13",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:app/backend/main.py#rename_folder",
@@ -8959,6 +9330,19 @@
           "path": "app/frontend/src/pages/LoginPage.tsx",
           "line": 6,
           "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:50c662f3eb84c827",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/validateProductDrafts.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateProductDrafts.mjs",
+          "line": 1
         }
       ]
     },
@@ -9197,7 +9581,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 66
+          "line": 67
         }
       ]
     },
@@ -9498,6 +9882,19 @@
       ]
     },
     {
+      "id": "edge:5bc526ae98ae85f6",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/syncRelationships.mjs",
+      "to": "symbol:scripts/knowledge/syncRelationships.mjs#walk",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/syncRelationships.mjs",
+          "line": 62
+        }
+      ]
+    },
+    {
       "id": "edge:5c148556eb159564",
       "relation": "INSTANTIATES",
       "from": "file:ui/specs/multi-role.spec.ts",
@@ -9782,19 +10179,6 @@
       ]
     },
     {
-      "id": "edge:62f44d0d8a5e685f",
-      "relation": "CONTAINS",
-      "from": "file:scripts/queryKnowledge.mjs",
-      "to": "symbol:scripts/queryKnowledge.mjs#readConcept",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/queryKnowledge.mjs",
-          "line": 44
-        }
-      ]
-    },
-    {
       "id": "edge:638ec513060e446f",
       "relation": "CONTAINS",
       "from": "symbol:ui/pages/FoldersPage.ts#FoldersPage",
@@ -9817,6 +10201,20 @@
         {
           "path": "ui/pages/LoginPage.ts",
           "line": 30
+        }
+      ]
+    },
+    {
+      "id": "edge:63d53e45e7f4b198",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/impactReport.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/impactReport.mjs",
+          "line": 2,
+          "detail": "node:path"
         }
       ]
     },
@@ -9856,6 +10254,19 @@
         {
           "path": "app/backend/main.py",
           "line": 263
+        }
+      ]
+    },
+    {
+      "id": "edge:65c2720ae4e4578f",
+      "relation": "CONTAINS",
+      "from": "file:scripts/queryKnowledge.mjs",
+      "to": "symbol:scripts/queryKnowledge.mjs#queryKnowledgePages",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/queryKnowledge.mjs",
+          "line": 42
         }
       ]
     },
@@ -10114,6 +10525,20 @@
       ]
     },
     {
+      "id": "edge:69f242674afa4e31",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteManualKnowledge.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteManualKnowledge.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:6a1be413bd201099",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -10189,6 +10614,19 @@
           "path": "app/frontend/src/pages/FoldersPage.tsx",
           "line": 9,
           "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:6c68ecfcc5f0c4ee",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "to": "symbol:scripts/knowledge/cleanPromotedKnowledge.mjs#walk",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+          "line": 27
         }
       ]
     },
@@ -10293,6 +10731,20 @@
       ]
     },
     {
+      "id": "edge:6ee45421d5c69d72",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteProductKnowledge.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteProductKnowledge.mjs",
+          "line": 1,
+          "detail": "node:fs"
+        }
+      ]
+    },
+    {
       "id": "edge:6f29975e828f3727",
       "relation": "EXPORTS",
       "from": "file:app/frontend/src/types.ts",
@@ -10355,6 +10807,20 @@
           "path": "scripts/knowledge/proposeKnowledge.mjs",
           "line": 2,
           "detail": "node:path"
+        }
+      ]
+    },
+    {
+      "id": "edge:6fbcf374f0e8fbf2",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/validateRelationships.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateRelationships.mjs",
+          "line": 1,
+          "detail": "node:fs"
         }
       ]
     },
@@ -10460,6 +10926,20 @@
       "evidence": [
         {
           "path": "scripts/knowledge/WorkflowLog.mjs",
+          "line": 3,
+          "detail": "node:process"
+        }
+      ]
+    },
+    {
+      "id": "edge:7229414c09d08515",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteManualKnowledge.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteManualKnowledge.mjs",
           "line": 3,
           "detail": "node:process"
         }
@@ -10878,6 +11358,20 @@
       ]
     },
     {
+      "id": "edge:7ca7cea2ee537ffa",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/proposeProductKnowledge.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeProductKnowledge.mjs",
+          "line": 3,
+          "detail": "node:process"
+        }
+      ]
+    },
+    {
       "id": "edge:7cb8a591a0d4e861",
       "relation": "CONTAINS",
       "from": "file:app/backend/auth.py",
@@ -10913,6 +11407,19 @@
         {
           "path": "ui/pages/LoginPage.ts",
           "line": 42
+        }
+      ]
+    },
+    {
+      "id": "edge:7dca5572770d9fa5",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/validateRelationships.mjs",
+      "to": "symbol:scripts/knowledge/validateRelationships.mjs#walk",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateRelationships.mjs",
+          "line": 17
         }
       ]
     },
@@ -10967,6 +11474,33 @@
           "path": "api/specs/rbac.spec.ts",
           "line": 2,
           "detail": "@utils/common/CommonUtils"
+        }
+      ]
+    },
+    {
+      "id": "edge:7e94956020f1dc63",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
+      "id": "edge:7f2d81826bdc57d4",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "to": "symbol:scripts/knowledge/proposeRequirementKnowledge.mjs#manualDocument",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+          "line": 45
         }
       ]
     },
@@ -11064,6 +11598,20 @@
       ]
     },
     {
+      "id": "edge:835c182bb7f130c4",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/validateRelationships.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateRelationships.mjs",
+          "line": 3,
+          "detail": "node:process"
+        }
+      ]
+    },
+    {
       "id": "edge:842dfaf7e86a540f",
       "relation": "CONTAINS",
       "from": "file:utils/common/CustomReporter.ts",
@@ -11073,6 +11621,20 @@
         {
           "path": "utils/common/CustomReporter.ts",
           "line": 35
+        }
+      ]
+    },
+    {
+      "id": "edge:843918b30a71f5bf",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/syncRelationships.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/syncRelationships.mjs",
+          "line": 1,
+          "detail": "node:fs"
         }
       ]
     },
@@ -11247,6 +11809,19 @@
           "path": "app/frontend/src/App.tsx",
           "line": 9,
           "detail": "./pages/PreferencesPage"
+        }
+      ]
+    },
+    {
+      "id": "edge:88eb5dc1614bf5d8",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+          "line": 1
         }
       ]
     },
@@ -11664,20 +12239,6 @@
       ]
     },
     {
-      "id": "edge:930d9e479fd96272",
-      "relation": "IMPORTS_PACKAGE",
-      "from": "file:scripts/verifyLoginKnowledge.mjs",
-      "to": "package:node:fs",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/verifyLoginKnowledge.mjs",
-          "line": 1,
-          "detail": "node:fs"
-        }
-      ]
-    },
-    {
       "id": "edge:93c74c74563f4d50",
       "relation": "USES_PAGE",
       "from": "symbol:ui/specs/files.spec.ts#expectRoleCanUploadFile",
@@ -11796,6 +12357,19 @@
       ]
     },
     {
+      "id": "edge:97600c92ec9dad83",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "to": "symbol:scripts/knowledge/proposeRequirementKnowledge.mjs#walk",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+          "line": 123
+        }
+      ]
+    },
+    {
       "id": "edge:976c5e8b04b52b6a",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/evaluateAnswers.mjs",
@@ -11837,6 +12411,34 @@
       ]
     },
     {
+      "id": "edge:97d3898c0e3a45ad",
+      "relation": "IMPORTS",
+      "from": "file:scripts/knowledge/proposeProductKnowledge.mjs",
+      "to": "file:scripts/knowledge/WorkflowLog.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeProductKnowledge.mjs",
+          "line": 4,
+          "detail": "./WorkflowLog.mjs"
+        }
+      ]
+    },
+    {
+      "id": "edge:97d584a38cac1a00",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/validateProductDrafts.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateProductDrafts.mjs",
+          "line": 1,
+          "detail": "node:fs"
+        }
+      ]
+    },
+    {
       "id": "edge:981f11c1e4793e04",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:app/backend/main.py#delete_folder",
@@ -11846,20 +12448,6 @@
         {
           "path": "app/backend/main.py",
           "line": 302
-        }
-      ]
-    },
-    {
-      "id": "edge:986804c7c745e4b1",
-      "relation": "IMPORTS_PACKAGE",
-      "from": "file:scripts/verifyLoginKnowledge.mjs",
-      "to": "package:node:process",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/verifyLoginKnowledge.mjs",
-          "line": 3,
-          "detail": "node:process"
         }
       ]
     },
@@ -11993,6 +12581,19 @@
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
           "line": 61
+        }
+      ]
+    },
+    {
+      "id": "edge:9b7f321db2efeb94",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/syncRelationships.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/syncRelationships.mjs",
+          "line": 1
         }
       ]
     },
@@ -12240,7 +12841,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 8
+          "line": 6
         }
       ]
     },
@@ -12281,6 +12882,19 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1460
+        }
+      ]
+    },
+    {
+      "id": "edge:a682385f72083149",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/validateRelationships.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateRelationships.mjs",
+          "line": 1
         }
       ]
     },
@@ -12347,19 +12961,6 @@
         {
           "path": "scripts/knowledge/extractTestInventory.mjs",
           "line": 22
-        }
-      ]
-    },
-    {
-      "id": "edge:a835db027422c2ab",
-      "relation": "CONTAINS",
-      "from": "repository:playwright-agentic-automation",
-      "to": "file:scripts/verifyLoginKnowledge.mjs",
-      "confidence": "exact",
-      "evidence": [
-        {
-          "path": "scripts/verifyLoginKnowledge.mjs",
-          "line": 1
         }
       ]
     },
@@ -12640,6 +13241,20 @@
       ]
     },
     {
+      "id": "edge:ae0d30874e349733",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/proposeProductKnowledge.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeProductKnowledge.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:ae4bf7272ed186d7",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/context/ThemeContext.tsx",
@@ -12662,6 +13277,33 @@
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
           "line": 1434
+        }
+      ]
+    },
+    {
+      "id": "edge:aefe5fd120467ba8",
+      "relation": "CONTAINS",
+      "from": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "to": "symbol:scripts/knowledge/proposeRequirementKnowledge.mjs#automatedDocument",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "id": "edge:af326660ba959f28",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+          "line": 1,
+          "detail": "node:fs"
         }
       ]
     },
@@ -12747,6 +13389,20 @@
           "path": "playwright.config.ts",
           "line": 4,
           "detail": "@config/test-config.json"
+        }
+      ]
+    },
+    {
+      "id": "edge:b161d1235608debe",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteManualKnowledge.mjs",
+      "to": "package:node:child_process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteManualKnowledge.mjs",
+          "line": 4,
+          "detail": "node:child_process"
         }
       ]
     },
@@ -13369,6 +14025,20 @@
       ]
     },
     {
+      "id": "edge:c1cc01e6cfc47f4a",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteProductKnowledge.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteProductKnowledge.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:c22e2d4e39a05a21",
       "relation": "IMPORTS",
       "from": "file:app/frontend/src/components/AppLayout.tsx",
@@ -13406,6 +14076,20 @@
           "path": "app/frontend/src/pages/HomePage.tsx",
           "line": 5,
           "detail": "../context/AuthContext"
+        }
+      ]
+    },
+    {
+      "id": "edge:c2e37722e4464af7",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+          "line": 3,
+          "detail": "node:process"
         }
       ]
     },
@@ -13524,6 +14208,20 @@
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
           "line": 112
+        }
+      ]
+    },
+    {
+      "id": "edge:c5eeb582ce8f4277",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteKnowledge.mjs",
+      "to": "package:node:child_process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteKnowledge.mjs",
+          "line": 4,
+          "detail": "node:child_process"
         }
       ]
     },
@@ -14319,6 +15017,20 @@
       ]
     },
     {
+      "id": "edge:d71e4fb11f920c7e",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/validateRelationships.mjs",
+      "to": "package:node:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateRelationships.mjs",
+          "line": 2,
+          "detail": "node:path"
+        }
+      ]
+    },
+    {
       "id": "edge:d7687827cd44feb9",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/pages/FilesPage.tsx",
@@ -14397,7 +15109,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 71
+          "line": 72
         }
       ]
     },
@@ -14523,6 +15235,20 @@
       ]
     },
     {
+      "id": "edge:dd5fe8f7f124bc60",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/validateProductDrafts.mjs",
+      "to": "package:node:process",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/validateProductDrafts.mjs",
+          "line": 3,
+          "detail": "node:process"
+        }
+      ]
+    },
+    {
       "id": "edge:dd830c1000792c8d",
       "relation": "CONTAINS",
       "from": "file:app/backend/main.py",
@@ -14544,7 +15270,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 14
+          "line": 12
         }
       ]
     },
@@ -15121,6 +15847,19 @@
       ]
     },
     {
+      "id": "edge:edad4d2ea94a1660",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/impactReport.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/impactReport.mjs",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:ee16a38cc36bdfa6",
       "relation": "CONTAINS",
       "from": "repository:playwright-agentic-automation",
@@ -15209,8 +15948,22 @@
       "evidence": [
         {
           "path": "scripts/knowledge/promoteKnowledge.mjs",
-          "line": 4,
+          "line": 5,
           "detail": "./WorkflowLog.mjs"
+        }
+      ]
+    },
+    {
+      "id": "edge:f02087c0db6abbbd",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
+          "line": 1,
+          "detail": "node:fs"
         }
       ]
     },
@@ -15276,6 +16029,20 @@
         {
           "path": "app/backend/main.py",
           "line": 455
+        }
+      ]
+    },
+    {
+      "id": "edge:f133a5fcf834afb0",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/impactReport.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/impactReport.mjs",
+          "line": 1,
+          "detail": "node:fs"
         }
       ]
     },
@@ -15420,6 +16187,20 @@
         {
           "path": "utils/common/CustomReporter.ts",
           "line": 50
+        }
+      ]
+    },
+    {
+      "id": "edge:f3c3ca97ad29d4e1",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/knowledge/promoteManualKnowledge.mjs",
+      "to": "package:node:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/promoteManualKnowledge.mjs",
+          "line": 1,
+          "detail": "node:fs"
         }
       ]
     },
@@ -15732,6 +16513,19 @@
         {
           "path": "ui/pages/FoldersPage.ts",
           "line": 47
+        }
+      ]
+    },
+    {
+      "id": "edge:ff078fb7a9a6e60e",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/knowledge/cleanPromotedKnowledge.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
+          "line": 1
         }
       ]
     },

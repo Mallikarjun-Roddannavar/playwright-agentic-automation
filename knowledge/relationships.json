@@ -1,0 +1,174 @@
+{
+  "format": "semantic-knowledge-relationships",
+  "version": "1.0",
+  "relationships": [
+    {
+      "from": "REQ-LOGIN-001",
+      "relation": "HAS_MANUAL_TEST",
+      "to": "manual-login-success",
+      "evidence": [
+        "knowledge/02-manual/login/login-success.md"
+      ]
+    },
+    {
+      "from": "REQ-LOGIN-001",
+      "relation": "HAS_AUTOMATED_TEST",
+      "to": "testing-scenario-successful-login",
+      "evidence": [
+        "knowledge/03-automated/scenarios/successful-login.md"
+      ]
+    },
+    {
+      "from": "REQ-FILES-001",
+      "relation": "HAS_MANUAL_TEST",
+      "to": "manual-files-role-aware-management",
+      "evidence": [
+        "knowledge/02-manual/files/role-aware-management.md"
+      ]
+    },
+    {
+      "from": "REQ-AUTH-001",
+      "relation": "SUPPORTED_BY_SOURCE",
+      "to": "requirements/incoming/REQ-AUTH-001.md",
+      "evidence": [
+        "knowledge/01-product/requirements/auth.md"
+      ]
+    },
+    {
+      "from": "REQ-FILES-001",
+      "relation": "SUPPORTED_BY_SOURCE",
+      "to": "requirements/incoming/REQ-FILES-001.md",
+      "evidence": [
+        "knowledge/01-product/requirements/files.md"
+      ]
+    },
+    {
+      "from": "REQ-FOLDERS-001",
+      "relation": "SUPPORTED_BY_SOURCE",
+      "to": "requirements/incoming/REQ-FOLDERS-001.md",
+      "evidence": [
+        "knowledge/01-product/requirements/folders.md"
+      ]
+    },
+    {
+      "from": "REQ-HEALTH-001",
+      "relation": "SUPPORTED_BY_SOURCE",
+      "to": "requirements/incoming/REQ-HEALTH-001.md",
+      "evidence": [
+        "knowledge/01-product/requirements/health.md"
+      ]
+    },
+    {
+      "from": "REQ-PREFERENCES-001",
+      "relation": "SUPPORTED_BY_SOURCE",
+      "to": "requirements/incoming/REQ-PREFERENCES-001.md",
+      "evidence": [
+        "knowledge/01-product/requirements/preferences.md"
+      ]
+    },
+    {
+      "from": "REQ-RBAC-001",
+      "relation": "SUPPORTED_BY_SOURCE",
+      "to": "requirements/incoming/REQ-RBAC-001.md",
+      "evidence": [
+        "knowledge/01-product/requirements/rbac.md"
+      ]
+    },
+    {
+      "from": "REQ-LOGIN-001",
+      "relation": "SUPPORTED_BY_SOURCE",
+      "to": "knowledge/01-product/requirements/login.md",
+      "evidence": [
+        "knowledge/01-product/requirements/login.md"
+      ]
+    },
+    {
+      "from": "REQ-AUTH-001",
+      "relation": "HAS_MANUAL_TEST",
+      "to": "manual-REQ-AUTH-001",
+      "evidence": [
+        "knowledge/02-manual/generated-proposals/REQ-AUTH-001.md"
+      ]
+    },
+    {
+      "from": "REQ-FOLDERS-001",
+      "relation": "HAS_MANUAL_TEST",
+      "to": "manual-REQ-FOLDERS-001",
+      "evidence": [
+        "knowledge/02-manual/generated-proposals/REQ-FOLDERS-001.md"
+      ]
+    },
+    {
+      "from": "REQ-HEALTH-001",
+      "relation": "HAS_MANUAL_TEST",
+      "to": "manual-REQ-HEALTH-001",
+      "evidence": [
+        "knowledge/02-manual/generated-proposals/REQ-HEALTH-001.md"
+      ]
+    },
+    {
+      "from": "REQ-PREFERENCES-001",
+      "relation": "HAS_MANUAL_TEST",
+      "to": "manual-REQ-PREFERENCES-001",
+      "evidence": [
+        "knowledge/02-manual/generated-proposals/REQ-PREFERENCES-001.md"
+      ]
+    },
+    {
+      "from": "REQ-RBAC-001",
+      "relation": "HAS_MANUAL_TEST",
+      "to": "manual-REQ-RBAC-001",
+      "evidence": [
+        "knowledge/02-manual/generated-proposals/REQ-RBAC-001.md"
+      ]
+    },
+    {
+      "from": "REQ-AUTH-001",
+      "relation": "HAS_AUTOMATED_TEST",
+      "to": "automated-REQ-AUTH-001",
+      "evidence": [
+        "knowledge/03-automated/generated-proposals/REQ-AUTH-001.md"
+      ]
+    },
+    {
+      "from": "REQ-FILES-001",
+      "relation": "HAS_AUTOMATED_TEST",
+      "to": "automated-REQ-FILES-001",
+      "evidence": [
+        "knowledge/03-automated/generated-proposals/REQ-FILES-001.md"
+      ]
+    },
+    {
+      "from": "REQ-FOLDERS-001",
+      "relation": "HAS_AUTOMATED_TEST",
+      "to": "automated-REQ-FOLDERS-001",
+      "evidence": [
+        "knowledge/03-automated/generated-proposals/REQ-FOLDERS-001.md"
+      ]
+    },
+    {
+      "from": "REQ-HEALTH-001",
+      "relation": "HAS_AUTOMATED_TEST",
+      "to": "automated-REQ-HEALTH-001",
+      "evidence": [
+        "knowledge/03-automated/generated-proposals/REQ-HEALTH-001.md"
+      ]
+    },
+    {
+      "from": "REQ-PREFERENCES-001",
+      "relation": "HAS_AUTOMATED_TEST",
+      "to": "automated-REQ-PREFERENCES-001",
+      "evidence": [
+        "knowledge/03-automated/generated-proposals/REQ-PREFERENCES-001.md"
+      ]
+    },
+    {
+      "from": "REQ-RBAC-001",
+      "relation": "HAS_AUTOMATED_TEST",
+      "to": "automated-REQ-RBAC-001",
+      "evidence": [
+        "knowledge/03-automated/generated-proposals/REQ-RBAC-001.md"
+      ]
+    }
+  ]
+}

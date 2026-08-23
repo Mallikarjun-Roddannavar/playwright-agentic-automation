@@ -36,8 +36,7 @@
       ],
       "evidencePaths": [
         "app/frontend/src/api.ts",
-        "app/backend/main.py",
-        "knowledge/product/expected-behavior/login-success.md"
+        "app/backend/main.py"
       ],
       "forbiddenPhrases": ["the UI uses POST /auth/login"]
     }

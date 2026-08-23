@@ -15,16 +15,16 @@ sources:
     title: scripts/queryKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/queryKnowledge.mjs
-source_sha256: 8949af260998add6f4c5ac047f8da771321f315dd8d63f74ea1da6acdd53b734
+source_sha256: 354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b
 code_graph_id: file:scripts/queryKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: 6f99104e61a96313249c92922fe79fd9270dfa589d92a1d9635d556a3b973184
+fact_sha256: cc6cf2eef6257bbdfc2e58ca13ec868704643ce1d872ea13aa8a662cfcf2b6e3
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-20T14:18:52.716Z"
+  at: "2026-08-21T11:27:49.699Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-20T14:18:52.716Z"
+    at: "2026-08-21T11:27:49.699Z"
 ---
 
 # Purpose
@@ -33,16 +33,14 @@ Framework tooling extracted from scripts/queryKnowledge.mjs by deterministic sta
 
 # Symbols
 
-- `function` **edgeSearchText** (lines 71-75)
-- `function` **matchesTerms** (lines 66-69)
-- `function` **parseArguments** (lines 14-42)
-- `function` **queryLoginKnowledge** (lines 50-64)
-- `function` **readConcept** (lines 44-48)
-- `function` **usage** (lines 8-12)
+- `function` **edgeSearchText** (lines 72-76)
+- `function` **matchesTerms** (lines 67-70)
+- `function` **parseArguments** (lines 12-40)
+- `function` **queryKnowledgePages** (lines 42-65)
+- `function` **usage** (lines 6-10)
 
 # Imports
 
-- `js-yaml` via `js-yaml`
 - [scripts/knowledge/CodebaseKnowledge.mjs](./knowledge/codebase-knowledge.md) via `./knowledge/CodebaseKnowledge.mjs`
 - `node:path` via `node:path`
 - `node:fs` via `node:fs`
@@ -58,4 +56,4 @@ Framework tooling extracted from scripts/queryKnowledge.mjs by deterministic sta
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `8949af260998add6f4c5ac047f8da771321f315dd8d63f74ea1da6acdd53b734`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

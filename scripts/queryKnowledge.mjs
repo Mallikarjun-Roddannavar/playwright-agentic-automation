@@ -1,8 +1,6 @@
 import process from "node:process";
 import fs from "node:fs";
 import path from "node:path";
-import yaml from "js-yaml";
-
 import { loadCodeGraph } from "./knowledge/CodebaseKnowledge.mjs";
 
 function usage() {
@@ -41,26 +39,29 @@ function parseArguments(args) {
   return values;
 }
 
-function readConcept(repoRoot, relativePath) {
-  const source = fs.readFileSync(path.join(repoRoot, "knowledge", relativePath), "utf8");
-  const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/u);
-  return yaml.load(match?.[1] ?? "") ?? {};
-}
-
-function queryLoginKnowledge(repoRoot) {
-  const feature = readConcept(repoRoot, "product/features/login.md");
-  const behavior = readConcept(repoRoot, "product/expected-behavior/login-success.md");
-  const scenario = readConcept(repoRoot, "testing/scenarios/successful-login.md");
-  globalThis.console.log("Knowledge query: Login");
-  globalThis.console.log("- Tests covering Login: ui/specs/login.spec.ts — admin login succeeds");
-  globalThis.console.log(
-    "- Product behavior: valid credentials authenticate, navigate to /, and show the workspace home title."
-  );
-  globalThis.console.log("- Page Objects: ui/pages/LoginPage.ts, ui/pages/HomePage.ts");
-  globalThis.console.log(
-    "- Assertion: expect(homePage.title).toBeVisible() in ui/specs/login.spec.ts"
-  );
-  globalThis.console.log(`- Knowledge chain: ${feature.id} -> ${behavior.id} -> ${scenario.id}`);
+function queryKnowledgePages(repoRoot, terms) {
+  const knowledgeRoot = path.join(repoRoot, "knowledge");
+  const matches = [];
+  const visit = (directory) => {
+    if (!fs.existsSync(directory)) return;
+    for (const entry of fs.readdirSync(directory, { withFileTypes: true })) {
+      const candidate = path.join(directory, entry.name);
+      if (entry.isDirectory() && entry.name !== "generated" && entry.name !== ".obsidian") {
+        visit(candidate);
+      } else if (entry.isFile() && entry.name.endsWith(".md")) {
+        const source = fs.readFileSync(candidate, "utf8");
+        if (matchesTerms(source, terms)) matches.push({ candidate, source });
+      }
+    }
+  };
+  visit(knowledgeRoot);
+  globalThis.console.log(`Knowledge pages matching: ${terms.join(" ")}`);
+  for (const { candidate, source } of matches.sort((left, right) => left.candidate.localeCompare(right.candidate))) {
+    const relative = path.relative(repoRoot, candidate).replaceAll("\\", "/");
+    const title = source.match(/^title:\s*(.+)$/imu)?.[1]?.trim() ?? path.basename(candidate);
+    globalThis.console.log(`- ${relative}: ${title}`);
+  }
+  if (matches.length === 0) globalThis.console.log("No saved knowledge pages matched.");
 }
 
 function matchesTerms(value, terms) {
@@ -82,7 +83,7 @@ if (args.help || (args.terms.length === 0 && !args.kind && !args.relation && !ar
 } else {
   try {
     if (args.knowledge) {
-      queryLoginKnowledge(process.cwd());
+      queryKnowledgePages(process.cwd(), terms);
       process.exit(0);
     }
     if (args.status) {

@@ -7,13 +7,13 @@ status: stable
 
 # Knowledge answer evaluations
 
-These cases evaluate a user-supplied Codex answer against existing repository
-knowledge and source evidence. They are deterministic checks, not LLM-as-judge
+These cases evaluate a user-supplied answer from an external coding agent against
+existing repository knowledge and source evidence. They are deterministic checks, not LLM-as-judge
 calls and not Playwright runtime tests.
 
 To evaluate an answer:
 
-1. Copy the question and Codex response into a JSON case.
+1. Copy the question and agent response into a JSON case.
 2. Keep the expected facts in `requiredPhrases`.
 3. Keep unsupported or dangerous claims in `forbiddenPhrases`.
 4. List authoritative files in `evidencePaths`.

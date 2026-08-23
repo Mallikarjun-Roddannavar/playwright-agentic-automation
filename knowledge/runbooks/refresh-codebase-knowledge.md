@@ -42,7 +42,7 @@ npm run knowledge:query -- --status grounded
 npm run knowledge:promote
 ```
 
-`knowledge/test-inventory.json` is extracted from the static graph and test source. `knowledge/drafts/` contains agent proposals; `knowledge/product/` and `knowledge/testing/` contain approved knowledge. Promotion never resolves semantic conflicts automatically.
+`knowledge/test-inventory.json` is extracted from the static graph and test source. `knowledge/drafts/` contains agent proposals; `knowledge/01-product/` and `knowledge/03-automated/` contain approved knowledge. Promotion never resolves semantic conflicts automatically.
 
 Each inventory, proposal, verification, and promotion command appends JSONL audit events to `knowledge/workflow-runs.jsonl`. Trace them with `npm run knowledge:trace -- <run-id-or-file>`.
 
