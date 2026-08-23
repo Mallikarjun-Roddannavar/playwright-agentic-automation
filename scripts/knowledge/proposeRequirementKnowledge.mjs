@@ -36,13 +36,13 @@ for (const filename of files) {
     ? relatedSpecs.map((file) => `  - resource: /${path.relative(root, file).replaceAll("\\", "/")}`).join("\n")
     : "  - resource: /knowledge/01-product/requirements/" + filename;
   const content = stage === "manual"
-    ? manualDocument({ id, filename, relativeProduct, sourceLines, product })
-    : automatedDocument({ id, filename, relativeProduct, sourceLines, relatedSpecs, product });
+    ? manualDocument({ id, relativeProduct, sourceLines, product })
+    : automatedDocument({ id, relativeProduct, sourceLines, relatedSpecs, product });
   fs.writeFileSync(path.join(outputRoot, `${id}.md`), content, "utf8");
   console.log(`${stage} proposal created: knowledge/drafts/${stage}/${id}.md`);
 }
 
-function manualDocument({ id, filename, relativeProduct, sourceLines, product }) {
+function manualDocument({ id, relativeProduct, sourceLines, product }) {
   return `---
 type: Manual Test Scenario Proposal
 id: draft-manual-${id}
@@ -81,7 +81,7 @@ ${product.split("## Raw requirement")[0].trim()}
 `;
 }
 
-function automatedDocument({ id, filename, relativeProduct, sourceLines, relatedSpecs, product }) {
+function automatedDocument({ id, relativeProduct, sourceLines, relatedSpecs, product }) {
   const coverage = relatedSpecs.length
     ? relatedSpecs.map((file) => `- Candidate evidence: \`${path.relative(root, file).replaceAll("\\", "/")}\``).join("\n")
     : "- No matching UI/API spec was found by deterministic filename matching.";

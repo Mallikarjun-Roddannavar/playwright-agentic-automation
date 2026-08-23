@@ -20,5 +20,13 @@ export default defineConfig(
       "no-console": "off",
       "@typescript-eslint/no-floating-promises": "error",
     },
+  },
+  {
+    files: ["scripts/**/*.mjs"],
+    languageOptions: {
+      globals: {
+        console: "readonly",
+      },
+    },
   }
 );

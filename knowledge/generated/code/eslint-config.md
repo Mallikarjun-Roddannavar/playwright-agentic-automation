@@ -15,16 +15,16 @@ sources:
     title: eslint.config.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: eslint.config.mjs
-source_sha256: 455d807c5a8762ef4e2426b938b925045f050dd44f42b17a21694c6b72f12a3f
+source_sha256: bce55b3044fc972db9dc8328fb1cccbee1bcbcb1d187328f2bf1bb339eb30fa0
 code_graph_id: file:eslint.config.mjs
 analysis_scope: static-ast
-fact_sha256: a5b7888b87d69082e00113455cceca2c0ccaf44a0c5c7094339e8fceea947b48
+fact_sha256: 139fd5acb88ab2c1e588f917046cfc8ded24b47c323a07e815504c8c8da406c2
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:16:28.092Z"
+  at: "2026-08-23T04:52:48.807Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:16:28.092Z"
+    at: "2026-08-23T04:52:48.807Z"
 ---
 
 # Purpose
@@ -51,4 +51,4 @@ Framework tooling extracted from eslint.config.mjs by deterministic static analy
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `455d807c5a8762ef4e2426b938b925045f050dd44f42b17a21694c6b72f12a3f`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `bce55b3044fc972db9dc8328fb1cccbee1bcbcb1d187328f2bf1bb339eb30fa0`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
