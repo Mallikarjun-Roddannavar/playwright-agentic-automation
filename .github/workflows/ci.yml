@@ -51,7 +51,8 @@ jobs:
           node ./scripts/checkNamingConventions.mjs
           node ./scripts/buildKnowledge.mjs --check
           node ./scripts/validateKnowledge.mjs
-          node ./scripts/verifyLoginKnowledge.mjs
+          node ./scripts/knowledge/validateRelationships.mjs
+          node ./scripts/knowledge/verifyKnowledge.mjs
 
       - name: Lint and typecheck
         run: |
