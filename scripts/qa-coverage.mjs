@@ -1,3 +1,4 @@
+/* eslint-env node */
 import fs from "fs";
 import path from "path";
 
@@ -21,7 +22,7 @@ let testInventory = { tests: [] };
 if (fs.existsSync(testInventoryFile)) {
   try {
     testInventory = JSON.parse(fs.readFileSync(testInventoryFile, "utf8"));
-  } catch (e) {
+  } catch {
     console.error("Failed to parse test-inventory.json");
   }
 }

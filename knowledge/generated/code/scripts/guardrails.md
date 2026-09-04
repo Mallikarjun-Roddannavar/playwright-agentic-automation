@@ -15,16 +15,16 @@ sources:
     title: scripts/guardrails.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/guardrails.mjs
-source_sha256: 06320b9a36a52b7bb83484f05f7359c5f90227ebce0bb39d9be815d3ae204922
+source_sha256: 6fea80fc82a3ae58137da25a4a1682a1f0ebd46bdcddf31220bd1a50f2f1977f
 code_graph_id: file:scripts/guardrails.mjs
 analysis_scope: static-ast
-fact_sha256: 449b21545a07ee2a6680f19bc180b707b2d21d4e5e5213abded6c5f7a42d0075
+fact_sha256: c85021d4244767b48e6448c6cb261de280b057af3e860502d1417a43c5c8f625
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-09-04T05:15:44.685Z"
+  at: "2026-09-04T08:08:46.327Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-09-04T05:15:44.685Z"
+    at: "2026-09-04T08:08:46.327Z"
 ---
 
 # Purpose
@@ -33,8 +33,8 @@ Framework tooling extracted from scripts/guardrails.mjs by deterministic static 
 
 # Symbols
 
-- `function` **checkFile** (lines 20-88)
-- `function` **walkDir** (lines 11-18)
+- `function` **checkFile** (lines 25-93)
+- `function` **walkDir** (lines 12-23)
 
 # Imports
 
@@ -51,4 +51,4 @@ Framework tooling extracted from scripts/guardrails.mjs by deterministic static 
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `06320b9a36a52b7bb83484f05f7359c5f90227ebce0bb39d9be815d3ae204922`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `6fea80fc82a3ae58137da25a4a1682a1f0ebd46bdcddf31220bd1a50f2f1977f`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

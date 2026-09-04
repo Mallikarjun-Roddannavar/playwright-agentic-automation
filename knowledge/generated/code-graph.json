@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "2314898a492be66e86d8d11035d4d41ecfe07beabfa664d8791dafa74d63eb68",
+  "sourceDigest": "bbda4e3563c5c75c799552984629ba60345da207134780fd92fef27d41d70a96",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-09-04T05:15:44.685Z",
+    "at": "2026-09-04T08:08:46.327Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -213,7 +213,7 @@
     },
     {
       "path": "scripts/guardrails.mjs",
-      "sha256": "06320b9a36a52b7bb83484f05f7359c5f90227ebce0bb39d9be815d3ae204922",
+      "sha256": "6fea80fc82a3ae58137da25a4a1682a1f0ebd46bdcddf31220bd1a50f2f1977f",
       "category": "tooling"
     },
     {
@@ -308,7 +308,7 @@
     },
     {
       "path": "scripts/qa-coverage.mjs",
-      "sha256": "dffe8d6f2e8dae0531393b8e495e7b537403c91ccf36d64270474c77070ec1b8",
+      "sha256": "178788f96893e418ac35870e90e77469e351c4fcc014239704bda4ba51fe1c5c",
       "category": "tooling"
     },
     {
@@ -893,7 +893,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "06320b9a36a52b7bb83484f05f7359c5f90227ebce0bb39d9be815d3ae204922"
+      "sourceHash": "6fea80fc82a3ae58137da25a4a1682a1f0ebd46bdcddf31220bd1a50f2f1977f"
     },
     {
       "id": "file:scripts/knowledge/CodebaseKnowledge.mjs",
@@ -1121,7 +1121,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "dffe8d6f2e8dae0531393b8e495e7b537403c91ccf36d64270474c77070ec1b8"
+      "sourceHash": "178788f96893e418ac35870e90e77469e351c4fcc014239704bda4ba51fe1c5c"
     },
     {
       "id": "file:scripts/queryKnowledge.mjs",
@@ -3883,8 +3883,8 @@
       "label": "checkFile",
       "path": "scripts/guardrails.mjs",
       "category": "tooling",
-      "startLine": 20,
-      "endLine": 88,
+      "startLine": 25,
+      "endLine": 93,
       "exported": false,
       "tags": [
         "function",
@@ -3897,8 +3897,8 @@
       "label": "walkDir",
       "path": "scripts/guardrails.mjs",
       "category": "tooling",
-      "startLine": 11,
-      "endLine": 18,
+      "startLine": 12,
+      "endLine": 23,
       "exported": false,
       "tags": [
         "function",
@@ -6782,7 +6782,7 @@
       "evidence": [
         {
           "path": "scripts/guardrails.mjs",
-          "line": 20
+          "line": 25
         }
       ]
     },
@@ -7247,7 +7247,7 @@
       "evidence": [
         {
           "path": "scripts/guardrails.mjs",
-          "line": 1,
+          "line": 2,
           "detail": "fs"
         }
       ]
@@ -8419,7 +8419,7 @@
       "evidence": [
         {
           "path": "scripts/guardrails.mjs",
-          "line": 2,
+          "line": 3,
           "detail": "path"
         }
       ]
@@ -10022,7 +10022,7 @@
       "evidence": [
         {
           "path": "scripts/qa-coverage.mjs",
-          "line": 2,
+          "line": 3,
           "detail": "path"
         }
       ]
@@ -11793,7 +11793,7 @@
       "evidence": [
         {
           "path": "scripts/guardrails.mjs",
-          "line": 11
+          "line": 12
         }
       ]
     },
@@ -13280,7 +13280,7 @@
       "evidence": [
         {
           "path": "scripts/qa-coverage.mjs",
-          "line": 1,
+          "line": 2,
           "detail": "fs"
         }
       ]
