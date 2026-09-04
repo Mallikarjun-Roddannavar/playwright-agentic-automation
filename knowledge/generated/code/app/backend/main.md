@@ -33,9 +33,9 @@ Python backend extracted from app/backend/main.py by deterministic static analys
 
 # Symbols
 
-- `function` **\_now_iso** (lines 58-59)
-- `function` **\_safe_upload_name** (lines 118-124)
-- `function` **\_sanitize_download_name** (lines 110-115)
+- `function` **_now_iso** (lines 58-59)
+- `function` **_safe_upload_name** (lines 118-124)
+- `function` **_sanitize_download_name** (lines 110-115)
 - `function` **allow_private_network_access** (lines 152-158)
 - `function` **create_folder** (lines 267-282)
 - `function` **delete_file** (lines 473-484)

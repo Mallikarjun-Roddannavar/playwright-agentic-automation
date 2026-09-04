@@ -33,8 +33,8 @@ Python backend extracted from app/backend/database.py by deterministic static an
 
 # Symbols
 
-- `function` **\_connect** (lines 29-33)
-- `function` **\_replace_data** (lines 84-106)
+- `function` **_connect** (lines 29-33)
+- `function` **_replace_data** (lines 84-106)
 - `function` **initialize_database** (lines 36-39)
 - `function` **load_database** (lines 42-76)
 - `function` **save_database** (lines 79-81)
