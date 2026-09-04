@@ -20,7 +20,7 @@ export function Modal({ title, testId, children, onClose }: ModalProps) {
   useEffect(() => {
     const previouslyFocused = document.activeElement as HTMLElement | null;
     const firstControl = panelRef.current?.querySelector<HTMLElement>(
-      'input:not([disabled]), button:not([disabled]), select:not([disabled]), textarea:not([disabled]), [href]'
+      "input:not([disabled]), button:not([disabled]), select:not([disabled]), textarea:not([disabled]), [href]"
     );
     firstControl?.focus();
 

@@ -23,7 +23,8 @@ export function HomePage() {
     let cancelled = false;
     setLoading(true);
 
-    api.stats(user)
+    api
+      .stats(user)
       .then((nextStats) => {
         if (!cancelled) {
           setStats(nextStats);
@@ -52,7 +53,10 @@ export function HomePage() {
     const updateScrollMotion = () => {
       const rect = page.getBoundingClientRect();
       const viewportHeight = window.innerHeight || 1;
-      const progress = Math.max(0, Math.min(1, (viewportHeight - rect.top) / (viewportHeight + rect.height)));
+      const progress = Math.max(
+        0,
+        Math.min(1, (viewportHeight - rect.top) / (viewportHeight + rect.height))
+      );
       const drift = (window.scrollY || 0) * 0.04;
 
       page.style.setProperty("--app-home-scroll-progress", progress.toFixed(3));
@@ -157,7 +161,9 @@ export function HomePage() {
                 </div>
                 <div className="app-home-overview-card">
                   <span className="app-home-overview-label">Current role</span>
-                  <span className="app-home-overview-value role-capitalize">{user?.role ?? "guest"}</span>
+                  <span className="app-home-overview-value role-capitalize">
+                    {user?.role ?? "guest"}
+                  </span>
                 </div>
                 <div className="app-home-overview-card">
                   <span className="app-home-overview-label">Main areas</span>
@@ -257,7 +263,8 @@ export function HomePage() {
                 <div>
                   <p className="app-home-stack-title">Move through protected areas</p>
                   <p className="text-muted app-home-stack-copy">
-                    Navigate confidently knowing the interface adapts to the role you signed in with.
+                    Navigate confidently knowing the interface adapts to the role you signed in
+                    with.
                   </p>
                 </div>
               </div>

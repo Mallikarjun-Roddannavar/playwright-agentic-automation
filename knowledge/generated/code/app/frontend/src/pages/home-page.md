@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/pages/HomePage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/HomePage.tsx
-source_sha256: d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc
+source_sha256: 97225eaf6199fa70ab5b92d865ffcf7d1ebf6a437a95d5b8ac668daa25350d54
 code_graph_id: file:app/frontend/src/pages/HomePage.tsx
 analysis_scope: static-ast
-fact_sha256: af60db30a167c2d38391a408ff7305e5efeb2ecb6d079ebc4b54331013edaa4e
+fact_sha256: 279149701c8d481b8f5bc25f79e900ed4057af5ab2e560df94bd4f8a5319f509
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,7 +33,7 @@ Application frontend extracted from app/frontend/src/pages/HomePage.tsx by deter
 
 # Symbols
 
-- `function` **HomePage** exported (lines 10-270)
+- `function` **HomePage** exported (lines 10-277)
 - `type` **Stats** (lines 8-8)
 
 # Imports
@@ -54,4 +54,4 @@ Application frontend extracted from app/frontend/src/pages/HomePage.tsx by deter
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `97225eaf6199fa70ab5b92d865ffcf7d1ebf6a437a95d5b8ac668daa25350d54`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

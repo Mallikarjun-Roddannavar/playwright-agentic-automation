@@ -15,16 +15,16 @@ sources:
     title: scripts/knowledge/impactReport.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/knowledge/impactReport.mjs
-source_sha256: b13e13e08d60ec5894e83bd70501aa4645b0014d46121822ae81eec8123b6ddd
+source_sha256: 8a68a237a90ea34b2cd12003eda816b28aeea5fc49012a54bab18f6c73670b06
 code_graph_id: file:scripts/knowledge/impactReport.mjs
 analysis_scope: static-ast
-fact_sha256: b287fd1e1980d6c9c20308e1c4ed93bb16898533c61d578aa8992872e6d2597a
+fact_sha256: 582be16592faff7bca4c38c07e58bc6e026f43ae57541419e4b1bf14e734b247
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-21T11:42:42.859Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-21T11:42:42.859Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -51,4 +51,4 @@ Framework tooling extracted from scripts/knowledge/impactReport.mjs by determini
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `b13e13e08d60ec5894e83bd70501aa4645b0014d46121822ae81eec8123b6ddd`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `8a68a237a90ea34b2cd12003eda816b28aeea5fc49012a54bab18f6c73670b06`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

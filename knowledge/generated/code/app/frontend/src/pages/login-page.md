@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/pages/LoginPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/LoginPage.tsx
-source_sha256: f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023
+source_sha256: fc7b03ede2e59b6c4e4d84a9d2a3c3519e53a55c22f51c0483a314a66c2635fe
 code_graph_id: file:app/frontend/src/pages/LoginPage.tsx
 analysis_scope: static-ast
-fact_sha256: 285a781ba937f930200a76ebbc06b944f9a355b190c971b0c1fe04359f648641
+fact_sha256: 62b80cf6d1a89bd33867e2524d0dbb6690026cf389b9b0b4b8660b34a7c418d6
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:16:28.092Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:16:28.092Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,7 +33,7 @@ Application frontend extracted from app/frontend/src/pages/LoginPage.tsx by dete
 
 # Symbols
 
-- `function` **LoginPage** exported (lines 8-136)
+- `function` **LoginPage** exported (lines 8-140)
 - `function` **onOAuthLogin** (lines 35-47)
 - `function` **onSubmit** (lines 17-33)
 
@@ -55,4 +55,4 @@ Application frontend extracted from app/frontend/src/pages/LoginPage.tsx by dete
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `fc7b03ede2e59b6c4e4d84a9d2a3c3519e53a55c22f51c0483a314a66c2635fe`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

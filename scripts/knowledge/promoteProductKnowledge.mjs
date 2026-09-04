@@ -10,7 +10,9 @@ const archiveRoot = path.join(root, "knowledge", "archive", "product");
 fs.mkdirSync(targetRoot, { recursive: true });
 fs.mkdirSync(archiveRoot, { recursive: true });
 const promoted = [];
-for (const filename of fs.readdirSync(draftsRoot).filter((file) => file.endsWith(".md") && file !== "README.md")) {
+for (const filename of fs
+  .readdirSync(draftsRoot)
+  .filter((file) => file.endsWith(".md") && file !== "README.md")) {
   const sourcePath = path.join(draftsRoot, filename);
   const content = fs.readFileSync(sourcePath, "utf8");
   if (!/^review_status:\s+reviewed\s*$/mu.test(content)) continue;
@@ -26,9 +28,29 @@ for (const filename of fs.readdirSync(draftsRoot).filter((file) => file.endsWith
   promoted.push(targetName);
 }
 console.log(`Promoted product requirements: ${promoted.length}`);
-execFileSync(process.execPath, [path.join(root, "scripts", "knowledge", "cleanPromotedKnowledge.mjs")], { cwd: root, stdio: "inherit" });
-execFileSync(process.execPath, [path.join(root, "scripts", "knowledge", "syncRelationships.mjs")], { cwd: root, stdio: "inherit" });
-execFileSync(process.execPath, [path.join(root, "scripts", "buildKnowledge.mjs")], { cwd: root, stdio: "inherit" });
-execFileSync(process.execPath, [path.join(root, "scripts", "validateKnowledge.mjs")], { cwd: root, stdio: "inherit" });
-execFileSync(process.execPath, [path.join(root, "scripts", "knowledge", "validateRelationships.mjs")], { cwd: root, stdio: "inherit" });
-execFileSync(process.execPath, [path.join(root, "scripts", "buildKnowledge.mjs"), "--check"], { cwd: root, stdio: "inherit" });
+execFileSync(
+  process.execPath,
+  [path.join(root, "scripts", "knowledge", "cleanPromotedKnowledge.mjs")],
+  { cwd: root, stdio: "inherit" }
+);
+execFileSync(process.execPath, [path.join(root, "scripts", "knowledge", "syncRelationships.mjs")], {
+  cwd: root,
+  stdio: "inherit",
+});
+execFileSync(process.execPath, [path.join(root, "scripts", "buildKnowledge.mjs")], {
+  cwd: root,
+  stdio: "inherit",
+});
+execFileSync(process.execPath, [path.join(root, "scripts", "validateKnowledge.mjs")], {
+  cwd: root,
+  stdio: "inherit",
+});
+execFileSync(
+  process.execPath,
+  [path.join(root, "scripts", "knowledge", "validateRelationships.mjs")],
+  { cwd: root, stdio: "inherit" }
+);
+execFileSync(process.execPath, [path.join(root, "scripts", "buildKnowledge.mjs"), "--check"], {
+  cwd: root,
+  stdio: "inherit",
+});

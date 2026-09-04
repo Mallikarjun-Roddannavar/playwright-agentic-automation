@@ -63,7 +63,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
       logout,
       canCreateEdit: hasRole(user, ["admin", "editor"]),
       canDelete: hasRole(user, ["admin"]),
-      isViewer: hasRole(user, ["viewer"])
+      isViewer: hasRole(user, ["viewer"]),
     };
   }, [user]);
 

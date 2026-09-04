@@ -34,7 +34,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     () => ({
       theme,
       setTheme: (nextTheme: ThemeMode) => setThemeState(nextTheme),
-      toggleTheme: () => setThemeState((current) => (current === "dark" ? "light" : "dark"))
+      toggleTheme: () => setThemeState((current) => (current === "dark" ? "light" : "dark")),
     }),
     [theme]
   );

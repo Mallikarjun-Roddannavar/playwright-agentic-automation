@@ -33,7 +33,7 @@ Python backend extracted from app/backend/auth.py by deterministic static analys
 
 # Symbols
 
-- `function` **_now_utc** (lines 57-58)
+- `function` **\_now_utc** (lines 57-58)
 - `function` **authenticate_user** (lines 65-69)
 - `function` **create_access_token** (lines 72-81)
 - `function` **decode_access_token** (lines 84-100)

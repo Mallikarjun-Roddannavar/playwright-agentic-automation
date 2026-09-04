@@ -22,6 +22,7 @@ Playwright evidence. Review semantic coverage before promotion.
 ## Product requirement
 
 See [approved product requirement](../../01-product/requirements/rbac.md).
+
 ## Candidate automation evidence
 
 - Candidate evidence: `ui/specs/multi-role.spec.ts`

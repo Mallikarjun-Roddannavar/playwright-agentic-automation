@@ -15,16 +15,16 @@ sources:
     title: scripts/knowledge/proposeProductKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/knowledge/proposeProductKnowledge.mjs
-source_sha256: dcb742d338e1cc67b360760988049ca10d49ab1f1121e97fdda278250fde8447
+source_sha256: 52d7a28fa9de3c5bee75594c277410feb65509f1a622830ebe48f2cea8ebd414
 code_graph_id: file:scripts/knowledge/proposeProductKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: 6ccdc1f33820a98e9e38c61ecba05efad20fd1138a4d5a25702ea91619262035
+fact_sha256: 2143e828c77dc6630c6f69dc741c73d2a43d7fee39b674e0130da78279b38ec9
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-21T12:55:14.203Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-21T12:55:14.203Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -52,4 +52,4 @@ Framework tooling extracted from scripts/knowledge/proposeProductKnowledge.mjs b
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `dcb742d338e1cc67b360760988049ca10d49ab1f1121e97fdda278250fde8447`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `52d7a28fa9de3c5bee75594c277410feb65509f1a622830ebe48f2cea8ebd414`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

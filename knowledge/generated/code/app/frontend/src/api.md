@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/api.ts
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/api.ts
-source_sha256: 77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d
+source_sha256: f0d540ec26d5f440e9f1ce7d128edeabf06b9ffada72e4abc5ad238880b7eab7
 code_graph_id: file:app/frontend/src/api.ts
 analysis_scope: static-ast
-fact_sha256: b8c3e066f8f479b0624e5be95b3a6ea6eba1ed70a08238ef59726d419957c97b
+fact_sha256: fba957a8595884b5ce2e7fa05d41d89a75ce9add2dca79bdda30e748458c74e8
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:07:43.531Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:07:43.531Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -37,10 +37,10 @@ Application frontend extracted from app/frontend/src/api.ts by deterministic sta
 - `type` **JwtClaims** (lines 17-23)
 - `type` **Stats** (lines 7-10)
 - `type` **TokenResponse** (lines 12-15)
-- `variable` **api** (lines 108-178)
+- `variable` **api** (lines 104-174)
 - `function` **decodeJwtPayload** (lines 49-58)
 - `function` **parseErrorDetail** (lines 28-47)
-- `function` **request** (lines 77-106)
+- `function` **request** (lines 77-102)
 - `function` **userFromAccessToken** exported (lines 60-75)
 
 # Imports
@@ -62,4 +62,4 @@ Application frontend extracted from app/frontend/src/api.ts by deterministic sta
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `f0d540ec26d5f440e9f1ce7d128edeabf06b9ffada72e4abc5ad238880b7eab7`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

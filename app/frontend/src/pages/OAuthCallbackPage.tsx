@@ -20,7 +20,8 @@ export function OAuthCallbackPage() {
       return;
     }
 
-    api.exchangeOAuthCode(code, state)
+    api
+      .exchangeOAuthCode(code, state)
       .then((user) => {
         login(user);
         toast.success("OAuth login successful");

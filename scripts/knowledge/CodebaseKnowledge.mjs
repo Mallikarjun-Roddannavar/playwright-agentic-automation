@@ -570,7 +570,9 @@ function buildProjectAnalysis(repoRoot) {
 }
 
 function addPythonAstGraph(repoRoot, analysis, graph) {
-  const pythonSources = analysis.sourceFiles.filter((source) => pythonExtensions.has(source.extension));
+  const pythonSources = analysis.sourceFiles.filter((source) =>
+    pythonExtensions.has(source.extension)
+  );
   if (pythonSources.length === 0) {
     return;
   }
@@ -640,7 +642,12 @@ function addPythonAstGraph(repoRoot, analysis, graph) {
     for (const call of fact.calls) {
       const target = `symbol:${call.path}#${call.name}`;
       graph.addEdge({
-        relation: call.kind === "rbac" ? "ENFORCES_RBAC" : call.kind === "persistence" ? "USES_PERSISTENCE" : "CALLS",
+        relation:
+          call.kind === "rbac"
+            ? "ENFORCES_RBAC"
+            : call.kind === "persistence"
+              ? "USES_PERSISTENCE"
+              : "CALLS",
         from: functionId,
         to: target,
         evidence: { path: fact.path, line: call.line },

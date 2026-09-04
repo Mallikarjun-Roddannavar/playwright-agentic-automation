@@ -10,6 +10,7 @@
 ## Health And Authentication
 
 ### API-HLT-01 Health endpoint is reachable
+
 - Type: Positive
 - Request: `GET /health`
 - Expected Result:
@@ -17,6 +18,7 @@
   2. Response body is `{ "status": "ok" }`.
 
 ### API-AUTH-01 Password token issuance succeeds for admin
+
 - Type: Positive
 - Request: `POST /token`
 - Test Data: `username=admin`, `password=admin123`
@@ -25,6 +27,7 @@
   2. Response includes `access_token` and `token_type=bearer`.
 
 ### API-AUTH-02 Password token issuance fails for invalid credentials
+
 - Type: Negative, Error Handling
 - Request: `POST /token`
 - Test Data: invalid username or password
@@ -33,6 +36,7 @@
   2. Error detail indicates invalid credentials.
 
 ### API-AUTH-03 JSON login succeeds for editor
+
 - Type: Positive
 - Request: `POST /auth/login`
 - Test Data: `editor / editor123`
@@ -41,6 +45,7 @@
   2. Response contains username `editor` and role `editor`.
 
 ### API-AUTH-04 JSON login fails for invalid credentials
+
 - Type: Negative, Error Handling
 - Request: `POST /auth/login`
 - Test Data: invalid username or password
@@ -49,6 +54,7 @@
   2. Error detail indicates invalid credentials.
 
 ### API-AUTH-05 Protected endpoint rejects missing bearer token
+
 - Type: Negative, Error Handling
 - Request: `GET /folders` without `Authorization` header
 - Expected Result:
@@ -56,6 +62,7 @@
   2. Request is not treated as authenticated.
 
 ### API-AUTH-06 Protected endpoint rejects invalid bearer token
+
 - Type: Negative, Error Handling
 - Request: `GET /folders` with malformed or invalid bearer token
 - Expected Result:
@@ -63,6 +70,7 @@
   2. Error detail indicates credentials could not be validated.
 
 ### API-OAUTH-01 OAuth login reports configuration error when OAuth is not configured
+
 - Type: Negative, Error Handling
 - Request: `GET /auth/oauth/login`
 - Preconditions: Required `OAUTH_*` environment variables are not set.
@@ -71,6 +79,7 @@
   2. Error detail indicates OAuth is not configured.
 
 ### API-OAUTH-02 OAuth callback rejects invalid or expired state
+
 - Type: Negative, Error Handling
 - Request: `GET /auth/oauth/callback?code=<code>&state=<bad-state>`
 - Preconditions: OAuth environment is configured.
@@ -81,6 +90,7 @@
 ## Stats And Folder APIs
 
 ### API-STA-01 Stats endpoint succeeds for authenticated user
+
 - Type: Positive
 - Request: `GET /stats`
 - Preconditions: Valid bearer token for any role.
@@ -89,6 +99,7 @@
   2. Response contains integer `totalFolders` and `totalFiles`.
 
 ### API-FLD-01 List folders succeeds for authenticated viewer
+
 - Type: Positive
 - Request: `GET /folders`
 - Preconditions: Valid viewer token.
@@ -97,6 +108,7 @@
   2. Response is a folder array.
 
 ### API-FLD-02 Viewer cannot create a folder
+
 - Type: Negative, Error Handling
 - Request: `POST /folders`
 - Preconditions: Valid viewer token.
@@ -106,6 +118,7 @@
   2. Error detail indicates create or edit requires editor or admin.
 
 ### API-FLD-03 Editor can create a folder
+
 - Type: Positive
 - Request: `POST /folders`
 - Preconditions: Valid editor token.
@@ -115,6 +128,7 @@
   2. Response contains new folder id, name, owner, and `files` array.
 
 ### API-FLD-04 Admin can create a folder
+
 - Type: Positive
 - Request: `POST /folders`
 - Preconditions: Valid admin token.
@@ -124,6 +138,7 @@
   2. Folder is persisted and visible in subsequent `GET /folders`.
 
 ### API-FLD-05 Folder name minimum boundary of 1 character succeeds
+
 - Type: Boundary Positive
 - Request: `POST /folders`
 - Preconditions: Valid editor or admin token.
@@ -133,6 +148,7 @@
   2. Folder is created with the same name.
 
 ### API-FLD-06 Folder name maximum boundary of 100 characters succeeds
+
 - Type: Boundary Positive
 - Request: `POST /folders`
 - Preconditions: Valid editor or admin token.
@@ -142,6 +158,7 @@
   2. Folder is created successfully.
 
 ### API-FLD-07 Folder name longer than 100 characters is rejected
+
 - Type: Boundary Negative, Error Handling
 - Request: `POST /folders`
 - Preconditions: Valid editor or admin token.
@@ -151,6 +168,7 @@
   2. Validation error identifies the name field length issue.
 
 ### API-FLD-08 Duplicate folder name is rejected case-insensitively
+
 - Type: Negative, Error Handling
 - Request: `POST /folders`
 - Preconditions: A folder named `Reports` already exists.
@@ -160,6 +178,7 @@
   2. Error detail indicates folder name already exists.
 
 ### API-FLD-09 Trimmed duplicate folder name is rejected
+
 - Type: Negative, Error Handling
 - Request: `POST /folders`
 - Preconditions: A folder named `Reports` already exists.
@@ -169,6 +188,7 @@
   2. Service treats the trimmed value as duplicate.
 
 ### API-FLD-10 Whitespace-only folder name should be rejected after trimming
+
 - Type: Boundary Negative, Defect-Focused
 - Request: `POST /folders`
 - Preconditions: Valid editor or admin token.
@@ -180,6 +200,7 @@
   1. This case is intended to catch trim-after-validation defects.
 
 ### API-FLD-11 Rename folder succeeds
+
 - Type: Positive
 - Request: `PUT /folders/{folder_id}`
 - Preconditions: Valid editor or admin token. Target folder exists.
@@ -189,6 +210,7 @@
   2. Folder response reflects the new name.
 
 ### API-FLD-12 Rename folder to duplicate name is rejected
+
 - Type: Negative, Error Handling
 - Request: `PUT /folders/{folder_id}`
 - Preconditions: Valid editor or admin token. Another folder already has the target name.
@@ -197,6 +219,7 @@
   2. Original folder name remains unchanged.
 
 ### API-FLD-13 Rename missing folder returns not found
+
 - Type: Negative, Error Handling
 - Request: `PUT /folders/{missing-folder-id}`
 - Preconditions: Valid editor or admin token.
@@ -205,6 +228,7 @@
   2. Error detail indicates folder not found.
 
 ### API-FLD-14 Editor cannot delete a folder
+
 - Type: Negative, Error Handling
 - Request: `DELETE /folders/{folder_id}`
 - Preconditions: Valid editor token. Target folder exists.
@@ -213,6 +237,7 @@
   2. Error detail indicates delete requires admin.
 
 ### API-FLD-15 Admin can delete a folder
+
 - Type: Positive
 - Request: `DELETE /folders/{folder_id}`
 - Preconditions: Valid admin token. Target folder exists.
@@ -222,6 +247,7 @@
   3. Folder is absent from subsequent folder listing.
 
 ### API-FLD-16 Delete missing folder returns not found
+
 - Type: Negative, Error Handling
 - Request: `DELETE /folders/{missing-folder-id}`
 - Preconditions: Valid admin token.
@@ -232,6 +258,7 @@
 ## File CRUD APIs
 
 ### API-FIL-01 List files succeeds for an existing folder
+
 - Type: Positive
 - Request: `GET /folders/{folder_id}/files`
 - Preconditions: Valid bearer token. Target folder exists.
@@ -240,6 +267,7 @@
   2. Response is an array of file objects.
 
 ### API-FIL-02 Listing files for a missing folder returns not found
+
 - Type: Negative, Error Handling
 - Request: `GET /folders/{missing-folder-id}/files`
 - Preconditions: Valid bearer token.
@@ -248,6 +276,7 @@
   2. Error detail indicates folder not found.
 
 ### API-FIL-03 Editor can upload a file
+
 - Type: Positive
 - Request: `POST /folders/{folder_id}/files`
 - Preconditions: Valid editor token. Target folder exists.
@@ -257,6 +286,7 @@
   2. Response contains file id, name, uploadedBy, and size.
 
 ### API-FIL-04 Viewer cannot upload a file
+
 - Type: Negative, Error Handling
 - Request: `POST /folders/{folder_id}/files`
 - Preconditions: Valid viewer token. Target folder exists.
@@ -265,6 +295,7 @@
   2. Error detail indicates create or edit requires editor or admin.
 
 ### API-FIL-05 Uploading to a missing folder should not leave an orphan file on disk
+
 - Type: Negative, Defect-Focused
 - Request: `POST /folders/{missing-folder-id}/files`
 - Preconditions: Valid editor or admin token.
@@ -276,6 +307,7 @@
   1. This case verifies cleanup behavior, not just response code.
 
 ### API-FIL-06 Rename file succeeds
+
 - Type: Positive
 - Request: `PUT /folders/{folder_id}/files/{file_id}`
 - Preconditions: Valid editor or admin token. Folder and file exist.
@@ -285,6 +317,7 @@
   2. Response contains the updated file name.
 
 ### API-FIL-07 File rename maximum boundary of 255 characters succeeds
+
 - Type: Boundary Positive
 - Request: `PUT /folders/{folder_id}/files/{file_id}`
 - Preconditions: Valid editor or admin token. Folder and file exist.
@@ -294,6 +327,7 @@
   2. Response stores the new name successfully.
 
 ### API-FIL-08 File rename longer than 255 characters is rejected
+
 - Type: Boundary Negative, Error Handling
 - Request: `PUT /folders/{folder_id}/files/{file_id}`
 - Preconditions: Valid editor or admin token. Folder and file exist.
@@ -303,6 +337,7 @@
   2. Validation error identifies the name length issue.
 
 ### API-FIL-09 Whitespace-only file rename should be rejected after trimming
+
 - Type: Boundary Negative, Defect-Focused
 - Request: `PUT /folders/{folder_id}/files/{file_id}`
 - Preconditions: Valid editor or admin token. Folder and file exist.
@@ -314,6 +349,7 @@
   1. This case is intended to catch trim-after-validation defects.
 
 ### API-FIL-10 Rename missing file returns not found
+
 - Type: Negative, Error Handling
 - Request: `PUT /folders/{folder_id}/files/{missing-file-id}`
 - Preconditions: Valid editor or admin token. Folder exists.
@@ -322,6 +358,7 @@
   2. Error detail indicates file not found.
 
 ### API-FIL-11 Editor cannot delete a file
+
 - Type: Negative, Error Handling
 - Request: `DELETE /folders/{folder_id}/files/{file_id}`
 - Preconditions: Valid editor token. Folder and file exist.
@@ -330,6 +367,7 @@
   2. Error detail indicates delete requires admin.
 
 ### API-FIL-12 Admin can delete a file
+
 - Type: Positive
 - Request: `DELETE /folders/{folder_id}/files/{file_id}`
 - Preconditions: Valid admin token. Folder and file exist.
@@ -339,6 +377,7 @@
   3. File is absent from subsequent file listing.
 
 ### API-FIL-13 Delete missing file returns not found
+
 - Type: Negative, Error Handling
 - Request: `DELETE /folders/{folder_id}/files/{missing-file-id}`
 - Preconditions: Valid admin token. Folder exists.
@@ -349,6 +388,7 @@
 ## Preview And Download APIs
 
 ### API-DWN-01 Preview file succeeds with valid token query parameter
+
 - Type: Positive
 - Request: `GET /folders/{folder_id}/files/{file_id}/preview?token=<valid-token>`
 - Preconditions: Folder and file exist. Token belongs to any valid role.
@@ -357,6 +397,7 @@
   2. Response streams the file inline.
 
 ### API-DWN-02 Preview file rejects invalid token
+
 - Type: Negative, Error Handling
 - Request: `GET /folders/{folder_id}/files/{file_id}/preview?token=<invalid-token>`
 - Expected Result:
@@ -364,6 +405,7 @@
   2. File content is not returned.
 
 ### API-DWN-03 Download file succeeds with valid token query parameter
+
 - Type: Positive
 - Request: `GET /folders/{folder_id}/files/{file_id}/download?token=<valid-token>`
 - Preconditions: Folder and file exist. Token belongs to any valid role.
@@ -373,6 +415,7 @@
   3. Downloaded filename matches stored display name.
 
 ### API-DWN-04 Download zip for all files in a folder succeeds when files exist
+
 - Type: Positive
 - Request: `GET /folders/{folder_id}/files/download?token=<valid-token>`
 - Preconditions: Folder contains at least one file.
@@ -382,6 +425,7 @@
   3. Archive contains the folder's files.
 
 ### API-DWN-05 Download zip for selected files rejects unknown file id
+
 - Type: Negative, Error Handling
 - Request: `GET /folders/{folder_id}/files/download?token=<valid-token>&fileIds=<bad-id>`
 - Preconditions: Folder exists.
@@ -390,6 +434,7 @@
   2. Error detail indicates file not found.
 
 ### API-DWN-06 Download zip from empty folder returns bad request
+
 - Type: Negative, Error Handling
 - Request: `GET /folders/{folder_id}/files/download?token=<valid-token>`
 - Preconditions: Folder exists and contains no files.
@@ -398,6 +443,7 @@
   2. Error detail indicates no files are available for download.
 
 ### API-DWN-07 Download and preview return not found when backing file is missing on disk
+
 - Type: Negative, Error Handling
 - Request:
   1. `GET /folders/{folder_id}/files/{file_id}/preview?token=<valid-token>`
@@ -408,6 +454,7 @@
   2. Error detail indicates file not found on disk.
 
 ### API-DWN-08 Zip download should deduplicate unsafe or duplicate archive entry names cleanly
+
 - Type: Boundary, Error Handling
 - Request: `GET /folders/{folder_id}/files/download?token=<valid-token>`
 - Preconditions: Folder contains files whose display names normalize to the same sanitized archive name.

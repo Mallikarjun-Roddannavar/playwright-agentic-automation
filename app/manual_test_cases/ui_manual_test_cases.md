@@ -10,6 +10,7 @@
 ## Login And Session
 
 ### UI-LOG-01 Admin login succeeds
+
 - Type: Positive
 - Preconditions: User is logged out.
 - Test Data: `admin / admin123`
@@ -23,6 +24,7 @@
   3. Profile menu shows username `admin` and role `admin`.
 
 ### UI-LOG-02 Editor login succeeds
+
 - Type: Positive
 - Preconditions: User is logged out.
 - Test Data: `editor / editor123`
@@ -36,6 +38,7 @@
   3. Editor does not get delete capability in folders or files.
 
 ### UI-LOG-03 Viewer login succeeds with read-only UI
+
 - Type: Positive
 - Preconditions: User is logged out.
 - Test Data: `viewer / viewer123`
@@ -49,6 +52,7 @@
   3. Viewer does not see create, upload, or delete actions.
 
 ### UI-LOG-04 Invalid password shows error
+
 - Type: Negative, Error Handling
 - Preconditions: User is logged out.
 - Test Data: `admin / wrong-password`
@@ -61,6 +65,7 @@
   3. No authenticated session is created.
 
 ### UI-LOG-05 Blank username and password are rejected
+
 - Type: Negative, Error Handling
 - Preconditions: User is logged out.
 - Test Data: blank username, blank password
@@ -74,6 +79,7 @@
   3. User remains unauthenticated.
 
 ### UI-LOG-06 Unauthenticated deep link redirects to login
+
 - Type: Negative
 - Preconditions: Clear local storage and ensure no user is logged in.
 - Steps:
@@ -85,6 +91,7 @@
   2. Protected content is not rendered before redirect.
 
 ### UI-LOG-07 Logged-in user opening `/login` is redirected home
+
 - Type: Positive
 - Preconditions: Log in successfully as any valid role.
 - Steps:
@@ -94,6 +101,7 @@
   2. Existing authenticated session remains active.
 
 ### UI-LOG-08 Logout clears session
+
 - Type: Positive, Error Handling
 - Preconditions: Log in successfully as any valid role.
 - Steps:
@@ -106,6 +114,7 @@
   3. Protected routes redirect back to `/login`.
 
 ### UI-LOG-09 OAuth login surfaces configuration error when OAuth is not configured
+
 - Type: Negative, Error Handling
 - Preconditions: Backend OAuth environment variables are not configured.
 - Steps:
@@ -117,6 +126,7 @@
   3. No authenticated session is created.
 
 ### UI-LOG-10 OAuth callback without required parameters shows error
+
 - Type: Negative, Error Handling
 - Preconditions: User is logged out.
 - Steps:
@@ -129,6 +139,7 @@
 ## Navigation, Home, And Preferences
 
 ### UI-NAV-01 Sidebar navigation works across protected pages
+
 - Type: Positive
 - Preconditions: Log in as any valid role.
 - Steps:
@@ -140,6 +151,7 @@
   3. Page titles match the selected area.
 
 ### UI-HME-01 Dashboard stats render after login
+
 - Type: Positive
 - Preconditions: Log in as any valid role.
 - Steps:
@@ -150,6 +162,7 @@
   2. Values render without page crash.
 
 ### UI-PRF-01 Theme toggle updates and persists after refresh
+
 - Type: Positive, Error Handling
 - Preconditions: Log in as any valid role.
 - Steps:
@@ -161,6 +174,7 @@
   2. Selected theme remains applied after refresh.
 
 ### UI-PRF-02 Profile icon upload and removal work
+
 - Type: Positive
 - Preconditions: Log in as any valid role. Have a valid image file available.
 - Steps:
@@ -176,6 +190,7 @@
 ## Folder Management
 
 ### UI-FLD-01 Admin can create a folder
+
 - Type: Positive
 - Preconditions: Log in as admin.
 - Test Data: unique folder name
@@ -189,6 +204,7 @@
   3. `Last synced` updates.
 
 ### UI-FLD-02 Editor can create a folder
+
 - Type: Positive
 - Preconditions: Log in as editor.
 - Test Data: unique folder name
@@ -200,6 +216,7 @@
   2. New folder is visible in the list.
 
 ### UI-FLD-03 Viewer cannot create or delete folders from the UI
+
 - Type: Negative
 - Preconditions: Log in as viewer.
 - Steps:
@@ -211,6 +228,7 @@
   3. Per-row delete is not available.
 
 ### UI-FLD-04 Duplicate folder name is rejected
+
 - Type: Negative, Error Handling
 - Preconditions: A folder named `Reports` already exists.
 - Test Data: `Reports`
@@ -223,6 +241,7 @@
   3. Duplicate folder is not added.
 
 ### UI-FLD-05 Folder name minimum boundary of 1 character succeeds
+
 - Type: Boundary Positive
 - Preconditions: Log in as editor or admin.
 - Test Data: `A`
@@ -233,6 +252,7 @@
   2. Folder is listed with the exact name.
 
 ### UI-FLD-06 Folder name maximum boundary of 100 characters succeeds
+
 - Type: Boundary Positive
 - Preconditions: Log in as editor or admin.
 - Test Data: 100-character folder name
@@ -243,6 +263,7 @@
   2. Name is stored and displayed correctly.
 
 ### UI-FLD-07 Folder name longer than 100 characters is rejected
+
 - Type: Boundary Negative, Error Handling
 - Preconditions: Log in as editor or admin.
 - Test Data: 101-character folder name
@@ -254,6 +275,7 @@
   3. Folder is not added.
 
 ### UI-FLD-08 Whitespace-only folder name should be rejected
+
 - Type: Boundary Negative, Defect-Focused
 - Preconditions: Log in as editor or admin.
 - Test Data: spaces only, for example `   `
@@ -268,6 +290,7 @@
   1. This case is intended to expose trim-related validation gaps.
 
 ### UI-FLD-09 Rename folder succeeds for editor/admin
+
 - Type: Positive
 - Preconditions: Log in as editor or admin. At least one folder exists.
 - Test Data: unique new folder name
@@ -280,6 +303,7 @@
   2. Updated name appears in the folder table.
 
 ### UI-FLD-10 Rename folder to an existing name is rejected
+
 - Type: Negative, Error Handling
 - Preconditions: Log in as editor or admin. Two different folders exist.
 - Steps:
@@ -291,6 +315,7 @@
   3. Original name remains unchanged.
 
 ### UI-FLD-11 Admin can delete a single folder
+
 - Type: Positive
 - Preconditions: Log in as admin. At least one disposable folder exists.
 - Steps:
@@ -302,6 +327,7 @@
   2. Folder disappears from the list.
 
 ### UI-FLD-12 Admin can bulk delete selected folders
+
 - Type: Positive
 - Preconditions: Log in as admin. Two or more disposable folders exist.
 - Steps:
@@ -314,6 +340,7 @@
   3. Selection is cleared.
 
 ### UI-FLD-13 Open and open-in-new-tab require selection
+
 - Type: Negative, Error Handling
 - Preconditions: Log in as any role. At least one folder exists.
 - Steps:
@@ -326,6 +353,7 @@
   3. Navigation works after selection.
 
 ### UI-FLD-14 Invalid folder deep link shows error on files page
+
 - Type: Negative, Error Handling
 - Preconditions: Log in as any role.
 - Steps:
@@ -338,6 +366,7 @@
 ## File Management
 
 ### UI-FIL-01 Open a folder and view its files
+
 - Type: Positive
 - Preconditions: Log in as any role. At least one folder exists.
 - Steps:
@@ -349,6 +378,7 @@
   2. Files page title includes the folder name when available.
 
 ### UI-FIL-02 Editor or admin can upload a file
+
 - Type: Positive
 - Preconditions: Log in as editor or admin. Open a folder. Have a local file available.
 - Steps:
@@ -361,6 +391,7 @@
   3. Uploaded file appears in the table.
 
 ### UI-FIL-03 Viewer cannot upload or delete files from the UI
+
 - Type: Negative
 - Preconditions: Log in as viewer. Open a folder.
 - Steps:
@@ -371,6 +402,7 @@
   3. Per-row delete is not available.
 
 ### UI-FIL-04 File rename succeeds
+
 - Type: Positive
 - Preconditions: Log in as editor or admin. Open a folder containing at least one file.
 - Test Data: unique new file name
@@ -383,6 +415,7 @@
   2. Updated file name is shown in the table.
 
 ### UI-FIL-05 File rename maximum boundary of 255 characters succeeds
+
 - Type: Boundary Positive
 - Preconditions: Log in as editor or admin. Open a folder containing at least one file.
 - Test Data: 255-character file name
@@ -393,6 +426,7 @@
   2. New name is displayed correctly.
 
 ### UI-FIL-06 File rename longer than 255 characters is rejected
+
 - Type: Boundary Negative, Error Handling
 - Preconditions: Log in as editor or admin. Open a folder containing at least one file.
 - Test Data: 256-character file name
@@ -404,6 +438,7 @@
   3. Original file name remains unchanged.
 
 ### UI-FIL-07 Whitespace-only file rename should be rejected
+
 - Type: Boundary Negative, Defect-Focused
 - Preconditions: Log in as editor or admin. Open a folder containing at least one file.
 - Test Data: spaces only, for example `   `
@@ -418,6 +453,7 @@
   1. This case is intended to expose trim-related validation gaps.
 
 ### UI-FIL-08 Preview opens the file in a separate window
+
 - Type: Positive
 - Preconditions: Log in as any role. Open a folder with at least one file.
 - Steps:
@@ -428,6 +464,7 @@
   2. File content or browser preview is rendered when supported.
 
 ### UI-FIL-09 Download opens in a new browser context
+
 - Type: Positive
 - Preconditions: Log in as any role. Open a folder with at least one file.
 - Steps:
@@ -438,6 +475,7 @@
   2. Downloaded file name matches the selected file.
 
 ### UI-FIL-10 Download all is disabled when no files exist
+
 - Type: Negative, Error Handling
 - Preconditions: Log in as any role. Open an empty folder.
 - Steps:
@@ -446,6 +484,7 @@
   1. `Download All` is disabled when there are no files.
 
 ### UI-FIL-11 Download selected requires file selection
+
 - Type: Negative, Error Handling
 - Preconditions: Log in as admin. Open a folder with files.
 - Steps:
@@ -456,6 +495,7 @@
   2. It becomes enabled after at least one file is selected.
 
 ### UI-FIL-12 Admin can delete a single file
+
 - Type: Positive
 - Preconditions: Log in as admin. Open a folder containing a disposable file.
 - Steps:
@@ -467,6 +507,7 @@
   2. Success toast is shown.
 
 ### UI-FIL-13 Admin can bulk delete selected files
+
 - Type: Positive
 - Preconditions: Log in as admin. Open a folder with two or more disposable files.
 - Steps:
@@ -478,6 +519,7 @@
   2. Selection is cleared.
 
 ### UI-FIL-14 Manual refresh reflects newly created data
+
 - Type: Positive, Error Handling
 - Preconditions: Use two sessions or roles. One session is on the files page. Another session adds or removes a file in the same folder.
 - Steps:
@@ -489,6 +531,7 @@
   2. `Last synced` updates.
 
 ### UI-FIL-15 Auto-refresh reflects newly created data within polling window
+
 - Type: Positive, Error Handling
 - Preconditions: Use two sessions or roles. One session remains on folders or files page while another session changes data.
 - Steps:

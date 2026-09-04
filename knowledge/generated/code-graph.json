@@ -4,10 +4,10 @@
   "title": "playwright-agentic-automation static code graph",
   "staticAnalysis": true,
   "disclaimer": "This is a static AST-derived relationship graph. It is not a runtime call graph, execution trace, coverage report, or security model.",
-  "sourceDigest": "1c8ab4aa70561c01b69a1a124965032b31a5681e2610e61dde3184cebbd793e7",
+  "sourceDigest": "2314898a492be66e86d8d11035d4d41ecfe07beabfa664d8791dafa74d63eb68",
   "generation": {
     "by": "process:codebase-knowledge/1.0.0",
-    "at": "2026-08-23T04:53:29.830Z",
+    "at": "2026-09-04T05:15:44.685Z",
     "parser": "TypeScript 5.9.3 + Python ast"
   },
   "sources": [
@@ -78,17 +78,17 @@
     },
     {
       "path": "app/frontend/postcss.config.js",
-      "sha256": "fed2fb14a7336a4083acfdbab9179568ca47716069c181e2d0760ad497ffb113",
+      "sha256": "3bbb971aea0a56fac5510f5cd42407cfc13f181670a1b83c54bd4cbbba4f957c",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/App.tsx",
-      "sha256": "1f58c3e56086cd44608b70ac5609d0c63b89c70560cc87f3090a74d87018167f",
+      "sha256": "81b6eaa176cdb1992e987a1a1bbdb9b8f2c3b61dc7a7b7e4f297918b1b7e2ffb",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/api.ts",
-      "sha256": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d",
+      "sha256": "f0d540ec26d5f440e9f1ce7d128edeabf06b9ffada72e4abc5ad238880b7eab7",
       "category": "frontend"
     },
     {
@@ -103,12 +103,12 @@
     },
     {
       "path": "app/frontend/src/components/Modal.tsx",
-      "sha256": "a5fe02ce5656d8f305467b014fc7c8beeb09682befbfbeac3fabf97c641b121e",
+      "sha256": "e672e04bd2e9bbb7db82e5e814cc36328721313be6a4a239b5bcc1c722a00bb3",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/components/Sidebar.tsx",
-      "sha256": "853fe59f6dda367534982e5a77a48f6ed0ffda19f5eeeb9efb8035c714f3d294",
+      "sha256": "de4a4a37c9b47abd4feec62466ff404b9cf447d2ee364f9603b766d01c4b1cfa",
       "category": "frontend"
     },
     {
@@ -118,12 +118,12 @@
     },
     {
       "path": "app/frontend/src/context/AuthContext.tsx",
-      "sha256": "43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98",
+      "sha256": "4152d3f27bdd57c583dbf6ea87fef2841d9facefcbb5f2d73a0e071fef2418bb",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/context/ThemeContext.tsx",
-      "sha256": "54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c",
+      "sha256": "ee54f0dd1d85bf0d373893214cdfb8430870f3f7e09b4f085858a6d30f57fb52",
       "category": "frontend"
     },
     {
@@ -133,32 +133,32 @@
     },
     {
       "path": "app/frontend/src/pages/FilesPage.tsx",
-      "sha256": "9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7",
+      "sha256": "ae35429e32412a68a2c85cd2a7815025ede564dcf7af37565e997519a2592cda",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/FoldersPage.tsx",
-      "sha256": "820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf",
+      "sha256": "e23cf626f607170a2305698c82c988a7d38ac7fa1f2f9dbc9144f19a80ba62cf",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/HomePage.tsx",
-      "sha256": "d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc",
+      "sha256": "97225eaf6199fa70ab5b92d865ffcf7d1ebf6a437a95d5b8ac668daa25350d54",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/LoginPage.tsx",
-      "sha256": "f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023",
+      "sha256": "fc7b03ede2e59b6c4e4d84a9d2a3c3519e53a55c22f51c0483a314a66c2635fe",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
-      "sha256": "4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a",
+      "sha256": "6a9d1f0247e24db7e07d47c2265f8eb0666709be7c4425c58665a26f1189c9d2",
       "category": "frontend"
     },
     {
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
-      "sha256": "28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2",
+      "sha256": "1a7b0766ccd670ee99bb0c4b1afd209f4d414bab7877c5363c964170704010e9",
       "category": "frontend"
     },
     {
@@ -168,7 +168,7 @@
     },
     {
       "path": "app/frontend/tailwind.config.js",
-      "sha256": "460f247f9f95127c5469df1245d298e83234abe2933df0fafb2699fa20255686",
+      "sha256": "958ca861a33022a80c3d1eb6fc82aade0565599d430bbdfe1c1bdbe3cf60d683",
       "category": "frontend"
     },
     {
@@ -178,7 +178,7 @@
     },
     {
       "path": "app/frontend/vite.config.ts",
-      "sha256": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6",
+      "sha256": "20e2eb56ac42cd30cea9cd968912dc9846a5d4acfa0c653bbd824adc8f7bcca5",
       "category": "frontend"
     },
     {
@@ -193,7 +193,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "f54dc529cc06dc758875e6be555a94378f2086fe6917e93ee0ea32ad01458f61",
+      "sha256": "c4ea0474026eacb44c8703de0a2b55f5be7de7f5c81f9c3b33b356e1a934b044",
       "category": "configuration"
     },
     {
@@ -212,8 +212,13 @@
       "category": "tooling"
     },
     {
+      "path": "scripts/guardrails.mjs",
+      "sha256": "06320b9a36a52b7bb83484f05f7359c5f90227ebce0bb39d9be815d3ae204922",
+      "category": "tooling"
+    },
+    {
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-      "sha256": "b8c31831fb7011976187a3f6f88d18c61c0f9dd0d2e90b2c9cca2df87204a550",
+      "sha256": "8b2b92ec9f542b33cece5fb4452a5ada574a5577de81b0fdd270848d0c4e747a",
       "category": "tooling"
     },
     {
@@ -223,7 +228,7 @@
     },
     {
       "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
-      "sha256": "bc88df8adb2e733613ba14c181860a59d8d3fe93f5be2225dc6680283a1dfaf9",
+      "sha256": "4b476255518ffca450ac200279881aff0a7b95562f50263a2aa91a1980450ea5",
       "category": "tooling"
     },
     {
@@ -238,7 +243,7 @@
     },
     {
       "path": "scripts/knowledge/impactReport.mjs",
-      "sha256": "b13e13e08d60ec5894e83bd70501aa4645b0014d46121822ae81eec8123b6ddd",
+      "sha256": "8a68a237a90ea34b2cd12003eda816b28aeea5fc49012a54bab18f6c73670b06",
       "category": "tooling"
     },
     {
@@ -248,12 +253,12 @@
     },
     {
       "path": "scripts/knowledge/promoteManualKnowledge.mjs",
-      "sha256": "9fd854c05d42a7dfbe7785d71dee45c99f56831eae3bcb9d24b7a1bc891b5986",
+      "sha256": "9a02e78737ac877908b4f3bdb7b8ad2c73ee411f038f6e24f78daee8016346da",
       "category": "tooling"
     },
     {
       "path": "scripts/knowledge/promoteProductKnowledge.mjs",
-      "sha256": "a01ce77ea7ba2cfc80d7f483ca5658accb7b41367cb905d9b3d948b3e178b985",
+      "sha256": "6ffdf90e5a259bfe7f617857df049fc02a54673714e051c99d53429db95b5b1c",
       "category": "tooling"
     },
     {
@@ -263,12 +268,12 @@
     },
     {
       "path": "scripts/knowledge/proposeProductKnowledge.mjs",
-      "sha256": "dcb742d338e1cc67b360760988049ca10d49ab1f1121e97fdda278250fde8447",
+      "sha256": "52d7a28fa9de3c5bee75594c277410feb65509f1a622830ebe48f2cea8ebd414",
       "category": "tooling"
     },
     {
       "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
-      "sha256": "87c70a816f7faa4635ef05aa985a31d4b71a756774dfa4cf48d1b9824caf403e",
+      "sha256": "52eee03d228522cbb2ad4cb9a9df99b134feb63d10b1fc0b7d0fcc43ade2980a",
       "category": "tooling"
     },
     {
@@ -278,7 +283,7 @@
     },
     {
       "path": "scripts/knowledge/syncRelationships.mjs",
-      "sha256": "2ffa5eff29db33ecd8f8a5232ff40601f46ab8d0604b4cde5620855ee648be10",
+      "sha256": "525070ba559a2f91f465a1dc62955938f0f1ba95a2d0d8598994ba9312c1d5b6",
       "category": "tooling"
     },
     {
@@ -288,12 +293,12 @@
     },
     {
       "path": "scripts/knowledge/validateProductDrafts.mjs",
-      "sha256": "c91fae9154b1dd123ca28f96f1609917cc112f8d2148cf4d63bd78bd63ef86c9",
+      "sha256": "bfefbd2c2ca8a678441989d0016e6615f271e280c5da44b1fc9922bebe3073b2",
       "category": "tooling"
     },
     {
       "path": "scripts/knowledge/validateRelationships.mjs",
-      "sha256": "e5ef75482d91cfeb3d23ed190b0dabacbc15f172f8e86440f7a20432ec7a1dd0",
+      "sha256": "9eb6afddfc10493bd1ba0942fa4df90020d0a94ff3f39eb2e8f31cdd5c504bd9",
       "category": "tooling"
     },
     {
@@ -302,8 +307,13 @@
       "category": "tooling"
     },
     {
+      "path": "scripts/qa-coverage.mjs",
+      "sha256": "dffe8d6f2e8dae0531393b8e495e7b537403c91ccf36d64270474c77070ec1b8",
+      "category": "tooling"
+    },
+    {
       "path": "scripts/queryKnowledge.mjs",
-      "sha256": "354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b",
+      "sha256": "a6d1caea92f634d7858147db77280a08d7c967190d3cbe7090aea7c4d66b6c14",
       "category": "tooling"
     },
     {
@@ -313,7 +323,7 @@
     },
     {
       "path": "tsconfig.json",
-      "sha256": "ef18f7b3d95f79b7b3855793304a2b4cc800abb1ffb5e63e24d4103936ec2fc9",
+      "sha256": "a37348ef8e17c18d96aac362ff804ca125bdb6e06ed7b7c7f0c829d971d41df8",
       "category": "configuration"
     },
     {
@@ -559,7 +569,7 @@
         "frontend",
         "js"
       ],
-      "sourceHash": "fed2fb14a7336a4083acfdbab9179568ca47716069c181e2d0760ad497ffb113"
+      "sourceHash": "3bbb971aea0a56fac5510f5cd42407cfc13f181670a1b83c54bd4cbbba4f957c"
     },
     {
       "id": "file:app/frontend/src/App.tsx",
@@ -571,7 +581,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "1f58c3e56086cd44608b70ac5609d0c63b89c70560cc87f3090a74d87018167f"
+      "sourceHash": "81b6eaa176cdb1992e987a1a1bbdb9b8f2c3b61dc7a7b7e4f297918b1b7e2ffb"
     },
     {
       "id": "file:app/frontend/src/api.ts",
@@ -583,7 +593,7 @@
         "frontend",
         "ts"
       ],
-      "sourceHash": "77a377b4d43e598f3ff40a9c1c6ba8e02514f7e1e5a6ce56bfb0922d50f1d50d"
+      "sourceHash": "f0d540ec26d5f440e9f1ce7d128edeabf06b9ffada72e4abc5ad238880b7eab7"
     },
     {
       "id": "file:app/frontend/src/components/AppLayout.tsx",
@@ -619,7 +629,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "a5fe02ce5656d8f305467b014fc7c8beeb09682befbfbeac3fabf97c641b121e"
+      "sourceHash": "e672e04bd2e9bbb7db82e5e814cc36328721313be6a4a239b5bcc1c722a00bb3"
     },
     {
       "id": "file:app/frontend/src/components/Sidebar.tsx",
@@ -631,7 +641,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "853fe59f6dda367534982e5a77a48f6ed0ffda19f5eeeb9efb8035c714f3d294"
+      "sourceHash": "de4a4a37c9b47abd4feec62466ff404b9cf447d2ee364f9603b766d01c4b1cfa"
     },
     {
       "id": "file:app/frontend/src/components/ThemeToggle.tsx",
@@ -655,7 +665,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98"
+      "sourceHash": "4152d3f27bdd57c583dbf6ea87fef2841d9facefcbb5f2d73a0e071fef2418bb"
     },
     {
       "id": "file:app/frontend/src/context/ThemeContext.tsx",
@@ -667,7 +677,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "54a2aebabe702b8d7ee21bf987de72aa89e08b31c224ae2a26df2d6b4d88657c"
+      "sourceHash": "ee54f0dd1d85bf0d373893214cdfb8430870f3f7e09b4f085858a6d30f57fb52"
     },
     {
       "id": "file:app/frontend/src/main.tsx",
@@ -691,7 +701,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7"
+      "sourceHash": "ae35429e32412a68a2c85cd2a7815025ede564dcf7af37565e997519a2592cda"
     },
     {
       "id": "file:app/frontend/src/pages/FoldersPage.tsx",
@@ -703,7 +713,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "820c11d616fbccee383f1bd77f62bece7dc42fccefdbd7a6dae2aca87bbfccaf"
+      "sourceHash": "e23cf626f607170a2305698c82c988a7d38ac7fa1f2f9dbc9144f19a80ba62cf"
     },
     {
       "id": "file:app/frontend/src/pages/HomePage.tsx",
@@ -715,7 +725,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "d9184c22d507d23dfa503e388f74eb38c0480622ed48cc5ef6ffd682615bd0fc"
+      "sourceHash": "97225eaf6199fa70ab5b92d865ffcf7d1ebf6a437a95d5b8ac668daa25350d54"
     },
     {
       "id": "file:app/frontend/src/pages/LoginPage.tsx",
@@ -727,7 +737,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "f94aeb499b84a03818f5a96790a422dad14378126842341fbb7033b09fe94023"
+      "sourceHash": "fc7b03ede2e59b6c4e4d84a9d2a3c3519e53a55c22f51c0483a314a66c2635fe"
     },
     {
       "id": "file:app/frontend/src/pages/OAuthCallbackPage.tsx",
@@ -739,7 +749,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a"
+      "sourceHash": "6a9d1f0247e24db7e07d47c2265f8eb0666709be7c4425c58665a26f1189c9d2"
     },
     {
       "id": "file:app/frontend/src/pages/PreferencesPage.tsx",
@@ -751,7 +761,7 @@
         "frontend",
         "tsx"
       ],
-      "sourceHash": "28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2"
+      "sourceHash": "1a7b0766ccd670ee99bb0c4b1afd209f4d414bab7877c5363c964170704010e9"
     },
     {
       "id": "file:app/frontend/src/types.ts",
@@ -775,7 +785,7 @@
         "frontend",
         "js"
       ],
-      "sourceHash": "460f247f9f95127c5469df1245d298e83234abe2933df0fafb2699fa20255686"
+      "sourceHash": "958ca861a33022a80c3d1eb6fc82aade0565599d430bbdfe1c1bdbe3cf60d683"
     },
     {
       "id": "file:app/frontend/tsconfig.json",
@@ -799,7 +809,7 @@
         "frontend",
         "ts"
       ],
-      "sourceHash": "bb70b211b101b0380dc52da2d95808b5bfbba87a7f1c2ad344b6af2078ebbac6"
+      "sourceHash": "20e2eb56ac42cd30cea9cd968912dc9846a5d4acfa0c653bbd824adc8f7bcca5"
     },
     {
       "id": "file:config/test-config.json",
@@ -835,7 +845,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "f54dc529cc06dc758875e6be555a94378f2086fe6917e93ee0ea32ad01458f61"
+      "sourceHash": "c4ea0474026eacb44c8703de0a2b55f5be7de7f5c81f9c3b33b356e1a934b044"
     },
     {
       "id": "file:playwright.config.ts",
@@ -874,6 +884,18 @@
       "sourceHash": "9d3773f8256af9d33e6d34d72561526b3c3855734269b9927504966acad36409"
     },
     {
+      "id": "file:scripts/guardrails.mjs",
+      "kind": "file",
+      "label": "scripts/guardrails.mjs",
+      "path": "scripts/guardrails.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "06320b9a36a52b7bb83484f05f7359c5f90227ebce0bb39d9be815d3ae204922"
+    },
+    {
       "id": "file:scripts/knowledge/CodebaseKnowledge.mjs",
       "kind": "file",
       "label": "scripts/knowledge/CodebaseKnowledge.mjs",
@@ -883,7 +905,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "b8c31831fb7011976187a3f6f88d18c61c0f9dd0d2e90b2c9cca2df87204a550"
+      "sourceHash": "8b2b92ec9f542b33cece5fb4452a5ada574a5577de81b0fdd270848d0c4e747a"
     },
     {
       "id": "file:scripts/knowledge/WorkflowLog.mjs",
@@ -907,7 +929,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "bc88df8adb2e733613ba14c181860a59d8d3fe93f5be2225dc6680283a1dfaf9"
+      "sourceHash": "4b476255518ffca450ac200279881aff0a7b95562f50263a2aa91a1980450ea5"
     },
     {
       "id": "file:scripts/knowledge/evaluateAnswers.mjs",
@@ -943,7 +965,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "b13e13e08d60ec5894e83bd70501aa4645b0014d46121822ae81eec8123b6ddd"
+      "sourceHash": "8a68a237a90ea34b2cd12003eda816b28aeea5fc49012a54bab18f6c73670b06"
     },
     {
       "id": "file:scripts/knowledge/promoteKnowledge.mjs",
@@ -967,7 +989,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "9fd854c05d42a7dfbe7785d71dee45c99f56831eae3bcb9d24b7a1bc891b5986"
+      "sourceHash": "9a02e78737ac877908b4f3bdb7b8ad2c73ee411f038f6e24f78daee8016346da"
     },
     {
       "id": "file:scripts/knowledge/promoteProductKnowledge.mjs",
@@ -979,7 +1001,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "a01ce77ea7ba2cfc80d7f483ca5658accb7b41367cb905d9b3d948b3e178b985"
+      "sourceHash": "6ffdf90e5a259bfe7f617857df049fc02a54673714e051c99d53429db95b5b1c"
     },
     {
       "id": "file:scripts/knowledge/proposeKnowledge.mjs",
@@ -1003,7 +1025,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "dcb742d338e1cc67b360760988049ca10d49ab1f1121e97fdda278250fde8447"
+      "sourceHash": "52d7a28fa9de3c5bee75594c277410feb65509f1a622830ebe48f2cea8ebd414"
     },
     {
       "id": "file:scripts/knowledge/proposeRequirementKnowledge.mjs",
@@ -1015,7 +1037,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "87c70a816f7faa4635ef05aa985a31d4b71a756774dfa4cf48d1b9824caf403e"
+      "sourceHash": "52eee03d228522cbb2ad4cb9a9df99b134feb63d10b1fc0b7d0fcc43ade2980a"
     },
     {
       "id": "file:scripts/knowledge/python_ast_adapter.py",
@@ -1039,7 +1061,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "2ffa5eff29db33ecd8f8a5232ff40601f46ab8d0604b4cde5620855ee648be10"
+      "sourceHash": "525070ba559a2f91f465a1dc62955938f0f1ba95a2d0d8598994ba9312c1d5b6"
     },
     {
       "id": "file:scripts/knowledge/traceKnowledge.mjs",
@@ -1063,7 +1085,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "c91fae9154b1dd123ca28f96f1609917cc112f8d2148cf4d63bd78bd63ef86c9"
+      "sourceHash": "bfefbd2c2ca8a678441989d0016e6615f271e280c5da44b1fc9922bebe3073b2"
     },
     {
       "id": "file:scripts/knowledge/validateRelationships.mjs",
@@ -1075,7 +1097,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "e5ef75482d91cfeb3d23ed190b0dabacbc15f172f8e86440f7a20432ec7a1dd0"
+      "sourceHash": "9eb6afddfc10493bd1ba0942fa4df90020d0a94ff3f39eb2e8f31cdd5c504bd9"
     },
     {
       "id": "file:scripts/knowledge/verifyKnowledge.mjs",
@@ -1090,6 +1112,18 @@
       "sourceHash": "653db3e97636e3792e19b1ab8e2d7285e9cb2955dba9f72a16ec5e2c3e3286d4"
     },
     {
+      "id": "file:scripts/qa-coverage.mjs",
+      "kind": "file",
+      "label": "scripts/qa-coverage.mjs",
+      "path": "scripts/qa-coverage.mjs",
+      "category": "tooling",
+      "tags": [
+        "mjs",
+        "tooling"
+      ],
+      "sourceHash": "dffe8d6f2e8dae0531393b8e495e7b537403c91ccf36d64270474c77070ec1b8"
+    },
+    {
       "id": "file:scripts/queryKnowledge.mjs",
       "kind": "file",
       "label": "scripts/queryKnowledge.mjs",
@@ -1099,7 +1133,7 @@
         "mjs",
         "tooling"
       ],
-      "sourceHash": "354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b"
+      "sourceHash": "a6d1caea92f634d7858147db77280a08d7c967190d3cbe7090aea7c4d66b6c14"
     },
     {
       "id": "file:scripts/validateKnowledge.mjs",
@@ -1123,7 +1157,7 @@
         "configuration",
         "json"
       ],
-      "sourceHash": "ef18f7b3d95f79b7b3855793304a2b4cc800abb1ffb5e63e24d4103936ec2fc9"
+      "sourceHash": "a37348ef8e17c18d96aac362ff804ca125bdb6e06ed7b7c7f0c829d971d41df8"
     },
     {
       "id": "file:ui/pages/BasePage.ts",
@@ -1478,10 +1512,18 @@
       ]
     },
     {
+      "id": "package:fs",
+      "kind": "package",
+      "label": "fs",
+      "tags": [
+        "npm-package"
+      ]
+    },
+    {
       "id": "package:js-yaml",
       "kind": "package",
       "label": "js-yaml",
-      "version": "^4.1.1",
+      "version": "^4.3.2",
       "tags": [
         "npm-package"
       ]
@@ -1532,6 +1574,14 @@
       "label": "node:process",
       "tags": [
         "node-builtin"
+      ]
+    },
+    {
+      "id": "package:path",
+      "kind": "package",
+      "label": "path",
+      "tags": [
+        "npm-package"
       ]
     },
     {
@@ -2853,8 +2903,8 @@
       "label": "api",
       "path": "app/frontend/src/api.ts",
       "category": "frontend",
-      "startLine": 108,
-      "endLine": 178,
+      "startLine": 104,
+      "endLine": 174,
       "exported": false,
       "tags": [
         "frontend",
@@ -2896,7 +2946,7 @@
       "path": "app/frontend/src/api.ts",
       "category": "frontend",
       "startLine": 77,
-      "endLine": 106,
+      "endLine": 102,
       "exported": false,
       "tags": [
         "frontend",
@@ -2993,8 +3043,8 @@
       "label": "Sidebar",
       "path": "app/frontend/src/components/Sidebar.tsx",
       "category": "frontend",
-      "startLine": 45,
-      "endLine": 112,
+      "startLine": 63,
+      "endLine": 136,
       "exported": true,
       "tags": [
         "frontend",
@@ -3176,7 +3226,7 @@
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
       "startLine": 12,
-      "endLine": 608,
+      "endLine": 615,
       "exported": true,
       "tags": [
         "frontend",
@@ -3217,8 +3267,8 @@
       "label": "downloadFile",
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
-      "startLine": 198,
-      "endLine": 202,
+      "startLine": 201,
+      "endLine": 205,
       "exported": false,
       "tags": [
         "frontend",
@@ -3231,8 +3281,8 @@
       "label": "downloadMultipleFiles",
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
-      "startLine": 204,
-      "endLine": 208,
+      "startLine": 207,
+      "endLine": 211,
       "exported": false,
       "tags": [
         "frontend",
@@ -3259,8 +3309,8 @@
       "label": "handleFileCardPointerEnter",
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
-      "startLine": 166,
-      "endLine": 170,
+      "startLine": 169,
+      "endLine": 173,
       "exported": false,
       "tags": [
         "frontend",
@@ -3273,8 +3323,8 @@
       "label": "handleFileCardPointerLeave",
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
-      "startLine": 185,
-      "endLine": 190,
+      "startLine": 188,
+      "endLine": 193,
       "exported": false,
       "tags": [
         "frontend",
@@ -3287,8 +3337,8 @@
       "label": "handleFileCardPointerMove",
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
-      "startLine": 172,
-      "endLine": 183,
+      "startLine": 175,
+      "endLine": 186,
       "exported": false,
       "tags": [
         "frontend",
@@ -3302,7 +3352,7 @@
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
       "startLine": 161,
-      "endLine": 164,
+      "endLine": 167,
       "exported": false,
       "tags": [
         "frontend",
@@ -3315,8 +3365,8 @@
       "label": "previewFile",
       "path": "app/frontend/src/pages/FilesPage.tsx",
       "category": "frontend",
-      "startLine": 192,
-      "endLine": 196,
+      "startLine": 195,
+      "endLine": 199,
       "exported": false,
       "tags": [
         "frontend",
@@ -3400,7 +3450,7 @@
       "path": "app/frontend/src/pages/FoldersPage.tsx",
       "category": "frontend",
       "startLine": 12,
-      "endLine": 597,
+      "endLine": 606,
       "exported": true,
       "tags": [
         "frontend",
@@ -3469,8 +3519,8 @@
       "label": "handleFolderCardPointerEnter",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
       "category": "frontend",
-      "startLine": 189,
-      "endLine": 193,
+      "startLine": 192,
+      "endLine": 196,
       "exported": false,
       "tags": [
         "frontend",
@@ -3483,8 +3533,8 @@
       "label": "handleFolderCardPointerLeave",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
       "category": "frontend",
-      "startLine": 208,
-      "endLine": 213,
+      "startLine": 211,
+      "endLine": 216,
       "exported": false,
       "tags": [
         "frontend",
@@ -3497,8 +3547,8 @@
       "label": "handleFolderCardPointerMove",
       "path": "app/frontend/src/pages/FoldersPage.tsx",
       "category": "frontend",
-      "startLine": 195,
-      "endLine": 206,
+      "startLine": 198,
+      "endLine": 209,
       "exported": false,
       "tags": [
         "frontend",
@@ -3512,7 +3562,7 @@
       "path": "app/frontend/src/pages/FoldersPage.tsx",
       "category": "frontend",
       "startLine": 184,
-      "endLine": 187,
+      "endLine": 190,
       "exported": false,
       "tags": [
         "frontend",
@@ -3582,7 +3632,7 @@
       "path": "app/frontend/src/pages/HomePage.tsx",
       "category": "frontend",
       "startLine": 10,
-      "endLine": 270,
+      "endLine": 277,
       "exported": true,
       "tags": [
         "frontend",
@@ -3610,7 +3660,7 @@
       "path": "app/frontend/src/pages/LoginPage.tsx",
       "category": "frontend",
       "startLine": 8,
-      "endLine": 136,
+      "endLine": 140,
       "exported": true,
       "tags": [
         "frontend",
@@ -3652,7 +3702,7 @@
       "path": "app/frontend/src/pages/OAuthCallbackPage.tsx",
       "category": "frontend",
       "startLine": 8,
-      "endLine": 52,
+      "endLine": 53,
       "exported": true,
       "tags": [
         "frontend",
@@ -3666,7 +3716,7 @@
       "path": "app/frontend/src/pages/PreferencesPage.tsx",
       "category": "frontend",
       "startLine": 8,
-      "endLine": 111,
+      "endLine": 110,
       "exported": true,
       "tags": [
         "frontend",
@@ -3828,6 +3878,34 @@
       ]
     },
     {
+      "id": "symbol:scripts/guardrails.mjs#checkFile",
+      "kind": "function",
+      "label": "checkFile",
+      "path": "scripts/guardrails.mjs",
+      "category": "tooling",
+      "startLine": 20,
+      "endLine": 88,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
+      "id": "symbol:scripts/guardrails.mjs#walkDir",
+      "kind": "function",
+      "label": "walkDir",
+      "path": "scripts/guardrails.mjs",
+      "category": "tooling",
+      "startLine": 11,
+      "endLine": 18,
+      "exported": false,
+      "tags": [
+        "function",
+        "tooling"
+      ]
+    },
+    {
       "id": "symbol:scripts/knowledge/CodebaseKnowledge.mjs#KNOWLEDGE_PROCESS",
       "kind": "variable",
       "label": "KNOWLEDGE_PROCESS",
@@ -3974,7 +4052,7 @@
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
       "startLine": 572,
-      "endLine": 663,
+      "endLine": 670,
       "exported": false,
       "tags": [
         "function",
@@ -3987,8 +4065,8 @@
       "label": "applyKnowledgeBuild",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1857,
-      "endLine": 1867,
+      "startLine": 1864,
+      "endLine": 1874,
       "exported": true,
       "tags": [
         "function",
@@ -4015,8 +4093,8 @@
       "label": "buildArchitectureMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1381,
-      "endLine": 1432,
+      "startLine": 1388,
+      "endLine": 1439,
       "exported": false,
       "tags": [
         "function",
@@ -4029,8 +4107,8 @@
       "label": "buildCodeConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1265,
-      "endLine": 1379,
+      "startLine": 1272,
+      "endLine": 1386,
       "exported": false,
       "tags": [
         "function",
@@ -4043,8 +4121,8 @@
       "label": "buildGeneratedIndexes",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1529,
-      "endLine": 1586,
+      "startLine": 1536,
+      "endLine": 1593,
       "exported": false,
       "tags": [
         "function",
@@ -4071,8 +4149,8 @@
       "label": "buildRelationshipMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1434,
-      "endLine": 1458,
+      "startLine": 1441,
+      "endLine": 1465,
       "exported": false,
       "tags": [
         "function",
@@ -4085,8 +4163,8 @@
       "label": "buildServiceMermaid",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1460,
-      "endLine": 1490,
+      "startLine": 1467,
+      "endLine": 1497,
       "exported": false,
       "tags": [
         "function",
@@ -4099,8 +4177,8 @@
       "label": "buildStaticGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 665,
-      "endLine": 1204,
+      "startLine": 672,
+      "endLine": 1211,
       "exported": false,
       "tags": [
         "function",
@@ -4113,8 +4191,8 @@
       "label": "categoryForNode",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1236,
-      "endLine": 1244,
+      "startLine": 1243,
+      "endLine": 1251,
       "exported": false,
       "tags": [
         "function",
@@ -4253,8 +4331,8 @@
       "label": "graphConcept",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1492,
-      "endLine": 1527,
+      "startLine": 1499,
+      "endLine": 1534,
       "exported": false,
       "tags": [
         "function",
@@ -4267,8 +4345,8 @@
       "label": "graphNodeLabel",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1232,
-      "endLine": 1234,
+      "startLine": 1239,
+      "endLine": 1241,
       "exported": false,
       "tags": [
         "function",
@@ -4281,8 +4359,8 @@
       "label": "graphPayload",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1206,
-      "endLine": 1230,
+      "startLine": 1213,
+      "endLine": 1237,
       "exported": false,
       "tags": [
         "function",
@@ -4337,8 +4415,8 @@
       "label": "isDateLike",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1889,
-      "endLine": 1891,
+      "startLine": 1896,
+      "endLine": 1898,
       "exported": false,
       "tags": [
         "function",
@@ -4365,8 +4443,8 @@
       "label": "listMarkdown",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1258,
-      "endLine": 1263,
+      "startLine": 1265,
+      "endLine": 1270,
       "exported": false,
       "tags": [
         "function",
@@ -4379,8 +4457,8 @@
       "label": "loadCodeGraph",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 2064,
-      "endLine": 2072,
+      "startLine": 2071,
+      "endLine": 2079,
       "exported": true,
       "tags": [
         "function",
@@ -4407,8 +4485,8 @@
       "label": "markdownFilesInKnowledge",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1869,
-      "endLine": 1887,
+      "startLine": 1876,
+      "endLine": 1894,
       "exported": false,
       "tags": [
         "function",
@@ -4463,8 +4541,8 @@
       "label": "ownedGeneratedMarkdownFiles",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1742,
-      "endLine": 1753,
+      "startLine": 1749,
+      "endLine": 1760,
       "exported": false,
       "tags": [
         "function",
@@ -4505,8 +4583,8 @@
       "label": "planKnowledgeBuild",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1755,
-      "endLine": 1855,
+      "startLine": 1762,
+      "endLine": 1862,
       "exported": true,
       "tags": [
         "function",
@@ -4575,8 +4653,8 @@
       "label": "relationshipTargetLink",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1246,
-      "endLine": 1256,
+      "startLine": 1253,
+      "endLine": 1263,
       "exported": false,
       "tags": [
         "function",
@@ -4603,8 +4681,8 @@
       "label": "resolveMarkdownTarget",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1893,
-      "endLine": 1911,
+      "startLine": 1900,
+      "endLine": 1918,
       "exported": false,
       "tags": [
         "function",
@@ -4673,8 +4751,8 @@
       "label": "staticScaffold",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1588,
-      "endLine": 1740,
+      "startLine": 1595,
+      "endLine": 1747,
       "exported": false,
       "tags": [
         "function",
@@ -4729,8 +4807,8 @@
       "label": "validateKnowledgeBundle",
       "path": "scripts/knowledge/CodebaseKnowledge.mjs",
       "category": "tooling",
-      "startLine": 1913,
-      "endLine": 2062,
+      "startLine": 1920,
+      "endLine": 2069,
       "exported": true,
       "tags": [
         "function",
@@ -4771,8 +4849,8 @@
       "label": "walk",
       "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
       "category": "tooling",
-      "startLine": 27,
-      "endLine": 34,
+      "startLine": 29,
+      "endLine": 36,
       "exported": false,
       "tags": [
         "function",
@@ -4911,8 +4989,8 @@
       "label": "automatedDocument",
       "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
       "category": "tooling",
-      "startLine": 84,
-      "endLine": 121,
+      "startLine": 97,
+      "endLine": 138,
       "exported": false,
       "tags": [
         "function",
@@ -4925,8 +5003,8 @@
       "label": "manualDocument",
       "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
       "category": "tooling",
-      "startLine": 45,
-      "endLine": 82,
+      "startLine": 58,
+      "endLine": 95,
       "exported": false,
       "tags": [
         "function",
@@ -4939,8 +5017,8 @@
       "label": "walk",
       "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
       "category": "tooling",
-      "startLine": 123,
-      "endLine": 130,
+      "startLine": 140,
+      "endLine": 147,
       "exported": false,
       "tags": [
         "function",
@@ -4953,8 +5031,8 @@
       "label": "toRepoPath",
       "path": "scripts/knowledge/syncRelationships.mjs",
       "category": "tooling",
-      "startLine": 61,
-      "endLine": 61,
+      "startLine": 74,
+      "endLine": 76,
       "exported": false,
       "tags": [
         "function",
@@ -4967,8 +5045,8 @@
       "label": "walk",
       "path": "scripts/knowledge/syncRelationships.mjs",
       "category": "tooling",
-      "startLine": 62,
-      "endLine": 69,
+      "startLine": 77,
+      "endLine": 84,
       "exported": false,
       "tags": [
         "function",
@@ -4981,8 +5059,8 @@
       "label": "walk",
       "path": "scripts/knowledge/validateRelationships.mjs",
       "category": "tooling",
-      "startLine": 17,
-      "endLine": 24,
+      "startLine": 25,
+      "endLine": 32,
       "exported": false,
       "tags": [
         "function",
@@ -4995,8 +5073,8 @@
       "label": "edgeSearchText",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 72,
-      "endLine": 76,
+      "startLine": 74,
+      "endLine": 78,
       "exported": false,
       "tags": [
         "function",
@@ -5009,8 +5087,8 @@
       "label": "matchesTerms",
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
-      "startLine": 67,
-      "endLine": 70,
+      "startLine": 69,
+      "endLine": 72,
       "exported": false,
       "tags": [
         "function",
@@ -5038,7 +5116,7 @@
       "path": "scripts/queryKnowledge.mjs",
       "category": "tooling",
       "startLine": 42,
-      "endLine": 65,
+      "endLine": 67,
       "exported": false,
       "tags": [
         "function",
@@ -6117,7 +6195,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/syncRelationships.mjs",
-          "line": 61
+          "line": 74
         }
       ]
     },
@@ -6369,7 +6447,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1232
+          "line": 1239
         }
       ]
     },
@@ -6691,7 +6769,20 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1381
+          "line": 1388
+        }
+      ]
+    },
+    {
+      "id": "edge:13770b1c344a9848",
+      "relation": "CONTAINS",
+      "from": "file:scripts/guardrails.mjs",
+      "to": "symbol:scripts/guardrails.mjs#checkFile",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/guardrails.mjs",
+          "line": 20
         }
       ]
     },
@@ -6971,7 +7062,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
-          "line": 208
+          "line": 211
         }
       ]
     },
@@ -7062,7 +7153,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1869
+          "line": 1876
         }
       ]
     },
@@ -7144,6 +7235,20 @@
           "path": "scripts/knowledge/verifyKnowledge.mjs",
           "line": 2,
           "detail": "node:path"
+        }
+      ]
+    },
+    {
+      "id": "edge:1f9f1a66439918a2",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/guardrails.mjs",
+      "to": "package:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/guardrails.mjs",
+          "line": 1,
+          "detail": "fs"
         }
       ]
     },
@@ -7310,6 +7415,19 @@
       ]
     },
     {
+      "id": "edge:2426a7d54ff595e0",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/guardrails.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/guardrails.mjs",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:242f9107a56dca56",
       "relation": "IMPORTS_PACKAGE",
       "from": "file:utils/common/CustomReporter.ts",
@@ -7451,7 +7569,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1755
+          "line": 1762
         }
       ]
     },
@@ -7605,7 +7723,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1492
+          "line": 1499
         }
       ]
     },
@@ -7790,7 +7908,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 2064
+          "line": 2071
         }
       ]
     },
@@ -8235,7 +8353,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1529
+          "line": 1536
         }
       ]
     },
@@ -8293,6 +8411,20 @@
       ]
     },
     {
+      "id": "edge:37a214006494d5dd",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/guardrails.mjs",
+      "to": "package:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/guardrails.mjs",
+          "line": 2,
+          "detail": "path"
+        }
+      ]
+    },
+    {
       "id": "edge:37ea517466c49e3b",
       "relation": "DECLARES_ROUTE",
       "from": "symbol:ui/pages/BasePage.ts#BasePage",
@@ -8315,7 +8447,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1588
+          "line": 1595
         }
       ]
     },
@@ -8619,7 +8751,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 665
+          "line": 672
         }
       ]
     },
@@ -8685,7 +8817,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
-          "line": 166
+          "line": 169
         }
       ]
     },
@@ -8818,7 +8950,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 2064
+          "line": 2071
         }
       ]
     },
@@ -8996,7 +9128,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
-          "line": 198
+          "line": 201
         }
       ]
     },
@@ -9009,7 +9141,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1742
+          "line": 1749
         }
       ]
     },
@@ -9473,7 +9605,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1246
+          "line": 1253
         }
       ]
     },
@@ -9581,7 +9713,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 67
+          "line": 69
         }
       ]
     },
@@ -9882,6 +10014,20 @@
       ]
     },
     {
+      "id": "edge:5bbef34017cbdcb7",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/qa-coverage.mjs",
+      "to": "package:path",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/qa-coverage.mjs",
+          "line": 2,
+          "detail": "path"
+        }
+      ]
+    },
+    {
       "id": "edge:5bc526ae98ae85f6",
       "relation": "CONTAINS",
       "from": "file:scripts/knowledge/syncRelationships.mjs",
@@ -9890,7 +10036,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/syncRelationships.mjs",
-          "line": 62
+          "line": 77
         }
       ]
     },
@@ -10081,7 +10227,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1755
+          "line": 1762
         }
       ]
     },
@@ -10547,7 +10693,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1265
+          "line": 1272
         }
       ]
     },
@@ -10626,7 +10772,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/cleanPromotedKnowledge.mjs",
-          "line": 27
+          "line": 29
         }
       ]
     },
@@ -10713,7 +10859,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1258
+          "line": 1265
         }
       ]
     },
@@ -11153,7 +11299,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1913
+          "line": 1920
         }
       ]
     },
@@ -11219,7 +11365,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1913
+          "line": 1920
         }
       ]
     },
@@ -11419,7 +11565,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/validateRelationships.mjs",
-          "line": 17
+          "line": 25
         }
       ]
     },
@@ -11500,7 +11646,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
-          "line": 45
+          "line": 58
         }
       ]
     },
@@ -11639,6 +11785,19 @@
       ]
     },
     {
+      "id": "edge:8553c5219f437fbf",
+      "relation": "CONTAINS",
+      "from": "file:scripts/guardrails.mjs",
+      "to": "symbol:scripts/guardrails.mjs#walkDir",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/guardrails.mjs",
+          "line": 11
+        }
+      ]
+    },
+    {
       "id": "edge:85873ae88f1f7553",
       "relation": "IMPORTS",
       "from": "file:playwright.config.ts",
@@ -11701,7 +11860,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/components/Sidebar.tsx",
-          "line": 45
+          "line": 63
         }
       ]
     },
@@ -11794,7 +11953,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
-          "line": 204
+          "line": 207
         }
       ]
     },
@@ -12365,7 +12524,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
-          "line": 123
+          "line": 140
         }
       ]
     },
@@ -12473,7 +12632,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
-          "line": 195
+          "line": 198
         }
       ]
     },
@@ -12540,7 +12699,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
-          "line": 192
+          "line": 195
         }
       ]
     },
@@ -12776,7 +12935,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/components/Sidebar.tsx",
-          "line": 45
+          "line": 63
         }
       ]
     },
@@ -12881,7 +13040,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1460
+          "line": 1467
         }
       ]
     },
@@ -13113,6 +13272,20 @@
       ]
     },
     {
+      "id": "edge:aaff696a6c048d82",
+      "relation": "IMPORTS_PACKAGE",
+      "from": "file:scripts/qa-coverage.mjs",
+      "to": "package:fs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/qa-coverage.mjs",
+          "line": 1,
+          "detail": "fs"
+        }
+      ]
+    },
+    {
       "id": "edge:ab60eaaa781000be",
       "relation": "DECLARES_PACKAGE",
       "from": "file:package.json",
@@ -13276,7 +13449,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1434
+          "line": 1441
         }
       ]
     },
@@ -13289,7 +13462,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/proposeRequirementKnowledge.mjs",
-          "line": 84
+          "line": 97
         }
       ]
     },
@@ -14007,7 +14180,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1206
+          "line": 1213
         }
       ]
     },
@@ -14441,7 +14614,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1893
+          "line": 1900
         }
       ]
     },
@@ -14519,7 +14692,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/api.ts",
-          "line": 108
+          "line": 104
         }
       ]
     },
@@ -14532,7 +14705,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1857
+          "line": 1864
         }
       ]
     },
@@ -14754,7 +14927,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1236
+          "line": 1243
         }
       ]
     },
@@ -14978,6 +15151,19 @@
       ]
     },
     {
+      "id": "edge:d66e40992d8ba0d6",
+      "relation": "CONTAINS",
+      "from": "repository:playwright-agentic-automation",
+      "to": "file:scripts/qa-coverage.mjs",
+      "confidence": "exact",
+      "evidence": [
+        {
+          "path": "scripts/qa-coverage.mjs",
+          "line": 1
+        }
+      ]
+    },
+    {
       "id": "edge:d6cdcf55e717788b",
       "relation": "CONTAINS",
       "from": "file:app/frontend/src/App.tsx",
@@ -15109,7 +15295,7 @@
       "evidence": [
         {
           "path": "scripts/queryKnowledge.mjs",
-          "line": 72
+          "line": 74
         }
       ]
     },
@@ -15430,7 +15616,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1857
+          "line": 1864
         }
       ]
     },
@@ -15802,7 +15988,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
-          "line": 185
+          "line": 188
         }
       ]
     },
@@ -16015,7 +16201,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FilesPage.tsx",
-          "line": 172
+          "line": 175
         }
       ]
     },
@@ -16108,7 +16294,7 @@
       "evidence": [
         {
           "path": "scripts/knowledge/CodebaseKnowledge.mjs",
-          "line": 1889
+          "line": 1896
         }
       ]
     },
@@ -16240,7 +16426,7 @@
       "evidence": [
         {
           "path": "app/frontend/src/pages/FoldersPage.tsx",
-          "line": 189
+          "line": 192
         }
       ]
     },

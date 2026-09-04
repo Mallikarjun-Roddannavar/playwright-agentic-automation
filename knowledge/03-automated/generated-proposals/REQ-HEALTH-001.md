@@ -20,6 +20,7 @@ Playwright evidence. Review semantic coverage before promotion.
 ## Product requirement
 
 See [approved product requirement](../../01-product/requirements/health.md).
+
 ## Candidate automation evidence
 
 - Candidate evidence: `api/specs/health.spec.ts`

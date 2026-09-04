@@ -16,3 +16,6 @@ node_modules/
 **/*.tsbuildinfo
 **/database.sqlite3
 **/uploads/
+node_modules/
+.venv/
+package-lock.json

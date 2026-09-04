@@ -15,16 +15,16 @@ sources:
     title: scripts/queryKnowledge.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/queryKnowledge.mjs
-source_sha256: 354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b
+source_sha256: a6d1caea92f634d7858147db77280a08d7c967190d3cbe7090aea7c4d66b6c14
 code_graph_id: file:scripts/queryKnowledge.mjs
 analysis_scope: static-ast
-fact_sha256: cc6cf2eef6257bbdfc2e58ca13ec868704643ce1d872ea13aa8a662cfcf2b6e3
+fact_sha256: 681f340c5276f7acf8c4f8b8bd375761878efc02db04187c203a6744104e2570
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-21T11:27:49.699Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-21T11:27:49.699Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,10 +33,10 @@ Framework tooling extracted from scripts/queryKnowledge.mjs by deterministic sta
 
 # Symbols
 
-- `function` **edgeSearchText** (lines 72-76)
-- `function` **matchesTerms** (lines 67-70)
+- `function` **edgeSearchText** (lines 74-78)
+- `function` **matchesTerms** (lines 69-72)
 - `function` **parseArguments** (lines 12-40)
-- `function` **queryKnowledgePages** (lines 42-65)
+- `function` **queryKnowledgePages** (lines 42-67)
 - `function` **usage** (lines 6-10)
 
 # Imports
@@ -56,4 +56,4 @@ Framework tooling extracted from scripts/queryKnowledge.mjs by deterministic sta
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `354250e513c9aab4ce130d6b13f1011c58a8f7616609688a81a5e991db2f627b`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `a6d1caea92f634d7858147db77280a08d7c967190d3cbe7090aea7c4d66b6c14`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

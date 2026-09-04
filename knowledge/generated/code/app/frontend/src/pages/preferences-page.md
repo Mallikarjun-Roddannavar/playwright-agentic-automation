@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/pages/PreferencesPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/PreferencesPage.tsx
-source_sha256: 28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2
+source_sha256: 1a7b0766ccd670ee99bb0c4b1afd209f4d414bab7877c5363c964170704010e9
 code_graph_id: file:app/frontend/src/pages/PreferencesPage.tsx
 analysis_scope: static-ast
-fact_sha256: c09ead2382e55560039852ae7d0a57b5f09feffbf6e01f8d2ae7ae53c05f09de
+fact_sha256: f0af5fabbbc9701fe83955e7ee93691f0b981a800336c7fd53857e5427cb20ae
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:16:28.092Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:16:28.092Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,7 +33,7 @@ Application frontend extracted from app/frontend/src/pages/PreferencesPage.tsx b
 
 # Symbols
 
-- `function` **PreferencesPage** exported (lines 8-111)
+- `function` **PreferencesPage** exported (lines 8-110)
 - `function` **onProfileIconChange** (lines 20-32)
 - `function` **removeProfileIcon** (lines 34-38)
 
@@ -55,4 +55,4 @@ Application frontend extracted from app/frontend/src/pages/PreferencesPage.tsx b
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `28fae296e0715372a59a0f1cc558b866c4e8db0438fef7cc23fe487aa31b25d2`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `1a7b0766ccd670ee99bb0c4b1afd209f4d414bab7877c5363c964170704010e9`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

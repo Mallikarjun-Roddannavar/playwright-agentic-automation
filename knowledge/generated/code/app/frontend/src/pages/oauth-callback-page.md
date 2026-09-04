@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/pages/OAuthCallbackPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/OAuthCallbackPage.tsx
-source_sha256: 4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a
+source_sha256: 6a9d1f0247e24db7e07d47c2265f8eb0666709be7c4425c58665a26f1189c9d2
 code_graph_id: file:app/frontend/src/pages/OAuthCallbackPage.tsx
 analysis_scope: static-ast
-fact_sha256: 79d51702579d1d06788566211ef4cc7e4081d1b06b86875468494b0edf10ebf0
+fact_sha256: f3e88e0051120804bf6bd46086b7458d211ad5ac6b1634a48f79d666d684026f
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,7 +33,7 @@ Application frontend extracted from app/frontend/src/pages/OAuthCallbackPage.tsx
 
 # Symbols
 
-- `function` **OAuthCallbackPage** exported (lines 8-52)
+- `function` **OAuthCallbackPage** exported (lines 8-53)
 
 # Imports
 
@@ -53,4 +53,4 @@ Application frontend extracted from app/frontend/src/pages/OAuthCallbackPage.tsx
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `4472b4c41d85a0d131fea5d34a281ee168f9e5bd9962e0598fd58f37f606940a`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `6a9d1f0247e24db7e07d47c2265f8eb0666709be7c4425c58665a26f1189c9d2`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
