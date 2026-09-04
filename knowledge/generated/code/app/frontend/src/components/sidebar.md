@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/components/Sidebar.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/Sidebar.tsx
-source_sha256: 853fe59f6dda367534982e5a77a48f6ed0ffda19f5eeeb9efb8035c714f3d294
+source_sha256: de4a4a37c9b47abd4feec62466ff404b9cf447d2ee364f9603b766d01c4b1cfa
 code_graph_id: file:app/frontend/src/components/Sidebar.tsx
 analysis_scope: static-ast
-fact_sha256: 4383769f2124bed8f96c283ba6ce9dac91af5b927705eb09c82313bc99e47db8
+fact_sha256: af30db6a149e613a42c20bbb0bcd80e35280c41a33204c063411da10b9548932
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:16:28.092Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:16:28.092Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,7 +33,7 @@ Application frontend extracted from app/frontend/src/components/Sidebar.tsx by d
 
 # Symbols
 
-- `function` **Sidebar** exported (lines 45-112)
+- `function` **Sidebar** exported (lines 63-136)
 - `type` **SidebarProps** (lines 3-6)
 
 # Imports
@@ -50,4 +50,4 @@ Application frontend extracted from app/frontend/src/components/Sidebar.tsx by d
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `853fe59f6dda367534982e5a77a48f6ed0ffda19f5eeeb9efb8035c714f3d294`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `de4a4a37c9b47abd4feec62466ff404b9cf447d2ee364f9603b766d01c4b1cfa`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

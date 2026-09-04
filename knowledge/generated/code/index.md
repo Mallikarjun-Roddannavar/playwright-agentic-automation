@@ -111,6 +111,8 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/buildKnowledge.mjs` — Framework tooling.
 - [checkNamingConventions](scripts/check-naming-conventions.md)
   - `scripts/checkNamingConventions.mjs` — Framework tooling.
+- [guardrails](scripts/guardrails.md)
+  - `scripts/guardrails.mjs` — Framework tooling.
 - [CodebaseKnowledge](scripts/knowledge/codebase-knowledge.md)
   - `scripts/knowledge/CodebaseKnowledge.mjs` — Framework tooling.
 - [WorkflowLog](scripts/knowledge/workflow-log.md)
@@ -147,6 +149,8 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/knowledge/validateRelationships.mjs` — Framework tooling.
 - [verifyKnowledge](scripts/knowledge/verify-knowledge.md)
   - `scripts/knowledge/verifyKnowledge.mjs` — Framework tooling.
+- [qa-coverage](scripts/qa-coverage.md)
+  - `scripts/qa-coverage.mjs` — Framework tooling.
 - [queryKnowledge](scripts/query-knowledge.md)
   - `scripts/queryKnowledge.mjs` — Framework tooling.
 - [validateKnowledge](scripts/validate-knowledge.md)

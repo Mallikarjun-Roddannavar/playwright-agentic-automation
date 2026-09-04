@@ -181,7 +181,10 @@ export function FoldersPage() {
     }
   }
 
-  function handleViewModeSelect(event: MouseEvent<HTMLButtonElement>, nextViewMode: "list" | "cards") {
+  function handleViewModeSelect(
+    event: MouseEvent<HTMLButtonElement>,
+    nextViewMode: "list" | "cards"
+  ) {
     setViewMode(nextViewMode);
     event.currentTarget.blur();
   }
@@ -239,7 +242,11 @@ export function FoldersPage() {
             <div className="app-toolbar-group">
               <div className="app-view-toggle-shell">
                 <span className="app-view-toggle-label">View mode</span>
-                <div className="app-view-toggle" data-view-mode={viewMode} data-testid="folders-view-toggle">
+                <div
+                  className="app-view-toggle"
+                  data-view-mode={viewMode}
+                  data-testid="folders-view-toggle"
+                >
                   <button
                     type="button"
                     className={`btn-secondary app-view-toggle-btn px-3 py-2 text-sm ${
@@ -316,7 +323,9 @@ export function FoldersPage() {
                       <th className="p-3">
                         <input
                           type="checkbox"
-                          checked={folders.length > 0 && selectedFolderIds.length === folders.length}
+                          checked={
+                            folders.length > 0 && selectedFolderIds.length === folders.length
+                          }
                           onChange={toggleAllFolders}
                           data-testid="folders-select-all"
                         />
@@ -595,12 +604,3 @@ export function FoldersPage() {
     </AppLayout>
   );
 }
-
-
-
-
-
-
-
-
-

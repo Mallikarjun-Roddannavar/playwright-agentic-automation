@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/pages/FilesPage.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/pages/FilesPage.tsx
-source_sha256: 9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7
+source_sha256: ae35429e32412a68a2c85cd2a7815025ede564dcf7af37565e997519a2592cda
 code_graph_id: file:app/frontend/src/pages/FilesPage.tsx
 analysis_scope: static-ast
-fact_sha256: 8b6b202b3de11f6fad95b338b877ebb0679db7b74466dd394f7b5655053af1b2
+fact_sha256: 9359231b62bda141ee616181e67a175a3ce242d3db3c9735e463820f894a6f61
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:07:43.531Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:07:43.531Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,17 +33,17 @@ Application frontend extracted from app/frontend/src/pages/FilesPage.tsx by dete
 
 # Symbols
 
-- `function` **FilesPage** exported (lines 12-608)
+- `function` **FilesPage** exported (lines 12-615)
 - `function` **deleteFile** (lines 87-97)
 - `function` **deleteSelectedFiles** (lines 99-110)
-- `function` **downloadFile** (lines 198-202)
-- `function` **downloadMultipleFiles** (lines 204-208)
+- `function` **downloadFile** (lines 201-205)
+- `function` **downloadMultipleFiles** (lines 207-211)
 - `function` **ensureCardActionsVisible** (lines 112-136)
-- `function` **handleFileCardPointerEnter** (lines 166-170)
-- `function` **handleFileCardPointerLeave** (lines 185-190)
-- `function` **handleFileCardPointerMove** (lines 172-183)
-- `function` **handleViewModeSelect** (lines 161-164)
-- `function` **previewFile** (lines 192-196)
+- `function` **handleFileCardPointerEnter** (lines 169-173)
+- `function` **handleFileCardPointerLeave** (lines 188-193)
+- `function` **handleFileCardPointerMove** (lines 175-186)
+- `function` **handleViewModeSelect** (lines 161-167)
+- `function` **previewFile** (lines 195-199)
 - `function` **refresh** (lines 33-48)
 - `function` **renameFile** (lines 74-85)
 - `function` **toggleAllFiles** (lines 153-159)
@@ -72,4 +72,4 @@ Application frontend extracted from app/frontend/src/pages/FilesPage.tsx by dete
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `9bf86a59681a6afb5ec7a36e2d5632dba095e5468b9c20c95187112e53e53aa7`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `ae35429e32412a68a2c85cd2a7815025ede564dcf7af37565e997519a2592cda`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

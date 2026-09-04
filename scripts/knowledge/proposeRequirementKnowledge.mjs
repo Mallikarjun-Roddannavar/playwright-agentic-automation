@@ -3,22 +3,30 @@ import path from "node:path";
 import process from "node:process";
 
 const root = process.cwd();
-const args = new Map(process.argv.slice(2).map((arg) => {
-  const [key, value] = arg.split("=", 2);
-  return [key.replace(/^--/, ""), value ?? true];
-}));
+const args = new Map(
+  process.argv.slice(2).map((arg) => {
+    const [key, value] = arg.split("=", 2);
+    return [key.replace(/^--/, ""), value ?? true];
+  })
+);
 const stage = args.get("stage");
-if (!['manual', 'automated'].includes(stage)) {
-  console.error("Usage: node ./scripts/knowledge/proposeRequirementKnowledge.mjs --stage=manual|automated [--requirement=REQ-ID]");
+if (!["manual", "automated"].includes(stage)) {
+  console.error(
+    "Usage: node ./scripts/knowledge/proposeRequirementKnowledge.mjs --stage=manual|automated [--requirement=REQ-ID]"
+  );
   process.exit(1);
 }
 
 const productRoot = path.join(root, "knowledge", "01-product", "requirements");
 const outputRoot = path.join(root, "knowledge", "drafts", stage);
 const requirementFilter = args.get("requirement");
-const files = fs.readdirSync(productRoot).filter((file) => file.endsWith(".md") && file !== "index.md");
-const specs = [...walk(path.join(root, "ui", "specs")), ...walk(path.join(root, "api", "specs"))]
-  .filter((file) => file.endsWith(".spec.ts"));
+const files = fs
+  .readdirSync(productRoot)
+  .filter((file) => file.endsWith(".md") && file !== "index.md");
+const specs = [
+  ...walk(path.join(root, "ui", "specs")),
+  ...walk(path.join(root, "api", "specs")),
+].filter((file) => file.endsWith(".spec.ts"));
 
 fs.mkdirSync(outputRoot, { recursive: true });
 for (const filename of files) {
@@ -28,16 +36,21 @@ for (const filename of files) {
   const slug = id.replace(/^REQ-/, "").replace(/-\d+$/, "").toLowerCase();
   const relatedSpecs = specs.filter((file) => {
     const name = path.basename(file).toLowerCase();
-    return slug.split("-").some((term) => name.includes(term)) ||
-      (id === "REQ-RBAC-001" && /rbac|multi-role|viewer-rbac/.test(name));
+    return (
+      slug.split("-").some((term) => name.includes(term)) ||
+      (id === "REQ-RBAC-001" && /rbac|multi-role|viewer-rbac/.test(name))
+    );
   });
   const relativeProduct = `../../01-product/requirements/${filename}`;
   const sourceLines = relatedSpecs.length
-    ? relatedSpecs.map((file) => `  - resource: /${path.relative(root, file).replaceAll("\\", "/")}`).join("\n")
+    ? relatedSpecs
+        .map((file) => `  - resource: /${path.relative(root, file).replaceAll("\\", "/")}`)
+        .join("\n")
     : "  - resource: /knowledge/01-product/requirements/" + filename;
-  const content = stage === "manual"
-    ? manualDocument({ id, relativeProduct, sourceLines, product })
-    : automatedDocument({ id, relativeProduct, sourceLines, relatedSpecs, product });
+  const content =
+    stage === "manual"
+      ? manualDocument({ id, relativeProduct, sourceLines, product })
+      : automatedDocument({ id, relativeProduct, sourceLines, relatedSpecs, product });
   fs.writeFileSync(path.join(outputRoot, `${id}.md`), content, "utf8");
   console.log(`${stage} proposal created: knowledge/drafts/${stage}/${id}.md`);
 }
@@ -83,7 +96,11 @@ ${product.split("## Raw requirement")[0].trim()}
 
 function automatedDocument({ id, relativeProduct, sourceLines, relatedSpecs, product }) {
   const coverage = relatedSpecs.length
-    ? relatedSpecs.map((file) => `- Candidate evidence: \`${path.relative(root, file).replaceAll("\\", "/")}\``).join("\n")
+    ? relatedSpecs
+        .map(
+          (file) => `- Candidate evidence: \`${path.relative(root, file).replaceAll("\\", "/")}\``
+        )
+        .join("\n")
     : "- No matching UI/API spec was found by deterministic filename matching.";
   return `---
 type: Testing Knowledge Proposal

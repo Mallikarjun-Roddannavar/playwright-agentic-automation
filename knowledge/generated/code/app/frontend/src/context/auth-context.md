@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/context/AuthContext.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/context/AuthContext.tsx
-source_sha256: 43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98
+source_sha256: 4152d3f27bdd57c583dbf6ea87fef2841d9facefcbb5f2d73a0e071fef2418bb
 code_graph_id: file:app/frontend/src/context/AuthContext.tsx
 analysis_scope: static-ast
-fact_sha256: 797b7e98ede38d40f8087314b93302ff4bbdf14fb066487bd0c67d8fa0a20e13
+fact_sha256: e5adb043b4b673aa4902cdbaacaa35906bf6cb018daadb656dbf92f6f7fbe85a
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -63,4 +63,4 @@ Application frontend extracted from app/frontend/src/context/AuthContext.tsx by 
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `43a197c384adf709930ab856d41e05864abfe414831b0ac1185ade454eec0c98`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `4152d3f27bdd57c583dbf6ea87fef2841d9facefcbb5f2d73a0e071fef2418bb`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

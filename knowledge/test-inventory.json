@@ -9,9 +9,7 @@
       "spec": "api/specs/files.spec.ts",
       "kind": "api",
       "describe": [],
-      "tests": [
-        "uploads use safe storage names and reject unauthorized or missing folders"
-      ],
+      "tests": ["uploads use safe storage names and reject unauthorized or missing folders"],
       "relationships": [
         {
           "relation": "IMPORTS_PACKAGE",
@@ -142,9 +140,7 @@
       "spec": "api/specs/health.spec.ts",
       "kind": "api",
       "describe": [],
-      "tests": [
-        "health endpoint is reachable"
-      ],
+      "tests": ["health endpoint is reachable"],
       "relationships": [
         {
           "relation": "IMPORTS_PACKAGE",
@@ -190,9 +186,7 @@
       "spec": "api/specs/rbac.spec.ts",
       "kind": "api",
       "describe": [],
-      "tests": [
-        "viewer cannot create folder, editor can create, admin can delete"
-      ],
+      "tests": ["viewer cannot create folder, editor can create, admin can delete"],
       "relationships": [
         {
           "relation": "IMPORTS",
@@ -280,13 +274,8 @@
       "id": "ui/specs/files.spec.ts::01102de3a4b6",
       "spec": "ui/specs/files.spec.ts",
       "kind": "ui",
-      "describe": [
-        "Files"
-      ],
-      "tests": [
-        "admin can upload a file to a folder",
-        "editor can upload a file to a folder"
-      ],
+      "describe": ["Files"],
+      "tests": ["admin can upload a file to a folder", "editor can upload a file to a folder"],
       "relationships": [
         {
           "relation": "CONTAINS",
@@ -433,9 +422,7 @@
       "id": "ui/specs/login.spec.ts::757e24c0dad0",
       "spec": "ui/specs/login.spec.ts",
       "kind": "ui",
-      "describe": [
-        "Login"
-      ],
+      "describe": ["Login"],
       "tests": [
         "admin login succeeds",
         "expired stored session redirects to login",
@@ -519,9 +506,7 @@
       "spec": "ui/specs/multi-role.spec.ts",
       "kind": "ui",
       "describe": [],
-      "tests": [
-        "admin creates folder and viewer can see it after refresh"
-      ],
+      "tests": ["admin creates folder and viewer can see it after refresh"],
       "relationships": [
         {
           "relation": "IMPORTS",
@@ -633,9 +618,7 @@
       "spec": "ui/specs/viewer-rbac.spec.ts",
       "kind": "ui",
       "describe": [],
-      "tests": [
-        "viewer sees read-only folder and file controls"
-      ],
+      "tests": ["viewer sees read-only folder and file controls"],
       "relationships": [
         {
           "relation": "IMPORTS",

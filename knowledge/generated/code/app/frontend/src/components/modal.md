@@ -15,16 +15,16 @@ sources:
     title: app/frontend/src/components/Modal.tsx
     author: process:codebase-knowledge/1.0.0
 source_path: app/frontend/src/components/Modal.tsx
-source_sha256: a5fe02ce5656d8f305467b014fc7c8beeb09682befbfbeac3fabf97c641b121e
+source_sha256: e672e04bd2e9bbb7db82e5e814cc36328721313be6a4a239b5bcc1c722a00bb3
 code_graph_id: file:app/frontend/src/components/Modal.tsx
 analysis_scope: static-ast
-fact_sha256: 84c11a1fb75027f7e3f94e5955352a37b7ad3d9e40c1febdef2c4198ae3703fb
+fact_sha256: f06601b272f886d0298a912f8404eac9f631d03fae78144c5162e175c7b31751
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-18T10:16:28.092Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-18T10:16:28.092Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -51,4 +51,4 @@ Application frontend extracted from app/frontend/src/components/Modal.tsx by det
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `a5fe02ce5656d8f305467b014fc7c8beeb09682befbfbeac3fabf97c641b121e`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `e672e04bd2e9bbb7db82e5e814cc36328721313be6a4a239b5bcc1c722a00bb3`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

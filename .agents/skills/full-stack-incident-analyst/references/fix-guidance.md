@@ -20,14 +20,14 @@ Include one line in every fix answer:
 
 For broad incidents, evaluate these layers compactly:
 
-| Layer | Typical durable use | Common risk |
-|---|---|---|
-| UI/display/accessibility | semantics, focus, affordance, responsive rendering | hides rather than fixes wrong data/state |
-| Frontend/state/request | validation, session/cache, mapping, client-owned filtering | duplicates backend rules or trusts client security |
-| API/backend | authorization, schema, business rules, atomicity, safe storage | contract changes affect multiple clients |
-| Data/config | incorrect flags, mappings, feature settings, corrupt rows | tactical correction without preventing recurrence |
-| Infrastructure/integration | timeouts, queues, upstream identity/data, delivery | ownership and environment variability |
-| Test/tooling | missing coverage, flaky waits/selectors, validator defects | test-only change can mask product defects |
+| Layer                      | Typical durable use                                            | Common risk                                        |
+| -------------------------- | -------------------------------------------------------------- | -------------------------------------------------- |
+| UI/display/accessibility   | semantics, focus, affordance, responsive rendering             | hides rather than fixes wrong data/state           |
+| Frontend/state/request     | validation, session/cache, mapping, client-owned filtering     | duplicates backend rules or trusts client security |
+| API/backend                | authorization, schema, business rules, atomicity, safe storage | contract changes affect multiple clients           |
+| Data/config                | incorrect flags, mappings, feature settings, corrupt rows      | tactical correction without preventing recurrence  |
+| Infrastructure/integration | timeouts, queues, upstream identity/data, delivery             | ownership and environment variability              |
+| Test/tooling               | missing coverage, flaky waits/selectors, validator defects     | test-only change can mask product defects          |
 
 For each relevant layer state the approach, when it works, owner/scope, risk, and rank: `easy/tactical`, `best/recommended`, or `not recommended`.
 

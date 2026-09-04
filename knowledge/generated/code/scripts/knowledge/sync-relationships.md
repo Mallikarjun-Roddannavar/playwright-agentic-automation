@@ -15,16 +15,16 @@ sources:
     title: scripts/knowledge/syncRelationships.mjs
     author: process:codebase-knowledge/1.0.0
 source_path: scripts/knowledge/syncRelationships.mjs
-source_sha256: 2ffa5eff29db33ecd8f8a5232ff40601f46ab8d0604b4cde5620855ee648be10
+source_sha256: 525070ba559a2f91f465a1dc62955938f0f1ba95a2d0d8598994ba9312c1d5b6
 code_graph_id: file:scripts/knowledge/syncRelationships.mjs
 analysis_scope: static-ast
-fact_sha256: a559b38d2c2ba70f58ce1b18fed22f695b09812275fdf05c283bb8dac9927643
+fact_sha256: 33622e30f607e19bdc3959d0a5a98226bbe6743f8a3da98b517a464feb332d70
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-23T04:00:00.497Z"
+  at: "2026-09-04T05:15:44.685Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-23T04:00:00.497Z"
+    at: "2026-09-04T05:15:44.685Z"
 ---
 
 # Purpose
@@ -33,8 +33,8 @@ Framework tooling extracted from scripts/knowledge/syncRelationships.mjs by dete
 
 # Symbols
 
-- `function` **toRepoPath** (lines 61-61)
-- `function` **walk** (lines 62-69)
+- `function` **toRepoPath** (lines 74-76)
+- `function` **walk** (lines 77-84)
 
 # Imports
 
@@ -52,4 +52,4 @@ Framework tooling extracted from scripts/knowledge/syncRelationships.mjs by dete
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `2ffa5eff29db33ecd8f8a5232ff40601f46ab8d0604b4cde5620855ee648be10`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `525070ba559a2f91f465a1dc62955938f0f1ba95a2d0d8598994ba9312c1d5b6`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
