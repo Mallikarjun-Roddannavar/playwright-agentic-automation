@@ -22,3 +22,7 @@ export function folderName(seed = "folder"): string {
 export function fileName(seed = "file"): string {
   return `${uniqueId(seed)}.txt`;
 }
+
+export function escapeRegExp(value: string): string {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}

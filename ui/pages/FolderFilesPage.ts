@@ -1,10 +1,7 @@
 import { type Locator } from "@playwright/test";
 
 import { BasePage } from "@pages/BasePage";
-
-function escapeRegExp(value: string): string {
-  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-}
+import { escapeRegExp } from "@utils/common/CommonUtils";
 
 export class FolderFilesPage extends BasePage {
   readonly title: Locator = this.page.getByTestId("files-title");
