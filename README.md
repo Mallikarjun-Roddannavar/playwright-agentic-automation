@@ -1,4 +1,4 @@
-# Turn Codex or Claude Code into a disciplined Playwright QA engineer
+# Turn agents into a disciplined Playwright QA engineer
 
 [![Quality and Playwright tests](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-UI%20%2B%20API-45ba4b)](https://playwright.dev/)
