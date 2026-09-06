@@ -53,6 +53,8 @@ jobs:
           node ./scripts/validateKnowledge.mjs
           node ./scripts/knowledge/validateRelationships.mjs
           node ./scripts/knowledge/verifyKnowledge.mjs
+          node ./scripts/qaGuardrails.mjs
+          node ./scripts/qaEval.mjs
 
       - name: Lint and typecheck
         run: |

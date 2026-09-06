@@ -1,162 +1,143 @@
-# Playwright Agentic Automation
-
-> A Playwright + TypeScript agentic automation framework with a repository-local LLM Wiki/codebase second brain for AI-assisted test maintenance.
+# Turn Codex or Claude Code into a disciplined Playwright QA engineer
 
 [![Quality and Playwright tests](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-UI%20%2B%20API-45ba4b)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6)](https://www.typescriptlang.org/)
 
-Playwright Agentic Automation combines a runnable practice application, a maintainable Playwright framework, repository-local agent skills, and an evidence-backed LLM Wiki/codebase second brain. The knowledge layer helps external AI coding agents understand the framework, connect product behavior to tests, and maintain UI/API automation with repository evidence.
+> **Turn AI coding agents into evidence-driven Playwright QA engineers.**
+
+`playwright-agentic-automation` gives coding agents—such as Codex and Claude Code—the repository context, QA guardrails, and evidence workflows needed to plan, test, diagnose, repair safely—and know when not to change a failing test. It combines a real Playwright UI/API framework with a repository-local LLM Wiki, focused skills, product/test knowledge, evidence requirements, and deterministic guardrails.
+
+There is no AI platform to deploy: no model keys, SDKs, model router, vector database, hosted service, or mandatory MCP server. Playwright provides browser and test capability. Your coding agent provides intelligence. This repository supplies the QA context and discipline.
+
+## Why this matters
+
+> **When a test fails, an AI should not automatically “fix the test.”**
+> First it must determine whether the test is wrong, the application is broken, or the environment is unavailable.
+
+- If a button was renamed, update the locator—but only after evidence confirms the intended control still exists.
+- If a Viewer can perform an action they should be forbidden from doing, keep the test failing: it found an application bug.
+- If the backend is down, report the environment problem. Do not add arbitrary waits or skip the test.
+
+This repository helps coding agents make that distinction with product context, evidence requirements, policy, and deterministic guardrails. It never auto-classifies a failure or invents evidence.
+
+## Agentic QA workflow
+
+```mermaid
+flowchart LR
+    Requirement[Requirement or change] --> Understand[Understand product and test intent]
+    Understand --> Risk[Identify risk and coverage gaps]
+    Risk --> Execute[Plan or update tests, then execute Playwright]
+    Execute --> Evidence[Collect results, traces, screenshots, logs]
+    Evidence --> Diagnose[Classify failure and confidence]
+    Diagnose --> Decision{Test change allowed?}
+    Decision -->|Yes, evidence-backed| Repair[Smallest safe repair]
+    Decision -->|No or uncertain| Preserve[Preserve failure and escalate]
+    Repair --> Rerun[Rerun, guardrails, report]
+    Preserve --> Rerun
+```
+
+The agent uses requirements and repository knowledge to understand risk, then collects evidence before repairing safely or preserving a failure. The canonical policy is [qa/failure-taxonomy.json](qa/failure-taxonomy.json); see [the QA workflow](docs/QA_WORKFLOW.md) for diagnosis-only and guarded-repair prompts.
+
+## Quick start
+
+```bash
+npm install
+npm run agent:doctor
+npm run qa:demo
+npm run test:list
+```
+
+For the application-backed suite, install the browser and app dependencies described in [Getting Started](docs/GETTING_STARTED.md), then run `npm test`.
 
 ## Core idea: a local LLM Wiki and codebase second brain
 
-This repository explores how a Playwright codebase can provide durable context to AI coding agents without depending on a hosted knowledge platform. Its main building blocks are:
+This is still a practical Playwright + TypeScript framework: UI Page Objects, API services, role-based browser/API fixtures, application-backed tests, centralized routes/configuration, and deterministic quality checks. Its repository-native AI context gives coding agents durable understanding without a hosted AI platform.
 
-- **Local LLM Wiki / second brain** — linked Markdown notes in `knowledge/` for architecture, decisions, runbooks, product behavior, testing knowledge, and source relationships.
-- **Open Knowledge Format (OKF)** — a portable structure for sharing knowledge and provenance, inspired by [Google Cloud's Open Knowledge Format overview](https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing).
-- **Repository instructions** — `AGENTS.md` defines how an agent should navigate and change this Playwright framework, following the [AGENTS.md convention](https://agents.md/).
-- **Agent Skills** — `.agents/skills/` provides reusable, task-specific instructions following the [Agent Skills standard](https://agentskills.io/home).
+The core building blocks are:
 
-The approach is also informed by [Andrej Karpathy's LLM Wiki concept](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f): keep useful context organized, retrievable, and close to the work. Here, that idea is applied specifically to Playwright UI/API automation, Page Objects, fixtures, services, tests, and evidence-backed maintenance.
+- **LLM Wiki / codebase second brain** — the offline-first [`knowledge/`](knowledge/index.md) bundle contains linked product, test, architecture, decision, and runbook notes.
+- **Static evidence graph** — generated AST facts connect imports, routes, fixtures, Page Object navigation, and services. Source hashes make freshness checkable; the graph is not presented as runtime coverage.
+- **`AGENTS.md` + focused skills** — repository rules and task-specific workflows route an agent to UI, API, tooling, knowledge, incident analysis, or safe healing work.
+- **Portable and model-neutral** — Markdown/OKF, normal repository files, and optional Obsidian navigation; no API key, model SDK, embedding service, or vector database.
 
-## Why this project?
+Open [`knowledge/`](knowledge/index.md) as an Obsidian vault for backlinks, Graph view, properties, and Mermaid diagrams. Obsidian is optional: the second brain remains plain portable Markdown and does not need an account, plugin, or cloud sync.
 
-Most Playwright repositories show how tests run. This project also shows how an AI coding agent can navigate and maintain those tests using a repository-local second brain and explicit guidance:
-
-- `AGENTS.md` defines ownership and framework rules.
-- `.agents/skills/` provides reusable workflows for UI, API, tooling, and incident work.
-- `knowledge/` acts as an LLM Wiki: it stores durable Markdown notes, deterministic code relationships, and grounded product/testing knowledge.
-- Playwright tests, Page Objects, API services, fixtures, and validation commands provide the executable evidence.
-
-The repository does not contain an autonomous AI service. External coding agents such as Codex, Claude, Cline, or other compatible tools can use these instructions, skills, and knowledge artifacts while working in the repository.
-
-## Try it in three minutes
+Start with the saved knowledge instead of rediscovering the whole repository:
 
 ```bash
-git clone https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation.git
-cd playwright-agentic-automation
-npm install
-npm run install:browsers
-npm run test:list
-npm test
+npm run knowledge:check                 # verify generated facts are current
+npm run knowledge:impact -- REQ-RBAC-001 # find candidate QA impact
 ```
 
-The test command starts the local FastAPI backend and Vite frontend, runs the UI/API suite, and stops the services afterward. See [Getting Started](docs/GETTING_STARTED.md) for Python and frontend prerequisites.
+The generated graph is a static map, not a runtime trace, test-coverage percentage, or security proof. Human-reviewed product meaning remains separate from agent proposals.
 
-## LLM Wiki / Codebase Second Brain
+### Knowledge that grows safely
 
-The `knowledge/` directory is a repository-local, offline-first second brain for this Playwright codebase. It is inspired by the LLM Wiki and second-brain approach: store useful context in durable, linked notes so an AI agent can retrieve the smallest relevant context instead of rediscovering the repository from scratch.
+The second brain is designed to grow with the repository without silently inventing product truth.
 
-- Markdown knowledge records architecture, decisions, runbooks, product behavior, and testing behavior.
-- The deterministic static graph captures code relationships such as imports, Page Object navigation, API services, routes, fixtures, and package usage.
-- Product and testing knowledge connects expected behavior to specs, Page Objects, tests, and assertions.
-- Agents can query the saved knowledge, verify important claims against source and test evidence, and detect stale or conflicted knowledge after changes.
-- The bundle follows OKF, remains usable in Markdown or Obsidian, and does not require a hosted search service, vector database, or LLM runtime.
+```text
+Code or configuration changes
+  -> generated knowledge becomes stale
+  -> npm run knowledge:build refreshes deterministic facts
+  -> validation checks freshness and structural integrity
 
-The repository also includes an agent-assisted testing second brain that inventories Playwright tests, creates evidence-backed knowledge proposals, detects stale or conflicting claims, and keeps an auditable workflow history.
-
-## Agent workflow
-
-```mermaid
-flowchart TD
-    A[Human request] --> B[AI coding agent]
-    B --> C[AGENTS.md and local skill]
-    C --> D[Knowledge query and source inspection]
-    D --> E[Existing Page Objects, services, fixtures]
-    E --> F[Playwright change or investigation]
-    F --> G[Test and quality validation]
-    G --> H[Evidence-backed result]
+New requirement or QA insight
+  -> agent creates an evidence-backed draft
+  -> human reviews business meaning and test intent
+  -> approved knowledge is promoted into the active bundle
 ```
 
-This describes a supported repository workflow. The external coding agent still performs the reasoning, editing, and command execution.
+This separation is intentional: agents can help discover, organize, and connect evidence, while people retain approval over requirements, expected behavior, and assertion meaning. See [the knowledge-layer workflow](docs/KNOWLEDGE_LAYER.md) for the proposal, review, and promotion commands.
 
-## Repository focus
+## What ordinary Playwright repositories do not provide
 
-The knowledge and agent layers sit on top of a real Playwright framework:
+Playwright already offers planner, generator, healer, coding-agent CLI skills, and optional MCP browser tooling. This project intentionally uses or extends those capabilities instead of cloning them.
 
-- UI tests use TypeScript Page Objects and API tests use reusable services.
-- Shared fixtures provide authenticated admin, editor, and viewer sessions.
-- `AGENTS.md` and `.agents/skills/` define framework-aware agent workflows.
-- `knowledge/` records the relationships and evidence an agent needs to work safely.
+| Official Playwright                               | This repository                                                                  |
+| ------------------------------------------------- | -------------------------------------------------------------------------------- |
+| Browser control, test planning/generation/healing | Product/test knowledge and static relationships                                  |
+| Agent definitions and optional tool transport     | Failure taxonomy, evidence contract, and repair decision policy                  |
+| Executes and can repair tests                     | Guardrails against hidden failures and unsafe repairs                            |
+| General-purpose workflows                         | Repository-specific roles, routes, fixtures, requirements, and QA impact context |
 
-## Quickstart
+## Trust controls
 
-Install dependencies and browsers:
+- **Guardrails** block common ways to hide failures: hard waits, skips, forced actions, swallowed catches, raw selectors, and assertion-free specs.
+- **Evidence and review** validate machine-readable diagnosis records and explicit human decisions.
+- **Coverage and impact** turn requirements and static relationships into explainable QA gaps and candidate affected tests—not fake coverage percentages.
+- **Benchmark fixtures** evaluate classification, evidence completeness, safe-healing decisions, and forbidden actions without fabricating agent scores.
 
-```bash
-npm install
-cd app/backend && python -m venv .venv && pip install -r requirements.txt
-cd ../frontend && npm install
-cd ../.. && npm run install:browsers
+Run `npm run qa:demo` for a 10-second deterministic walkthrough: it shows an evidence-based coverage gap, graph-resolved impact from `FoldersService` to five tests, guardrail status, and benchmark-fixture status. It intentionally does not claim that an agent made or repaired a decision.
+
+For real Playwright artifacts from a controlled locator-drift fault, run `npm run qa:runtime-demo`; then validate `qa-results/runtime/result.json`. Results stay local in ignored `qa-results/`. See [the same-Codex comparison protocol](docs/QA_COMPARISON_PROTOCOL.md) before publishing any guided-versus-baseline claim.
+
+## Copy/paste prompts
+
+```text
+Analyze the latest Playwright failures. Do not modify files. For every failure,
+provide classification, confidence, evidence, root-cause hypothesis, and whether
+test modification is permitted. Use qa/failure-taxonomy.json; UNKNOWN is valid.
 ```
 
-Run the application-backed Playwright suite:
-
-```bash
-npm run test:list
-npm test
+```text
+Fix only HIGH-confidence LOCATOR_DRIFT. Preserve assertions. Do not skip, fixme,
+delete, swallow errors, force actions, or change product expectations. Run
+npm run qa:guardrails and rerun each repaired test.
 ```
 
-The Playwright configuration starts the FastAPI backend and Vite frontend automatically. See [Getting Started](docs/GETTING_STARTED.md) for platform-specific setup and troubleshooting.
-
-## Framework Highlights
-
-- Playwright UI and API projects with TypeScript Page Objects and reusable API services.
-- Role-based browser/API fixtures with authentication and cleanup.
-- Centralized route and configuration ownership for predictable agent changes.
-- Local skills and knowledge queries that help agents navigate and maintain the framework.
-- Linting, typechecking, naming checks, reporting, and freshness validation for evidence-backed changes.
-
-## Persistent Codebase Knowledge
-
-`knowledge/` is a committed, offline-first second brain that follows [Google Cloud Open Knowledge Format v0.2](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md). Its Markdown concepts are the portable, model-neutral knowledge layer; the generated JSON graph and Mermaid diagrams are deterministic, AST-derived views.
-
-The graph intentionally represents static code relationships—not runtime calls, execution traces, coverage, or a security model. It extracts imports, exports, inheritance, page-object navigation, API-service and route usage, fixtures, and package usage. Generated concepts include source hashes, provenance, and machine verification so agents can check freshness before trusting a fact.
-
-```bash
-# Generate or refresh saved AST facts, OKF concepts, Mermaid diagrams, and graph JSON
-npm run knowledge:build
-
-# Validate OKF structure, provenance/trust fields, and graph referential integrity
-npm run knowledge:validate
-
-# Fail when committed generated knowledge is stale, then validate it
-npm run knowledge:check
-
-# Query saved knowledge without reparsing the repository
-npm run knowledge:query -- LoginPage
-npm run knowledge:query -- --relation NAVIGATES_TO
-npm run knowledge:query -- --relation USES_API_ROUTE
-
-# Build and trace testing knowledge
-npm run knowledge:inventory
-npm run knowledge:propose
-npm run knowledge:verify-all
-npm run knowledge:trace -- verification
-
-# Run the complete static quality gate, including knowledge freshness
-npm run quality:check
+```text
+Review this change for QA impact. Identify affected behavior, roles, routes,
+tests, and the highest-risk missing regression scenario. Start with knowledge.
 ```
 
-If npm itself encounters the known Windows `EPERM`/realpath issue, run `node ./scripts/buildKnowledge.mjs --check` followed by `node ./scripts/validateKnowledge.mjs` directly.
+These prompts work with Codex or Claude Code; neither requires a separate repository architecture. If desired, configure official Playwright CLI skills or MCP using the current [Playwright coding-agent documentation](https://playwright.dev/docs/getting-started-cli).
 
-Open `knowledge/` directly as an [Obsidian](https://obsidian.md/) vault for native Markdown links, backlinks, Graph view, frontmatter properties, and Mermaid rendering. No Obsidian account, plugin, cloud service, Gemini key, vendor SDK, embedding model, or vector database is required. Keep human-authored material in `architecture/`, `decisions/`, and `runbooks/`; `generated/` is owned by the deterministic extractor.
+## Learn more
 
-## Guidance
-
-For detailed framework rules, naming conventions, ownership boundaries, config guidance, and validation defaults, see:
-
-- `AGENTS.md`
-- `.agents/skills/`
-
-For focused walkthroughs, see:
-
-- [Knowledge layer](docs/KNOWLEDGE_LAYER.md)
-- [Agentic Playwright workflow](docs/AGENTIC_WORKFLOW.md)
-- [Examples](examples/README.md)
-- [Agent skills index](.agents/skills/README.md)
-- [Roadmap](ROADMAP.md)
-- [Contributing](CONTRIBUTING.md)
-- [Getting started](docs/GETTING_STARTED.md)
-- [Final improvement audit](docs/FINAL_AUDIT.md)
-- [Repository audit](docs/REPOSITORY_AUDIT.md)
+- [AGENTS.md](AGENTS.md): repository operating rules.
+- [.agents/skills](.agents/skills/README.md): focused agent workflows.
+- [qa](qa/README.md): canonical failure policy and evidence contract.
+- [qa-evals](qa-evals): ground-truth evaluation fixtures.
+- [ROADMAP.md](ROADMAP.md): outcome-based next work.
+- [CONTRIBUTING.md](CONTRIBUTING.md): contribution guidance.

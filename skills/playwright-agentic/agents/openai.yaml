@@ -1,0 +1,4 @@
+interface:
+  display_name: "Playwright Agentic"
+  short_description: "Route safe UI/API automation work using local skills and knowledge"
+  default_prompt: "Use $playwright-agentic to investigate the impact of a Playwright UI or API change before editing."

@@ -1,0 +1,75 @@
+{
+  "$schema": "./evidence-schema.json",
+  "version": "1.0.0",
+  "principle": "Diagnose with evidence before considering any test modification.",
+  "categories": {
+    "LOCATOR_DRIFT": {
+      "meaning": "The product behavior remains supported, but a test locator no longer identifies the intended element.",
+      "expectedEvidence": ["failed-test", "current-ui-or-dom", "test-intent", "product-behavior"],
+      "modification": "PERMITTED_WITH_HIGH_CONFIDENCE",
+      "minimumConfidence": "HIGH",
+      "rerun": "Run the failing test and the closest affected scenario after the smallest locator-only repair.",
+      "escalation": "Escalate if the replacement changes the interaction target or product behavior."
+    },
+    "TIMING": {
+      "meaning": "A deterministic readiness condition is missing or an asynchronous dependency is genuinely unstable.",
+      "expectedEvidence": ["failed-test", "trace-or-log", "readiness-condition", "rerun"],
+      "modification": "REVIEW_REQUIRED",
+      "minimumConfidence": "HIGH",
+      "rerun": "Reproduce at least twice; replace only with a web-first or domain readiness condition.",
+      "escalation": "Escalate persistent nondeterminism or product latency regressions."
+    },
+    "TEST_DATA": {
+      "meaning": "The test's required data, ownership, uniqueness, or cleanup state is invalid.",
+      "expectedEvidence": ["failed-test", "data-state", "fixture-or-setup", "rerun"],
+      "modification": "REVIEW_REQUIRED",
+      "minimumConfidence": "HIGH",
+      "rerun": "Re-run with isolated data and confirm cleanup.",
+      "escalation": "Escalate when the application cannot create or isolate required data."
+    },
+    "ENVIRONMENT": {
+      "meaning": "A dependency, service, browser, configuration, or infrastructure condition prevents valid execution.",
+      "expectedEvidence": ["failed-test", "environment-log-or-health-check", "configuration"],
+      "modification": "NOT_PERMITTED",
+      "minimumConfidence": "MEDIUM",
+      "rerun": "Re-run only after the environment is restored.",
+      "escalation": "Report the owning environment and preserve the failure evidence."
+    },
+    "APPLICATION_DEFECT": {
+      "meaning": "The test expectation is supported and the product violates the expected behavior.",
+      "expectedEvidence": [
+        "failed-test",
+        "requirement-or-approved-behavior",
+        "runtime-or-api-evidence"
+      ],
+      "modification": "NOT_PERMITTED",
+      "minimumConfidence": "HIGH",
+      "rerun": "Preserve the failing regression and rerun after an application fix.",
+      "escalation": "Create or link an application defect; do not heal the test."
+    },
+    "API_CONTRACT": {
+      "meaning": "The observed API status, payload, schema, or authorization contract conflicts with its supported expectation.",
+      "expectedEvidence": ["failed-test", "api-request-response", "contract-or-requirement"],
+      "modification": "NOT_PERMITTED",
+      "minimumConfidence": "HIGH",
+      "rerun": "Preserve the failure and rerun after contract resolution.",
+      "escalation": "Require API owner or product review."
+    },
+    "ASSERTION_ERROR": {
+      "meaning": "The test assertion does not express supported product behavior.",
+      "expectedEvidence": ["failed-test", "assertion-source", "requirement-or-approved-behavior"],
+      "modification": "REVIEW_REQUIRED",
+      "minimumConfidence": "HIGH",
+      "rerun": "Human review the changed expectation, then rerun the targeted test.",
+      "escalation": "Never change an assertion merely to make a failure pass."
+    },
+    "UNKNOWN": {
+      "meaning": "Available evidence cannot distinguish a test problem, product problem, or environmental problem.",
+      "expectedEvidence": ["failed-test", "evidence-gap"],
+      "modification": "NOT_PERMITTED",
+      "minimumConfidence": "LOW",
+      "rerun": "Collect the named missing evidence before any modification.",
+      "escalation": "Stop and report the uncertainty."
+    }
+  }
+}

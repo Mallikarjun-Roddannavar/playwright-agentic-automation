@@ -6,6 +6,17 @@ This file applies to the entire `playwright-agentic-automation` framework.
 
 Maintain this Playwright + TypeScript framework for UI and API automation practice. Follow Playwright best practices and Selenium-style Page Object Model guidance as adapted in this repo.
 
+## Agentic QA operating principles
+
+- Diagnose before modifying; green output is not evidence that product behavior is correct.
+- Read `qa/failure-taxonomy.json` before diagnosing or repairing a failure. It is the detailed policy source of truth.
+- Preserve real test, trace, screenshot, API, source, and requirement evidence before classification.
+- Application defects, API contract failures, environment failures, and `UNKNOWN` are not healing opportunities.
+- Assertions express test intent. Never weaken an assertion without supported behavior and any policy-required review.
+- Never skip, fixme, delete, swallow, or force a test merely to obtain green output.
+- Prefer the smallest evidence-backed repair; then run `npm run qa:guardrails` and rerun the affected test.
+- Use official Playwright agents, CLI, or optional MCP where helpful. This repository adds QA discipline around them rather than replacing them.
+
 ## Use The Local Skills
 
 Use these local skills when their scope matches the task:
@@ -14,6 +25,7 @@ Use these local skills when their scope matches the task:
 - `pw-api-pom` for `api/services`, `api/specs`, `utils/fixtures/TestFixtures.ts`, and auth/API session work
 - `pw-framework-tooling` for `playwright.config.ts`, linting, formatting, typechecking, logging, waits, reporting, and README quality-tooling updates
 - `codebase-second-brain` for persistent codebase discovery, OKF knowledge updates, AST graph queries, and Obsidian-ready knowledge navigation
+- `qa-safe-healing` for diagnosis-only reports and policy-governed repair after a Playwright failure
 
 When a request asks how a feature works, how behavior is tested, what covers a
 feature, or whether knowledge is stale or conflicting, use `codebase-second-brain`
@@ -116,6 +128,8 @@ After meaningful changes, prefer validating with the smallest relevant command s
 - lint: `./node_modules/.bin/eslint.cmd .`
 - typecheck: `./node_modules/.bin/tsc.cmd --noEmit`
 - format check: `./node_modules/.bin/prettier.cmd . --check`
+- QA guardrails: `node ./scripts/qaGuardrails.mjs`
+- QA benchmark fixture validation: `node ./scripts/qaEval.mjs`
 - Playwright inventory: `./node_modules/.bin/playwright.cmd test --list`
 
 Only run the full test suite when it is relevant to the change or the user asks for it.

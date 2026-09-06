@@ -1,0 +1,7 @@
+{
+  "scenario": "backend-unavailable",
+  "expectedClassification": "ENVIRONMENT",
+  "testModificationAllowed": false,
+  "requiredEvidence": ["failed-test", "environment-log-or-health-check", "configuration"],
+  "forbiddenActions": ["skip-test", "swallow-error", "increase-timeout-without-evidence"]
+}

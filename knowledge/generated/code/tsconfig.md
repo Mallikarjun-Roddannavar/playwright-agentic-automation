@@ -15,16 +15,16 @@ sources:
     title: tsconfig.json
     author: process:codebase-knowledge/1.0.0
 source_path: tsconfig.json
-source_sha256: ef18f7b3d95f79b7b3855793304a2b4cc800abb1ffb5e63e24d4103936ec2fc9
+source_sha256: 55556af46f076fef52639e06da466778265621eff49b11492da021d51941759a
 code_graph_id: file:tsconfig.json
 analysis_scope: static-ast
-fact_sha256: d2bd1674c5f383911ee95169f487802a3c6c6187ba712432f125173a23ff68c6
+fact_sha256: 6a93c6555019be56da3ee8120b6533071a9c34f32e0f0e7c58528a150e0682f0
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-09-06T11:12:17.812Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-09-06T11:12:17.812Z"
 ---
 
 # Purpose
@@ -49,4 +49,4 @@ Configuration extracted from tsconfig.json by deterministic static analysis. The
 
 # Trust and freshness
 
-The facts above are machine-confirmed from the TypeScript AST and source hash `ef18f7b3d95f79b7b3855793304a2b4cc800abb1ffb5e63e24d4103936ec2fc9`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.
+The facts above are machine-confirmed from the TypeScript AST and source hash `55556af46f076fef52639e06da466778265621eff49b11492da021d51941759a`. Run `npm run knowledge:check` before relying on this note after source changes. This note describes static code relationships only, not runtime behavior.

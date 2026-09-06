@@ -13,6 +13,7 @@ Skills are instructions, not autonomous services. A coding agent selects a skill
 | `pw-framework-tooling`        | Playwright config, package scripts, lint, typecheck, waits, logging, and reporting        |
 | `codebase-second-brain`       | Knowledge retrieval, static graph queries, freshness, validation, and Obsidian navigation |
 | `full-stack-incident-analyst` | Evidence-based cross-layer incident and Playwright failure analysis                       |
+| `qa-safe-healing`             | Failure decision workflow, evidence contract, and conservative Playwright test repair     |
 | `frontend-workflow`           | React/Vite practice-application changes                                                   |
 | `backend-workflow`            | FastAPI practice-application changes                                                      |
 

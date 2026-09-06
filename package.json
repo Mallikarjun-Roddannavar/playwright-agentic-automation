@@ -37,7 +37,17 @@
     "knowledge:trace": "node ./scripts/knowledge/traceKnowledge.mjs",
     "knowledge:eval": "node ./scripts/knowledge/evaluateAnswers.mjs",
     "knowledge:verify": "node ./scripts/knowledge/verifyKnowledge.mjs",
-    "quality:check": "node ./scripts/checkNamingConventions.mjs && node ./scripts/buildKnowledge.mjs --check && npm run knowledge:validate && eslint . && tsc --noEmit && prettier . --check"
+    "agent:doctor": "node ./scripts/agentDoctor.mjs",
+    "agent:demo": "node ./scripts/agentDemo.mjs",
+    "qa:guardrails": "node ./scripts/qaGuardrails.mjs",
+    "qa:eval": "node ./scripts/qaEval.mjs",
+    "qa:coverage": "node ./scripts/qaCoverage.mjs",
+    "qa:impact": "node ./scripts/qaImpact.mjs",
+    "qa:validate-result": "node ./scripts/qaResult.mjs",
+    "qa:review": "node ./scripts/qaReview.mjs",
+    "qa:demo": "node ./scripts/qaDemo.mjs",
+    "qa:runtime-demo": "node ./scripts/qaRuntimeDemo.mjs",
+    "quality:check": "node ./scripts/checkNamingConventions.mjs && node ./scripts/buildKnowledge.mjs --check && npm run knowledge:validate && node ./scripts/qaGuardrails.mjs && eslint . && tsc --noEmit && prettier . --check"
   },
   "devDependencies": {
     "@playwright/test": "^1.58.2",

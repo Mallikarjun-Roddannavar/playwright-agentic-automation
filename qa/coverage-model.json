@@ -1,0 +1,45 @@
+{
+  "version": "1.0.0",
+  "capabilities": [
+    {
+      "name": "Authentication",
+      "risk": "CRITICAL",
+      "requirement": "REQ-AUTH-001",
+      "uiSpecs": ["ui/specs/login.spec.ts"],
+      "apiSpecs": [],
+      "negativeSpecs": ["ui/specs/login.spec.ts"]
+    },
+    {
+      "name": "Viewer permissions",
+      "risk": "CRITICAL",
+      "requirement": "REQ-RBAC-001",
+      "uiSpecs": ["ui/specs/viewer-rbac.spec.ts"],
+      "apiSpecs": ["api/specs/rbac.spec.ts"],
+      "negativeSpecs": ["api/specs/rbac.spec.ts"]
+    },
+    {
+      "name": "Folder management",
+      "risk": "HIGH",
+      "requirement": "REQ-FOLDERS-001",
+      "uiSpecs": ["ui/specs/multi-role.spec.ts"],
+      "apiSpecs": ["api/specs/rbac.spec.ts"],
+      "negativeSpecs": ["api/specs/rbac.spec.ts"]
+    },
+    {
+      "name": "File management",
+      "risk": "HIGH",
+      "requirement": "REQ-FILES-001",
+      "uiSpecs": ["ui/specs/files.spec.ts"],
+      "apiSpecs": ["api/specs/files.spec.ts"],
+      "negativeSpecs": ["api/specs/files.spec.ts"]
+    },
+    {
+      "name": "Session expiry",
+      "risk": "HIGH",
+      "requirement": "REQ-AUTH-001",
+      "uiSpecs": ["ui/specs/login.spec.ts"],
+      "apiSpecs": [],
+      "negativeSpecs": ["ui/specs/login.spec.ts"]
+    }
+  ]
+}

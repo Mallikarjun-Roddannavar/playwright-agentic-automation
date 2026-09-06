@@ -101,12 +101,23 @@ Read the smallest relevant concept after querying the saved graph.
 - [auth.setup](ui/setup/auth-setup.md)
   - `ui/setup/auth.setup.ts` — Test setup.
 
+## Source modules
+
+- [locator-drift.spec](qa-evals/runtime/locator-drift-spec.md)
+  - `qa-evals/runtime/locator-drift.spec.ts` — Source module.
+- [playwright.config](qa-evals/runtime/playwright-config.md)
+  - `qa-evals/runtime/playwright.config.ts` — Source module.
+
 ## Tooling
 
 - [eslint.config](eslint-config.md)
   - `eslint.config.mjs` — Framework tooling.
 - [playwright.config](playwright-config.md)
   - `playwright.config.ts` — Framework tooling.
+- [agentDemo](scripts/agent-demo.md)
+  - `scripts/agentDemo.mjs` — Framework tooling.
+- [agentDoctor](scripts/agent-doctor.md)
+  - `scripts/agentDoctor.mjs` — Framework tooling.
 - [buildKnowledge](scripts/build-knowledge.md)
   - `scripts/buildKnowledge.mjs` — Framework tooling.
 - [checkNamingConventions](scripts/check-naming-conventions.md)
@@ -147,6 +158,22 @@ Read the smallest relevant concept after querying the saved graph.
   - `scripts/knowledge/validateRelationships.mjs` — Framework tooling.
 - [verifyKnowledge](scripts/knowledge/verify-knowledge.md)
   - `scripts/knowledge/verifyKnowledge.mjs` — Framework tooling.
+- [qaCoverage](scripts/qa-coverage.md)
+  - `scripts/qaCoverage.mjs` — Framework tooling.
+- [qaDemo](scripts/qa-demo.md)
+  - `scripts/qaDemo.mjs` — Framework tooling.
+- [qaEval](scripts/qa-eval.md)
+  - `scripts/qaEval.mjs` — Framework tooling.
+- [qaGuardrails](scripts/qa-guardrails.md)
+  - `scripts/qaGuardrails.mjs` — Framework tooling.
+- [qaImpact](scripts/qa-impact.md)
+  - `scripts/qaImpact.mjs` — Framework tooling.
+- [qaResult](scripts/qa-result.md)
+  - `scripts/qaResult.mjs` — Framework tooling.
+- [qaReview](scripts/qa-review.md)
+  - `scripts/qaReview.mjs` — Framework tooling.
+- [qaRuntimeDemo](scripts/qa-runtime-demo.md)
+  - `scripts/qaRuntimeDemo.mjs` — Framework tooling.
 - [queryKnowledge](scripts/query-knowledge.md)
   - `scripts/queryKnowledge.mjs` — Framework tooling.
 - [validateKnowledge](scripts/validate-knowledge.md)
