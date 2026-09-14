@@ -5,9 +5,9 @@ import process from "node:process";
 const root = process.cwd();
 const resultArgument = process.argv.find((argument) => argument.startsWith("--results="));
 const fixtures = fs
-  .readdirSync(path.join(root, "qa-evals"))
+  .readdirSync(path.join(root, "qa", "evals"))
   .filter((file) => file.endsWith(".json"))
-  .map((file) => JSON.parse(fs.readFileSync(path.join(root, "qa-evals", file), "utf8")));
+  .map((file) => JSON.parse(fs.readFileSync(path.join(root, "qa", "evals", file), "utf8")));
 
 validateFixtures(fixtures);
 if (!resultArgument) {

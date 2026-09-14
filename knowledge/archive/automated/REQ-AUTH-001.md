@@ -20,12 +20,14 @@ Playwright evidence. Review semantic coverage before promotion.
 ## Product basis
 
 ---
+
 type: Product Requirement
 id: REQ-AUTH-001
 status: stable
 trust_status: grounded
 review_status: reviewed
 source_requirement: /requirements/incoming/REQ-AUTH-001.md
+
 ---
 
 # Proposed product knowledge: REQ-AUTH-001

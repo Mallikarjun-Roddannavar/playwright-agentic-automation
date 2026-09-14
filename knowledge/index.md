@@ -2,13 +2,25 @@
 okf_version: "0.2"
 ---
 
-# Playwright Agentic Automation knowledge
+# Living QA + Product Knowledge
 
-This is a portable, offline-first Open Knowledge Format (OKF) v0.2 bundle. Start here, then retrieve only the smallest relevant concept. The committed source code remains authoritative.
+Start with one useful explanation, then verify its evidence. Product requirements
+express intent, source describes implementation, and runtime artifacts show what
+happened. Report conflicts rather than silently making those layers agree.
+
+- [Why the Viewer test expects 403](03-automated/scenarios/viewer-read-only.md):
+  requirement, role, API, UI, implementation, test and failure lesson in one note.
+- [Five-minute demo](../docs/FIVE_MINUTE_DEMO.md): preserve an authorization failure.
+- [Adopt in your framework](../adoption/README.md): two skills and a small note;
+  no generated graph or numbered knowledge directories required.
+
+The rest of this index is the optional reference bundle, using Git-friendly
+Markdown and Open Knowledge Format (OKF) v0.2 metadata. Retrieve only the smallest
+relevant concept. Existing review markers are not proof of attributable approval.
 
 ## Architecture
 
-- [Overview](architecture/overview.md) - How the framework layers fit together.
+- [Overview](framework/overview.md) - How the framework layers fit together.
 - [Generated graph concepts](generated/graphs/index.md) - Static AST-derived diagrams and machine-readable graph.
 
 ## Product knowledge
@@ -24,24 +36,24 @@ This is a portable, offline-first Open Knowledge Format (OKF) v0.2 bundle. Start
 
 ## Framework knowledge
 
-- [Playwright framework knowledge](04-framework/index.md) - Automation relationships and supporting-application boundaries.
+- [Playwright framework knowledge](framework/index.md) - Automation relationships and supporting-application boundaries.
 - [Semantic relationships](relationships.json) - Requirement-to-test traceability registry.
 
 ## Automated test knowledge
 
 - [Automated tests](03-automated/index.md) - Verified Playwright UI/API scenarios and their product relationships.
 - [Test inventory](test-inventory.json) - Deterministic inventory of UI/API specs and extracted relationships.
-- [Testing knowledge drafts](drafts/) - Agent-generated proposals awaiting semantic review or promotion.
+- [Testing knowledge drafts](drafts) - Agent-generated proposals awaiting semantic review or promotion.
 - [Knowledge answer evaluations](evaluations/README.md) - Deterministic checks for user-supplied agent answers.
 
 ## Decisions
 
-- [Offline-first second brain](decisions/offline-first-second-brain.md) - Why the knowledge bundle is portable and model-neutral.
+- [Offline-first second brain](framework/offline-first-second-brain.md) - Why the knowledge bundle is portable and model-neutral.
 
 ## Runbooks
 
-- [Refresh codebase knowledge](runbooks/refresh-codebase-knowledge.md) - Query, validate, and refresh the saved knowledge safely.
-- [Using the testing second brain](runbooks/using-testing-second-brain.md) - Ask questions, analyze requirement impact, and update knowledge.
+- [Refresh codebase knowledge](framework/refresh-codebase-knowledge.md) - Query, validate, and refresh the saved knowledge safely.
+- [Using the testing second brain](framework/using-testing-second-brain.md) - Ask questions, analyze requirement impact, and update knowledge.
 - [Knowledge layer workflow](../docs/KNOWLEDGE_LAYER.md) - Inventory, proposal, verification, promotion, and trace commands.
 
 ## Obsidian

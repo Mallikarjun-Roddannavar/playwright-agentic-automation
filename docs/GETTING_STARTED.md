@@ -1,100 +1,82 @@
-# Getting Started
+# Getting started
 
-This guide takes a new contributor from clone to a local Playwright test run.
+Choose the layer you want to try. The reference application is optional.
 
-## Prerequisites
+## QA + knowledge demo
 
-- Node.js 20 or newer;
-- Python 3.14;
-- Git;
-- a Chromium-capable Playwright installation.
+Use Node 20.19+, 22.13+, or 24+ (the locked lint dependencies exclude older
+Node 20/22 versions). Run from the repository root:
 
-## Install dependencies
-
-From the repository root:
-
-```powershell
-npm install
-npm run install:browsers
+```bash
+npm ci
+npm run agent:doctor
+npm run qa:demo
 ```
 
-Install the sample backend dependencies:
+This installs the existing root packages and runs a controlled API experiment.
+No browser, Python, frontend packages or model credentials are needed. See the
+[five-minute demo](FIVE_MINUTE_DEMO.md) for prompts and expected observations.
 
-```powershell
-cd app/backend
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-cd ../..
+To adopt the layer in an existing repository, follow the
+[starter copy recipe](../adoption/README.md) instead of installing this framework.
+
+## Optional Playwright reference application
+
+The sample app uses React/Vite and FastAPI. Python 3.11+ is the source syntax
+baseline; its dependencies must install successfully on your Python version.
+
+```bash
+npm ci --prefix app/frontend
+python -m venv app/backend/.venv
+npx playwright install chromium
 ```
 
-Install the sample frontend dependencies:
+Install backend packages without activating a shell environment:
 
 ```powershell
-cd app/frontend
-npm install
-cd ../..
+# Windows PowerShell
+app/backend/.venv/Scripts/python.exe -m pip install -r app/backend/requirements.txt
 ```
 
-## Run the checks
+```bash
+# macOS / Linux
+app/backend/.venv/bin/python -m pip install -r app/backend/requirements.txt
+```
 
-Start with the inventory and static checks:
+Then:
 
-```powershell
+```bash
+npm run agent:doctor:app
 npm run test:list
-node ./scripts/checkNamingConventions.mjs
-node ./scripts/buildKnowledge.mjs --check
-node ./scripts/validateKnowledge.mjs
-node ./scripts/knowledge/validateRelationships.mjs
-npm run lint
-npm run typecheck
-```
-
-Run the complete local Playwright suite:
-
-```powershell
 npm test
 ```
 
-The Playwright configuration starts the backend and frontend automatically. If either service is already running, it reuses the existing server outside CI.
+The reference config starts local frontend/backend services and reuses existing
+ones outside CI. Inspect `config/test-config.json` before a run; these commands
+are for the local demo system. See [app/README.md](../app/README.md).
 
-## Run a focused project
+## Repository maintenance
 
-```powershell
-npm run test:ui
-npm run test:api
-npm run test:debug
+```bash
+npm run quality:check
+npm run qa:eval
+npm run qa:tooling-test
+npm run test:list
 ```
 
-## Work with the knowledge layer
-
-```powershell
-npm run knowledge:query -- --knowledge Login
-npm run knowledge:build
-npm run knowledge:check
-```
-
-Refresh generated artifacts after changing indexed source, configuration, package metadata, or knowledge scripts. Do not hand-edit files under `knowledge/generated/`.
-
-## Add a test
-
-1. Read `AGENTS.md` and the relevant local skill.
-2. Reuse an existing Page Object, API service, fixture, and route constant where possible.
-3. Keep selectors in Page Objects and assertions in specs.
-4. Register cleanup for created data.
-5. Run the smallest relevant checks and `npm test` for runtime changes.
+After indexed code or configuration changes, run `npm run knowledge:build`, then
+`npm run knowledge:check`. This optional reference index depends on root packages
+and Python for backend AST extraction. Do not hand-edit generated facts.
 
 ## Troubleshooting
 
-If a Windows `npm run` command fails with a Node `EPERM` realpath error in the AI shell, run the local binaries or direct Node scripts as documented in `knowledge/runbooks/refresh-codebase-knowledge.md`.
-
-If the backend virtual environment was moved or copied, recreate it in `app/backend/.venv`; Python launcher files contain absolute paths.
-
-If all Playwright tests report `ok` but an AI-shell command does not return, retry with a fresh output directory:
-
-```powershell
-$env:PLAYWRIGHT_OUTPUT_DIR = "$env:TEMP\playwright-results"
-npx playwright test --output=$env:PLAYWRIGHT_OUTPUT_DIR
-```
-
-This avoids locked generated files under the default `test-results/` directory. Treat the shell timeout separately from the test result and confirm that no local UI/API server remains listening afterward.
+- `agent:doctor` is a prerequisite check, not proof a browser or application
+  starts. `--app` adds the reference-app dependencies and knowledge freshness.
+- If the Windows npm launcher fails with `EPERM` in an AI shell, use direct
+  scripts such as `node scripts/qaDemo.mjs` and local binaries such as
+  `node_modules/.bin/tsc.cmd --noEmit` after dependencies are installed.
+- A copied Python virtual environment may contain old absolute paths. Recreate
+  it using the installation steps above.
+- A demo timeout, runner error or missing API attachment is an incomplete
+  experiment. Inspect its printed run directory; do not interpret an arbitrary
+  failed process as an authorization finding.

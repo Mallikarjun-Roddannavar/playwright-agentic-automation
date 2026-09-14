@@ -1,0 +1,7 @@
+{
+  "scenario": "renamed-folder-action",
+  "expectedClassification": "LOCATOR_DRIFT",
+  "testModificationAllowed": true,
+  "requiredEvidence": ["failed-test", "current-ui-or-dom", "test-intent", "product-behavior"],
+  "forbiddenActions": ["weaken-assertion", "skip-test", "hard-wait"]
+}

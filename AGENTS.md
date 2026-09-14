@@ -4,7 +4,11 @@ This file applies to the entire `playwright-agentic-automation` framework.
 
 ## Purpose
 
-Maintain this Playwright + TypeScript framework for UI and API automation practice. Follow Playwright best practices and Selenium-style Page Object Model guidance as adapted in this repo.
+Maintain a lightweight living QA + Product Knowledge layer that teams can add
+to existing Playwright repositories. The Playwright/POM code and sample app are
+the reference implementation. Optimize for adoption; do not require migration,
+a generated graph or full product documentation. The copyable entry path is
+`adoption/README.md`. Framework conventions below apply to this reference repo.
 
 ## Agentic QA operating principles
 
@@ -38,6 +42,14 @@ For new requirements, follow the product knowledge workflow: keep raw input in
 `knowledge/drafts/product/`, require human review of business meaning, and only
 then place approved content in `knowledge/01-product/requirements/`. Do not
 create or promote business meaning automatically.
+
+After useful investigations, propose the smallest durable learning with direct
+requirement, test, source and sanitized runtime evidence links. Distinguish
+technical observations from new business meaning. Human confirmation is required
+for business meaning; record the actual reviewer, date and review reference.
+Do not fabricate missing historical approvals. Source is authoritative for
+implementation; it does not redefine intended product behavior. Static checks
+and generated relationships are not runtime coverage or semantic verification.
 
 ## Framework Conventions
 
@@ -130,6 +142,7 @@ After meaningful changes, prefer validating with the smallest relevant command s
 - format check: `./node_modules/.bin/prettier.cmd . --check`
 - QA guardrails: `node ./scripts/qaGuardrails.mjs`
 - QA benchmark fixture validation: `node ./scripts/qaEval.mjs`
+- QA tooling regression checks: `node --test scripts/tests/qa-safety.test.mjs`
 - Playwright inventory: `./node_modules/.bin/playwright.cmd test --list`
 
 Only run the full test suite when it is relevant to the change or the user asks for it.

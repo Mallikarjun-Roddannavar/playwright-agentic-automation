@@ -321,7 +321,7 @@ function sanitizePathSegment(segment) {
 function generatedCodePath(relativePath) {
   const withoutExtension = relativePath.replace(/\.[^.]+$/u, "");
   const segments = withoutExtension.split(/[\\/]/u).map(sanitizePathSegment);
-  return path.posix.join("generated", "code", ...segments) + ".md";
+  return path.posix.join("generated", "code", segments.join("--")) + ".md";
 }
 
 function markdownLink(fromRelativePath, toRelativePath, label) {
@@ -570,7 +570,9 @@ function buildProjectAnalysis(repoRoot) {
 }
 
 function addPythonAstGraph(repoRoot, analysis, graph) {
-  const pythonSources = analysis.sourceFiles.filter((source) => pythonExtensions.has(source.extension));
+  const pythonSources = analysis.sourceFiles.filter((source) =>
+    pythonExtensions.has(source.extension)
+  );
   if (pythonSources.length === 0) {
     return;
   }
@@ -640,7 +642,12 @@ function addPythonAstGraph(repoRoot, analysis, graph) {
     for (const call of fact.calls) {
       const target = `symbol:${call.path}#${call.name}`;
       graph.addEdge({
-        relation: call.kind === "rbac" ? "ENFORCES_RBAC" : call.kind === "persistence" ? "USES_PERSISTENCE" : "CALLS",
+        relation:
+          call.kind === "rbac"
+            ? "ENFORCES_RBAC"
+            : call.kind === "persistence"
+              ? "USES_PERSISTENCE"
+              : "CALLS",
         from: functionId,
         to: target,
         evidence: { path: fact.path, line: call.line },
@@ -1646,14 +1653,16 @@ Open this \`knowledge/\` directory as an Obsidian vault for native backlinks, Gr
 `,
     ],
     [
-      path.join(knowledgeRoot, "architecture", "index.md"),
-      `# Architecture concepts
+      path.join(knowledgeRoot, "framework", "index.md"),
+      `# Framework knowledge
 
-- [Framework overview](overview.md) - Stable ownership boundaries and pointers to generated static graphs.
+- [Overview](overview.md) - Layer ownership and static evidence maps.
+- [Offline-first decision](offline-first-second-brain.md) - Why knowledge stays local.
+- [Refresh guide](refresh-codebase-knowledge.md) - Query and rebuild source facts.
 `,
     ],
     [
-      path.join(knowledgeRoot, "architecture", "overview.md"),
+      path.join(knowledgeRoot, "framework", "overview.md"),
       staticConcept(
         "Architecture Overview",
         "Playwright framework architecture",
@@ -1672,15 +1681,9 @@ Use the [generated static architecture graph](../generated/graphs/architecture.m
         ["architecture", "playwright", "static-analysis"]
       ),
     ],
-    [
-      path.join(knowledgeRoot, "decisions", "index.md"),
-      `# Architecture decisions
 
-- [Offline-first second brain](offline-first-second-brain.md) - Saved knowledge, provenance, and portability decisions.
-`,
-    ],
     [
-      path.join(knowledgeRoot, "decisions", "offline-first-second-brain.md"),
+      path.join(knowledgeRoot, "framework", "offline-first-second-brain.md"),
       staticConcept(
         "Architecture Decision",
         "Offline-first, model-neutral codebase second brain",
@@ -1703,15 +1706,9 @@ The bundle targets [Open Knowledge Format v${OKF_VERSION}](https://github.com/Go
         ["decision", "okf", "offline-first", "agent-memory"]
       ),
     ],
-    [
-      path.join(knowledgeRoot, "runbooks", "index.md"),
-      `# Runbooks
 
-- [Refresh codebase knowledge](refresh-codebase-knowledge.md) - Deterministic retrieval, validation, and refresh workflow.
-`,
-    ],
     [
-      path.join(knowledgeRoot, "runbooks", "refresh-codebase-knowledge.md"),
+      path.join(knowledgeRoot, "framework", "refresh-codebase-knowledge.md"),
       staticConcept(
         "Runbook",
         "Retrieve and refresh codebase knowledge",

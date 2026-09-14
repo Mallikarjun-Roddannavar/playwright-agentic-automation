@@ -1,49 +1,17 @@
 # Roadmap
 
-## Trust
+The next work should make an existing team more likely to adopt the layer.
 
-### DONE
+- Try the starter in a second Playwright repository and record setup friction.
+- Observe whether a fresh agent explains one real test using saved evidence.
+- Retain one real product-defect investigation where preserving the failure was
+  the right decision, with sanitized evidence and attributable human review.
+- Improve only the guardrails or note links that those trials show are missing.
 
-- Canonical failure taxonomy, repair decisions, and machine-readable evidence contract.
-- Diagnose-before-heal workflow and focused safe-healing skill.
-- Deterministic QA guardrails for dangerous test-editing patterns.
+The controlled demo and static validations are useful examples, not measured
+claims about agent accuracy, maintenance savings or complete test coverage.
 
-### DONE
-
-- Validation for machine-readable diagnosis records and explicit human-review records.
-
-## Proof
-
-### DONE
-
-- Four ground-truth adversarial fixtures and deterministic scoring protocol.
-- Honest separation between fixture validation and measured agent decisions.
-
-### NEXT
-
-- Run controlled vanilla-agent versus QA-guided-agent comparisons and publish only measured results.
-
-## Intelligence
-
-### DONE
-
-- Offline-first product/test knowledge, static relationships, and requirement impact queries.
-
-### DONE
-
-- Evidence-backed requirement-to-spec risk coverage matrix without invented percentages.
-- Changed-file-to-test impact workflow built on the existing static knowledge graph.
-
-## Experience
-
-### DONE
-
-- Repository positioning, copy/paste prompts, diagnosis-only workflow, and a small demo command.
-
-### NEXT
-
-- Capture a real, reproducible authorization-versus-locator-drift demo run with artifacts.
-
-## Not planned
-
-- Custom LLM runtime, model router, hosted dashboard, vector database, user accounts, distributed orchestration, or a replacement browser automation engine.
+No knowledge platform, database, embeddings, model router, server, dashboard,
+mandatory MCP or framework migration is planned. Keep advanced reference graph
+and promotion tooling optional. A reviewed note and a useful test are enough
+to start.

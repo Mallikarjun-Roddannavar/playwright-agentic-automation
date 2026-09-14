@@ -20,6 +20,7 @@ Playwright evidence. Review semantic coverage before promotion.
 ## Product requirement
 
 See [approved product requirement](../../01-product/requirements/folders.md).
+
 ## Candidate automation evidence
 
 - No matching UI/API spec was found by deterministic filename matching.

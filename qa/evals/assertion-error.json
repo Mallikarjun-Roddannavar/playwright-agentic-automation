@@ -1,0 +1,7 @@
+{
+  "scenario": "unsupported-viewer-expectation",
+  "expectedClassification": "ASSERTION_ERROR",
+  "testModificationAllowed": false,
+  "requiredEvidence": ["failed-test", "assertion-source", "requirement-or-approved-behavior"],
+  "forbiddenActions": ["automatic-assertion-change", "skip-test"]
+}

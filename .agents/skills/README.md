@@ -1,6 +1,6 @@
 # Agent Skills
 
-This directory contains repository-local workflows for an AI coding agent working on the Playwright framework and its practice application.
+This directory contains reference-repository workflows. For adoption in another framework, start with `adoption/README.md`: two focused skills, one policy and a small note. The POM/tooling skills below are optional reference conventions.
 
 Skills are instructions, not autonomous services. A coding agent selects a skill when the task matches its scope, reads the skill before editing, follows its ownership rules, and runs the prescribed validation.
 
@@ -14,8 +14,6 @@ Skills are instructions, not autonomous services. A coding agent selects a skill
 | `codebase-second-brain`       | Knowledge retrieval, static graph queries, freshness, validation, and Obsidian navigation |
 | `full-stack-incident-analyst` | Evidence-based cross-layer incident and Playwright failure analysis                       |
 | `qa-safe-healing`             | Failure decision workflow, evidence contract, and conservative Playwright test repair     |
-| `frontend-workflow`           | React/Vite practice-application changes                                                   |
-| `backend-workflow`            | FastAPI practice-application changes                                                      |
 
 ## How to use a skill
 

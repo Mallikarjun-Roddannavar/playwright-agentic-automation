@@ -11,16 +11,16 @@ tags:
 status: stable
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-09-06T11:13:22.330Z"
+  at: "2026-09-10T15:57:18.730Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-09-06T11:13:22.330Z"
+    at: "2026-09-10T15:57:18.730Z"
 sources:
   - id: code-graph
     resource: /generated/code-graph.json
     title: Static AST code graph
     author: process:codebase-knowledge/1.0.0
-source_digest: 1b829816889580556efa11cf1b75e126108452ef2fcb308c993992b49931acbe
+source_digest: 1b34034d0837b4a7bbd97db47f41eb312e0ef4d5b46168739ce457f10a243c61
 analysis_scope: static-ast
 ---
 
@@ -37,6 +37,7 @@ flowchart LR
   node_63f40f4be5["Configuration"]
   node_41089dbc2c["Fixtures"]
   node_75f969eee6["Test setup"]
+  node_29e482bf45["source"]
   node_35c7777589["Tooling"]
   node_560b1bca30["UI page objects"]
   node_a071ef0445["UI specs"]
@@ -51,6 +52,7 @@ flowchart LR
   node_75f969eee6 --> node_6de4de0315
   node_75f969eee6 --> node_63f40f4be5
   node_75f969eee6 --> node_191ace11ef
+  node_29e482bf45 --> node_6de4de0315
   node_35c7777589 --> node_6de4de0315
   node_35c7777589 --> node_63f40f4be5
   node_35c7777589 --> node_560b1bca30

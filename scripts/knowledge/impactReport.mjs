@@ -3,9 +3,14 @@ import path from "node:path";
 import process from "node:process";
 
 const root = process.cwd();
-const terms = process.argv.slice(2).map((value) => value.toLowerCase()).filter(Boolean);
+const terms = process.argv
+  .slice(2)
+  .map((value) => value.toLowerCase())
+  .filter(Boolean);
 if (terms.length === 0) {
-  globalThis.console.error("Usage: npm run knowledge:impact -- <requirement, feature, file, or symbol>");
+  globalThis.console.error(
+    "Usage: npm run knowledge:impact -- <requirement, feature, file, or symbol>"
+  );
   process.exitCode = 1;
 }
 
@@ -15,7 +20,9 @@ const relationshipRegistry = JSON.parse(
 );
 const semanticRelationships = relationshipRegistry.relationships ?? [];
 const semanticMatches = semanticRelationships.filter(
-  (item) => contains(`${item.from} ${item.relation} ${item.to}`) || item.evidence.some((file) => contains(file))
+  (item) =>
+    contains(`${item.from} ${item.relation} ${item.to}`) ||
+    item.evidence.some((file) => contains(file))
 );
 const knowledgeMatches = [];
 const visit = (directory) => {
@@ -25,7 +32,8 @@ const visit = (directory) => {
     if (entry.isDirectory() && !["generated", ".obsidian"].includes(entry.name)) visit(candidate);
     else if (entry.isFile() && entry.name.endsWith(".md")) {
       const source = fs.readFileSync(candidate, "utf8");
-      if (contains(source)) knowledgeMatches.push(path.relative(root, candidate).replaceAll("\\", "/"));
+      if (contains(source))
+        knowledgeMatches.push(path.relative(root, candidate).replaceAll("\\", "/"));
     }
   }
 };
@@ -76,7 +84,9 @@ globalThis.console.log("");
 globalThis.console.log(`Matching code facts (${matchingNodes.length})`);
 matchingNodes
   .sort((left, right) => left.id.localeCompare(right.id))
-  .forEach((node) => globalThis.console.log(`- [${node.kind}] ${node.label}${node.path ? ` — ${node.path}` : ""}`));
+  .forEach((node) =>
+    globalThis.console.log(`- [${node.kind}] ${node.label}${node.path ? ` — ${node.path}` : ""}`)
+  );
 globalThis.console.log("");
 globalThis.console.log(`Related static relationships (${edges.length})`);
 edges
@@ -85,7 +95,11 @@ edges
     const from = nodes.get(edge.from)?.label ?? edge.from;
     const to = nodes.get(edge.to)?.label ?? edge.to;
     const evidence = edge.evidence?.[0];
-    globalThis.console.log(`- ${from} --${edge.relation}--> ${to}${evidence ? ` (${evidence.path}:${evidence.line})` : ""}`);
+    globalThis.console.log(
+      `- ${from} --${edge.relation}--> ${to}${evidence ? ` (${evidence.path}:${evidence.line})` : ""}`
+    );
   });
 globalThis.console.log("");
-globalThis.console.log("This is a candidate impact report. It does not modify tests or approved knowledge.");
+globalThis.console.log(
+  "This is a candidate impact report. It does not modify tests or approved knowledge."
+);

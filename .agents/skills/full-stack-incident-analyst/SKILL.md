@@ -29,13 +29,13 @@ Focused mode must not claim final RCA, final classification, closure wording, or
 
 Load only the references needed for the request:
 
-| Need | Load |
-|---|---|
-| Investigation, cross-layer tracing, implementation | `references/incident-workflow.md` |
+| Need                                                      | Load                               |
+| --------------------------------------------------------- | ---------------------------------- |
+| Investigation, cross-layer tracing, implementation        | `references/incident-workflow.md`  |
 | HAR, logs, screenshots, recordings, ticket text, DevTools | `references/artifact-playbooks.md` |
-| Fix recommendation or code/config/test changes | `references/fix-guidance.md` |
-| Focused answer, strict RCA, or completion report | `references/output-contracts.md` |
-| Skill maintenance or behavior evaluation | `references/evaluations.md` |
+| Fix recommendation or code/config/test changes            | `references/fix-guidance.md`       |
+| Focused answer, strict RCA, or completion report          | `references/output-contracts.md`   |
+| Skill maintenance or behavior evaluation                  | `references/evaluations.md`        |
 
 ## Bounded discovery
 

@@ -70,9 +70,3 @@ Before submitting changes, perform these checks:
   - required environment variables
   - major UI behavior used in Playwright practice
   - shared visual direction or interaction patterns that future assistants should preserve
-
-## Verification Marker (Temporary)
-
-- For backend auth code edits, include exactly one comment line:
-  - `# AGENT_MARKER_AUTH`
-- This marker is only for testing whether AGENTS instructions are being followed.

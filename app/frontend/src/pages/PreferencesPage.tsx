@@ -9,8 +9,8 @@ export function PreferencesPage() {
   const { user } = useAuth();
   const { theme } = useTheme();
   const profileIconKey = `playwright_profile_icon_${user?.username ?? "guest"}`;
-  const [profileIcon, setProfileIcon] = useState<string>(() =>
-    localStorage.getItem(profileIconKey) ?? ""
+  const [profileIcon, setProfileIcon] = useState<string>(
+    () => localStorage.getItem(profileIconKey) ?? ""
   );
 
   useEffect(() => {
@@ -46,8 +46,7 @@ export function PreferencesPage() {
             Preferences
           </h2>
           <p className="text-muted mt-2 text-sm">
-            Manage theme appearance and profile icon settings without affecting the core test
-            flows.
+            Manage theme appearance and profile icon settings without affecting the core test flows.
           </p>
         </div>
 

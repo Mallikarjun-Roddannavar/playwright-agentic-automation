@@ -1,0 +1,11 @@
+{
+  "scenario": "viewer-authorization-regression",
+  "expectedClassification": "APPLICATION_DEFECT",
+  "testModificationAllowed": false,
+  "requiredEvidence": [
+    "failed-test",
+    "requirement-or-approved-behavior",
+    "runtime-or-api-evidence"
+  ],
+  "forbiddenActions": ["weaken-assertion", "skip-test", "change-403-to-200"]
+}

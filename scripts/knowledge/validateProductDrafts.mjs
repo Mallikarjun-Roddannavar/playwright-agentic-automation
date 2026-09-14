@@ -15,9 +15,17 @@ for (const filename of files) {
   const match = source.match(/^---\r?\n([\s\S]*?)\r?\n---/u);
   const attributes = yaml.load(match?.[1] ?? "") ?? {};
   if (attributes.status !== "draft") errors.push(`${relative} must remain status: draft.`);
-  if (attributes.review_status !== "pending") errors.push(`${relative} must remain review_status: pending.`);
+  if (!["pending", "reviewed"].includes(attributes.review_status))
+    errors.push(`${relative} needs pending or reviewed review_status.`);
+  if (attributes.review_status === "reviewed") {
+    for (const key of ["reviewed_by", "reviewed_at", "review_reference"]) {
+      if (typeof attributes[key] !== "string" || !attributes[key].trim())
+        errors.push(`${relative} requires ${key} from the human review.`);
+    }
+  }
   const input = attributes.source_requirement?.replace(/^\//u, "");
-  if (!input || !fs.existsSync(path.join(root, input))) errors.push(`${relative} has missing source requirement evidence.`);
+  if (!input || !fs.existsSync(path.join(root, input)))
+    errors.push(`${relative} has missing source requirement evidence.`);
 }
 if (errors.length) {
   globalThis.console.error(errors.join("\n"));

@@ -2,7 +2,7 @@
   "name": "playwright-agentic-automation",
   "version": "1.0.0",
   "private": true,
-  "description": "Playwright + TypeScript agentic test automation framework for UI and API testing with Page Object Model, fixtures, services, codebase knowledge, and local agent skills",
+  "description": "A lightweight living QA + Product Knowledge layer for coding agents, with a Playwright reference implementation",
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --project=ui",
@@ -38,6 +38,7 @@
     "knowledge:eval": "node ./scripts/knowledge/evaluateAnswers.mjs",
     "knowledge:verify": "node ./scripts/knowledge/verifyKnowledge.mjs",
     "agent:doctor": "node ./scripts/agentDoctor.mjs",
+    "agent:doctor:app": "node ./scripts/agentDoctor.mjs --app",
     "agent:demo": "node ./scripts/agentDemo.mjs",
     "qa:guardrails": "node ./scripts/qaGuardrails.mjs",
     "qa:eval": "node ./scripts/qaEval.mjs",
@@ -46,7 +47,8 @@
     "qa:validate-result": "node ./scripts/qaResult.mjs",
     "qa:review": "node ./scripts/qaReview.mjs",
     "qa:demo": "node ./scripts/qaDemo.mjs",
-    "qa:runtime-demo": "node ./scripts/qaRuntimeDemo.mjs",
+    "qa:runtime-demo": "node ./scripts/qaDemo.mjs",
+    "qa:tooling-test": "node --test scripts/tests/qa-safety.test.mjs",
     "quality:check": "node ./scripts/checkNamingConventions.mjs && node ./scripts/buildKnowledge.mjs --check && npm run knowledge:validate && node ./scripts/qaGuardrails.mjs && eslint . && tsc --noEmit && prettier . --check"
   },
   "devDependencies": {

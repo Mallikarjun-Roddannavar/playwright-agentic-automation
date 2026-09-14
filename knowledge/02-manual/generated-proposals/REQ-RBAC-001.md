@@ -21,6 +21,7 @@ before promotion.
 ## Product requirement
 
 See [approved product requirement](../../01-product/requirements/rbac.md).
+
 ## Scenarios to review
 
 1. Verify each approved acceptance criterion under its applicable user role or

@@ -56,7 +56,9 @@ function queryKnowledgePages(repoRoot, terms) {
   };
   visit(knowledgeRoot);
   globalThis.console.log(`Knowledge pages matching: ${terms.join(" ")}`);
-  for (const { candidate, source } of matches.sort((left, right) => left.candidate.localeCompare(right.candidate))) {
+  for (const { candidate, source } of matches.sort((left, right) =>
+    left.candidate.localeCompare(right.candidate)
+  )) {
     const relative = path.relative(repoRoot, candidate).replaceAll("\\", "/");
     const title = source.match(/^title:\s*(.+)$/imu)?.[1]?.trim() ?? path.basename(candidate);
     globalThis.console.log(`- ${relative}: ${title}`);

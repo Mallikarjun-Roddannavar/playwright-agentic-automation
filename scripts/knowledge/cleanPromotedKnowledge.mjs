@@ -12,7 +12,9 @@ for (const [directory, heading] of replacements) {
   for (const file of walk(path.join(root, directory))) {
     if (!file.endsWith(".md")) continue;
     const content = fs.readFileSync(file, "utf8");
-    const requirement = content.match(/(?:requirement:\s*|\n\s*-\s+)([^\n]*requirements\/([^/\n]+)\.md)/u);
+    const requirement = content.match(
+      /(?:requirement:\s*|\n\s*-\s+)([^\n]*requirements\/([^/\n]+)\.md)/u
+    );
     if (!requirement || !content.includes(`## ${heading}`)) continue;
     const link = `## Product requirement\n\nSee [approved product requirement](../../01-product/requirements/${requirement[2]}.md).`;
     const updated = content.replace(new RegExp(`## ${heading}[\\s\\S]*?(?=\\n## |$)`, "u"), link);

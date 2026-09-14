@@ -3,8 +3,10 @@ import path from "node:path";
 import process from "node:process";
 import { execFileSync } from "node:child_process";
 import { logWorkflowEvent } from "./WorkflowLog.mjs";
+import { reviewedDrafts } from "./ReviewGate.mjs";
 
 const root = process.cwd();
+const candidates = reviewedDrafts(root, "automated");
 const draftsRoot = path.join(root, "knowledge", "drafts", "automated");
 const targetRoot = path.join(root, "knowledge", "03-automated", "generated-proposals");
 const archiveRoot = path.join(root, "knowledge", "archive", "automated");
@@ -16,7 +18,7 @@ if (!fs.existsSync(draftsRoot)) {
 const promoted = [];
 fs.mkdirSync(targetRoot, { recursive: true });
 fs.mkdirSync(archiveRoot, { recursive: true });
-for (const filename of fs.readdirSync(draftsRoot).filter((file) => file.endsWith(".md"))) {
+for (const filename of candidates) {
   const sourcePath = path.join(draftsRoot, filename);
   const content = fs.readFileSync(sourcePath, "utf8");
   if (

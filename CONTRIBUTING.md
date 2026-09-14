@@ -1,6 +1,9 @@
 # Contributing
 
-This is a personal learning repository, but focused improvements are welcome as exercises in Playwright architecture, agent skills, and evidence-backed knowledge.
+Help teams add useful QA + Product Knowledge to their existing Playwright
+repositories. Prefer a clearer first run, a smaller adoption step or an
+evidence-backed test explanation over a new subsystem. The POM framework and
+sample app are reference examples.
 
 ## Before changing files
 
@@ -17,14 +20,20 @@ Run the smallest relevant checks:
 node ./scripts/checkNamingConventions.mjs
 node ./scripts/buildKnowledge.mjs --check
 node ./scripts/validateKnowledge.mjs
-node ./scripts/knowledge/syncRelationships.mjs
 node ./scripts/knowledge/validateRelationships.mjs
 npm run lint
 npm run typecheck
+npm run format:check
+npm run qa:guardrails
+npm run qa:eval
+npm run qa:tooling-test
 npm run test:list
 ```
 
-Run `npm test` when the change affects runtime behavior or Playwright tests.
+Run affected Playwright tests when changing runtime behavior. Use `npm run
+qa:demo` for the controlled adoption demo. Run the full app suite only when
+relevant. Refresh indexed facts before checking freshness; relationship
+synchronization is a mutation, not a read-only validation command.
 
 ## Ownership rules
 
@@ -46,3 +55,10 @@ Describe:
 - whether generated knowledge artifacts changed.
 
 Keep commits small enough to review independently.
+
+## Useful small contributions
+
+- Try the adoption starter in another repository and report the first confusing step.
+- Explain one existing test with requirement, source and runtime evidence links.
+- Preserve a sanitized investigation where keeping a product failure was correct.
+- Improve a guardrail using a demonstrated missed unsafe edit or false positive.

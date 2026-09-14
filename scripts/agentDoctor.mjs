@@ -14,14 +14,16 @@ recordPath(
   "node_modules/@playwright/test/package.json",
   "Run npm install from the repository root."
 );
-recordPath(
-  "Frontend dependencies",
-  "app/frontend/node_modules/vite/package.json",
-  "Run npm install in app/frontend."
-);
-recordBackendEnvironment();
-recordChromium();
-recordKnowledgeFreshness();
+if (process.argv.includes("--app")) {
+  recordPath(
+    "Frontend dependencies",
+    "app/frontend/node_modules/vite/package.json",
+    "Run npm ci in app/frontend."
+  );
+  recordBackendEnvironment();
+  recordChromium();
+  recordKnowledgeFreshness();
+}
 
 const failures = results.filter((result) => result.status === "FAIL");
 globalThis.console.log("\nAgent readiness summary");
@@ -29,24 +31,26 @@ globalThis.console.log(`${results.length - failures.length}/${results.length} ch
 
 if (failures.length > 0) {
   globalThis.console.error(
-    "Resolve the failed checks before running the agent demo or Playwright suite."
+    "Resolve the failed checks for the selected mode. See docs/GETTING_STARTED.md."
   );
   process.exitCode = 1;
 } else {
-  globalThis.console.log("Ready. Next: npm run agent:demo");
+  globalThis.console.log(
+    "Ready. Next: npm run qa:demo. Full sample app checks: npm run agent:doctor:app"
+  );
 }
 
 function recordNodeVersion() {
-  const major = Number.parseInt(process.versions.node.split(".")[0] ?? "0", 10);
-  if (major >= 20) {
+  const [major, minor] = process.versions.node.split(".").map(Number);
+  if ((major === 20 && minor >= 19) || (major === 22 && minor >= 13) || major >= 24) {
     pass("Node.js", `v${process.versions.node}`);
     return;
   }
 
   fail(
     "Node.js",
-    `v${process.versions.node}; Node.js 20 or newer is required.`,
-    "Install Node.js 20 or newer."
+    `v${process.versions.node}; the locked lint dependencies require Node 20.19+, 22.13+, or 24+.`,
+    "Use a compatible Node version; see docs/GETTING_STARTED.md."
   );
 }
 

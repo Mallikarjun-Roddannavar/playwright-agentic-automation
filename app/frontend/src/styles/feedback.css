@@ -1,8 +1,16 @@
 /* Shared feedback surfaces */
 .app-overlay {
   background:
-    radial-gradient(circle at top, color-mix(in srgb, var(--app-accent) 14%, transparent 86%), transparent 42%),
-    linear-gradient(180deg, color-mix(in srgb, var(--app-overlay) 84%, transparent 16%), color-mix(in srgb, var(--app-overlay) 97%, transparent 3%));
+    radial-gradient(
+      circle at top,
+      color-mix(in srgb, var(--app-accent) 14%, transparent 86%),
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--app-overlay) 84%, transparent 16%),
+      color-mix(in srgb, var(--app-overlay) 97%, transparent 3%)
+    );
   backdrop-filter: blur(16px) saturate(125%);
   -webkit-backdrop-filter: blur(16px) saturate(125%);
 }
@@ -14,8 +22,11 @@
   border-radius: 1.5rem;
   padding: 1.25rem;
   border: 1px solid color-mix(in srgb, var(--app-border-strong) 82%, rgba(255, 255, 255, 0.08) 18%);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-panel) 94%, rgba(255, 255, 255, 0.04) 6%) 0%, color-mix(in srgb, var(--app-panel-strong) 98%, rgba(5, 10, 16, 0.2) 2%) 100%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-panel) 94%, rgba(255, 255, 255, 0.04) 6%) 0%,
+    color-mix(in srgb, var(--app-panel-strong) 98%, rgba(5, 10, 16, 0.2) 2%) 100%
+  );
   box-shadow:
     var(--app-shadow),
     inset 0 1px 0 rgba(255, 255, 255, 0.07),
@@ -28,7 +39,11 @@
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent) 12%, transparent 88%), transparent 34%),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--app-accent) 12%, transparent 88%),
+      transparent 34%
+    ),
     linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 40%);
 }
 
@@ -44,8 +59,11 @@
   border: 1px solid color-mix(in srgb, var(--app-border) 70%, transparent 30%);
   padding: 0.9rem 1rem;
   font-size: 0.95rem;
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-panel) 90%, transparent 10%), color-mix(in srgb, var(--app-panel-strong) 95%, transparent 5%));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-panel) 90%, transparent 10%),
+    color-mix(in srgb, var(--app-panel-strong) 95%, transparent 5%)
+  );
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.05),
     0 14px 32px rgba(0, 0, 0, 0.14);
@@ -57,21 +75,32 @@
   inset: 0 auto 0 0;
   width: 3px;
   border-radius: 999px;
-  background: linear-gradient(180deg, var(--app-accent), color-mix(in srgb, var(--app-accent-strong) 60%, transparent 40%));
+  background: linear-gradient(
+    180deg,
+    var(--app-accent),
+    color-mix(in srgb, var(--app-accent-strong) 60%, transparent 40%)
+  );
   box-shadow: 0 0 18px color-mix(in srgb, var(--app-accent) 40%, transparent 60%);
 }
 
 .app-alert-danger {
   border-color: color-mix(in srgb, var(--app-danger) 30%, transparent 70%);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-danger-soft) 72%, transparent 28%), color-mix(in srgb, var(--app-panel-strong) 92%, transparent 8%));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-danger-soft) 72%, transparent 28%),
+    color-mix(in srgb, var(--app-panel-strong) 92%, transparent 8%)
+  );
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     0 16px 34px color-mix(in srgb, var(--app-danger) 14%, transparent 86%);
 }
 
 .app-alert-danger::before {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--app-danger) 94%, white 6%), color-mix(in srgb, var(--app-danger-hover) 75%, transparent 25%));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-danger) 94%, white 6%),
+    color-mix(in srgb, var(--app-danger-hover) 75%, transparent 25%)
+  );
   box-shadow: 0 0 18px color-mix(in srgb, var(--app-danger) 35%, transparent 65%);
 }
 
@@ -88,8 +117,11 @@
   overflow: hidden;
   border-radius: 1.25rem;
   border-color: color-mix(in srgb, var(--app-border-strong) 82%, rgba(255, 255, 255, 0.08) 18%);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-panel) 95%, rgba(255, 255, 255, 0.03) 5%) 0%, color-mix(in srgb, var(--app-panel-strong) 98%, rgba(5, 10, 16, 0.2) 2%) 100%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-panel) 95%, rgba(255, 255, 255, 0.03) 5%) 0%,
+    color-mix(in srgb, var(--app-panel-strong) 98%, rgba(5, 10, 16, 0.2) 2%) 100%
+  );
   box-shadow:
     var(--app-shadow),
     inset 0 1px 0 rgba(255, 255, 255, 0.07),
@@ -102,7 +134,11 @@
   inset: 0;
   pointer-events: none;
   background:
-    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent) 14%, transparent 86%), transparent 32%),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--app-accent) 14%, transparent 86%),
+      transparent 32%
+    ),
     linear-gradient(135deg, rgba(255, 255, 255, 0.06), transparent 42%);
 }
 
@@ -114,7 +150,11 @@
   left: 0.38rem;
   width: 4px;
   border-radius: 999px;
-  background: linear-gradient(180deg, var(--app-accent), color-mix(in srgb, var(--app-accent-strong) 72%, transparent 28%));
+  background: linear-gradient(
+    180deg,
+    var(--app-accent),
+    color-mix(in srgb, var(--app-accent-strong) 72%, transparent 28%)
+  );
   box-shadow:
     0 0 0 1px color-mix(in srgb, var(--app-accent) 18%, transparent 82%),
     0 0 18px color-mix(in srgb, var(--app-accent) 36%, transparent 64%);
@@ -161,12 +201,24 @@
 
 .Toastify__toast--success::before {
   background:
-    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent) 22%, transparent 78%), transparent 30%),
-    linear-gradient(135deg, color-mix(in srgb, var(--app-accent-soft) 56%, transparent 44%), transparent 44%);
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--app-accent) 22%, transparent 78%),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--app-accent-soft) 56%, transparent 44%),
+      transparent 44%
+    );
 }
 
 .Toastify__toast--success::after {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--app-accent) 94%, white 6%), color-mix(in srgb, var(--app-accent-strong) 78%, transparent 22%));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-accent) 94%, white 6%),
+    color-mix(in srgb, var(--app-accent-strong) 78%, transparent 22%)
+  );
   box-shadow:
     0 0 0 1px color-mix(in srgb, var(--app-accent) 24%, transparent 76%),
     0 0 22px color-mix(in srgb, var(--app-accent) 42%, transparent 58%);
@@ -174,8 +226,11 @@
 
 .Toastify__toast--error {
   border-color: color-mix(in srgb, var(--app-danger) 30%, transparent 70%);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-danger-soft) 58%, transparent 42%), color-mix(in srgb, var(--app-panel-strong) 94%, transparent 6%));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-danger-soft) 58%, transparent 42%),
+    color-mix(in srgb, var(--app-panel-strong) 94%, transparent 6%)
+  );
   box-shadow:
     var(--app-shadow),
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
@@ -185,12 +240,24 @@
 
 .Toastify__toast--error::before {
   background:
-    radial-gradient(circle at top right, color-mix(in srgb, var(--app-danger) 18%, transparent 82%), transparent 30%),
-    linear-gradient(135deg, color-mix(in srgb, var(--app-danger-soft) 72%, transparent 28%), transparent 42%);
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--app-danger) 18%, transparent 82%),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--app-danger-soft) 72%, transparent 28%),
+      transparent 42%
+    );
 }
 
 .Toastify__toast--error::after {
-  background: linear-gradient(180deg, color-mix(in srgb, var(--app-danger) 94%, white 6%), color-mix(in srgb, var(--app-danger-hover) 76%, transparent 24%));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-danger) 94%, white 6%),
+    color-mix(in srgb, var(--app-danger-hover) 76%, transparent 24%)
+  );
   box-shadow:
     0 0 0 1px color-mix(in srgb, var(--app-danger) 22%, transparent 78%),
     0 0 22px color-mix(in srgb, var(--app-danger) 38%, transparent 62%);
@@ -228,7 +295,11 @@
 .Toastify__toast--success .Toastify__toast-icon {
   background:
     radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.18), transparent 56%),
-    linear-gradient(180deg, color-mix(in srgb, var(--app-accent) 18%, white 82%), color-mix(in srgb, var(--app-accent-soft) 86%, transparent 14%));
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--app-accent) 18%, white 82%),
+      color-mix(in srgb, var(--app-accent-soft) 86%, transparent 14%)
+    );
   color: var(--app-accent-strong);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.18),
@@ -248,7 +319,11 @@
 .Toastify__toast--error .Toastify__toast-icon {
   background:
     radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.12), transparent 56%),
-    linear-gradient(180deg, color-mix(in srgb, var(--app-danger) 16%, white 84%), color-mix(in srgb, var(--app-danger-soft) 88%, transparent 12%));
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--app-danger) 16%, white 84%),
+      color-mix(in srgb, var(--app-danger-soft) 88%, transparent 12%)
+    );
   color: var(--app-danger-hover);
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.12),

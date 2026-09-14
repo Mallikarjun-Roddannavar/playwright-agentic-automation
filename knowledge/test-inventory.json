@@ -2,16 +2,14 @@
   "format": "testing-inventory",
   "formatVersion": "1.0",
   "generatedBy": "process:test-inventory/1.0.0",
-  "graphDigest": "b6cef6f2b9883410f8ab8ac9b21be2d6c722f00da06e849d2c24d720f0a98d93",
+  "graphDigest": "1b34034d0837b4a7bbd97db47f41eb312e0ef4d5b46168739ce457f10a243c61",
   "tests": [
     {
       "id": "api/specs/files.spec.ts::8c9535dc43d0",
       "spec": "api/specs/files.spec.ts",
       "kind": "api",
       "describe": [],
-      "tests": [
-        "uploads use safe storage names and reject unauthorized or missing folders"
-      ],
+      "tests": ["uploads use safe storage names and reject unauthorized or missing folders"],
       "relationships": [
         {
           "relation": "IMPORTS_PACKAGE",
@@ -142,9 +140,7 @@
       "spec": "api/specs/health.spec.ts",
       "kind": "api",
       "describe": [],
-      "tests": [
-        "health endpoint is reachable"
-      ],
+      "tests": ["health endpoint is reachable"],
       "relationships": [
         {
           "relation": "IMPORTS_PACKAGE",
@@ -190,9 +186,7 @@
       "spec": "api/specs/rbac.spec.ts",
       "kind": "api",
       "describe": [],
-      "tests": [
-        "viewer cannot create folder, editor can create, admin can delete"
-      ],
+      "tests": ["viewer cannot create folder, editor can create, admin can delete"],
       "relationships": [
         {
           "relation": "IMPORTS",
@@ -277,16 +271,11 @@
       "source_sha256": "cdc605d447716f2c47f8bd695165aa82f22b568141c103b12ef19430fdee41f1"
     },
     {
-      "id": "ui/specs/files.spec.ts::01102de3a4b6",
+      "id": "ui/specs/files.spec.ts::84a10ffd0595",
       "spec": "ui/specs/files.spec.ts",
       "kind": "ui",
-      "describe": [
-        "Files"
-      ],
-      "tests": [
-        "admin can upload a file to a folder",
-        "editor can upload a file to a folder"
-      ],
+      "describe": ["Files"],
+      "tests": ["admin can upload a file to a folder", "editor can upload a file to a folder"],
       "relationships": [
         {
           "relation": "CONTAINS",
@@ -427,15 +416,13 @@
           ]
         }
       ],
-      "source_sha256": "01102de3a4b6e9a32ddb872bc4576d08e397b18b1d1b18b872c4930c0a8d0786"
+      "source_sha256": "84a10ffd05955ca55460b791054c98850747c085ccd3f4bb1889e29c33707f31"
     },
     {
       "id": "ui/specs/login.spec.ts::757e24c0dad0",
       "spec": "ui/specs/login.spec.ts",
       "kind": "ui",
-      "describe": [
-        "Login"
-      ],
+      "describe": ["Login"],
       "tests": [
         "admin login succeeds",
         "expired stored session redirects to login",
@@ -515,13 +502,11 @@
       "source_sha256": "757e24c0dad0be5b410a3716177c7c05904812c151ce55f3457677e2082b2748"
     },
     {
-      "id": "ui/specs/multi-role.spec.ts::3450191ff390",
+      "id": "ui/specs/multi-role.spec.ts::c4b94c071d58",
       "spec": "ui/specs/multi-role.spec.ts",
       "kind": "ui",
       "describe": [],
-      "tests": [
-        "admin creates folder and viewer can see it after refresh"
-      ],
+      "tests": ["admin creates folder and viewer can see it after refresh"],
       "relationships": [
         {
           "relation": "IMPORTS",
@@ -626,16 +611,14 @@
           ]
         }
       ],
-      "source_sha256": "3450191ff39037a1d9fff57fb184bf542aa6f5a1486b95705bd913e15dd22e31"
+      "source_sha256": "c4b94c071d58cd375f5044a507ddb5c34bf600c9d853872b8aa7935a8a9f9e67"
     },
     {
       "id": "ui/specs/viewer-rbac.spec.ts::79cff691d9d4",
       "spec": "ui/specs/viewer-rbac.spec.ts",
       "kind": "ui",
       "describe": [],
-      "tests": [
-        "viewer sees read-only folder and file controls"
-      ],
+      "tests": ["viewer sees read-only folder and file controls"],
       "relationships": [
         {
           "relation": "IMPORTS",

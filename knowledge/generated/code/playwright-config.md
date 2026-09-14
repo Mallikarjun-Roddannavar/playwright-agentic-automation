@@ -18,13 +18,13 @@ source_path: playwright.config.ts
 source_sha256: 7450cbd1c78a18c970c4462b7f7b327ca33520da0dfaf31914fedbf410cd0f98
 code_graph_id: file:playwright.config.ts
 analysis_scope: static-ast
-fact_sha256: 4fcd326587643f4da810573cca1993efebd951aa5244f486a49b9236291f8d8b
+fact_sha256: ca8392c73a6646ab628e4781cac7c762e1eb5c6b855ad71542c5a12edd685c75
 generated:
   by: process:codebase-knowledge/1.0.0
-  at: "2026-08-16T08:39:27.990Z"
+  at: "2026-09-10T15:54:55.036Z"
 verified:
   - by: process:codebase-knowledge/1.0.0
-    at: "2026-08-16T08:39:27.990Z"
+    at: "2026-09-10T15:54:55.036Z"
 ---
 
 # Purpose
@@ -37,16 +37,16 @@ Framework tooling extracted from playwright.config.ts by deterministic static an
 
 # Imports
 
-- [utils/common/Waits.ts](./utils/common/waits.md) via `@utils/common/Waits`
+- [utils/common/Waits.ts](./utils--common--waits.md) via `@utils/common/Waits`
 - `node:path` via `node:path`
-- [ui/pages/BasePage.ts](./ui/pages/base-page.md) via `@pages/BasePage`
-- [api/services/BaseApiService.ts](./api/services/base-api-service.md) via `@api/services/BaseApiService`
+- [ui/pages/BasePage.ts](./ui--pages--base-page.md) via `@pages/BasePage`
+- [api/services/BaseApiService.ts](./api--services--base-api-service.md) via `@api/services/BaseApiService`
 - `@playwright/test` via `@playwright/test`
-- [config/test-config.json](./config/test-config.md) via `@config/test-config.json`
+- [config/test-config.json](./config--test-config.md) via `@config/test-config.json`
 
 # Static relationships
 
-- **playwright.config.ts** uses api route [/health](./api/services/base-api-service.md).
+- **playwright.config.ts** uses api route [/health](./api--services--base-api-service.md).
 
 # Dependents
 

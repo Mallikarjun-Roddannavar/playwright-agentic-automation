@@ -17,3 +17,24 @@ node_modules/
 **/*.tsbuildinfo
 **/database.sqlite3
 **/uploads/
+
+# Local environments, secrets and generated application output
+**/.venv/
+**/venv/
+**/.env
+**/.env.*
+!**/.env.example
+**/.mypy_cache/
+**/.pytest_cache/
+**/.ruff_cache/
+**/dist/
+**/build/
+*.log
+*.pem
+*.key
+.DS_Store
+Thumbs.db
+.obsidian/
+
+# Local incident-analysis artifacts
+/.derived/

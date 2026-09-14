@@ -34,10 +34,7 @@
         "separate endpoint",
         "stale or conflicted"
       ],
-      "evidencePaths": [
-        "app/frontend/src/api.ts",
-        "app/backend/main.py"
-      ],
+      "evidencePaths": ["app/frontend/src/api.ts", "app/backend/main.py"],
       "forbiddenPhrases": ["the UI uses POST /auth/login"]
     }
   ]

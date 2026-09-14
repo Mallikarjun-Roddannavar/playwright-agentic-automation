@@ -3,15 +3,26 @@ import path from "node:path";
 import process from "node:process";
 
 const repoRoot = process.cwd();
+const portable = process.argv.includes("--portable");
 const suppliedPaths = process.argv.slice(2).filter((argument) => !argument.startsWith("-"));
 const targets = suppliedPaths.length > 0 ? suppliedPaths : ["ui/specs", "api/specs"];
 const findings = [];
+let scanned = 0;
 
 for (const target of targets) {
   inspectTarget(target);
 }
 
-globalThis.console.log("QA Guardrails\n");
+if (scanned === 0)
+  findings.push({
+    level: "FAIL",
+    file: targets.join(", "),
+    line: 1,
+    message: "No spec/test files were scanned. Supply your test directory explicitly.",
+  });
+globalThis.console.log(
+  `QA Guardrails (${scanned} files, ${portable ? "portable" : "reference POM"} mode)\n`
+);
 if (findings.length === 0) {
   globalThis.console.log("PASS  No guarded anti-patterns found.");
   globalThis.console.log("\nResult: PASS");
@@ -35,7 +46,8 @@ function inspectTarget(target) {
   const files = fs.statSync(absoluteTarget).isDirectory()
     ? collectFiles(absoluteTarget)
     : [absoluteTarget];
-  for (const filePath of files.filter((file) => /\.spec\.ts$/.test(file))) {
+  for (const filePath of files.filter((file) => /\.(?:spec|test)\.[cm]?[jt]sx?$/.test(file))) {
+    scanned += 1;
     inspectSpec(filePath);
   }
 }
@@ -43,6 +55,13 @@ function inspectTarget(target) {
 function collectFiles(directory) {
   return fs.readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const entryPath = path.join(directory, entry.name);
+    if (
+      ["node_modules", ".git", "test-results", "playwright-report", "qa-results"].includes(
+        entry.name
+      ) ||
+      entry.isSymbolicLink()
+    )
+      return [];
     return entry.isDirectory() ? collectFiles(entryPath) : [entryPath];
   });
 }
@@ -56,7 +75,7 @@ function inspectSpec(filePath) {
     if (/\bexpect\s*\(/.test(line)) assertionCount += 1;
     reportIf(
       line,
-      /page\.waitForTimeout\s*\(/,
+      /\.waitForTimeout\s*\(/,
       "FAIL",
       "Hard wait introduced; use a domain or web-first readiness condition."
     );
@@ -85,7 +104,7 @@ function inspectSpec(filePath) {
       "FAIL",
       "Catch branch appears to swallow failure evidence."
     );
-    if (/\bpage\.(?:getBy|locator\s*\()/.test(line)) {
+    if (!portable && /\bpage\.(?:getBy|locator\s*\()/.test(line)) {
       findings.push({
         level: "FAIL",
         file: relativePath,

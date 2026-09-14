@@ -1,5 +1,4 @@
 {
-  "$schema": "./evidence-schema.json",
   "version": "1.0.0",
   "principle": "Diagnose with evidence before considering any test modification.",
   "categories": {

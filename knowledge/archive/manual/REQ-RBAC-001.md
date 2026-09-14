@@ -21,12 +21,14 @@ before promotion.
 ## Requirement basis
 
 ---
+
 type: Product Requirement
 id: REQ-RBAC-001
 status: stable
 trust_status: grounded
 review_status: reviewed
 source_requirement: /requirements/incoming/REQ-RBAC-001.md
+
 ---
 
 # Proposed product knowledge: REQ-RBAC-001

@@ -70,15 +70,11 @@ export function userFromAccessToken(accessToken: string): User {
   return {
     username: claims.sub,
     role: claims.role,
-    accessToken
+    accessToken,
   };
 }
 
-async function request<T>(
-  path: string,
-  user: User | null,
-  options: RequestInit = {}
-): Promise<T> {
+async function request<T>(path: string, user: User | null, options: RequestInit = {}): Promise<T> {
   const headers = new Headers(options.headers ?? {});
   if (user?.accessToken) {
     headers.set("Authorization", `Bearer ${user.accessToken}`);
@@ -89,7 +85,7 @@ async function request<T>(
 
   const response = await fetch(`${API_BASE}${path}`, {
     ...options,
-    headers
+    headers,
   });
 
   if (!response.ok) {
@@ -114,8 +110,8 @@ export const api = {
       method: "POST",
       body: form,
       headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      }
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
     });
     return userFromAccessToken(token.access_token);
   },
@@ -147,12 +143,12 @@ export const api = {
   createFolder: (user: User, name: string) =>
     request<Folder>("/folders", user, {
       method: "POST",
-      body: JSON.stringify({ name })
+      body: JSON.stringify({ name }),
     }),
   renameFolder: (user: User, folderId: string, name: string) =>
     request<Folder>(`/folders/${folderId}`, user, {
       method: "PUT",
-      body: JSON.stringify({ name })
+      body: JSON.stringify({ name }),
     }),
   deleteFolder: (user: User, folderId: string) =>
     request<{ message: string }>(`/folders/${folderId}`, user, { method: "DELETE" }),
@@ -163,16 +159,16 @@ export const api = {
     form.append("file", file);
     return request<FileItem>(`/folders/${folderId}/files`, user, {
       method: "POST",
-      body: form
+      body: form,
     });
   },
   renameFile: (user: User, folderId: string, fileId: string, name: string) =>
     request<FileItem>(`/folders/${folderId}/files/${fileId}`, user, {
       method: "PUT",
-      body: JSON.stringify({ name })
+      body: JSON.stringify({ name }),
     }),
   deleteFile: (user: User, folderId: string, fileId: string) =>
     request<{ message: string }>(`/folders/${folderId}/files/${fileId}`, user, {
-      method: "DELETE"
-    })
+      method: "DELETE",
+    }),
 };

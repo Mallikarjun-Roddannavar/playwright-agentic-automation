@@ -12,7 +12,11 @@
   border: 1px solid var(--app-border-strong);
   background:
     linear-gradient(135deg, color-mix(in srgb, var(--app-surface) 92%, white 8%), transparent),
-    linear-gradient(180deg, color-mix(in srgb, var(--app-surface) 90%, white 10%), var(--app-surface-strong));
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--app-surface) 90%, white 10%),
+      var(--app-surface-strong)
+    );
   box-shadow:
     0 20px 48px rgba(42, 35, 24, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.24),
@@ -180,8 +184,16 @@
 .app-drawer {
   border-radius: 0 2rem 2rem 0;
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-surface) 86%, white 14%), var(--app-surface-strong)),
-    linear-gradient(135deg, color-mix(in srgb, var(--app-accent-soft) 22%, transparent 78%), transparent 58%);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--app-surface) 86%, white 14%),
+      var(--app-surface-strong)
+    ),
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--app-accent-soft) 22%, transparent 78%),
+      transparent 58%
+    );
   box-shadow:
     0 32px 72px rgba(20, 24, 32, 0.18),
     inset 0 1px 0 rgba(255, 255, 255, 0.22),
@@ -206,7 +218,12 @@
   position: absolute;
   inset: 0 0 auto;
   height: 1px;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.42), transparent 78%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04),
+    rgba(255, 255, 255, 0.42),
+    transparent 78%
+  );
   pointer-events: none;
 }
 
@@ -238,8 +255,11 @@
 .app-sidebar-panel {
   border-radius: 1.2rem;
   border: 1px solid color-mix(in srgb, var(--app-accent-soft) 38%, var(--app-border) 62%);
-  background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-surface-strong) 84%, white 16%), color-mix(in srgb, var(--app-panel) 92%, white 8%));
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--app-surface-strong) 84%, white 16%),
+    color-mix(in srgb, var(--app-panel) 92%, white 8%)
+  );
   padding: 1rem;
   box-shadow:
     inset 0 1px 0 rgba(255, 255, 255, 0.24),
@@ -316,7 +336,11 @@
   width: 18rem;
   height: 18rem;
   border-radius: 9999px;
-  background: radial-gradient(circle, color-mix(in srgb, var(--app-accent) 18%, transparent 82%), transparent 70%);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--app-accent) 18%, transparent 82%),
+    transparent 70%
+  );
   filter: blur(18px);
   transform: translate3d(0, -0.75rem, 0) scale(0.92);
 }
@@ -324,7 +348,12 @@
 .app-workspace::after {
   inset: 0;
   background:
-    linear-gradient(120deg, transparent 0%, color-mix(in srgb, var(--app-accent-soft) 18%, transparent 82%) 46%, transparent 68%),
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      color-mix(in srgb, var(--app-accent-soft) 18%, transparent 82%) 46%,
+      transparent 68%
+    ),
     linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 34%);
   transform: translate3d(-4%, 0, 0) scale(1.02);
   filter: blur(10px);
@@ -350,7 +379,11 @@
 
 .app-workspace[data-view-mode="list"]::after {
   background:
-    linear-gradient(180deg, color-mix(in srgb, var(--app-accent-soft) 12%, transparent 88%), transparent 30%),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--app-accent-soft) 12%, transparent 88%),
+      transparent 30%
+    ),
     linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.06), transparent);
 }
 
@@ -372,11 +405,17 @@
   position: absolute;
   inset: auto 0 -0.35rem;
   height: 1.25rem;
-  background: radial-gradient(circle at center, color-mix(in srgb, var(--app-accent) 16%, transparent 84%), transparent 72%);
+  background: radial-gradient(
+    circle at center,
+    color-mix(in srgb, var(--app-accent) 16%, transparent 84%),
+    transparent 72%
+  );
   filter: blur(14px);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 240ms ease, transform 240ms ease;
+  transition:
+    opacity 240ms ease,
+    transform 240ms ease;
   transform: scaleX(0.82);
 }
 
