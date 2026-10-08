@@ -1,63 +1,60 @@
-# A local codebase second brain for coding agents
+# Turn agents into a disciplined Playwright QA engineer
+
+> **Understand the project. Follow its rules. Make changes with evidence.**
 
 [![Quality and Playwright tests](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-UI%20%2B%20API-45ba4b)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6)](https://www.typescriptlang.org/)
 
-> **Give your coding agent project knowledge, clear rules, and focused task instructions, all inside the repository.**
+**[Try it](#try-it-with-one-question) | [How it works](#agentic-qa-workflow) | [Run the tests](#run-the-playwright-example) | [Adopt the pattern](#adopt-the-pattern-in-your-project)**
 
-`playwright-agentic-automation` shows how three simple building blocks work together: a **local codebase second brain**, **`AGENTS.md` project rules**, and **`SKILL.md` task workflows**. You can read them yourself, ask your agent about a feature, and update the documentation alongside the code.
+`playwright-agentic-automation` turns AI coding agents, such as Codex and Claude Code, into evidence-driven Playwright QA engineers. It gives them a **local codebase second brain**, **project rules in `AGENTS.md`**, and **focused workflows in `SKILL.md`** to understand features, plan tests, diagnose failures, and repair safely.
 
-A working Playwright + TypeScript framework makes the ideas concrete. Its React/FastAPI application, UI/API tests, role fixtures, and QA checks provide real source files and assertions for the agent to inspect.
+A real Playwright UI/API framework puts the pattern into practice. Playwright provides browser and test capability. Your coding agent provides intelligence. This repository supplies the context and QA discipline.
 
-## Three files, three clear jobs
+**Local Markdown. No AI platform to deploy.** No model keys, SDKs, model router, vector database, hosted service, or mandatory MCP server are required by this project.
 
-| Building block                                 | Question it answers                              | Example in this project                                                               |
-| ---------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------- |
-| [Local second brain](knowledge/README.md)      | What does this project do, and how is it tested? | Authentication uses `/token`; the note links the flow, assertions, and coverage gaps. |
-| [AGENTS.md](AGENTS.md)                         | What rules must the agent follow here?           | Keep selectors in Page Objects and assertions in tests.                               |
-| [SKILL.md workflows](.agents/skills/README.md) | How should the agent perform this task?          | Read a feature note, inspect its linked source, and explain the evidence.             |
+## Try it with one question
 
-Knowledge saves explanations. Rules set project conventions. Skills provide a repeatable way to do the work. Each has a distinct purpose, so the same guidance does not need to be copied into every file.
+Open this repository in your coding agent and ask:
 
-## The local codebase second brain
+```text
+Explain how login works and what its tests actually check.
+Show source links and missing coverage. Do not change files.
+```
 
-Saved project knowledge helps your agent explain how a feature works, find relevant code and tests, and understand past decisions. It gives each new task a useful starting point and stays with your project as it evolves.
+The agent starts with saved project knowledge, follows the source links, and explains the behavior and assertions. You can try this before installing the app or running tests.
 
-Ask naturally: **"How does login work?"**, **"What tests cover folders?"**, or **"What should we check before changing this feature?"**
+**What you should get:** a clear feature explanation, relevant code and tests, and honest coverage gaps. Reading source and executing tests are reported separately.
 
-## AGENTS.md: the project rules
+## Three building blocks, easy to adopt
 
-[AGENTS.md](AGENTS.md) tells the agent how to work in this repository. It identifies the right skill and defines conventions for Page Objects, services, configuration, fixtures, naming, and validation.
+| Building block                                | Gives your agent                                                    | Helps you                                                          |
+| --------------------------------------------- | ------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| **[Local second brain](knowledge/README.md)** | Saved explanations of features, architecture, tests, and decisions. | Understand a feature without starting from scratch.                |
+| **[AGENTS.md](AGENTS.md)**                    | Project conventions and boundaries.                                 | Keep changes consistent with the way your project works.           |
+| **[SKILL.md](.agents/skills/README.md)**      | A focused workflow for a particular task.                           | Repeat useful investigation, implementation, and validation steps. |
 
-Examples include:
+**Knowledge explains the project. Rules guide the work. Skills guide the task.**
 
-- Keep selectors and actions in Page Objects; keep assertions in specs.
-- Return raw API responses from services so tests express their own expectations.
-- Use centralized routes, configuration, waits, and scoped logging.
-- Preserve test intent and diagnose failures before changing tests.
+The second brain stays small and readable. Ask "How does login work?", "What tests cover folders?", or "What should we check before changing this feature?" No knowledge commands are needed.
 
-Nested application `AGENTS.md` files add frontend/backend guidance. Rules stay close to the code they govern.
+## Why this matters
 
-## SKILL.md: a workflow for the task
+> **When a test fails, an AI should not automatically "fix the test."**
+> First it must determine whether the test is wrong, the application is broken, or the environment is unavailable.
 
-Five focused skills live under `.agents/skills/`. Each has a `SKILL.md` describing when to use it, what to inspect, how to make a change, and how to validate the result.
+| What happened?                           | What should the agent do?                                                        |
+| ---------------------------------------- | -------------------------------------------------------------------------------- |
+| A button was renamed.                    | Confirm the intended control still exists, then make a permitted locator repair. |
+| A Viewer can perform a forbidden action. | Preserve the failing assertion: it found an application bug.                     |
+| The backend is down.                     | Report the environment problem. Do not add arbitrary waits or skip tests.        |
 
-| Skill                                                                  | Task                                                               |
-| ---------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| [codebase-second-brain](.agents/skills/codebase-second-brain/SKILL.md) | Explain features, architecture, coverage, and maintain notes.      |
-| [pw-ui-pom](.agents/skills/pw-ui-pom/SKILL.md)                         | Update UI Page Objects, selectors, navigation, and specs.          |
-| [pw-api-pom](.agents/skills/pw-api-pom/SKILL.md)                       | Update API services, specs, fixtures, and authentication sessions. |
-| [pw-framework-tooling](.agents/skills/pw-framework-tooling/SKILL.md)   | Maintain configuration, reporting, logging, and quality tooling.   |
-| [qa-safe-healing](.agents/skills/qa-safe-healing/SKILL.md)             | Investigate failures and apply evidence-backed, permitted repairs. |
+Product context, evidence requirements, and guardrails help the agent make that distinction. The repository does not auto-classify failures or invent evidence.
 
-The knowledge skill follows a short workflow: find the note, inspect linked source, explain the evidence, and update the affected note when behavior changes. Skills guide the coding agent; they are not background services.
+## Agentic QA workflow
 
-## See the three parts work together
-
-Ask your agent naturally:
-
-> Explain how login works and what its tests actually check. Show source links and missing coverage.
+The agent combines rules, skills, and knowledge, checks the actual source, and validates its work. On failure, it preserves evidence and diagnoses the cause before deciding whether a repair is permitted.
 
 ```mermaid
 flowchart TB
@@ -70,65 +67,81 @@ flowchart TB
     Checks --> Agent
     Agent --> Outcome[Explanation or validated change]
     Agent -->|Keep knowledge current| Knowledge
+    classDef context fill:#eef2ff,stroke:#6366f1,color:#1e1b4b
+    classDef action fill:#ecfdf5,stroke:#10b981,color:#064e3b
+    class Rules,Skills,Knowledge context
+    class Agent,Outcome action
 ```
 
-The agent follows the repository rules, uses the knowledge skill, reads the authentication note, and checks its source links. Its answer should distinguish requirements, implementation, test assertions, and any tests it actually ran.
+## Pick a task, use a focused skill
 
-For a change review, ask:
+| Task                                                            | Skill                                                                  |
+| --------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Understand a feature or its test coverage.                      | [codebase-second-brain](.agents/skills/codebase-second-brain/SKILL.md) |
+| Update UI Page Objects, selectors, navigation, or specs.        | [pw-ui-pom](.agents/skills/pw-ui-pom/SKILL.md)                         |
+| Update API services, specs, fixtures, or auth sessions.         | [pw-api-pom](.agents/skills/pw-api-pom/SKILL.md)                       |
+| Maintain configuration, logging, reporting, or quality tooling. | [pw-framework-tooling](.agents/skills/pw-framework-tooling/SKILL.md)   |
+| Investigate failures and make permitted repairs.                | [qa-safe-healing](.agents/skills/qa-safe-healing/SKILL.md)             |
+
+You can ask naturally; [project rules](AGENTS.md) route the task to the relevant skill. Skills guide the agent's work and validation.
+
+## Ask, review, then change
+
+**Understand a feature**
+
+> Explain how login works. Separate requirements, implementation, test assertions, and missing coverage.
+
+**Review a change**
 
 > Review this folder change. Which roles, source files, tests, and missing scenarios should I check?
 
-For implementation, ask:
+**Implement with care**
 
-> Update this feature, follow the relevant UI or API skill, validate the change, and update its feature note with the source links and coverage gaps.
+> Update this feature, follow the relevant UI or API skill, validate the change, and update its feature note.
 
-You do not need to name a knowledge file or run a knowledge command to ask these questions.
+**Diagnose a failure**
 
-## Keep the second brain simple
+> Analyze the latest Playwright failures without changing files. Report classification, confidence, evidence, a supported cause or hypothesis, and whether test modification is permitted.
 
-When behavior changes, update the affected note in the same change. Update architecture when shared structure changes and decisions when a meaningful design choice changes. Preserve requirement IDs and unanswered questions.
+## Run the Playwright example
 
-Keep raw requirements in [requirements/incoming](requirements/incoming/README.md). Put new business interpretations in a clearly marked **Pending review** section for human confirmation before treating them as requirements. Ordinary source-backed documentation updates need no promotion process.
+The sample React/FastAPI application includes UI/API tests, admin/editor/viewer sessions, cleanup, Page Objects, API services, logging, and reporting. [Manual scenarios](app/manual_test_cases/README.md) add boundary, authorization, and error checks.
 
-The notes are plain Markdown with links. There is no knowledge build step, generated graph, database, or automatic freshness check. When a note and source disagree, identify the mismatch and correct the explanation using evidence.
-
-## The working Playwright example
-
-The framework includes UI Page Objects, API services, admin/editor/viewer browser and API fixtures, registered cleanup, centralized routes/configuration, scoped logging, waits, and reporting. Existing [manual scenarios](app/manual_test_cases/README.md) preserve additional boundary, authorization, and error checks.
+From the repository root:
 
 ```bash
 npm install
-npm run agent:doctor
 npm run quality:check
 npm run test:list
 ```
 
-Follow [Getting Started](docs/GETTING_STARTED.md) to install browser and application dependencies. Run `npm test` for the application-backed suite, `npm run test:ui` or `npm run test:api` for a project, and `npm run report` to open its report.
+Follow **[Getting Started](docs/GETTING_STARTED.md)** to install browser and application dependencies. `npm run agent:doctor` checks runtime readiness.
 
-Your coding agent uses local repository files. No model keys, model SDK, hosted knowledge service, or mandatory MCP server are required by this project.
+| Command                 | Use it for                                                |
+| ----------------------- | --------------------------------------------------------- |
+| `npm test`              | Run the application-backed suite.                         |
+| `npm run test:ui`       | Run UI tests.                                             |
+| `npm run test:api`      | Run API tests.                                            |
+| `npm run report`        | Open the Playwright report.                               |
+| `npm run quality:check` | Run naming, guardrails, ESLint, TypeScript, and Prettier. |
 
-## Quality stays part of the workflow
+For failures, follow [QA Workflow](docs/QA_WORKFLOW.md) and the [safe-diagnosis policy](.agents/skills/qa-safe-healing/SKILL.md). Keep original evidence and a short Markdown diagnosis under ignored `qa-results/<run>/`; record any required human approval. Preserve assertions and rerun affected tests after permitted repairs.
 
-`npm run quality:check` runs naming checks, ESLint, TypeScript, Prettier, and QA guardrails. Guardrails detect common ways to hide failures, including skipped tests, forced actions, swallowed errors, and assertion-free specs.
+## Adopt the pattern in your project
 
-When a test fails, preserve its evidence and follow [the QA workflow](docs/QA_WORKFLOW.md) and [safe-diagnosis skill](.agents/skills/qa-safe-healing/SKILL.md). A renamed locator may permit a focused repair; a forbidden action succeeding is an application defect. Missing dependencies are an environment problem.
+Start small:
 
-Try this diagnosis prompt:
+1. **Write your rules.** Use `AGENTS.md` for the conventions and checks your project actually needs.
+2. **Document one feature.** Save its purpose, flow, source links, tests, and open questions in a Markdown note.
+3. **Add one useful skill.** Write a `SKILL.md` for a task you repeat. Adapt paths, commands, and conventions to your repository.
+4. **Keep notes with the change.** Update the affected explanation when behavior changes.
 
-```text
-Analyze the latest Playwright failures. Do not modify files. For every failure,
-provide classification, confidence, evidence, a supported cause or hypothesis,
-and whether test modification is permitted. Use the failure policy in .agents/skills/qa-safe-healing/SKILL.md;
-UNKNOWN is valid. Separate source inspection from actual test execution.
-```
+Use this repository as a working example. Expand the notes and skills as useful tasks emerge.
 
-Keep original evidence and a short Markdown diagnosis under ignored `qa-results/<run>/`. Record the cause or hypothesis, evidence, missing information, and any required human approval alongside the repair decision.
+Keep intended business behavior separate from observed implementation. New business interpretations need human confirmation in a **Pending review** section; ordinary source-backed documentation updates need no promotion process. Preserve requirement IDs and unresolved questions. Raw requirements stay in [requirements/incoming](requirements/incoming/README.md).
 
-## Start exploring
+Notes are plain Markdown with links. They have no automatic freshness check, so confirm important claims against source and explain any mismatch.
 
-1. Open [project knowledge](knowledge/README.md) and choose a feature.
-2. Read [AGENTS.md](AGENTS.md) to understand the project rules.
-3. Read its [task skill](.agents/skills/README.md) to see how the agent works.
-4. Follow source links and ask the agent to explain the feature or review a change.
+---
 
-See [Getting Started](docs/GETTING_STARTED.md), [QA Workflow](docs/QA_WORKFLOW.md), and the [practice application](app/README.md) for setup and validation details.
+**Explore:** [Project knowledge](knowledge/README.md) | [Project rules](AGENTS.md) | [Agent skills](.agents/skills/README.md) | [Getting Started](docs/GETTING_STARTED.md) | [QA Workflow](docs/QA_WORKFLOW.md)
