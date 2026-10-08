@@ -18,7 +18,3 @@ export function uniqueId(prefix: string): string {
 export function folderName(seed = "folder"): string {
   return uniqueId(seed);
 }
-
-export function fileName(seed = "file"): string {
-  return `${uniqueId(seed)}.txt`;
-}

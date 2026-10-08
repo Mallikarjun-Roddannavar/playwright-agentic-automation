@@ -158,7 +158,10 @@ export function FilesPage() {
     }
   }
 
-  function handleViewModeSelect(event: MouseEvent<HTMLButtonElement>, nextViewMode: "list" | "cards") {
+  function handleViewModeSelect(
+    event: MouseEvent<HTMLButtonElement>,
+    nextViewMode: "list" | "cards"
+  ) {
     setViewMode(nextViewMode);
     event.currentTarget.blur();
   }
@@ -232,7 +235,11 @@ export function FilesPage() {
             <div className="app-toolbar-group">
               <div className="app-view-toggle-shell">
                 <span className="app-view-toggle-label">View mode</span>
-                <div className="app-view-toggle" data-view-mode={viewMode} data-testid="files-view-toggle">
+                <div
+                  className="app-view-toggle"
+                  data-view-mode={viewMode}
+                  data-testid="files-view-toggle"
+                >
                   <button
                     type="button"
                     className={`btn-secondary app-view-toggle-btn px-3 py-2 text-sm ${

@@ -1,4 +1,4 @@
 interface:
   display_name: "Codebase Second Brain"
-  short_description: "Persistent OKF and AST codebase memory"
-  default_prompt: "Use $codebase-second-brain to retrieve or refresh persistent codebase knowledge."
+  short_description: "Simple feature notes and source-backed explanations"
+  default_prompt: "Use $codebase-second-brain to explain a feature and its actual test coverage using project notes and source links."

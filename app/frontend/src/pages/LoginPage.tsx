@@ -59,9 +59,13 @@ export function LoginPage() {
           <div className="app-preview-tile mt-6">
             <p className="text-sm font-medium">Sign-in guidance</p>
             <div className="app-login-checklist mt-4 text-sm text-muted">
-              <div className="app-login-checklist-item">Use one of the demo role accounts below</div>
+              <div className="app-login-checklist-item">
+                Use one of the demo role accounts below
+              </div>
               <div className="app-login-checklist-item">Choose username/password or OAuth</div>
-              <div className="app-login-checklist-item">After sign-in, the full workspace overview is available on home</div>
+              <div className="app-login-checklist-item">
+                After sign-in, the full workspace overview is available on home
+              </div>
             </div>
           </div>
         </section>

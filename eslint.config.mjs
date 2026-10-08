@@ -4,7 +4,14 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig(
   {
-    ignores: ["app/**", "node_modules/**", "playwright-report/**", "test-results/**", ".auth/**"],
+    ignores: [
+      "app/**",
+      ".local/**",
+      "node_modules/**",
+      "playwright-report/**",
+      "test-results/**",
+      ".auth/**",
+    ],
   },
   js.configs.recommended,
   ...tseslint.configs.recommended,

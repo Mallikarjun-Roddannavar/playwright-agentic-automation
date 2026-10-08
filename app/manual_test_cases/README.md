@@ -7,19 +7,19 @@ This folder contains manual test cases for the File Management System in `playwr
 These cases are designed for two uses:
 
 - feature and regression validation of the sample app
-- prompt-session evaluation of whether an AI coding agent follows repo guidance when later converting these cases into automation
+- guidance when converting these cases into automation
 
 ## Sources Used
 
 The cases in this folder were derived from the actual implementation and repo guidance, not from generic templates.
 
-- project guidance: `playwright-practice-app/AGENTS.md`
-- backend guidance: `playwright-practice-app/backend/AGENTS.md`
-- frontend guidance: `playwright-practice-app/frontend/AGENTS.md`
-- framework guidance: `playwright-agentic-automation/AGENTS.md`
+- project guidance: [app rules](../AGENTS.md)
+- backend guidance: [backend rules](../backend/AGENTS.md)
+- frontend guidance: [frontend rules](../frontend/AGENTS.md)
+- framework guidance: [framework rules](../../AGENTS.md)
 - local agent skills:
-  - `playwright-agentic-automation-ui-pom`
-  - `playwright-agentic-automation-api-workflow`
+  - [pw-ui-pom](../../.agents/skills/pw-ui-pom/SKILL.md)
+  - [pw-api-pom](../../.agents/skills/pw-api-pom/SKILL.md)
 - app behavior:
   - `backend/main.py`
   - `backend/models.py`
@@ -56,9 +56,9 @@ Known backend validation boundaries:
 - folder rename name: min 1, max 100
 - file rename name: min 1, max 255
 
-## Suggested Evaluation Use
+## Converting scenarios into automation
 
-When using these manual cases to evaluate an AI coding agent against `AGENTS.md` and local skills, check whether generated automation does the following:
+When converting manual cases with an agent, check that the automation follows `AGENTS.md` and the relevant skill:
 
 - keeps selectors out of specs and inside page objects
 - keeps assertions inside specs, not page objects or services
@@ -70,4 +70,4 @@ When using these manual cases to evaluate an AI coding agent against `AGENTS.md`
 
 ## Note On Defect-Focused Cases
 
-Some cases below intentionally test likely weak spots in the current app, such as whitespace-only names after trimming or cleanup behavior around failed upload paths. Those cases are useful both for manual QA and for evaluating whether an AI coding agent can identify realistic edge cases from repo context.
+Some cases below intentionally test likely weak spots in the current app, such as whitespace-only names after trimming or cleanup behavior around failed upload paths. Those cases are useful both for manual QA and for identifying realistic edge cases from project context.

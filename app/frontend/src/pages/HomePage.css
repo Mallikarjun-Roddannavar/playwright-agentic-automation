@@ -50,8 +50,16 @@
   gap: 1.35rem;
   padding: 1.6rem;
   background:
-    linear-gradient(145deg, color-mix(in srgb, var(--app-panel) 76%, white 24%), color-mix(in srgb, var(--app-panel-strong) 94%, transparent 6%)),
-    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent-soft) 60%, transparent 40%), transparent 44%),
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--app-panel) 76%, white 24%),
+      color-mix(in srgb, var(--app-panel-strong) 94%, transparent 6%)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--app-accent-soft) 60%, transparent 40%),
+      transparent 44%
+    ),
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 42%);
 }
 
@@ -77,7 +85,11 @@
   inset: -10% auto auto 58%;
   width: 22rem;
   height: 22rem;
-  background: radial-gradient(circle, color-mix(in srgb, var(--app-accent) 26%, transparent 74%), transparent 68%);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--app-accent) 26%, transparent 74%),
+    transparent 68%
+  );
   filter: blur(28px);
   animation: app-home-glow-float 10s ease-in-out infinite;
 }
@@ -160,7 +172,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.26) 46%, transparent 62%);
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.26) 46%,
+    transparent 62%
+  );
   transform: translateX(-120%);
   animation: app-home-shimmer 6.6s ease-in-out infinite;
 }
@@ -211,7 +228,13 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(130deg, rgba(255, 255, 255, 0.12), transparent 42%, transparent 58%, rgba(94, 234, 212, 0.05));
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0.12),
+    transparent 42%,
+    transparent 58%,
+    rgba(94, 234, 212, 0.05)
+  );
   opacity: 0.82;
   pointer-events: none;
 }
@@ -270,8 +293,16 @@
   grid-area: stats;
   background:
     radial-gradient(circle at 18% 20%, rgba(94, 234, 212, 0.14), transparent 26%),
-    linear-gradient(180deg, color-mix(in srgb, var(--app-panel) 88%, white 12%), color-mix(in srgb, var(--app-panel-strong) 98%, transparent 2%)),
-    radial-gradient(circle at top right, color-mix(in srgb, var(--app-accent-soft) 54%, transparent 46%), transparent 48%);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--app-panel) 88%, white 12%),
+      color-mix(in srgb, var(--app-panel-strong) 98%, transparent 2%)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--app-accent-soft) 54%, transparent 46%),
+      transparent 48%
+    );
 }
 
 .dark .app-home-stats {
@@ -284,7 +315,13 @@
 .app-home-stats::after {
   background:
     linear-gradient(125deg, rgba(255, 255, 255, 0.04), transparent 36%),
-    repeating-linear-gradient(180deg, rgba(94, 234, 212, 0.04) 0, rgba(94, 234, 212, 0.04) 1px, transparent 1px, transparent 14px);
+    repeating-linear-gradient(
+      180deg,
+      rgba(94, 234, 212, 0.04) 0,
+      rgba(94, 234, 212, 0.04) 1px,
+      transparent 1px,
+      transparent 14px
+    );
 }
 
 .app-home-practice {
@@ -338,7 +375,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(94, 234, 212, 0.18), rgba(94, 234, 212, 0.92), rgba(158, 248, 231, 0.4));
+  background: linear-gradient(
+    90deg,
+    rgba(94, 234, 212, 0.18),
+    rgba(94, 234, 212, 0.92),
+    rgba(158, 248, 231, 0.4)
+  );
   animation: app-home-meter-run 3.8s ease-in-out infinite;
 }
 
@@ -358,7 +400,12 @@
 
 .app-home-stat-footer-line {
   height: 1px;
-  background: linear-gradient(90deg, rgba(94, 234, 212, 0.16), rgba(94, 234, 212, 0.82), transparent 82%);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 234, 212, 0.16),
+    rgba(94, 234, 212, 0.82),
+    transparent 82%
+  );
 }
 
 .app-home-stat-footer-line.is-short {
@@ -486,7 +533,9 @@
   background:
     linear-gradient(115deg, transparent 0%, rgba(255, 255, 255, 0.12) 34%, transparent 56%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 34%);
-  background-size: 220% 100%, 100% 100%;
+  background-size:
+    220% 100%,
+    100% 100%;
   animation: app-home-hero-sheen 7.8s ease-in-out infinite;
 }
 
@@ -518,7 +567,12 @@
   inset: 50% auto auto 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, rgba(94, 234, 212, 0.16), rgba(94, 234, 212, 0.5), transparent 85%);
+  background: linear-gradient(
+    90deg,
+    rgba(94, 234, 212, 0.16),
+    rgba(94, 234, 212, 0.5),
+    transparent 85%
+  );
   transform: translateY(-50%) scaleX(0.92);
   opacity: 0.5;
   pointer-events: none;
@@ -599,7 +653,12 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(120deg, transparent 0%, rgba(255, 255, 255, 0.14) 44%, transparent 60%);
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.14) 44%,
+    transparent 60%
+  );
   transform: translateX(-120%);
   opacity: 0;
   pointer-events: none;
@@ -652,7 +711,9 @@
 .app-home-role-copy,
 .app-home-stat-value,
 .app-home-stack-title {
-  transition: transform 220ms ease, text-shadow 220ms ease;
+  transition:
+    transform 220ms ease,
+    text-shadow 220ms ease;
 }
 
 .app-home-stat-meter-bar::after {
@@ -714,7 +775,8 @@
 }
 
 .app-home-page::before {
-  transform: translate3d(0, calc(var(--app-home-scroll-shift) * -0.18), 0) scale(calc(1 + (var(--app-home-scroll-progress) * 0.04)));
+  transform: translate3d(0, calc(var(--app-home-scroll-shift) * -0.18), 0)
+    scale(calc(1 + (var(--app-home-scroll-progress) * 0.04)));
   transform-origin: center top;
 }
 
@@ -724,15 +786,19 @@
 }
 
 .app-home-hero {
-  transform:
-    translate3d(calc(var(--app-home-pointer-tilt-y) * 0.12), calc(var(--app-home-scroll-shift) * -0.08), 0)
+  transform: translate3d(
+      calc(var(--app-home-pointer-tilt-y) * 0.12),
+      calc(var(--app-home-scroll-shift) * -0.08),
+      0
+    )
     rotateX(calc(var(--app-home-pointer-tilt-x) * 0.28))
     rotateY(calc(var(--app-home-pointer-tilt-y) * 0.34));
   transform-style: preserve-3d;
 }
 
 .app-home-hero::before {
-  inset: calc(-10% + (var(--app-home-wheel-impulse) * 2%)) auto auto calc(58% + (var(--app-home-wheel-impulse) * 2%));
+  inset: calc(-10% + (var(--app-home-wheel-impulse) * 2%)) auto auto
+    calc(58% + (var(--app-home-wheel-impulse) * 2%));
   opacity: calc(0.78 + (var(--app-home-scroll-progress) * 0.28));
 }
 
@@ -775,19 +841,18 @@
 }
 
 .app-home-stats {
-  transform:
-    translate3d(0, calc(var(--app-home-scroll-shift) * -0.04), 0)
+  transform: translate3d(0, calc(var(--app-home-scroll-shift) * -0.04), 0)
     rotateY(calc(var(--app-home-pointer-tilt-y) * -0.12));
 }
 
 .app-home-practice {
-  transform:
-    translate3d(0, calc(var(--app-home-scroll-shift) * -0.03), 0)
+  transform: translate3d(0, calc(var(--app-home-scroll-shift) * -0.03), 0)
     rotateY(calc(var(--app-home-pointer-tilt-y) * 0.1));
 }
 
 .app-home-stat-meter-bar::after {
-  transform: translateX(calc(-35% + (var(--app-home-wheel-impulse) * 10%))) scaleX(calc(0.82 + (var(--app-home-scroll-progress) * 0.14)));
+  transform: translateX(calc(-35% + (var(--app-home-wheel-impulse) * 10%)))
+    scaleX(calc(0.82 + (var(--app-home-scroll-progress) * 0.14)));
 }
 
 .app-home-stat-footer-line {
@@ -796,11 +861,9 @@
 
 @media (hover: hover) and (pointer: fine) {
   .app-home-page:hover .app-home-hero {
-    transform:
-      translate3d(0, calc(var(--app-home-scroll-shift) * -0.08), 0)
+    transform: translate3d(0, calc(var(--app-home-scroll-shift) * -0.08), 0)
       rotateX(calc(var(--app-home-pointer-tilt-x) * 0.36))
-      rotateY(calc(var(--app-home-pointer-tilt-y) * 0.42))
-      scale(1.003);
+      rotateY(calc(var(--app-home-pointer-tilt-y) * 0.42)) scale(1.003);
   }
 
   .app-home-page:hover .app-home-stats,
@@ -916,11 +979,15 @@
 @keyframes app-home-hero-sheen {
   0%,
   100% {
-    background-position: 140% 0, 0 0;
+    background-position:
+      140% 0,
+      0 0;
   }
 
   50% {
-    background-position: -40% 0, 0 0;
+    background-position:
+      -40% 0,
+      0 0;
   }
 }
 

@@ -21,19 +21,16 @@ recordPath(
 );
 recordBackendEnvironment();
 recordChromium();
-recordKnowledgeFreshness();
 
 const failures = results.filter((result) => result.status === "FAIL");
 globalThis.console.log("\nAgent readiness summary");
 globalThis.console.log(`${results.length - failures.length}/${results.length} checks passed.`);
 
 if (failures.length > 0) {
-  globalThis.console.error(
-    "Resolve the failed checks before running the agent demo or Playwright suite."
-  );
+  globalThis.console.error("Resolve the failed checks before running the Playwright suite.");
   process.exitCode = 1;
 } else {
-  globalThis.console.log("Ready. Next: npm run agent:demo");
+  globalThis.console.log("Ready. Next: npm run test:list");
 }
 
 function recordNodeVersion() {
@@ -106,20 +103,6 @@ function recordChromium() {
     "Playwright Chromium",
     "The Chromium executable is not installed.",
     "Run npm run install:browsers."
-  );
-}
-
-function recordKnowledgeFreshness() {
-  const result = run(process.execPath, ["scripts/buildKnowledge.mjs", "--check"], repoRoot);
-  if (result.status === 0) {
-    pass("Knowledge freshness", "Generated codebase knowledge is current.");
-    return;
-  }
-
-  fail(
-    "Knowledge freshness",
-    "Generated codebase knowledge is stale or cannot be checked.",
-    "Run npm run knowledge:build, then npm run knowledge:validate."
   );
 }
 

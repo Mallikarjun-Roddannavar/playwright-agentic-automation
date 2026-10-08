@@ -76,7 +76,7 @@ Current repo examples:
 - `LoginPage.goto()` returns `this`
 - `HomePage.goto()` returns `this`
 - `LoginPage.login(...)` returns `HomePage`
-- `LoginPage.loginExpectingFailure(...)` returns `void`
+- `LoginPage.loginExpectingFailure(...)` returns `this`
 - `HomePage.openFolders()` returns `FoldersPage`
 - `FoldersPage` intentionally has no `goto()`
 

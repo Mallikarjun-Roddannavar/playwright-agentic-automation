@@ -1,135 +1,63 @@
-# AGENTS.md
+# Project rules
 
-This file applies to the entire `playwright-agentic-automation` framework.
+These rules apply to the whole Playwright + TypeScript learning framework.
+Use Playwright best practices and the repository's Page Object Model conventions.
+Nested application instructions apply to their respective folders.
 
-## Purpose
+## Choose a skill
 
-Maintain this Playwright + TypeScript framework for UI and API automation practice. Follow Playwright best practices and Selenium-style Page Object Model guidance as adapted in this repo.
+| Work                                                                | Skill                   |
+| ------------------------------------------------------------------- | ----------------------- |
+| UI specs, Page Objects, selectors, navigation                       | `pw-ui-pom`             |
+| API services/specs, fixtures, auth sessions                         | `pw-api-pom`            |
+| Configuration, scripts, waits, logging, reporting, quality checks   | `pw-framework-tooling`  |
+| Feature explanations, architecture, test coverage, note maintenance | `codebase-second-brain` |
+| Failure diagnosis and evidence-backed repairs                       | `qa-safe-healing`       |
 
-## Agentic QA operating principles
+Skills live under `.agents/skills/`. For feature or coverage questions, use
+`codebase-second-brain` first: read `knowledge/README.md`, open the feature note,
+and confirm important claims against source and assertions. Use UI/API skills
+when implementation changes are needed. Report source review and test execution
+separately. Official Playwright agents, CLI, or optional MCP may assist this work.
 
-- Diagnose before modifying; green output is not evidence that product behavior is correct.
-- Read `qa/failure-taxonomy.json` before diagnosing or repairing a failure. It is the detailed policy source of truth.
-- Preserve real test, trace, screenshot, API, source, and requirement evidence before classification.
-- Application defects, API contract failures, environment failures, and `UNKNOWN` are not healing opportunities.
-- Assertions express test intent. Never weaken an assertion without supported behavior and any policy-required review.
-- Never skip, fixme, delete, swallow, or force a test merely to obtain green output.
-- Prefer the smallest evidence-backed repair; then run `npm run qa:guardrails` and rerun the affected test.
-- Use official Playwright agents, CLI, or optional MCP where helpful. This repository adds QA discipline around them rather than replacing them.
+## Preserve test intent
 
-## Use The Local Skills
+- Diagnose before modifying. Read the failure policy in `.agents/skills/qa-safe-healing/SKILL.md` before classifying or repairing a failure and preserve real test, trace, screenshot, API, source, and requirement evidence.
+- Application defects, API contract failures, environment failures, and `UNKNOWN` are not test-healing opportunities.
+- Never weaken assertions without supported behavior and policy-required review. Never skip, fixme, delete, swallow errors, or force interactions merely to obtain green output.
+- Make the smallest evidence-backed permitted repair, run `npm run qa:guardrails`, and rerun the affected test. Green output alone does not prove correct product behavior.
 
-Use these local skills when their scope matches the task:
+## Keep ownership clear
 
-- `pw-ui-pom` for `ui/pages`, `ui/specs`, and UI navigation/page-object changes
-- `pw-api-pom` for `api/services`, `api/specs`, `utils/fixtures/TestFixtures.ts`, and auth/API session work
-- `pw-framework-tooling` for `playwright.config.ts`, linting, formatting, typechecking, logging, waits, reporting, and README quality-tooling updates
-- `codebase-second-brain` for persistent codebase discovery, OKF knowledge updates, AST graph queries, and Obsidian-ready knowledge navigation
-- `qa-safe-healing` for diagnosis-only reports and policy-governed repair after a Playwright failure
+- Selectors and actions belong in `ui/pages`; assertions belong in specs. API services in `api/services` remain assertion-free and return raw `APIResponse` values.
+- Shared page behavior and UI routes belong in `ui/pages/BasePage.ts`. API routes belong in `api/services/BaseApiService.ts`. Reuse these constants in specs, setup, and services.
+- `config/test-config.json` is the single committed framework source for UI/API base URLs, admin/editor/viewer demo credentials, and shared waits. Change values there directly; use `UPPER_SNAKE_CASE` JSON keys.
+- Derive timing from `utils/common/Waits.ts`, use `logger.withScope(...)`, and keep the custom reporter at `utils/common/CustomReporter.ts`.
+- Prefer TypeScript aliases `@pages/*`, `@api/*`, `@utils/*`, and `@config/*` over deep relative imports in framework code and tooling.
 
-When a request asks how a feature works, how behavior is tested, what covers a
-feature, or whether knowledge is stale or conflicting, use `codebase-second-brain`
-as the primary skill. Use `pw-ui-pom` and `pw-api-pom` as supporting skills for
-the specific UI or API files identified by the knowledge layer. Users should be
-able to ask these questions naturally without naming knowledge files or commands.
+## Page Objects and fixtures
 
-For new requirements, follow the product knowledge workflow: keep raw input in
-`requirements/incoming/`, create an agent proposal in
-`knowledge/drafts/product/`, require human review of business meaning, and only
-then place approved content in `knowledge/01-product/requirements/`. Do not
-create or promote business meaning automatically.
+- Return `this` for guaranteed same-page navigation, a different Page Object only for a guaranteed destination, and `Promise<void>` for ambiguous actions.
+- Preserve the flow: `LoginPage.login(...)` returns `HomePage`; `loginExpectingFailure(...)` stays on `LoginPage`; `HomePage.openFolders()` returns `FoldersPage`. `FoldersPage` has no `goto()`.
+- Shared fixtures live in `utils/fixtures/TestFixtures.ts`: role contexts/pages are `adminContext`/`adminPage`, `editorContext`/`editorPage`, and `viewerContext`/`viewerPage`; API contexts are `adminRequest`, `editorRequest`, and `viewerRequest`.
+- Tests instantiate their own Page Objects and services. Fixtures must not hide test intent by returning them. Register teardown for created data through the shared `cleanup` fixture.
 
-## Framework Conventions
+## Naming and notes
 
-- Keep selectors in page objects. Do not add raw page selectors in specs.
-- Keep assertions in tests. Do not add assertions inside page objects or API services.
-- Keep API services assertion-free and return raw `APIResponse` values.
-- Use config from `config/test-config.json` as the single source of truth for base URLs, role credentials, and shared waits.
-- Use `utils/common/Waits.ts` for framework wait and timeout values.
-- Use `logger.withScope(...)` for scoped logging.
+- Use PascalCase for exported class-style framework files and match the primary export name. Reserve `Base*` for shared parents. Use camelCase for methods, local variables, properties, and locator fields.
+- Keep role-focused folder names lowercase. Specs use lowercase kebab-case with `.spec.ts`, such as `multi-role.spec.ts`.
+- Update the relevant feature note when behavior changes. Keep raw requirements in `requirements/incoming/`; new business interpretations go in a Pending review section for human confirmation. Ordinary source-backed documentation updates need no promotion process. Preserve unresolved questions.
 
-## Config Model
+## Validate the change
 
-- The single committed config source is `config/test-config.json`.
-- That file is the runtime source of truth for:
-  - UI base URL
-  - API base URL
-  - role credentials for admin, editor, and viewer
-  - shared wait values used by the framework
-- If config values need to change, update `config/test-config.json` directly.
-- Keep JSON config keys in `UPPER_SNAKE_CASE` to match the current framework model.
-- The committed credentials are demo credentials intended for the sample app used with this framework.
+Keep ESLint, Prettier, and `tsc --noEmit` green; retain
+`@typescript-eslint/no-floating-promises`. `npm run quality:check` runs naming,
+QA guardrails, lint, typecheck, and formatting. Use the smallest relevant checks
+for focused changes and `npm run test:list` to inspect the suite. Run the full
+suite only when relevant or requested; rerun affected tests after behavioral repairs.
 
-## Import Aliases
-
-- Use TypeScript path aliases instead of deep relative imports.
-- Preferred aliases:
-  - `@pages/*`
-  - `@api/*`
-  - `@utils/*`
-  - `@config/*`
-- Prefer these aliases in specs, page objects, services, fixtures, and tooling files.
-
-## Route Ownership
-
-- UI routes are owned by `ui/pages/BasePage.ts`.
-- API routes are owned by `api/services/BaseApiService.ts`.
-- Reuse those constants instead of hardcoding paths in specs, setup files, or services.
-
-## Naming Conventions
-
-- Use `PascalCase` for page objects, services, fixtures, reporters, logger/waits helpers, and other exported class-style framework files.
-- Keep file names aligned with their primary exported class or object name when applicable:
-  - `LoginPage.ts` -> `LoginPage`
-  - `FoldersService.ts` -> `FoldersService`
-  - `CustomReporter.ts` -> `CustomReporter`
-- Use `Base*` naming only for shared parent abstractions such as `BasePage.ts` and `BaseApiService.ts`.
-- Use `camelCase` for methods, local variables, object properties, and locator fields.
-- Keep spec files lowercase with the `.spec.ts` suffix, for example `login.spec.ts` and `multi-role.spec.ts`.
-- Keep folder names lowercase and role-focused, for example `pages`, `services`, `specs`, `fixtures`, and `common`.
-- Keep JSON config keys in `config/test-config.json` as `UPPER_SNAKE_CASE` to match the current config model.
-- Keep alias names short and domain-based: `@pages/*`, `@api/*`, `@utils/*`, and `@config/*`.
-
-## Page Object Rules
-
-- Keep page objects in `ui/pages`.
-- Keep shared page behavior in `ui/pages/BasePage.ts`.
-- Let same-page navigation methods return `this` when the destination is guaranteed.
-- Return a different page object only when navigation outcome is guaranteed.
-- Keep ambiguous actions as `Promise<void>`.
-- Current intentional flow:
-  - `LoginPage.login(...)` returns `HomePage`
-  - `LoginPage.loginExpectingFailure(...)` stays on `LoginPage`
-  - `HomePage.openFolders()` returns `FoldersPage`
-  - `FoldersPage` does not have a `goto()`
-
-## Fixture Rules
-
-- The shared fixture file is `utils/fixtures/TestFixtures.ts`.
-- Browser fixtures are exposed as `adminContext`, `editorContext`, `viewerContext` and `adminPage`, `editorPage`, `viewerPage`.
-- API fixtures are exposed as `adminRequest`, `editorRequest`, `viewerRequest`.
-- The shared `cleanup` fixture lets tests register teardown work for any data they create.
-- Tests instantiate the page objects or API services they need.
-- Do not hide test intent by returning page objects or services directly from fixtures.
-
-## Quality Tooling Rules
-
-- Keep ESLint, Prettier, and `tsc --noEmit` green.
-- Keep `@typescript-eslint/no-floating-promises` enabled.
-- Keep the custom reporter at `utils/common/CustomReporter.ts`.
-- If `npm run ...` fails in the AI shell with the known Windows `EPERM` issue, use the local binaries directly from `node_modules/.bin`.
-
-## Validation Defaults
-
-After meaningful changes, prefer validating with the smallest relevant command set:
-
-- naming: `node ./scripts/checkNamingConventions.mjs`
-- knowledge (when indexed code, configuration, scripts, or `knowledge/` changes): `node ./scripts/buildKnowledge.mjs --check && node ./scripts/validateKnowledge.mjs`
-- lint: `./node_modules/.bin/eslint.cmd .`
-- typecheck: `./node_modules/.bin/tsc.cmd --noEmit`
-- format check: `./node_modules/.bin/prettier.cmd . --check`
-- QA guardrails: `node ./scripts/qaGuardrails.mjs`
-- QA benchmark fixture validation: `node ./scripts/qaEval.mjs`
-- Playwright inventory: `./node_modules/.bin/playwright.cmd test --list`
-
-Only run the full test suite when it is relevant to the change or the user asks for it.
+If npm encounters the known Windows `EPERM` issue, use direct scripts or local
+binaries: `node ./scripts/checkNamingConventions.mjs`,
+`node ./scripts/qaGuardrails.mjs`, and `./node_modules/.bin/` commands
+`eslint.cmd .`, `tsc.cmd --noEmit`, `prettier.cmd . --check`, or
+`playwright.cmd test --list`.

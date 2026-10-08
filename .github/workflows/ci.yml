@@ -46,20 +46,8 @@ jobs:
       - name: Install Playwright browser
         run: npx playwright install --with-deps chromium
 
-      - name: Validate naming and knowledge
-        run: |
-          node ./scripts/checkNamingConventions.mjs
-          node ./scripts/buildKnowledge.mjs --check
-          node ./scripts/validateKnowledge.mjs
-          node ./scripts/knowledge/validateRelationships.mjs
-          node ./scripts/knowledge/verifyKnowledge.mjs
-          node ./scripts/qaGuardrails.mjs
-          node ./scripts/qaEval.mjs
-
-      - name: Lint and typecheck
-        run: |
-          npm run lint
-          npm run typecheck
+      - name: Check code quality
+        run: npm run quality:check
 
       - name: Run Playwright tests
         run: npm test

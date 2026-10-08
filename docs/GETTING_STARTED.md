@@ -43,9 +43,6 @@ Start with the inventory and static checks:
 ```powershell
 npm run test:list
 node ./scripts/checkNamingConventions.mjs
-node ./scripts/buildKnowledge.mjs --check
-node ./scripts/validateKnowledge.mjs
-node ./scripts/knowledge/validateRelationships.mjs
 npm run lint
 npm run typecheck
 ```
@@ -66,15 +63,13 @@ npm run test:api
 npm run test:debug
 ```
 
-## Work with the knowledge layer
+## Understand a feature
 
-```powershell
-npm run knowledge:query -- --knowledge Login
-npm run knowledge:build
-npm run knowledge:check
-```
+Open [project knowledge](../knowledge/README.md) and choose a feature note, or ask:
 
-Refresh generated artifacts after changing indexed source, configuration, package metadata, or knowledge scripts. Do not hand-edit files under `knowledge/generated/`.
+> Explain how login works and what its tests check. Include source links and coverage gaps.
+
+The notes need no setup. Update the relevant note when behavior changes.
 
 ## Add a test
 
@@ -86,7 +81,15 @@ Refresh generated artifacts after changing indexed source, configuration, packag
 
 ## Troubleshooting
 
-If a Windows `npm run` command fails with a Node `EPERM` realpath error in the AI shell, run the local binaries or direct Node scripts as documented in `knowledge/runbooks/refresh-codebase-knowledge.md`.
+If a Windows `npm run` command fails with a Node `EPERM` realpath error in the AI shell, run the local binaries or direct Node scripts instead:
+
+```powershell
+./node_modules/.bin/eslint.cmd .
+./node_modules/.bin/tsc.cmd --noEmit
+./node_modules/.bin/prettier.cmd . --check
+./node_modules/.bin/playwright.cmd test --list
+node ./scripts/qaGuardrails.mjs
+```
 
 If the backend virtual environment was moved or copied, recreate it in `app/backend/.venv`; Python launcher files contain absolute paths.
 

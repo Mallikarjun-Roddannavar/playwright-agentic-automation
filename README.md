@@ -1,143 +1,134 @@
-# Turn agents into a disciplined Playwright QA engineer
+# A local codebase second brain for coding agents
 
 [![Quality and Playwright tests](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-UI%20%2B%20API-45ba4b)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6)](https://www.typescriptlang.org/)
 
-> **Turn AI coding agents into evidence-driven Playwright QA engineers.**
+> **Give your coding agent project knowledge, clear rules, and focused task instructions, all inside the repository.**
 
-`playwright-agentic-automation` gives coding agents—such as Codex and Claude Code—the repository context, QA guardrails, and evidence workflows needed to plan, test, diagnose, repair safely—and know when not to change a failing test. It combines a real Playwright UI/API framework with a repository-local LLM Wiki, focused skills, product/test knowledge, evidence requirements, and deterministic guardrails.
+`playwright-agentic-automation` shows how three simple building blocks work together: a **local codebase second brain**, **`AGENTS.md` project rules**, and **`SKILL.md` task workflows**. You can read them yourself, ask your agent about a feature, and update the documentation alongside the code.
 
-There is no AI platform to deploy: no model keys, SDKs, model router, vector database, hosted service, or mandatory MCP server. Playwright provides browser and test capability. Your coding agent provides intelligence. This repository supplies the QA context and discipline.
+A working Playwright + TypeScript framework makes the ideas concrete. Its React/FastAPI application, UI/API tests, role fixtures, and QA checks provide real source files and assertions for the agent to inspect.
 
-## Why this matters
+## Three files, three clear jobs
 
-> **When a test fails, an AI should not automatically “fix the test.”**
-> First it must determine whether the test is wrong, the application is broken, or the environment is unavailable.
+| Building block                                 | Question it answers                              | Example in this project                                                               |
+| ---------------------------------------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| [Local second brain](knowledge/README.md)      | What does this project do, and how is it tested? | Authentication uses `/token`; the note links the flow, assertions, and coverage gaps. |
+| [AGENTS.md](AGENTS.md)                         | What rules must the agent follow here?           | Keep selectors in Page Objects and assertions in tests.                               |
+| [SKILL.md workflows](.agents/skills/README.md) | How should the agent perform this task?          | Read a feature note, inspect its linked source, and explain the evidence.             |
 
-- If a button was renamed, update the locator—but only after evidence confirms the intended control still exists.
-- If a Viewer can perform an action they should be forbidden from doing, keep the test failing: it found an application bug.
-- If the backend is down, report the environment problem. Do not add arbitrary waits or skip the test.
+Knowledge saves explanations. Rules set project conventions. Skills provide a repeatable way to do the work. Each has a distinct purpose, so the same guidance does not need to be copied into every file.
 
-This repository helps coding agents make that distinction with product context, evidence requirements, policy, and deterministic guardrails. It never auto-classifies a failure or invents evidence.
+## The local codebase second brain
 
-## Agentic QA workflow
+Saved project knowledge helps your agent explain how a feature works, find relevant code and tests, and understand past decisions. It gives each new task a useful starting point and stays with your project as it evolves.
+
+Ask naturally: **"How does login work?"**, **"What tests cover folders?"**, or **"What should we check before changing this feature?"**
+
+## AGENTS.md: the project rules
+
+[AGENTS.md](AGENTS.md) tells the agent how to work in this repository. It identifies the right skill and defines conventions for Page Objects, services, configuration, fixtures, naming, and validation.
+
+Examples include:
+
+- Keep selectors and actions in Page Objects; keep assertions in specs.
+- Return raw API responses from services so tests express their own expectations.
+- Use centralized routes, configuration, waits, and scoped logging.
+- Preserve test intent and diagnose failures before changing tests.
+
+Nested application `AGENTS.md` files add frontend/backend guidance. Rules stay close to the code they govern.
+
+## SKILL.md: a workflow for the task
+
+Five focused skills live under `.agents/skills/`. Each has a `SKILL.md` describing when to use it, what to inspect, how to make a change, and how to validate the result.
+
+| Skill                                                                  | Task                                                               |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| [codebase-second-brain](.agents/skills/codebase-second-brain/SKILL.md) | Explain features, architecture, coverage, and maintain notes.      |
+| [pw-ui-pom](.agents/skills/pw-ui-pom/SKILL.md)                         | Update UI Page Objects, selectors, navigation, and specs.          |
+| [pw-api-pom](.agents/skills/pw-api-pom/SKILL.md)                       | Update API services, specs, fixtures, and authentication sessions. |
+| [pw-framework-tooling](.agents/skills/pw-framework-tooling/SKILL.md)   | Maintain configuration, reporting, logging, and quality tooling.   |
+| [qa-safe-healing](.agents/skills/qa-safe-healing/SKILL.md)             | Investigate failures and apply evidence-backed, permitted repairs. |
+
+The knowledge skill follows a short workflow: find the note, inspect linked source, explain the evidence, and update the affected note when behavior changes. Skills guide the coding agent; they are not background services.
+
+## See the three parts work together
+
+Ask your agent naturally:
+
+> Explain how login works and what its tests actually check. Show source links and missing coverage.
 
 ```mermaid
-flowchart LR
-    Requirement[Requirement or change] --> Understand[Understand product and test intent]
-    Understand --> Risk[Identify risk and coverage gaps]
-    Risk --> Execute[Plan or update tests, then execute Playwright]
-    Execute --> Evidence[Collect results, traces, screenshots, logs]
-    Evidence --> Diagnose[Classify failure and confidence]
-    Diagnose --> Decision{Test change allowed?}
-    Decision -->|Yes, evidence-backed| Repair[Smallest safe repair]
-    Decision -->|No or uncertain| Preserve[Preserve failure and escalate]
-    Repair --> Rerun[Rerun, guardrails, report]
-    Preserve --> Rerun
+flowchart TB
+    User[Your question or change request] --> Agent[Coding agent]
+    Rules["AGENTS.md<br/>Project rules"] --> Agent
+    Skills["SKILL.md<br/>Task workflows"] --> Agent
+    Knowledge["Local second brain<br/>Project knowledge"] --> Agent
+    Agent <--> Code[Application code and tests]
+    Code --> Checks[Quality checks and test results]
+    Checks --> Agent
+    Agent --> Outcome[Explanation or validated change]
+    Agent -->|Keep knowledge current| Knowledge
 ```
 
-The agent uses requirements and repository knowledge to understand risk, then collects evidence before repairing safely or preserving a failure. The canonical policy is [qa/failure-taxonomy.json](qa/failure-taxonomy.json); see [the QA workflow](docs/QA_WORKFLOW.md) for diagnosis-only and guarded-repair prompts.
+The agent follows the repository rules, uses the knowledge skill, reads the authentication note, and checks its source links. Its answer should distinguish requirements, implementation, test assertions, and any tests it actually ran.
 
-## Quick start
+For a change review, ask:
+
+> Review this folder change. Which roles, source files, tests, and missing scenarios should I check?
+
+For implementation, ask:
+
+> Update this feature, follow the relevant UI or API skill, validate the change, and update its feature note with the source links and coverage gaps.
+
+You do not need to name a knowledge file or run a knowledge command to ask these questions.
+
+## Keep the second brain simple
+
+When behavior changes, update the affected note in the same change. Update architecture when shared structure changes and decisions when a meaningful design choice changes. Preserve requirement IDs and unanswered questions.
+
+Keep raw requirements in [requirements/incoming](requirements/incoming/README.md). Put new business interpretations in a clearly marked **Pending review** section for human confirmation before treating them as requirements. Ordinary source-backed documentation updates need no promotion process.
+
+The notes are plain Markdown with links. There is no knowledge build step, generated graph, database, or automatic freshness check. When a note and source disagree, identify the mismatch and correct the explanation using evidence.
+
+## The working Playwright example
+
+The framework includes UI Page Objects, API services, admin/editor/viewer browser and API fixtures, registered cleanup, centralized routes/configuration, scoped logging, waits, and reporting. Existing [manual scenarios](app/manual_test_cases/README.md) preserve additional boundary, authorization, and error checks.
 
 ```bash
 npm install
 npm run agent:doctor
-npm run qa:demo
+npm run quality:check
 npm run test:list
 ```
 
-For the application-backed suite, install the browser and app dependencies described in [Getting Started](docs/GETTING_STARTED.md), then run `npm test`.
+Follow [Getting Started](docs/GETTING_STARTED.md) to install browser and application dependencies. Run `npm test` for the application-backed suite, `npm run test:ui` or `npm run test:api` for a project, and `npm run report` to open its report.
 
-## Core idea: a local LLM Wiki and codebase second brain
+Your coding agent uses local repository files. No model keys, model SDK, hosted knowledge service, or mandatory MCP server are required by this project.
 
-This is still a practical Playwright + TypeScript framework: UI Page Objects, API services, role-based browser/API fixtures, application-backed tests, centralized routes/configuration, and deterministic quality checks. Its repository-native AI context gives coding agents durable understanding without a hosted AI platform.
+## Quality stays part of the workflow
 
-The core building blocks are:
+`npm run quality:check` runs naming checks, ESLint, TypeScript, Prettier, and QA guardrails. Guardrails detect common ways to hide failures, including skipped tests, forced actions, swallowed errors, and assertion-free specs.
 
-- **LLM Wiki / codebase second brain** — the offline-first [`knowledge/`](knowledge/index.md) bundle contains linked product, test, architecture, decision, and runbook notes.
-- **Static evidence graph** — generated AST facts connect imports, routes, fixtures, Page Object navigation, and services. Source hashes make freshness checkable; the graph is not presented as runtime coverage.
-- **`AGENTS.md` + focused skills** — repository rules and task-specific workflows route an agent to UI, API, tooling, knowledge, incident analysis, or safe healing work.
-- **Portable and model-neutral** — Markdown/OKF, normal repository files, and optional Obsidian navigation; no API key, model SDK, embedding service, or vector database.
+When a test fails, preserve its evidence and follow [the QA workflow](docs/QA_WORKFLOW.md) and [safe-diagnosis skill](.agents/skills/qa-safe-healing/SKILL.md). A renamed locator may permit a focused repair; a forbidden action succeeding is an application defect. Missing dependencies are an environment problem.
 
-Open [`knowledge/`](knowledge/index.md) as an Obsidian vault for backlinks, Graph view, properties, and Mermaid diagrams. Obsidian is optional: the second brain remains plain portable Markdown and does not need an account, plugin, or cloud sync.
-
-Start with the saved knowledge instead of rediscovering the whole repository:
-
-```bash
-npm run knowledge:check                 # verify generated facts are current
-npm run knowledge:impact -- REQ-RBAC-001 # find candidate QA impact
-```
-
-The generated graph is a static map, not a runtime trace, test-coverage percentage, or security proof. Human-reviewed product meaning remains separate from agent proposals.
-
-### Knowledge that grows safely
-
-The second brain is designed to grow with the repository without silently inventing product truth.
-
-```text
-Code or configuration changes
-  -> generated knowledge becomes stale
-  -> npm run knowledge:build refreshes deterministic facts
-  -> validation checks freshness and structural integrity
-
-New requirement or QA insight
-  -> agent creates an evidence-backed draft
-  -> human reviews business meaning and test intent
-  -> approved knowledge is promoted into the active bundle
-```
-
-This separation is intentional: agents can help discover, organize, and connect evidence, while people retain approval over requirements, expected behavior, and assertion meaning. See [the knowledge-layer workflow](docs/KNOWLEDGE_LAYER.md) for the proposal, review, and promotion commands.
-
-## What ordinary Playwright repositories do not provide
-
-Playwright already offers planner, generator, healer, coding-agent CLI skills, and optional MCP browser tooling. This project intentionally uses or extends those capabilities instead of cloning them.
-
-| Official Playwright                               | This repository                                                                  |
-| ------------------------------------------------- | -------------------------------------------------------------------------------- |
-| Browser control, test planning/generation/healing | Product/test knowledge and static relationships                                  |
-| Agent definitions and optional tool transport     | Failure taxonomy, evidence contract, and repair decision policy                  |
-| Executes and can repair tests                     | Guardrails against hidden failures and unsafe repairs                            |
-| General-purpose workflows                         | Repository-specific roles, routes, fixtures, requirements, and QA impact context |
-
-## Trust controls
-
-- **Guardrails** block common ways to hide failures: hard waits, skips, forced actions, swallowed catches, raw selectors, and assertion-free specs.
-- **Evidence and review** validate machine-readable diagnosis records and explicit human decisions.
-- **Coverage and impact** turn requirements and static relationships into explainable QA gaps and candidate affected tests—not fake coverage percentages.
-- **Benchmark fixtures** evaluate classification, evidence completeness, safe-healing decisions, and forbidden actions without fabricating agent scores.
-
-Run `npm run qa:demo` for a 10-second deterministic walkthrough: it shows an evidence-based coverage gap, graph-resolved impact from `FoldersService` to five tests, guardrail status, and benchmark-fixture status. It intentionally does not claim that an agent made or repaired a decision.
-
-For real Playwright artifacts from a controlled locator-drift fault, run `npm run qa:runtime-demo`; then validate `qa-results/runtime/result.json`. Results stay local in ignored `qa-results/`. See [the same-Codex comparison protocol](docs/QA_COMPARISON_PROTOCOL.md) before publishing any guided-versus-baseline claim.
-
-## Copy/paste prompts
+Try this diagnosis prompt:
 
 ```text
 Analyze the latest Playwright failures. Do not modify files. For every failure,
-provide classification, confidence, evidence, root-cause hypothesis, and whether
-test modification is permitted. Use qa/failure-taxonomy.json; UNKNOWN is valid.
+provide classification, confidence, evidence, a supported cause or hypothesis,
+and whether test modification is permitted. Use the failure policy in .agents/skills/qa-safe-healing/SKILL.md;
+UNKNOWN is valid. Separate source inspection from actual test execution.
 ```
 
-```text
-Fix only HIGH-confidence LOCATOR_DRIFT. Preserve assertions. Do not skip, fixme,
-delete, swallow errors, force actions, or change product expectations. Run
-npm run qa:guardrails and rerun each repaired test.
-```
+Keep original evidence and a short Markdown diagnosis under ignored `qa-results/<run>/`. Record the cause or hypothesis, evidence, missing information, and any required human approval alongside the repair decision.
 
-```text
-Review this change for QA impact. Identify affected behavior, roles, routes,
-tests, and the highest-risk missing regression scenario. Start with knowledge.
-```
+## Start exploring
 
-These prompts work with Codex or Claude Code; neither requires a separate repository architecture. If desired, configure official Playwright CLI skills or MCP using the current [Playwright coding-agent documentation](https://playwright.dev/docs/getting-started-cli).
+1. Open [project knowledge](knowledge/README.md) and choose a feature.
+2. Read [AGENTS.md](AGENTS.md) to understand the project rules.
+3. Read its [task skill](.agents/skills/README.md) to see how the agent works.
+4. Follow source links and ask the agent to explain the feature or review a change.
 
-## Learn more
-
-- [AGENTS.md](AGENTS.md): repository operating rules.
-- [.agents/skills](.agents/skills/README.md): focused agent workflows.
-- [qa](qa/README.md): canonical failure policy and evidence contract.
-- [qa-evals](qa-evals): ground-truth evaluation fixtures.
-- [ROADMAP.md](ROADMAP.md): outcome-based next work.
-- [CONTRIBUTING.md](CONTRIBUTING.md): contribution guidance.
+See [Getting Started](docs/GETTING_STARTED.md), [QA Workflow](docs/QA_WORKFLOW.md), and the [practice application](app/README.md) for setup and validation details.
