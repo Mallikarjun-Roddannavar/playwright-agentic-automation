@@ -5,7 +5,7 @@
 [![Quality and Playwright tests](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/Mallikarjun-Roddannavar/playwright-agentic-automation/actions/workflows/ci.yml)
 [![Playwright](https://img.shields.io/badge/Playwright-UI%20%2B%20API-45ba4b)](https://playwright.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6)](https://www.typescriptlang.org/)
-![Downloads](https://img.shields.io/github/downloads/Mallikarjun-Roddannavar/ai-testcase-generator-mcp/total)
+
 
 **[Try it](#try-it-with-one-question) | [How it works](#agentic-qa-workflow) | [Run the tests](#run-the-playwright-example) | [Adopt the pattern](#adopt-the-pattern-in-your-project)**
 
